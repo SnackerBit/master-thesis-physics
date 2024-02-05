@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2"
-     inkscape:cx="230.25"
-     inkscape:cy="129"
-     inkscape:window-width="1858"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="177.66058"
+     inkscape:cy="112.42998"
+     inkscape:window-width="1850"
      inkscape:window-height="1016"
-     inkscape:window-x="1982"
-     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -320,6 +320,29 @@
            id="path11316" />
       </g>
     </marker>
+    <marker
+       markerWidth="4.25935753"
+       markerHeight="4.92371911"
+       refX="2.1296787"
+       refY="2.4618595"
+       orient="auto"
+       id="marker4"
+       viewBox="0 0 4.25935753 4.92371911"
+       preserveAspectRatio="xMidYMid">
+      <g
+         id="path11288-3"
+         style="fill:#808080;fill-opacity:1;stroke-width:0.529167;stroke-miterlimit:4;stroke-dasharray:none"
+         transform="matrix(1.8897638,0,0,1.8897638,-231.16388,-156.78027)">
+        <path
+           style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.529167;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 122.60611,84.264959 1.83092,-1.058333 v 2.116666 z"
+           id="path11292-6" />
+        <path
+           style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.529167;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 124.57813,82.962891 -2.25391,1.302734 0.21094,0.121094 2.04297,1.18164 z m -0.28125,0.486328 v 1.630859 l -1.41016,-0.814453 z"
+           id="path11294-1" />
+      </g>
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -372,7 +395,7 @@
        id="path45851-2-3-9"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker5177-66)"
+       style="fill:none;stroke:#808080;stroke-width:1.411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker4)"
        d="m 88.587899,88.184867 0.11567,-8.44526 -0.11567,-5.66585"
        id="path23392"
        sodipodi:nodetypes="ccc" />
