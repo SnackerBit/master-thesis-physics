@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{svg}
+\usepackage{amsmath}
+
+\begin{document}
+	\begin{equation*}
+		\begin{gathered}
+			\vcenter{\hbox{\includesvg[scale=0.25]{./yb_move_0.svg}}} \,\,
+			\Rightarrow{\text{Contract}}\,\,
+			\vcenter{\hbox{\includesvg[scale=0.25]{./yb_move_1.svg}}}\,\, \overset{\text{SVD}}{\Rightarrow }\,\,
+			\vcenter{\hbox{\includesvg[scale=0.25]{./yb_move_2.svg}}} \\
+			\overset{\text{Disentangle}}{\Rightarrow }\,\,
+			\vcenter{\hbox{\includesvg[scale=0.25]{./yb_move_3.svg}}} \,\, \overset{\begin{subarray}{c}
+					\text{Contract}\\
+					\text{+ SVD}
+			\end{subarray}}{\Rightarrow }\,\,
+			\vcenter{\hbox{\includesvg[scale=0.25]{./yb_move_4.svg}}}
+		\end{gathered}
+	\end{equation*}
+\end{document}
