@@ -1,0 +1,49 @@
+Vorschlag für eine LaTeX2e-Dokumentenklasse für Abschlussarbeiten am Physik-Department der TU München
+Stand 27.12.2018
+
+Die Klasse tumphthesis ist eine Betaversion. Hinweise zu Fehlern oder Verbesserungsvorschläge bitte an Philipp H. v. Loewenfeld <phvl@tum.de>.
+
+Die Klasse tumphthesis ist eine Anpassung der KOMA-Script-Klasse scrbook, weshalb KOMA-Script installiert sein muss.
+Erforderliche Pakete:
+- KOMA-Script (mindestens Version 3.06), AMS-LaTeX
+- inputenc, fontenc, babel, xcolor, graphicx, nicefrac, mathtools, booktabs, caption, multirow, xspace, biblatex
+- pdfcomment (falls nicht mit nopdfcomment abgeschaltet)
+- hyperref (falls nicht mit nohyperref abgeschaltet)
+- csquotes (falls nicht mit nocsquotes abgeschaltet)
+- pst-pdf, psfragx (falls Option pstricks gewählt)
+- siunitx (falls Option siunitx gewählt)
+- shadethm (falls Option theorem gewählt)
+- mathrsfs, textcomp, dsfont (falls Option addfonts gewählt)
+- palatino, mathpazo (falls font-Option palatino, mathpazo, palatino-tum, mathpazo-tum)
+- cmsuper (falls font-Option cmsuper)
+- lmodern (falls font-Option lmodern)
+- MinionPro, MnSymbol (falls font-Option minionpro)
+- helvet (falls font-Option helvetica, helvet, palatino, mathpazo)
+- eulervm (falls font-Option helvetica, helvet)
+- tum (genauer die Schriftart lhv, falls font-Option tum, palatino-tum, mathpazo-tum)
+- microtype (falls Entwurfsmodus nicht aktiv und falls über die font-Option eine andere Schriftart gewählt wurde)
+- tocbasic, tocstyle (falls Entwurfsmodus nicht aktiv)
+- xparse (falls Dissertation)
+
+Die Klasse erlaubt die folgenden Optionen:
+- font: Es kann zwischen den folgenden Schriftfamilien gewählt werden:
+	* cm, latex (Standardeinstellung): Standard-LaTeX-Schriften (Computer-Modern)
+	* palatino, mathpazo: Palatino und Pazo (Mathe) als Brotschrift, Helvetica als Sans-Serif-Schrift und Courier als TT-Schrift mit Mikrotypographie
+	* cmsuper: Standard-LaTeX-Schriften (Computer-Modern) mit Mikrotypographie
+	* minionpro: MinionPro und MnSymbol (Mathe) mit Mikrotypographie
+	* helvetica, helvet: Helvetica und Euler-VM (Mathe) als Brotschrift und Courier als TT-Schrift mit Mikrotypographie
+	* palatino-tum, mathpazo-tum: Palatino und Pazo (Mathe) als Brotschrift, TUM-Neue-Helvetica als Sans-Serif-Schrift und Courier als TT-Schrift mit Mikrotypographie
+	* tum: TUM-Neue-Helvetica und Euler-VM (Mathe) als Brotschrift und Courier als TT-Schrift mit Mikrotypographie
+	* lmodern: Latin-Modern-Schriften mit Mikrotypographie
+- draft: Diese Option aktiviert den Entwurfsmodus.
+- pstricks: Diese Option erlaubt das einbinden von Postscript-Grafiken (über pst-pdf und psfragx) mit PDF-TeX. In diesem Fall empfiehlt sich der Einsatz des makefile, das die notwendigen Zwischenschritte automatisiert.
+- siunitx: Diese Option lädt siunitx, um Einheiten korrekt zu setzen.
+- theorem: Diese Option stellt die Umgebungen hauptsatz, satz, hilfssatz, theorem, lemma, folgerung, proposition, definition, beispiel, bemerkung und axiom zur Verfügung.
+- nohyperref: Diese Option deaktiviert hyperref (es wird nur url geladen).
+- nopdfcomment: Diese Option deaktiviert pdfcomment (\todo verwendet dann Randbemerkungen an Stelle von PDF-Kommentaren).
+- nocsquotes: Diese Option deaktiviert csquotes.
+- encoding: Mit dieser Option kann ein von UTF-8 abweichendes Encoding der Eingabedatei angegeben werden (Standardwert: utf8x).
+- addfonts: Mit dieser Option werden zusätzliche Schriften geladen.
+- dissertation: Mit dieser Option wird statt einer Abschlussarbeit eine Dissertation gesetzt.
+
+Die Klasse geht davon aus, dass die im Verzeichnis Abbildungen befindlichen Logos über den TeX-Suchpfad gefunden werden. Dies erreicht man am einfachsten, indem dem TeX-Suchpfad alle Unterverzeichnisse des aktuellen Verzeichnis hinzugefügt werden -- etwa durch setzen der Umgebungsvariable TEXINPUTS auf ".//:" (ohne Anführungszeichen) bzw. unter MikTeX auf ".//".

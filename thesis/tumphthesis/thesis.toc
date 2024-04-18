@@ -1,0 +1,12 @@
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {british}{}\relax 
+\contentsline {chapter}{\nonumberline Vorwort}{v}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Titel des ersten Kapitels}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Erster Abschnitt}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Zweiter Abschnitt}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Unterabschnitt}{2}{subsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}Unterunterabschnitt}{3}{subsubsection.1.2.1.1}%
+\contentsline {paragraph}{\nonumberline Absatz}{3}{paragraph*.6}%
+\contentsline {chapter}{\numberline {A}Erstes Kapitel im Anhang}{5}{appendix.A}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,7 @@
+\babel@toc {british}{}\relax 
+\contentsline {chapter}{\nonumberline Abstract}{v}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {A}Riemannian Optimization}{3}{appendix.A}%
+\contentsline {chapter}{\nonumberline Bibliography}{5}{chapter*.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

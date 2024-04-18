@@ -1,0 +1,87 @@
+\documentclass[encoding=utf8,british]{tumphthesis}
+% \documentclass[pstricks,siunitx,addfonts,theorem,font=palatino,british]{tumphthesis}
+% für Dissertation:
+% \documentclass[encoding=utf8,british,dissertation,font=helvet]{tumphthesis}
+
+% Das folgende Paket dient lediglich dazu, den Blindtext "Lorem ipsum ..."
+% auszugeben und kann in einer echten Abschlussarbeit natürlich weggelassen 
+% (oder auskommentiert) werden.
+\usepackage{lipsum}
+
+
+
+% Die Metadaten der Abschlussarbeit (Bachelor oder Master) werden auf dem 
+% Deckblatt gedruckt und in dem PDF eingetragen.
+\subject{Abschlussarbeit im Bachelorstudiengang Physik}
+\title{Titel der Abschlussarbeit}
+%\subtitle{\foreignlanguage{british}{Title in English}}
+\author{Sheldon Cooper}
+\date{31.~Juli 2011}
+%\cooperators{Max-Planck-Institut für Physik}
+
+% Alternativ Dissertation:
+%\title{Titel der Dissertation}
+%\subtitle{\foreignlanguage{british}{Title in English}}
+%\author{Sheldon Cooper}
+%\date{31.~Juli 2011}
+%\DepartmentOrIRC{Fakultät für Physik}
+%\DrDegree{der Naturwissenschaften}
+%\Vorsitz{Prof. Dr. Patricia Kabelschacht}
+%\ErstPrueferin{Prof. Dr. Erwin Brezensaltzer}
+%\ZweitPrueferin{PD Dr. habil. Heidelinde Musterfrau}
+%\DrittPrueferin{Prof. Dr. }
+
+% Auf der Rückseite des Deckblatts können Themensteller, Zweitgutachter 
+% und Tag der mündlichen Prüfung vermerkt werden.
+\lowertitleback{Erstgutachter (Themensteller): Prof.\ A.~Kabelschacht\\
+Zweitgutachter: Prof.\ S.~Preuss}
+
+% Die Bibliographie wirde über BibLaTeX mit Biber-Backend erstellt. 
+% Sofern vorhanden, wird eine bib-Datei \jobname.bib (i.d.R. also der 
+% gleiche Name wie die Hauptdatei nur bib-Endung) automatisch eingebunden.
+% Heißt sie anders oder müssen weitere Quelldateien eingebunden werden, so 
+% dient dazu der folgende Befehl (auch z.B. bei Verwendung von ShareLaTeX 
+% erforderlich, da hier \jobname auf output gesetzt wird)
+% \addbibresource{thesis.bib}
+
+\begin{document}
+% Ist die Arbeit auf Englisch verfasst, hier die Sprache umschalten. 
+% Die Sprache muss als Klassenoption angegeben sein.
+\selectlanguage{british}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\chapter{Vorwort}
+\lipsum[1]
+\todo{noch ausarbeiten!}
+
+\mainmatter
+\chapter{Titel des ersten Kapitels}
+\section{Erster Abschnitt}
+\lipsum[2-5]\cite{schwabl-qqi2002}
+
+Und noch etwas \emph{betontes}.
+
+\section{Zweiter Abschnitt}
+\lipsum[6] Test\cite{Setare:2013dra}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{tumlogo}
+	\caption{\label{fig:test}Test}
+\end{figure}
+\subsection{Unterabschnitt}
+\lipsum[7]\cite{schwabl-qqi2002,schwabl-qffi2002}
+\subsubsection{Unterunterabschnitt}
+\paragraph{Absatz} \lipsum[8]
+
+\appendix
+\chapter{Erstes Kapitel im Anhang}
+\lipsum[9-20]
+
+\backmatter
+\printbibliography
+
+
+\end{document}

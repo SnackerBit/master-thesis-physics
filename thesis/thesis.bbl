@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{helloworld}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=e40d3b3281b535bb9371fb1f91089c98}{%
+           family={Schwabl},
+           familyi={S\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag GmbH}%
+      }
+      \strng{namehash}{ef9364fddccb51a737e078376c9a5c3c}
+      \strng{fullhash}{ef9364fddccb51a737e078376c9a5c3c}
+      \strng{bibnamehash}{ef9364fddccb51a737e078376c9a5c3c}
+      \strng{authorbibnamehash}{ef9364fddccb51a737e078376c9a5c3c}
+      \strng{authornamehash}{ef9364fddccb51a737e078376c9a5c3c}
+      \strng{authorfullhash}{ef9364fddccb51a737e078376c9a5c3c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5., erw. A.}
+      \field{isbn}{3-540-63779-6}
+      \field{title}{Quantenmechanik (QM I)}
+      \field{pages}{419}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
