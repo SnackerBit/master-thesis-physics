@@ -12,27 +12,58 @@
 \begin{document}
 	\frontmatter
 	\maketitle
+	
+	\newpage
+	\thispagestyle{empty}
+	
+	\null\vfill
+	\raggedright\noindent
+	I hereby declare that this thesis is entirely the result of my own work except where otherwise indicated. I have only used the resources given in the list of references. \par
+	\vspace{2cm}
+	\noindent
+	\rlap{Munich, 99.99.2099}{%
+		\hspace{.5\textwidth}Benjamin Sappler}\par
+	
+	\newpage
+	\thispagestyle{empty}
+	
+	\section*{Abstract}
+	The numerical simulation of strongly interacting quantum many-body systems is a challenging problem. In the last decades, Tensor Networks have emerged as the standard method for tackling this problem in one dimensional systems in the form of Matrix Product States (MPS). Tensor Networks have also been generalized for the highly relevant problem of two and more spatial dimensions. However, these so-called Projected Entangled Pair States (PEPS) are typically plagued by high computational complexity or drastic approximations. Recently, a new class of Tensor Networks, called isometric Tensor Networks, have been proposed for the simulation of two-dimensional quantum systems. This new class of Tensor Networks can be understood as a generalization of the one-dimensional Matrix Product States to higher dimensions. While isometric Tensor Networks generally capture only a subspace of the total Hilbert space, there are already promising results. In this work, we develop a new class of isometric Tensor Networks that has some key differences to the existing one. We show first numerical results for finding ground states of the Transverse Field Ising model.
+	
+	\section*{Zusammenfassung}
+	\todo{Übersetzung!}
+	
 	\tableofcontents
-	
-	\chapter{Abstract}
-	
-	Hello Abstract
 	
 	\mainmatter
 	
 	\chapter{Introduction}
 	
-	\section{Introduction}
+	\chapter{Tensors and Tensor Networks}
 	
-	\todo{Add more text!}
-	Hello World, as discussed in \cite{helloworld}.
+	\section{Tensors and Isometries}
 	
-	\newpage
+	\section{Matrix Product States (MPS)}
 	
-	The quick brown fox jumped over the lazy dog, \eg Bello!
+	\section{isometric Tensor Networks in 2D}
+	
+	\chapter{Isometric Diagonal Tensor Networks (isoDTPS)}
+		
+	\section{Network Structure}
+	
+	\section{Yang-Baxter Move}
+	
+	\section{Time Evolving Block Decimation (TEBD)}
+	
+	\chapter{Toric Code: An exactly representable Model}
+	
+	\chapter{Transverse Field Ising Model: Ground State Search and Time Evolution}
 	
 	\appendix
+	
 	\chapter{Riemannian Optimization}
+	
+	\chapter{Initialization of the Disentangling Unitary}
 	
 	\backmatter
 	\printbibliography
