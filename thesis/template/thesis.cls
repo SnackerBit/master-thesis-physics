@@ -73,7 +73,16 @@
 \newcommand{\wrt}{w.r.t.\xspace}
 
 % Some special symbols as commands
-\newcommand{\iu}{\mathrm{i}}	% imaginary unit number i
+\RequirePackage{amssymb}
+\DeclareMathAlphabet{\mathbbb}{U}{bbold}{m}{n}
+\DeclareMathOperator{\Tr}{Tr}
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\newcommand{\id}{\mathbbb{1}}
+\newcommand{\iu}{\mathrm{i}}% imaginary unit number i
+\newcommand{\Stiefel}{\text{St}(n,p)}
 
 % Setup for hyperlinks and pdf metadata
 \RequirePackage{hyperref}

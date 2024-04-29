@@ -19,34 +19,150 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{helloworld}{book}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{hash=e40d3b3281b535bb9371fb1f91089c98}{%
-           family={Schwabl},
+    \entry{cite:optimization_on_matrix_manifolds}{book}{}
+      \name{author}{3}{}{%
+        {{hash=9a81fe9ad87cf630eb4a68e86949545d}{%
+           family={Absil},
+           familyi={A\bibinitperiod},
+           given={P.-A.},
+           giveni={P\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=557ac8b0d5f2ea79ae1c98d25604636a}{%
+           family={Mahony},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0dfd29560d972684e45872242d7ebfb8}{%
+           family={Sepulchre},
            familyi={S\bibinitperiod},
-           given={Franz},
-           giveni={F\bibinitperiod}}}%
+           given={Rodolphe},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton}%
       }
       \list{publisher}{1}{%
-        {Springer-Verlag GmbH}%
+        {Princeton University Press}%
       }
-      \strng{namehash}{ef9364fddccb51a737e078376c9a5c3c}
-      \strng{fullhash}{ef9364fddccb51a737e078376c9a5c3c}
-      \strng{bibnamehash}{ef9364fddccb51a737e078376c9a5c3c}
-      \strng{authorbibnamehash}{ef9364fddccb51a737e078376c9a5c3c}
-      \strng{authornamehash}{ef9364fddccb51a737e078376c9a5c3c}
-      \strng{authorfullhash}{ef9364fddccb51a737e078376c9a5c3c}
+      \strng{namehash}{e7190b12d85362656ed68bdbd6bb3b2d}
+      \strng{fullhash}{e7190b12d85362656ed68bdbd6bb3b2d}
+      \strng{bibnamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
+      \strng{authorbibnamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
+      \strng{authornamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
+      \strng{authorfullhash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{5., erw. A.}
-      \field{isbn}{3-540-63779-6}
-      \field{title}{Quantenmechanik (QM I)}
-      \field{pages}{419}
+      \field{isbn}{9781400830244}
+      \field{title}{Optimization Algorithms on Matrix Manifolds}
+      \field{year}{2008}
+      \verb{doi}
+      \verb doi:10.1515/9781400830244
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9781400830244
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9781400830244
+      \endverb
+    \endentry
+    \entry{cite:riemannian_geometry_automatic_differentiation_quantum_physics}{article}{}
+      \name{author}{3}{}{%
+        {{hash=98269b9fd179d424487b428ddc56938f}{%
+           family={Luchnikov},
+           familyi={L\bibinitperiod},
+           given={Ilia\bibnamedelima A},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=48d54ab09fab23502e465504a484fad7}{%
+           family={Krechetov},
+           familyi={K\bibinitperiod},
+           given={Mikhail\bibnamedelima E},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=32956718aa95c59fb60c9cde2e570002}{%
+           family={Filippov},
+           familyi={F\bibinitperiod},
+           given={Sergey\bibnamedelima N},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{1fb317b919aa78dc3d7db4836ffad4b5}
+      \strng{fullhash}{1fb317b919aa78dc3d7db4836ffad4b5}
+      \strng{bibnamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
+      \strng{authorbibnamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
+      \strng{authornamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
+      \strng{authorfullhash}{1fb317b919aa78dc3d7db4836ffad4b5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Riemannian geometry and automatic differentiation for optimization problems of quantum physics and quantum technologies}
+      \field{volume}{23}
+      \field{year}{2021}
+      \field{pages}{073006}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/ac0b02
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/1367-2630/ac0b02
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/1367-2630/ac0b02
+      \endverb
+    \endentry
+    \entry{cite:riemannian_optimization_isometric_tensor_networks}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c2248fc60d8cf4957c5a0692b29581f9}{%
+           family={Hauru},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce5e7557f744314daadc580383ae5477}{%
+           family={Van\bibnamedelima Damme},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9531e7c6006adecb622581097ff2d509}{%
+           family={Haegeman},
+           familyi={H\bibinitperiod},
+           given={Jutho},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stichting SciPost}%
+      }
+      \strng{namehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{fullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{bibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2542-4653}
+      \field{journaltitle}{SciPost Physics}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Riemannian optimization of isometric tensor networks}
+      \field{volume}{10}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.21468/scipostphys.10.2.040
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
