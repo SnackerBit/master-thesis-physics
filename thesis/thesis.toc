@@ -13,6 +13,8 @@
 \contentsline {chapter}{\numberline {A}Riemannian Optimization of Isometries}{11}{appendix.A}%
 \contentsline {section}{\numberline {A.1}The complex Stiefel manifold}{11}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Gradients, retractions, and vector transport}{12}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{13}{appendix.B}%
-\contentsline {chapter}{\nonumberline Bibliography}{15}{chapter*.5}%
+\contentsline {section}{\numberline {A.3}Conjugate Gradients}{13}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Trust Region Method}{13}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{15}{appendix.B}%
+\contentsline {chapter}{\nonumberline Bibliography}{17}{chapter*.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

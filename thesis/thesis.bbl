@@ -164,6 +164,42 @@
       \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
       \endverb
     \endentry
+    \entry{cite:pymanopt}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=20701ee7297351388549dce5655f6fc2}{%
+           family={Townsend},
+           familyi={T\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d8f91ed93b6fd6c18923d83541f48353}{%
+           family={Koep},
+           familyi={K\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=547b4b9c311a2aed0677c4860163b70c}{%
+           family={Weichwald},
+           familyi={W\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bd438baffcc0da55c3c7385d29cbb81}
+      \strng{fullhash}{7bd438baffcc0da55c3c7385d29cbb81}
+      \strng{bibnamehash}{7bd438baffcc0da55c3c7385d29cbb81}
+      \strng{authorbibnamehash}{7bd438baffcc0da55c3c7385d29cbb81}
+      \strng{authornamehash}{7bd438baffcc0da55c3c7385d29cbb81}
+      \strng{authorfullhash}{7bd438baffcc0da55c3c7385d29cbb81}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.MS}
+      \field{eprinttype}{arXiv}
+      \field{title}{Pymanopt: A Python Toolbox for Optimization on Manifolds using Automatic Differentiation}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1603.03236
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
