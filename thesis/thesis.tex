@@ -42,89 +42,21 @@
 	\chapter{Introduction}
 	
 	\chapter{Tensors and Tensor Networks}
-	
-	\section{Tensors and Isometries}
-	
-	\section{Matrix Product States (MPS)}
-	
-	\section{isometric Tensor Networks in 2D}
+	\input{chapters/Tensor_Networks/Tensor_Networks.tex}
 	
 	\chapter{Isometric Diagonal Tensor Networks (isoDTPS)}
-		
-	\section{Network Structure}
-	
-	\section{Yang-Baxter Move}
-	
-	\section{Time Evolving Block Decimation (TEBD)}
+	\input{chapters/isoDTPS/isoDTPS.tex}
 	
 	\chapter{Toric Code: An exactly representable Model}
+	\input{chapters/Toric_Code/Toric_Code.tex}
 	
 	\chapter{Transverse Field Ising Model: Ground State Search and Time Evolution}
+	\input{chapters/TFI/TFI.tex}
 	
 	\appendix
 	
 	\chapter{Riemannian Optimization of Isometries}
-	
-	In this appendix we provide a brief introduction to the problem of optimizing a cost function on the constrained set of isometric matrices. This problem can be solved by performing Riemannian Optimization on the matrix manifold of isometric matrices, which is called the Stiefel manifold. For a more in-depth introduction to the topic we recommend the excellent book \cite{cite:optimization_on_matrix_manifolds}. A discussion of Riemannian optimization of complex matrix manifolds in the context of quantum physics and isometric tensor networks can be found at \cite{cite:riemannian_geometry_automatic_differentiation_quantum_physics, cite:riemannian_optimization_isometric_tensor_networks}. An implementation of Riemannian Optimization on the real Stiefel manifolds and other matrix manifolds in python is given in \cite{cite:pymanopt}. Parts of this code were also used in our implementation.
-	
-	\section{The complex Stiefel manifold}
-	
-	We first define the \textit{complex Stiefel manifold} $\Stiefel$, $n \ge p$, as the set of all isometric $n\times p$ matrices:
-	\begin{equation}
-		\label{eq:Stiefel_manifold_definition}
-		\Stiefel \coloneqq \left\{X\in\mathbb{C}^{n\times p}: X^\dagger X = \id\right\}.
-	\end{equation}
-	In particular, for $n = p$, the complex Stiefel manifold reduces to the set of unitary matrices $U(n)$. One can show, similar to \cite{cite:optimization_on_matrix_manifolds}, that the complex Stiefel manifold is naturally an embedded submanifold of the Euclidian vector space $\mathbb{C}^{n\times p} \cong \mathbb{R}^{2np}$ of general complex $n\times p$ matrices. \par
-	The tangent space to an element $X\in\Stiefel$ is given by \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks}
-	\begin{equation}
-		\label{eq:Stiefel_manifold_tangent_space}
-		T_X \Stiefel = \left\{Z\in\mathbb{C}^{n\times p}:X^\dagger Z + Z^\dagger X = 0\right\},
-	\end{equation}
-	and we can project an arbitrary element $\xi \in \mathbb{C}^{n\times p}$ from the embedding space $\mathbb{C}^{n\times p}$ to the tangent space $T_X \Stiefel$ by \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks}
-	\begin{equation}
-		\label{eq:Stiefel_manifold_project_to_tangent_space}
-		P_X\xi = \xi - \frac{1}{2}X\left(X^\dagger\xi + \xi^\dagger X\right).
-	\end{equation}
-	A mathematical definition of tangent vectors and tangent spaces of manifolds is given in \cite{cite:optimization_on_matrix_manifolds}. \par
-	Tangent vectors on manifolds generalize the notion of directional derivatives. Additionally, we will also need to define a notion of length that we can apply to tangent vectors. This can be done in the form of an \textit{inner product} on tangent spaces, called the \textit{Riemannian metric}. A natural metric for the tangent space $T_W \Stiefel$ of the Stiefel manifold is the Euclidean metric of the embedding space $\mathbb{C}^{n\times p}$, which is given by the real part of the Frobenius inner product:
-	\begin{equation}
-		\label{eq:Stiefel_manifold_riemannian_metric}
-		g_W: T_X \Stiefel \times T_X \Stiefel \to \mathbb{R}, \quad g_X(\xi_1, \xi_2) = \Re\Tr\left(\xi_1^\dagger\xi_2\right).
-	\end{equation}
-	Equipped with a Riemannian metric the Stiefel manifold becomes a Riemannian submanifold of $\mathbb{C}^{n\times p}$. \par
-	With these definition, we can now formulate the optimization problem as the problem of finding the isometry $W_\text{opt} \in \Stiefel$ that minimizes the cost function
-	\begin{equation}
-		\label{eq:Optimization_cost_function_definition}
-		f: \Stiefel \to \mathbb{R}, \quad X \mapsto f(X).
-	\end{equation}
-
-	\section{Gradients, retractions, and vector transport}
-	
-	First order optimization algorihms like Gradient Descent and Conjugate Gradients use the gradient of the cost function to update the search direction at each iteration. In the case of the Stiefel manifold and the cost function \eqref{eq:Optimization_cost_function_definition}, we first define the matrix of partial derivatives $D \in \mathbb{C}^{n\times p}$ of $f$ at $X\in\Stiefel$ by
-	\begin{equation}
-		\label{eq:Optimization_partial_derivative}
-	 	D_{ij} \coloneqq \left.\frac{\partial f}{\partial \Re\left(X_{ij}\right)}\right|_{X} + \iu \left.\frac{\partial f}{\partial \Im\left(X_{ij}\right)}\right|_{X}.
-	\end{equation}
-	With this definition, the directional derivative $\text{D}f(X)[Z]$ at $X\in\Stiefel$ in direction $Z\in\mathbb{C}^{n\times p}$ is given by a simple inner product of $D$ with the direction $Z$, using the Riemannian metric \eqref{eq:Stiefel_manifold_riemannian_metric}:
-	\begin{equation}
-		\label{eq:riemannian_optimization_directional_derivative_partial_derivatives}
-		\begin{split}
-			g_X(D, Z) &= \Re\Tr\left(D^\dagger Z\right) = \Re\sum_{ij} D_{ij}^*Z_{ij} \\
-			&= \sum_{ij} \left(\left.\frac{\partial f}{\partial \Re\left(X_{ij}\right)}\right|_{X}\Re Z_{ij} + \left.\frac{\partial f}{\partial \Im\left(X_{ij}\right)}\right|_{X} \Im Z_{ij}\right) \\
-			&\eqqcolon \text{D}f(X)[Z].
-		\end{split}
-	\end{equation}
-	With this we can now define the gradient $\nabla f(X)$ of $f$ at $X\in\Stiefel$ as the projection of the partial derivative matrix \eqref{eq:Optimization_partial_derivative} to the tangent space \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks}:
-	\begin{equation}
-		\label{eq:riemannian_optimization_gradient_of_cost_function}
-		\nabla f(X) \coloneqq P_X D = D - \frac{1}{2}X\left(X^\dagger D + D^\dagger X\right),
-	\end{equation}
-	where we used the projection \eqref{eq:Stiefel_manifold_project_to_tangent_space}.
-	
-	\section{Conjugate Gradients}
-	
-	\section{Trust Region Method}
-	
+	\input{chapters/Riemannian_Optimization/Riemannian_Optimization.tex}
 	
 	\chapter{Initialization of the Disentangling Unitary}
 	

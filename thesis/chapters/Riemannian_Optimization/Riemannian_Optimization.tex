@@ -1,0 +1,11 @@
+In this appendix we provide a brief introduction to the problem of optimizing a cost function on the constrained set of isometric matrices. This problem can be solved by performing Riemannian Optimization on the matrix manifold of isometric matrices, which is called the Stiefel manifold. For a more in-depth introduction to the topic we recommend the excellent book \cite{cite:optimization_on_matrix_manifolds}. A discussion of Riemannian optimization of complex matrix manifolds in the context of quantum physics and isometric tensor networks can be found at \cite{cite:riemannian_geometry_automatic_differentiation_quantum_physics, cite:riemannian_optimization_isometric_tensor_networks}. An implementation of Riemannian Optimization on the real Stiefel manifold and other matrix manifolds in python is given in \cite{cite:pymanopt}. Some parts of this implementation were also used in our implementation.
+
+\section{The complex Stiefel manifold}
+\input{chapters/Riemannian_Optimization/Stiefel_manifold.tex}
+
+\section{Gradients, retractions, and vector transport}
+\input{chapters/Riemannian_Optimization/basic_definitions.tex}
+
+\section{Conjugate Gradients}
+
+\section{Trust Region Method}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  1 MAY 2024 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  5 JUN 2024 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,7 +518,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip85
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language8
+\blx@langwohyphens=\language87
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -770,6 +770,14 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip104
 \L@UnitsRaiseScriptstyle=\skip105
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
 
@@ -844,7 +852,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count434
 \U@D=\dimen184
-\l@unhyphenated=\language9
+\l@unhyphenated=\language88
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -855,16 +863,12 @@ Language: british 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'british' set to \l@english
-(babel)             (\language0). Reported on input line 82.
-Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
-(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@english
-(babel)             (\language0). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@english
-(babel)             (\language0). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language47). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language47). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -914,8 +918,8 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
@@ -1170,35 +1174,57 @@ chapter 1.
 
 ]
 chapter 2.
-[3] [4
+(./chapters/Tensor_Networks/Tensor_Networks.tex
+(./chapters/Tensor_Networks/basics.tex
+<figures/Tensor_Networks/basic_tensor_diagrams.jpeg, id=90, 2502.34875pt x 1003
+.75pt>
+File: figures/Tensor_Networks/basic_tensor_diagrams.jpeg Graphic file (type jpg
+)
+<use figures/Tensor_Networks/basic_tensor_diagrams.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/basic_tensor_diagrams.jpeg  us
+ed on input line 11.
+(pdftex.def)             Requested size: 318.67212pt x 127.8271pt.
+ [3 <./figures/Tensor_Networks/basic_tensor_diagrams.jpeg>]
+<figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg, id=112, 2204.235pt
+ x 1002.74625pt>
+File: figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg Graphic file (
+type jpg)
+<use figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/basic_tensor_network_diagrams.
+jpeg  used on input line 45.
+(pdftex.def)             Requested size: 318.67212pt x 144.9584pt.
+)) [4] [5 <./figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg>] [6
 
 
 ]
 chapter 3.
-[5] [6
+(./chapters/isoDTPS/isoDTPS.tex) [7] [8
 
 
 ]
 chapter 4.
-[7] [8
+(./chapters/Toric_Code/Toric_Code.tex) [9] [10
 
 
 ]
 chapter 5.
-[9] [10
+(./chapters/TFI/TFI.tex) [11] [12
 
 
 ]
 chapter A.
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 7
-5.
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [11] [12] [13]
-[14
+(./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 4
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [13])
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [14] [15] [16
 
 
 ]
 chapter B.
-[15] [16
+[17] [18
 
 
 ]
@@ -1207,7 +1233,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[17
+[19
 
 
 ] (./thesis.aux * soulpos - computing points - it may take a few seconds *
@@ -1222,33 +1248,36 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32239 strings out of 480194
- 637307 string characters out of 5893742
- 1541087 words of memory out of 5000000
- 49681 multiletter control sequences out of 15000+600000
- 482383 words of font info for 107 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 32468 strings out of 478287
+ 642185 string characters out of 5849289
+ 1548531 words of memory out of 5000000
+ 50066 multiletter control sequences out of 15000+600000
+ 486706 words of font info for 133 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
  122i,20n,131p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-bx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (23 pages, 213857 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (25 pages, 450360 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 272 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 31387 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 304 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 37541 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,0 +1,20 @@
+First order optimization algorihms like Gradient Descent and Conjugate Gradients use the gradient of the cost function to update the search direction at each iteration. In the case of the Stiefel manifold and the cost function \eqref{eq:Optimization_cost_function_definition}, we first define the matrix of partial derivatives $D \in \mathbb{C}^{n\times p}$ of $f$ at $X\in\Stiefel$ by
+\begin{equation}
+	\label{eq:Optimization_partial_derivative}
+	D_{ij} \coloneqq \left.\frac{\partial f}{\partial \Re\left(X_{ij}\right)}\right|_{X} + \iu \left.\frac{\partial f}{\partial \Im\left(X_{ij}\right)}\right|_{X}.
+\end{equation}
+With this definition, the directional derivative $\text{D}f(X)[Z]$ at $X\in\Stiefel$ in direction $Z\in\mathbb{C}^{n\times p}$ is simply given by an inner product of $D$ with the direction $Z$, using the Riemannian metric \eqref{eq:Stiefel_manifold_riemannian_metric}:
+\begin{equation}
+	\label{eq:riemannian_optimization_directional_derivative_partial_derivatives}
+	\begin{split}
+		g_X(D, Z) &= \Re\Tr\left(D^\dagger Z\right) = \Re\sum_{ij} D_{ij}^*Z_{ij} \\
+		&= \sum_{ij} \left(\left.\frac{\partial f}{\partial \Re\left(X_{ij}\right)}\right|_{X}\Re Z_{ij} + \left.\frac{\partial f}{\partial \Im\left(X_{ij}\right)}\right|_{X} \Im Z_{ij}\right) \\
+		&\eqqcolon \text{D}f(X)[Z].
+	\end{split}
+\end{equation}
+With this we can now define the gradient $\nabla f(X)$ of $f$ at $X\in\Stiefel$ as the projection of the partial derivative matrix \eqref{eq:Optimization_partial_derivative} to the tangent space \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks}:
+\begin{equation}
+	\label{eq:riemannian_optimization_gradient_of_cost_function}
+	\nabla f(X) \coloneqq P_X D = D - \frac{1}{2}X\left(X^\dagger D + D^\dagger X\right),
+\end{equation}
+where we used the projection \eqref{eq:Stiefel_manifold_project_to_tangent_space}.

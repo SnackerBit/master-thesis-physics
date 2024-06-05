@@ -44,13 +44,27 @@
 \IfFileExists{\jobname.bib}{\addbibresource{\jobname.bib}}{\relax}
 \defbibheading{bibliography}[\bibname]{\chapter{#1}}
 
+
 % AMS packages for equations and math symbols
 \PassOptionsToPackage{intlimits}{amsmath}		% integral limits below and above integrals
 \RequirePackage{amsmath}						% Math symbols
 \RequirePackage{amstext}						% text in math mode with \text{}
 \RequirePackage{nicefrac}						% For having nice fractions of the form a/b, e.g. for units: m/s etc.
+% bold math package: Use bold symbols in math mode
+\RequirePackage{bm}
 \PassOptionsToPackage{showonlyrefs}{mathtools}	% Only show equation number if the equation is referenced somewhere in the document
 \RequirePackage{mathtools}						% Advanced functionality for amsmath.
+
+% Command for linking figures (different link color)
+\newcommand*{\figref}[1]{%
+	\begingroup
+	\hypersetup{
+		linkcolor=blue,
+		linkbordercolor=blue,
+	}%
+	\ref{#1}%
+	\endgroup
+}
 
 % More useful packages
 \RequirePackage{booktabs}	% nice tables

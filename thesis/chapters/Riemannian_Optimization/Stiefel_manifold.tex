@@ -1,0 +1,27 @@
+We define the \textit{complex Stiefel manifold} $\Stiefel$ with $n \ge p$ as the set of all isometric $n\times p$ matrices:
+\begin{equation}
+	\label{eq:Stiefel_manifold_definition}
+	\Stiefel \coloneqq \left\{X\in\mathbb{C}^{n\times p}: X^\dagger X = \id\right\}.
+\end{equation}
+In particular, for $n = p$, the complex Stiefel manifold reduces to the set of unitary matrices $U(n)$. One can show, similar to \cite{cite:optimization_on_matrix_manifolds}, that the complex Stiefel manifold is naturally an embedded submanifold of the Euclidian vector space $\mathbb{C}^{n\times p} \cong \mathbb{R}^{2np}$ of general complex $n\times p$ matrices. \par
+Tangent vectors on manifolds generalize the notion of directional derivatives. A mathematical definition of tangent vectors and tangent spaces of manifolds is given in \cite{cite:optimization_on_matrix_manifolds}. The set of all tangent vectors to a point $X\in\Stiefel$ is called the \textit{tangent space} $T_X \Stiefel$, which is given by \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks}
+\begin{equation}
+	\label{eq:Stiefel_manifold_tangent_space}
+	T_X \Stiefel = \left\{Z\in\mathbb{C}^{n\times p}:X^\dagger Z + Z^\dagger X = 0\right\}.
+\end{equation}
+An arbitrary element $\xi \in \mathbb{C}^{n\times p}$ from the embedding space $\mathbb{C}^{n\times p}$ can be projected to the tangent space $T_X \Stiefel$ by \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks}
+\begin{equation}
+	\label{eq:Stiefel_manifold_project_to_tangent_space}
+	P_X\xi = \xi - \frac{1}{2}X\left(X^\dagger\xi + \xi^\dagger X\right).
+\end{equation}
+Additionally, we will also need to define a notion of length that we can apply to tangent vectors. This can be done in the form of an \textit{inner product} on tangent spaces, called the \textit{Riemannian metric}. A natural metric for the tangent space $T_X \Stiefel$ of the Stiefel manifold is the Euclidean metric of the embedding space $\mathbb{C}^{n\times p}$, which is given by the real part of the Frobenius inner product:
+\begin{equation}
+	\label{eq:Stiefel_manifold_riemannian_metric}
+	g_W: T_X \Stiefel \times T_X \Stiefel \to \mathbb{R}, \quad g_X(\xi_1, \xi_2) = \Re\Tr\left(\xi_1^\dagger\xi_2\right).
+\end{equation}
+Equipped with a Riemannian metric the Stiefel manifold becomes a Riemannian submanifold of $\mathbb{C}^{n\times p}$. \par
+With these definition, we can now formulate the optimization problem as the problem of finding the isometry $W_\text{opt} \in \Stiefel$ that minimizes the cost function
+\begin{equation}
+	\label{eq:Optimization_cost_function_definition}
+	f: \Stiefel \to \mathbb{R}, \quad X \mapsto f(X).
+\end{equation}

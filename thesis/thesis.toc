@@ -2,19 +2,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Tensors and Tensor Networks}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Tensors and Isometries}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Matrix Product States (MPS)}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}isometric Tensor Networks in 2D}{3}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Isometric Diagonal Tensor Networks (isoDTPS)}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Network Structure}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Yang-Baxter Move}{5}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{5}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{7}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{9}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Riemannian Optimization of Isometries}{11}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The complex Stiefel manifold}{11}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Gradients, retractions, and vector transport}{12}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Conjugate Gradients}{13}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Trust Region Method}{13}{section.A.4}%
-\contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{15}{appendix.B}%
-\contentsline {chapter}{\nonumberline Bibliography}{17}{chapter*.5}%
+\contentsline {section}{\numberline {2.2}Matrix Product States (MPS)}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}isometric Tensor Networks in 2D}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Isometric Diagonal Tensor Networks (isoDTPS)}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Network Structure}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Yang-Baxter Move}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{7}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{9}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Riemannian Optimization of Isometries}{13}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The complex Stiefel manifold}{13}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Gradients, retractions, and vector transport}{14}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Conjugate Gradients}{15}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Trust Region Method}{15}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{17}{appendix.B}%
+\contentsline {chapter}{\nonumberline Bibliography}{19}{chapter*.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
