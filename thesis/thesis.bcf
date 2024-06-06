@@ -2347,22 +2347,28 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">cite:optimization_on_matrix_manifolds</bcf:citekey>
-    <bcf:citekey order="2">cite:riemannian_geometry_automatic_differentiation_quantum_physics</bcf:citekey>
-    <bcf:citekey order="2">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
-    <bcf:citekey order="3">cite:pymanopt</bcf:citekey>
-    <bcf:citekey order="4">cite:optimization_on_matrix_manifolds</bcf:citekey>
-    <bcf:citekey order="5">cite:optimization_on_matrix_manifolds</bcf:citekey>
+    <bcf:citekey order="1">cite:isometric_tensor_network_states_in_two_dimensions</bcf:citekey>
+    <bcf:citekey order="1">cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems</bcf:citekey>
+    <bcf:citekey order="2">cite:eckart_young_theorem</bcf:citekey>
+    <bcf:citekey order="3">cite:optimization_on_matrix_manifolds</bcf:citekey>
+    <bcf:citekey order="4">cite:riemannian_geometry_automatic_differentiation_quantum_physics</bcf:citekey>
+    <bcf:citekey order="4">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
+    <bcf:citekey order="5">cite:pymanopt</bcf:citekey>
     <bcf:citekey order="6">cite:optimization_on_matrix_manifolds</bcf:citekey>
-    <bcf:citekey order="6">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
     <bcf:citekey order="7">cite:optimization_on_matrix_manifolds</bcf:citekey>
-    <bcf:citekey order="7">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
     <bcf:citekey order="8">cite:optimization_on_matrix_manifolds</bcf:citekey>
     <bcf:citekey order="8">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
     <bcf:citekey order="9">cite:optimization_on_matrix_manifolds</bcf:citekey>
-    <bcf:citekey order="10">cite:riemannian_geometry_automatic_differentiation_quantum_physics</bcf:citekey>
-    <bcf:citekey order="11">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
-    <bcf:citekey order="12">cite:pymanopt</bcf:citekey>
+    <bcf:citekey order="9">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
+    <bcf:citekey order="10">cite:optimization_on_matrix_manifolds</bcf:citekey>
+    <bcf:citekey order="10">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
+    <bcf:citekey order="11">cite:isometric_tensor_network_states_in_two_dimensions</bcf:citekey>
+    <bcf:citekey order="12">cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems</bcf:citekey>
+    <bcf:citekey order="13">cite:eckart_young_theorem</bcf:citekey>
+    <bcf:citekey order="14">cite:optimization_on_matrix_manifolds</bcf:citekey>
+    <bcf:citekey order="15">cite:riemannian_geometry_automatic_differentiation_quantum_physics</bcf:citekey>
+    <bcf:citekey order="16">cite:riemannian_optimization_isometric_tensor_networks</bcf:citekey>
+    <bcf:citekey order="17">cite:pymanopt</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

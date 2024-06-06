@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  5 JUN 2024 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  6 JUN 2024 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -949,7 +949,11 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `fig:isometries_and_unitaries_diagrams' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -973,8 +977,7 @@ LaTeX Font Info:    ... okay on input line 14.
 Package scrbase Info: activating british \contentsname on input line 14.
 Package scrbase Info: activating british \listfigurename on input line 14.
 Package scrbase Info: activating british \listtablename on input line 14.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count444
 \scratchdimen=\dimen186
@@ -1176,7 +1179,7 @@ chapter 1.
 chapter 2.
 (./chapters/Tensor_Networks/Tensor_Networks.tex
 (./chapters/Tensor_Networks/basics.tex
-<figures/Tensor_Networks/basic_tensor_diagrams.jpeg, id=90, 2502.34875pt x 1003
+<figures/Tensor_Networks/basic_tensor_diagrams.jpeg, id=94, 2502.34875pt x 1003
 .75pt>
 File: figures/Tensor_Networks/basic_tensor_diagrams.jpeg Graphic file (type jpg
 )
@@ -1185,7 +1188,7 @@ Package pdftex.def Info: figures/Tensor_Networks/basic_tensor_diagrams.jpeg  us
 ed on input line 11.
 (pdftex.def)             Requested size: 318.67212pt x 127.8271pt.
  [3 <./figures/Tensor_Networks/basic_tensor_diagrams.jpeg>]
-<figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg, id=112, 2204.235pt
+<figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg, id=116, 2204.235pt
  x 1002.74625pt>
 File: figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg Graphic file (
 type jpg)
@@ -1193,38 +1196,75 @@ type jpg)
 Package pdftex.def Info: figures/Tensor_Networks/basic_tensor_network_diagrams.
 jpeg  used on input line 45.
 (pdftex.def)             Requested size: 318.67212pt x 144.9584pt.
-)) [4] [5 <./figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg>] [6
+ [4]
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 5
+2.
+ (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 5 undefined on input line 54.
 
 
-]
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 5 undefined on input line 54.
+
+<figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg, id=135, 1575.887
+5pt x 1003.75pt>
+File: figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg Graphic file
+ (type jpg)
+<use figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/basic_isometric_tensor_diagram
+s.jpeg  used on input line 57.
+(pdftex.def)             Requested size: 318.67212pt x 202.96725pt.
+)
+Overfull \hbox (31.0601pt too wide) in paragraph at lines 53--3
+[]\OT1/cmr/m/n/10.95 (-20) ], 
+ []
+
+(./chapters/Tensor_Networks/tensor_decompositions.tex [5 <./figures/Tensor_Netw
+orks/basic_tensor_network_diagrams.jpeg>] [6 <./figures/Tensor_Networks/basic_i
+sometric_tensor_diagrams.jpeg>]
+
+LaTeX Warning: Citation 'cite:eckart_young_theorem' on page 7 undefined on inpu
+t line 23.
+
+<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=162, 2130.96124
+pt x 1003.75pt>
+File: figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg Graphic file (
+type jpg)
+<use figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/tensor_decomposition_diagrams.
+jpeg  used on input line 41.
+(pdftex.def)             Requested size: 318.67212pt x 150.09653pt.
+) (./chapters/Tensor_Networks/isometric_tensor_networks.tex)) [7] [8 <./figures
+/Tensor_Networks/tensor_decomposition_diagrams.jpeg>]
 chapter 3.
-(./chapters/isoDTPS/isoDTPS.tex) [7] [8
+(./chapters/isoDTPS/isoDTPS.tex) [9
+
+
+] [10
 
 
 ]
 chapter 4.
-(./chapters/Toric_Code/Toric_Code.tex) [9] [10
+(./chapters/Toric_Code/Toric_Code.tex) [11] [12
 
 
 ]
 chapter 5.
-(./chapters/TFI/TFI.tex) [11] [12
+(./chapters/TFI/TFI.tex) [13] [14
 
 
 ]
 chapter A.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 4
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [13])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [14] [15] [16
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [15])
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [16] [17] [18
 
 
 ]
 chapter B.
-[17] [18
+[19] [20
 
 
 ]
@@ -1233,7 +1273,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[19
+[21
 
 
 ] (./thesis.aux * soulpos - computing points - it may take a few seconds *
@@ -1241,43 +1281,55 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 (./thesis.upa))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32468 strings out of 478287
- 642185 string characters out of 5849289
- 1548531 words of memory out of 5000000
- 50066 multiletter control sequences out of 15000+600000
- 486706 words of font info for 133 fonts, out of 8000000 for 9000
+ 32532 strings out of 478287
+ 644178 string characters out of 5849289
+ 1549541 words of memory out of 5000000
+ 50097 multiletter control sequences out of 15000+600000
+ 487126 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,20n,131p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,21n,131p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (25 pages, 450360 bytes).
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (27 pages, 728128 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
- 61 named destinations out of 1000 (max. 500000)
- 37541 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 344 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 37567 words of extra memory for PDF output out of 42996 (max. 10000000)
 
