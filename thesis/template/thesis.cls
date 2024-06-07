@@ -55,6 +55,7 @@
 \PassOptionsToPackage{showonlyrefs}{mathtools}	% Only show equation number if the equation is referenced somewhere in the document
 \RequirePackage{mathtools}						% Advanced functionality for amsmath.
 
+
 % Command for linking figures (different link color)
 \newcommand*{\figref}[1]{%
 	\begingroup

@@ -1,1 +1,18 @@
-An isometric tensor network is a tensor network whose tensor diagrams bonds can be consistently assigned with arrows. In particular we will look at finite tensor networks with all arrows pointing to a single tenser, the \textit{orthogonality center}. Such networks have very useful properties, which we will explain in the following.
+An isometric tensor network is a tensor network whose tensor diagrams bonds can be consistently assigned with arrows. In particular we will look at finite tensor networks where the arrows do not form any loops. In such networks, all arrows point to a single tensor, the \textit{orthogonality center}. Such networks have the very useful property, that the error of local approximations around the orthogonality center can be computed locally (without contracting the full network). Let $\bm{\mathcal{N}}$ be the tensor that is the result of contracting the full network, and let $\bm{\mathcal{M}}$ be the tensor resulting from the contraction of a subregion of the network around the orthogonality center, where all arrows in the tensor network diagram point towards $\bm{\mathcal{M}}$ (see figure \figref{fig:isometric_tensor_network_local_approximation}(a) for an example in tensor diagram notation). Let us now approximate the sub-network $\bm{\mathcal{M}}$ by a different sub-network $\bm{\mathcal{M}}^\prime$, which changes the contraction of the full network to $\bm{\mathcal{N}}^\prime$ (see \figref{fig:isometric_tensor_network_local_approximation}(b)). We can compute the error $\epsilon$ of this approximation as
+\begin{equation}
+\begin{split}
+	\epsilon^2 &= \lVert\bm{\mathcal{N}}-\bm{\mathcal{N}}^\prime\rVert^2_\text{F} \\
+	&=
+	\left\langle\bm{\mathcal{N}}-\bm{\mathcal{N}}^\prime, \bm{\mathcal{N}}-\bm{\mathcal{N}}^\prime\right\rangle_\text{F} \\
+	&= \lVert\bm{\mathcal{N}}\rVert_\text{F} + \lVert\bm{\mathcal{N}}^\prime\rVert_\text{F} - 2\Re\left\langle\bm{\mathcal{N}},\bm{\mathcal{N}}^\prime\right\rangle_\text{F} \\
+	&= \lVert\bm{\mathcal{M}}\rVert_\text{F} + \lVert\bm{\mathcal{M}}^\prime\rVert_\text{F} - 2\Re\left\langle\bm{\mathcal{M}},\bm{\mathcal{M}}^\prime\right\rangle_\text{F} \\
+	&= \lVert\bm{\mathcal{M}}-\bm{\mathcal{M}}^\prime\rVert^2_\text{F},
+\end{split}
+\end{equation}
+where in the fourth step we used the fact that all tensors outside of the sub-network satisfy the isometry condition. As an example, the contraction of $\Tr\left(\bm{\mathcal{N}}\bm{\mathcal{N}}^{\prime\dagger}\right)$ is shown in figure \figref{fig:isometric_tensor_network_local_approximation}(c). As one can see, the computation of the error reduces to a contraction of the sub-networks. This greatly simplifies the computation of optimal approximations of tensors, because the full network doesn't need to be contracted. When the tensor network represents a quantum state, this also makes it very easy to compute local expectation values, because the computation of the overlap can be simplified to a contraction of a local environment around the orthogonality center.
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg}
+	\caption{(a) An isometric tensor network $\bm{\mathcal{N}}$ with the orthogonality center depicted in orange. The sub-network $\bm{\mathcal{M}}$ is made up of all tensors in the red region. (b) The isometric tensor network $\bm{\mathcal{N}}^\prime$ with an updated sub-network $\bm{\mathcal{M}}^\prime$. (c) The computation of the trace $\Tr\left(\bm{\mathcal{N}}\bm{\mathcal{N}}^\prime\right)$ reduces to a contraction of the subregions $\Tr\left(\bm{\mathcal{M}}\bm{\mathcal{M}}^\prime\right)$ because of the isometry condition.}
+	\label{fig:isometric_tensor_network_local_approximation}
+\end{figure}

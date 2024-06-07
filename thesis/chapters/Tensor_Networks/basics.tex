@@ -51,10 +51,21 @@ Given two normed vector spaces $V_1$ and $V_2$ with $\dim\left(V_1\right) = m$, 
 	\label{eq:isometry_condition_general}
 	\bm{W}^\dagger\bm{W} = \id, \quad \bm{W}\bm{W}^\dagger = \mathbb{P},
 \end{equation}
-where $\mathbb{P} = \mathbb{P}^2$ is a projection. If $m = n$, it holds $\mathbb{P} = \id$ and $W$ is a \textit{unitary map}. An isometry tensor is a tensor that through grouping of indices and reshaping (i.e. matricization) becomes an isometry. In tensor network diagrams, we draw isometries by decorating lines with arrows. Following \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, we denote the indices belonging to the larger vector space by incoming arrows and the indices belonging to the smaller vector space by outgoing arrows. Unitary tensors are decorated with bidirectional arrows on all indices, where the grouping must be inferred from the context. Ordinary tensors are drawn without arrows. Tensor diagrams for isometric and unitary tensors are shown in figure \figref{fig:isometries_and_unitaries_diagrams}.
+where $\mathbb{P} = \mathbb{P}^2$ is a projection. If $m = n$, it holds $\mathbb{P} = \id$ and $W$ is a \textit{unitary map}. An isometry tensor is a tensor that through grouping of indices and reshaping (i.e. matricization) becomes an isometry. In tensor network diagrams, we draw isometries by decorating lines with arrows. Following \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, we denote the indices belonging to the larger vector space by incoming arrows and the indices belonging to the smaller vector space by outgoing arrows. Unitary tensors are decorated with bidirectional arrows on all indices, where the grouping must be inferred from the context. Ordinary tensors are drawn without arrows. Tensor diagrams for isometric and unitary tensors are shown in figure \figref{fig:isometries_and_unitaries_diagrams}.\par
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg}
 	\caption{Isometric and unitary tensors are drawn by decorating indices with arrows. (a) diagrammatic notation of an isometric matrix (b) (c) The isometry condition \eqref{eq:isometry_condition_general} is depicted diagrammatically. (d) Isometric tensors of higher rank must fulfill the isometry condition by grouping of indices.\todo{Add unitary tensor as well with double arrows}}
 	\label{fig:isometries_and_unitaries_diagrams}
 \end{figure}
+We lastly introduce an inner product for rank-$n$ tensors $\bm{A}, \bm{B} \in \mathbb{C}^{\chi_1\times\dots\times\chi_n}$, the \textit{Frobenius inner product}
+\begin{equation}
+	\label{eq:frobenius_inner_product}
+	\left\langle \bm{A}, \bm{B}\right\rangle_\text{F} \coloneqq \sum_{\alpha_1=1}^{\chi_1} \dots \sum_{\alpha_n=1}^{\chi_n} A_{\alpha_1\dots\alpha_n}^*B_{\alpha_1\dots\alpha_n} = \Tr\left(\bm{A}^\dagger\bm{B}\right),
+\end{equation}
+where the last equality holds only if $n = 2$. The Frobenius inner product induces a norm, the \textit{Frobenius norm}
+\begin{equation}
+	\label{eq:frobenius_norm}
+	\lVert\bm{A}\rVert_\text{F} = \sqrt{\left\langle\bm{A}, \bm{A}\right\rangle_\text{F}},
+\end{equation}
+which can also be used to define a measure of distance $\lVert\bm{A}-\bm{A}\rVert_\text{F}$ between tensors $\bm{A}$ and $\bm{B}$.
