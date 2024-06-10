@@ -1,0 +1,14 @@
+Matrix Product States (MPS) have been very successful in solving a variety of problems in one- and two-dimensional lattices. Applications include finding ground and thermal states, real time evolution, and computation of dynamical properties of lattice Hamiltonians. In the following we give a brief introduction to MPS, for a more in-depth discussion see \cite{cite:DMRG_in_the_age_of_MPS, cite:practical_introduction_MPS_and_PEPS, cite:tenpy}. \par
+The state of a quantum many-body system can be written as
+\begin{equation}
+	\left|\Psi\right\rangle = \sum_{i_1=1}^{d_1} \sum_{i_2=1}^{d_2} \dots \sum_{i_N=1}^{d_N} \Psi_{i_1i_2\dots i_N} \left|i_1\right\rangle \otimes \left|i_2\right\rangle \otimes \dots \otimes \left|i_N\right\rangle.
+\end{equation}
+where N is the number of subsystems (e.g. lattice sites or particles), and $\left\{\left|i_1\right\rangle \otimes \left|i_2\right\rangle \otimes \dots \otimes \left|i_N\right\rangle\right\}$ is a set of basis vectors of the full many-body Hilbert space
+\begin{equation}
+	\mathcal{H} = \bigotimes_{j=1}^{N} \mathcal{H}_j,
+\end{equation}
+with $\dim\left(\mathcal{H}_j\right) = d_j$ the dimension of the local Hilbert space of subsystem $j$. To simplify the notation, we will assume that the dimension of all local subsystems is the same, $d_j = d$. However, the following can easily be generalized to subsystems of different dimensions. The $d^N$ complex numbers $\Psi_{i_1i_2\dots i_N}$ fully describe the quantum many-body state, and one can think of $\Psi\in\mathbb{C}^{d\times\cdots\times d}$ as a tensor of rank $N$. However, due to the size of the tensor scaling exponentially with system size, only very small system sizes are accessible computationally. One can proceed by writing $\Psi$ by a tensor network of smaller tensors. A \textit{Matrix Product State} (MPS) does this by introducing $N$ rank-3 tensors $A^{[n]}\in\mathbb{C}^{d\times \chi_{n-1}\times \chi_{n}}$ and contracting them in a chain as
+\begin{equation}
+		\Psi_{i_1i_2\dots i_N} \coloneqq \sum_{\alpha_1=1}^{\chi_1} \sum_{\alpha_2=1}^{\chi_2}\dots\sum_{\alpha_{N-1}=1}^{\chi_{N-1}}
+		 A^{[1]}_{i_11\alpha_1} A^{[1]}_{i_2\alpha_1\alpha_2} \dots A^{[N]}_{i_N\alpha_N1}.¸
+\end{equation}
