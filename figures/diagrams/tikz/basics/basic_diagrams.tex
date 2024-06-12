@@ -1,0 +1,38 @@
+\documentclass[crop, tikz]{standalone}
+\input{../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\def \X {3}
+		\def \Y {3}
+		\def \orthoX {2}
+		
+		\foreach \y in {1, ..., \Y}
+		{
+			\foreach \x in {1, ..., \X} {
+				\node[tensorPhysical] (T1 \x \y) at (\x*\xOffsetUnitCell, \y*\yOffsetUnitCell) {};
+				\node[tensorPhysical] (T2 \x \y) at ({(\x+0.5)*\xOffsetUnitCell}, {(\y+0.5)*\yOffsetUnitCell}) {};
+				\begin{pgfonlayer}{bg}
+					\draw[virtualLeg] (T1 \x \y) -- (T2 \x \y);
+				\end{pgfonlayer}
+			}
+		}
+	
+		\foreach \y in {1, ..., 10} {
+			\ifthenelse{Mod(\y, 2)==0}{
+				\node[tensorAuxillary] (temp) at (\y, \y) {};
+			}{}
+		}
+	
+		
+		
+		%\node[tensorOrthoCenter] (A1) at (0, 0) {};
+		%\node[tensorAuxillary] (A2) at (0, 4) {};
+		%\node[tensorPhysical] (T1) at (2, 1) {};
+		
+		%\begin{pgfonlayer}{bg}
+		%	\draw[virtualLeg] (A1) -- (A2);
+		%	\draw[physicalLegR] (T1) -- ++(0, \yOffsetPhysicalLeg);
+		%\end{pgfonlayer}
+		
+\end{tikzpicture}
+\end{document}

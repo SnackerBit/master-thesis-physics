@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  10 JUN 2024 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  12 JUN 2024 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,7 +518,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip85
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language87
+\blx@langwohyphens=\language8
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -852,7 +852,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count434
 \U@D=\dimen184
-\l@unhyphenated=\language88
+\l@unhyphenated=\language9
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -863,12 +863,16 @@ Language: british 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language47). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language47). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -1228,8 +1232,12 @@ Package pdftex.def Info: figures/Tensor_Networks/isometric_tensor_network_local
 _approximation.jpeg  used on input line 15.
 (pdftex.def)             Requested size: 398.33864pt x 168.0471pt.
 )
-(./chapters/Tensor_Networks/matrix_product_states.tex [9] [10 <./figures/Tensor
-_Networks/isometric_tensor_network_local_approximation.jpeg>])) [11] [12
+(./chapters/Tensor_Networks/matrix_product_states.tex [9]
+
+LaTeX Warning: Command \c invalid in math mode on input line 13.
+
+[10 <./figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpe
+g>])) [11] [12
 
 
 ]
@@ -1280,12 +1288,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32609 strings out of 478287
- 647717 string characters out of 5849289
- 1550813 words of memory out of 5000000
- 50150 multiletter control sequences out of 15000+600000
+ 32614 strings out of 480194
+ 647774 string characters out of 5893742
+ 1546044 words of memory out of 5000000
+ 49918 multiletter control sequences out of 15000+600000
  487171 words of font info for 141 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  122i,21n,131p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
@@ -1307,7 +1315,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (32 pages, 1007167 bytes).
+Output written on thesis.pdf (32 pages, 1007276 bytes).
 PDF statistics:
  503 PDF objects out of 1000 (max. 8388607)
  402 compressed objects within 5 object streams
