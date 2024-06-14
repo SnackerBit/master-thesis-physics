@@ -3,16 +3,9 @@
 \begin{document}
 	\begin{tikzpicture}
 		
-		
-		\draw[virtualLeg] (0, -2) -- ++(2, 0);
-		\draw[physicalLeg] (0, -4) -- ++(2, 0);
-		
-		\draw[virtualLeg] (3, -2) -- ++(4.32, 0);
-		\draw[physicalLeg] (3, -4) -- ++(4.32, 0);
-		
-		\def \X {3}
-		\def \Y {3}
-		\def \orthoX {2}
+		\def \X {4}
+		\def \Y {4}
+		\def \orthoX {4}
 		
 		\pgfmathsetmacro\Xm{\X-1}
 		\pgfmathsetmacro\Ym{\X-1}
@@ -23,63 +16,179 @@
 		\foreach \y in {0, ..., \Ym}
 		{
 			\foreach \x in {0, ..., \Xm} 
-			{
-				\node[tensorPhysical] (T1 \x \y) at (\x*\xOffsetUnitCell, \y*\yOffsetUnitCell) {};
-				\node[tensorPhysical] (T2 \x \y) at ({(\x+0.5)*\xOffsetUnitCell}, {(\y+0.5)*\yOffsetUnitCell}) {};
-				\begin{pgfonlayer}{bg}
-					\draw[physicalLeg] (T1 \x \y.north)+(0, \yOffsetPhysicalLeg) -- (T1 \x \y);
-					\draw[physicalLeg] (T2 \x \y.north)+(0, \yOffsetPhysicalLeg) -- (T2 \x \y);
-				\end{pgfonlayer}
-			}
+				{
+					\node[tensorPhysical] (T1-\x-\y) at (\x*\xOffsetUnitCell, \y*\yOffsetUnitCell) {};
+					\node[tensorPhysical] (T2-\x-\y) at ({(\x+0.5)*\xOffsetUnitCell}, {(\y+0.5)*\yOffsetUnitCell}) {};
+					\begin{pgfonlayer}{bg}
+						\draw[physicalLeg] (T1-\x-\y.north)+(0, \yOffsetPhysicalLeg) -- (T1-\x-\y);
+						\draw[physicalLeg] (T2-\x-\y.north)+(0, \yOffsetPhysicalLeg) -- (T2-\x-\y);
+					\end{pgfonlayer}
+				}
 		}
+		
+		% Draw auxillary tensors
+		\foreach \y in {0, ..., 3} 
+		{
+			\node[tensorAuxillary] (W-\y) at ({(\orthoX*0.5+0.25)*\xOffsetUnitCell}, {(\y*0.5+0.25)*\yOffsetUnitCell}) {};	
+		}
+		% Orthogonality center
+		\node[tensorOrthoCenter] (W-4) at ({(\orthoX*0.5+0.25)*\xOffsetUnitCell}, {(4*0.5+0.25)*\yOffsetUnitCell}) {};
+		\foreach \y in {5, ..., \Yaux} 
+		{
+			\node[tensorAuxillary] (W-\y) at ({(\orthoX*0.5+0.25)*\xOffsetUnitCell}, {(\y*0.5+0.25)*\yOffsetUnitCell}) {};	
+		}
+	
+		% Draw virtual legs
+		\begin{pgfonlayer}{bg}
+			% Upper right
+			\draw[virtualLeg] (T1-0-0) -- (T2-0-0);
+			\draw[virtualLeg] (T1-0-1) -- (T2-0-1);
+			\draw[virtualLeg] (T1-0-2) -- (T2-0-2);
+			\draw[virtualLeg] (T1-0-3) -- (T2-0-3);
+			\draw[virtualLeg] (T1-1-0) -- (T2-1-0);
+			\draw[virtualLeg] (T1-1-1) -- (T2-1-1);
+			\draw[virtualLeg] (T1-1-2) -- (T2-1-2);
+			\draw[virtualLeg] (T1-1-3) -- (T2-1-3);
+			\draw[virtualLeg] (T1-2-0) -- (W-0);
+			\draw[virtualLeg] (T2-2-0) -- (W-0);
+			\draw[virtualLeg] (T1-2-1) -- (W-2);
+			\draw[virtualLeg] (T2-2-1) -- (W-2);
+			\draw[virtualLeg] (T1-2-2) -- (W-4);
+			\draw[virtualLeg] (T2-2-2) -- (W-4);
+			\draw[virtualLeg] (T1-2-3) -- (W-6);
+			\draw[virtualLeg] (T2-2-3) -- (W-6);
+			\draw[virtualLeg] (T2-3-0) -- (T1-3-0);
+			\draw[virtualLeg] (T2-3-1) -- (T1-3-1);
+			\draw[virtualLeg] (T2-3-2) -- (T1-3-2);
+			\draw[virtualLeg] (T2-3-3) -- (T1-3-3);
+			% Lower right
+			\draw[virtualLeg] (T1-0-1) -- (T2-0-0);
+			\draw[virtualLeg] (T1-0-2) -- (T2-0-1);
+			\draw[virtualLeg] (T1-0-3) -- (T2-0-2);
+			\draw[virtualLeg] (T1-1-1) -- (T2-1-0);
+			\draw[virtualLeg] (T1-1-2) -- (T2-1-1);
+			\draw[virtualLeg] (T1-1-3) -- (T2-1-2);
+			\draw[virtualLeg] (T1-2-1) -- (W-1);
+			\draw[virtualLeg] (T2-2-0) -- (W-1);
+			\draw[virtualLeg] (T1-2-2) -- (W-3);
+			\draw[virtualLeg] (T2-2-1) -- (W-3);
+			\draw[virtualLeg] (T1-2-3) -- (W-5);
+			\draw[virtualLeg] (T2-2-2) -- (W-5);
+			\draw[virtualLeg] (T2-3-0) -- (T1-3-1);
+			\draw[virtualLeg] (T2-3-1) -- (T1-3-2);
+			\draw[virtualLeg] (T2-3-2) -- (T1-3-3);
+			% Lower left
+			\draw[virtualLeg] (T2-0-0) -- (T1-1-1);
+			\draw[virtualLeg] (T2-0-1) -- (T1-1-2);
+			\draw[virtualLeg] (T2-0-2) -- (T1-1-3);
+			\draw[virtualLeg] (T2-1-0) -- (T1-2-1);
+			\draw[virtualLeg] (T2-1-1) -- (T1-2-2);
+			\draw[virtualLeg] (T2-1-2) -- (T1-2-3);
+			\draw[virtualLeg] (T1-3-1) -- (T2-2-0);
+			\draw[virtualLeg] (T1-3-2) -- (T2-2-1);
+			\draw[virtualLeg] (T1-3-3) -- (T2-2-2);
+			% Upper Left
+			\draw[virtualLeg] (T2-0-0) -- (T1-1-0);
+			\draw[virtualLeg] (T2-0-1) -- (T1-1-1);
+			\draw[virtualLeg] (T2-0-2) -- (T1-1-2);
+			\draw[virtualLeg] (T2-0-3) -- (T1-1-3);
+			\draw[virtualLeg] (T2-1-0) -- (T1-2-0);
+			\draw[virtualLeg] (T2-1-1) -- (T1-2-1);
+			\draw[virtualLeg] (T2-1-2) -- (T1-2-2);
+			\draw[virtualLeg] (T2-1-3) -- (T1-2-3);
+			\draw[virtualLeg] (T1-3-0) -- (T2-2-0);
+			\draw[virtualLeg] (T1-3-1) -- (T2-2-1);
+			\draw[virtualLeg] (T1-3-2) -- (T2-2-2);
+			\draw[virtualLeg] (T1-3-3) -- (T2-2-3);
+		\end{pgfonlayer}
+		
+		% Draw auxillary legs
+		\begin{pgfonlayer}{bg}
+			\draw[auxillaryLeg] (W-0) -- (W-1);
+			\draw[auxillaryLeg] (W-1) -- (W-2);
+			\draw[auxillaryLeg] (W-2) -- (W-3);
+			\draw[auxillaryLeg] (W-3) -- (W-4);
+			\draw[auxillaryLeg] (W-5) -- (W-4);
+			\draw[auxillaryLeg] (W-6) -- (W-5);
+		\end{pgfonlayer}
+		
+		
+		%\draw[virtualLeg] (0, -2) -- ++(2, 0);
+		%\draw[physicalLeg] (0, -4) -- ++(2, 0);
+		
+		%\draw[virtualLeg] (3, -2) -- ++(4.32, 0);
+		%\draw[physicalLeg] (3, -4) -- ++(4.32, 0);
+		
+		%\def \X {3}
+		%\def \Y {3}
+		%\def \orthoX {2}
+		
+		%\pgfmathsetmacro\Xm{\X-1}
+		%\pgfmathsetmacro\Ym{\X-1}
+		%\pgfmathsetmacro\Yaux{2*\X-2}
+		%\pgfmathsetmacro\orthoXhalf{\orthoX/2}
+		
+		% Draw physical tensors and and physical legs in each unit cell
+		%	\foreach \y in {0, ..., \Ym}
+		%{
+		%	\foreach \x in {0, ..., \Xm} 
+		%	{
+		%		\node[tensorPhysical] (T1 \x \y) at (\x*\xOffsetUnitCell, \y*\yOffsetUnitCell) {};
+		%		\node[tensorPhysical] (T2 \x \y) at ({(\x+0.5)*\xOffsetUnitCell}, {(\y+0.5)*\yOffsetUnitCell}) {};
+		%	\begin{pgfonlayer}{bg}
+		%			\draw[physicalLeg] (T1 \x \y.north)+(0, \yOffsetPhysicalLeg) -- (T1 \x \y);
+		%			\draw[physicalLeg] (T2 \x \y.north)+(0, \yOffsetPhysicalLeg) -- (T2 \x \y);
+		%		\end{pgfonlayer}
+		%	}
+		%}
 	
 		% Draw auxillary tensors
-		\foreach \y in {0, ..., \Yaux} {
-			\node[tensorAuxillary] (W \y) at ({(\orthoX*0.5+0.25)*\xOffsetUnitCell}, {(\y*0.5+0.25)*\yOffsetUnitCell}) {};	
-		}
+		%\foreach \y in {0, ..., \Yaux} {
+		%	\node[tensorAuxillary] (W \y) at ({(\orthoX*0.5+0.25)*\xOffsetUnitCell}, {(\y*0.5+0.25)*\yOffsetUnitCell}) {};	
+		%}
 	
 		% Draw virtual legs starting from each T1 tensor
-		\begin{pgfonlayer}{bg}
-			\foreach \y [evaluate=\y as \ya using {int(2*\y)}] [evaluate=\y as \yp using {int(\y+1)}] [evaluate=\y as \ym using {int(\y-1)}] in {0, ..., \Ym} 
-			{
-				\foreach \x [evaluate=\x as \xm using {int(\x-1)}] [evaluate=\x as \xp using {int(\x+1)}] in {0, ..., \Xm}
-				{
-					% Define some variables
-					%\pgfmathsetmacro\xm{int(\x-1)}
-					%\pgfmathsetmacro\xp{int(\x+1)}
-					% Upper right leg
-					\ifthenelse{\x < \orthoXhalf}
-					{
-						\draw[virtualLeg] (T1 \x \y) -- (T2 \x \y);
-					}
-					{
-						\ifthenelse{\x = \orthoXhalf}
-						{
-							\draw[virtualLeg] (T1 \x \y) -- (W \ya);
-							\draw[virtualLeg] (T2 \x \y) -- (W \ya);
-						}
-						{
-							\draw[virtualLeg] (T2 \x \y) -- (T1 \x \y);
-						}
-					}
-					% Upper left leg
-					\ifthenelse{\x > 0}
-					{
-						\draw[virtualLeg] (T1 \x \y) -- (T2 \xm \y);
-					} {}
-					% Lower right leg
-					\ifthenelse{\y > 0}
-					{
-						\draw[virtualLeg] (T1 \x \y) -- (T2 \x \ym);
-					} {}
-					% Lower left leg
-					\ifthenelse{\x > 0 \and \y > 0}
-					{
-						\draw[virtualLeg] (T1 \x \y) -- (T2 \xm \ym);
-					} {}
-					}	
-			}
-		\end{pgfonlayer}
+		%\begin{pgfonlayer}{bg}
+		%	\foreach \y [evaluate=\y as \ya using {int(2*\y)}] [evaluate=\y as \yp using {int(\y+1)}] [evaluate=\y as \ym using {int(\y-1)}] in {0, ..., \Ym} 
+		%	{
+		%		\foreach \x [evaluate=\x as \xm using {int(\x-1)}] [evaluate=\x as \xp using {int(\x+1)}] in {0, ..., \Xm}
+		%		{
+		%			% Define some variables
+		%			%\pgfmathsetmacro\xm{int(\x-1)}
+		%			%\pgfmathsetmacro\xp{int(\x+1)}
+		%			% Upper right leg
+		%			\ifthenelse{\x < \orthoXhalf}
+		%			{
+		%				\draw[virtualLeg] (T1 \x \y) -- (T2 \x \y);
+		%			}
+		%			{
+		%				\ifthenelse{\x = \orthoXhalf}
+		%				{
+		%					\draw[virtualLeg] (T1 \x \y) -- (W \ya);
+		%					\draw[virtualLeg] (T2 \x \y) -- (W \ya);
+		%				}
+		%				{
+		%					\draw[virtualLeg] (T2 \x \y) -- (T1 \x \y);
+		%				}
+		%			}
+		%			% Upper left leg
+		%			\ifthenelse{\x > 0}
+		%			{
+		%				\draw[virtualLeg] (T1 \x \y) -- (T2 \xm \y);
+		%			} {}
+		%			% Lower right leg
+		%			\ifthenelse{\y > 0}
+		%			{
+		%				\draw[virtualLeg] (T1 \x \y) -- (T2 \x \ym);
+		%			} {}
+		%			% Lower left leg
+		%			\ifthenelse{\x > 0 \and \y > 0}
+		%			{
+		%				\draw[virtualLeg] (T1 \x \y) -- (T2 \xm \ym);
+		%			} {}
+		%			}	
+		%	}
+		%\end{pgfonlayer}
 	
 		% Draw remaining virtual legs of physical tensors
 	
