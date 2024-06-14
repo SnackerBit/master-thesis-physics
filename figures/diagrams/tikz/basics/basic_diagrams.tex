@@ -2,28 +2,93 @@
 \input{../style.tex}
 \begin{document}
 	\begin{tikzpicture}
+		
+		
+		\draw[virtualLeg] (0, -2) -- ++(2, 0);
+		\draw[physicalLeg] (0, -4) -- ++(2, 0);
+		
+		\draw[virtualLeg] (3, -2) -- ++(4.32, 0);
+		\draw[physicalLeg] (3, -4) -- ++(4.32, 0);
+		
 		\def \X {3}
 		\def \Y {3}
 		\def \orthoX {2}
 		
-		\foreach \y in {1, ..., \Y}
+		\pgfmathsetmacro\Xm{\X-1}
+		\pgfmathsetmacro\Ym{\X-1}
+		\pgfmathsetmacro\Yaux{2*\X-2}
+		\pgfmathsetmacro\orthoXhalf{\orthoX/2}
+		
+		% Draw physical tensors and and physical legs in each unit cell
+		\foreach \y in {0, ..., \Ym}
 		{
-			\foreach \x in {1, ..., \X} {
+			\foreach \x in {0, ..., \Xm} 
+			{
 				\node[tensorPhysical] (T1 \x \y) at (\x*\xOffsetUnitCell, \y*\yOffsetUnitCell) {};
 				\node[tensorPhysical] (T2 \x \y) at ({(\x+0.5)*\xOffsetUnitCell}, {(\y+0.5)*\yOffsetUnitCell}) {};
 				\begin{pgfonlayer}{bg}
-					\draw[virtualLeg] (T1 \x \y) -- (T2 \x \y);
+					\draw[physicalLeg] (T1 \x \y.north)+(0, \yOffsetPhysicalLeg) -- (T1 \x \y);
+					\draw[physicalLeg] (T2 \x \y.north)+(0, \yOffsetPhysicalLeg) -- (T2 \x \y);
 				\end{pgfonlayer}
 			}
 		}
 	
-		\foreach \y in {1, ..., 10} {
-			\ifthenelse{Mod(\y, 2)==0}{
-				\node[tensorAuxillary] (temp) at (\y, \y) {};
-			}{}
+		% Draw auxillary tensors
+		\foreach \y in {0, ..., \Yaux} {
+			\node[tensorAuxillary] (W \y) at ({(\orthoX*0.5+0.25)*\xOffsetUnitCell}, {(\y*0.5+0.25)*\yOffsetUnitCell}) {};	
 		}
 	
+		% Draw virtual legs starting from each T1 tensor
+		\begin{pgfonlayer}{bg}
+			\foreach \y [evaluate=\y as \ya using {int(2*\y)}] [evaluate=\y as \yp using {int(\y+1)}] [evaluate=\y as \ym using {int(\y-1)}] in {0, ..., \Ym} 
+			{
+				\foreach \x [evaluate=\x as \xm using {int(\x-1)}] [evaluate=\x as \xp using {int(\x+1)}] in {0, ..., \Xm}
+				{
+					% Define some variables
+					%\pgfmathsetmacro\xm{int(\x-1)}
+					%\pgfmathsetmacro\xp{int(\x+1)}
+					% Upper right leg
+					\ifthenelse{\x < \orthoXhalf}
+					{
+						\draw[virtualLeg] (T1 \x \y) -- (T2 \x \y);
+					}
+					{
+						\ifthenelse{\x = \orthoXhalf}
+						{
+							\draw[virtualLeg] (T1 \x \y) -- (W \ya);
+							\draw[virtualLeg] (T2 \x \y) -- (W \ya);
+						}
+						{
+							\draw[virtualLeg] (T2 \x \y) -- (T1 \x \y);
+						}
+					}
+					% Upper left leg
+					\ifthenelse{\x > 0}
+					{
+						\draw[virtualLeg] (T1 \x \y) -- (T2 \xm \y);
+					} {}
+					% Lower right leg
+					\ifthenelse{\y > 0}
+					{
+						\draw[virtualLeg] (T1 \x \y) -- (T2 \x \ym);
+					} {}
+					% Lower left leg
+					\ifthenelse{\x > 0 \and \y > 0}
+					{
+						\draw[virtualLeg] (T1 \x \y) -- (T2 \xm \ym);
+					} {}
+					}	
+			}
+		\end{pgfonlayer}
+	
+		% Draw remaining virtual legs of physical tensors
+	
 		
+		%\foreach \y in {1, ..., 10} {
+		%	\ifthenelse{Mod(\y, 2)==0}{
+		%		\node[tensorAuxillary] (temp) at (\y, \y) {};
+		%	}{}
+		%}
 		
 		%\node[tensorOrthoCenter] (A1) at (0, 0) {};
 		%\node[tensorAuxillary] (A2) at (0, 4) {};
@@ -34,5 +99,5 @@
 		%	\draw[physicalLegR] (T1) -- ++(0, \yOffsetPhysicalLeg);
 		%\end{pgfonlayer}
 		
-\end{tikzpicture}
+	\end{tikzpicture}
 \end{document}
