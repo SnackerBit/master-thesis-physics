@@ -11,6 +11,14 @@
 \lowertitleback{Erstgutachter (Themensteller): Prof.\ F.~Pollmann\\
 	Zweitgutachter: Unknown}
 
+\makeatletter
+\renewcommand*\subcaption@label{%
+	\caption@withoptargs\subcaption@@label}
+\makeatother
+
+% For aligning subfigures vertically
+\newsavebox{\largestimage}
+
 \begin{document}
 	\frontmatter
 	\maketitle

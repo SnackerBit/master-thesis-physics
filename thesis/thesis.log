@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.26)  14 JUN 2024 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  17 JUN 2024 14:06
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -518,7 +518,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip85
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language87
+\blx@langwohyphens=\language8
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -858,7 +858,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count436
 \U@D=\dimen184
-\l@unhyphenated=\language88
+\l@unhyphenated=\language9
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -869,12 +869,16 @@ Language: british 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language85). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language85). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -950,6 +954,7 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 )
+\largestimage=\box59
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -958,33 +963,33 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-Package scrbase Info: activating british \contentsname on input line 14.
-Package scrbase Info: activating british \listfigurename on input line 14.
-Package scrbase Info: activating british \listtablename on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+Package scrbase Info: activating british \contentsname on input line 22.
+Package scrbase Info: activating british \listfigurename on input line 22.
+Package scrbase Info: activating british \listtablename on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count446
 \scratchdimen=\dimen186
-\scratchbox=\box59
+\scratchbox=\box60
 \nofMPsegments=\count447
 \nofMParguments=\count448
 \everyMPshowfont=\toks26
@@ -994,7 +999,7 @@ Package scrbase Info: activating british \listtablename on input line 14.
 \makeMPintoPDFobject=\count451
 \everyMPtoPDFconversion=\toks27
 )
-Package soulpos Info: Loading soulutf8 on input line 14.
+Package soulpos Info: Loading soulutf8 on input line 22.
  (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 
@@ -1010,7 +1015,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen189
 \SOUL@ulht=\dimen190
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1020,9 +1025,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count452
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
@@ -1035,7 +1040,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 14.
+(scrbook)           before \begin{document} on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1063,9 +1068,17 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
-(./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+(./thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                bibid
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 22.
+Package biblatex Info: Reference segment=0 on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -1085,21 +1098,21 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 14.
-Package microtype Info: Applying patch `item' on input line 14.
-Package microtype Info: Applying patch `toc' on input line 14.
+LaTeX Info: Redefining \microtypecontext on input line 22.
+Package microtype Info: Applying patch `item' on input line 22.
+Package microtype Info: Applying patch `toc' on input line 22.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 14.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 22.
 
-Package microtype Info: Applying patch `footnote' on input line 14.
+Package microtype Info: Applying patch `footnote' on input line 22.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 14.
+LaTeX Info: Redefining \showhyphens on input line 22.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1118,14 +1131,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 <template/pictures/PH.pdf, id=4, 29.8716pt x 29.8716pt>
 File: template/pictures/PH.pdf Graphic file (type pdf)
 <use template/pictures/PH.pdf>
-Package pdftex.def Info: template/pictures/PH.pdf  used on input line 16.
+Package pdftex.def Info: template/pictures/PH.pdf  used on input line 24.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <template/pictures/TUM.pdf, id=5, 53.24893pt x 28.45631pt>
 File: template/pictures/TUM.pdf Graphic file (type pdf)
 <use template/pictures/TUM.pdf>
-Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 16.
+Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 24.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1134,7 +1147,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1156,9 +1169,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [3]
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 36.
+ line 44.
  [4]
-Package tocbasic Info: character protrusion at toc deactivated on input line 38
+Package tocbasic Info: character protrusion at toc deactivated on input line 46
 .
  (./thesis.toc)
 \tf@toc=\write6
@@ -1182,72 +1195,84 @@ chapter 1.
 chapter 2.
 (./chapters/Tensor_Networks/Tensor_Networks.tex
 (./chapters/Tensor_Networks/basics.tex
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=99, 16.99
-951pt x 16.99951pt>
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=99, 62.34
+793pt x 59.38084pt>
+File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf Graphic 
+file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
+rams_d.pdf  used on input line 13.
+(pdftex.def)             Requested size: 62.34776pt x 59.38068pt.
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=100, 16.9
+9951pt x 16.99951pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
-rams_a.pdf  used on input line 14.
+rams_a.pdf  used on input line 20.
 (pdftex.def)             Requested size: 16.99947pt x 16.99947pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=100, 49.5
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=101, 49.5
 5513pt x 16.99951pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
-rams_b.pdf  used on input line 20.
+rams_b.pdf  used on input line 27.
 (pdftex.def)             Requested size: 49.555pt x 16.99947pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=101, 82.7
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=102, 82.7
 341pt x 16.99951pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
-rams_c.pdf  used on input line 26.
+rams_c.pdf  used on input line 34.
 (pdftex.def)             Requested size: 82.73389pt x 16.99947pt.
-
-Overfull \hbox (3.06738pt too wide) in paragraph at lines 26--27
- [][] 
- []
-
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=102, 62.3
-4793pt x 59.38084pt>
-File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf Graphic 
+ [3 <./figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf> <./fig
+ures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf> <./figures/tikz/
+Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf> <./figures/tikz/Tensor_Net
+works/basic_diagrams/basic_diagrams_d.pdf>] [4]
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf, id=171, 84.5
+7397pt x 90.03737pt>
+File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf Graphic 
 file (type pdf)
-<use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf>
-Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
-rams_d.pdf  used on input line 32.
-(pdftex.def)             Requested size: 62.34776pt x 59.38068pt.
-[3 <./figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf> <./figu
-res/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf> <./figures/tikz/T
-ensor_Networks/basic_diagrams/basic_diagrams_c.pdf> <./figures/tikz/Tensor_Netw
-orks/basic_diagrams/basic_diagrams_d.pdf>] [4]
-<figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg, id=171, 2204.235pt
- x 1002.74625pt>
-File: figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg Graphic file (
-type jpg)
-<use figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/basic_tensor_network_diagrams.
-jpeg  used on input line 70.
-(pdftex.def)             Requested size: 318.67212pt x 144.9584pt.
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 7
-8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [5 <./figures/Tensor_
-Networks/basic_tensor_network_diagrams.jpeg>]
-<figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg, id=193, 1575.887
+<use figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
+orks_c.pdf  used on input line 74.
+(pdftex.def)             Requested size: 84.57376pt x 90.03712pt.
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=172, 84.5
+559pt x 19.98567pt>
+File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf Graphic 
+file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
+orks_a.pdf  used on input line 81.
+(pdftex.def)             Requested size: 84.55566pt x 19.98561pt.
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf, id=173, 112.
+73418pt x 19.98567pt>
+File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf Graphic 
+file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
+orks_b.pdf  used on input line 88.
+(pdftex.def)             Requested size: 112.73389pt x 19.98561pt.
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
+00.
+ (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [5 <./figures/tikz/T
+ensor_Networks/basic_networks/basic_networks_a.pdf> <./figures/tikz/Tensor_Netw
+orks/basic_networks/basic_networks_b.pdf> <./figures/tikz/Tensor_Networks/basic
+_networks/basic_networks_c.pdf>]
+<figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg, id=210, 1575.887
 5pt x 1003.75pt>
 File: figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg Graphic file
  (type jpg)
 <use figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/basic_isometric_tensor_diagram
-s.jpeg  used on input line 83.
+s.jpeg  used on input line 105.
 (pdftex.def)             Requested size: 318.67212pt x 202.96725pt.
 )
 (./chapters/Tensor_Networks/tensor_decompositions.tex [6 <./figures/Tensor_Netw
 orks/basic_isometric_tensor_diagrams.jpeg>] [7]
-<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=229, 2130.96124
+<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=245, 2130.96124
 pt x 1003.75pt>
 File: figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg Graphic file (
 type jpg)
@@ -1259,7 +1284,7 @@ jpeg  used on input line 38.
 (./chapters/Tensor_Networks/isometric_tensor_networks.tex [8 <./figures/Tensor_
 Networks/tensor_decomposition_diagrams.jpeg>]
 <figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg, id=
-248, 2376.88pt x 1002.74625pt>
+264, 2376.88pt x 1002.74625pt>
 File: figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg
  Graphic file (type jpg)
 <use figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg>
@@ -1339,22 +1364,17 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32734 strings out of 478287
- 651466 string characters out of 5849289
- 1552624 words of memory out of 5000000
- 50260 multiletter control sequences out of 15000+600000
+ 32761 strings out of 480194
+ 652835 string characters out of 5893742
+ 1548125 words of memory out of 5000000
+ 50047 multiletter control sequences out of 15000+600000
  487381 words of font info for 144 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
@@ -1379,10 +1399,10 @@ blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on thesis.pdf (32 pages, 959188 bytes).
+Output written on thesis.pdf (32 pages, 861048 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 442 compressed objects within 5 object streams
+ 571 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
  92 named destinations out of 1000 (max. 500000)
- 39635 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 39645 words of extra memory for PDF output out of 42996 (max. 10000000)
 

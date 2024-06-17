@@ -1,18 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'thesis.blg'
-[58] biber:340> INFO - === Fr Jun 14, 2024, 12:15:08
+[58] biber:340> INFO - === Mo Jun 17, 2024, 14:06:11
 [67] Biber.pm:418> INFO - Reading 'thesis.bcf'
-[113] Biber.pm:972> INFO - Found 10 citekeys in bib section 0
+[113] Biber.pm:972> INFO - Found 11 citekeys in bib section 0
 [122] Biber.pm:4383> INFO - Processing section 0
 [128] Biber.pm:4574> INFO - Looking for bibtex file 'thesis.bib' for section 0
 [129] bibtex.pm:1713> INFO - LaTeX decoding ...
 [137] bibtex.pm:1518> INFO - Found BibTeX data source 'thesis.bib'
-[199] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[199] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[200] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[200] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [200] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-GB'
 [200] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
 [206] bbl.pm:654> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
 [209] bbl.pm:757> INFO - Output to thesis.bbl
 [209] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'cite:isometric_tensor_network_states_in_two_dimensions' is not an integer - this will probably not sort properly.
 [209] Biber.pm:130> WARN - legacy month field 'Dec' in entry 'cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems' is not an integer - this will probably not sort properly.
-[209] Biber.pm:132> INFO - WARNINGS: 2
+[209] Biber.pm:130> WARN - I didn't find a database entry for 'bibid' (section 0)
+[209] Biber.pm:132> INFO - WARNINGS: 3

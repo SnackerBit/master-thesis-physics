@@ -9,32 +9,35 @@ with entries
 \end{equation}
 \begin{figure}
 	\centering
-	\begin{subfigure}[c]{0.2\textwidth}
-		\centering
-		\includegraphics[]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf}
-		\caption{}
-		\label{fig:basic_tensor_diagrams_scalar}
-	\end{subfigure}
-	\begin{subfigure}[c]{0.2\textwidth}
-		\centering
-		\includegraphics[]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf}
-		\caption{}
-		\label{fig:basic_tensor_diagrams_vector}
-	\end{subfigure}
-	\begin{subfigure}[c]{0.2\textwidth}
-		\centering
-		\includegraphics[]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf}
-		\caption{}
-		\label{fig:basic_tensor_diagrams_matrix}
-	\end{subfigure}
-	\begin{subfigure}[c]{0.2\textwidth}
-		\centering
-		\includegraphics[]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf}
-		\caption{}
-		\label{fig:basic_tensor_diagrams_rank_n_tensor}
-	\end{subfigure}
-	\caption{Tensors of different ranks are shown in diagrammatic notation.}
-	\label{fig:basic_tensor_diagrams}
+	% Store largest image in a box
+	\savebox{\largestimage}{\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf}}
+	\subcaptionbox{\label{fig:basic_tensor_diagrams_scalar}}
+	{%
+		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf}
+		}
+	}
+	\subcaptionbox{\label{fig:basic_tensor_diagrams_vector}}
+	{%
+		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf}
+		}
+	}
+	\subcaptionbox{\label{fig:basic_tensor_diagrams_matrix}}
+	{%
+		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf}
+		}
+	}
+	\subcaptionbox{\label{fig:basic_tensor_diagrams_rank_n_tensor}}
+	{%
+		\usebox{\largestimage}
+	}
+\caption{Tensors of different ranks are shown in diagrammatic notation. (a) A scalar, (b) a vector, (c) a matrix, (d) a general tensor of rank $N$.}
+\label{fig:basic_tensor_diagrams}
 \end{figure}
 For example, a rank-0 tensor is a scalar, a rank-1 tensor is a vector, and a tensor of rank-2 is a matrix. \par
 An \textit{index contraction} between two or more tensors is the linear operation that is performed by summing over a given set of indices. For example, the matrix product of two matrices $A \in \mathbb{C}^{\chi_1\times\chi_2}$ and $B \in \mathbb{C}^{\chi_2\times\chi_3}$ can be written as the index contraction
@@ -67,7 +70,26 @@ A \textit{tensor network} is defined as a collection of tensors that are contrac
 and the matrix product \eqref{eq:example_tensor_network_matrix_product}. Both networks are shown as diagrams in figure \figref{fig:basic_tensor_network_diagrams}(a) and \figref{fig:basic_tensor_network_diagrams}(b) respectively. \figref{fig:basic_tensor_network_diagrams}(c) depicts the more involved tensor network \eqref{eq:example_tensor_network_involved_network}. \par
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/basic_tensor_network_diagrams.jpeg}
+	% Store largest image in a box
+	\savebox{\largestimage}{\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf}}
+	\subcaptionbox{\label{fig:basic_tensor_networks_matrix_vector_product}}
+	{%
+		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf}
+		}
+	}
+\subcaptionbox{\label{fig:basic_tensor_networks_matrix_product}}
+	{%
+		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf}
+		}
+	}
+\subcaptionbox{\label{fig:basic_tensor_networks_involved_contraction}}
+	{%
+		\usebox{\largestimage}
+	}
 	\caption{Tensor networks in diagrammatic notation. (a) Scalar product \eqref{eq:example_tensor_network_scalar_product}. (b) Matrix product \eqref{eq:example_tensor_network_matrix_product}. (c) More involved network consisting of three tensors \eqref{eq:example_tensor_network_involved_network}.}
 	\label{fig:basic_tensor_network_diagrams}
 \end{figure}

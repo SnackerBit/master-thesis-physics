@@ -9,6 +9,8 @@
 		\draw[virtualLegWithoutArrows] (T1) -- ++(-\openLegLength, 0);
 		\node[] at (-\openLegLength-\defaultTextOffset, 0) {$i$};
 		\draw[virtualLegWithoutArrows] (T1) -- (T2);
+		\draw[virtualLegWithoutArrows] (T2) -- ++(\openLegLength, 0);
+		\node[] at (\tensorXDistance+\openLegLength+\defaultTextOffset, 0) {$j$};
 		\node[] at (\tensorXDistance/2, \defaultTextOffset) {$\alpha$};
 	\end{tikzpicture}
 \end{document}
