@@ -1,0 +1,10 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{30pt}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter] (T) at (0, 0) {};
+		\draw[virtualLegWithoutArrows] (T) -- (-\openLegLength, 0);
+		\node[] at (-\openLegLength-\defaultTextOffset, 0) {$i$};
+	\end{tikzpicture}
+\end{document}

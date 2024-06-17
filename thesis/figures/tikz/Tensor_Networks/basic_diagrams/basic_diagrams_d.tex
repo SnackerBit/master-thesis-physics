@@ -1,0 +1,15 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{50pt}
+	\begin{tikzpicture}
+		\node[rectangle, minimum height=\defaultTensorWidth, minimum width={4*\defaultTensorWidth}, line width=\defaultLineWidth, fill=orthogonalityCenterColor, draw=borderColor, outer sep=0] at (0, 0) {};
+		\draw[virtualLegWithoutArrows] (-1.5*\defaultTensorWidth, -\defaultTensorWidth/2) -- ++(0, -\yOffsetPhysicalLeg);
+		\node[] at (-1.5*\defaultTensorWidth, -\defaultTensorWidth/2-\yOffsetPhysicalLeg-\defaultTextOffset) {$i_1$};
+		\draw[virtualLegWithoutArrows] (-0.5*\defaultTensorWidth, -\defaultTensorWidth/2) -- ++(0, -\yOffsetPhysicalLeg);
+		\node[] at (-0.5*\defaultTensorWidth, -\defaultTensorWidth/2-\yOffsetPhysicalLeg-\defaultTextOffset) {$i_2$};
+		\draw[virtualLegWithoutArrows] (1.5*\defaultTensorWidth, -\defaultTensorWidth/2) -- ++(0, -\yOffsetPhysicalLeg);
+		\node[] at (1.5*\defaultTensorWidth, -\defaultTensorWidth/2-\yOffsetPhysicalLeg-\defaultTextOffset) {$i_N$};
+		\node[] at (0.5*\defaultTensorWidth, -\defaultTensorWidth/2-\yOffsetPhysicalLeg/2) {$\cdots$};{\tiny }
+	\end{tikzpicture}
+\end{document}

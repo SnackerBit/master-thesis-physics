@@ -16,13 +16,14 @@
 \definecolor{virtualLegColor}{rgb}{0.0, 0.0, 0.0}
 
 % Basic sizes
-\def \defaultTensorWidth {30pt}
-\def \defaultLineWidth {4pt}
-\def \xOffsetUnitCell {220pt}
-\def \yOffsetUnitCell {220pt}
-\def \yOffsetPhysicalLeg {35pt}
-\def \defaultArrowscale {1.0}
+\def \defaultTensorWidth {15pt}
+\def \defaultLineWidth {2}
+\def \xOffsetUnitCell {180pt}
+\def \yOffsetUnitCell {180pt}
+\def \yOffsetPhysicalLeg {30pt}
+\def \defaultArrowscale {0.9}
 \def \defaultArrowXShift {12pt}
+\def \defaultTextOffset {6pt}
 
 % Tensor styles
 \tikzstyle{tensorPhysical} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
@@ -33,6 +34,8 @@
 \tikzstyle{auxillaryLeg} = [color=auxillaryLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{physicalLeg} = [color=physicalLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLeg} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+\tikzstyle{virtualLegWithoutArrows} = [color=virtualLegColor, line width=\defaultLineWidth]
+
 
 % Layers
 \pgfdeclarelayer{bg} % declare background layer

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  14 JUN 2024 10:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.26)  14 JUN 2024 16:41
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**basic_diagrams.tex
-(./basic_diagrams.tex
+**basic_diagrams_a.tex
+(./basic_diagrams_a.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -11,7 +11,7 @@ Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -361,7 +361,7 @@ zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 \sa@box=\box61
-) (../style.tex
+) (../../style.tex
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -399,8 +399,8 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box65
-) (./basic_diagrams.aux)
-\openout1 = `basic_diagrams.aux'.
+) (./basic_diagrams_a.aux)
+\openout1 = `basic_diagrams_a.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -441,17 +441,17 @@ e
 ))
 [1
 
-] (./basic_diagrams.aux) ) 
+] (./basic_diagrams_a.aux) ) 
 Here is how much of TeX's memory you used:
- 13762 strings out of 480194
- 295623 string characters out of 5893742
- 617728 words of memory out of 5000000
- 31504 multiletter control sequences out of 15000+600000
+ 13353 strings out of 478287
+ 287797 string characters out of 5849289
+ 533824 words of memory out of 5000000
+ 31332 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 115i,7n,118p,419b,1112s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1141 hyphenation exceptions out of 8191
+ 115i,7n,118p,424b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on basic_diagrams.pdf (1 page, 5593 bytes).
+Output written on basic_diagrams_a.pdf (1 page, 1158 bytes).
 PDF statistics:
  11 PDF objects out of 1000 (max. 8388607)
  7 compressed objects within 1 object stream

@@ -26,4 +26,16 @@ where the $A^{[n],i_n}$ are interpreted as matrices for $1 < n < N$ and as row/c
 	\left(A^{[1],i_1}\cdots A^{[N],i_N}\right)
 \end{equation}
 gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:}. The computational cost of computing the expectation value like this scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
-Until now, the MPS representation of $\left|\Psi\right\rangle$ is still exact. One can approximate a MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_max$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this SVD is related to the Schimdt decomposition
+Until now, the MPS representation of $\left|\Psi\right\rangle$ is still exact. One can approximate a MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. However, if all bonds of the MPS are approximated, this becomes a highly non-linear problem and a variational compression procedure can be used to obtain a lower error at the same $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}.
+
+
+
+this SVD is related to the Schimdt decomposition of a bipartite system
+\begin{equation}\rangle
+	\left|\Psi\right\rangle = \sum_{\alpha=1}^{\chi_n} w_\alpha \left| \Psi^{[L]}_\alpha\right\rangle \otimes \left|\Psi^{[R]}_\alpha\right\rangle
+\end{equation}
+where the chain is split into a left and right subsystem with orthogonal basis vectors $\left|\Psi^{[L]}_\alpha\right\rangle$ and $\left|\Psi^{[R]}_\alpha\right\rangle$ as visualized in figure \ref{fig}. One can use the singular values to compute an entanglement measure between the left and right subsystem, eg. the Von-Neumann entropy
+\begin{equation}
+	S_\text{N} = -\sum_{\alpha=1}^{\chi_n} \lambda_\alpha^2 \log\left(\lambda_\alpha^2\right)
+\end{equation}
+How well an MPS of a given bond dimension $\chi_max$ is able to represent a given quantum state is highly dependant on the Schmidt spectrum at the different bipartitions. If the Schmidt values decrease exponentially, the MPS is a good approximation for the original state. It can be shown \cite{bibid} that ground states of local, gapped, 1D Hamiltonians follows an area law scaling and thus can be represented well with MPS of finite bond dimensions.
