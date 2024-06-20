@@ -3,7 +3,7 @@ The state of a quantum many-body system can be written as
 \begin{equation}
 	\left|\Psi\right\rangle = \sum_{i_1=1}^{d_1} \sum_{i_2=1}^{d_2} \cdots \sum_{i_N=1}^{d_N} \Psi_{i_1i_2\dots i_N} \left|i_1\right\rangle \otimes \left|i_2\right\rangle \otimes \cdots \otimes \left|i_N\right\rangle.
 \end{equation}
-where N is the number of subsystems (e.g. lattice sites or particles), and $\left\{\left|i_1\right\rangle \otimes \left|i_2\right\rangle \otimes \dots \otimes \left|i_N\right\rangle\right\}$ is a set of basis vectors of the full many-body Hilbert space
+where N is the number of subsystems (e.g. lattice sites or particles), and $\left\{\left|i_1\right\rangle \otimes \left|i_2\right\rangle \otimes \dots \otimes \left|i_N\right\rangle\right\}$, $i_j = 0, \dots, d_j$ is a set of basis vectors of the full many-body Hilbert space
 \begin{equation}
 	\mathcal{H} = \bigotimes_{j=1}^{N} \mathcal{H}_j,
 \end{equation}
@@ -18,24 +18,41 @@ An important property of MPS is the existence of a \textit{canonical form} as an
 \begin{split}
 	\label{eq:computation_of_expectation_value_MPS}
 	\left\langle\Psi\right|\hat{O}\left|\Psi\right\rangle &=\sum_{i_1,\dots,i_N,j_n=1}^{d}\Psi_{i_1,i_2,\dots,i_N} \Psi_{i_1,\dots,i_{n-1},j_n,i_{n+1},\dots,i_N}^* \left\langle j_n\right|\hat{O} \left|i_n\right\rangle \\
-	&= \sum_{i_1,\dots,i_N,j_n=1}^{d} \left(A^{[1],i_1}\cdots A^{[N],i_N}\right)\cdot\left(A^{[1],i_1*}\cdots A^{[N],j_n*} \cdots A^{[N],i_N*}\right)\cdot \hat{O}_{i_n,j_n},
+	&= \sum_{i_1,\dots,i_N,j_n=1}^{d} \left(A^{[1],i_1}\cdots A^{[N],i_N}\right) \\
+	&\quad\quad\quad\quad\quad\,\,\cdot\left(A^{[1],i_1*}\cdots A^{[N],j_n*} \cdots A^{[N],i_N*}\right)\cdot \hat{O}_{i_n,j_n},
 \end{split}
 \end{equation}
 where the $A^{[n],i_n}$ are interpreted as matrices for $1 < n < N$ and as row/column vectors for $n = 1, N$ such that the product
 \begin{equation}
 	\left(A^{[1],i_1}\cdots A^{[N],i_N}\right)
 \end{equation}
-gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:}. The computational cost of computing the expectation value like this scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
-Until now, the MPS representation of $\left|\Psi\right\rangle$ is still exact. One can approximate a MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. However, if all bonds of the MPS are approximated, this becomes a highly non-linear problem and a variational compression procedure can be used to obtain a lower error at the same $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}.
-
-
-
-this SVD is related to the Schimdt decomposition of a bipartite system
-\begin{equation}\rangle
-	\left|\Psi\right\rangle = \sum_{\alpha=1}^{\chi_n} w_\alpha \left| \Psi^{[L]}_\alpha\right\rangle \otimes \left|\Psi^{[R]}_\alpha\right\rangle
-\end{equation}
-where the chain is split into a left and right subsystem with orthogonal basis vectors $\left|\Psi^{[L]}_\alpha\right\rangle$ and $\left|\Psi^{[R]}_\alpha\right\rangle$ as visualized in figure \ref{fig}. One can use the singular values to compute an entanglement measure between the left and right subsystem, eg. the Von-Neumann entropy
+gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:}. Here, the advantage of the diagrammatic notation becomes appearant: It is much easier to understand how tensors are contracted when expressing the contraction in terms of tensor network diagrams. The computational cost of computing the expectation value like this scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
+Until now, the MPS representation of $\left|\Psi\right\rangle$ is still exact. One can approximate a MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. In this case, the number of parameters that need to be stored to describe the state is reduced from $\mathcal{O}\left(d^N\right)$ to $\mathcal{O}\left(N\chi_\text{max}^2 d\right)$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. Additionally, this SVD at the orthogonality center is related to the Schimdt decomposition of a bipartite system
 \begin{equation}
-	S_\text{N} = -\sum_{\alpha=1}^{\chi_n} \lambda_\alpha^2 \log\left(\lambda_\alpha^2\right)
+	\left|\Psi\right\rangle = \sum_{\alpha=1}^{\chi_n} \lambda_\alpha \left| \Psi^{[L]}_\alpha\right\rangle \otimes \left|\Psi^{[R]}_\alpha\right\rangle,
 \end{equation}
-How well an MPS of a given bond dimension $\chi_max$ is able to represent a given quantum state is highly dependant on the Schmidt spectrum at the different bipartitions. If the Schmidt values decrease exponentially, the MPS is a good approximation for the original state. It can be shown \cite{bibid} that ground states of local, gapped, 1D Hamiltonians follows an area law scaling and thus can be represented well with MPS of finite bond dimensions.
+where the chain is split into a left and right subsystem with orthogonal basis vectors $\left|\Psi^{[L]}_\alpha\right\rangle$ and $\left|\Psi^{[R]}_\alpha\right\rangle$ as visualized in figure \ref{fig}. In this case, the Schmidt values $\lambda_\alpha >= 0$ coincide with the singular values! One can further use this to compute the Von-Neumann entanglement entropy
+\begin{equation}
+	S = -\sum_{\alpha=1}^{\chi_n} \lambda_\alpha^2 \log\left(\lambda_\alpha^2\right),
+\end{equation}
+quantifying the amount of entanglement between the left and right subsystems. If the state is normalized, it additionally holds
+\begin{equation}
+	\sum_{\alpha=1}^{\chi_n} \lambda_\alpha^2 = 1.
+\end{equation}
+Thus, how well an MPS of a given bond dimension $\chi_\text{max}$ is able to represent a given quantum state is highly dependent on the Schmidt spectrum $\left\{\lambda_\alpha\right\}$ at the different bipartitions of the chain. If the Schmidt values decrease exponentially, only an exponentially small part of the entanglement structure is truncated and the truncated MPS is a good approximation for the original state. It can be shown \cite{cite:area_law_1D_proof, cite:area_laws_review} that for ground states of local, gapped, one dimensional Hamiltonians there holds an \textit{area law}: The entanglement entropy at arbitrary bipartitions of the chain is bounded by a constant
+\begin{equation}
+	S \le S_\text{max}, 
+\end{equation}
+where $S_\text{max}$ is independent of the system size. This is in contrast to the fact that the entanglement of states drawn randomly from the many-body Hilbert space on average exhibits \textit{volume law} scaling
+\begin{equation}
+	\mathbb{E}\left[S\right] > \min\left(N_L, N_R\right)\log(d),
+\end{equation}
+where $N_L$ and $N_R$ are the number of subsystems in the left and right bipartition. Hence, ground states of gapped Hamiltonians are very nongeneric. Note that the constant $S_\text{max}$ scales with the correlation length of the system, which diverges when approaching critical points. \par
+It is immediately clear that truncated MPS by construction exhibit area law entanglement scaling, if the local subsystems that are represented by each tensor correspond to physical systems on a 1D chain. The maximal entanglement entropy for a bipartition can be reached when all Schmidt values are equal, $\lambda_\alpha = 1/\sqrt{\chi_n}$, and thus
+\begin{equation}
+	S \le \log\left(\chi_\text{max}\right)
+\end{equation}
+for arbitrary bipartitions of the chain. One can conclude that MPS are good approximations for ground states of gapped 1D Hamiltonians away from criticality. \par 
+For completeness we note that the truncation of all bonds of an MPS is a highly non-linear optimization problem and the naive algorithm of truncating each bond with an SVD does in general not lead to a minimal error. A variational compression procedure can often be used to obtain a lower error at the same maximum bond dimension $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}.
+\par
+\todo{algorithms}

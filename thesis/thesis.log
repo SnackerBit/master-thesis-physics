@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  17 JUN 2024 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.26)  20 JUN 2024 17:09
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -518,7 +518,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip85
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language8
+\blx@langwohyphens=\language87
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -858,7 +858,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count436
 \U@D=\dimen184
-\l@unhyphenated=\language9
+\l@unhyphenated=\language88
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -869,16 +869,12 @@ Language: british 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'british' set to \l@english
-(babel)             (\language0). Reported on input line 82.
-Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
-(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@english
-(babel)             (\language0). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@english
-(babel)             (\language0). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language85). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language85). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -1303,46 +1299,51 @@ LaTeX Warning: Reference `fig:' on page 10 undefined on input line 16.
 [10 <./figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpe
 g>]
 
-LaTeX Warning: Reference `fig:' on page 11 undefined on input line 28.
+LaTeX Warning: Reference `fig:' on page 11 undefined on input line 29.
 
 
-LaTeX Warning: Reference `fig:' on page 11 undefined on input line 28.
-
-
-LaTeX Warning: Reference `fig' on page 11 undefined on input line 37.
+LaTeX Warning: Reference `fig:' on page 11 undefined on input line 29.
 
 [11]
 
-LaTeX Warning: Citation 'bibid' on page 12 undefined on input line 41.
+LaTeX Warning: Reference `fig' on page 12 undefined on input line 34.
 
-)) [12]
+
+LaTeX Warning: Citation 'cite:area_law_1D_proof' on page 12 undefined on input 
+line 42.
+
+
+LaTeX Warning: Citation 'cite:area_laws_review' on page 12 undefined on input l
+ine 42.
+
+[12])) [13] [14
+
+
+]
 chapter 3.
-(./chapters/isoDTPS/isoDTPS.tex) [13
-
-
-] [14
+(./chapters/isoDTPS/isoDTPS.tex) [15] [16
 
 
 ]
 chapter 4.
-(./chapters/Toric_Code/Toric_Code.tex) [15] [16
+(./chapters/Toric_Code/Toric_Code.tex) [17] [18
 
 
 ]
 chapter 5.
-(./chapters/TFI/TFI.tex) [17] [18
+(./chapters/TFI/TFI.tex) [19] [20
 
 
 ]
 chapter A.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [19])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [20] [21] [22
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [21])
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [22] [23] [24
 
 
 ]
 chapter B.
-[23] [24
+[25] [26
 
 
 ]
@@ -1351,10 +1352,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[25
+[27
 
 
-] [26] (./thesis.aux
+] [28] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -1364,17 +1365,22 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32761 strings out of 480194
- 652835 string characters out of 5893742
- 1548125 words of memory out of 5000000
- 50047 multiletter control sequences out of 15000+600000
+ 32760 strings out of 478287
+ 652812 string characters out of 5849289
+ 1552973 words of memory out of 5000000
+ 50280 multiletter control sequences out of 15000+600000
  487381 words of font info for 144 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
@@ -1399,10 +1405,10 @@ blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb>
-Output written on thesis.pdf (32 pages, 861048 bytes).
+Output written on thesis.pdf (34 pages, 866251 bytes).
 PDF statistics:
- 571 PDF objects out of 1000 (max. 8388607)
- 454 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
  39645 words of extra memory for PDF output out of 42996 (max. 10000000)
 
