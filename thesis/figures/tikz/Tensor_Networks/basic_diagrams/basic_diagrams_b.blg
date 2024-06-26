@@ -1,5 +1,0 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'basic_diagrams_b.blg'
-[58] biber:340> INFO - === Mo Jun 17, 2024, 13:17:36
-[100] Utils.pm:398> ERROR - Cannot find 'basic_diagrams_b.bcf'!
-[100] Biber.pm:135> INFO - ERRORS: 1

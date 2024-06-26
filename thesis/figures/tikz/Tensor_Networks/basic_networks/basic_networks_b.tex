@@ -4,8 +4,8 @@
 	\def \openLegLength{25pt}
 	\def \tensorXDistance{40pt}
 	\begin{tikzpicture}
-		\node[tensorOrthoCenter, inner sep=0] (T1) at (0, 0) {$A$};
-		\node[tensorOrthoCenter, inner sep=0] (T2) at (\tensorXDistance, 0) {$B$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T1) at (0, 0) {$A$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T2) at (\tensorXDistance, 0) {$B$};
 		\draw[virtualLegWithoutArrows] (T1) -- ++(-\openLegLength, 0);
 		\node[] at (-\openLegLength-\defaultTextOffset, 0) {$i$};
 		\draw[virtualLegWithoutArrows] (T1) -- (T2);

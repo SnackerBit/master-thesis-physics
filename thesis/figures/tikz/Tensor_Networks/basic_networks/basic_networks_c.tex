@@ -2,7 +2,7 @@
 \input{../../style.tex}
 \begin{document}
 	\def \openLegLength{25pt}
-	\def \tensorXDistance{30pt}
+	\def \tensorXDistance{40pt}
 	\pgfmathparse{sqrt(3)/2}
 	\edef \offsetMultiplier{\pgfmathresult}
 	\pgfmathparse{1/sqrt(2)}
@@ -11,9 +11,9 @@
 	\edef \CLegMultiplier{\pgfmathresult}
 	
 	\begin{tikzpicture}
-		\node[tensorOrthoCenter, inner sep=0] (A) at (0, 0) {$A$};
-		\node[tensorOrthoCenter, inner sep=0] (B) at (\tensorXDistance, 0) {$B$};
-		\node[tensorOrthoCenter, inner sep=0] (C) at (\tensorXDistance/2, -\tensorXDistance*\offsetMultiplier) {$C$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (A) at (0, 0) {$A$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (B) at (\tensorXDistance, 0) {$B$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (C) at (\tensorXDistance/2, -\tensorXDistance*\offsetMultiplier) {$C$};
 		% legs
 		\draw[virtualLegWithoutArrows] (A) -- (B) -- (C) -- (A);
 		\draw[virtualLegWithoutArrows] (A) -- ++(-\ABLegMultiplier*\openLegLength, \ABLegMultiplier*\openLegLength);

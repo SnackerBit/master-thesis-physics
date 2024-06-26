@@ -244,6 +244,92 @@
       \verb https://scipost.org/10.21468/SciPostPhysLectNotes.5
       \endverb
     \endentry
+    \entry{cite:area_law_1D_proof}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6fe91ce93ec3150a2a51092e35e37fab}{%
+           family={Hastings},
+           familyi={H\bibinitperiod},
+           given={M\bibnamedelima B},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{6fe91ce93ec3150a2a51092e35e37fab}
+      \strng{fullhash}{6fe91ce93ec3150a2a51092e35e37fab}
+      \strng{bibnamehash}{6fe91ce93ec3150a2a51092e35e37fab}
+      \strng{authorbibnamehash}{6fe91ce93ec3150a2a51092e35e37fab}
+      \strng{authornamehash}{6fe91ce93ec3150a2a51092e35e37fab}
+      \strng{authorfullhash}{6fe91ce93ec3150a2a51092e35e37fab}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We prove an area law for the entanglement entropy in gapped one-dimensional quantum systems. The bound on the entropy grows surprisingly rapidly with the correlation length; we discuss this in terms of properties of quantum expanders and present a conjecture on matrix product states which may provide an alternate way of arriving at an area law. We also show that, for gapped, local systems, the bound on Von Neumann entropy implies a bound on Rényi entropy for sufficiently large α&lt;1 and implies the ability to approximate the ground state by a matrix product state.}
+      \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
+      \field{month}{8}
+      \field{number}{08}
+      \field{title}{An area law for one-dimensional quantum systems}
+      \field{volume}{2007}
+      \field{year}{2007}
+      \field{pages}{P08024}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1742-5468/2007/08/P08024
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1742-5468/2007/08/P08024
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1742-5468/2007/08/P08024
+      \endverb
+    \endentry
+    \entry{cite:area_laws_review}{article}{}
+      \name{author}{3}{}{%
+        {{hash=fb49471187ac0096b04ef8aed9fc5e37}{%
+           family={Eisert},
+           familyi={E\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bbfccc3bc81330bb40d9b2f1685e0249}{%
+           family={Cramer},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d0b244a8c75ea33516270f686fe851fa}{%
+           family={Plenio},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{1729854676498146571270dd1725d2e1}
+      \strng{fullhash}{1729854676498146571270dd1725d2e1}
+      \strng{bibnamehash}{1729854676498146571270dd1725d2e1}
+      \strng{authorbibnamehash}{1729854676498146571270dd1725d2e1}
+      \strng{authornamehash}{1729854676498146571270dd1725d2e1}
+      \strng{authorfullhash}{1729854676498146571270dd1725d2e1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{2}
+      \field{title}{Colloquium: Area laws for the entanglement entropy}
+      \field{volume}{82}
+      \field{year}{2010}
+      \field{pages}{277\bibrangedash 306}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.82.277
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.82.277
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.82.277
+      \endverb
+    \endentry
     \entry{cite:optimization_on_matrix_manifolds}{book}{}
       \name{author}{3}{}{%
         {{hash=9a81fe9ad87cf630eb4a68e86949545d}{%
@@ -426,7 +512,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{bibid}
 \endrefsection
 \endinput
 

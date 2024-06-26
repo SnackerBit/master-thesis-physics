@@ -1,0 +1,10 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{30pt}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, 0) {$W$};
+		\draw[virtualLeg] (-\openLegLength, 0) -- (W);
+		\draw[virtualLeg] (W) -- ++(\openLegLength, 0);
+	\end{tikzpicture}
+\end{document}

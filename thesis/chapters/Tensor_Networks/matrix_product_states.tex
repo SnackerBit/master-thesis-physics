@@ -12,8 +12,20 @@ with $\dim\left(\mathcal{H}_j\right) = d_j$ the dimension of the local Hilbert s
 	\label{eq:MPS_open_boundary_conditions_general_definition}
 	\Psi_{i_1i_2\cdots i_N} \coloneqq \sum_{\alpha_1=1}^{\chi_1} \sum_{\alpha_2=1}^{\chi_2}\dots\sum_{\alpha_{N-1}=1}^{\chi_{N-1}}A^{[1],i_1}_{1,\alpha_1} A^{[1],i_2}_{\alpha_1,\alpha_2} \cdots A^{[N],i_N}_{\alpha_{N-1},1},
 \end{equation}
-where we have written the physical indices $i_n$ as superscripts, such that the sums are performed only over subscripts. Note that in this notation the bond dimensions at the two ends of the chain is $\chi_0 = \chi_{N} = 1$, and we can interpret the tensors $A^{[1]}$ and $A^{[N]}$ as tensors of rank-2. A tensor diagram of the MPS \eqref{eq:MPS_open_boundary_conditions_general_definition} is given in figure \figref{fig:}.\par
-An important property of MPS is the existence of a \textit{canonical form} as an isometric tensor network, where a single tensor $A^{[n]}$ is selected as the orthogonality center. One can bring an arbitrary MPS into this canonical form through successive QR-decompositions or SVDs, starting at the outer ends of the chain and isometrizing one tensor at a time, until the orthogonality center is reached \cite{cite:DMRG_in_the_age_of_MPS}. In figure \figref{fig:}, the MPS is in canonical form with the orthogonality center at site three. The canonical form greatly simplifies many operations on MPS and allows for the formulation of efficient algorithms, where many contractions reduce to identity due to the isometry condition \eqref{eq:isometry_condition_general}. For example, the expectation value $\left\langle\Psi\right|\hat{O}\left|\Psi\right\rangle$ of a one-site operator $\hat{O} \in \mathbb{C}^{d\times d}$ acting on site $n$ can for a general MPS be computed as
+where we have written the physical indices $i_n$ as superscripts, such that the sums are performed only over subscripts. Note that in this notation the bond dimensions at the two ends of the chain is $\chi_0 = \chi_{N} = 1$, and we can interpret the tensors $A^{[1]}$ and $A^{[N]}$ as tensors of rank-2. A tensor diagram of the MPS \eqref{eq:MPS_open_boundary_conditions_general_definition} is given in figure \figref{fig:mps_general}.\par
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_mps.jpeg}
+	\caption{Diagrammatic representation of the Matrix Product State \ref{eq:MPS_open_boundary_conditions_general_definition}.}
+	\label{fig:mps_general}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_mps_canonical.jpeg}
+	\caption{(a) Diagrammatic representation of an MPS in canonical form. (b) The isometry condition can be used to simplify contractions.}
+	\label{fig:mps_canonical}
+\end{figure}
+An important property of MPS is the existence of a \textit{canonical form} as an isometric tensor network, where a single tensor $A^{[n]}$ is selected as the orthogonality center. One can bring an arbitrary MPS into this canonical form through successive QR-decompositions or SVDs, starting at the outer ends of the chain and isometrizing one tensor at a time, until the orthogonality center is reached \cite{cite:DMRG_in_the_age_of_MPS}. In figure \figref{fig:mps_canonical}(a) an MPS in canonical with the orthogonality center at subsystem $n$ is visualized in diagrammatic notation. The canonical form greatly simplifies many operations on MPS and allows for the formulation of efficient algorithms, where many contractions reduce to identity due to the isometry condition \eqref{eq:isometry_condition_general}, see also figure \figref{fig:mps_canonical}(b). For example, the expectation value $\left\langle\Psi\right|\hat{O}\left|\Psi\right\rangle$ of a one-site operator $\hat{O} \in \mathbb{C}^{d\times d}$ acting on site $n$ can for a general MPS be computed as
 \begin{equation}
 \begin{split}
 	\label{eq:computation_of_expectation_value_MPS}
@@ -26,7 +38,19 @@ where the $A^{[n],i_n}$ are interpreted as matrices for $1 < n < N$ and as row/c
 \begin{equation}
 	\left(A^{[1],i_1}\cdots A^{[N],i_N}\right)
 \end{equation}
-gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:}. Here, the advantage of the diagrammatic notation becomes appearant: It is much easier to understand how tensors are contracted when expressing the contraction in terms of tensor network diagrams. The computational cost of computing the expectation value like this scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
+gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:mps_local_expectation_value}. Here, the advantage of the diagrammatic notation becomes appearant: It is much easier to understand how tensors are contracted when expressing the contraction in terms of tensor network diagrams. The computational cost of computing the expectation value like this scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:mps_local_expectation_value_canonical}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_local_expectation_value.jpeg}
+	\caption{The computation of the expectation value of a local operator can be computed by contracting the MPS with its conjugate transpose, with the operator "sandwiched" between.}
+	\label{fig:mps_local_expectation_value}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg}
+	\caption{If the MPS is in canonical form, the computation of the expectation value of a local operator can be simplified to a contraction of three tensors using the isometry condition.}
+	\label{fig:mps_local_expectation_value_canonical}
+\end{figure}
 Until now, the MPS representation of $\left|\Psi\right\rangle$ is still exact. One can approximate a MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. In this case, the number of parameters that need to be stored to describe the state is reduced from $\mathcal{O}\left(d^N\right)$ to $\mathcal{O}\left(N\chi_\text{max}^2 d\right)$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. Additionally, this SVD at the orthogonality center is related to the Schimdt decomposition of a bipartite system
 \begin{equation}
 	\left|\Psi\right\rangle = \sum_{\alpha=1}^{\chi_n} \lambda_\alpha \left| \Psi^{[L]}_\alpha\right\rangle \otimes \left|\Psi^{[R]}_\alpha\right\rangle,
