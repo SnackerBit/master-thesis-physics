@@ -15,16 +15,20 @@
 \definecolor{auxillaryLegColor}{rgb}{1.0, 0.0, 0.0}
 \definecolor{virtualLegColor}{rgb}{0.0, 0.0, 0.0}
 \definecolor{generalTensorColor}{rgb}{0.757, 0.827, 0.996}
+\definecolor{identityColor}{rgb}{1.0, 1.0, 1.0}
 
 % Basic sizes
-\def \defaultTensorWidth {18pt}
+\def \defaultTensorWidth {19pt}
 \def \defaultLineWidth {2}
 \def \xOffsetUnitCell {180pt}
 \def \yOffsetUnitCell {180pt}
 \def \yOffsetPhysicalLeg {30pt}
-\def \defaultArrowscale {0.9}
+\def \defaultArrowscale {0.7}
 \def \defaultArrowXShift {7pt}
 \def \defaultTextOffset {6pt}
+\def \defaultDistanceNormal {40pt}
+\def \defaultDistanceEquations {30pt}
+\def \identityLegDistance {10 pt}
 
 % Tensor styles
 \tikzstyle{tensorPhysical} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
@@ -35,7 +39,16 @@
 \tikzstyle{auxillaryLeg} = [color=auxillaryLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{physicalLeg} = [color=physicalLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLeg} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+\tikzstyle{virtualLegLateArrows} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.8 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLegWithoutArrows} = [color=virtualLegColor, line width=\defaultLineWidth]
+\tikzstyle{physicalLegWithoutArrows} = [color=physicalLegColor, line width=\defaultLineWidth]
+
+% special symbols
+\usepackage{amssymb}
+\DeclareMathAlphabet{\mathbbb}{U}{bbold}{m}{n}
+\newcommand{\id}{\mathbbb{1}}
+\newcommand{\iu}{\mathrm{i}}% imaginary unit number i
+\newcommand{\Stiefel}{\text{St}(n,p)}
 
 
 % Layers

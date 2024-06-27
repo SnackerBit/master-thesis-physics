@@ -1,0 +1,20 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{mathtools}
+\input{../../style.tex}
+\pgfdeclarelayer{fg} % declare background layer
+\pgfsetlayers{bg,main,fg} % set order of layers¸
+\begin{document}
+	\def \openLegLength{30pt}
+	\begin{tikzpicture}
+		\begin{pgfonlayer}{fg}
+			\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, \defaultDistanceNormal) {$W$};
+		\end{pgfonlayer}
+		
+		\draw[physicalLeg] (W) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)});
+		\draw[physicalLeg] (W) -- ++({\openLegLength*cos(-180)}, {\openLegLength*sin(-180)});
+		
+		\draw[virtualLeg] ({\openLegLength*cos(50)}, {\openLegLength*sin(50)+\defaultDistanceNormal}) -- (W);
+		\draw[virtualLeg] ({\openLegLength*cos(-30)}, {\openLegLength*sin(-30)+\defaultDistanceNormal}) -- (W);
+		\draw[virtualLeg] ({\openLegLength*cos(-110)}, {\openLegLength*sin(-110)+\defaultDistanceNormal}) -- (W);
+	\end{tikzpicture}
+\end{document}

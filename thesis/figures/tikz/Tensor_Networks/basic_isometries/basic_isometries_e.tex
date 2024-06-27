@@ -1,0 +1,39 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{mathtools}
+\input{../../style.tex}
+\pgfdeclarelayer{fg} % declare background layer
+\pgfsetlayers{bg,main,fg} % set order of layers¸
+\begin{document}
+	\def \openLegLength{30pt}
+	\begin{tikzpicture}
+		\begin{pgfonlayer}{fg}
+			\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, \defaultDistanceNormal) {$W$};
+			\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W*) at (0, 0) {$W^*$};
+		\end{pgfonlayer}
+		
+		\draw[physicalLeg] (W) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)});
+		\draw[physicalLeg] (W) -- ++({\openLegLength*cos(-180)}, {\openLegLength*sin(-180)});
+		
+		\draw[virtualLeg] ({\openLegLength*cos(50)}, {\openLegLength*sin(50)+\defaultDistanceNormal}) -- (W);
+		\draw[virtualLeg] ({\openLegLength*cos(-30)}, {\openLegLength*sin(-30)+\defaultDistanceNormal}) -- (W);
+		\draw[virtualLeg] ({\openLegLength*cos(-110)}, {\openLegLength*sin(-110)+\defaultDistanceNormal}) -- (W);
+		
+		\draw[physicalLeg] (W*) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)});
+		\draw[physicalLeg] (W*) -- ++({\openLegLength*cos(-180)}, {\openLegLength*sin(-180)});
+		
+		\draw[virtualLeg] ({\openLegLength*cos(50)}, {\openLegLength*sin(50)}) -- (W*);
+		\draw[virtualLeg] ({\openLegLength*cos(-30)}, {\openLegLength*sin(-30)}) -- (W*);
+		\draw[virtualLeg] ({\openLegLength*cos(-110)}, {\openLegLength*sin(-110)}) -- (W*);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegWithoutArrows] (W) -- ++({\openLegLength*cos(50)}, {\openLegLength*sin(50)}) to[out=50, in=50] ++(0, -\defaultDistanceNormal) -- (W*);
+		\end{pgfonlayer}
+		\draw[virtualLegWithoutArrows] (W) -- ++({\openLegLength*cos(-30)}, {\openLegLength*sin(-30)}) to[out=-30, in=-30] ++(0, -\defaultDistanceNormal) -- (W*);
+		\draw[virtualLegWithoutArrows] (W) -- ++({\openLegLength*cos(-110)}, {\openLegLength*sin(-110)}) to[out=-110, in=-110] ++(0, -\defaultDistanceNormal) -- (W*);
+		
+		\node[] () at (\openLegLength+\defaultDistanceEquations/2+\identityLegDistance, \defaultDistanceNormal/2) {$=$};
+		
+		\draw[physicalLegWithoutArrows] ({2*\openLegLength+\defaultDistanceEquations+\identityLegDistance+\openLegLength*cos(-180)}, {\defaultDistanceNormal+\openLegLength*sin(-180)}) to[out=0, in=0] ++(0, -\defaultDistanceNormal);
+		\draw[physicalLegWithoutArrows] ({2*\openLegLength+\defaultDistanceEquations+\identityLegDistance+\openLegLength/5*cos(20)}, {\defaultDistanceNormal+\openLegLength/2*sin(20)}) to[out=-160, in=-160] ++(0, -\defaultDistanceNormal);
+	\end{tikzpicture}
+\end{document}

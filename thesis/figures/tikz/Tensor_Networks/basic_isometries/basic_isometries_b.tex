@@ -1,9 +1,26 @@
 \documentclass[crop, tikz]{standalone}
+\usepackage{mathtools}
 \input{../../style.tex}
 \begin{document}
 	\def \openLegLength{30pt}
 	\begin{tikzpicture}
-		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, 0) {$W$};
-		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, 1) {$W^*$};
-	\end{tikzpicture}
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, \defaultDistanceNormal) {$W$};
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W*) at (0, 0) {$W^*$};
+		\draw[virtualLeg] (W) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (W*) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (-\openLegLength, \defaultDistanceNormal) -- (W);
+		\draw[virtualLeg] (-\openLegLength, 0) -- (W*);
+		\draw[virtualLegWithoutArrows] (W) -- (-\openLegLength, \defaultDistanceNormal) to[out=180, in=90] (-\openLegLength-\identityLegDistance, \defaultDistanceNormal/2) to[out=-90, in=180] (-\openLegLength, 0) -- (W*);
+		
+		\node[] () at (\openLegLength+\defaultDistanceEquations/2, \defaultDistanceNormal/2) {$=$};
+
+		\draw[virtualLegWithoutArrows] (\defaultDistanceEquations+\openLegLength+\defaultTensorWidth/2+\identityLegDistance, \defaultDistanceNormal) to[out=180, in=90] ++(-\identityLegDistance, -\defaultDistanceNormal/2) to[out=-90, in=180] ++(\identityLegDistance, -\defaultDistanceNormal/2);
+		\node[tensorOrthoCenter, fill=identityColor, inner sep=0] (eye) at (\defaultDistanceEquations+\openLegLength+\defaultTensorWidth/2, \defaultDistanceNormal/2) {$\id$};
+		%\draw[virtualLegWithoutArrows] (eye) to[out=90, in=180] ++(\identityLegDistance, \defaultDistanceNormal/2);
+		%\draw[virtualLegWithoutArrows] (eye) to[out=-90, in=180] ++(\identityLegDistance, -\defaultDistanceNormal/2);
+		
+		\node[] () at (\openLegLength/2+\identityLegDistance+3*\defaultDistanceEquations/2+\defaultTensorWidth/2+\openLegLength/2, \defaultDistanceNormal/2) {$\eqqcolon$};
+		
+		\draw[virtualLegWithoutArrows] (\openLegLength+4*\defaultDistanceEquations/2+\defaultTensorWidth/2+\openLegLength/2+\identityLegDistance, \defaultDistanceNormal) to[out=180, in=90] ++(-\identityLegDistance, -\defaultDistanceNormal/2) to[out=-90, in=180] ++(\identityLegDistance, -\defaultDistanceNormal/2);
+\end{tikzpicture}
 \end{document}

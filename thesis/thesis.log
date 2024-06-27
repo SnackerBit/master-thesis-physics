@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  26 JUN 2024 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,41 +951,71 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 )
 \largestimage=\box59
+\largestimagea=\box60
+\largestimageb=\box61
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `fig:basic_isometries_isometric_matrix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:basic_isometries_isometric_matrix' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:basic_isometries_isometric_matrix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:basic_isometries_isometric_matrix' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:basic_isometries_isometric_matrix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:basic_isometries_isometric_matrix' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:basic_isometries_isometric_matrix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:basic_isometries_isometric_matrix' multiply defin
+ed.
+
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-Package scrbase Info: activating british \contentsname on input line 22.
-Package scrbase Info: activating british \listfigurename on input line 22.
-Package scrbase Info: activating british \listtablename on input line 22.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+Package scrbase Info: activating british \contentsname on input line 24.
+Package scrbase Info: activating british \listfigurename on input line 24.
+Package scrbase Info: activating british \listtablename on input line 24.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count446
 \scratchdimen=\dimen186
-\scratchbox=\box60
+\scratchbox=\box62
 \nofMPsegments=\count447
 \nofMParguments=\count448
 \everyMPshowfont=\toks26
@@ -995,7 +1025,7 @@ Package scrbase Info: activating british \listtablename on input line 22.
 \makeMPintoPDFobject=\count451
 \everyMPtoPDFconversion=\toks27
 )
-Package soulpos Info: Loading soulutf8 on input line 22.
+Package soulpos Info: Loading soulutf8 on input line 24.
  (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 
@@ -1011,7 +1041,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen189
 \SOUL@ulht=\dimen190
 ))
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1021,9 +1051,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count452
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
@@ -1036,7 +1066,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 22.
+(scrbook)           before \begin{document} on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1065,8 +1095,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
+Package biblatex Info: Reference section=0 on input line 24.
+Package biblatex Info: Reference segment=0 on input line 24.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -1086,21 +1116,21 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 22.
-Package microtype Info: Applying patch `item' on input line 22.
-Package microtype Info: Applying patch `toc' on input line 22.
+LaTeX Info: Redefining \microtypecontext on input line 24.
+Package microtype Info: Applying patch `item' on input line 24.
+Package microtype Info: Applying patch `toc' on input line 24.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 22.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 24.
 
-Package microtype Info: Applying patch `footnote' on input line 22.
+Package microtype Info: Applying patch `footnote' on input line 24.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 22.
+LaTeX Info: Redefining \showhyphens on input line 24.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1119,14 +1149,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 <template/pictures/PH.pdf, id=4, 29.8716pt x 29.8716pt>
 File: template/pictures/PH.pdf Graphic file (type pdf)
 <use template/pictures/PH.pdf>
-Package pdftex.def Info: template/pictures/PH.pdf  used on input line 24.
+Package pdftex.def Info: template/pictures/PH.pdf  used on input line 26.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <template/pictures/TUM.pdf, id=5, 53.24893pt x 28.45631pt>
 File: template/pictures/TUM.pdf Graphic file (type pdf)
 <use template/pictures/TUM.pdf>
-Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 24.
+Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 26.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1135,7 +1165,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1157,9 +1187,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [3]
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 44.
+ line 46.
  [4]
-Package tocbasic Info: character protrusion at toc deactivated on input line 46
+Package tocbasic Info: character protrusion at toc deactivated on input line 48
 .
  (./thesis.toc)
 \tf@toc=\write6
@@ -1183,38 +1213,38 @@ chapter 1.
 chapter 2.
 (./chapters/Tensor_Networks/Tensor_Networks.tex
 (./chapters/Tensor_Networks/basics.tex
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=99, 74.00
-046pt x 52.38069pt>
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=99, 78.00
+041pt x 53.38043pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_d.pdf  used on input line 13.
-(pdftex.def)             Requested size: 74.00026pt x 52.38054pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=100, 19.9
-9973pt x 19.99973pt>
+(pdftex.def)             Requested size: 78.0002pt x 53.38028pt.
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=100, 21.0
+0046pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_a.pdf  used on input line 20.
-(pdftex.def)             Requested size: 19.99966pt x 19.99966pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=101, 51.0
-5574pt x 19.99973pt>
+(pdftex.def)             Requested size: 21.00038pt x 21.00038pt.
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=101, 51.5
+556pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_b.pdf  used on input line 27.
-(pdftex.def)             Requested size: 51.0556pt x 19.99966pt.
+(pdftex.def)             Requested size: 51.55545pt x 21.00038pt.
 <figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=102, 82.7
-341pt x 19.99973pt>
+341pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_c.pdf  used on input line 34.
-(pdftex.def)             Requested size: 82.73389pt x 19.99966pt.
+(pdftex.def)             Requested size: 82.73389pt x 21.00038pt.
  [3 <./figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf> <./fig
 ures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf> <./figures/tikz/
 Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf> <./figures/tikz/Tensor_Net
@@ -1227,40 +1257,80 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_c.pdf  used on input line 74.
 (pdftex.def)             Requested size: 94.57408pt x 98.6975pt.
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=172, 60.0
-0017pt x 21.48528pt>
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=172, 60.9
+999pt x 21.98615pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_a.pdf  used on input line 81.
-(pdftex.def)             Requested size: 60.0pt x 21.48521pt.
+(pdftex.def)             Requested size: 60.99974pt x 21.98608pt.
 <figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf, id=173, 112.
-73418pt x 21.48528pt>
+73418pt x 21.98615pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf Graphic 
 file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_b.pdf  used on input line 88.
-(pdftex.def)             Requested size: 112.73389pt x 21.48521pt.
+(pdftex.def)             Requested size: 112.73389pt x 21.98608pt.
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
 00.
  (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [5 <./figures/tikz/T
 ensor_Networks/basic_networks/basic_networks_a.pdf> <./figures/tikz/Tensor_Netw
 orks/basic_networks/basic_networks_b.pdf> <./figures/tikz/Tensor_Networks/basic
 _networks/basic_networks_c.pdf>]
-<figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg, id=210, 1575.887
-5pt x 1003.75pt>
-File: figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg Graphic file
- (type jpg)
-<use figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/basic_isometric_tensor_diagram
-s.jpeg  used on input line 105.
-(pdftex.def)             Requested size: 318.67212pt x 202.96725pt.
-)
-(./chapters/Tensor_Networks/tensor_decompositions.tex [6 <./figures/Tensor_Netw
-orks/basic_isometric_tensor_diagrams.jpeg>] [7]
-<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=245, 2130.96124
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf, id=210, 
+61.99963pt x 21.00046pt>
+File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
+ometries_a.pdf  used on input line 110.
+(pdftex.def)             Requested size: 61.99948pt x 21.00038pt.
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf, id=211, 
+166.50005pt x 60.9999pt>
+File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
+ometries_b.pdf  used on input line 114.
+(pdftex.def)             Requested size: 166.49963pt x 60.99974pt.
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf, id=212, 
+121.00005pt x 60.9999pt>
+File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
+ometries_c.pdf  used on input line 118.
+(pdftex.def)             Requested size: 120.99973pt x 60.99974pt.
+
+Overfull \hbox (10.8166pt too wide) in paragraph at lines 110--119
+ [] 
+ []
+
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf, id=213, 
+60.19087pt x 53.17165pt>
+File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
+ometries_d.pdf  used on input line 126.
+(pdftex.def)             Requested size: 60.19072pt x 53.1715pt.
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf, id=214, 
+137.63821pt x 119.7795pt>
+File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
+ometries_e.pdf  used on input line 130.
+(pdftex.def)             Requested size: 137.63786pt x 119.77919pt.
+) (./chapters/Tensor_Networks/tensor_decompositions.tex [6 <./figures/tikz/Tens
+or_Networks/basic_isometries/basic_isometries_a.pdf> <./figures/tikz/Tensor_Net
+works/basic_isometries/basic_isometries_b.pdf> <./figures/tikz/Tensor_Networks/
+basic_isometries/basic_isometries_c.pdf> <./figures/tikz/Tensor_Networks/basic_
+isometries/basic_isometries_d.pdf> <./figures/tikz/Tensor_Networks/basic_isomet
+ries/basic_isometries_e.pdf>] [7]
+<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=312, 2130.96124
 pt x 1003.75pt>
 File: figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg Graphic file (
 type jpg)
@@ -1272,7 +1342,7 @@ jpeg  used on input line 38.
 (./chapters/Tensor_Networks/isometric_tensor_networks.tex [8 <./figures/Tensor_
 Networks/tensor_decomposition_diagrams.jpeg>]
 <figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg, id=
-264, 2376.88pt x 1002.74625pt>
+333, 2376.88pt x 1002.74625pt>
 File: figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg
  Graphic file (type jpg)
 <use figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg>
@@ -1282,13 +1352,13 @@ _approximation.jpeg  used on input line 15.
 (pdftex.def)             Requested size: 398.33864pt x 168.0471pt.
 )
 (./chapters/Tensor_Networks/matrix_product_states.tex [9]
-<figures/Tensor_Networks/mps_mps.jpeg, id=275, 2752.2825pt x 1003.75pt>
+<figures/Tensor_Networks/mps_mps.jpeg, id=344, 2752.2825pt x 1003.75pt>
 File: figures/Tensor_Networks/mps_mps.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/mps_mps.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/mps_mps.jpeg  used on input li
 ne 18.
 (pdftex.def)             Requested size: 398.33864pt x 145.27199pt.
-<figures/Tensor_Networks/mps_mps_canonical.jpeg, id=278, 1967.35pt x 1003.75pt>
+<figures/Tensor_Networks/mps_mps_canonical.jpeg, id=347, 1967.35pt x 1003.75pt>
 
 File: figures/Tensor_Networks/mps_mps_canonical.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/mps_mps_canonical.jpeg>
@@ -1298,7 +1368,7 @@ n input line 24.
  [10 <./figures/Tensor_Networks/isometric_tensor_network_local_approximation.jp
 eg>] [11 <./figures/Tensor_Networks/mps_mps.jpeg> <./figures/Tensor_Networks/mp
 s_mps_canonical.jpeg>]
-<figures/Tensor_Networks/mps_local_expectation_value.jpeg, id=301, 2572.61125pt
+<figures/Tensor_Networks/mps_local_expectation_value.jpeg, id=370, 2572.61125pt
  x 1003.75pt>
 File: figures/Tensor_Networks/mps_local_expectation_value.jpeg Graphic file (ty
 pe jpg)
@@ -1306,7 +1376,7 @@ pe jpg)
 Package pdftex.def Info: figures/Tensor_Networks/mps_local_expectation_value.jp
 eg  used on input line 44.
 (pdftex.def)             Requested size: 398.33864pt x 155.41116pt.
-<figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg, id=302, 10
+<figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg, id=371, 10
 03.75pt x 1124.2pt>
 File: figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg Graphi
 c file (type jpg)
@@ -1366,6 +1436,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -1373,10 +1446,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32808 strings out of 478287
- 654856 string characters out of 5849289
- 1554747 words of memory out of 5000000
- 50312 multiletter control sequences out of 15000+600000
+ 32841 strings out of 478287
+ 657009 string characters out of 5849289
+ 1554853 words of memory out of 5000000
+ 50340 multiletter control sequences out of 15000+600000
  487540 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1399,14 +1472,15 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm10.pfb>
-Output written on thesis.pdf (36 pages, 1439046 bytes).
+blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb>
+Output written on thesis.pdf (36 pages, 1349647 bytes).
 PDF statistics:
- 618 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
+ 685 PDF objects out of 1000 (max. 8388607)
+ 537 compressed objects within 6 object streams
  103 named destinations out of 1000 (max. 500000)
- 39665 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 39685 words of extra memory for PDF output out of 42996 (max. 10000000)
 

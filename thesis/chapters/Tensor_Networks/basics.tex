@@ -102,7 +102,33 @@ Given two normed vector spaces $V_1$ and $V_2$ with $\dim\left(V_1\right) = m$, 
 where $\mathbb{P} = \mathbb{P}^2$ is a projection. If $m = n$, it holds $\mathbb{P} = \id$ and $W$ is a \textit{unitary map}. An isometry tensor is a tensor that through grouping of indices and reshaping (i.e. matricization) becomes an isometry. In tensor network diagrams, we draw isometries by decorating lines with arrows. Following the convention of \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, we denote the indices belonging to the larger vector space by incoming arrows and the indices belonging to the smaller vector space by outgoing arrows. Unitary tensors are decorated with bidirectional arrows on all indices, where the grouping must be inferred from the context. Ordinary tensors are drawn without arrows. Tensor diagrams for isometric and unitary tensors are shown in figure \figref{fig:isometries_and_unitaries_diagrams}.\par
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/basic_isometric_tensor_diagrams.jpeg}
+	\begin{minipage}[b]{0.4\textwidth}
+		\centering
+		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf}
+		}
+		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf}
+		}
+		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf}
+		}
+	\end{minipage}
+	\quad\quad\quad
+	\begin{minipage}[b]{0.4\textwidth}
+		\centering
+		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf}
+		}
+		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf}
+		}
+	\end{minipage}
 	\caption{Isometric and unitary tensors are drawn by decorating indices with arrows. (a) diagrammatic notation of an isometric matrix (b) (c) The isometry condition \eqref{eq:isometry_condition_general} is depicted diagrammatically. (d) Isometric tensors of higher rank must fulfill the isometry condition by grouping of indices.\todo{Add unitary tensor as well with double arrows}}
 	\label{fig:isometries_and_unitaries_diagrams}
 \end{figure}
