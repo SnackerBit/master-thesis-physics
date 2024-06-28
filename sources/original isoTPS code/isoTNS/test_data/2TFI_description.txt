@@ -1,0 +1,21 @@
+
+2leg TFI model g X - J_ij Zi Zj
+
+
+	    J1
+———————————————————————
+        |       |
+        |       | J2
+        |       |
+——————————————————————-
+
+
+with 
+
+	g = 2.5
+	J1 = 1 - eps
+	J2 = 1 + eps
+
+
+So eps > 0 is strong-rung
+   eps < 0 is weak-rung
