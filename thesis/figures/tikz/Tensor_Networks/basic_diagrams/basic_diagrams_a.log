@@ -1,4 +1,16 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  28 JUN 2024 12:52
+=======
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 18:56
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 18:56
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 18:56
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,6 +352,33 @@ ions.markings.code.tex))
 yarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen198
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+\pgf@layerbox@bg=\box63
+\pgf@layerboxsaved@bg=\box64
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count284
+\l__pdf_internal_box=\box65
+=======
 (/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 \arrowsize=\dimen191
@@ -363,6 +402,57 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box63
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen191
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+\pgf@layerbox@bg=\box61
+\pgf@layerboxsaved@bg=\box62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box63
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen191
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+\pgf@layerbox@bg=\box61
+\pgf@layerboxsaved@bg=\box62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box63
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 )
 (./basic_diagrams_a.aux)
 \openout1 = `basic_diagrams_a.aux'.
@@ -384,6 +474,25 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+\scratchcounter=\count285
+\scratchdimen=\dimen199
+\scratchbox=\box66
+\nofMPsegments=\count286
+\nofMParguments=\count287
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen256
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
+\everyMPtoPDFconversion=\toks32
+=======
+=======
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 \scratchcounter=\count283
 \scratchdimen=\dimen192
 \scratchbox=\box64
@@ -395,6 +504,13 @@ LaTeX Font Info:    ... okay on input line 3.
 \MPnumerator=\count287
 \makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks29
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -408,6 +524,17 @@ e
 
 ] (./basic_diagrams_a.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ 13879 strings out of 480194
+ 294001 string characters out of 5893742
+ 530184 words of memory out of 5000000
+ 31614 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 115i,7n,118p,424b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
  11499 strings out of 478287
  228886 string characters out of 5849289
  487875 words of memory out of 5000000
@@ -415,6 +542,25 @@ Here is how much of TeX's memory you used:
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,7n,120p,433b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+ 11499 strings out of 478287
+ 228886 string characters out of 5849289
+ 487875 words of memory out of 5000000
+ 29491 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 115i,7n,120p,433b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+ 11499 strings out of 478287
+ 228886 string characters out of 5849289
+ 487875 words of memory out of 5000000
+ 29491 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 115i,7n,120p,433b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 
 Output written on basic_diagrams_a.pdf (1 page, 1170 bytes).
 PDF statistics:

@@ -1,4 +1,16 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  28 JUN 2024 12:25
+=======
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 19:16
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 19:16
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  27 JUN 2024 19:16
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,12 +1458,33 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ 32845 strings out of 480194
+ 657057 string characters out of 5893742
+ 1550084 words of memory out of 5000000
+ 50107 multiletter control sequences out of 15000+600000
+ 487540 words of font info for 146 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+=======
+=======
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
  32841 strings out of 478287
  657009 string characters out of 5849289
  1554853 words of memory out of 5000000
  50340 multiletter control sequences out of 15000+600000
  487540 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
@@ -1477,7 +1510,19 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Output written on thesis.pdf (36 pages, 1349614 bytes).
+=======
 Output written on thesis.pdf (36 pages, 1349647 bytes).
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+Output written on thesis.pdf (36 pages, 1349647 bytes).
+>>>>>>> 4d788c9927566585e0e5d97c0548041c106e9b2d
+=======
+Output written on thesis.pdf (36 pages, 1349647 bytes).
+>>>>>>> 4969d80c4885b9e0e0312ae168d2124e3f884353
 PDF statistics:
  685 PDF objects out of 1000 (max. 8388607)
  537 compressed objects within 6 object streams
