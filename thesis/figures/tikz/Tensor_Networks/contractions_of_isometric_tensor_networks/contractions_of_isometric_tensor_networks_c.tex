@@ -4,7 +4,7 @@
 
 \begin{document}
 	\def\openLegLength{20 pt}
-	\def\ccdistance{80 pt}
+	\def\ccdistance{70 pt}
 	
 	\def\posXNA{0}
 	\def\posYNA{-\ccdistance/2}
@@ -83,11 +83,11 @@
 			\draw[virtualLeg] (NJ) -- (NG);
 			
 			\draw[virtualLeg] ({\posXNA+\openLegLength*cos(170)}, {\posYNA+\openLegLength*sin(170)}) -- (NA);
-			\draw[virtualLeg] ({\posXNC+\openLegLength*cos(-150)}, {\posYNC+\openLegLength*sin(-150)}) -- (NC);
-			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(60)}, {\posYNF+\openLegLength*sin(60)}) -- (NF);
-			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(-50)}, {\posYNH+\openLegLength*sin(-50)}) -- (NH);
-			\draw[virtualLeg] ({\posXNI+\openLegLength*cos(-20)}, {\posYNI+\openLegLength*sin(-20)}) -- (NI);
-			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(30)}, {\posYNJ+\openLegLength*sin(30)}) -- (NJ);
+			\draw[virtualLeg] ({\posXNC+\openLegLength*cos(-160)}, {\posYNC+\openLegLength*sin(-160)}) -- (NC);
+			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(35)}, {\posYNF+\openLegLength*sin(35)}) -- (NF);
+			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(-55)}, {\posYNH+\openLegLength*sin(-55)}) -- (NH);
+			\draw[virtualLeg] ({\posXNI+\openLegLength*cos(-40)}, {\posYNI+\openLegLength*sin(-40)}) -- (NI);
+			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(20)}, {\posYNJ+\openLegLength*sin(20)}) -- (NJ);
 		\end{pgfonlayer}
 		
 		% Draw tensors of N'
@@ -125,21 +125,98 @@
 			\draw[virtualLeg] (NpM) -- (NpL);
 			
 			\draw[virtualLeg] ({\posXNpA+\openLegLength*cos(170)}, {\posYNpA+\openLegLength*sin(170)}) -- (NpA);
-			\draw[virtualLeg] ({\posXNpC+\openLegLength*cos(-150)}, {\posYNpC+\openLegLength*sin(-150)}) -- (NpC);
-			\draw[virtualLeg] ({\posXNpF+\openLegLength*cos(60)}, {\posYNpF+\openLegLength*sin(60)}) -- (NpF);
-			\draw[virtualLeg] ({\posXNpH+\openLegLength*cos(-50)}, {\posYNpH+\openLegLength*sin(-50)}) -- (NpH);
-			\draw[virtualLeg] ({\posXNpI+\openLegLength*cos(-20)}, {\posYNpI+\openLegLength*sin(-20)}) -- (NpI);
-			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(30)}, {\posYNpJ+\openLegLength*sin(30)}) -- (NpJ);
+			\draw[virtualLeg] ({\posXNpC+\openLegLength*cos(-160)}, {\posYNpC+\openLegLength*sin(-160)}) -- (NpC);
+			\draw[virtualLeg] ({\posXNpF+\openLegLength*cos(35)}, {\posYNpF+\openLegLength*sin(35)}) -- (NpF);
+			\draw[virtualLeg] ({\posXNpH+\openLegLength*cos(-55)}, {\posYNpH+\openLegLength*sin(-55)}) -- (NpH);
+			\draw[virtualLeg] ({\posXNpI+\openLegLength*cos(-40)}, {\posYNpI+\openLegLength*sin(-40)}) -- (NpI);
+			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(20)}, {\posYNpJ+\openLegLength*sin(20)}) -- (NpJ);
 		\end{pgfonlayer}
 		
 		% Draw connections of upper/lower wavefunction
 		\begin{pgfonlayer}{bg}
 			\draw[virtualLegWithoutArrows] (NpA) -- ++({\openLegLength*cos(170)}, {\openLegLength*sin(170)}) -- ++(0, -\ccdistance) -- (NA);
-			\draw[virtualLegWithoutArrows] (NpC) -- ++({\openLegLength*cos(-150)}, {\openLegLength*sin(-150)}) -- ++(0, -\ccdistance) -- (NC);
-			\draw[virtualLegWithoutArrows] (NpF) -- ++({\openLegLength*cos(60)}, {\openLegLength*sin(60)}) -- ++(0, -\ccdistance) -- (NF);
-			\draw[virtualLegWithoutArrows] (NpH) -- ++({\openLegLength*cos(-50)}, {\openLegLength*sin(-50)}) -- ++(0, -\ccdistance) -- (NH);
-			\draw[virtualLegWithoutArrows] (NpI) -- ++({\openLegLength*cos(-20)}, {\openLegLength*sin(-20)}) -- ++(0, -\ccdistance) -- (NI);
-			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(30)}, {\openLegLength*sin(30)}) -- ++(0, -\ccdistance) -- (NJ);
+			\draw[virtualLegWithoutArrows] (NpF) -- ++({\openLegLength*cos(35)}, {\openLegLength*sin(35)}) -- ++(0, -\ccdistance) -- (NF);
+			\draw[virtualLegWithoutArrows] (NpH) -- ++({\openLegLength*cos(-55)}, {\openLegLength*sin(-55)}) -- ++(0, -\ccdistance) -- (NH);
+			\draw[virtualLegWithoutArrows] (NpI) -- ++({\openLegLength*cos(-40)}, {\openLegLength*sin(-40)}) -- ++(0, -\ccdistance) -- (NI);
+			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)}) -- ++(0, -\ccdistance) -- (NJ);
+		\end{pgfonlayer}
+		\draw[virtualLegWithoutArrows] (NpC) -- ++({\openLegLength*cos(-160)}, {\openLegLength*sin(-160)}) -- ++(0, -\ccdistance) -- (NC);
+		
+		% Draw second equal sign
+		\node[] () at ({\posXNJ+\openLegLength*cos(20)+\defaultDistanceEquations/2}, 0) {$=$};
+		
+		\def\xoffset{200 pt}
+		
+		\def\posXNA{0 + \xoffset}
+		\def\posYNA{-\ccdistance/2}
+		\def\posXNB{\defaultDistanceNormal*0.8 + \xoffset}
+		\def\posYNB{\defaultDistanceNormal*0.3-\ccdistance/2}
+		\def\posXNC{\defaultDistanceNormal*0.5 + \xoffset}
+		\def\posYNC{-\defaultDistanceNormal*0.4-\ccdistance/2}
+		\def\posXND{\defaultDistanceNormal*1.2 + \xoffset}
+		\def\posYND{-\defaultDistanceNormal*0.5-\ccdistance/2}
+		\def\posXNE{\defaultDistanceNormal*1.8 + \xoffset}
+		\def\posYNE{-\defaultDistanceNormal*0.45-\ccdistance/2}
+		\def\posXNF{\defaultDistanceNormal*1.5 + \xoffset}
+		\def\posYNF{\defaultDistanceNormal*0.4-\ccdistance/2}
+		\def\posXNG{\defaultDistanceNormal*2.3 + \xoffset}
+		\def\posYNG{-\defaultDistanceNormal*0.1-\ccdistance/2}
+		\def\posXNH{\defaultDistanceNormal*2.2 + \xoffset}
+		\def\posYNH{-\defaultDistanceNormal*0.8-\ccdistance/2}
+		\def\posXNI{\defaultDistanceNormal*2.9 + \xoffset}
+		\def\posYNI{-\defaultDistanceNormal*0.3-\ccdistance/2}
+		\def\posXNJ{\defaultDistanceNormal*2.9 + \xoffset}
+		\def\posYNJ{\defaultDistanceNormal*0.4-\ccdistance/2}
+		
+		\def\posXNpA{0}
+		\def\posYNpA{\ccdistance/2}
+		\def\posXNpB{\defaultDistanceNormal*0.8 + \xoffset}
+		\def\posYNpB{\defaultDistanceNormal*0.3+\ccdistance/2}
+		\def\posXNpC{\defaultDistanceNormal*0.5 + \xoffset}
+		\def\posYNpC{-\defaultDistanceNormal*0.4+\ccdistance/2}
+		\def\posXNpF{\defaultDistanceNormal*1.5 + \xoffset}
+		\def\posYNpF{\defaultDistanceNormal*0.4+\ccdistance/2}
+		\def\posXNpG{\defaultDistanceNormal*2.3 + \xoffset}
+		\def\posYNpG{-\defaultDistanceNormal*0.1+\ccdistance/2}
+		\def\posXNpH{\defaultDistanceNormal*2.2 + \xoffset}
+		\def\posYNpH{-\defaultDistanceNormal*0.8+\ccdistance/2}
+		\def\posXNpI{\defaultDistanceNormal*2.9 + \xoffset}
+		\def\posYNpI{-\defaultDistanceNormal*0.3+\ccdistance/2}
+		\def\posXNpJ{\defaultDistanceNormal*2.9 + \xoffset}
+		\def\posYNpJ{\defaultDistanceNormal*0.4+\ccdistance/2}
+		\def\posXNpK{\defaultDistanceNormal*1.1 + \xoffset}
+		\def\posYNpK{-\defaultDistanceNormal*0.55+\ccdistance/2}
+		\def\posXNpL{\defaultDistanceNormal*1.7 + \xoffset}
+		\def\posYNpL{-\defaultDistanceNormal*0.6+\ccdistance/2}
+		\def\posXNpM{\defaultDistanceNormal*1.45 + \xoffset}
+		\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2}
+		
+		% Draw tensors of N
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NB) at (\posXNB, \posYNB) {};
+		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (ND) at (\posXND, \posYND) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=redMarkingColor] (NE) at (\posXNE, \posYNE) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NF) at (\posXNF, \posYNF) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NG) at (\posXNG, \posYNG) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NH) at (\posXNH, \posYNH) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NJ) at (\posXNJ, \posYNJ) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw subregion M
+			%\fill[fill=redMarkingColor, opacity=\backgroundopacity] \convexhull{D, E}{\smallTensorWidth*0.9};
+			%\node[color=redMarkingColor] (M) at (\posXND-\defaultDistanceNormal*0.2, \posYND-\defaultDistanceNormal*0.4) {$\mathcal{M}$};
+			
+			% Draw connecting legs
+			\draw[virtualLeg] (NB) -- (NF);
+			\draw[virtualLeg] (NE) -- (ND);
+			\draw[virtualLeg] (NF) -- (NG);
+			\draw[virtualLeg] (NF) -- (NE);
+			\draw[virtualLeg] (NG) -- (NH);
+			\draw[virtualLeg] (NH) -- (NE);
+			\draw[virtualLeg] (NJ) -- (NG);
+			
+			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(35)}, {\posYNF+\openLegLength*sin(35)}) -- (NF);
+			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(-55)}, {\posYNH+\openLegLength*sin(-55)}) -- (NH);
+			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(20)}, {\posYNJ+\openLegLength*sin(20)}) -- (NJ);
 		\end{pgfonlayer}
 	\end{tikzpicture}
 \end{document}
