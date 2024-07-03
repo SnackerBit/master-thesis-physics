@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'contractions_of_isometric_tensor_networks_a.blg'
-[59] biber:340> INFO - === Fr Jun 28, 2024, 13:54:20
-[99] Utils.pm:398> ERROR - Cannot find 'contractions_of_isometric_tensor_networks_a.bcf'!
-[99] Biber.pm:135> INFO - ERRORS: 1
+[32] biber:340> INFO - === Tue Jul  2, 2024, 12:51:04
+[97] Utils.pm:398> ERROR - Cannot find 'contractions_of_isometric_tensor_networks_a.bcf'!
+[97] Biber.pm:135> INFO - ERRORS: 1

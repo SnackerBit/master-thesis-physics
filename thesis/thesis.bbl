@@ -330,6 +330,646 @@
       \verb https://link.aps.org/doi/10.1103/RevModPhys.82.277
       \endverb
     \endentry
+    \entry{cite:criticality_the_area_law_and_the_computational_power_of_PEPS}{article}{}
+      \name{author}{4}{}{%
+        {{hash=085ab1d28e21b822e7bebcfb7d68f99f}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4bf6e0e0b644336c6c5e578a60aa21aa}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=99ab157e40dc6cc9e7c8ca6aef64277a}{%
+           family={Perez-Garcia},
+           familyi={P\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e95cc0745e2fbc83da963e5d6ab9c104}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{fullhash}{9aed6ac2b3e78be35209f52664137857}
+      \strng{bibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{authorbibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{authornamehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{authorfullhash}{9aed6ac2b3e78be35209f52664137857}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{22}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{6}
+      \field{title}{Criticality, the Area Law, and the Computational Power of Projected Entangled Pair States}
+      \field{volume}{96}
+      \field{year}{2006}
+      \field{pages}{220601}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.96.220601
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.96.220601
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.96.220601
+      \endverb
+    \endentry
+    \entry{cite:CTMRG}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           familyi={B\bibinitperiod},
+           given={RJ},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d64e03d940c7fbe88c6755d94cde36b3}{%
+           family={Enting},
+           familyi={E\bibinitperiod},
+           given={IG},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{fullhash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{bibnamehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{authorbibnamehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{authornamehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{authorfullhash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{title}{Series expansions from corner transfer matrices: the square lattice ising model}
+      \field{volume}{21}
+      \field{year}{1979}
+      \field{pages}{103\bibrangedash 123}
+      \range{pages}{21}
+    \endentry
+    \entry{cite:unifying_PEPS_contractions}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e434dcfc1d1dfb3c88940e5ee516a63a}{%
+           family={Lubasch},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=f95429748cdd9a5a6aaf84ba4af3844e}{%
+           family={Banuls},
+           familyi={B\bibinitperiod},
+           given={Mari-Carmen},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{fullhash}{cd85a6470eec80e7688138884c71b628}
+      \strng{bibnamehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{authorbibnamehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{authornamehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{authorfullhash}{cd85a6470eec80e7688138884c71b628}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New Journal of Physics}
+      \field{number}{3}
+      \field{title}{Unifying projected entangled pair state contractions}
+      \field{volume}{16}
+      \field{year}{2014}
+      \field{pages}{033014}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:conversion_of_PEPS_into_a_canonical_form}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ee2f94cfb7d0173d69e1b37326bbe095}{%
+           family={Haghshenas},
+           familyi={H\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0675e09255c4aca2951e6f81bfb419de}{%
+           family={O'Rourke},
+           familyi={O\bibinitperiod},
+           given={Matthew\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9fa3b07f3d74fe2c76629514daf4277d}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Garnet\bibnamedelima Kin-Lic},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{08505b00080e58c7b18b134b6448d117}
+      \strng{fullhash}{08505b00080e58c7b18b134b6448d117}
+      \strng{bibnamehash}{08505b00080e58c7b18b134b6448d117}
+      \strng{authorbibnamehash}{08505b00080e58c7b18b134b6448d117}
+      \strng{authornamehash}{08505b00080e58c7b18b134b6448d117}
+      \strng{authorfullhash}{08505b00080e58c7b18b134b6448d117}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{5}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{8}
+      \field{title}{Conversion of projected entangled pair states into a canonical form}
+      \field{volume}{100}
+      \field{year}{2019}
+      \field{pages}{054404}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.100.054404
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.100.054404
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.100.054404
+      \endverb
+    \endentry
+    \entry{cite:DMRG_approach_to_optimizing_2D_tensor_networks}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=dabeab321c26d3c148d21b6b6be4572a}{%
+           family={Hyatt},
+           familyi={H\bibinitperiod},
+           given={Katharine},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5994a497ddb1da08dbabc1a94907dd7f}{%
+           family={Stoudenmire},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{69895784617361d4bdabb99781e1dbe8}
+      \strng{fullhash}{69895784617361d4bdabb99781e1dbe8}
+      \strng{bibnamehash}{69895784617361d4bdabb99781e1dbe8}
+      \strng{authorbibnamehash}{69895784617361d4bdabb99781e1dbe8}
+      \strng{authornamehash}{69895784617361d4bdabb99781e1dbe8}
+      \strng{authorfullhash}{69895784617361d4bdabb99781e1dbe8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cond-mat.str-el}
+      \field{eprinttype}{arXiv}
+      \field{title}{DMRG Approach to Optimizing Two-Dimensional Tensor Networks}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1908.08833
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1908.08833
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1908.08833
+      \endverb
+    \endentry
+    \entry{cite:isometric_tensor_network_representation_of_string_net_liquids}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9668d148629f0604adb074a12f162adb}{%
+           family={Soejima},
+           familyi={S\bibinitperiod},
+           given={Tomohiro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=83035b5e270d76df4856d830aa6e7639}{%
+           family={Siva},
+           familyi={S\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=860c36b94295415e636d6fa282029d60}{%
+           family={Bultinck},
+           familyi={B\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d5f85c49d15be796162417ee46a85cc3}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Shubhayu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
+      \strng{fullhash}{09e1659c7d5dcadfaadfe03f255fd1b8}
+      \strng{bibnamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
+      \strng{authorbibnamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
+      \strng{authornamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
+      \strng{authorfullhash}{09e1659c7d5dcadfaadfe03f255fd1b8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{8}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{2}
+      \field{title}{Isometric tensor network representation of string-net liquids}
+      \field{volume}{101}
+      \field{year}{2020}
+      \field{pages}{085117}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.101.085117
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.101.085117
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.101.085117
+      \endverb
+    \endentry
+    \entry{cite:computational_complexity_of_isometric_tensor_network_states}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=24aad761522ec03fa47aacbe8e3d608b}{%
+           family={Malz},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=daed6cace2c8afb7a348af7c29c75b0a}{%
+           family={Trivedi},
+           familyi={T\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
+      \strng{fullhash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
+      \strng{bibnamehash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
+      \strng{authorbibnamehash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
+      \strng{authornamehash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
+      \strng{authorfullhash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Computational complexity of isometric tensor network states}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2402.07975
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2402.07975
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2402.07975
+      \endverb
+    \endentry
+    \entry{cite:sequential_generation_of_projected_entangled_pair_states}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2790641e25ba2445941b07254e43801d}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Zhi-Yuan},
+           giveni={Z\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=24aad761522ec03fa47aacbe8e3d608b}{%
+           family={Malz},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c538fedb3ac769e2c125dc055be3c4b5}
+      \strng{fullhash}{c538fedb3ac769e2c125dc055be3c4b5}
+      \strng{bibnamehash}{c538fedb3ac769e2c125dc055be3c4b5}
+      \strng{authorbibnamehash}{c538fedb3ac769e2c125dc055be3c4b5}
+      \strng{authornamehash}{c538fedb3ac769e2c125dc055be3c4b5}
+      \strng{authorfullhash}{c538fedb3ac769e2c125dc055be3c4b5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{1}
+      \field{title}{Sequential Generation of Projected Entangled-Pair States}
+      \field{volume}{128}
+      \field{year}{2022}
+      \field{pages}{010607}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.128.010607
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.128.010607
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.128.010607
+      \endverb
+    \endentry
+    \entry{cite:quantum_circuits_for_2D_isometric_tensor_networks}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=89504971512915ecc0f39f29f80a3abc}{%
+           family={Slattery},
+           familyi={S\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=246f47cae28966a1cd22e6e9f734b474}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Bryan\bibnamedelima K.},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{afdd4d90003cd71a610bc3852c0001fd}
+      \strng{fullhash}{afdd4d90003cd71a610bc3852c0001fd}
+      \strng{bibnamehash}{afdd4d90003cd71a610bc3852c0001fd}
+      \strng{authorbibnamehash}{afdd4d90003cd71a610bc3852c0001fd}
+      \strng{authornamehash}{afdd4d90003cd71a610bc3852c0001fd}
+      \strng{authorfullhash}{afdd4d90003cd71a610bc3852c0001fd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Quantum Circuits For Two-Dimensional Isometric Tensor Networks}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2108.02792
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2108.02792
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2108.02792
+      \endverb
+    \endentry
+    \entry{cite:topological_quantum_phase_transitions_in_2D_isometric_tensor_networks}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=4e9fb2d4f3d0a5411006757f70003f70}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yu-Jie},
+           giveni={Y\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=ed5eca021f59986cc40cdabd5df3e722}{%
+           family={Shtengel},
+           familyi={S\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{25cc9bb48fda9db295f07f47cc780d35}
+      \strng{fullhash}{25cc9bb48fda9db295f07f47cc780d35}
+      \strng{bibnamehash}{25cc9bb48fda9db295f07f47cc780d35}
+      \strng{authorbibnamehash}{25cc9bb48fda9db295f07f47cc780d35}
+      \strng{authornamehash}{25cc9bb48fda9db295f07f47cc780d35}
+      \strng{authorfullhash}{25cc9bb48fda9db295f07f47cc780d35}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Topological quantum phase transitions in 2D isometric tensor networks}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2312.05079
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2312.05079
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2312.05079
+      \endverb
+    \endentry
+    \entry{cite:fermionic_isometric_tensor_network_states}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=82a8df64f78c3965f0d27660f1a1f828}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Zhehao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3f0493eb4d9e268406de90b2fe8e8f9c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yantao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1a67d8c0bc15705aaf8b27e40ba61d63}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Taige},
+           giveni={T\bibinitperiod}}}%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{08bc64ccbf34eb81a849361abb80eeb8}
+      \strng{fullhash}{48350cca2546d657d38966ede71ec605}
+      \strng{bibnamehash}{08bc64ccbf34eb81a849361abb80eeb8}
+      \strng{authorbibnamehash}{08bc64ccbf34eb81a849361abb80eeb8}
+      \strng{authornamehash}{08bc64ccbf34eb81a849361abb80eeb8}
+      \strng{authorfullhash}{48350cca2546d657d38966ede71ec605}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cond-mat.str-el}
+      \field{eprinttype}{arXiv}
+      \field{title}{Fermionic Isometric Tensor Network States in Two Dimensions}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2211.00043
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2211.00043
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2211.00043
+      \endverb
+    \endentry
+    \entry{cite:two_dimensional_isometric_tensor_networks_on_infinite_strip}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3f0493eb4d9e268406de90b2fe8e8f9c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yantao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6e4bfacd06a92fa53c3785e4b6a43f6e}{%
+           family={Anand},
+           familyi={A\bibinitperiod},
+           given={Sajant},
+           giveni={S\bibinitperiod}}}%
+        {{hash=33f4d63d28a903762b178edb727fe534}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Sheng-Hsuan},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{92f5330bcc58f7b1c292c5802374ed13}
+      \strng{fullhash}{b1ee506b208c9d59a6a7ef623ae3b096}
+      \strng{bibnamehash}{92f5330bcc58f7b1c292c5802374ed13}
+      \strng{authorbibnamehash}{92f5330bcc58f7b1c292c5802374ed13}
+      \strng{authornamehash}{92f5330bcc58f7b1c292c5802374ed13}
+      \strng{authorfullhash}{b1ee506b208c9d59a6a7ef623ae3b096}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{24}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{6}
+      \field{title}{Two-dimensional isometric tensor networks on an infinite strip}
+      \field{volume}{107}
+      \field{year}{2023}
+      \field{pages}{245118}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.107.245118
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.107.245118
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.107.245118
+      \endverb
+    \endentry
+    \entry{cite:three_dimensional_isometric_tensor_networks}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef7a7fea8db9ccb6db67f11c01551094}{%
+           family={Tepaske},
+           familyi={T\bibinitperiod},
+           given={Maurits\bibnamedelimb S.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d6097f8efd4cc672f84d6882dc51bc4b}{%
+           family={Luitz},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{7b410892f4d8d9110b29e17d9ef38179}
+      \strng{fullhash}{7b410892f4d8d9110b29e17d9ef38179}
+      \strng{bibnamehash}{7b410892f4d8d9110b29e17d9ef38179}
+      \strng{authorbibnamehash}{7b410892f4d8d9110b29e17d9ef38179}
+      \strng{authornamehash}{7b410892f4d8d9110b29e17d9ef38179}
+      \strng{authorfullhash}{7b410892f4d8d9110b29e17d9ef38179}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{Phys. Rev. Res.}
+      \field{month}{6}
+      \field{title}{Three-dimensional isometric tensor networks}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{pages}{023236}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevResearch.3.023236
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevResearch.3.023236
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevResearch.3.023236
+      \endverb
+    \endentry
+    \entry{cite:isometric_tensor_network_representation_of_2D_thermal_states}{article}{}
+      \name{author}{3}{}{%
+        {{hash=743898cac3b7eb62a1669c191624449c}{%
+           family={Kadow},
+           familyi={K\bibinitperiod},
+           given={Wilhelm},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e6413c699fe65b7ad16ec6f6e7177f52}{%
+           family={Knap},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{b8ac966ae0c3ad3e43de0ae255035418}
+      \strng{fullhash}{b8ac966ae0c3ad3e43de0ae255035418}
+      \strng{bibnamehash}{b8ac966ae0c3ad3e43de0ae255035418}
+      \strng{authorbibnamehash}{b8ac966ae0c3ad3e43de0ae255035418}
+      \strng{authornamehash}{b8ac966ae0c3ad3e43de0ae255035418}
+      \strng{authorfullhash}{b8ac966ae0c3ad3e43de0ae255035418}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{20}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{5}
+      \field{title}{Isometric tensor network representations of two-dimensional thermal states}
+      \field{volume}{107}
+      \field{year}{2023}
+      \field{pages}{205106}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.107.205106
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
+      \endverb
+    \endentry
     \entry{cite:optimization_on_matrix_manifolds}{book}{}
       \name{author}{3}{}{%
         {{hash=9a81fe9ad87cf630eb4a68e86949545d}{%
@@ -360,8 +1000,8 @@
       \strng{authorbibnamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authornamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authorfullhash}{e7190b12d85362656ed68bdbd6bb3b2d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781400830244}
@@ -404,8 +1044,8 @@
       \strng{authorbibnamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authornamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authorfullhash}{1fb317b919aa78dc3d7db4836ffad4b5}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1367-2630}
@@ -454,8 +1094,8 @@
       \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
       \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
       \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2542-4653}
@@ -499,8 +1139,8 @@
       \strng{authorbibnamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authornamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authorfullhash}{7bd438baffcc0da55c3c7385d29cbb81}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.MS}
