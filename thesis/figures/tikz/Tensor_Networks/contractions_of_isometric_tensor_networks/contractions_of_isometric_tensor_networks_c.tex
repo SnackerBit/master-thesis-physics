@@ -1,0 +1,145 @@
+\documentclass[crop, tikz]{standalone}
+\usepackage{tikz-network}
+\input{../../style.tex}
+
+\begin{document}
+	\def\openLegLength{20 pt}
+	\def\ccdistance{80 pt}
+	
+	\def\posXNA{0}
+	\def\posYNA{-\ccdistance/2}
+	\def\posXNB{\defaultDistanceNormal*0.8}
+	\def\posYNB{\defaultDistanceNormal*0.3-\ccdistance/2}
+	\def\posXNC{\defaultDistanceNormal*0.5}
+	\def\posYNC{-\defaultDistanceNormal*0.4-\ccdistance/2}
+	\def\posXND{\defaultDistanceNormal*1.2}
+	\def\posYND{-\defaultDistanceNormal*0.5-\ccdistance/2}
+	\def\posXNE{\defaultDistanceNormal*1.8}
+	\def\posYNE{-\defaultDistanceNormal*0.45-\ccdistance/2}
+	\def\posXNF{\defaultDistanceNormal*1.5}
+	\def\posYNF{\defaultDistanceNormal*0.4-\ccdistance/2}
+	\def\posXNG{\defaultDistanceNormal*2.3}
+	\def\posYNG{-\defaultDistanceNormal*0.1-\ccdistance/2}
+	\def\posXNH{\defaultDistanceNormal*2.2}
+	\def\posYNH{-\defaultDistanceNormal*0.8-\ccdistance/2}
+	\def\posXNI{\defaultDistanceNormal*2.9}
+	\def\posYNI{-\defaultDistanceNormal*0.3-\ccdistance/2}
+	\def\posXNJ{\defaultDistanceNormal*2.9}
+	\def\posYNJ{\defaultDistanceNormal*0.4-\ccdistance/2}
+	
+	\def\posXNpA{0}
+	\def\posYNpA{\ccdistance/2}
+	\def\posXNpB{\defaultDistanceNormal*0.8}
+	\def\posYNpB{\defaultDistanceNormal*0.3+\ccdistance/2}
+	\def\posXNpC{\defaultDistanceNormal*0.5}
+	\def\posYNpC{-\defaultDistanceNormal*0.4+\ccdistance/2}
+	\def\posXNpF{\defaultDistanceNormal*1.5}
+	\def\posYNpF{\defaultDistanceNormal*0.4+\ccdistance/2}
+	\def\posXNpG{\defaultDistanceNormal*2.3}
+	\def\posYNpG{-\defaultDistanceNormal*0.1+\ccdistance/2}
+	\def\posXNpH{\defaultDistanceNormal*2.2}
+	\def\posYNpH{-\defaultDistanceNormal*0.8+\ccdistance/2}
+	\def\posXNpI{\defaultDistanceNormal*2.9}
+	\def\posYNpI{-\defaultDistanceNormal*0.3+\ccdistance/2}
+	\def\posXNpJ{\defaultDistanceNormal*2.9}
+	\def\posYNpJ{\defaultDistanceNormal*0.4+\ccdistance/2}
+	\def\posXNpK{\defaultDistanceNormal*1.1}
+	\def\posYNpK{-\defaultDistanceNormal*0.55+\ccdistance/2}
+	\def\posXNpL{\defaultDistanceNormal*1.7}
+	\def\posYNpL{-\defaultDistanceNormal*0.6+\ccdistance/2}
+	\def\posXNpM{\defaultDistanceNormal*1.45}
+	\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2}
+	
+	\begin{tikzpicture}
+		% Draw tensors of N
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NA) at (\posXNA, \posYNA) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NB) at (\posXNB, \posYNB) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NC) at (\posXNC, \posYNC) {};
+		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (ND) at (\posXND, \posYND) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=redMarkingColor] (NE) at (\posXNE, \posYNE) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NF) at (\posXNF, \posYNF) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NG) at (\posXNG, \posYNG) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NH) at (\posXNH, \posYNH) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NI) at (\posXNI, \posYNI) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NJ) at (\posXNJ, \posYNJ) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw subregion M
+			%\fill[fill=redMarkingColor, opacity=\backgroundopacity] \convexhull{D, E}{\smallTensorWidth*0.9};
+			%\node[color=redMarkingColor] (M) at (\posXND-\defaultDistanceNormal*0.2, \posYND-\defaultDistanceNormal*0.4) {$\mathcal{M}$};
+			
+			% Draw connecting legs
+			\draw[virtualLeg] (NA) -- (NB);
+			\draw[virtualLeg] (NB) -- (NF);
+			\draw[virtualLeg] (NC) -- (NB);
+			\draw[virtualLeg] (NC) -- (ND);
+			\draw[virtualLeg] (NE) -- (ND);
+			\draw[virtualLeg] (NF) -- (NG);
+			\draw[virtualLeg] (NF) -- (NE);
+			\draw[virtualLeg] (NG) -- (NH);
+			\draw[virtualLeg] (NH) -- (NE);
+			\draw[virtualLeg] (NI) -- (NJ);
+			\draw[virtualLeg] (NI) -- (NG);
+			\draw[virtualLeg] (NJ) -- (NG);
+			
+			\draw[virtualLeg] ({\posXNA+\openLegLength*cos(170)}, {\posYNA+\openLegLength*sin(170)}) -- (NA);
+			\draw[virtualLeg] ({\posXNC+\openLegLength*cos(-150)}, {\posYNC+\openLegLength*sin(-150)}) -- (NC);
+			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(60)}, {\posYNF+\openLegLength*sin(60)}) -- (NF);
+			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(-50)}, {\posYNH+\openLegLength*sin(-50)}) -- (NH);
+			\draw[virtualLeg] ({\posXNI+\openLegLength*cos(-20)}, {\posYNI+\openLegLength*sin(-20)}) -- (NI);
+			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(30)}, {\posYNJ+\openLegLength*sin(30)}) -- (NJ);
+		\end{pgfonlayer}
+		
+		% Draw tensors of N'
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpA) at (\posXNpA, \posYNpA) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpB) at (\posXNpB, \posYNpB) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpC) at (\posXNpC, \posYNpC) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpF) at (\posXNpF, \posYNpF) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpG) at (\posXNpG, \posYNpG) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpH) at (\posXNpH, \posYNpH) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpI) at (\posXNpI, \posYNpI) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpJ) at (\posXNpJ, \posYNpJ) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=greenMarkingColor] (NpK) at (\posXNpK, \posYNpK) {};
+		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (NpL) at (\posXNpL, \posYNpL) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=greenMarkingColor] (NpM) at (\posXNpM, \posYNpM) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw subregion M
+			%\fill[color=greenMarkingColor, opacity=\backgroundopacity] \convexhull{K, M, L}{\smallTensorWidth*0.9};
+			%\node[color=greenMarkingColor] (Mp) at (\posXNpK-\defaultDistanceNormal*0.2, \posYNpK-\defaultDistanceNormal*0.4) {$\mathcal{M}^\prime$};
+			
+			% Draw connecting legs
+			\draw[virtualLeg] (NpA) -- (NpB);
+			\draw[virtualLeg] (NpB) -- (NpF);
+			\draw[virtualLeg] (NpC) -- (NpB);
+			\draw[virtualLeg] (NpC) -- (NpK);
+			\draw[virtualLeg] (NpF) -- (NpG);
+			\draw[virtualLeg] (NpF) -- (NpM);
+			\draw[virtualLeg] (NpG) -- (NpH);
+			\draw[virtualLeg] (NpH) -- (NpL);
+			\draw[virtualLeg] (NpI) -- (NpJ);
+			\draw[virtualLeg] (NpI) -- (NpG);
+			\draw[virtualLeg] (NpJ) -- (NpG);
+			\draw[virtualLeg] (NpK) -- (NpL);
+			\draw[virtualLeg] (NpK) -- (NpM);
+			\draw[virtualLeg] (NpM) -- (NpL);
+			
+			\draw[virtualLeg] ({\posXNpA+\openLegLength*cos(170)}, {\posYNpA+\openLegLength*sin(170)}) -- (NpA);
+			\draw[virtualLeg] ({\posXNpC+\openLegLength*cos(-150)}, {\posYNpC+\openLegLength*sin(-150)}) -- (NpC);
+			\draw[virtualLeg] ({\posXNpF+\openLegLength*cos(60)}, {\posYNpF+\openLegLength*sin(60)}) -- (NpF);
+			\draw[virtualLeg] ({\posXNpH+\openLegLength*cos(-50)}, {\posYNpH+\openLegLength*sin(-50)}) -- (NpH);
+			\draw[virtualLeg] ({\posXNpI+\openLegLength*cos(-20)}, {\posYNpI+\openLegLength*sin(-20)}) -- (NpI);
+			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(30)}, {\posYNpJ+\openLegLength*sin(30)}) -- (NpJ);
+		\end{pgfonlayer}
+		
+		% Draw connections of upper/lower wavefunction
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegWithoutArrows] (NpA) -- ++({\openLegLength*cos(170)}, {\openLegLength*sin(170)}) -- ++(0, -\ccdistance) -- (NA);
+			\draw[virtualLegWithoutArrows] (NpC) -- ++({\openLegLength*cos(-150)}, {\openLegLength*sin(-150)}) -- ++(0, -\ccdistance) -- (NC);
+			\draw[virtualLegWithoutArrows] (NpF) -- ++({\openLegLength*cos(60)}, {\openLegLength*sin(60)}) -- ++(0, -\ccdistance) -- (NF);
+			\draw[virtualLegWithoutArrows] (NpH) -- ++({\openLegLength*cos(-50)}, {\openLegLength*sin(-50)}) -- ++(0, -\ccdistance) -- (NH);
+			\draw[virtualLegWithoutArrows] (NpI) -- ++({\openLegLength*cos(-20)}, {\openLegLength*sin(-20)}) -- ++(0, -\ccdistance) -- (NI);
+			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(30)}, {\openLegLength*sin(30)}) -- ++(0, -\ccdistance) -- (NJ);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}
