@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  3 JUL 2024 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  4 JUL 2024 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1445,29 +1445,87 @@ ecomposition.jpeg>])) [19] [20
 
 ]
 chapter 3.
-(./chapters/isoDTPS/isoDTPS.tex) [21] [22
+(./chapters/disoTPS/disoTPS.tex (./chapters/disoTPS/network_structure.tex
+<figures/Tensor_Networks/disoTPS.jpeg, id=497, 1003.75pt x 1003.75pt>
+File: figures/Tensor_Networks/disoTPS.jpeg Graphic file (type jpg)
+<use figures/Tensor_Networks/disoTPS.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS.jpeg  used on input li
+ne 3.
+(pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
+<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=501, 1995.4
+55pt x 1003.75pt>
+File: figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg Graphic fi
+le (type jpg)
+<use figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS_onesite_expectation_va
+lue.jpeg  used on input line 12.
+(pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
+
+[21]
+<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=508, 1995.4
+55pt x 1003.75pt>
+File: figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg Graphic fi
+le (type jpg)
+<use figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS_twosite_expectation_va
+lue.jpeg  used on input line 19.
+(pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
+) [22 <./figures/Tensor_Networks/disoTPS.jpeg>] [23 <./figures/Tensor_Networks/
+disoTPS_onesite_expectation_value.jpeg> <./figures/Tensor_Networks/disoTPS_twos
+ite_expectation_value.jpeg>] (./chapters/disoTPS/YB_move.tex
+<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=523, 1540.75626p
+t x 1002.74625pt>
+File: figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg Graphic file (t
+ype jpg)
+<use figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS_moving_ortho_surface.j
+peg  used on input line 3.
+(pdftex.def)             Requested size: 358.50233pt x 233.3044pt.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 8.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 8.
+
+[24 <./figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>]
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 15.
+
+<figures/Tensor_Networks/YB_move_closeup.jpeg, id=530, 1787.67876pt x 1003.75pt
+>
+File: figures/Tensor_Networks/YB_move_closeup.jpeg Graphic file (type jpg)
+<use figures/Tensor_Networks/YB_move_closeup.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/YB_move_closeup.jpeg  used on 
+input line 18.
+(pdftex.def)             Requested size: 358.50233pt x 201.2825pt.
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 22.
+
+) (./chapters/disoTPS/TEBD.tex)) [25 <./figures/Tensor_Networks/YB_move_closeup
+.jpeg>] [26
 
 
 ]
 chapter 4.
-(./chapters/Toric_Code/Toric_Code.tex) [23] [24
+(./chapters/Toric_Code/Toric_Code.tex) [27] [28
 
 
 ]
 chapter 5.
-(./chapters/TFI/TFI.tex) [25] [26
+(./chapters/TFI/TFI.tex) [29] [30
 
 
 ]
 chapter A.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [27])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [28] [29] [30
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [31])
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [32] [33] [34
 
 
 ]
 chapter B.
-[31] [32
+[35] [36
 
 
 ]
@@ -1476,10 +1534,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[33
+[37
 
 
-] [34] [35] (./thesis.aux
+] [38] [39] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -1497,11 +1555,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32983 strings out of 478287
- 664442 string characters out of 5849289
- 1558342 words of memory out of 5000000
- 50441 multiletter control sequences out of 15000+600000
- 487864 words of font info for 149 fonts, out of 8000000 for 9000
+ 33052 strings out of 478287
+ 667098 string characters out of 5849289
+ 1559828 words of memory out of 5000000
+ 50486 multiletter control sequences out of 15000+600000
+ 487915 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
@@ -1528,10 +1586,10 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on thesis.pdf (41 pages, 2263974 bytes).
+Output written on thesis.pdf (45 pages, 3018971 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 643 compressed objects within 7 object streams
- 129 named destinations out of 1000 (max. 500000)
- 39715 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 849 PDF objects out of 1000 (max. 8388607)
+ 668 compressed objects within 7 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 39740 words of extra memory for PDF output out of 42996 (max. 10000000)
 
