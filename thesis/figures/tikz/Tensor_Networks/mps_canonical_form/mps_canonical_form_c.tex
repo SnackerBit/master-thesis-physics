@@ -1,0 +1,26 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\node[tensorPhysical, fill=generalTensorColor] (A1) at (0, 0) {};
+		\node[tensorPhysical, fill=generalTensorColor] (A1cc) at (0, -\defaultDistanceLarge) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (0, -\defaultDistanceLarge/2) -- (A1);
+			\draw[physicalLeg] (0, -\defaultDistanceLarge/2) -- (A1cc);
+			
+			\draw[virtualLeg] (A1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (A1cc) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (A1);
+			\draw[virtualLeg] (\defaultDistanceNormal-\defaultTensorWidth/2, -\defaultDistanceLarge) -- (A1cc);
+			\draw[virtualLegWithoutArrows] (A1) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (A1cc);
+		\end{pgfonlayer}
+		
+		\node[] () at (\defaultDistanceNormal - \defaultTensorWidth/2 + \defaultDistanceEquations/2, -\defaultDistanceLarge/2) {$=$};
+		
+		\draw[virtualLegWithoutArrows] (\defaultDistanceNormal - \defaultTensorWidth/2 + \defaultDistanceEquations, 0) -- ++(\defaultDistanceNormal-\defaultTensorWidth, 0) -- ++(0, -\defaultDistanceLarge) -- ++(-\defaultDistanceNormal+\defaultTensorWidth, 0);
+		
+		\node[] at (0, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$B^{[i]}$};
+		\node[] at (0, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$B^{[i]}$};
+	\end{tikzpicture}
+\end{document}

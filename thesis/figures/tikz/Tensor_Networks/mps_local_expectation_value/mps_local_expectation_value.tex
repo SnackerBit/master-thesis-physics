@@ -1,0 +1,71 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A1) at (0, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2) at (\defaultDistanceNormal, 0) {};
+		\node[] () at (2.1*\defaultDistanceNormal, 0) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1) at (3.2*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (An) at (4.2*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1) at (5.2*\defaultDistanceNormal, 0) {};
+		\node[] () at (6.3*\defaultDistanceNormal, 0) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1) at (7.4*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (AN) at (8.4*\defaultDistanceNormal, 0) {};
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A1cc) at (0, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2cc) at (\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[] () at (2.1*\defaultDistanceNormal, -\defaultDistanceLarge) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1cc) at (3.2*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Ancc) at (4.2*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1cc) at (5.2*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[] () at (6.3*\defaultDistanceNormal, -\defaultDistanceLarge) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1cc) at (7.4*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANcc) at (8.4*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		
+		\draw[virtualLegWithoutArrows] (A1) -- (A2);
+		\draw[virtualLegWithoutArrows] (Anm1) -- (An) -- (Anp1);
+		\draw[virtualLegWithoutArrows] (ANm1) -- (AN);
+		
+		\draw[virtualLegWithoutArrows] (A1cc) -- (A2cc);
+		\draw[virtualLegWithoutArrows] (Anm1cc) -- (Ancc) -- (Anp1cc);
+		\draw[virtualLegWithoutArrows] (ANm1cc) -- (ANcc);
+		
+		\node[tensorOperator, minimum size=\defaultTensorWidth] (op) at (4.2*\defaultDistanceNormal, -\defaultDistanceLarge/2) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegWithoutArrows] (A1) -- (A1cc);
+			\draw[physicalLegWithoutArrows] (A2) -- (A2cc);
+			\draw[physicalLegWithoutArrows] (Anm1) -- (Anm1cc);
+			\draw[physicalLegWithoutArrows] (Anp1) -- (Anp1cc);
+			\draw[physicalLegWithoutArrows] (ANm1) -- (ANm1cc);
+			\draw[physicalLegWithoutArrows] (AN) -- (ANcc);
+			\draw[physicalLegWithoutArrows] (An) -- (op) -- (Ancc);
+			
+			\draw[virtualLegWithoutArrows] (A2) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLegWithoutArrows] (A2cc) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLegWithoutArrows] (Anm1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			\draw[virtualLegWithoutArrows] (Anm1cc) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			
+			\draw[virtualLegWithoutArrows] (Anp1) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLegWithoutArrows] (Anp1cc) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLegWithoutArrows] (ANm1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			\draw[virtualLegWithoutArrows] (ANm1cc) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+		\end{pgfonlayer}
+		
+		\node[] at (0, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[1]}$};
+		\node[] at (\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[2]}$};
+		\node[] at (3.2*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[n-1]}$};
+		\node[] at (4.2*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[n]}$};
+		\node[] at (5.2*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[n+1]}$};
+		\node[] at (7.4*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[N-1]}$};
+		\node[] at (8.4*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[N]}$};
+		
+		\node[] at (0, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[1]*}$};
+		\node[] at (\defaultDistanceNormal, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[2]*}$};
+		\node[] at (3.2*\defaultDistanceNormal, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[n-1]*}$};
+		\node[] at (4.2*\defaultDistanceNormal, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[n]*}$};
+		\node[] at (5.2*\defaultDistanceNormal, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[n+1]*}$};
+		\node[] at (7.4*\defaultDistanceNormal, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[N-1]*}$};
+		\node[] at (8.4*\defaultDistanceNormal, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$T^{[N]*}$};
+	\end{tikzpicture}
+\end{document}

@@ -17,8 +17,8 @@
 	\def\posYG{-\defaultDistanceNormal*0.1}
 	\def\posXH{\defaultDistanceNormal*2.2}
 	\def\posYH{-\defaultDistanceNormal*0.8}
-	\def\posXI{\defaultDistanceNormal*2.9}
-	\def\posYI{-\defaultDistanceNormal*0.3}
+	\def\posXI{\defaultDistanceNormal*3.1}
+	\def\posYI{-\defaultDistanceNormal*0.2}
 	\def\posXJ{\defaultDistanceNormal*2.9}
 	\def\posYJ{\defaultDistanceNormal*0.4}
 	\def\posXK{\defaultDistanceNormal*1.1}
@@ -27,6 +27,13 @@
 	\def\posYL{-\defaultDistanceNormal*0.6}
 	\def\posXM{\defaultDistanceNormal*1.45}
 	\def\posYM{-\defaultDistanceNormal*0.15}
+	
+	\def\angleA{170}
+	\def\angleC{-160}
+	\def\angleF{35}
+	\def\angleH{-45}
+	\def\angleI{-10}
+	\def\angleJ{20}
 	
 	\begin{tikzpicture}
 		% Draw tensors
@@ -63,12 +70,12 @@
 			\draw[virtualLeg] (K) -- (M);
 			\draw[virtualLeg] (M) -- (L);
 			
-			\draw[virtualLeg] ({\posXA+\openLegLength*cos(170)}, {\posYA+\openLegLength*sin(170)}) -- (A);
-			\draw[virtualLeg] ({\posXC+\openLegLength*cos(-150)}, {\posYC+\openLegLength*sin(-150)}) -- (C);
-			\draw[virtualLeg] ({\posXF+\openLegLength*cos(60)}, {\posYF+\openLegLength*sin(60)}) -- (F);
-			\draw[virtualLeg] ({\posXH+\openLegLength*cos(-50)}, {\posYH+\openLegLength*sin(-50)}) -- (H);
-			\draw[virtualLeg] ({\posXI+\openLegLength*cos(-20)}, {\posYI+\openLegLength*sin(-20)}) -- (I);
-			\draw[virtualLeg] ({\posXJ+\openLegLength*cos(30)}, {\posYJ+\openLegLength*sin(30)}) -- (J);
+			\draw[virtualLeg] ({\posXA+\openLegLength*cos(\angleA)}, {\posYA+\openLegLength*sin(\angleA)}) -- (A);
+			\draw[virtualLeg] ({\posXC+\openLegLength*cos(\angleC)}, {\posYC+\openLegLength*sin(\angleC)}) -- (C);
+			\draw[virtualLeg] ({\posXF+\openLegLength*cos(\angleF)}, {\posYF+\openLegLength*sin(\angleF)}) -- (F);
+			\draw[virtualLeg] ({\posXH+\openLegLength*cos(\angleH)}, {\posYH+\openLegLength*sin(\angleH)}) -- (H);
+			\draw[virtualLeg] ({\posXI+\openLegLength*cos(\angleI)}, {\posYI+\openLegLength*sin(\angleI)}) -- (I);
+			\draw[virtualLeg] ({\posXJ+\openLegLength*cos(\angleJ)}, {\posYJ+\openLegLength*sin(\angleJ)}) -- (J);
 		\end{pgfonlayer}
 		
 		% Draw big blob
@@ -79,12 +86,12 @@
 		\node[draw, ellipse, minimum width=2*\blobhalfwidth, minimum height=\blobhalfheight*2, line width=\defaultLineWidth, draw=borderColor, fill=generalTensorColor,outer sep=0] (blob) at (\blobPosX, \blobPosY) {$\mathcal{N}^\prime$};
 		\begin{pgfonlayer}{bg}
 			% Draw legs
-			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(170)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(170)}) -- (blob);
-			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(-150)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(-150)}) -- (blob);
-			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(60)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(60)}) -- (blob);
-			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(-50)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(-50)}) -- (blob);
-			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(-20)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(-20)}) -- (blob);
-			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(30)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(30)}) -- (blob);
+			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(\angleA)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(\angleA)}) -- (blob);
+			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(\angleC)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(\angleC)}) -- (blob);
+			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(\angleF)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(\angleF)}) -- (blob);
+			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(\angleH)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(\angleH)}) -- (blob);
+			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(\angleI)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(\angleI)}) -- (blob);
+			\draw[virtualLeg] ({\blobPosX + (\blobhalfwidth+\openLegLength)*cos(\angleJ)}, {\blobPosY + (\blobhalfheight+\openLegLength)*sin(\angleJ)}) -- (blob);
 		\end{pgfonlayer}
 		
 		% draw equal sign

@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  3 JUL 2024 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.26)  4 JUL 2024 21:09
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -872,9 +872,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language47). Reported on input line 105.
+(babel)             (\language85). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language47). Reported on input line 108.
+(babel)             (\language85). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -1341,79 +1341,127 @@ jpeg  used on input line 38.
 )
 (./chapters/Tensor_Networks/isometric_tensor_networks.tex [8 <./figures/Tensor_
 Networks/tensor_decomposition_diagrams.jpeg>]
-<figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg, id=
-333, 2376.88pt x 1002.74625pt>
-File: figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg
- Graphic file (type jpg)
-<use figures/Tensor_Networks/isometric_tensor_network_local_approximation.jpeg>
-
-Package pdftex.def Info: figures/Tensor_Networks/isometric_tensor_network_local
-_approximation.jpeg  used on input line 15.
-(pdftex.def)             Requested size: 398.33864pt x 168.0471pt.
+<figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
+tions_of_isometric_tensor_networks_a.pdf, id=333, 285.01381pt x 75.6135pt>
+File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
+ntractions_of_isometric_tensor_networks_a.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
+tractions_of_isometric_tensor_networks_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/contractions_of_isometric
+_tensor_networks/contractions_of_isometric_tensor_networks_a.pdf  used on input
+ line 19.
+(pdftex.def)             Requested size: 285.0131pt x 75.6133pt.
+<figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
+tions_of_isometric_tensor_networks_b.pdf, id=334, 285.01381pt x 75.6135pt>
+File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
+ntractions_of_isometric_tensor_networks_b.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
+tractions_of_isometric_tensor_networks_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/contractions_of_isometric
+_tensor_networks/contractions_of_isometric_tensor_networks_b.pdf  used on input
+ line 23.
+(pdftex.def)             Requested size: 285.0131pt x 75.6133pt.
+<figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
+tions_of_isometric_tensor_networks_c.pdf, id=335, 379.18164pt x 234.32744pt>
+File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
+ntractions_of_isometric_tensor_networks_c.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
+tractions_of_isometric_tensor_networks_c.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/contractions_of_isometric
+_tensor_networks/contractions_of_isometric_tensor_networks_c.pdf  used on input
+ line 27.
+(pdftex.def)             Requested size: 379.18071pt x 234.32686pt.
 )
-(./chapters/Tensor_Networks/matrix_product_states.tex [9]
-<figures/Tensor_Networks/mps_mps.jpeg, id=344, 2752.2825pt x 1003.75pt>
-File: figures/Tensor_Networks/mps_mps.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/mps_mps.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/mps_mps.jpeg  used on input li
-ne 18.
-(pdftex.def)             Requested size: 398.33864pt x 145.27199pt.
-<figures/Tensor_Networks/mps_mps_canonical.jpeg, id=347, 1967.35pt x 1003.75pt>
-
-File: figures/Tensor_Networks/mps_mps_canonical.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/mps_mps_canonical.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/mps_mps_canonical.jpeg  used o
-n input line 24.
-(pdftex.def)             Requested size: 398.33864pt x 203.22763pt.
- [10 <./figures/Tensor_Networks/isometric_tensor_network_local_approximation.jp
-eg>] [11 <./figures/Tensor_Networks/mps_mps.jpeg> <./figures/Tensor_Networks/mp
-s_mps_canonical.jpeg>]
-<figures/Tensor_Networks/mps_local_expectation_value.jpeg, id=370, 2572.61125pt
- x 1003.75pt>
-File: figures/Tensor_Networks/mps_local_expectation_value.jpeg Graphic file (ty
-pe jpg)
-<use figures/Tensor_Networks/mps_local_expectation_value.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/mps_local_expectation_value.jp
-eg  used on input line 44.
-(pdftex.def)             Requested size: 398.33864pt x 155.41116pt.
-<figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg, id=371, 10
+(./chapters/Tensor_Networks/matrix_product_states.tex [9] [10 <./figures/tikz/T
+ensor_Networks/contractions_of_isometric_tensor_networks/contractions_of_isomet
+ric_tensor_networks_a.pdf> <./figures/tikz/Tensor_Networks/contractions_of_isom
+etric_tensor_networks/contractions_of_isometric_tensor_networks_b.pdf> <./figur
+es/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contractions_
+of_isometric_tensor_networks_c.pdf>]
+<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=392, 232.46147pt x 73
+.06999pt>
+File: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf Graphic file (type p
+df)
+<use figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf  
+used on input line 18.
+(pdftex.def)             Requested size: 232.46089pt x 73.0698pt.
+<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=3
+95, 361.02278pt x 73.06999pt>
+File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf 
+Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
+nonical_form_a.pdf  used on input line 27.
+(pdftex.def)             Requested size: 361.0219pt x 73.0698pt.
+<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf, id=3
+96, 113.9999pt x 107.54478pt>
+File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf 
+Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
+nonical_form_b.pdf  used on input line 31.
+(pdftex.def)             Requested size: 113.9996pt x 107.54451pt.
+<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf, id=3
+97, 113.9999pt x 107.54478pt>
+File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf 
+Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
+nonical_form_c.pdf  used on input line 36.
+(pdftex.def)             Requested size: 113.9996pt x 107.54451pt.
+ [11 <./figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf>]
+<figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation
+_value.pdf, id=430, 364.55898pt x 107.54478pt>
+File: figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expect
+ation_value.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expecta
+tion_value.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_local_expectation_val
+ue/mps_local_expectation_value.pdf  used on input line 56.
+(pdftex.def)             Requested size: 364.55809pt x 107.54451pt.
+ [12 <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pd
+f> <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
+ <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>]
+<figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg, id=493, 10
 03.75pt x 1124.2pt>
 File: figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg Graphi
 c file (type jpg)
 <use figures/Tensor_Networks/mps_local_expectation_value_canonical.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/mps_local_expectation_value_ca
-nonical.jpeg  used on input line 50.
+nonical.jpeg  used on input line 62.
 (pdftex.def)             Requested size: 398.33864pt x 446.13834pt.
-[12]
 
-LaTeX Warning: Reference `fig' on page 13 undefined on input line 58.
 
-[13 <./figures/Tensor_Networks/mps_local_expectation_value.jpeg>] [14 <./figure
-s/Tensor_Networks/mps_local_expectation_value_canonical.jpeg>])
-(./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex
-<figures/Tensor_Networks/PEPS_square.jpeg, id=399, 1003.75pt x 1003.75pt>
+LaTeX Warning: Reference `fig' on page 13 undefined on input line 70.
+
+[13 <./figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expec
+tation_value.pdf>] [14 <./figures/Tensor_Networks/mps_local_expectation_value_c
+anonical.jpeg>])
+(./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex [15]
+<figures/Tensor_Networks/PEPS_square.jpeg, id=540, 1003.75pt x 1003.75pt>
 File: figures/Tensor_Networks/PEPS_square.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/PEPS_square.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/PEPS_square.jpeg  used on inpu
 t line 12.
 (pdftex.def)             Requested size: 159.33302pt x 159.33205pt.
-<figures/Tensor_Networks/isoTPS_square.jpeg, id=400, 1003.75pt x 1007.765pt>
+<figures/Tensor_Networks/isoTPS_square.jpeg, id=541, 1003.75pt x 1007.765pt>
 File: figures/Tensor_Networks/isoTPS_square.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/isoTPS_square.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/isoTPS_square.jpeg  used on in
 put line 16.
 (pdftex.def)             Requested size: 159.33302pt x 159.96938pt.
- [15]
+
 [16 <./figures/Tensor_Networks/PEPS_square.jpeg> <./figures/Tensor_Networks/iso
 TPS_square.jpeg>]
-<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=432, 2391.93625pt x 1003.
+<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=568, 2391.93625pt x 1003.
 75pt>
 File: figures/Tensor_Networks/Moving_ortho_center.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/Moving_ortho_center.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/Moving_ortho_center.jpeg  used
  on input line 29.
 (pdftex.def)             Requested size: 119.50279pt x 50.14449pt.
-<figures/Tensor_Networks/variational_MM.jpeg, id=433, 1933.2225pt x 1003.75pt>
+<figures/Tensor_Networks/variational_MM.jpeg, id=569, 1933.2225pt x 1003.75pt>
 File: figures/Tensor_Networks/variational_MM.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/variational_MM.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/variational_MM.jpeg  used on i
@@ -1421,13 +1469,13 @@ nput line 33.
 (pdftex.def)             Requested size: 239.0056pt x 124.09pt.
  [17 <./figures/Tensor_Networks/Moving_ortho_center.jpeg> <./figures/Tensor_Net
 works/variational_MM.jpeg>]
-<figures/Tensor_Networks/MM.jpeg, id=451, 2498.33376pt x 1003.75pt>
+<figures/Tensor_Networks/MM.jpeg, id=586, 2498.33376pt x 1003.75pt>
 File: figures/Tensor_Networks/MM.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/MM.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/MM.jpeg  used on input line 53
 .
 (pdftex.def)             Requested size: 318.67212pt x 128.0262pt.
-<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=452, 4015.0pt x 917.
+<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=587, 4015.0pt x 917.
 4275pt>
 File: figures/Tensor_Networks/Tripartite_decomposition.jpeg Graphic file (type 
 jpg)
@@ -1497,10 +1545,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32983 strings out of 478287
- 664442 string characters out of 5849289
- 1558342 words of memory out of 5000000
- 50441 multiletter control sequences out of 15000+600000
+ 33028 strings out of 478287
+ 668602 string characters out of 5849289
+ 1558799 words of memory out of 5000000
+ 50477 multiletter control sequences out of 15000+600000
  487864 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1528,10 +1576,10 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on thesis.pdf (41 pages, 2263974 bytes).
+Output written on thesis.pdf (41 pages, 1631961 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 643 compressed objects within 7 object streams
- 129 named destinations out of 1000 (max. 500000)
- 39715 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 946 PDF objects out of 1000 (max. 8388607)
+ 746 compressed objects within 8 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 39735 words of extra memory for PDF output out of 42996 (max. 10000000)
 

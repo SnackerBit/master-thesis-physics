@@ -22,8 +22,8 @@
 	\def\posYNG{-\defaultDistanceNormal*0.1-\ccdistance/2}
 	\def\posXNH{\defaultDistanceNormal*2.2}
 	\def\posYNH{-\defaultDistanceNormal*0.8-\ccdistance/2}
-	\def\posXNI{\defaultDistanceNormal*2.9}
-	\def\posYNI{-\defaultDistanceNormal*0.3-\ccdistance/2}
+	\def\posXNI{\defaultDistanceNormal*3.1}
+	\def\posYNI{-\defaultDistanceNormal*0.2-\ccdistance/2}
 	\def\posXNJ{\defaultDistanceNormal*2.9}
 	\def\posYNJ{\defaultDistanceNormal*0.4-\ccdistance/2}
 	
@@ -39,8 +39,8 @@
 	\def\posYNpG{-\defaultDistanceNormal*0.1+\ccdistance/2}
 	\def\posXNpH{\defaultDistanceNormal*2.2}
 	\def\posYNpH{-\defaultDistanceNormal*0.8+\ccdistance/2}
-	\def\posXNpI{\defaultDistanceNormal*2.9}
-	\def\posYNpI{-\defaultDistanceNormal*0.3+\ccdistance/2}
+	\def\posXNpI{\defaultDistanceNormal*3.1}
+	\def\posYNpI{-\defaultDistanceNormal*0.2+\ccdistance/2}
 	\def\posXNpJ{\defaultDistanceNormal*2.9}
 	\def\posYNpJ{\defaultDistanceNormal*0.4+\ccdistance/2}
 	\def\posXNpK{\defaultDistanceNormal*1.1}
@@ -50,7 +50,18 @@
 	\def\posXNpM{\defaultDistanceNormal*1.45}
 	\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2}
 	
+	\def\angleA{170}
+	\def\angleC{-160}
+	\def\angleF{35}
+	\def\angleH{-45}
+	\def\angleI{-10}
+	\def\angleJ{20}
+	
 	\begin{tikzpicture}
+		% Draw beginning of equation and first equal sign
+		\node[] () at ({\posXNA+\openLegLength*cos(\angleA)-\defaultDistanceEquations/2}, 0) {$=$};
+		\node[] () at ({\posXNA+\openLegLength*cos(\angleA)-\defaultDistanceEquations-12pt}, 0) {$\left\langle\mathcal{N}\middle|\mathcal{N}^\prime\right\rangle$};
+		
 		% Draw tensors of N
 		\node[tensorPhysical, minimum size=\smallTensorWidth] (NA) at (\posXNA, \posYNA) {};
 		\node[tensorPhysical, minimum size=\smallTensorWidth] (NB) at (\posXNB, \posYNB) {};
@@ -82,12 +93,12 @@
 			\draw[virtualLeg] (NI) -- (NG);
 			\draw[virtualLeg] (NJ) -- (NG);
 			
-			\draw[virtualLeg] ({\posXNA+\openLegLength*cos(170)}, {\posYNA+\openLegLength*sin(170)}) -- (NA);
-			\draw[virtualLeg] ({\posXNC+\openLegLength*cos(-160)}, {\posYNC+\openLegLength*sin(-160)}) -- (NC);
-			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(35)}, {\posYNF+\openLegLength*sin(35)}) -- (NF);
-			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(-55)}, {\posYNH+\openLegLength*sin(-55)}) -- (NH);
-			\draw[virtualLeg] ({\posXNI+\openLegLength*cos(-40)}, {\posYNI+\openLegLength*sin(-40)}) -- (NI);
-			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(20)}, {\posYNJ+\openLegLength*sin(20)}) -- (NJ);
+			\draw[virtualLeg] ({\posXNA+\openLegLength*cos(\angleA)}, {\posYNA+\openLegLength*sin(\angleA)}) -- (NA);
+			\draw[virtualLeg] ({\posXNC+\openLegLength*cos(\angleC)}, {\posYNC+\openLegLength*sin(\angleC)}) -- (NC);
+			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(\angleF)}, {\posYNF+\openLegLength*sin(\angleF)}) -- (NF);
+			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(\angleH)}, {\posYNH+\openLegLength*sin(\angleH)}) -- (NH);
+			\draw[virtualLeg] ({\posXNI+\openLegLength*cos(\angleI)}, {\posYNI+\openLegLength*sin(\angleI)}) -- (NI);
+			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(\angleJ)}, {\posYNJ+\openLegLength*sin(\angleJ)}) -- (NJ);
 		\end{pgfonlayer}
 		
 		% Draw tensors of N'
@@ -124,28 +135,28 @@
 			\draw[virtualLeg] (NpK) -- (NpM);
 			\draw[virtualLeg] (NpM) -- (NpL);
 			
-			\draw[virtualLeg] ({\posXNpA+\openLegLength*cos(170)}, {\posYNpA+\openLegLength*sin(170)}) -- (NpA);
-			\draw[virtualLeg] ({\posXNpC+\openLegLength*cos(-160)}, {\posYNpC+\openLegLength*sin(-160)}) -- (NpC);
-			\draw[virtualLeg] ({\posXNpF+\openLegLength*cos(35)}, {\posYNpF+\openLegLength*sin(35)}) -- (NpF);
-			\draw[virtualLeg] ({\posXNpH+\openLegLength*cos(-55)}, {\posYNpH+\openLegLength*sin(-55)}) -- (NpH);
-			\draw[virtualLeg] ({\posXNpI+\openLegLength*cos(-40)}, {\posYNpI+\openLegLength*sin(-40)}) -- (NpI);
-			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(20)}, {\posYNpJ+\openLegLength*sin(20)}) -- (NpJ);
+			\draw[virtualLeg] ({\posXNpA+\openLegLength*cos(\angleA)}, {\posYNpA+\openLegLength*sin(\angleA)}) -- (NpA);
+			\draw[virtualLeg] ({\posXNpC+\openLegLength*cos(\angleC)}, {\posYNpC+\openLegLength*sin(\angleC)}) -- (NpC);
+			\draw[virtualLeg] ({\posXNpF+\openLegLength*cos(\angleF)}, {\posYNpF+\openLegLength*sin(\angleF)}) -- (NpF);
+			\draw[virtualLeg] ({\posXNpH+\openLegLength*cos(\angleH)}, {\posYNpH+\openLegLength*sin(\angleH)}) -- (NpH);
+			\draw[virtualLeg] ({\posXNpI+\openLegLength*cos(\angleI)}, {\posYNpI+\openLegLength*sin(\angleI)}) -- (NpI);
+			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(\angleJ)}, {\posYNpJ+\openLegLength*sin(\angleJ)}) -- (NpJ);
 		\end{pgfonlayer}
 		
 		% Draw connections of upper/lower wavefunction
 		\begin{pgfonlayer}{bg}
-			\draw[virtualLegWithoutArrows] (NpA) -- ++({\openLegLength*cos(170)}, {\openLegLength*sin(170)}) -- ++(0, -\ccdistance) -- (NA);
-			\draw[virtualLegWithoutArrows] (NpF) -- ++({\openLegLength*cos(35)}, {\openLegLength*sin(35)}) -- ++(0, -\ccdistance) -- (NF);
-			\draw[virtualLegWithoutArrows] (NpH) -- ++({\openLegLength*cos(-55)}, {\openLegLength*sin(-55)}) -- ++(0, -\ccdistance) -- (NH);
-			\draw[virtualLegWithoutArrows] (NpI) -- ++({\openLegLength*cos(-40)}, {\openLegLength*sin(-40)}) -- ++(0, -\ccdistance) -- (NI);
-			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)}) -- ++(0, -\ccdistance) -- (NJ);
+			\draw[virtualLegWithoutArrows] (NpA) -- ++({\openLegLength*cos(\angleA)}, {\openLegLength*sin(\angleA)}) -- ++(0, -\ccdistance) -- (NA);
+			\draw[virtualLegWithoutArrows] (NpF) -- ++({\openLegLength*cos(\angleF)}, {\openLegLength*sin(\angleF)}) -- ++(0, -\ccdistance) -- (NF);
+			\draw[virtualLegWithoutArrows] (NpH) -- ++({\openLegLength*cos(\angleH)}, {\openLegLength*sin(\angleH)}) -- ++(0, -\ccdistance) -- (NH);
+			\draw[virtualLegWithoutArrows] (NpI) -- ++({\openLegLength*cos(\angleI)}, {\openLegLength*sin(\angleI)}) -- ++(0, -\ccdistance) -- (NI);
+			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(\angleJ)}, {\openLegLength*sin(\angleJ)}) -- ++(0, -\ccdistance) -- (NJ);
 		\end{pgfonlayer}
-		\draw[virtualLegWithoutArrows] (NpC) -- ++({\openLegLength*cos(-160)}, {\openLegLength*sin(-160)}) -- ++(0, -\ccdistance) -- (NC);
+		\draw[virtualLegWithoutArrows] (NpC) -- ++({\openLegLength*cos(\angleC)}, {\openLegLength*sin(\angleC)}) -- ++(0, -\ccdistance) -- (NC);
 		
 		% Draw second equal sign
-		\node[] () at ({\posXNJ+\openLegLength*cos(20)+\defaultDistanceEquations/2}, 0) {$=$};
+		\node[] () at ({\posXNI+\openLegLength*cos(\angleI)+\defaultDistanceEquations/2}, 0) {$=$};
 		
-		\def\xoffset{200 pt}
+		\def\xoffset{162 pt}
 		
 		\def\posXNA{0 + \xoffset}
 		\def\posYNA{-\ccdistance/2}
@@ -200,6 +211,13 @@
 		\node[tensorPhysical, minimum size=\smallTensorWidth] (NH) at (\posXNH, \posYNH) {};
 		\node[tensorPhysical, minimum size=\smallTensorWidth] (NJ) at (\posXNJ, \posYNJ) {};
 		
+		\def\angleBa{(-180)}
+		\def\angleBb{(-140)}
+		\def\angleD{(180-atan(1/7))}
+		\def\angleG{(-atan(1/8))}
+		\def\angleJb{(-50)}
+		\def\angleK{(180-atan(15/60))}
+		
 		\begin{pgfonlayer}{bg}
 			% Draw subregion M
 			%\fill[fill=redMarkingColor, opacity=\backgroundopacity] \convexhull{D, E}{\smallTensorWidth*0.9};
@@ -214,9 +232,123 @@
 			\draw[virtualLeg] (NH) -- (NE);
 			\draw[virtualLeg] (NJ) -- (NG);
 			
-			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(35)}, {\posYNF+\openLegLength*sin(35)}) -- (NF);
-			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(-55)}, {\posYNH+\openLegLength*sin(-55)}) -- (NH);
-			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(20)}, {\posYNJ+\openLegLength*sin(20)}) -- (NJ);
+			\draw[virtualLeg] ({\posXNF+\openLegLength*cos(\angleF)}, {\posYNF+\openLegLength*sin(\angleF)}) -- (NF);
+			\draw[virtualLeg] ({\posXNH+\openLegLength*cos(\angleH)}, {\posYNH+\openLegLength*sin(\angleH)}) -- (NH);
+			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(\angleJ)}, {\posYNJ+\openLegLength*sin(\angleJ)}) -- (NJ);
+			
+			\draw[virtualLeg] ({\posXNB+\openLegLength*cos(\angleBa)}, {\posYNB+\openLegLength*sin(\angleBa)}) -- (NB);
+			\draw[virtualLeg] ({\posXNB+\openLegLength*cos(\angleBb)}, {\posYNB+\openLegLength*sin(\angleBb)}) -- (NB);
+			\draw[virtualLeg] ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND);
+			\draw[virtualLeg] ({\posXNG+\openLegLength*cos(\angleG)}, {\posYNG+\openLegLength*sin(\angleG)}) -- (NG);
+			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(\angleJb)}, {\posYNJ+\openLegLength*sin(\angleJb)}) -- (NJ);
 		\end{pgfonlayer}
+		
+		% Draw tensors of N'
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpB) at (\posXNpB, \posYNpB) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpF) at (\posXNpF, \posYNpF) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpG) at (\posXNpG, \posYNpG) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpH) at (\posXNpH, \posYNpH) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth] (NpJ) at (\posXNpJ, \posYNpJ) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=greenMarkingColor] (NpK) at (\posXNpK, \posYNpK) {};
+		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (NpL) at (\posXNpL, \posYNpL) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=greenMarkingColor] (NpM) at (\posXNpM, \posYNpM) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw subregion M
+			%\fill[color=greenMarkingColor, opacity=\backgroundopacity] \convexhull{K, M, L}{\smallTensorWidth*0.9};
+			%\node[color=greenMarkingColor] (Mp) at (\posXNpK-\defaultDistanceNormal*0.2, \posYNpK-\defaultDistanceNormal*0.4) {$\mathcal{M}^\prime$};
+			
+			% Draw connecting legs
+			\draw[virtualLeg] (NpB) -- (NpF);
+			\draw[virtualLeg] (NpF) -- (NpG);
+			\draw[virtualLeg] (NpF) -- (NpM);
+			\draw[virtualLeg] (NpG) -- (NpH);
+			\draw[virtualLeg] (NpH) -- (NpL);
+			\draw[virtualLeg] (NpJ) -- (NpG);
+			\draw[virtualLeg] (NpK) -- (NpL);
+			\draw[virtualLeg] (NpK) -- (NpM);
+			\draw[virtualLeg] (NpM) -- (NpL);
+			
+			\draw[virtualLeg] ({\posXNpF+\openLegLength*cos(\angleF)}, {\posYNpF+\openLegLength*sin(\angleF)}) -- (NpF);
+			\draw[virtualLeg] ({\posXNpH+\openLegLength*cos(\angleH)}, {\posYNpH+\openLegLength*sin(\angleH)}) -- (NpH);
+			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(\angleJ)}, {\posYNpJ+\openLegLength*sin(\angleJ)}) -- (NpJ);
+			
+			\draw[virtualLeg] ({\posXNpB+\openLegLength*cos(\angleBa)}, {\posYNpB+\openLegLength*sin(\angleBa)}) -- (NpB);
+			\draw[virtualLeg] ({\posXNpB+\openLegLength*cos(\angleBb)}, {\posYNpB+\openLegLength*sin(\angleBb)}) -- (NpB);
+			\draw[virtualLeg] ({\posXNpK+\openLegLength*cos(\angleK)}, {\posYNpK+\openLegLength*sin(\angleK)}) -- (NpK);
+			\draw[virtualLeg] ({\posXNpG+\openLegLength*cos(\angleG)}, {\posYNpG+\openLegLength*sin(\angleG)}) -- (NpG);
+			\draw[virtualLeg] ({\posXNpJ+\openLegLength*cos(\angleJb)}, {\posYNpJ+\openLegLength*sin(\angleJb)}) -- (NpJ);
+		\end{pgfonlayer}
+		
+		% Draw connections of upper/lower wavefunction
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegWithoutArrows] (NpF) -- ++({\openLegLength*cos(\angleF)}, {\openLegLength*sin(\angleF)}) -- ++(0, -\ccdistance) -- (NF);
+			\draw[virtualLegWithoutArrows] (NpH) -- ++({\openLegLength*cos(\angleH)}, {\openLegLength*sin(\angleH)}) -- ++(0, -\ccdistance) -- (NH);
+			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(\angleJ)}, {\openLegLength*sin(\angleJ)}) -- ++(0, -\ccdistance) -- (NJ);
+			
+			\draw[virtualLegWithoutArrows] (NpB) -- ++({\openLegLength*cos(\angleBa)}, {\openLegLength*sin(\angleBa)}) -- ++(0, -\ccdistance) -- (NB);
+			\draw[virtualLegWithoutArrows] (NpB) -- ++({\openLegLength*cos(\angleBb)}, {\openLegLength*sin(\angleBb)}) -- ++(0, -\ccdistance) -- (NB);
+			\draw[virtualLegWithoutArrows] (NpK) -- ++({\openLegLength*cos(\angleK)}, {\openLegLength*sin(\angleK)}) -- ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND);
+			\draw[virtualLegWithoutArrows] (NpG) -- ++({\openLegLength*cos(\angleG)}, {\openLegLength*sin(\angleG)})  -- ++(0, -\ccdistance)-- (NG);
+			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(\angleJb)}, {\openLegLength*sin(\angleJb)})  -- ++(0, -\ccdistance)-- (NJ);
+		\end{pgfonlayer}
+		
+		% Draw third equal sign
+		\def\yoffset{-130pt}
+		\def\xoffset{70pt}
+		\node[] () at (\xoffset, \yoffset) {$=$};
+		\node[] () at (\xoffset + \defaultDistanceEquations, \yoffset) {$\dots$};
+		\node[] () at (\xoffset + 2*\defaultDistanceEquations, \yoffset) {$=$};
+		
+		\def\additionalxoffset{46 pt}
+		\def\additionalyoffset{18 pt}
+		\def\ccdistance{50 pt}
+		
+		\def\posXND{\defaultDistanceNormal*1.2 + \xoffset + \additionalxoffset}
+		\def\posYND{-\defaultDistanceNormal*0.5-\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNE{\defaultDistanceNormal*1.8 + \xoffset + \additionalxoffset}
+		\def\posYNE{-\defaultDistanceNormal*0.45-\ccdistance/2 + \yoffset + \additionalyoffset}
+		
+		\def\posXNpK{\defaultDistanceNormal*1.2 + \xoffset + \additionalxoffset}
+		\def\posYNpK{-\defaultDistanceNormal*0.55+\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNpL{\defaultDistanceNormal*1.8 + \xoffset + \additionalxoffset}
+		\def\posYNpL{-\defaultDistanceNormal*0.6+\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNpM{\defaultDistanceNormal*1.55 + \xoffset + \additionalxoffset}
+		\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2 + \yoffset + \additionalyoffset}
+		
+		% Draw tensors of N
+		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (ND) at (\posXND, \posYND) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=redMarkingColor] (NE) at (\posXNE, \posYNE) {};
+		
+		\draw[virtualLeg] (NE) -- (ND);
+		
+		% Draw tensors of N'
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=greenMarkingColor] (NpK) at (\posXNpK, \posYNpK) {};
+		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (NpL) at (\posXNpL, \posYNpL) {};
+		\node[tensorPhysical, minimum size=\smallTensorWidth, fill=greenMarkingColor] (NpM) at (\posXNpM, \posYNpM) {};
+		
+		\draw[virtualLeg] (NpK) -- (NpL);
+		\draw[virtualLeg] (NpM) -- (NpL);
+		\draw[virtualLeg] (NpK) -- (NpM);
+		
+		\def\angleEa{60}
+		\def\angleEb{-30}
+		\def\angleD{-140}
+		
+		\def\angleK{-140}
+		\def\angleL{-20}
+		\def\angleM{30}
+		
+		\draw[virtualLeg] ({\posXNE+\openLegLength*cos(\angleEa)}, {\posYNE+\openLegLength*sin(\angleEa)}) -- (NE);
+		\draw[virtualLeg] ({\posXNE+\openLegLength*cos(\angleEb)}, {\posYNE+\openLegLength*sin(\angleEb)}) -- (NE);
+		\draw[virtualLeg] ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND);
+		\draw[virtualLeg] ({\posXNpK+\openLegLength*cos(\angleK)}, {\posYNpK+\openLegLength*sin(\angleK)}) -- (NpK);
+		\draw[virtualLeg] ({\posXNpL+\openLegLength*cos(\angleL)}, {\posYNpL+\openLegLength*sin(\angleL)}) -- (NpL);
+		\draw[virtualLeg] ({\posXNpM+\openLegLength*cos(\angleM)}, {\posYNpM+\openLegLength*sin(\angleM)}) -- (NpM);
+		
+		\draw[virtualLegWithoutArrows] (NpK) -- ++({\openLegLength*cos(\angleK)}, {\openLegLength*sin(\angleK)}) -- ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND);
+		\draw[virtualLegWithoutArrows] (NpM) -- ++({\openLegLength*cos(\angleM)}, {\openLegLength*sin(\angleM)}) -- ({\posXNE+\openLegLength*cos(\angleEa)}, {\posYNE+\openLegLength*sin(\angleEa)}) -- (NE);
+		\draw[virtualLegWithoutArrows] (NpL) -- ++({\openLegLength*cos(\angleL)}, {\openLegLength*sin(\angleL)}) -- ({\posXNE+\openLegLength*cos(\angleEb)}, {\posYNE+\openLegLength*sin(\angleEb)}) -- (NE);
+		
 	\end{tikzpicture}
 \end{document}

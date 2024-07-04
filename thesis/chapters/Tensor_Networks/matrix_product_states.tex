@@ -15,13 +15,25 @@ with $\dim\left(\mathcal{H}_j\right) = d_j$ the dimension of the local Hilbert s
 where we have written the physical indices $i_n$ as superscripts, such that the sums are performed only over subscripts. Note that in this notation the bond dimensions at the two ends of the chain is $\chi_0 = \chi_{N} = 1$, and we can interpret the tensors $A^{[1]}$ and $A^{[N]}$ as tensors of rank-2. A tensor diagram of the MPS \eqref{eq:MPS_open_boundary_conditions_general_definition} is given in figure \figref{fig:mps_general}.\par
 \begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_mps.jpeg}
+	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf}
 	\caption{Diagrammatic representation of the Matrix Product State \ref{eq:MPS_open_boundary_conditions_general_definition}.}
 	\label{fig:mps_general}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_mps_canonical.jpeg}
+	\subcaptionbox{\label{fig:mps_canonical_form_general_definitiom}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf}
+	}
+	\subcaptionbox{\label{fig:mps_left_isometry_condition}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf}
+	}
+	\quad\quad\quad\quad\quad\quad
+	\subcaptionbox{\label{fig:mps_right_isometry_condition}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf}
+	}
 	\caption{(a) Diagrammatic representation of an MPS in canonical form. (b) The isometry condition can be used to simplify contractions.}
 	\label{fig:mps_canonical}
 \end{figure}
@@ -41,7 +53,7 @@ where the $A^{[n],i_n}$ are interpreted as matrices for $1 < n < N$ and as row/c
 gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:mps_local_expectation_value}. Here, the advantage of the diagrammatic notation becomes appearant: It is much easier to understand how tensors are contracted when expressing the contraction in terms of tensor network diagrams. The computational cost of computing the expectation value like this scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:mps_local_expectation_value_canonical}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
 \begin{figure}
 	\centering
-	\includegraphics[width=\textwidth]{figures/Tensor_Networks/mps_local_expectation_value.jpeg}
+	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf}
 	\caption{The computation of the expectation value of a local operator can be computed by contracting the MPS with its conjugate transpose, with the operator "sandwiched" between.}
 	\label{fig:mps_local_expectation_value}
 \end{figure}

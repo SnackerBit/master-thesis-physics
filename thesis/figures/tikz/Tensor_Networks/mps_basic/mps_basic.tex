@@ -1,0 +1,37 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A1) at (0, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2) at (\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A3) at (2*\defaultDistanceNormal, 0) {};
+		\node[] () at (3.1*\defaultDistanceNormal, 0) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1) at (4.2*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (AN) at (5.2*\defaultDistanceNormal, 0) {};
+		
+		\draw[virtualLegWithoutArrows] (A1) -- (A2) -- (A3);
+		\draw[virtualLegWithoutArrows] (A3) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+		\draw[virtualLegWithoutArrows] (ANm1) -- (AN);
+		\draw[virtualLegWithoutArrows] (ANm1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegWithoutArrows] (A1) -- ++(0, -\yOffsetPhysicalLeg);
+			\draw[physicalLegWithoutArrows] (A2) -- ++(0, -\yOffsetPhysicalLeg);
+			\draw[physicalLegWithoutArrows] (A3) -- ++(0, -\yOffsetPhysicalLeg);
+			\draw[physicalLegWithoutArrows] (ANm1) -- ++(0, -\yOffsetPhysicalLeg);
+			\draw[physicalLegWithoutArrows] (AN) -- ++(0, -\yOffsetPhysicalLeg);
+		\end{pgfonlayer}
+		
+		\node[] at (0, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[1]}$};
+		\node[] at (\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[2]}$};
+		\node[] at (2*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[3]}$};
+		\node[] at (4.2*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[N-1]}$};
+		\node[] at (5.2*\defaultDistanceNormal, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$T^{[N]}$};
+		
+		\node[] at (0, -\yOffsetPhysicalLeg-1.5*\defaultTextOffset) {$i_1$};
+		\node[] at (\defaultDistanceNormal, -\yOffsetPhysicalLeg-1.5*\defaultTextOffset) {$i_2$};
+		\node[] at (2*\defaultDistanceNormal, -\yOffsetPhysicalLeg-1.5*\defaultTextOffset) {$i_3$};
+		\node[] at (4.2*\defaultDistanceNormal, -\yOffsetPhysicalLeg-1.5*\defaultTextOffset) {$i_{N-1}$};
+		\node[] at (5.2*\defaultDistanceNormal, -\yOffsetPhysicalLeg-1.5*\defaultTextOffset) {$i_N$};
+	\end{tikzpicture}
+\end{document}
