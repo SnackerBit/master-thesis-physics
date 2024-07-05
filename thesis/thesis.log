@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.26)  4 JUL 2024 21:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  5 JUL 2024 10:47
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
@@ -518,7 +518,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip85
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language87
+\blx@langwohyphens=\language8
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -858,7 +858,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count436
 \U@D=\dimen184
-\l@unhyphenated=\language88
+\l@unhyphenated=\language9
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -869,12 +869,16 @@ Language: british 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language85). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language85). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -1493,29 +1497,87 @@ ecomposition.jpeg>])) [19] [20
 
 ]
 chapter 3.
-(./chapters/isoDTPS/isoDTPS.tex) [21] [22
+(./chapters/disoTPS/disoTPS.tex (./chapters/disoTPS/network_structure.tex
+<figures/Tensor_Networks/disoTPS.jpeg, id=633, 1003.75pt x 1003.75pt>
+File: figures/Tensor_Networks/disoTPS.jpeg Graphic file (type jpg)
+<use figures/Tensor_Networks/disoTPS.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS.jpeg  used on input li
+ne 3.
+(pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
+<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=637, 1995.4
+55pt x 1003.75pt>
+File: figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg Graphic fi
+le (type jpg)
+<use figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS_onesite_expectation_va
+lue.jpeg  used on input line 12.
+(pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
+
+[21]
+<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=644, 1995.4
+55pt x 1003.75pt>
+File: figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg Graphic fi
+le (type jpg)
+<use figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS_twosite_expectation_va
+lue.jpeg  used on input line 19.
+(pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
+) [22 <./figures/Tensor_Networks/disoTPS.jpeg>] [23 <./figures/Tensor_Networks/
+disoTPS_onesite_expectation_value.jpeg> <./figures/Tensor_Networks/disoTPS_twos
+ite_expectation_value.jpeg>] (./chapters/disoTPS/YB_move.tex
+<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=659, 1540.75626p
+t x 1002.74625pt>
+File: figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg Graphic file (t
+ype jpg)
+<use figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/disoTPS_moving_ortho_surface.j
+peg  used on input line 3.
+(pdftex.def)             Requested size: 358.50233pt x 233.3044pt.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 8.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 8.
+
+[24 <./figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>]
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 15.
+
+<figures/Tensor_Networks/YB_move_closeup.jpeg, id=666, 1787.67876pt x 1003.75pt
+>
+File: figures/Tensor_Networks/YB_move_closeup.jpeg Graphic file (type jpg)
+<use figures/Tensor_Networks/YB_move_closeup.jpeg>
+Package pdftex.def Info: figures/Tensor_Networks/YB_move_closeup.jpeg  used on 
+input line 18.
+(pdftex.def)             Requested size: 358.50233pt x 201.2825pt.
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 22.
+
+) (./chapters/disoTPS/TEBD.tex)) [25 <./figures/Tensor_Networks/YB_move_closeup
+.jpeg>] [26
 
 
 ]
 chapter 4.
-(./chapters/Toric_Code/Toric_Code.tex) [23] [24
+(./chapters/Toric_Code/Toric_Code.tex) [27] [28
 
 
 ]
 chapter 5.
-(./chapters/TFI/TFI.tex) [25] [26
+(./chapters/TFI/TFI.tex) [29] [30
 
 
 ]
 chapter A.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [27])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [28] [29] [30
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [31])
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [32] [33] [34
 
 
 ]
 chapter B.
-[31] [32
+[35] [36
 
 
 ]
@@ -1524,10 +1586,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[33
+[37
 
 
-] [34] [35] (./thesis.aux
+] [38] [39] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -1545,12 +1607,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33028 strings out of 478287
- 668602 string characters out of 5849289
- 1558799 words of memory out of 5000000
- 50477 multiletter control sequences out of 15000+600000
- 487864 words of font info for 149 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 33101 strings out of 480194
+ 671306 string characters out of 5893742
+ 1555635 words of memory out of 5000000
+ 50289 multiletter control sequences out of 15000+600000
+ 487915 words of font info for 150 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
@@ -1576,10 +1638,10 @@ sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on thesis.pdf (41 pages, 1631961 bytes).
+Output written on thesis.pdf (45 pages, 2386914 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 746 compressed objects within 8 object streams
- 130 named destinations out of 1000 (max. 500000)
- 39735 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 986 PDF objects out of 1000 (max. 8388607)
+ 772 compressed objects within 8 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 39760 words of extra memory for PDF output out of 42996 (max. 10000000)
 
