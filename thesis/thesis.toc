@@ -9,14 +9,15 @@
 \contentsline {chapter}{\numberline {3}diagonal isometric Tensor Product States (disoDTPS)}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Network Structure}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{24}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{25}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{29}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Riemannian Optimization of Isometries}{31}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The complex Stiefel manifold}{31}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Gradients, retractions, and vector transport}{32}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Conjugate Gradients}{33}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Trust Region Method}{33}{section.A.4}%
-\contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{35}{appendix.B}%
-\contentsline {chapter}{\nonumberline Bibliography}{37}{chapter*.33}%
+\contentsline {subsection}{\numberline {3.2.1}Iterative optimization with local updates}{25}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{27}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Riemannian Optimization of Isometries}{33}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The complex Stiefel manifold}{33}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Gradients, retractions, and vector transport}{34}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Conjugate Gradients}{35}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Trust Region Method}{35}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{37}{appendix.B}%
+\contentsline {chapter}{\nonumberline Bibliography}{39}{chapter*.38}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
