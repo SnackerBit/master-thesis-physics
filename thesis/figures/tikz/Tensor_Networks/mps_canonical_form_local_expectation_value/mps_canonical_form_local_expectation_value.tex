@@ -1,0 +1,237 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\def\verticalLineMultiplier{2.0}
+		\def\secondLineXOffset{\defaultDistanceEquations/2+\defaultDistanceNormal-\defaultTensorWidth/2}
+		\def\thirdLineXOffsetA{3*\defaultDistanceEquations/2+\defaultDistanceNormal-\defaultTensorWidth/2}
+		\def\thirdLineXOffsetB{5*\defaultDistanceEquations/2+5*\defaultDistanceNormal-3*\defaultTensorWidth/2}
+		
+		% First line
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A1) at (0, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2) at (\defaultDistanceNormal, 0) {};
+		\node[] () at (2.1*\defaultDistanceNormal, 0) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1) at (3.2*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (An) at (4.2*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1) at (5.2*\defaultDistanceNormal, 0) {};
+		\node[] () at (6.3*\defaultDistanceNormal, 0) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1) at (7.4*\defaultDistanceNormal, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (AN) at (8.4*\defaultDistanceNormal, 0) {};
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A1cc) at (0, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2cc) at (\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[] () at (2.1*\defaultDistanceNormal, -\defaultDistanceLarge) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1cc) at (3.2*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Ancc) at (4.2*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1cc) at (5.2*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[] () at (6.3*\defaultDistanceNormal, -\defaultDistanceLarge) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1cc) at (7.4*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANcc) at (8.4*\defaultDistanceNormal, -\defaultDistanceLarge) {};
+		
+		\draw[virtualLeg] (A1) -- (A2);
+		\draw[virtualLeg] (Anm1) -- (An);
+		\draw[virtualLeg] (Anp1) -- (An);
+		\draw[virtualLeg] (AN) -- (ANm1);
+		
+		\draw[virtualLeg] (A1cc) -- (A2cc);
+		\draw[virtualLeg] (Anm1cc) -- (Ancc);
+		\draw[virtualLeg] (Anp1cc) -- (Ancc);
+		\draw[virtualLeg] (ANcc) -- (ANm1cc);
+		
+		\node[tensorOperator, minimum size=\defaultTensorWidth] (op) at (4.2*\defaultDistanceNormal, -\defaultDistanceLarge/2) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (0, -\defaultDistanceLarge/2) -- (A1);
+			\draw[physicalLeg] (0, -\defaultDistanceLarge/2) -- (A1cc);
+			\draw[physicalLeg] (\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (A2);
+			\draw[physicalLeg] (\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (A2cc);
+			\draw[physicalLeg] (3.2*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (Anm1);
+			\draw[physicalLeg] (3.2*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (Anm1cc);
+			%\draw[physicalLegWithoutArrows] (An) -- (op) -- (Ancc);
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			\draw[physicalLeg] (5.2*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (Anp1);
+			\draw[physicalLeg] (5.2*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (Anp1cc);
+			\draw[physicalLeg] (7.4*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (ANm1);
+			\draw[physicalLeg] (7.4*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (ANm1cc);
+			\draw[physicalLeg] (8.4*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (AN);
+			\draw[physicalLeg] (8.4*\defaultDistanceNormal, -\defaultDistanceLarge/2) -- (ANcc);
+			
+			\draw[virtualLeg](A2) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (A2cc) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (Anm1)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Anm1);
+			\draw[virtualLeg] (Anm1cc)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Anm1cc);
+			
+			\draw[virtualLeg] (Anp1)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Anp1);
+			\draw[virtualLeg] (Anp1cc)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Anp1cc);
+			\draw[virtualLeg] (ANm1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (ANm1cc) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+		\end{pgfonlayer}
+		
+		\node[above=\defaultTextOffsetSmall of A1] {$A^{[1]}$};
+		\node[above=\defaultTextOffsetSmall of A2] {$A^{[2]}$};
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		\node[above=\defaultTextOffsetSmall of ANm1] {$B^{[N-1]}$};
+		\node[above=\defaultTextOffsetSmall of AN] {$B^{[N]}$};
+		
+		\node[below=\defaultTextOffsetSmall of A1cc] {$A^{[1]*}$};
+		\node[below=\defaultTextOffsetSmall of A2cc] {$A^{[2]*}$};
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		\node[below=\defaultTextOffsetSmall of ANm1cc] {$B^{[N-1]*}$};
+		\node[below=\defaultTextOffsetSmall of ANcc] {$B^{[N]*}$};
+		
+		% Second Line
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2) at (0*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[] () at (1.1*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1) at (2.2*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (An) at (3.2*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1) at (4.2*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[] () at (5.3*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1) at (6.4*\defaultDistanceNormal+\secondLineXOffset, -\verticalLineMultiplier*\defaultDistanceLarge) {};
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2cc) at (0*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		\node[] () at (1.1*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1cc) at (2.2*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Ancc) at (3.2*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1cc) at (4.2*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		\node[] () at (5.3*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {$\dots$};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (ANm1cc) at (6.4*\defaultDistanceNormal+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		
+		\draw[virtualLeg] (Anm1) -- (An);
+		\draw[virtualLeg] (Anp1) -- (An);
+		
+		\draw[virtualLeg] (Anm1cc) -- (Ancc);
+		\draw[virtualLeg] (Anp1cc) -- (Ancc);
+		
+		\node[tensorOperator, minimum size=\defaultTensorWidth] (op) at (3.2*\defaultDistanceNormal+\secondLineXOffset, {-(0.5+\verticalLineMultiplier)*\defaultDistanceLarge}) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (A2)+(0, -\defaultDistanceLarge/2) -- (A2);
+			\draw[physicalLeg] (A2cc)+(0, \defaultDistanceLarge/2) -- (A2cc);
+			\draw[physicalLeg] (Anm1)+(0, -\defaultDistanceLarge/2) -- (Anm1);
+			\draw[physicalLeg] (Anp1)+(0, -\defaultDistanceLarge/2) -- (Anp1);
+			\draw[physicalLeg] (Anm1cc)+(0, \defaultDistanceLarge/2) -- (Anm1cc);
+			\draw[physicalLeg] (Anp1cc)+(0, \defaultDistanceLarge/2) -- (Anp1cc);
+			\draw[physicalLeg] (ANm1)+(0, -\defaultDistanceLarge/2) -- (ANm1);
+			\draw[physicalLeg] (ANm1cc)+(0, \defaultDistanceLarge/2) -- (ANm1cc);
+			
+			%\draw[physicalLegWithoutArrows] (An) -- (op) -- (Ancc);
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			
+			\draw[virtualLeg](A2) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (A2cc) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (Anm1)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Anm1);
+			\draw[virtualLeg] (Anm1cc)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Anm1cc);
+			
+			\draw[virtualLeg] (Anp1)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Anp1);
+			\draw[virtualLeg] (Anp1cc)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Anp1cc);
+			\draw[virtualLeg] (ANm1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			\draw[virtualLeg] (ANm1cc) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
+			
+			% Outermost legs
+			\draw[virtualLeg] (A2)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (A2);
+			\draw[virtualLeg] (A2cc)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (A2cc);
+			\draw[virtualLegWithoutArrows] (A2) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (A2cc);
+			\draw[virtualLeg] (ANm1)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (ANm1); 
+			\draw[virtualLeg] (ANm1cc)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (ANm1cc);
+			\draw[virtualLegWithoutArrows] (ANm1) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (ANm1cc);
+		\end{pgfonlayer}
+	
+		\node[above=\defaultTextOffsetSmall of A2] {$A^{[2]}$};
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		\node[above=\defaultTextOffsetSmall of ANm1] {$B^{[N-1]}$};
+		
+		\node[below=\defaultTextOffsetSmall of A2cc] {$A^{[2]*}$};
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		\node[below=\defaultTextOffsetSmall of ANm1cc] {$B^{[N-1]*}$};
+		
+		\node () at (0, {-(0.5 + \verticalLineMultiplier)*\defaultDistanceLarge}) {$=$};
+		
+		% Third Line, first picture
+
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1) at (0*\defaultDistanceNormal+\thirdLineXOffsetA, -2*\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (An) at (1*\defaultDistanceNormal+\thirdLineXOffsetA, -2*\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1) at (2*\defaultDistanceNormal+\thirdLineXOffsetA, -2*\verticalLineMultiplier*\defaultDistanceLarge) {};
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anm1cc) at (0*\defaultDistanceNormal+\thirdLineXOffsetA, {-(1+2*\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Ancc) at (1*\defaultDistanceNormal+\thirdLineXOffsetA, {-(1+2*\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Anp1cc) at (2*\defaultDistanceNormal+\thirdLineXOffsetA, {-(1+2*\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		
+		\draw[virtualLeg] (Anm1) -- (An);
+		\draw[virtualLeg] (Anp1) -- (An);
+		
+		\draw[virtualLeg] (Anm1cc) -- (Ancc);
+		\draw[virtualLeg] (Anp1cc) -- (Ancc);
+		
+		\node[tensorOperator, minimum size=\defaultTensorWidth] (op) at (1*\defaultDistanceNormal+\thirdLineXOffsetA, {-(0.5+2*\verticalLineMultiplier)*\defaultDistanceLarge}) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (Anm1)+(0, -\defaultDistanceLarge/2) -- (Anm1);
+			\draw[physicalLeg] (Anp1)+(0, -\defaultDistanceLarge/2) -- (Anp1);
+			\draw[physicalLeg] (Anm1cc)+(0, \defaultDistanceLarge/2) -- (Anm1cc);
+			\draw[physicalLeg] (Anp1cc)+(0, \defaultDistanceLarge/2) -- (Anp1cc);
+					
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			
+			% Outermost legs
+			\draw[virtualLeg] (Anm1)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Anm1);
+			\draw[virtualLeg] (Anm1cc)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Anm1cc);
+			\draw[virtualLegWithoutArrows] (Anm1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (Anm1cc);
+			\draw[virtualLeg] (Anp1)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Anp1);
+			\draw[virtualLeg] (Anp1cc)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Anp1cc);
+			\draw[virtualLegWithoutArrows] (Anp1) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (Anp1cc);
+		\end{pgfonlayer}
+	
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		
+		\node () at (0, {-(2.5 + \verticalLineMultiplier)*\defaultDistanceLarge}) {$=$};
+		\node () at (\defaultDistanceEquations/2, {-(2.5 + \verticalLineMultiplier)*\defaultDistanceLarge}) {$\dots$};
+		\node () at (\defaultDistanceEquations, {-(2.5 + \verticalLineMultiplier)*\defaultDistanceLarge}) {$=$};
+		
+		% Third Line, second picture
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor] (An) at (0*\defaultDistanceNormal+\thirdLineXOffsetB, -2*\verticalLineMultiplier*\defaultDistanceLarge) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (Ancc) at (0*\defaultDistanceNormal+\thirdLineXOffsetB, {-(1+2*\verticalLineMultiplier)*\defaultDistanceLarge}) {};
+		
+		\node[tensorOperator, minimum size=\defaultTensorWidth] (op) at (0*\defaultDistanceNormal+\thirdLineXOffsetB, {-(0.5+2*\verticalLineMultiplier)*\defaultDistanceLarge}) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			
+			% Outermost legs
+			\draw[virtualLeg] (An)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (An);
+			\draw[virtualLeg] (Ancc)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (Ancc);
+			\draw[virtualLegWithoutArrows] (An) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (Ancc);
+			\draw[virtualLeg] (An)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (An);
+			\draw[virtualLeg] (Ancc)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (Ancc);
+			\draw[virtualLegWithoutArrows] (An) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (Ancc);
+		\end{pgfonlayer}
+		
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		
+		\node () at (\thirdLineXOffsetB-\defaultDistanceNormal+\defaultTensorWidth/2-\defaultDistanceEquations/2, {-(2.5 + \verticalLineMultiplier)*\defaultDistanceLarge}) {$=$};
+	\end{tikzpicture}
+\end{document}

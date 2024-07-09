@@ -19,5 +19,5 @@
 \contentsline {section}{\numberline {A.3}Conjugate Gradients}{35}{section.A.3}%
 \contentsline {section}{\numberline {A.4}Trust Region Method}{35}{section.A.4}%
 \contentsline {chapter}{\numberline {B}Initialization of the Disentangling Unitary}{37}{appendix.B}%
-\contentsline {chapter}{\nonumberline Bibliography}{39}{chapter*.38}%
+\contentsline {chapter}{\nonumberline Bibliography}{39}{chapter*.39}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
