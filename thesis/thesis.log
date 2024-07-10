@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  9 JUL 2024 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  10 JUL 2024 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,7 +518,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip85
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language8
+\blx@langwohyphens=\language87
 \c@mincomprange=\count327
 \c@maxcomprange=\count328
 \c@mincompwidth=\count329
@@ -858,7 +858,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count436
 \U@D=\dimen184
-\l@unhyphenated=\language9
+\l@unhyphenated=\language88
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -869,16 +869,12 @@ Language: british 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'british' set to \l@english
-(babel)             (\language0). Reported on input line 82.
-Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
-(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@english
-(babel)             (\language0). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@english
-(babel)             (\language0). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language47). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language47). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -954,15 +950,49 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 )
-\largestimage=\box59
-\largestimagea=\box60
-\largestimageb=\box61
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count446
+\float@exts=\toks26
+\float@box=\box59
+\@float@everytoks=\toks27
+\@floatcapt=\box60
+)
+\@float@every@algorithm=\toks28
+\c@algorithm=\count447
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count448
+\c@ALG@rem=\count449
+\c@ALG@nested=\count450
+\ALG@tlm=\skip110
+\ALG@thistlm=\skip111
+\c@ALG@Lnr=\count451
+\c@ALG@blocknr=\count452
+\c@ALG@storecount=\count453
+\c@ALG@tmpcounter=\count454
+\ALG@tmplength=\skip112
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+\largestimage=\box61
+\largestimagea=\box62
+\largestimageb=\box63
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
-
-(./thesis.aux
+ (./thesis.aux
 
 LaTeX Warning: Label `fig:basic_isometries_isometric_matrix' multiply defined.
 
@@ -1017,17 +1047,17 @@ Package scrbase Info: activating british \listfigurename on input line 29.
 Package scrbase Info: activating british \listtablename on input line 29.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count446
+\scratchcounter=\count455
 \scratchdimen=\dimen186
-\scratchbox=\box62
-\nofMPsegments=\count447
-\nofMParguments=\count448
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count449
+\scratchbox=\box64
+\nofMPsegments=\count456
+\nofMParguments=\count457
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count458
 \MPscratchDim=\dimen187
-\MPnumerator=\count450
-\makeMPintoPDFobject=\count451
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count459
+\makeMPintoPDFobject=\count460
+\everyMPtoPDFconversion=\toks30
 )
 Package soulpos Info: Loading soulutf8 on input line 29.
  (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
@@ -1035,12 +1065,12 @@ Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks28
-\SOUL@lasttoken=\toks29
-\SOUL@cmds=\toks30
-\SOUL@buffer=\toks31
-\SOUL@token=\toks32
-\SOUL@spaceskip=\skip110
+\SOUL@word=\toks31
+\SOUL@lasttoken=\toks32
+\SOUL@cmds=\toks33
+\SOUL@buffer=\toks34
+\SOUL@token=\toks35
+\SOUL@spaceskip=\skip113
 \SOUL@ttwidth=\dimen188
 \SOUL@uldp=\dimen189
 \SOUL@ulht=\dimen190
@@ -1053,7 +1083,7 @@ Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count452
+\c@section@level=\count461
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -1077,7 +1107,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count453
+\BKM@id=\count462
 ))
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
@@ -1119,6 +1149,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@width=\dimen192
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \microtypecontext on input line 29.
 Package microtype Info: Applying patch `item' on input line 29.
@@ -1207,6 +1238,21 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 53
 
 ]
 chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
 [1
 
 
@@ -1445,53 +1491,58 @@ LaTeX Warning: Reference `fig' on page 13 undefined on input line 70.
 tation_value.pdf>] [14 <./figures/tikz/Tensor_Networks/mps_canonical_form_local
 _expectation_value/mps_canonical_form_local_expectation_value.pdf>])
 (./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex [15]
-<figures/Tensor_Networks/PEPS_square.jpeg, id=561, 1003.75pt x 1003.75pt>
-File: figures/Tensor_Networks/PEPS_square.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/PEPS_square.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/PEPS_square.jpeg  used on inpu
-t line 12.
-(pdftex.def)             Requested size: 159.33302pt x 159.33205pt.
-<figures/Tensor_Networks/isoTPS_square.jpeg, id=562, 1003.75pt x 1007.765pt>
-File: figures/Tensor_Networks/isoTPS_square.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/isoTPS_square.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/isoTPS_square.jpeg  used on in
-put line 16.
-(pdftex.def)             Requested size: 159.33302pt x 159.96938pt.
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=561, 
+135.00037pt x 140.49088pt>
+File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
+tructure_a.pdf  used on input line 12.
+(pdftex.def)             Requested size: 135.00002pt x 140.49051pt.
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=562, 
+143.473pt x 160.7355pt>
+File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf Grap
+hic file (type pdf)
+<use figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
+tructure_b.pdf  used on input line 17.
+(pdftex.def)             Requested size: 143.47266pt x 160.73509pt.
 
-[16 <./figures/Tensor_Networks/PEPS_square.jpeg> <./figures/Tensor_Networks/iso
-TPS_square.jpeg>]
-<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=589, 2391.93625pt x 1003.
+[16 <./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf> <.
+/figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>]
+<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=605, 2391.93625pt x 1003.
 75pt>
 File: figures/Tensor_Networks/Moving_ortho_center.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/Moving_ortho_center.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/Moving_ortho_center.jpeg  used
- on input line 29.
+ on input line 30.
 (pdftex.def)             Requested size: 119.50279pt x 50.14449pt.
-<figures/Tensor_Networks/variational_MM.jpeg, id=590, 1933.2225pt x 1003.75pt>
+<figures/Tensor_Networks/variational_MM.jpeg, id=606, 1933.2225pt x 1003.75pt>
 File: figures/Tensor_Networks/variational_MM.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/variational_MM.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/variational_MM.jpeg  used on i
-nput line 33.
+nput line 34.
 (pdftex.def)             Requested size: 239.0056pt x 124.09pt.
- [17 <./figures/Tensor_Networks/Moving_ortho_center.jpeg> <./figures/Tensor_Net
-works/variational_MM.jpeg>]
-<figures/Tensor_Networks/MM.jpeg, id=608, 2498.33376pt x 1003.75pt>
+
+[17 <./figures/Tensor_Networks/Moving_ortho_center.jpeg> <./figures/Tensor_Netw
+orks/variational_MM.jpeg>]
+<figures/Tensor_Networks/MM.jpeg, id=624, 2498.33376pt x 1003.75pt>
 File: figures/Tensor_Networks/MM.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/MM.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/MM.jpeg  used on input line 53
+Package pdftex.def Info: figures/Tensor_Networks/MM.jpeg  used on input line 54
 .
 (pdftex.def)             Requested size: 318.67212pt x 128.0262pt.
-<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=609, 4015.0pt x 917.
+<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=625, 4015.0pt x 917.
 4275pt>
 File: figures/Tensor_Networks/Tripartite_decomposition.jpeg Graphic file (type 
 jpg)
 <use figures/Tensor_Networks/Tripartite_decomposition.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/Tripartite_decomposition.jpeg 
- used on input line 57.
+ used on input line 58.
 (pdftex.def)             Requested size: 318.67212pt x 72.80774pt.
 
 
-LaTeX Warning: Reference `sec:' on page 18 undefined on input line 61.
+LaTeX Warning: Reference `sec:' on page 18 undefined on input line 62.
 
 [18 <./figures/Tensor_Networks/MM.jpeg> <./figures/Tensor_Networks/Tripartite_d
 ecomposition.jpeg>])) [19] [20
@@ -1500,13 +1551,13 @@ ecomposition.jpeg>])) [19] [20
 ]
 chapter 3.
 (./chapters/disoTPS/disoTPS.tex (./chapters/disoTPS/network_structure.tex
-<figures/Tensor_Networks/disoTPS.jpeg, id=654, 1003.75pt x 1003.75pt>
+<figures/Tensor_Networks/disoTPS.jpeg, id=670, 1003.75pt x 1003.75pt>
 File: figures/Tensor_Networks/disoTPS.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/disoTPS.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/disoTPS.jpeg  used on input li
 ne 3.
 (pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
-<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=658, 1995.4
+<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=674, 1995.4
 55pt x 1003.75pt>
 File: figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg Graphic fi
 le (type jpg)
@@ -1516,7 +1567,7 @@ lue.jpeg  used on input line 12.
 (pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
 
 [21]
-<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=665, 1995.4
+<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=680, 1995.4
 55pt x 1003.75pt>
 File: figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg Graphic fi
 le (type jpg)
@@ -1527,7 +1578,7 @@ lue.jpeg  used on input line 19.
 ) [22 <./figures/Tensor_Networks/disoTPS.jpeg>] [23 <./figures/Tensor_Networks/
 disoTPS_onesite_expectation_value.jpeg> <./figures/Tensor_Networks/disoTPS_twos
 ite_expectation_value.jpeg>] (./chapters/disoTPS/YB_move.tex
-<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=680, 1540.75626p
+<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=697, 1540.75626p
 t x 1002.74625pt>
 File: figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg Graphic file (t
 ype jpg)
@@ -1536,76 +1587,91 @@ Package pdftex.def Info: figures/Tensor_Networks/disoTPS_moving_ortho_surface.j
 peg  used on input line 3.
 (pdftex.def)             Requested size: 358.50233pt x 233.3044pt.
  [24 <./figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>]
-<figures/Tensor_Networks/YB_move_closeup.jpeg, id=690, 1787.67876pt x 1003.75pt
+<figures/Tensor_Networks/YB_move_closeup.jpeg, id=708, 1787.67876pt x 1003.75pt
 >
 File: figures/Tensor_Networks/YB_move_closeup.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/YB_move_closeup.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/YB_move_closeup.jpeg  used on 
-input line 20.
+input line 35.
 (pdftex.def)             Requested size: 358.50233pt x 201.2825pt.
 
-
-LaTeX Warning: Reference `' on page 25 undefined on input line 24.
-
-[25 <./figures/Tensor_Networks/YB_move_closeup.jpeg>] [26]
-
-LaTeX Warning: Reference `alg:YB_iterate_polar' on page 27 undefined on input l
-ine 78.
-
-<figures/disoTPS/YB_move_iterate_polar_a.jpeg, id=719, 2590.67876pt x 1003.75pt
+(./chapters/disoTPS/YB_move_iterative.tex [25] [26 <./figures/Tensor_Networks/Y
+B_move_closeup.jpeg>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 43.
+<figures/disoTPS/YB_move_iterate_polar_a.jpeg, id=748, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_a.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_a.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_a.jpeg  used on 
-input line 105.
-(pdftex.def)             Requested size: 278.83583pt x 108.02354pt.
-<figures/disoTPS/YB_move_iterate_polar_b.jpeg, id=720, 2590.67876pt x 1003.75pt
+input line 67.
+(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
+<figures/disoTPS/YB_move_iterate_polar_b.jpeg, id=749, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_b.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_b.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_b.jpeg  used on 
-input line 109.
-(pdftex.def)             Requested size: 278.83583pt x 108.02354pt.
-<figures/disoTPS/YB_move_iterate_polar_c.jpeg, id=721, 2590.67876pt x 1003.75pt
+input line 71.
+(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
+<figures/disoTPS/YB_move_iterate_polar_c.jpeg, id=750, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_c.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_c.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_c.jpeg  used on 
-input line 113.
-(pdftex.def)             Requested size: 278.83583pt x 108.02354pt.
-<figures/disoTPS/YB_move_iterate_polar_d.jpeg, id=722, 2590.67876pt x 1003.75pt
+input line 75.
+(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
+<figures/disoTPS/YB_move_iterate_polar_d.jpeg, id=751, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_d.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_d.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_d.jpeg  used on 
-input line 117.
-(pdftex.def)             Requested size: 278.83583pt x 108.02354pt.
-) (./chapters/disoTPS/TEBD.tex)) [27] [28 <./figures/disoTPS/YB_move_iterate_po
-lar_a.jpeg> <./figures/disoTPS/YB_move_iterate_polar_b.jpeg> <./figures/disoTPS
-/YB_move_iterate_polar_c.jpeg> <./figures/disoTPS/YB_move_iterate_polar_d.jpeg>
-]
+input line 79.
+(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
+) (./chapters/disoTPS/YB_move_svd_disentangle.tex
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 1.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 3.
+
+[27] [28 <./figures/disoTPS/YB_move_iterate_polar_a.jpeg> <./figures/disoTPS/YB
+_move_iterate_polar_b.jpeg> <./figures/disoTPS/YB_move_iterate_polar_c.jpeg> <.
+/figures/disoTPS/YB_move_iterate_polar_d.jpeg>]
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 7.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 8.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 8.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 13.
+
+[29])) (./chapters/disoTPS/TEBD.tex)) [30]
 chapter 4.
-(./chapters/Toric_Code/Toric_Code.tex) [29
+(./chapters/Toric_Code/Toric_Code.tex) [31
 
 
-] [30
+] [32
 
 
 ]
 chapter 5.
-(./chapters/TFI/TFI.tex) [31] [32
+(./chapters/TFI/TFI.tex) [33] [34
 
 
 ]
 chapter A.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [33])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [34] [35] [36
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [35])
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [36] [37] [38
 
 
 ]
 chapter B.
-[37] [38
+[39] [40
 
 
 ]
@@ -1614,10 +1680,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[39
+[41
 
 
-] [40] [41] (./thesis.aux
+] [42] [43] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -1635,42 +1701,53 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33164 strings out of 480194
- 674000 string characters out of 5893742
- 1557366 words of memory out of 5000000
- 50335 multiletter control sequences out of 15000+600000
+ 33819 strings out of 478287
+ 685544 string characters out of 5849289
+ 1579597 words of memory out of 5000000
+ 51189 multiletter control sequences out of 15000+600000
  487915 words of font info for 150 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  122i,21n,145p,10686b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on thesis.pdf (47 pages, 2856054 bytes).
+pdfTeX warning (dest): name{figure.caption.35} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.39} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (49 pages, 2666005 bytes).
 PDF statistics:
- 1055 PDF objects out of 1200 (max. 8388607)
- 823 compressed objects within 9 object streams
- 150 named destinations out of 1000 (max. 500000)
+ 1108 PDF objects out of 1200 (max. 8388607)
+ 871 compressed objects within 9 object streams
+ 166 named destinations out of 1000 (max. 500000)
  39780 words of extra memory for PDF output out of 42996 (max. 10000000)
 

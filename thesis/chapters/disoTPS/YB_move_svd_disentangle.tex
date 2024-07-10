@@ -1,0 +1,28 @@
+Alternatively, the constrained optimization problem \eqref{eq:disoTPS_YB_move_standard} can be solved via two successive SVDs with an optional disentangling prodcedure with the goal of reducing the truncation error or some entanglement measure. This is the same algorithm that was used for the MM in the original isoTPS \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}. The algorithm is sketched in figure \figref{} and is made up of three main steps.
+\begin{enumerate}
+	\item We start by contracting the tensors $T$, $W_1$ and $W_2$ into a single tensor $\Psi$ (figure \figref{} (b)). This tensor is then split from left to right via a truncated SVD
+	\begin{equation}
+		\Psi = XSZ^\dagger = X\left(SZ^\dagger\right) \eqqcolon X\theta
+	\end{equation}
+	as shown in figure \figref{}(c). The bond dimension is truncated to $D^2$.
+	\item Next, we split the index of the bond connecting $X$ and $\theta$ into two indices of dimension $D$ each, see figure \figref{}(d). To proceed, we note that there exists a degree of freedom on the bonds connecting $X$ and $\theta$: A unitary $U$ and its adjoint can be inserted as shwon in figure \figref{}(e) without changing the result of the contraction
+	\begin{equation}
+		XU^\dagger U\theta = \left(XU^\dagger\right)\left(U\theta\right) \eqqcolon T^\prime \tilde{\theta}.
+	\end{equation}
+	This unitary $U$ can be chosen to minimize the truncation error of the next step by \textit{disentangling} the tensor $\theta$. We will discuss procedures of finding such a \textit{disentangling unitary} on the next page.
+	\item In the last step, the tensor $\tilde{\theta}$ is split vertically into $W_1^\prime$ and $W_2^\prime$ using a truncated SVD as shown in figure \figref{}(f). Here, the bond dimension is truncated to $\chi$. We end up with the three tensors $T^\prime$, $W_1^\prime$ and $W_2^\prime$, completing the YB move.
+\end{enumerate}
+Before we discuss the disentangling procedure, two comments about step two of the above algorithm are in order. Firstly, there exists a degree of freedom for splitting the bond index, because applying the same permutations to the columns of $X$ and rows of $\theta$ does not change the result of contracting the network. Thus, there is no unique splitting that can be chosen. However, this degree of freedom is fixed by the disentangling process, making the exact permutation of the bond splitting irrelevant. Secondly, note that near the edges of the lattice it can happen that the matrizized tensor $\Psi$ has $\tilde{\chi} < D^2$ rows. In this case, the bond dimension after the SVD will also be $\tilde{\chi}$ and we cannot split the bond into two bonds of dimension $\chi_1=\chi_2=D$. Instead, we choose a splitting $\chi_1 \le D$, $\chi_2 \le D$ such that $\chi_1\cdot\chi_2$ is maximized while it must still hold $\chi_1\cdot\chi_2\le\tilde{\chi}$. We additionally prefer "equal" splittings $\chi_1\approx\chi_2\approx\sqrt{\tilde{\chi}}$ if possible. One can find such a splitting easily by computing all possible combinations of $\chi_1$ and $\chi_2$ and keeping only the best one. This has a computational cost of $\mathcal{O}\left(\sqrt{\tilde{\chi}}\right) = \mathcal{O}\left(d\right)$. \par
+\begin{figure}
+	%\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/yb_move_svd_disent.jpeg}
+	\caption{test\todo{Why does this image not work? Also write caption.}}
+	\label{fig:yb_move_svd_disent}
+\end{figure}
+We will now discuss the problem of finding a good disentangling unitary $U$ for step two of the above algorithm, which is crucial for the performance of the YB move. The problem can be formulated as follows: Given a tensor $\theta \in \mathbb{C}^{\chi_1\times d_1\times d_2\times \chi_2}$, find a unitary $U\in\mathbb{C}^{d_1\times d_2\times d_1\times d_2}$ minimizing a cost function
+\begin{equation}
+	f(\tilde{\theta}),
+\end{equation}
+where
+\begin{equation}
+	\tilde{\theta}\in\mathbb{C}^{\chi_1\times d_1\times d_2\times \chi_2}, \quad \tilde{\theta}_{\alpha,i,j,\beta} \coloneqq \sum_{i^\prime,j^\prime}U_{i,j,i^\prime,j^\prime}\theta_{\alpha,i,j,\beta}.
+\end{equation}
