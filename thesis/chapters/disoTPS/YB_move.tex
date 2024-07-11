@@ -9,7 +9,7 @@ In analogy to the MM we look for a procedure to iteratively shift the orthogonal
 We denote the state represented by the disoTPS before the YB move by $\left|\Psi\right\rangle = \left|\Psi\left(W_1, W_2, T\right)\right\rangle$ and the state after the YB move by $\left|\Psi^\prime\right\rangle = \left|\Psi^\prime\left(W_1^\prime, W_2^\prime, T^\prime\right)\right\rangle$. One can think of the YB move as an optimization problem
 \begin{equation}
 	\label{eq:disoTPS_YB_move_standard}
-	\left(T^\prime, W_1^\prime, W_2^\prime\right) = \underset{T^\prime,W_1^\prime,W_2^\prime}{\text{min}}\left\lVert \left|\Psi\right\rangle - \left|\Psi^\prime\right\rangle\right\rVert_\text{F}
+	\left(T^\prime_\text{opt},W_{1,\text{opt}}^\prime,W_{2,\text{opt}}^\prime\right) = \underset{T^\prime,W_1^\prime,W_2^\prime}{\argmin}\left\lVert \left|\Psi\right\rangle - \left|\Psi^\prime\right\rangle\right\rVert_\text{F}
 \end{equation}
 under the constraints
 \begin{equation}
@@ -27,7 +27,7 @@ We further rewrite the error of the YB move as
 where in the second step we used the fact that the wave function is normalized to one, $\left\langle\Psi\middle|\Psi\right\rangle = \left\langle\Psi^\prime\middle|\Psi^\prime\right\rangle = 1$. It follows that the optimization problem of minimizing the error becomes the problem of maximizing the overlap
 \begin{equation}
 	\label{eq:disoTPS_YB_move_alternative_formulation}
-	\left(T^\prime, W_1^\prime, W_2^\prime\right) = \underset{T^\prime,W_1^\prime,W_2^\prime}{\text{argmax}}\Re\left\langle\Psi\middle|\Psi^\prime\right\rangle
+	\left(T^\prime_\text{opt},W_{1,\text{opt}}^\prime,W_{2,\text{opt}}^\prime\right) = \underset{T^\prime,W_1^\prime,W_2^\prime}{\text{argmax}}\Re\left\langle\Psi\middle|\Psi^\prime\right\rangle
 \end{equation}
 under the constraints \eqref{eq:disoTPS_YB_move_constraints}. Because the only tensors that are changed by the YB move are $W_1$, $W_2$ and $T$ and the three tensors make up a subregion of the full network with only incoming arrows, we can use the isometry condition and the computation of the overlap reduces to a contraction of only six tensors as shown in figure \figref{fig:YB_move_iterate_polar_overlap}.\par
 \begin{figure}

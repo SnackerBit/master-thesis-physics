@@ -1,0 +1,35 @@
+When discussing algorithms on isometric tensor networks, one often needs to find optimal tensors extremizing a given cost function $f$. In the most general case, $f$ is a function
+\begin{equation}
+	\label{eq:general_optimization_problem_of_isometric_tensor_networks_cost_function_multiple_input_tensors}
+	f:\mathbb{C}^{m_1\times n_1}\times \dots \times \mathbb{C}^{m_K\times n_K} \to \mathbb{R},
+\end{equation}
+mapping $K$ tensors $T_1,\dots,T_K$ to a scalar cost value. Here, the tensors have already been reshaped into matrices, grouping together legs with incoming arrows and legs with outgoing arrows respectively. The tensors must satisfy certain constraints. If a tensor $T_i$ posesses both legs with incoming arrows and legs with outgoing arrows, it must satisfy the isometry constraint $T_i^\dagger T_i = \id$, where without loss of generalization we assumed $n_i \ge m_i$. If instead the tensor $T_j$ posesses only legs with incoming arrows (and thus is an orthogonality center), it is constrained to be normalized to one, $\lVert T_j\rVert_\text{F} = 1$. To summarize, we want to solve the optimization problem
+\begin{equation}
+	\label{eq:general_optimization_problem_of_isometric_tensor_networks_multiple_input_tensors}
+	T_1^\text{opt}, \dots, T_K^\text{opt} = \underset{T_1,\dots T_K}{\text{argmax}}f\left(T_1, \dots T_K\right)
+\end{equation}
+under the constraints
+\begin{equation}
+	\label{eq:general_optimization_problem_of_isometric_tensor_networks_isometry_constraint}
+	T_i^\dagger T_i = \id
+\end{equation}
+for isometries $T_i$ and
+\begin{equation}
+	\label{eq:general_optimization_problem_of_isometric_tensor_networks_ortho_center_constraint}
+	\lVert T_j\rVert_\text{F} = 1
+\end{equation}
+for the orthogonality center $T_j$. \par
+In the following, we will discuss several approaches for solving optimization problem \eqref{eq:general_optimization_problem_of_isometric_tensor_networks_multiple_input_tensors}. We will first assume that the input of the cost function is a single tensor $T$. If the cost function is linear, the problem is known as the \textit{orthogonal Procrustes problem} and we discuss its closed form solution in section \ref{sec:orthogonal_procrustes_problem}. Non-linear cost functions can be optimized by using the Evenbly-Vidal algorithm, see section \ref{sec:evenbly_vidal_algorithm}. Finally, we will discuss how cost functions of multiple tensors can be optimized in section \ref{sec:cost_functions_of_multiple_tensors}. \par
+A different, more involved approach to solving the optimization problem is given by Riemannian optimization, which we discuss in appendix \ref{app:riemannian_optimization_of_isometries}.
+
+\section{The orthogonal Procrustes problem}
+\label{sec:orthogonal_procrustes_problem}
+\input{chapters/optimization_problems_on_isometric_tensor_networks/orthogonal_procrustes_problem.tex}
+
+\section{The Evenbly-Vidal algorithm}
+\label{sec:evenbly_vidal_algorithm}
+\input{chapters/optimization_problems_on_isometric_tensor_networks/evenbly_vidal_algorithm.tex}
+
+\section{Cost functions of multiple tensors}
+\label{sec:cost_functions_of_multiple_tensors}
+\input{chapters/optimization_problems_on_isometric_tensor_networks/cost_function_multiple_tensors.tex}

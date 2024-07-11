@@ -330,6 +330,211 @@
       \verb https://link.aps.org/doi/10.1103/RevModPhys.82.277
       \endverb
     \endentry
+    \entry{cite:efficient_simulation_of_1D_quantum_many_body_systems}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fe10cf33913e45c3685598c8b35bc209}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Guifré},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{fe10cf33913e45c3685598c8b35bc209}
+      \strng{fullhash}{fe10cf33913e45c3685598c8b35bc209}
+      \strng{bibnamehash}{fe10cf33913e45c3685598c8b35bc209}
+      \strng{authorbibnamehash}{fe10cf33913e45c3685598c8b35bc209}
+      \strng{authornamehash}{fe10cf33913e45c3685598c8b35bc209}
+      \strng{authorfullhash}{fe10cf33913e45c3685598c8b35bc209}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{4}
+      \field{title}{Efficient simulation of one-dimensional quantum many-body systems}
+      \field{volume}{93}
+      \field{year}{2004}
+      \field{pages}{040502}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=63677e060af69e712a79ef33056e4c5a}{%
+           family={Garcia-Ripoll},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Juan\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3ccd6c1393ed54c4c48b48d9fd8170b3}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={Juan\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{fullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{bibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{authorbibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{authornamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{authorfullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{20}
+      \field{title}{Matrix product density operators: Simulation of finite-temperature and dissipative systems}
+      \field{volume}{93}
+      \field{year}{2004}
+      \field{pages}{207204}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:time_dependent_variational_principle_for_quantum_lattices}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9531e7c6006adecb622581097ff2d509}{%
+           family={Haegeman},
+           familyi={H\bibinitperiod},
+           given={Jutho},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=bd3d3f2e126dca66556cac81be469a9d}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Tobias\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=53c53209157c346af83744d87a56056a}{%
+           family={Pižorn},
+           familyi={P\bibinitperiod},
+           given={Iztok},
+           giveni={I\bibinitperiod}}}%
+        {{hash=5c31632a2096242343b9d67781ec6e27}{%
+           family={Verschelde},
+           familyi={V\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{fullhash}{378a32f9374e5aadd97a6630134a1e0b}
+      \strng{bibnamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authorbibnamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authornamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authorfullhash}{378a32f9374e5aadd97a6630134a1e0b}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{7}
+      \field{title}{Time-dependent variational principle for quantum lattices}
+      \field{volume}{107}
+      \field{year}{2011}
+      \field{pages}{070601}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:unifying_time_evolution_and_optimization_with_MPS}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9531e7c6006adecb622581097ff2d509}{%
+           family={Haegeman},
+           familyi={H\bibinitperiod},
+           given={Jutho},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9a61cdcbc8a5b325ba3aa8e80f7d1900}{%
+           family={Lubich},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9854b5eb0ee156689ff45d80042f6c12}{%
+           family={Oseledets},
+           familyi={O\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a20902e0864c1ff6ac1ccb78a7931837}{%
+           family={Vandereycken},
+           familyi={V\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{fullhash}{e4e6fce0cefee713afed6ae4e077168f}
+      \strng{bibnamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authorbibnamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authornamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authorfullhash}{e4e6fce0cefee713afed6ae4e077168f}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{16}
+      \field{title}{Unifying time evolution and optimization with matrix product states}
+      \field{volume}{94}
+      \field{year}{2016}
+      \field{pages}{165116}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:finding_exponential_product_formulas_of_higher_orders}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=72b337f8636e5a4e6b996b62199e4489}{%
+           family={Hatano},
+           familyi={H\bibinitperiod},
+           given={Naomichi},
+           giveni={N\bibinitperiod}}}%
+        {{hash=69cc1e3c555789f39f023984cb106915}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Masuo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{070f302e57e65537eedb51e343d06552}
+      \strng{fullhash}{070f302e57e65537eedb51e343d06552}
+      \strng{bibnamehash}{070f302e57e65537eedb51e343d06552}
+      \strng{authorbibnamehash}{070f302e57e65537eedb51e343d06552}
+      \strng{authornamehash}{070f302e57e65537eedb51e343d06552}
+      \strng{authorfullhash}{070f302e57e65537eedb51e343d06552}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Quantum annealing and other optimization methods}
+      \field{title}{Finding exponential product formulas of higher orders}
+      \field{year}{2005}
+      \field{pages}{37\bibrangedash 68}
+      \range{pages}{32}
+    \endentry
     \entry{cite:criticality_the_area_law_and_the_computational_power_of_PEPS}{article}{}
       \name{author}{4}{}{%
         {{hash=085ab1d28e21b822e7bebcfb7d68f99f}{%
@@ -362,8 +567,8 @@
       \strng{authorbibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
       \strng{authornamehash}{984d0f5330d61de66f61ed9f24d8d39d}
       \strng{authorfullhash}{9aed6ac2b3e78be35209f52664137857}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{22}
@@ -584,8 +789,8 @@
       \strng{authorbibnamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
       \strng{authornamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
       \strng{authorfullhash}{09e1659c7d5dcadfaadfe03f255fd1b8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{8}
@@ -625,8 +830,8 @@
       \strng{authorbibnamehash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
       \strng{authornamehash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
       \strng{authorfullhash}{46b9b949402ffa0b7d8bc4ebe6dcd54d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{quant-ph}
@@ -670,8 +875,8 @@
       \strng{authorbibnamehash}{c538fedb3ac769e2c125dc055be3c4b5}
       \strng{authornamehash}{c538fedb3ac769e2c125dc055be3c4b5}
       \strng{authorfullhash}{c538fedb3ac769e2c125dc055be3c4b5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{1}
@@ -711,8 +916,8 @@
       \strng{authorbibnamehash}{afdd4d90003cd71a610bc3852c0001fd}
       \strng{authornamehash}{afdd4d90003cd71a610bc3852c0001fd}
       \strng{authorfullhash}{afdd4d90003cd71a610bc3852c0001fd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{quant-ph}
@@ -970,6 +1175,54 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
       \endverb
     \endentry
+    \entry{cite:riemannian_optimization_isometric_tensor_networks}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c2248fc60d8cf4957c5a0692b29581f9}{%
+           family={Hauru},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce5e7557f744314daadc580383ae5477}{%
+           family={Van\bibnamedelima Damme},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9531e7c6006adecb622581097ff2d509}{%
+           family={Haegeman},
+           familyi={H\bibinitperiod},
+           given={Jutho},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stichting SciPost}%
+      }
+      \strng{namehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{fullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{bibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2542-4653}
+      \field{journaltitle}{SciPost Physics}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Riemannian optimization of isometric tensor networks}
+      \field{volume}{10}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.21468/scipostphys.10.2.040
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \endverb
+    \endentry
     \entry{cite:optimization_on_matrix_manifolds}{book}{}
       \name{author}{3}{}{%
         {{hash=9a81fe9ad87cf630eb4a68e86949545d}{%
@@ -1000,8 +1253,8 @@
       \strng{authorbibnamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authornamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authorfullhash}{e7190b12d85362656ed68bdbd6bb3b2d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781400830244}
@@ -1044,8 +1297,8 @@
       \strng{authorbibnamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authornamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authorfullhash}{1fb317b919aa78dc3d7db4836ffad4b5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1367-2630}
@@ -1065,54 +1318,6 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1088/1367-2630/ac0b02
-      \endverb
-    \endentry
-    \entry{cite:riemannian_optimization_isometric_tensor_networks}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c2248fc60d8cf4957c5a0692b29581f9}{%
-           family={Hauru},
-           familyi={H\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ce5e7557f744314daadc580383ae5477}{%
-           family={Van\bibnamedelima Damme},
-           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Maarten},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9531e7c6006adecb622581097ff2d509}{%
-           family={Haegeman},
-           familyi={H\bibinitperiod},
-           given={Jutho},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Stichting SciPost}%
-      }
-      \strng{namehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{fullhash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{bibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2542-4653}
-      \field{journaltitle}{SciPost Physics}
-      \field{month}{2}
-      \field{number}{2}
-      \field{title}{Riemannian optimization of isometric tensor networks}
-      \field{volume}{10}
-      \field{year}{2021}
-      \verb{doi}
-      \verb 10.21468/scipostphys.10.2.040
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
       \endverb
     \endentry
     \entry{cite:pymanopt}{misc}{}
@@ -1139,8 +1344,8 @@
       \strng{authorbibnamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authornamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authorfullhash}{7bd438baffcc0da55c3c7385d29cbb81}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.MS}

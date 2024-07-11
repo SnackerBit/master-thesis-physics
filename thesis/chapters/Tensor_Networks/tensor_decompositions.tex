@@ -1,4 +1,4 @@
-There are three decompositions that are used extensively in this thesis: The QR-decomposition, the Singular Value Decomposition, and the Polar Decomposition. All three decompositions are matrix decompositions but can be applied to tensors as well by first grouping indices and reshaping to a matrix, applying the decomposition, and reshaping the result back to the original bond dimensions. \par
+There are two decompositions that are used extensively in this thesis: The QR-decomposition and the Singular Value Decomposition. Both decompositions are matrix decompositions but can be applied to tensors as well by first grouping indices and reshaping to a matrix, applying the decomposition, and reshaping the result back to the original bond dimensions. \par
 The \textit{reduced QR-decomposition} of a matrix $A \in \mathbb{C}^{n\times m}$ is the decomposition
 \begin{equation}
 	\label{eq:QR_decomposition_general}
@@ -22,20 +22,9 @@ An important property of the SVD is that it can be used to approximate a matrix 
 	A \approx \tilde{A} = \tilde{U}\tilde{S}\tilde{V},
 \end{equation}
 with isometries $\tilde{U}\in\mathbb{C}^{n\times\chi}$, $\tilde{V}\in\mathbb{C}^{m\times\chi}$ and real diagonal matrix $\tilde{S}\in\mathbb{C}^{\chi\times\chi}$. It can be shown \cite{cite:eckart_young_theorem} that the truncated SVD minimizes the distance $\lVert A - \tilde{A} \rVert_\text{F}$ between $A$ and $\tilde{A}$ under the constraint $\text{rank}(\tilde{A}) = \chi$. The truncated SVD is frequently used in tensor network algorithms to truncate tensors to a maximum bond dimension $\chi_\text{max}$. \par
-The \textit{polar decomposition} of a matrix $\bm{A} \in \mathbb{C}^{n\times m}$ is the decomposition
-\begin{equation}
-	\label{eq:polar_decomposition_general}
-	A = WP,
-\end{equation}
-where $W\in\mathbb{C}^{m\times n}$ is an isometry and $P\in\mathbb{C}^{n\times n}$ is positive-definite and hermitean. The polar decomposition is related to the SVD $A = USV$ by
-\begin{equation}
-	\label{eq:polar_decomposition_connection_to_svd}
-	W = UV^\dagger, \quad P = VSV^\dagger.
-\end{equation}
-The computational complexity of the polar decomposition is the same as for the QR decomposition and SVD \eqref{eq:QR_decomposition_complexity}. The polar decomposition \eqref{eq:polar_decomposition_general} is depicted diagrammatically in figure \figref{fig:tensor_decomposition_diagrams} One can show \todo{prove in appendix?} that the $W$ factor of the polar decomposition minimizes the distance $\lVert A-W\rVert_\text{F}$. Thus, the polar decomposition is often used in isometric tensor network algorithms to "isometrize" tensors.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg}
-	\caption{Different tensor decompositions are shown in tensor network diagram notation. The indices are decorated with bond dimensions. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}. (c) Polar decomposition \eqref{eq:polar_decomposition_general}.}
+	\caption{Different tensor decompositions are shown in tensor network diagram notation. The indices are decorated with bond dimensions. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
 	\label{fig:tensor_decomposition_diagrams}
 \end{figure}

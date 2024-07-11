@@ -97,6 +97,8 @@
 \DeclareMathOperator{\Re}{Re}
 \let\Im\relax
 \DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\argmin}{argmin}
 \newcommand{\id}{\mathbbb{1}}
 \newcommand{\iu}{\mathrm{i}}% imaginary unit number i
 \newcommand{\Stiefel}{\text{St}(n,p)}
