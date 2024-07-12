@@ -20,35 +20,62 @@ Before we discuss the disentangling procedure, two comments about step two of th
 	\label{fig:yb_move_svd_disent}
 \end{figure}
 \subsubsection*{The disentangling process}
-We will now discuss the problem of finding a good disentangling unitary $U$ for step 2 of the above algorithm, which is crucial for the performance of the YB move. The problem can be formulated as follows: Given the tensor $\theta$ that is obtained after splitting the index in step two, find a unitary $U$ minimizing a cost function $f(U, \theta)$. In the following, let $S_j$, $j = 1, \dots, \chi D^2$ be the singular values of the SVD $\tilde{\theta} = U\theta = USV^\dagger$, see figure \ref{}. We discuss two cost functions, namely the truncation error
+We will now discuss the problem of finding a good disentangling unitary $U$ for step 2 of the above algorithm, which is crucial for the performance of the YB move. The problem can be formulated as follows: Given the tensor $\theta$ that is obtained after splitting the index in step two, find a unitary $U$ minimizing a cost function $f(U, \theta)$. In the following, let $\tilde{\theta}_{(l,i),(j,r)}$ be the $\chi D^2\times \chi D^2$ matrix that is obtained by reshaping the contraction $\tilde{\theta}_{l,i,j,r} = \sum_{i^\prime,j^\prime} U_{i,j,i^\prime,j^\prime}\theta_{l,i,j,r}$ into a matrix as shown in figure \figref{fig:disentangling_theta_definition}. Let further $\tilde{\theta} = XSY$ denote the SVD of $\tilde{\theta}$. We discuss two cost functions. The first cost function is simply given by the truncation error
 \begin{equation}
-	f_\text{trunc}\left(U, \theta\right) = 
+	\label{eq:YB_move_disent_cost_function_truncation_error}
+	f_\text{trunc}\left(U,\theta\right) = \sum_{j = \chi+1}^{\chi D^2}S_j^2
 \end{equation}
-
+arising in step three of the YB move. Alternatively, one can think of $|\tilde{\theta}\rangle \coloneqq \sum_{(l,i), (j,r)}\tilde{\theta}_{(l,i),(j,r)}|(l,i), (j, r)\rangle$ as a bipartite state in an orthogonal basis and consider as a cost function the Rényi-entropy
+\begin{equation}
+	\label{eq:renyi_entropy}
+	f_\text{Rényi}\left(U,\theta,\alpha\right) = \frac{1}{1-\alpha}\log\Tr\left(\rho^\alpha\right) = \frac{1}{1-\alpha}\log\left(\sum_{j=1}^{\chi D^2}s_i^{2\alpha}\right),
+\end{equation}
+where $\alpha\in[0,\infty)$ and $\rho = \Tr_{(j, r)}\left(|\tilde{\theta}\rangle\langle\tilde{\theta}|\right)$ is the reduced density matrix obtained by tracing out one of the subsystems, see figure \figref{fig:disentangling_rho_definition}. In the last step of \eqref{eq:renyi_entropy} we used the fact that the eigenvalues of $\rho$ are the squares of the singular values of $\tilde{\theta}$. The Rényi-entropy can be used as a measure of entanglement. It approaches the Von-Neumann entanglement entropy for $\alpha\rightarrow 1$. It can be shown that the truncation error is bounded by the Rényi-entropy if $\alpha < 1$ \cite{cite:mps_represent_ground_states_faithfully}, which is a motivation for using $f_\text{Rényi}$ as a cost function. For $\alpha > 1$ such a bond cannot generally be given. However, optimizations of Rényi-entropies with $\alpha > 1$ are often simpler to perform and still achieve good results in practice \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems, cite:finding_purifications_with_minimal_entanglement}. Setting $\alpha = 2$ yields the Rényi-entropy
+\begin{equation}
+	\label{eq:renyi_entropy_alpha_2}
+	f_\text{Rényi}\left(U,\theta,\alpha=2\right) = -\log\Tr\rho^2,
+\end{equation}
+which can easily computed by contracting the tensor network shown in figure \figref{fig:disentangling_evenbly_vidal_algorithm}(a) without needing to perform an SVD. The cost function $f_\text{Rényi}\left(U,\theta,\alpha=2\right)$ can be minimized using the Evenbly-Vidal algorithm as proposed in \cite{cite:finding_purifications_with_minimal_entanglement}. First, the minimization problem can be rewritten as a maximization problem
+\begin{equation}
+	U^\text{opt} = \underset{U^\dagger U = \id}{\argmin} f_\text{Rényi}\left(U,\theta,\alpha=2\right) = \underset{U^\dagger U = \id}{\argmax}\Tr\rho^2.
+\end{equation}
+We proceed by taking one tensor $U$ out of the network $\Tr\rho^2$ and contracting all other tensors into the environment $E$ as shown in figure \ref{fig:disentangling_evenbly_vidal_algorithm}(b). We now treat $E$ as if it were independent of $U$ and update $U\leftarrow AB^\dagger$, where $A$ and $B$ are obtained by taking the SVD $E=A\Lambda B^\dagger$. For details on the Evenbly-Vidal algorithm see appendix \ref{sec:evenbly_vidal_algorithm}. In practice it is observed that this algorithm for minimizing $f_\text{Rényi}\left(U,\theta,\alpha=2\right)$ converges very quickly \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}.\par
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_theta_definition.jpeg}
 	\caption{The disentangling unitary $U$ is contracted with the wave function tensor $\theta$ to form $\tilde{\theta}$, which is subsequently split via an SVD $\tilde{\theta} = XSY^\dagger$.}
 	\label{fig:disentangling_theta_definition}
 \end{figure}
-
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_rho_definition.jpeg}
 	\caption{Definition of the reduced density matrix $\rho$.}
 	\label{fig:disentangling_rho_definition}
 \end{figure}
-
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg}
 	\caption{(a) Tensor network for the computation of the cost function \eqref{}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.}
 	\label{fig:disentangling_evenbly_vidal_algorithm}
 \end{figure}
-
+Minimizing the truncation error $f_\text{trunc}\left(U,\theta\right)$ and general Rényi-entropies $f_\text{Rényi}\left(U,\theta,\alpha\neq2\right)$ is a harder problem. We follow the approach of \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems} and use Riemannian optimization \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks, cite:riemannian_geometry_automatic_differentiation_quantum_physics, cite:pymanopt} to solve the optimization problem. The idea of Riemannian optimization is to generalize common optimization algorithms defined in Euclidian vector spaces, such as Gradient Descent or Conjugate Gradients, to Riemannian manifolds. The set of all isometric matrices of shape $n\times m$ is a Riemannian manifold called the Stiefel manifold $\Stiefel$. A special case is the set of all unitary matrices of shape $n\times n$, $U(n)=\text{St}(n, n)$, over which we want to optimize here. \par
+A typical optimization algorithm iteratively improves an iterate $U_k\in\Stiefel, k=1,2,\dots$ until a local minimum of the cost function $f$ is found. The gradient of the cost function $\nabla f\left(U_k\right)$ is restricted to the tangent space $T_{U_k}\Stiefel$ to the iterate $U_k$, which we visualize in figure \figref{fig:disentangling_riemannian_optimization}. The gradient can be computed either analytically or via automatic differentiation \cite{cite:riemannian_geometry_automatic_differentiation_quantum_physics, cite:pymanopt}. Optimization algorithms typically compute a search direction $\xi\in T_{U_k}\Stiefel$ and a step size $\alpha \in \mathbb{R}$ from the gradient. In an optimization algorithm defined on an Euclidean vector space one would then move along this direction as
+\begin{equation}
+	\tilde{U}_{k+1} = U_k + \alpha.
+\end{equation}
+However, $\tilde{U}_{k+1}$ is in general not an element of the manifold. To ensure $U_{k+1}\in\Stiefel$, one can introduce a \textit{retraction} $R_\xi:\mathbb{R}\to\Stiefel$. One can think of $R_\xi\left(\alpha\right)$ as moving along the direction of $\xi$ while staying on the manifold. As $\alpha$ increases, we move further along the path defined by the retraction, with $R_\xi(0) = U_k$. Different retractions can be chosen, varying by how well they perform in optimization problems and by how hard they are to compute. Here we choose the retraction
+\begin{equation}
+	R_\xi(\alpha) = \qf\left(U_k + \alpha\xi\right),
+\end{equation}
+where $\qf\left(A\right)$ is the Q-factor of the QR-decomposition $A = QR$. This retraction is particularly easy to compute and yields good results in practice. \par
+Many optimization algorithms such as Conjugate Gradients require gradients from previous iterates for computing a search direction at the current iterate. In Riemannian optimization, these gradients must first be brought from the tangent spaces of previous iterates to the tangent space of the current iterate. This is handled by a so-called \textit{vector transport}, for more details see appendix \ref{app:riemannian_optimization_of_isometries}. \par
+Finally, for optimization algorithms of second order such as the trust-region method, one needs to generalize the notion of the hessian-vector product to Riemannian manifolds. This generalization is given by the \textit{Riemannian connection} \cite{cite:optimization_on_matrix_manifolds}. For the Stiefel manifold this is simply given by projecting the hessian vector product of the embedding euclidean vector space $\mathbb{C}^{n\times p}$ to the tangent space, see appendix \ref{}\todo{add ref}. \par
+We used two algorithms for solving the disentangling optimization problem, Conjugate Gradients (CG) and the Trust-Region Method (TRM). Conjugate gradients is a first order \todo{double check, is this correct?} method which uses the accumulated gradients of previous iterations to compute a search direction, trying to achieve faster convergence than simple gradient descent. CG is discussed in more details in appendix \ref{}\todo{add ref}. The TRM approximates the cost function around the current iterate through a quadratic function using the hessian vector product. This approximate cost function is then minimized within a region of radius $\Delta\in\mathbb{R}$ using truncated Conjugate Gradients (tCG), which converges quickly for the quadratic approximation. Depending on the quality of the approximation at the current iterate one can then shrink or enlarge the trust region. TRM is able to achieve superlinear convergence on many cost functions \todo{double check, is this correct?}. For more details, see appendix \ref{}\todo{add ref}.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_riemannian_optimization.jpeg}
 	\caption{In this figure, a visualization of optimization on Riemannian manifolds is given. The iterate $U_k$ (left) is updated along the search direction $\xi_k$, which is an element of the tangent space $T_{U_k}\Stiefel$. The next iterate $U_{k+1}$ is computed with the retraction $R_\xi\left(\alpha\right)$, where $\alpha\in\mathbb{R}$ is the step size. For the computation of the next search direction $\xi_{k+1}$ the previous search direction $\xi_k$ is needed, which is brought to the tangent space $T_{U_{k+1}}\Stiefel$ of the new iterate $U_{k+1}$ via the vector transport $T_{k\rightarrow k+1}\left(\xi_k\right)$.}
 	\label{fig:disentangling_riemannian_optimization}
 \end{figure}
+The gradients and hessian vector products of the cost functions \eqref{eq:YB_move_disent_cost_function_truncation_error} and \eqref{eq:renyi_entropy} can be computed analytically and are drawn as tensor network diagrams in figure \figref{}\todo{ref}. A derivation of these results is given in appendix \ref{}. \par
+We will now compare the different algorithms for solving the disentangling problem.

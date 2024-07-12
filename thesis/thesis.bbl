@@ -1175,52 +1175,102 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
       \endverb
     \endentry
-    \entry{cite:riemannian_optimization_isometric_tensor_networks}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c2248fc60d8cf4957c5a0692b29581f9}{%
-           family={Hauru},
-           familyi={H\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ce5e7557f744314daadc580383ae5477}{%
-           family={Van\bibnamedelima Damme},
-           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Maarten},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9531e7c6006adecb622581097ff2d509}{%
-           family={Haegeman},
-           familyi={H\bibinitperiod},
-           given={Jutho},
-           giveni={J\bibinitperiod}}}%
+    \entry{cite:mps_represent_ground_states_faithfully}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Stichting SciPost}%
+        {APS}%
       }
-      \strng{namehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{fullhash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{bibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
-      \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{namehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{fullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{bibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authorbibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authornamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authorfullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{2542-4653}
-      \field{journaltitle}{SciPost Physics}
-      \field{month}{2}
-      \field{number}{2}
-      \field{title}{Riemannian optimization of isometric tensor networks}
-      \field{volume}{10}
-      \field{year}{2021}
+      \field{journaltitle}{Physical Review B—Condensed Matter and Materials Physics}
+      \field{number}{9}
+      \field{title}{Matrix product states represent ground states faithfully}
+      \field{volume}{73}
+      \field{year}{2006}
+      \field{pages}{094423}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:finding_purifications_with_minimal_entanglement}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9b8f7fc6b271de24f53da255021243ae}{%
+           family={Hauschild},
+           familyi={H\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=49b69e197f7e5118038a861e159636f1}{%
+           family={Leviatan},
+           familyi={L\bibinitperiod},
+           given={Eyal},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9a2b18f2a615eb5c1785f6ca0c5a5327}{%
+           family={Bardarson},
+           familyi={B\bibinitperiod},
+           given={Jens\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=9894bb19bd9f48642539f5ef6d571f7d}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={Ehud},
+           giveni={E\bibinitperiod}}}%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c42ac0f0670973638e288923228aff7b}
+      \strng{fullhash}{5f0cc2bd0a99db431094a873177e1728}
+      \strng{bibnamehash}{c42ac0f0670973638e288923228aff7b}
+      \strng{authorbibnamehash}{c42ac0f0670973638e288923228aff7b}
+      \strng{authornamehash}{c42ac0f0670973638e288923228aff7b}
+      \strng{authorfullhash}{5f0cc2bd0a99db431094a873177e1728}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{23}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{12}
+      \field{title}{Finding purifications with minimal entanglement}
+      \field{volume}{98}
+      \field{year}{2018}
+      \field{pages}{235163}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.21468/scipostphys.10.2.040
+      \verb 10.1103/PhysRevB.98.235163
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.98.235163
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.98.235163
       \endverb
     \endentry
     \entry{cite:optimization_on_matrix_manifolds}{book}{}
@@ -1268,6 +1318,54 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1515/9781400830244
+      \endverb
+    \endentry
+    \entry{cite:riemannian_optimization_isometric_tensor_networks}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c2248fc60d8cf4957c5a0692b29581f9}{%
+           family={Hauru},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce5e7557f744314daadc580383ae5477}{%
+           family={Van\bibnamedelima Damme},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9531e7c6006adecb622581097ff2d509}{%
+           family={Haegeman},
+           familyi={H\bibinitperiod},
+           given={Jutho},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stichting SciPost}%
+      }
+      \strng{namehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{fullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{bibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
+      \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2542-4653}
+      \field{journaltitle}{SciPost Physics}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Riemannian optimization of isometric tensor networks}
+      \field{volume}{10}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.21468/scipostphys.10.2.040
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.21468/SciPostPhys.10.2.040
       \endverb
     \endentry
     \entry{cite:riemannian_geometry_automatic_differentiation_quantum_physics}{article}{}
@@ -1350,7 +1448,7 @@
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.MS}
       \field{eprinttype}{arXiv}
-      \field{title}{Pymanopt: A Python Toolbox for Optimization on Manifolds using Automatic Differentiation}
+      \field{title}{Pymanopt: A Python Toolbox for Optimization on Manifolds using Differentiation}
       \field{year}{2016}
       \verb{eprint}
       \verb 1603.03236
