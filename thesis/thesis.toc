@@ -13,17 +13,17 @@
 \contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{30}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{31}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{31}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{33}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{35}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{37}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{38}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{39}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{39}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{41}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{41}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{42}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Conjugate Gradients}{43}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Trust Region Method}{43}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{45}{appendix.C}%
-\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.41}%
+\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{35}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{39}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{40}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{41}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{41}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{43}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{43}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{44}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Conjugate Gradients}{45}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Trust Region Method}{45}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{47}{appendix.C}%
+\contentsline {chapter}{\nonumberline Bibliography}{49}{chapter*.47}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

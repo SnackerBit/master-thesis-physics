@@ -21,7 +21,7 @@ where we have written the physical indices $i_n$ as superscripts, such that the 
 \end{figure}
 \begin{figure}
 	\centering
-	\subcaptionbox{\label{fig:mps_canonical_form_general_definitiom}}
+	\subcaptionbox{\label{fig:mps_canonical_form_general_definition}}
 	{%
 		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf}
 	}
@@ -34,10 +34,10 @@ where we have written the physical indices $i_n$ as superscripts, such that the 
 	{%
 		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf}
 	}
-	\caption{(a) Diagrammatic representation of an MPS in canonical form. (b) The isometry condition can be used to simplify contractions.}
+	\caption{(a) Diagrammatic representation of an MPS in canonical form. (b) The left isometry condition. (c) The right isometry condition.}
 	\label{fig:mps_canonical}
 \end{figure}
-An important property of MPS is the existence of a \textit{canonical form} as an isometric tensor network, where a single tensor $A^{[n]}$ is selected as the orthogonality center. One can bring an arbitrary MPS into this canonical form through successive QR-decompositions or SVDs, starting at the outer ends of the chain and isometrizing one tensor at a time, until the orthogonality center is reached \cite{cite:DMRG_in_the_age_of_MPS}. In figure \figref{fig:mps_canonical}(a) an MPS in canonical with the orthogonality center at subsystem $n$ is visualized in diagrammatic notation. The canonical form greatly simplifies many operations on MPS and allows for the formulation of efficient algorithms, where many contractions reduce to identity due to the isometry condition \eqref{eq:isometry_condition_general}, see also figure \figref{fig:mps_canonical}(b). For example, the expectation value $\left\langle\Psi\right|\hat{O}\left|\Psi\right\rangle$ of a one-site operator $\hat{O} \in \mathbb{C}^{d\times d}$ acting on site $n$ can for a general MPS be computed as
+An important property of MPS is the existence of a \textit{canonical form} as an isometric tensor network, where a single tensor $A^{[n]}$ is selected as the orthogonality center. One can bring an arbitrary MPS into this canonical form through successive QR-decompositions or SVDs, starting at the outer ends of the chain and isometrizing one tensor at a time, until the orthogonality center is reached \cite{cite:DMRG_in_the_age_of_MPS}. In figure \figref{fig:mps_canonical_form_general_definition} an MPS in canonical with the orthogonality center at subsystem $n$ is visualized in diagrammatic notation. The canonical form greatly simplifies many operations on MPS and allows for the formulation of efficient algorithms, where many contractions reduce to identity due to the isometry condition \eqref{eq:isometry_condition_general}, see also figure \figref{fig:mps_left_isometry_condition} and \figref{fig:mps_right_isometry_condition}. For example, the expectation value $\left\langle\Psi\right|\hat{O}\left|\Psi\right\rangle$ of a one-site operator $\hat{O} \in \mathbb{C}^{d\times d}$ acting on site $n$ can for a general MPS be computed as
 \begin{equation}
 \begin{split}
 	\label{eq:computation_of_expectation_value_MPS}
@@ -108,24 +108,40 @@ Next, we split the Hamiltonian into terms acting on even and odd bonds
 \begin{equation}
 	\hat{H} = \sum_{j \text{ even}}\hat{h}^{[j, j+1]} + \sum_{j \text{ odd}}\hat{h}^{[j, j+1]} \eqqcolon H_\text{even} + H_\text{odd}.
 \end{equation}
-Using the Baker-Campbell-Hausdorff formula we can then approximate
+Using the Zassenhaus formula
+\begin{equation}
+	e^{\varepsilon(A+B)} = e^{\varepsilon A} e^{\varepsilon B} e^{-\frac{\varepsilon^2}{2}[A, B]} e^{\frac{\varepsilon^3}{6}\left(2[B,[A,B]]+[A,[A,B]]\right)} \dots
+\end{equation}
+which can be derived from the Baker-Campbell-Hausdorff formula, we can approximate
 \begin{equation}
 	\begin{split}
-		U(\Delta t) &= e^{-i\Delta t\left(H_\text{even} + H_\text{odd}\right)} = e^{-i\Delta tH_\text{even}}e^{-i\Delta tH_\text{odd}}e^{-i\Delta t^2\left[H_\text{even}, H_\text{odd}\right]}\\
-		&= e^{-i\Delta tH_\text{even}}e^{-i\Delta tH_\text{odd}} + \mathcal{O}\left(\Delta t^2\right) = \hat{U}^\text{TEBD1}(\Delta t) + \mathcal{O}\left(\Delta t^2\right),
+		U(\Delta t) &= e^{-i\Delta t\left(H_\text{even} + H_\text{odd}\right)} = e^{-i\Delta tH_\text{even}}e^{-i\Delta tH_\text{odd}} + \mathcal{O}\left(\Delta t^2\right) \\
+		&= \hat{U}^\text{TEBD1}(\Delta t) + \mathcal{O}\left(\Delta t^2\right),
 	\end{split}
 \end{equation}
-which is called a Suzuki-Trotter decomposition of first order. Since operators acting on even bonds commute with operators acting on other even bonds, the exponentials $e^{-i\Delta tH_\text{even}}$ and $e^{-i\Delta tH_\text{odd}}$ factorize,
+which is called a Suzuki-Trotter decomposition of first order. Since operators acting on even bonds commute with each other, the exponentials $e^{-i\Delta tH_\text{even}}$ factorize,
 \begin{equation}
-	e^{-i\Delta tH_\text{even}} = e^{-i\Delta t\sum_{j \text{ even}} h^{[j, j+1]}} = \prod_{j \text{ even}} e^{-i\Delta t h^{[j, j+1]}}.
+	e^{-i\Delta tH_\text{even}} = e^{-i\Delta t\sum_{j \text{ even}} h^{[j, j+1]}} = \prod_{j \text{ even}} e^{-i\Delta t h^{[j, j+1]}},
 \end{equation}
-Each bond operator $e^{-i\Delta t h^{[j, j+1]}}$ acting on the combined Hilbert space of sites $j$ and $j+1$ can be reshaped into a tensor of rank 4. The application of the operator $\hat{U}^\text{TEBD1}(\Delta t)$ to a state in MPS form can thus be written as the tensor network in figure \ref{}.
-To perform a single TEBD iteration corresponding to a time evolution of $\Delta t$ we want to approximate this tensor network by a new MPS. This can be done by moving the orthogonality center from left to right, applying the bond operators $e^{-i\Delta t h^{[j, j+1]}}$ while keeping the MPS structure. The process of applying a single bond operator is shown in figure \ref{}. First, the two site tensors and $e^{-i\Delta t h^{[j, j+1]}}$  are contracted into a single tensor, that is then split and truncated again using an SVD. By sweeping twice across the MPS, first applying the bond operators on all even bonds and then the bond operators on all odd bonds, we perform a full TEBD iteration. There exist two sources of errors, the truncation error of the truncated SVD and the error of the Suzuki-Trotter decomposition. The truncation error can be controlled by choosing a larger bond dimension $\chi$, allowing the representation of more entanglement and thus the evolution to larger times. However, generally the amount of entanglement grows exponentially in time, necessitating an exponentially growing bond dimension and practically limiting the algorithm to small times. A smaller Suzuki-Trotter error can be achieved by choosing higher-order Suzuki-Trotter decomposition. For example, a second order decomposition can be computed as
+and the same is true for the exponentials $e^{-i\Delta tH_\text{odd}}$. Each bond operator $e^{-i\Delta t h^{[j, j+1]}}$ acting on the combined Hilbert space of sites $j$ and $j+1$ can be reshaped into a tensor of rank 4. The application of the operator $\hat{U}^\text{TEBD1}(\Delta t)$ to a state in MPS form can thus be written as the tensor network in figure \figref{fig:mps_tebd_first_order_overview}.
+To perform a single TEBD iteration corresponding to a time evolution of $\Delta t$ we want to approximate this tensor network by a new MPS. This can be done by moving the orthogonality center from left to right, applying the bond operators $e^{-i\Delta t h^{[j, j+1]}}$ while keeping the MPS structure. The process of applying a single bond operator is shown in figure \figref{fig:mps_tebd_first_order_applying_bond_op}. First, the two site tensors and $e^{-i\Delta t h^{[j, j+1]}}$  are contracted into a single tensor, that is then split and truncated again using an SVD. By sweeping twice across the MPS, first applying the bond operators on all even bonds and then the bond operators on all odd bonds, we perform a full TEBD iteration. There exist two sources of errors, the truncation error of the truncated SVD and the error of the Suzuki-Trotter decomposition. The truncation error can be controlled by choosing a larger bond dimension $\chi$, allowing the representation of more entanglement and thus the evolution to larger times. However, generally the amount of entanglement grows exponentially in time, necessitating an exponentially growing bond dimension and practically limiting the algorithm to small times. A smaller Suzuki-Trotter error can be achieved by choosing smaller time steps $\Delta t$ or by performing a higher-order Suzuki-Trotter decomposition. For example, a second order decomposition can be computed as
 \begin{equation}
 	\begin{split}
 		U(\Delta t) &= e^{-i\Delta t\left(H_\text{even} + H_\text{odd}\right)} = e^{-i\frac{\Delta t}{2}H_\text{even}} e^{-i\Delta t H_\text{odd}} e^{-i\frac{\Delta t}{2}H_\text{even}} + \mathcal{O}\left(\Delta t^3\right)\\
 		&= \hat{U}^\text{TEBD2}(\Delta t) + \mathcal{O}\left(\Delta t^3\right).
 	\end{split}
 \end{equation}
-\todo{Discuss different method of 2nd order tebd (ladder vs chain)}
-Higher order Suzuki-Trotter decompositions are also possible \cite{cite:finding_exponential_product_formulas_of_higher_orders}.
+and can be applied to a MPS similarly as the first order decomposition. For higher order Suzuki-Trotter decompositions see \cite{cite:finding_exponential_product_formulas_of_higher_orders}.
+\begin{figure}
+	\centering
+	\subcaptionbox{\label{fig:mps_tebd_first_order_overview}}
+	{%
+		\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/mps_tebd_first_order.jpeg}
+	}
+	\subcaptionbox{\label{fig:mps_tebd_first_order_applying_bond_op}}
+	{%
+		\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg}
+	}
+	\caption{TODO}
+	\label{fig:mps_tebd_first_order}
+\end{figure}
