@@ -77,5 +77,9 @@ We used two algorithms for solving the disentangling optimization problem, Conju
 	\caption{In this figure, a visualization of optimization on Riemannian manifolds is given. The iterate $U_k$ (left) is updated along the search direction $\xi_k$, which is an element of the tangent space $T_{U_k}\Stiefel$. The next iterate $U_{k+1}$ is computed with the retraction $R_\xi\left(\alpha\right)$, where $\alpha\in\mathbb{R}$ is the step size. For the computation of the next search direction $\xi_{k+1}$ the previous search direction $\xi_k$ is needed, which is brought to the tangent space $T_{U_{k+1}}\Stiefel$ of the new iterate $U_{k+1}$ via the vector transport $T_{k\rightarrow k+1}\left(\xi_k\right)$.}
 	\label{fig:disentangling_riemannian_optimization}
 \end{figure}
-The gradients and hessian vector products of the cost functions \eqref{eq:YB_move_disent_cost_function_truncation_error} and \eqref{eq:renyi_entropy} can be computed analytically and are drawn as tensor network diagrams in figure \figref{}\todo{ref}. A derivation of these results is given in appendix \ref{}. \par
+The gradients and hessian vector products of the cost functions \eqref{eq:YB_move_disent_cost_function_truncation_error} and \eqref{eq:re_entropy} can be computed analytically and are drawn as tensor network diagrams in figure \figref{}\todo{ref}. A derivation of these results is given in appendix \ref{}. \par
 We will now compare the different algorithms for solving the disentangling problem.
+\input{figures/plots/disoTPS/yb_move_disentangling_renyi_2.tex}
+\input{figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex}
+%\input{figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error_ver2.tex}
+

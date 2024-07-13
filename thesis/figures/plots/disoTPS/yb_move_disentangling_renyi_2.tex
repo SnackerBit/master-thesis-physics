@@ -1,0 +1,12 @@
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+		\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=2)$}, grid=both, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, title={Rényi entropy $\alpha = 2$}]
+			
+			\addplot[color = 5blue4, mark=*]
+			table[x=N_iters, y=f_Renyi_evenbly_vidal, col sep=space]{figures/plots/disoTPS/data/evenbly_vidal_renyi_2_disentangling.txt};
+			%\addlegendentry{Evenbly-Vidal}
+			
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}

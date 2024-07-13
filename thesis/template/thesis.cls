@@ -194,3 +194,58 @@
 \widowpenalty=10000
 \vfuzz \hfuzz
 \raggedbottom				% Creates more even spacing by sometimes increasing space between paragraphs
+
+% PLOTS
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{colorbrewer}
+\RequirePackage{tikz}
+% A single subfigure
+\def\singleFigureWidth{8 cm}
+\def\singleFigureHeight{4.944 cm}
+% Two subfigures stacked ontop of each other
+\def\doubleVerticalFigureWidth{11 cm}
+\def\doubleVerticalFigureHeight{5 cm}
+
+% 3 subfigures on top of each other
+\def\tripleVerticalFigureWidth{11 cm}
+\def\tripleVerticalFigureHeight{4 cm}
+
+\def\doubleFigureWidth{6.125cm}
+\def\doubleFigureHeight{4.635cm}
+% PLOT Colors
+\definecolor{5blue1}{HTML}{eff3ff}
+\definecolor{5blue2}{HTML}{bdd7e7}
+\definecolor{5blue3}{HTML}{6baed6}
+\definecolor{5blue4}{HTML}{3182bd}
+\definecolor{5blue5}{HTML}{08519c}
+
+\definecolor{5orange1}{HTML}{feedde}
+\definecolor{5orang2}{HTML}{fdbe85}
+\definecolor{5orange3}{HTML}{fd8d3c}
+\definecolor{5orange4}{HTML}{e6550d}
+\definecolor{5orange5}{HTML}{a63603}
+
+\definecolor{5red1}{HTML}{fee5d9}
+\definecolor{5red2}{HTML}{fcae91}
+\definecolor{5red3}{HTML}{fb6a4a}
+\definecolor{5red4}{HTML}{de2d26}
+\definecolor{5red5}{HTML}{a50f15}
+
+\definecolor{5green1}{HTML}{edf8e9}
+\definecolor{5green2}{HTML}{bae4b3}
+\definecolor{5green3}{HTML}{74c476}
+\definecolor{5green4}{HTML}{31a354}
+\definecolor{5green5}{HTML}{006d2c}
+
+\definecolor{5gray1}{HTML}{f7f7f7}
+\definecolor{5gray2}{HTML}{cccccc}
+\definecolor{5gray3}{HTML}{969696}
+\definecolor{5gray4}{HTML}{636363}
+\definecolor{5gray5}{HTML}{252525}
+
+\definecolor{5purple1}{HTML}{f2f0f7}
+\definecolor{5purple2}{HTML}{cbc9e2}
+\definecolor{5purple3}{HTML}{9e9ac8}
+\definecolor{5purple4}{HTML}{756bb1}
+\definecolor{5purple5}{HTML}{54278f}

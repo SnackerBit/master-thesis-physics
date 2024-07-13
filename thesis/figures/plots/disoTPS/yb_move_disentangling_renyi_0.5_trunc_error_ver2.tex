@@ -1,0 +1,52 @@
+\begin{figure}
+	\centering
+	\subcaptionbox{\label{fig:a}}
+	{%
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=1/2)$}, grid=both, every axis plot/.append style={very thick}, scale only axis, height=\doubleFigureHeight, width=\doubleFigureWidth, title={Rényi entropy $\alpha = 1/2$}]
+				
+				\addplot[color = 5orange4]
+				table[x=N_iters, y=f_Renyi_cg, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				\addlegendentry{CG}
+				
+				\addplot[color = 5orange4, dashed]
+				table[x=N_iters, y=f_Renyi_approx_cg, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				\addlegendentry{approx CG}
+				
+				\addplot[color = 5green4]
+				table[x=N_iters, y=f_Renyi_trm, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				\addlegendentry{TRM}
+				
+				\addplot[color = 5green4, dashed]
+				table[x=N_iters, y=f_Renyi_approx_trm, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				\addlegendentry{approx TRM}
+				
+			\end{axis}
+		\end{tikzpicture}
+	}
+	\hspace{35pt}
+	\subcaptionbox{\label{fig:b}}
+	{%
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{trunc}(U,\theta)$}, grid=both, every axis plot/.append style={very thick}, scale only axis, height=\doubleFigureHeight, width=\doubleFigureWidth, title={Truncation error}]
+				
+				\addplot[color = 5orange4]
+				table[x=N_iters, y=f_trunc_cg, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				\addlegendentry{CG}
+				
+				\addplot[color = 5orange4, dashed]
+				table[x=N_iters, y=f_trunc_approx_cg, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				\addlegendentry{approx CG}
+				
+				\addplot[color = 5green4]
+				table[x=N_iters, y=f_trunc_trm, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				\addlegendentry{TRM}
+				
+				\addplot[color = 5green4, dashed]
+				table[x=N_iters, y=f_trunc_approx_trm, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				\addlegendentry{approx TRM}
+				
+			\end{axis}
+		\end{tikzpicture}
+	}
+\end{figure}
