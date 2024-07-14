@@ -197,7 +197,7 @@
 
 % PLOTS
 \RequirePackage{pgfplots}
-\pgfplotsset{compat=1.18}
+%\pgfplotsset{compat=1.18}
 \usepgfplotslibrary{colorbrewer}
 \RequirePackage{tikz}
 % A single subfigure
@@ -210,6 +210,10 @@
 % 3 subfigures on top of each other
 \def\tripleVerticalFigureWidth{11 cm}
 \def\tripleVerticalFigureHeight{4 cm}
+
+% 4 subfigures aranged in a 2x2 pattern
+\def\twoByTwoFigureWidth{6.75cm}
+\def\twoByTwoFigureHeight{4cm}
 
 \def\doubleFigureWidth{6.125cm}
 \def\doubleFigureHeight{4.635cm}

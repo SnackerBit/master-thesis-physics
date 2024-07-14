@@ -1,6 +1,6 @@
 \begin{figure}
 	\centering
-	\subcaptionbox{\label{fig:a}}
+	\subcaptionbox{\label{fig:disoTPS_disentangling_cg_trm_renyi_0.5}}
 	{%
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=1/2)$}, grid=both, every axis plot/.append style={very thick}, scale only axis, height=\doubleVerticalFigureHeight, width=\doubleVerticalFigureWidth, title={Rényi entropy $\alpha = 1/2$}, xtick={0, 200, 400, 600, 800, 1000}, xticklabels={$0$, $200$, $400$, $600$, $800$, $1000$}]
@@ -24,7 +24,7 @@
 			\end{axis}
 		\end{tikzpicture}
 	}
-	\subcaptionbox{\label{fig:b}}
+	\subcaptionbox{\label{fig:disoTPS_disentangling_cg_trm_truncation_error}}
 	{%
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{trunc}(U,\theta)$}, grid=both, every axis plot/.append style={very thick}, scale only axis, height=\doubleVerticalFigureHeight, width=\doubleVerticalFigureWidth, title={Truncation error}, xtick={0, 200, 400, 600, 800, 1000}, xticklabels={$0$, $200$, $400$, $600$, $800$, $1000$}]
@@ -48,4 +48,6 @@
 			\end{axis}
 		\end{tikzpicture}
 	}
+	\caption{\todo{Caption}}
+	\label{fig:disoTPS_disentangling_cg_trm_renyi_0.5_trunc_error}
 \end{figure}
