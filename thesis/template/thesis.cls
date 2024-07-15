@@ -213,7 +213,9 @@
 
 % 4 subfigures aranged in a 2x2 pattern
 \def\twoByTwoFigureWidth{6.75cm}
-\def\twoByTwoFigureHeight{4cm}
+\def\twoByTwoFigureHeight{4.1717cm}
+
+\def\legendscale{0.9}
 
 \def\doubleFigureWidth{6.125cm}
 \def\doubleFigureHeight{4.635cm}

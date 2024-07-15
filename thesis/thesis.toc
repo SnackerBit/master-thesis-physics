@@ -11,19 +11,22 @@
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{26}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Iterative optimization with local updates}{27}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{30}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{37}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{37}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{38}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{38}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{41}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{43}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{45}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{46}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{47}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{47}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{49}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{49}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{50}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Conjugate Gradients}{51}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Trust Region Method}{51}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{53}{appendix.C}%
-\contentsline {chapter}{\nonumberline Bibliography}{55}{chapter*.65}%
+\contentsline {section}{\numberline {4.1}The Toric Code Model}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{43}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{45}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{47}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{48}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{49}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{49}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{51}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{51}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{52}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Conjugate Gradients}{53}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Trust Region Method}{53}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{55}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Gradient and Hessian Vector Product for the Renyi-entropy and the Truncation Error}{57}{appendix.D}%
+\contentsline {chapter}{\nonumberline Bibliography}{61}{chapter*.82}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

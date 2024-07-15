@@ -1454,6 +1454,35 @@
       \verb 1603.03236
       \endverb
     \endentry
+    \entry{cite:fault_tolerant_quantum_computation_by_anyons}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34266a35eedbd87dd79c5e408127a5e5}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={A\bibnamedelima Yu},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{fullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{bibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of physics}
+      \field{number}{1}
+      \field{title}{Fault-tolerant quantum computation by anyons}
+      \field{volume}{303}
+      \field{year}{2003}
+      \field{pages}{2\bibrangedash 30}
+      \range{pages}{29}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
