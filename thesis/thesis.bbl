@@ -1454,6 +1454,45 @@
       \verb 1603.03236
       \endverb
     \endentry
+    \entry{cite:fast_time_evolution_of_mps_using_qr}{article}{}
+      \name{author}{3}{}{%
+        {{hash=955850b18c450bff6395cf5c84a96ee3}{%
+           family={Unfried},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9b8f7fc6b271de24f53da255021243ae}{%
+           family={Hauschild},
+           familyi={H\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{0f7899391f88ca43191b7a37262d0f33}
+      \strng{fullhash}{0f7899391f88ca43191b7a37262d0f33}
+      \strng{bibnamehash}{0f7899391f88ca43191b7a37262d0f33}
+      \strng{authorbibnamehash}{0f7899391f88ca43191b7a37262d0f33}
+      \strng{authornamehash}{0f7899391f88ca43191b7a37262d0f33}
+      \strng{authorfullhash}{0f7899391f88ca43191b7a37262d0f33}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{15}
+      \field{title}{Fast time evolution of matrix product states using the QR decomposition}
+      \field{volume}{107}
+      \field{year}{2023}
+      \field{pages}{155133}
+      \range{pages}{1}
+    \endentry
     \entry{cite:fault_tolerant_quantum_computation_by_anyons}{article}{}
       \name{author}{1}{}{%
         {{hash=34266a35eedbd87dd79c5e408127a5e5}{%
@@ -1482,6 +1521,40 @@
       \field{year}{2003}
       \field{pages}{2\bibrangedash 30}
       \range{pages}{29}
+    \endentry
+    \entry{cite:models_for_gapped_boundaries_and_domain_walls}{article}{}
+      \name{author}{2}{}{%
+        {{hash=59949d44a3903dfabb88bff3220ff2e0}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=916d6611eda7e2b87e35d2fe9c88712a}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
+      \strng{fullhash}{c81e2ec2bfb64279a08a5b9084ed22ee}
+      \strng{bibnamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
+      \strng{authorbibnamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
+      \strng{authornamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
+      \strng{authorfullhash}{c81e2ec2bfb64279a08a5b9084ed22ee}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{number}{2}
+      \field{title}{Models for gapped boundaries and domain walls}
+      \field{volume}{313}
+      \field{year}{2012}
+      \field{pages}{351\bibrangedash 373}
+      \range{pages}{23}
     \endentry
   \enddatalist
 \endrefsection

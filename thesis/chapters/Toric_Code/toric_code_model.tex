@@ -13,7 +13,19 @@ where the sums are performed over the four spins connected in a star or plaquett
 	\label{eq:toric_code_hamiltonian}
 	H_\text{TC} \coloneqq -\sum_+A_+ - \sum_{\scalebox{0.6}{$\square$}}B_{\scalebox{0.6}{$\square$}},
 \end{equation}
-where the sums go over all possible stars and plaquettes respectively. Because an arbitrary star and plaquette operator share either two or zero spins, all terms of the Hamiltonian commute and it is thus possible to find the ground state of the model by diagonalizing all terms simultaneously. One can show that the ground state up to normalization is given by the equal weighted superposition of all states that can be obtained by applying an arbitrary combination of plaquette operators to the product state $\left|\uparrow\right\rangle \otimes \dots \otimes \left|\uparrow\right\rangle$:
+where the sums go over all possible stars and plaquettes respectively. Because an arbitrary star and plaquette operator share either two or zero spins, all terms of the Hamiltonian commute and it is thus possible to find the ground state of the model by diagonalizing all terms simultaneously. To diagonalize the star operators $A_+$ we choose a basis of $\hat{\sigma}_z$-eigenstates $\left|i\right\rangle \in \left\{\left|\uparrow\right\rangle, \left|\downarrow\right\rangle\right\}$ with eigenvalues $\left\langle\hat{\sigma}_z\right\rangle_i = s_i = \pm 1$ for each spin $i$. In this basis every star operator is diagonal with eigenvalues
+\begin{equation}
+	\label{eq:toric_code_star_operator_expectation value}
+	\left\langle A_+\right\rangle = \prod_{j\in+}s_j \in \left\{1, -1\right\}.
+\end{equation}
+To obtain the expectation value $\left\langle A_+\right\rangle = 1$, the number of spins in the down state $s_j = -1$ around the vertex $+$ must be even. Basis states $\left|s\right\rangle$ that give an expectation value of $1$ for every star operator simultaneously are thus the states with an even number of down-spins around every vertex,
+\begin{equation}
+	\label{eq:toric_code_A_operator_condition}
+	\left|s\right\rangle = \left|s_1\right\rangle \otimes \dots \otimes \left|s_N\right\rangle, \quad \prod_{j\in+}s_j = 1 \,\,\,\,\forall +.
+\end{equation}
+The plaquette operator $B_{\scalebox{0.6}{$\square$}}$ acts on a basis state by flipping all spins around the plaquette $\scalebox{0.6}{$\square$}$. Because a plaquette and a star share either zero or two spins, applying an plaquette operator to a state $\left|s\right\rangle$ satisfying condition \eqref{eq:toric_code_A_operator_condition} produces a state $\left|s^\prime\right\rangle$ that again satisfies \eqref{eq:toric_code_A_operator_condition}, and applying the plaquette operator a second time produces the initial state $\left|s\right\rangle$. If we now take the equal weighted superposition $\left|\Psi\right\rangle = \left(\left|s\right\rangle+\left| s^\prime\right\rangle\right)/\sqrt{2}$, the expectation value of $B_{\scalebox{0.6}{$\square$}}$ becomes $\left\langle B_{\scalebox{0.6}{$\square$}}\right\rangle = 1$.
+The ground state of the Hamiltonian \eqref{eq:toric_code_hamiltonian} is thus given by the equal weighted superposition of all basis states satisfying condition \eqref{eq:toric_code_A_operator_condition}. \par
+One can show that the ground state can be written as
 \begin{equation}
 	\left|\Psi_0\right\rangle \propto \prod_{\scalebox{0.6}{$\square$}}\left(\id + B_{\scalebox{0.6}{$\square$}}\right) \left|\uparrow\right\rangle \otimes \dots \otimes \left|\uparrow\right\rangle.
 \end{equation}

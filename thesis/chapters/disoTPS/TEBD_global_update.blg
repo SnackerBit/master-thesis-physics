@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'TEBD_global_update.blg'
+[32] biber:340> INFO - === Thu Jul 18, 2024, 10:59:08
+[94] Utils.pm:398> ERROR - Cannot find 'TEBD_global_update.bcf'!
+[94] Biber.pm:135> INFO - ERRORS: 1

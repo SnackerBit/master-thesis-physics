@@ -27,6 +27,14 @@
 \newsavebox{\largestimagea}
 \newsavebox{\largestimageb}
 
+\captionsetup[figure]{font=small}
+
+% axis style, ticks, etc
+\pgfplotsset{every axis/.append style={
+		label style={font=\small},
+		tick label style={font=\small}
+}}
+
 \begin{document}
 	\frontmatter
 	\maketitle
@@ -70,6 +78,7 @@
 	\input{chapters/TFI/TFI.tex}
 	
 	\appendix
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}% This turns off sections
 	
 	\chapter{Optimization Problems for isometric Tensor Networks}
 	\label{app:optimization_problems_for_isometric_tensor_networks}
@@ -81,7 +90,7 @@
 	
 	\chapter{Initialization of the Disentangling Unitary}
 	
-	\chapter{Gradient and Hessian Vector Product for the Renyi-entropy and the Truncation Error}
+	\chapter{Computing the Gradient and Hessian of the Disentangling Cost Functions}
 	\label{app:computation_of_gradient_and_hvp_for_riemannian_optimization}
 	\input{chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computation_of_gradient_and_hvp_for_riemannian_optimization.tex}
 	

@@ -56,6 +56,10 @@
 \RequirePackage{mathtools}						% Advanced functionality for amsmath.
 % Package for subfigures
 \RequirePackage{subcaption}
+\PassOptionsToPackage{
+	font=small,
+	labelfont=bf	
+}{subcaption}
 
 
 % Command for linking figures (different link color)
@@ -100,6 +104,7 @@
 \DeclareMathOperator{\argmax}{argmax}
 \DeclareMathOperator{\argmin}{argmin}
 \DeclareMathOperator{\qf}{qf}
+%\DeclareMathOperator{\mod}{mod}
 \newcommand{\id}{\mathbbb{1}}
 \newcommand{\iu}{\mathrm{i}}% imaginary unit number i
 \newcommand{\Stiefel}{\text{St}(n,p)}
@@ -203,6 +208,8 @@
 % A single subfigure
 \def\singleFigureWidth{8 cm}
 \def\singleFigureHeight{4.944 cm}
+\def\insetFigureWidth{4 cm}
+\def\insetFigureHeight{2.2 cm}
 % Two subfigures stacked ontop of each other
 \def\doubleVerticalFigureWidth{11 cm}
 \def\doubleVerticalFigureHeight{5 cm}
@@ -215,16 +222,32 @@
 \def\twoByTwoFigureWidth{6.75cm}
 \def\twoByTwoFigureHeight{4.1717cm}
 
-\def\legendscale{0.9}
+% 4 subfigures side by side on one page
+\def\gsEnergyVsDtauFigureWidth{3.2cm}
+\def\gsEnergyVsDtauFigureHeight{4cm}
+
+\def\legendscale{1.0}
 
 \def\doubleFigureWidth{6.125cm}
 \def\doubleFigureHeight{4.635cm}
 % PLOT Colors
+\definecolor{7blue1}{HTML}{eff3ff}
+\definecolor{7blue2}{HTML}{c6dbef}
+\definecolor{7blue3}{HTML}{9ecae1}
+\definecolor{7blue4}{HTML}{6baed6}
+\definecolor{7blue5}{HTML}{4292c6}
+\definecolor{7blue6}{HTML}{2171b5}
+\definecolor{7blue7}{HTML}{084594}
+
 \definecolor{5blue1}{HTML}{eff3ff}
 \definecolor{5blue2}{HTML}{bdd7e7}
 \definecolor{5blue3}{HTML}{6baed6}
 \definecolor{5blue4}{HTML}{3182bd}
 \definecolor{5blue5}{HTML}{08519c}
+
+\definecolor{3blue1}{HTML}{6baed6}
+\definecolor{3blue2}{HTML}{3182bd}
+\definecolor{3blue3}{HTML}{08519c}
 
 \definecolor{5orange1}{HTML}{feedde}
 \definecolor{5orang2}{HTML}{fdbe85}
@@ -237,6 +260,10 @@
 \definecolor{5red3}{HTML}{fb6a4a}
 \definecolor{5red4}{HTML}{de2d26}
 \definecolor{5red5}{HTML}{a50f15}
+
+\definecolor{3red1}{HTML}{fb6a4a}
+\definecolor{3red2}{HTML}{de2d26}
+\definecolor{3red3}{HTML}{a50f15}
 
 \definecolor{5green1}{HTML}{edf8e9}
 \definecolor{5green2}{HTML}{bae4b3}

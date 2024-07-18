@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  15 JUL 2024 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  18 JUL 2024 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1397,27 +1397,27 @@ ed.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-Package scrbase Info: activating british \contentsname on input line 30.
-Package scrbase Info: activating british \listfigurename on input line 30.
-Package scrbase Info: activating british \listtablename on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+Package scrbase Info: activating british \contentsname on input line 38.
+Package scrbase Info: activating british \listfigurename on input line 38.
+Package scrbase Info: activating british \listtablename on input line 38.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count484
@@ -1440,7 +1440,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package soulpos Info: Loading soulutf8 on input line 30.
+Package soulpos Info: Loading soulutf8 on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
@@ -1457,7 +1457,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen305
 \SOUL@ulht=\dimen306
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1467,9 +1467,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count490
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
@@ -1482,7 +1482,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 30.
+(scrbook)           before \begin{document} on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1511,26 +1511,26 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
+Package biblatex Info: Reference section=0 on input line 38.
+Package biblatex Info: Reference segment=0 on input line 38.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 30.
-Package microtype Info: Applying patch `item' on input line 30.
-Package microtype Info: Applying patch `toc' on input line 30.
+LaTeX Info: Redefining \microtypecontext on input line 38.
+Package microtype Info: Applying patch `item' on input line 38.
+Package microtype Info: Applying patch `toc' on input line 38.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 30.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 38.
 
-Package microtype Info: Applying patch `footnote' on input line 30.
+Package microtype Info: Applying patch `footnote' on input line 38.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 30.
+LaTeX Info: Redefining \showhyphens on input line 38.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1546,7 +1546,7 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 30.
+ on input line 38.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1555,14 +1555,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 <template/pictures/PH.pdf, id=7, 29.8716pt x 29.8716pt>
 File: template/pictures/PH.pdf Graphic file (type pdf)
 <use template/pictures/PH.pdf>
-Package pdftex.def Info: template/pictures/PH.pdf  used on input line 32.
+Package pdftex.def Info: template/pictures/PH.pdf  used on input line 40.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <template/pictures/TUM.pdf, id=8, 53.24893pt x 28.45631pt>
 File: template/pictures/TUM.pdf Graphic file (type pdf)
 <use template/pictures/TUM.pdf>
-Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 32.
+Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 40.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1570,7 +1570,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1592,9 +1592,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [3]
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 52.
+ line 60.
  [4]
-Package tocbasic Info: character protrusion at toc deactivated on input line 54
+Package tocbasic Info: character protrusion at toc deactivated on input line 62
 .
  (./thesis.toc)
 \tf@toc=\write7
@@ -1603,7 +1603,10 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 54
  [5
 
 
-] [6]
+] [6
+
+
+]
 chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
@@ -1623,8 +1626,6 @@ Class scrbook Warning: \float@addtolists detected!
 [1
 
 
-
-
 ] [2
 
 
@@ -1632,7 +1633,7 @@ Class scrbook Warning: \float@addtolists detected!
 chapter 2.
 (./chapters/Tensor_Networks/Tensor_Networks.tex
 (./chapters/Tensor_Networks/basics.tex
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=118, 78.0
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=108, 78.0
 0041pt x 53.38043pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf Graphic 
 file (type pdf)
@@ -1640,7 +1641,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_d.pdf  used on input line 13.
 (pdftex.def)             Requested size: 78.0002pt x 53.38028pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=119, 21.0
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=109, 21.0
 0046pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf Graphic 
 file (type pdf)
@@ -1648,7 +1649,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_a.pdf  used on input line 20.
 (pdftex.def)             Requested size: 21.00038pt x 21.00038pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=120, 51.5
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=110, 51.5
 556pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf Graphic 
 file (type pdf)
@@ -1656,7 +1657,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_b.pdf  used on input line 27.
 (pdftex.def)             Requested size: 51.55545pt x 21.00038pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=121, 82.7
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=111, 82.7
 341pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf Graphic 
 file (type pdf)
@@ -1668,7 +1669,7 @@ rams_c.pdf  used on input line 34.
 ures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf> <./figures/tikz/
 Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf> <./figures/tikz/Tensor_Net
 works/basic_diagrams/basic_diagrams_d.pdf>] [4]
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf, id=190, 94.5
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf, id=182, 94.5
 7433pt x 98.69774pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf Graphic 
 file (type pdf)
@@ -1676,7 +1677,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_c.pdf  used on input line 74.
 (pdftex.def)             Requested size: 94.57408pt x 98.6975pt.
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=191, 60.9
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=183, 60.9
 999pt x 21.98615pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf Graphic 
 file (type pdf)
@@ -1684,7 +1685,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_a.pdf  used on input line 81.
 (pdftex.def)             Requested size: 60.99974pt x 21.98608pt.
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf, id=192, 112.
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf, id=184, 112.
 73418pt x 21.98615pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf Graphic 
 file (type pdf)
@@ -1698,7 +1699,7 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
 ensor_Networks/basic_networks/basic_networks_a.pdf> <./figures/tikz/Tensor_Netw
 orks/basic_networks/basic_networks_b.pdf> <./figures/tikz/Tensor_Networks/basic
 _networks/basic_networks_c.pdf>]
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf, id=228, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf, id=220, 
 61.99963pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf Grap
 hic file (type pdf)
@@ -1706,7 +1707,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_a.pdf  used on input line 110.
 (pdftex.def)             Requested size: 61.99948pt x 21.00038pt.
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf, id=229, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf, id=221, 
 166.50005pt x 60.9999pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf Grap
 hic file (type pdf)
@@ -1714,7 +1715,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_b.pdf  used on input line 114.
 (pdftex.def)             Requested size: 166.49963pt x 60.99974pt.
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf, id=230, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf, id=222, 
 121.00005pt x 60.9999pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf Grap
 hic file (type pdf)
@@ -1727,7 +1728,7 @@ Overfull \hbox (10.8166pt too wide) in paragraph at lines 110--119
  [] 
  []
 
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf, id=231, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf, id=223, 
 60.19087pt x 40.45213pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf Grap
 hic file (type pdf)
@@ -1735,7 +1736,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_d.pdf  used on input line 126.
 (pdftex.def)             Requested size: 60.19072pt x 40.45203pt.
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf, id=232, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf, id=224, 
 137.63821pt x 95.11032pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf Grap
 hic file (type pdf)
@@ -1749,7 +1750,7 @@ works/basic_isometries/basic_isometries_b.pdf> <./figures/tikz/Tensor_Networks/
 basic_isometries/basic_isometries_c.pdf> <./figures/tikz/Tensor_Networks/basic_
 isometries/basic_isometries_d.pdf> <./figures/tikz/Tensor_Networks/basic_isomet
 ries/basic_isometries_e.pdf>]
-<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=314, 2130.96124
+<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=306, 2130.96124
 pt x 1003.75pt>
 File: figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg Graphic file (
 type jpg)
@@ -1765,7 +1766,7 @@ n input line 12.
 
 [8 <./figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg>]
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_a.pdf, id=343, 285.01381pt x 75.6135pt>
+tions_of_isometric_tensor_networks_a.pdf, id=335, 285.01381pt x 75.6135pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_a.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1775,7 +1776,7 @@ _tensor_networks/contractions_of_isometric_tensor_networks_a.pdf  used on input
  line 19.
 (pdftex.def)             Requested size: 285.0131pt x 75.6133pt.
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_b.pdf, id=344, 285.01381pt x 75.6135pt>
+tions_of_isometric_tensor_networks_b.pdf, id=336, 285.01381pt x 75.6135pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_b.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1785,7 +1786,7 @@ _tensor_networks/contractions_of_isometric_tensor_networks_b.pdf  used on input
  line 23.
 (pdftex.def)             Requested size: 285.0131pt x 75.6133pt.
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_c.pdf, id=345, 379.18164pt x 234.32744pt>
+tions_of_isometric_tensor_networks_c.pdf, id=337, 379.18164pt x 234.32744pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_c.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1801,7 +1802,7 @@ ric_tensor_networks_a.pdf> <./figures/tikz/Tensor_Networks/contractions_of_isom
 etric_tensor_networks/contractions_of_isometric_tensor_networks_b.pdf> <./figur
 es/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contractions_
 of_isometric_tensor_networks_c.pdf>]
-<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=403, 232.46147pt x 73
+<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=396, 232.46147pt x 73
 .06999pt>
 File: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf Graphic file (type p
 df)
@@ -1809,8 +1810,8 @@ df)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf  
 used on input line 18.
 (pdftex.def)             Requested size: 232.46089pt x 73.0698pt.
-<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=4
-06, 361.02278pt x 73.06999pt>
+<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=3
+99, 361.02278pt x 73.06999pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf>
@@ -1818,7 +1819,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_a.pdf  used on input line 27.
 (pdftex.def)             Requested size: 361.0219pt x 73.0698pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf, id=4
-07, 113.9999pt x 107.54478pt>
+00, 113.9999pt x 107.54478pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
@@ -1826,7 +1827,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_b.pdf  used on input line 31.
 (pdftex.def)             Requested size: 113.9996pt x 107.54451pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf, id=4
-08, 113.9999pt x 107.54478pt>
+01, 113.9999pt x 107.54478pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>
@@ -1838,7 +1839,7 @@ ensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf> <./figures/tikz/Ten
 sor_Networks/mps_canonical_form/mps_canonical_form_b.pdf> <./figures/tikz/Tenso
 r_Networks/mps_canonical_form/mps_canonical_form_c.pdf>]
 <figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation
-_value.pdf, id=498, 364.55898pt x 107.54478pt>
+_value.pdf, id=491, 364.55898pt x 107.54478pt>
 File: figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expect
 ation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expecta
@@ -1847,7 +1848,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_local_expectation_val
 ue/mps_local_expectation_value.pdf  used on input line 56.
 (pdftex.def)             Requested size: 364.55809pt x 107.54451pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mps_ca
-nonical_form_local_expectation_value.pdf, id=499, 365.1201pt x 362.48927pt>
+nonical_form_local_expectation_value.pdf, id=492, 365.1201pt x 362.48927pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/m
 ps_canonical_form_local_expectation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mp
@@ -1856,18 +1857,18 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form_local_
 expectation_value/mps_canonical_form_local_expectation_value.pdf  used on input
  line 62.
 (pdftex.def)             Requested size: 365.1192pt x 362.48839pt.
- [12]
 
-LaTeX Warning: Reference `fig' on page 13 undefined on input line 70.
 
-[13 <./figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expec
-tation_value.pdf>] [14 <./figures/tikz/Tensor_Networks/mps_canonical_form_local
-_expectation_value/mps_canonical_form_local_expectation_value.pdf>]
+LaTeX Warning: Reference `fig' on page 12 undefined on input line 70.
+
+[12] [13 <./figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_
+expectation_value.pdf> <./figures/tikz/Tensor_Networks/mps_canonical_form_local
+_expectation_value/mps_canonical_form_local_expectation_value.pdf>] [14]
 
 LaTeX Warning: Reference `' on page 15 undefined on input line 94.
 
-[15] [16]
-<figures/Tensor_Networks/mps_tebd_first_order.jpeg, id=588, 2422.04875pt x 1003
+[15]
+<figures/Tensor_Networks/mps_tebd_first_order.jpeg, id=575, 2422.04875pt x 1003
 .75pt>
 File: figures/Tensor_Networks/mps_tebd_first_order.jpeg Graphic file (type jpg)
 
@@ -1875,7 +1876,7 @@ File: figures/Tensor_Networks/mps_tebd_first_order.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/Tensor_Networks/mps_tebd_first_order.jpeg  use
 d on input line 140.
 (pdftex.def)             Requested size: 318.67212pt x 132.0543pt.
-<figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg, id=589, 3465.94875pt x
+<figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg, id=576, 3465.94875pt x
  1003.75pt>
 File: figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg Graphic file (type
  jpg)
@@ -1884,9 +1885,8 @@ Package pdftex.def Info: figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg
   used on input line 144.
 (pdftex.def)             Requested size: 318.67212pt x 92.27873pt.
 ) (./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex
-[17 <./figures/Tensor_Networks/mps_tebd_first_order.jpeg> <./figures/Tensor_Net
-works/mps_tebd_applying_bond_op.jpeg>]
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=598, 
+[16]
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=585, 
 135.00037pt x 140.49088pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf Grap
 hic file (type pdf)
@@ -1894,7 +1894,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_a.pdf  used on input line 12.
 (pdftex.def)             Requested size: 135.00002pt x 140.49051pt.
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=599, 
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=586, 
 143.473pt x 160.7355pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf Grap
 hic file (type pdf)
@@ -1902,30 +1902,30 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_b.pdf  used on input line 17.
 (pdftex.def)             Requested size: 143.47266pt x 160.73509pt.
- [18 <./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf> <
-./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>]
-<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=642, 2391.93625pt x 1003.
+ [17 <./figures/Tensor_Networks/mps_tebd_first_order.jpeg> <./figures/Tensor_Ne
+tworks/mps_tebd_applying_bond_op.jpeg>]
+<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=613, 2391.93625pt x 1003.
 75pt>
 File: figures/Tensor_Networks/Moving_ortho_center.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/Moving_ortho_center.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/Moving_ortho_center.jpeg  used
  on input line 30.
 (pdftex.def)             Requested size: 119.50279pt x 50.14449pt.
-<figures/Tensor_Networks/variational_MM.jpeg, id=643, 1933.2225pt x 1003.75pt>
+<figures/Tensor_Networks/variational_MM.jpeg, id=614, 1933.2225pt x 1003.75pt>
 File: figures/Tensor_Networks/variational_MM.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/variational_MM.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/variational_MM.jpeg  used on i
 nput line 34.
 (pdftex.def)             Requested size: 239.0056pt x 124.09pt.
- [19 <./figures/Tensor_Networks/Moving_ortho_center.jpeg> <./figures/Tensor_Net
-works/variational_MM.jpeg>]
-<figures/Tensor_Networks/MM.jpeg, id=661, 2498.33376pt x 1003.75pt>
+ [18 <./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf> <
+./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>]
+<figures/Tensor_Networks/MM.jpeg, id=646, 2498.33376pt x 1003.75pt>
 File: figures/Tensor_Networks/MM.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/MM.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/MM.jpeg  used on input line 54
 .
 (pdftex.def)             Requested size: 318.67212pt x 128.0262pt.
-<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=662, 4015.0pt x 917.
+<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=647, 4015.0pt x 917.
 4275pt>
 File: figures/Tensor_Networks/Tripartite_decomposition.jpeg Graphic file (type 
 jpg)
@@ -1935,22 +1935,23 @@ Package pdftex.def Info: figures/Tensor_Networks/Tripartite_decomposition.jpeg
 (pdftex.def)             Requested size: 318.67212pt x 72.80774pt.
 
 
-LaTeX Warning: Reference `sec:' on page 20 undefined on input line 62.
+LaTeX Warning: Reference `sec:' on page 19 undefined on input line 62.
 
-[20 <./figures/Tensor_Networks/MM.jpeg> <./figures/Tensor_Networks/Tripartite_d
-ecomposition.jpeg>])) [21] [22
+[19 <./figures/Tensor_Networks/Moving_ortho_center.jpeg> <./figures/Tensor_Netw
+orks/variational_MM.jpeg>] [20 <./figures/Tensor_Networks/MM.jpeg> <./figures/T
+ensor_Networks/Tripartite_decomposition.jpeg>])) [21] [22
 
 
 ]
 chapter 3.
 (./chapters/disoTPS/disoTPS.tex (./chapters/disoTPS/network_structure.tex
-<figures/Tensor_Networks/disoTPS.jpeg, id=706, 1003.75pt x 1003.75pt>
+<figures/Tensor_Networks/disoTPS.jpeg, id=701, 1003.75pt x 1003.75pt>
 File: figures/Tensor_Networks/disoTPS.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/disoTPS.jpeg>
 Package pdftex.def Info: figures/Tensor_Networks/disoTPS.jpeg  used on input li
 ne 3.
 (pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
-<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=710, 1995.4
+<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=705, 1995.4
 55pt x 1003.75pt>
 File: figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg Graphic fi
 le (type jpg)
@@ -1959,8 +1960,9 @@ Package pdftex.def Info: figures/Tensor_Networks/disoTPS_onesite_expectation_va
 lue.jpeg  used on input line 12.
 (pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
 
-[23]
-<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=717, 1995.4
+[23] [24 <./figures/Tensor_Networks/disoTPS.jpeg> <./figures/Tensor_Networks/di
+soTPS_onesite_expectation_value.jpeg>]
+<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=719, 1995.4
 55pt x 1003.75pt>
 File: figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg Graphic fi
 le (type jpg)
@@ -1968,10 +1970,8 @@ le (type jpg)
 Package pdftex.def Info: figures/Tensor_Networks/disoTPS_twosite_expectation_va
 lue.jpeg  used on input line 19.
 (pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
-) [24 <./figures/Tensor_Networks/disoTPS.jpeg>] [25 <./figures/Tensor_Networks/
-disoTPS_onesite_expectation_value.jpeg> <./figures/Tensor_Networks/disoTPS_twos
-ite_expectation_value.jpeg>] (./chapters/disoTPS/YB_move.tex
-<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=733, 1540.75626p
+) (./chapters/disoTPS/YB_move.tex
+<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=721, 1540.75626p
 t x 1002.74625pt>
 File: figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg Graphic file (t
 ype jpg)
@@ -1979,8 +1979,10 @@ ype jpg)
 Package pdftex.def Info: figures/Tensor_Networks/disoTPS_moving_ortho_surface.j
 peg  used on input line 3.
 (pdftex.def)             Requested size: 358.50233pt x 233.3044pt.
- [26 <./figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>]
-<figures/Tensor_Networks/YB_move_closeup.jpeg, id=745, 1787.67876pt x 1003.75pt
+
+[25 <./figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg>]
+[26 <./figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>]
+<figures/Tensor_Networks/YB_move_closeup.jpeg, id=741, 1787.67876pt x 1003.75pt
 >
 File: figures/Tensor_Networks/YB_move_closeup.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/YB_move_closeup.jpeg>
@@ -1988,41 +1990,41 @@ Package pdftex.def Info: figures/Tensor_Networks/YB_move_closeup.jpeg  used on
 input line 35.
 (pdftex.def)             Requested size: 358.50233pt x 201.2825pt.
 
-(./chapters/disoTPS/YB_move_iterative.tex [27]
-<figures/disoTPS/YB_move_iterate_polar_a.jpeg, id=770, 2590.67876pt x 1003.75pt
+(./chapters/disoTPS/YB_move_iterative.tex [27 <./figures/Tensor_Networks/YB_mov
+e_closeup.jpeg>]
+<figures/disoTPS/YB_move_iterate_polar_a.jpeg, id=765, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_a.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_a.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_a.jpeg  used on 
 input line 18.
 (pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-<figures/disoTPS/YB_move_iterate_polar_b.jpeg, id=771, 2590.67876pt x 1003.75pt
+<figures/disoTPS/YB_move_iterate_polar_b.jpeg, id=766, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_b.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_b.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_b.jpeg  used on 
 input line 22.
 (pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-<figures/disoTPS/YB_move_iterate_polar_c.jpeg, id=772, 2590.67876pt x 1003.75pt
+<figures/disoTPS/YB_move_iterate_polar_c.jpeg, id=767, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_c.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_c.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_c.jpeg  used on 
 input line 26.
 (pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-<figures/disoTPS/YB_move_iterate_polar_d.jpeg, id=773, 2590.67876pt x 1003.75pt
+<figures/disoTPS/YB_move_iterate_polar_d.jpeg, id=768, 2590.67876pt x 1003.75pt
 >
 File: figures/disoTPS/YB_move_iterate_polar_d.jpeg Graphic file (type jpg)
 <use figures/disoTPS/YB_move_iterate_polar_d.jpeg>
 Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_d.jpeg  used on 
 input line 30.
 (pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-)
-(./chapters/disoTPS/YB_move_svd_disentangle.tex [28 <./figures/Tensor_Networks/
-YB_move_closeup.jpeg>] [29 <./figures/disoTPS/YB_move_iterate_polar_a.jpeg> <./
-figures/disoTPS/YB_move_iterate_polar_b.jpeg> <./figures/disoTPS/YB_move_iterat
-e_polar_c.jpeg> <./figures/disoTPS/YB_move_iterate_polar_d.jpeg>]
-<figures/Tensor_Networks/yb_move_svd_disent.jpeg, id=800, 1154.3125pt x 1003.75
+) (./chapters/disoTPS/YB_move_svd_disentangle.tex [28] [29 <./figures/disoTPS/Y
+B_move_iterate_polar_a.jpeg> <./figures/disoTPS/YB_move_iterate_polar_b.jpeg> <
+./figures/disoTPS/YB_move_iterate_polar_c.jpeg> <./figures/disoTPS/YB_move_iter
+ate_polar_d.jpeg>]
+<figures/Tensor_Networks/yb_move_svd_disent.jpeg, id=798, 1154.3125pt x 1003.75
 pt>
 File: figures/Tensor_Networks/yb_move_svd_disent.jpeg Graphic file (type jpg)
 <use figures/Tensor_Networks/yb_move_svd_disent.jpeg>
@@ -2030,7 +2032,7 @@ Package pdftex.def Info: figures/Tensor_Networks/yb_move_svd_disent.jpeg  used
 on input line 18.
 (pdftex.def)             Requested size: 318.67212pt x 277.11188pt.
  [30] [31 <./figures/Tensor_Networks/YB_move_svd_disent.jpeg>]
-<figures/disoTPS/disentangling_theta_definition.jpeg, id=833, 1738.495pt x 1003
+<figures/disoTPS/disentangling_theta_definition.jpeg, id=831, 1738.495pt x 1003
 .75pt>
 File: figures/disoTPS/disentangling_theta_definition.jpeg Graphic file (type jp
 g)
@@ -2038,7 +2040,7 @@ g)
 Package pdftex.def Info: figures/disoTPS/disentangling_theta_definition.jpeg  u
 sed on input line 45.
 (pdftex.def)             Requested size: 318.67212pt x 183.99077pt.
-<figures/disoTPS/disentangling_rho_definition.jpeg, id=834, 1821.80624pt x 1002
+<figures/disoTPS/disentangling_rho_definition.jpeg, id=832, 1821.80624pt x 1002
 .74625pt>
 File: figures/disoTPS/disentangling_rho_definition.jpeg Graphic file (type jpg)
 
@@ -2046,7 +2048,7 @@ File: figures/disoTPS/disentangling_rho_definition.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/disoTPS/disentangling_rho_definition.jpeg  use
 d on input line 51.
 (pdftex.def)             Requested size: 318.67212pt x 175.39142pt.
-<figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg, id=835, 1827.82875
+<figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg, id=833, 1827.82875
 pt x 1003.75pt>
 File: figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg Graphic file (
 type jpg)
@@ -2061,18 +2063,19 @@ LaTeX Warning: Reference `' on page 32 undefined on input line 58.
 
 LaTeX Warning: Reference `' on page 32 undefined on input line 58.
 
-[32] [33 <./figures/disoTPS/disentangling_theta_definition.jpeg> <./figures/dis
-oTPS/disentangling_rho_definition.jpeg>]
+[32 <./figures/disoTPS/disentangling_theta_definition.jpeg>] [33 <./figures/dis
+oTPS/disentangling_rho_definition.jpeg> <./figures/disoTPS/disentangling_evenbl
+y_vidal_algorithm.jpeg>]
 
 LaTeX Warning: Reference `' on page 34 undefined on input line 72.
 
-[34 <./figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg>]
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 73.
+LaTeX Warning: Reference `' on page 34 undefined on input line 73.
 
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 73.
+LaTeX Warning: Reference `' on page 34 undefined on input line 73.
 
+[34]
 
 LaTeX Warning: Reference `eq:re_entropy' on page 35 undefined on input line 74.
 
@@ -2083,7 +2086,7 @@ LaTeX Warning: Reference `' on page 35 undefined on input line 74.
 
 LaTeX Warning: Reference `' on page 35 undefined on input line 74.
 
-<figures/disoTPS/approximate_qr_decomposition.jpeg, id=876, 1003.75pt x 1166.35
+<figures/disoTPS/approximate_qr_decomposition.jpeg, id=875, 1003.75pt x 1166.35
 75pt>
 File: figures/disoTPS/approximate_qr_decomposition.jpeg Graphic file (type jpg)
 
@@ -2094,7 +2097,7 @@ d on input line 78.
 
 LaTeX Warning: Reference `' on page 35 undefined on input line 82.
 
-<figures/disoTPS/disentangling_riemannian_optimization.jpeg, id=883, 2656.92625
+<figures/disoTPS/disentangling_riemannian_optimization.jpeg, id=882, 2656.92625
 pt x 1003.75pt>
 File: figures/disoTPS/disentangling_riemannian_optimization.jpeg Graphic file (
 type jpg)
@@ -2102,7 +2105,6 @@ type jpg)
 Package pdftex.def Info: figures/disoTPS/disentangling_riemannian_optimization.
 jpeg  used on input line 86.
 (pdftex.def)             Requested size: 318.67212pt x 120.38353pt.
-[35] [36 <./figures/disoTPS/approximate_qr_decomposition.jpeg>]
 (./figures/plots/disoTPS/yb_move_disentangling_renyi_2.tex
 PGFPlots: reading {figures/plots/disoTPS/data/evenbly_vidal_renyi_2_disentangli
 ng.txt}
@@ -2159,72 +2161,423 @@ NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
 bounded (in x). (see also unbounded coords=jump). 
 )
 
-LaTeX Warning: Reference `' on page 37 undefined on input line 93.
+LaTeX Warning: Reference `' on page 35 undefined on input line 93.
 
 
-LaTeX Warning: Reference `' on page 37 undefined on input line 94.
+LaTeX Warning: Reference `' on page 35 undefined on input line 94.
 
-) [37 <./figures/disoTPS/disentangling_riemannian_optimization.jpeg>])
-(./chapters/disoTPS/TEBD.tex)) [38] [39] [40
+[35] [36 <./figures/disoTPS/approximate_qr_decomposition.jpeg>] [37 <./figures/
+disoTPS/disentangling_riemannian_optimization.jpeg>] [38]))
+(./chapters/disoTPS/TEBD.tex
+
+LaTeX Warning: Reference `' on page 39 undefined on input line 1.
+
+
+LaTeX Warning: Reference `sec:local_TEBD_updates' on page 39 undefined on input
+ line 1.
+
+
+LaTeX Warning: Reference `sec:global_TEBD_updates' on page 39 undefined on inpu
+t line 1.
+
+(./chapters/disoTPS/TEBD_local_update.tex
+<figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg, id=928, 1003.75pt x 15
+80.90625pt>
+File: figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg Graphic file (type
+ jpg)
+<use figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg
+  used on input line 6.
+(pdftex.def)             Requested size: 119.50279pt x 188.20496pt.
+<figures/disoTPS/disoTPS_TEBD_contraction_definitions.jpeg, id=929, 1368.11125p
+t x 1003.75pt>
+File: figures/disoTPS/disoTPS_TEBD_contraction_definitions.jpeg Graphic file (t
+ype jpg)
+<use figures/disoTPS/disoTPS_TEBD_contraction_definitions.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_contraction_definitions.j
+peg  used on input line 10.
+(pdftex.def)             Requested size: 239.0056pt x 175.35255pt.
+<figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg, id=938, 2931.95375pt x 1003
+.75pt>
+File: figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg Graphic file (type jpg)
+
+<use figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg  use
+d on input line 25.
+(pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
+<figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg, id=939, 2931.95375pt x 1003
+.75pt>
+File: figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg Graphic file (type jpg)
+
+<use figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg  use
+d on input line 29.
+(pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
+<figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg, id=940, 2931.95375pt x 1003
+.75pt>
+File: figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg Graphic file (type jpg)
+
+<use figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg  use
+d on input line 33.
+(pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
+<figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg, id=941, 2931.95375pt x 1003
+.75pt>
+File: figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg Graphic file (type jpg)
+
+<use figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg  use
+d on input line 37.
+(pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
+<figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg, id=942, 2931.95375pt x 1003.
+75pt>
+File: figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg Graphic file (type jpg)
+<use figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg  used
+ on input line 41.
+(pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
+) [39]
+(./chapters/disoTPS/TEBD_global_update.tex
+<figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg, id=951, 1392.
+20125pt x 1003.75pt>
+File: figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg Graphic f
+ile (type jpg)
+<use figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_split
+ting.jpeg  used on input line 6.
+(pdftex.def)             Requested size: 239.0056pt x 172.30469pt.
+<figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg, id=952, 1037.8775
+pt x 1003.75pt>
+File: figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg Graphic file 
+(type jpg)
+<use figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain
+.jpeg  used on input line 10.
+(pdftex.def)             Requested size: 239.0056pt x 231.14865pt.
+
+
+LaTeX Warning: Reference `sec:' on page 40 undefined on input line 15.
+
+[40 <./figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg> <./figures/disoT
+PS/disoTPS_TEBD_contraction_definitions.jpeg>] [41 <./figures/disoTPS/disoTPS_T
+EBD_local_update_T1.jpeg> <./figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg>
+ <./figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg> <./figures/disoTPS/disoT
+PS_TEBD_local_update_Wp.jpeg> <./figures/disoTPS/disoTPS_TEBD_local_update_W.jp
+eg>] [42 <./figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg> <.
+/figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg>]
+
+LaTeX Warning: Reference `' on page 43 undefined on input line 24.
+
+<figures/disoTPS/disoTPS_TEBD1_global_update.jpeg, id=981, 2414.01875pt x 1003.
+75pt>
+File: figures/disoTPS/disoTPS_TEBD1_global_update.jpeg Graphic file (type jpg)
+<use figures/disoTPS/disoTPS_TEBD1_global_update.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD1_global_update.jpeg  used
+ on input line 40.
+(pdftex.def)             Requested size: 398.33864pt x 165.62692pt.
+File: figures/disoTPS/disoTPS_TEBD1_global_update.jpeg Graphic file (type jpg)
+<use figures/disoTPS/disoTPS_TEBD1_global_update.jpeg>
+Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD1_global_update.jpeg  used
+ on input line 44.
+(pdftex.def)             Requested size: 398.33864pt x 165.62692pt.
+
+Overfull \hbox (3.65pt too wide) in paragraph at lines 40--45
+ [][] 
+ []
+
+
+Overfull \hbox (3.65pt too wide) in paragraph at lines 40--45
+ [] 
+ []
+
+[43] [44 <./figures/disoTPS/disoTPS_TEBD1_global_update.jpeg>]))) [45] [46
 
 
 ]
 chapter 4.
 (./chapters/Toric_Code/Toric_Code.tex
-(./chapters/Toric_Code/toric_code_model.tex
-<figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg, id=940, 1003.7
-5pt x 1003.75pt>
+(./chapters/Toric_Code/toric_code_model.tex [47]
+<figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg, id=1024, 1003.
+75pt x 1003.75pt>
 File: figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg Graphic fi
 le (type jpg)
 <use figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg>
 Package pdftex.def Info: figures/Toric_Code/toric_code_star_and_plaquette_opera
-tor.jpeg  used on input line 24.
+tor.jpeg  used on input line 36.
 (pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
-) [41]
-(./chapters/Toric_Code/representing_toric_code_gs_with_disoTPS.tex)) [42 <./fig
-ures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg>] [43] [44
+)
+(./chapters/Toric_Code/representing_toric_code_gs_with_disoTPS.tex
+<figures/Toric_Code/toric_code_doubling_dof.jpeg, id=1029, 1002.74625pt x 1005.
+7575pt>
+File: figures/Toric_Code/toric_code_doubling_dof.jpeg Graphic file (type jpg)
+<use figures/Toric_Code/toric_code_doubling_dof.jpeg>
+Package pdftex.def Info: figures/Toric_Code/toric_code_doubling_dof.jpeg  used 
+on input line 6.
+(pdftex.def)             Requested size: 119.50279pt x 119.85696pt.
+<figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg, id=
+1030, 1003.75pt x 1299.85625pt>
+File: figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg
+ Graphic file (type jpg)
+<use figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg>
+
+Package pdftex.def Info: figures/Toric_Code/toric_code_PEPS_representation_tens
+or_definitions.jpeg  used on input line 10.
+(pdftex.def)             Requested size: 92.81358pt x 120.17531pt.
+<figures/Toric_Code/toric_code_PEPS_representation.jpeg, id=1031, 1003.75pt x 1
+005.7575pt>
+File: figures/Toric_Code/toric_code_PEPS_representation.jpeg Graphic file (type
+ jpg)
+<use figures/Toric_Code/toric_code_PEPS_representation.jpeg>
+Package pdftex.def Info: figures/Toric_Code/toric_code_PEPS_representation.jpeg
+  used on input line 14.
+(pdftex.def)             Requested size: 119.50279pt x 119.73419pt.
+<figures/Toric_Code/toric_code_disoTPS.jpeg, id=1032, 1003.75pt x 1549.79pt>
+File: figures/Toric_Code/toric_code_disoTPS.jpeg Graphic file (type jpg)
+<use figures/Toric_Code/toric_code_disoTPS.jpeg>
+Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS.jpeg  used on in
+put line 24.
+(pdftex.def)             Requested size: 99.58466pt x 153.75839pt.
+<figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg, id=1033, 1003.7
+5pt x 1003.75pt>
+File: figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg Graphic fil
+e (type jpg)
+<use figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg>
+Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS_tensor_definitio
+ns.jpeg  used on input line 28.
+(pdftex.def)             Requested size: 155.35182pt x 155.3499pt.
+<figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg, id=1034, 1003
+.75pt x 2393.94376pt>
+File: figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg Graphic f
+ile (type jpg)
+<use figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg>
+Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS_ortho_surface_te
+nsor.jpeg  used on input line 32.
+(pdftex.def)             Requested size: 67.71683pt x 161.4929pt.
+ [48]
+[49 <./figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg> <./figur
+es/Toric_Code/toric_code_doubling_dof.jpeg> <./figures/Toric_Code/toric_code_PE
+PS_representation_tensor_definitions.jpeg> <./figures/Toric_Code/toric_code_PEP
+S_representation.jpeg>] [50 <./figures/Toric_Code/toric_code_disoTPS.jpeg> <./f
+igures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg> <./figures/Toric_
+Code/toric_code_disoTPS_ortho_surface_tensor.jpeg>]
+
+LaTeX Warning: Reference `' on page 51 undefined on input line 66.
+
+)) [51] [52
 
 
 ]
 chapter 5.
-(./chapters/TFI/TFI.tex) [45] [46
+(./chapters/TFI/TFI.tex (./chapters/TFI/TFI_model.tex)
+(./chapters/TFI/ground_state_search.tex
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_methods.tex
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_init_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_init_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_init_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_iterate_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_iterate_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_iterate_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_2.0_power_iteration.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_2.0_power_iteration.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_2.0_power_iteration.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_cg.txt}
 
-
-]
+Missing character: There is no ] in font nullfont!
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_trm.txt}
+Missing character: There is no ] in font nullfont!
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm.txt}
+)
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.tex
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_100.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_100.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_100.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd2.txt}
+)
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+)
+(./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+))
+(./chapters/TFI/time_evolution.tex)) [53] [54] [55] [56]
 chapter A.
 
 (./chapters/optimization_problems_on_isometric_tensor_networks/optimization_pro
 blems_on_isometric_tensor_networks.tex
 (./chapters/optimization_problems_on_isometric_tensor_networks/orthogonal_procr
-ustes_problem.tex [47]
+ustes_problem.tex [57
+
+
+]
 
 LaTeX Warning: Command \i invalid in math mode on input line 5.
 
-[48])
+[58])
 (./chapters/optimization_problems_on_isometric_tensor_networks/evenbly_vidal_al
 gorithm.tex
 
-LaTeX Warning: Reference `app:' on page 49 undefined on input line 5.
+LaTeX Warning: Reference `app:' on page 59 undefined on input line 5.
 
 )
 (./chapters/optimization_problems_on_isometric_tensor_networks/cost_function_mu
-ltiple_tensors.tex [49]
+ltiple_tensors.tex [59]
 
-LaTeX Warning: Reference `' on page 50 undefined on input line 2.
+LaTeX Warning: Reference `' on page 60 undefined on input line 2.
 
-)) [50]
+)) [60]
 chapter B.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [51
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [61
 
 
 ])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [52] [53] [54
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [62] [63] [64
 
 
 ]
 chapter C.
-[55] [56
+[65] [66
 
 
 ]
@@ -2232,13 +2585,13 @@ chapter D.
 
 (./chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computa
 tion_of_gradient_and_hvp_for_riemannian_optimization.tex
-<figures/appendix_C/svd_derivative.jpeg, id=1058, 3639.5975pt x 1003.75pt>
+<figures/appendix_C/svd_derivative.jpeg, id=1208, 3639.5975pt x 1003.75pt>
 File: figures/appendix_C/svd_derivative.jpeg Graphic file (type jpg)
 <use figures/appendix_C/svd_derivative.jpeg>
 Package pdftex.def Info: figures/appendix_C/svd_derivative.jpeg  used on input 
 line 3.
 (pdftex.def)             Requested size: 318.67212pt x 87.88304pt.
-<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=1061, 2242.3775pt x 1
+<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=1211, 2242.3775pt x 1
 003.75pt>
 File: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg Graphic file (type j
 pg)
@@ -2246,7 +2599,7 @@ pg)
 Package pdftex.def Info: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg  
 used on input line 9.
 (pdftex.def)             Requested size: 318.67212pt x 142.63765pt.
-<figures/appendix_C/gradient_truncation_error.jpeg, id=1064, 2242.3775pt x 1002
+<figures/appendix_C/gradient_truncation_error.jpeg, id=1214, 2242.3775pt x 1002
 .74625pt>
 File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 
@@ -2254,21 +2607,21 @@ File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/appendix_C/gradient_truncation_error.jpeg  use
 d on input line 15.
 (pdftex.def)             Requested size: 318.67212pt x 142.49501pt.
-<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=1067, 1695.33376pt x 1003.
+<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=1217, 1695.33376pt x 1003.
 75pt>
 File: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_renyi_alpha_entropy.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg  used 
 on input line 21.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-<figures/appendix_C/hvp_truncation_error.jpeg, id=1070, 1695.33376pt x 1003.75p
+<figures/appendix_C/hvp_truncation_error.jpeg, id=1220, 1695.33376pt x 1003.75p
 t>
 File: figures/appendix_C/hvp_truncation_error.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_truncation_error.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_truncation_error.jpeg  used on 
 input line 27.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-) [57 <./figures/appendix_C/svd_derivative.jpeg>]
+) [67 <./figures/appendix_C/svd_derivative.jpeg>]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -2277,15 +2630,15 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 8
-9.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 9
+8.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [58 <./figures/appendix_C/gradient_renyi_alpha_entropy.jpeg> <./figures/append
-ix_C/gradient_truncation_error.jpeg>] [59 <./figures/appendix_C/hvp_renyi_alpha
-_entropy.jpeg> <./figures/appendix_C/hvp_truncation_error.jpeg>] [60
+ [68 <./figures/appendix_C/gradient_renyi_alpha_entropy.jpeg> <./figures/append
+ix_C/gradient_truncation_error.jpeg>] [69 <./figures/appendix_C/hvp_renyi_alpha
+_entropy.jpeg> <./figures/appendix_C/hvp_truncation_error.jpeg>] [70
 
 
 ]
@@ -2294,10 +2647,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[61
+[71
 
 
-] [62] [63] [64] (./thesis.aux
+] [72] [73] [74] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -2315,13 +2668,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51328 strings out of 478287
- 1150476 string characters out of 5849289
- 2183454 words of memory out of 5000000
- 68208 multiletter control sequences out of 15000+600000
- 488335 words of font info for 157 fonts, out of 8000000 for 9000
+ 52061 strings out of 478287
+ 1175932 string characters out of 5849289
+ 2623075 words of memory out of 5000000
+ 68740 multiletter control sequences out of 15000+600000
+ 495300 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 140i,22n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 140i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/tex
@@ -2330,28 +2683,30 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb>
-Output written on thesis.pdf (70 pages, 4630628 bytes).
+e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (80 pages, 6828465 bytes).
 PDF statistics:
- 1403 PDF objects out of 1440 (max. 8388607)
- 1103 compressed objects within 12 object streams
- 234 named destinations out of 1000 (max. 500000)
- 39918 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1529 PDF objects out of 1728 (max. 8388607)
+ 1170 compressed objects within 12 object streams
+ 274 named destinations out of 1000 (max. 500000)
+ 52150 words of extra memory for PDF output out of 61914 (max. 10000000)
 

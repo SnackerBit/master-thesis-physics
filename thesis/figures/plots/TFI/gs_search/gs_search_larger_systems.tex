@@ -1,0 +1,111 @@
+\begin{figure}
+	\centering
+	\subcaptionbox{\label{fig:disoTPS_gs_search_larger_systems_standard}}{%
+		\raisebox{1.83pt}{\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+				\begin{axis}[xlabel=$L$, ylabel={$E/N$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, ymin=-3.655, ymax=-3.565, legend style={at={(0.744-0.015+0.8,0.9)}, anchor=north east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=2, xmin=1, xmax=21, legend cell align={left}]
+					%	
+					\addplot[color = 7blue1]
+					table[x=L, y=energy_density_tenpy_chi_16, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 16$}
+					%
+					\addplot[color = 7blue2]
+					table[x=L, y=energy_density_tenpy_chi_32, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 32$}
+					%
+					\addplot[color = 7blue3]
+					table[x=L, y=energy_density_tenpy_chi_64, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 64$}
+					%
+					\addplot[color = 7blue4]
+					table[x=L, y=energy_density_tenpy_chi_128, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 128$}
+					%
+					\addplot[color = 7blue5]
+					table[x=L, y=energy_density_tenpy_chi_256, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 256$}
+					%
+					\addplot[color = 7blue6]
+					table[x=L, y=energy_density_tenpy_chi_512, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 512$}
+					%
+					\addplot[color = 7blue7]
+					table[x=L, y=energy_density_tenpy_chi_1024, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi = 1024$}
+					%
+					\addplot[color = black]
+					table[x=L, y=energy_density_tenpy_extrapolated, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$\chi \rightarrow \infty$}
+					%
+				\end{axis}
+				\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, ymin=-3.655, ymax=-3.565, legend style={at={(0.985+0.3,0.5)}, anchor=north east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}]
+					%
+					\addplot[color = 3red1, mark=*]
+					table[x=L, y=energy_density_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$D = 2$}
+					%
+					\addplot[color = 3red2, mark=*]
+					table[x=L, y=energy_density_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$D = 3$}
+					%
+					\addplot[color = 3red3, mark=*]
+					table[x=L, y=energy_density_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					\addlegendentry{$D = 4$}
+					%
+					\draw[fill=white] (109pt, 73pt) -- ++(\insetFigureWidth, 0) -- ++(0, \insetFigureHeight) -- ++(-\insetFigureWidth, 0) -- cycle;
+					\draw[thick, black] (axis cs:16,-3.65) -- (axis cs:20,-3.65) -- (axis cs:20,-3.64) -- (axis cs:16,-3.64) -- (axis cs:16,-3.65);
+					\draw[thick, black, dashed] (axis cs:16,-3.64) -- (109pt, 73pt);
+					\draw[thick, black, dashed] (axis cs:20,-3.64) -- (109pt+\insetFigureWidth, 73pt);
+				\end{axis}%
+				\begin{axis}[xshift=109pt,yshift=73pt, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\insetFigureHeight, width=\insetFigureWidth, ymin=-3.65, ymax=-3.64, xmin=16, xmax=20, clip marker paths=true, xtick={17,18,19}, ytick=\empty]
+					%	
+					\addplot[color = 7blue1]
+					table[x=L, y=energy_density_tenpy_chi_16, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 16$}
+					%
+					\addplot[color = 7blue2]
+					table[x=L, y=energy_density_tenpy_chi_32, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 32$}
+					%
+					\addplot[color = 7blue3]
+					table[x=L, y=energy_density_tenpy_chi_64, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 64$}
+					%
+					\addplot[color = 7blue4]
+					table[x=L, y=energy_density_tenpy_chi_128, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 128$}
+					%
+					\addplot[color = 7blue5]
+					table[x=L, y=energy_density_tenpy_chi_256, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 256$}
+					%
+					\addplot[color = 7blue6]
+					table[x=L, y=energy_density_tenpy_chi_512, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 512$}
+					%
+					\addplot[color = 7blue7]
+					table[x=L, y=energy_density_tenpy_chi_1024, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi = 1024$}
+					%
+					\addplot[color = black]
+					table[x=L, y=energy_density_tenpy_extrapolated, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$\chi \rightarrow \infty$}
+					%
+					%
+					\addplot[color = 3red1, mark=*]
+					table[x=L, y=energy_density_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$D = 2$}
+					%
+					\addplot[color = 3red2, mark=*]
+					table[x=L, y=energy_density_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$D = 3$}
+					%
+					\addplot[color = 3red3, mark=*]
+					table[x=L, y=energy_density_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+					%\addlegendentry{$D = 4$}
+					%
+				\end{axis}
+		\end{tikzpicture}}%
+	}%
+	\caption{\todo{Caption}}
+	\label{fig:disoTPS_gs_search_larger_systems}
+\end{figure}
