@@ -23,16 +23,16 @@
 \contentsline {section}{\numberline {5.2}Ground State Search}{53}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{53}{section.5.3}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{57}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{58}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{59}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{59}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{61}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{61}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{62}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Conjugate Gradients}{63}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Trust Region Method}{63}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{65}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{67}{appendix.D}%
-\contentsline {chapter}{\nonumberline Bibliography}{71}{chapter*.106}%
+\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{59}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{60}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{61}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{61}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{63}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{63}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{64}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Conjugate Gradients}{65}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Trust Region Method}{65}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{67}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{69}{appendix.D}%
+\contentsline {chapter}{\nonumberline Bibliography}{73}{chapter*.109}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

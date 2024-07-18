@@ -1,0 +1,3143 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  18 JUL 2024 21:53
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**\def\tikzexternalrealjob{thesis}\input{thesis}
+(./thesis.tex (./template/thesis.cls
+Document Class: template/thesis 2024/04/18 thesis layout
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2021/11/13 v3.35 KOMA-Script document class (book)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
+))) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+)) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box50
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 137.
+Class scrbook Info: Switching compatibility level to `last'.
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
+ne 2490.
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (11pt
+)
+) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count185
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 555.00024pt
+(typearea)              \topmargin      = 12.2347pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1743.
+)
+\c@part=\count186
+\c@chapter=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\scr@dte@chapter@maxnumwidth=\skip53
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\chapter on input line 5715.
+\scr@dte@section@maxnumwidth=\skip54
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\section on input line 5726.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\section on input line 5726.
+\scr@dte@part@maxnumwidth=\skip55
+Class scrbook Info: using compatibility default `afterindent=true'
+(scrbook)           for `\part on input line 5735.
+\scr@dte@subsection@maxnumwidth=\skip56
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsection on input line 5745.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsection on input line 5745.
+\scr@dte@subsubsection@maxnumwidth=\skip57
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsubsection on input line 5755.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsubsection on input line 5755.
+\scr@dte@paragraph@maxnumwidth=\skip58
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\paragraph on input line 5766.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\paragraph on input line 5766.
+\scr@dte@subparagraph@maxnumwidth=\skip59
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subparagraph on input line 5776.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subparagraph on input line 5776.
+\abovecaptionskip=\skip60
+\belowcaptionskip=\skip61
+\c@pti@nb@sid@b@x=\box51
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6962.
+
+\scr@dte@figure@maxnumwidth=\skip62
+\c@figure=\count193
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6978.
+
+\scr@dte@table@maxnumwidth=\skip63
+\c@table=\count194
+Class scrbook Info: Redefining `\numberline' on input line 7146.
+\bibindent=\dimen138
+)
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 28.45274pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 398.33864pt
+(typearea)              DIV departure   = -1%
+(typearea)              \evensidemargin = 41.54103pt
+(typearea)              \oddsidemargin  = 41.54103pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 555.00024pt
+(typearea)              \topmargin      = 12.2347pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 24.
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 28.45274pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 398.33864pt
+(typearea)              DIV departure   = -1%
+(typearea)              \evensidemargin = 41.54103pt
+(typearea)              \oddsidemargin  = 41.54103pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 555.00024pt
+(typearea)              \topmargin      = 12.2347pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 24.
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
+ne 24.
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (11pt
+)
+)
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 28.45274pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 398.33864pt
+(typearea)              DIV departure   = -1%
+(typearea)              \evensidemargin = 41.54105pt
+(typearea)              \oddsidemargin  = 13.08827pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 555.00024pt
+(typearea)              \topmargin      = 12.2347pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 24.
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfcomment/pdfcomment.sty
+Package: pdfcomment 2018/11/01 pdfcomment.sty v2.4a - Josef Kleber (C) 2008-201
+2, 2015-2016, 2018
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
+ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count195
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@pc@count@i=\count196
+\c@pc@count@ii=\count197
+\c@pc@count@iii=\count198
+\c@pc@count@iv=\count199
+\pc@mathannot@box=\box52
+\pc@nullbox=\box53
+\pc@dima=\skip64
+\pc@dimb=\skip65
+\pc@Sposx=\skip66
+\pc@Sposy=\skip67
+\pc@Eposx=\skip68
+\pc@Eposy=\skip69
+\pc@column=\skip70
+\pc@box@width=\skip71
+\pc@box@height=\skip72
+\pc@box@depth=\skip73
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count266
+) (/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
+Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
+(/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2020/06/30 v1.5 (NLCT) Track Languages
+(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr/shar
+e/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-en-GB.ldf
+File: datetime2-en-GB.ldf 2019/10/21 v1.05 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-english-ba
+se.ldf
+File: datetime2-english-base.ldf 2019/10/21 v1.05 (NLCT)
+))) (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-savepos.sty
+Package: zref-savepos 2020-07-03 v2.32 Module savepos for zref (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+Package zref Info: New property list: savepos on input line 80.
+Package zref Info: New property: posx on input line 82.
+Package zref Info: New property: posy on input line 83.
+)
+\c@zref@unique=\count267
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count268
+\calc@Bcount=\count269
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count270
+\calc@Cskip=\skip76
+) (/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count271
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/latex/soulpos/soulpos.sty
+Package: soulpos 2021/10/15 v1.2 Fancy underlining
+\ulp@subcnt=\count272
+\ulp@cnt=\count273
+\ulp@out=\write3
+\ulp@in=\read2
+\ulwidth=\dimen141
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen142
+\Hy@linkcounter=\count274
+\Hy@pagecounter=\count275
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count276
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count277
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen143
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count278
+\Field@Width=\dimen144
+\Fld@charsize=\dimen145
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count279
+\c@Item=\count280
+\c@Hfootnote=\count281
+)
+Package hyperref Info: Driver: hpdftex.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count282
+\c@bookmark@seq@number=\count283
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip77
+)
+Package zref Info: New property list: pdfcomment on input line 2735.
+Package zref Info: New property: PCPDFOBJID on input line 2736.
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count284
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count285
+\c@listtotal=\count286
+\c@listcount=\count287
+\c@liststart=\count288
+\c@liststop=\count289
+\c@citecount=\count290
+\c@citetotal=\count291
+\c@multicitecount=\count292
+\c@multicitetotal=\count293
+\c@instcount=\count294
+\c@maxnames=\count295
+\c@minnames=\count296
+\c@maxitems=\count297
+\c@minitems=\count298
+\c@citecounter=\count299
+\c@maxcitecounter=\count300
+\c@savedcitecounter=\count301
+\c@uniquelist=\count302
+\c@uniquename=\count303
+\c@refsection=\count304
+\c@refsegment=\count305
+\c@maxextratitle=\count306
+\c@maxextratitleyear=\count307
+\c@maxextraname=\count308
+\c@maxextradate=\count309
+\c@maxextraalpha=\count310
+\c@abbrvpenalty=\count311
+\c@highnamepenalty=\count312
+\c@lownamepenalty=\count313
+\c@maxparens=\count314
+\c@parenlevel=\count315
+\blx@tempcnta=\count316
+\blx@tempcntb=\count317
+\blx@tempcntc=\count318
+\c@blx@maxsection=\count319
+\c@blx@maxsegment@0=\count320
+\blx@notetype=\count321
+\blx@parenlevel@text=\count322
+\blx@parenlevel@foot=\count323
+\c@blx@sectionciteorder@0=\count324
+\blx@entrysetcounter=\count325
+\blx@biblioinstance=\count326
+\labelnumberwidth=\skip78
+\labelalphawidth=\skip79
+\biblabelsep=\skip80
+\bibitemsep=\skip81
+\bibnamesep=\skip82
+\bibinitsep=\skip83
+\bibparsep=\skip84
+\bibhang=\skip85
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language87
+\c@mincomprange=\count327
+\c@maxcomprange=\count328
+\c@mincompwidth=\count329
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex citestyle data model...
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count330
+\c@savedafterword=\count331
+\c@annotator=\count332
+\c@savedannotator=\count333
+\c@author=\count334
+\c@savedauthor=\count335
+\c@bookauthor=\count336
+\c@savedbookauthor=\count337
+\c@commentator=\count338
+\c@savedcommentator=\count339
+\c@editor=\count340
+\c@savededitor=\count341
+\c@editora=\count342
+\c@savededitora=\count343
+\c@editorb=\count344
+\c@savededitorb=\count345
+\c@editorc=\count346
+\c@savededitorc=\count347
+\c@foreword=\count348
+\c@savedforeword=\count349
+\c@holder=\count350
+\c@savedholder=\count351
+\c@introduction=\count352
+\c@savedintroduction=\count353
+\c@namea=\count354
+\c@savednamea=\count355
+\c@nameb=\count356
+\c@savednameb=\count357
+\c@namec=\count358
+\c@savednamec=\count359
+\c@translator=\count360
+\c@savedtranslator=\count361
+\c@shortauthor=\count362
+\c@savedshortauthor=\count363
+\c@shorteditor=\count364
+\c@savedshorteditor=\count365
+\c@labelname=\count366
+\c@savedlabelname=\count367
+\c@institution=\count368
+\c@savedinstitution=\count369
+\c@lista=\count370
+\c@savedlista=\count371
+\c@listb=\count372
+\c@savedlistb=\count373
+\c@listc=\count374
+\c@savedlistc=\count375
+\c@listd=\count376
+\c@savedlistd=\count377
+\c@liste=\count378
+\c@savedliste=\count379
+\c@listf=\count380
+\c@savedlistf=\count381
+\c@location=\count382
+\c@savedlocation=\count383
+\c@organization=\count384
+\c@savedorganization=\count385
+\c@origlocation=\count386
+\c@savedoriglocation=\count387
+\c@origpublisher=\count388
+\c@savedorigpublisher=\count389
+\c@publisher=\count390
+\c@savedpublisher=\count391
+\c@language=\count392
+\c@savedlanguage=\count393
+\c@origlanguage=\count394
+\c@savedoriglanguage=\count395
+\c@pageref=\count396
+\c@savedpageref=\count397
+\shorthandwidth=\skip86
+\shortjournalwidth=\skip87
+\shortserieswidth=\skip88
+\shorttitlewidth=\skip89
+\shortauthorwidth=\skip90
+\shorteditorwidth=\skip91
+\locallabelnumberwidth=\skip92
+\locallabelalphawidth=\skip93
+\localshorthandwidth=\skip94
+\localshortjournalwidth=\skip95
+\localshortserieswidth=\skip96
+\localshorttitlewidth=\skip97
+\localshortauthorwidth=\skip98
+\localshorteditorwidth=\skip99
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count398
+\c@textcitetotal=\count399
+\c@textcitemaxnames=\count400
+\c@biburlbigbreakpenalty=\count401
+\c@biburlbreakpenalty=\count402
+\c@biburlnumpenalty=\count403
+\c@biburlucpenalty=\count404
+\c@biburllcpenalty=\count405
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count406
+)
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count407
+\c@bbx:relatedtotal=\count408
+)))
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count409
+\c@cbx@tempcntb=\count410
+\c@cbx@tempcntc=\count411
+\c@cbx@tempcntd=\count412
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count413
+\l__pdf_internal_box=\box54
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-01-21 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/shar
+e/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip100
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen146
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen147
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count414
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count415
+\leftroot@=\count416
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count417
+\DOTSCASE@=\count418
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count419
+\c@MaxMatrixCols=\count420
+\dotsspace@=\muskip21
+\c@parentequation=\count421
+\dspbrk@lvl=\count422
+\tag@help=\toks20
+\row@=\count423
+\column@=\count424
+\maxfields@=\count425
+\andhelp@=\toks21
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks22
+\multlinegap=\skip101
+\multlinetaggap=\skip102
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip103
+\L@UnitsRaiseTextstyle=\skip104
+\L@UnitsRaiseScriptstyle=\skip105
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count426
+\l_MT_multwidth_dim=\dimen155
+\origjot=\skip106
+\l_MT_shortvdotswithinadjustabove_dim=\dimen156
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen157
+\l_MT_above_intertext_sep=\dimen158
+\l_MT_below_intertext_sep=\dimen159
+\l_MT_above_shortintertext_sep=\dimen160
+\l_MT_below_shortintertext_sep=\dimen161
+\xmathstrut@box=\box57
+\xmathstrut@dim=\dimen162
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen163
+\captionmargin@=\dimen164
+\captionwidth=\dimen165
+\caption@tempdima=\dimen166
+\caption@indent=\dimen167
+\caption@parindent=\dimen168
+\caption@hangindent=\dimen169
+Package caption Info: KOMA-Script document class detected.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-koma.sto
+File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the 
+KOMA-Script document classes (AR)
+))
+\c@caption@flags=\count427
+\c@continuedfloat=\count428
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count429
+\c@subtable=\count430
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen170
+\lightrulewidth=\dimen171
+\cmidrulewidth=\dimen172
+\belowrulesep=\dimen173
+\belowbottomsep=\dimen174
+\aboverulesep=\dimen175
+\abovetopsep=\dimen176
+\cmidrulesep=\dimen177
+\cmidrulekern=\dimen178
+\defaultaddspace=\dimen179
+\@cmidla=\count431
+\@cmidlb=\count432
+\@aboverulesep=\dimen180
+\@belowrulesep=\dimen181
+\@thisruleclass=\count433
+\@lastruleclass=\count434
+\@thisrulewidth=\dimen182
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip107
+\multirow@cntb=\count435
+\multirow@dima=\skip108
+\bigstrutjot=\dimen183
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count436
+\U@D=\dimen184
+\l@unhyphenated=\language88
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count437
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/british.ldf
+Language: british 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language34). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language34). Reported on input line 108.
+))) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+\csq@reset=\count438
+\csq@gtype=\count439
+\csq@glevel=\count440
+\csq@qlevel=\count441
+\csq@maxlvl=\count442
+\csq@tshold=\count443
+\csq@ltx@everypar=\toks24
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
+\MT@toks=\toks25
+\MT@count=\count444
+\MT@tempbox=\box58
+LaTeX Info: Redefining \leftprotrusion on input line 1010.
+LaTeX Info: Redefining \rightprotrusion on input line 1018.
+LaTeX Info: Redefining \textls on input line 1173.
+\MT@outer@kern=\dimen185
+LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+\MT@listname@count=\count445
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 897.
+LaTeX Info: Redefining \lslig on input line 897.
+\MT@outer@space=\skip109
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2021/11/13 v3.35 KOMA-Script package (end user interf
+ace for scrlayer)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2021/11/13 v3.35 KOMA-Script package (defining layers and pag
+e styles)
+Package scrlayer Info: Using already defined \footheight
+(scrlayer)             hoping, that this is a length and
+(scrlayer)             not only a macro on input line 136.
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 216
+2.
+)
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1085.
+Package scrlayer-scrpage Info: deactivating warning for font element
+(scrlayer-scrpage)             `pagefoot' on input line 1109.
+)
+Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texl
+ive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen186
+\Gin@req@width=\dimen187
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/sha
+re/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texm
+f-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/ge
+neric/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen188
+\pgfutil@tempdimb=\dimen189
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/us
+r/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share
+/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/te
+xmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen190
+\pgf@y=\dimen191
+\pgf@xa=\dimen192
+\pgf@ya=\dimen193
+\pgf@xb=\dimen194
+\pgf@yb=\dimen195
+\pgf@xc=\dimen196
+\pgf@yc=\dimen197
+\pgf@xd=\dimen198
+\pgf@yd=\dimen199
+\w@pgf@writea=\write5
+\r@pgf@reada=\read5
+\c@pgf@counta=\count446
+\c@pgf@countb=\count447
+\c@pgf@countc=\count448
+\c@pgf@countd=\count449
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count450
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count451
+\pgfsyssoftpath@bigbuffer@items=\count452
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/shar
+e/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texl
+ive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/t
+exmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count453
+\pgfmath@box=\box60
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmat
+hfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count454
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count455
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen275
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen279
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count456
+\pgf@shadingcount=\count457
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box64
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box65
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/shar
+e/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/te
+xmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf
+-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic
+/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/uti
+lities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen283
+\pgffor@skip=\dimen284
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count458
+\pgfplotmarksize=\dimen285
+)
+\tikz@lastx=\dimen286
+\tikz@lasty=\dimen287
+\tikz@lastxsaved=\dimen288
+\tikz@lastysaved=\dimen289
+\tikz@lastmovetox=\dimen290
+\tikz@lastmovetoy=\dimen291
+\tikzleveldistance=\dimen292
+\tikzsiblingdistance=\dimen293
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count459
+\tikznumberofchildren=\count460
+\tikznumberofcurrentchild=\count461
+\tikz@fig@count=\count462
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count463
+\pgfmatrixcurrentcolumn=\count464
+\pgf@matrix@numberofcolumns=\count465
+)
+\tikz@expandcount=\count466
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr
+/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen294
+\c@pgfplots@coordindex=\count467
+\c@pgfplots@scanlineindex=\count468
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count469
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count470
+\t@pgfplotstable@a=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count471
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (
+/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen295
+\pgfdecoratedremainingdistance=\dimen296
+\pgfdecoratedinputsegmentcompleteddistance=\dimen297
+\pgfdecoratedinputsegmentremainingdistance=\dimen298
+\pgf@decorate@distancetomove=\dimen299
+\pgf@decorate@repeatstate=\count472
+\pgfdecorationsegmentamplitude=\dimen300
+\pgfdecorationsegmentlength=\dimen301
+)
+\tikz@lib@dec@box=\box70
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex)
+\pgfplots@numplots=\count473
+\pgfplots@xmin@reg=\dimen302
+\pgfplots@xmax@reg=\dimen303
+\pgfplots@ymin@reg=\dimen304
+\pgfplots@ymax@reg=\dimen305
+\pgfplots@zmin@reg=\dimen306
+\pgfplots@zmax@reg=\dimen307
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.col
+orbrewer.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer
+.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count474
+\float@exts=\toks42
+\float@box=\box71
+\@float@everytoks=\toks43
+\@floatcapt=\box72
+)
+\@float@every@algorithm=\toks44
+\c@algorithm=\count475
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count476
+\c@ALG@rem=\count477
+\c@ALG@nested=\count478
+\ALG@tlm=\skip110
+\ALG@thistlm=\skip111
+\c@ALG@Lnr=\count479
+\c@ALG@blocknr=\count480
+\c@ALG@storecount=\count481
+\c@ALG@tmpcounter=\count482
+\ALG@tmplength=\skip112
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.ex
+ternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
+yexternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zexternalshared.code.tex)))
+No auxiliary output files.
+
+\w@pgfexternal@auxout=\write6
+\largestimage=\box73
+\largestimagea=\box74
+\largestimageb=\box75
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'british'.
+No file thesis-figure19.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+Package scrbase Info: activating british \contentsname on input line 41.
+Package scrbase Info: activating british \listfigurename on input line 41.
+Package scrbase Info: activating british \listtablename on input line 41.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count483
+\scratchdimen=\dimen308
+\scratchbox=\box76
+\nofMPsegments=\count484
+\nofMParguments=\count485
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count486
+\MPscratchDim=\dimen309
+\MPnumerator=\count487
+\makeMPintoPDFobject=\count488
+\everyMPtoPDFconversion=\toks46
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package soulpos Info: Loading soulutf8 on input line 41.
+(/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
+Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks47
+\SOUL@lasttoken=\toks48
+\SOUL@cmds=\toks49
+\SOUL@buffer=\toks50
+\SOUL@token=\toks51
+\SOUL@spaceskip=\skip113
+\SOUL@ttwidth=\dimen310
+\SOUL@uldp=\dimen311
+\SOUL@ulht=\dimen312
+))
+Package hyperref Info: Link coloring OFF on input line 41.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count489
+)
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
+Class scrbook Info: loading recommended package `bookmark'.
+(scrbook)           Using `bookmark' together with `hyperref' is recommended,
+(scrbook)           because of handling of possible bookmark level gaps.
+(scrbook)           You can avoid loading `bookmark' with KOMA-Script option
+(scrbook)           `bookmarkpackage=false' before \begin{document} and
+(scrbook)           you can avoid this message adding:
+(scrbook)             \usepackage{bookmark}
+(scrbook)           before \begin{document} on input line 41.
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\providecommand\BKM@entry[2]{}
+\BKM@id=\count490
+))
+Package biblatex Info: Trying to load language 'british'...
+Package biblatex Info: ... file 'british.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/british.lbx
+File: british.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'thesis-figure19.bbl' not found.
+No file thesis-figure19.bbl.
+Package biblatex Info: Reference section=0 on input line 41.
+Package biblatex Info: Reference segment=0 on input line 41.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 41.
+Package microtype Info: Applying patch `item' on input line 41.
+Package microtype Info: Applying patch `toc' on input line 41.
+
+Package microtype Warning: Unable to apply patch `eqnum' on input line 41.
+
+Package microtype Info: Applying patch `footnote' on input line 41.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 41.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Redefining babel's language switching commands.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 41.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+The command '\includegraphics [width=1cm]{template/pictures/PH}' has been optim
+ized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=1.87cm]{template/pictures/TUM}' has been o
+ptimized away. Use '/tikz/external/optimize=false' to disable this.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
+ line 63.
+Package tocbasic Info: character protrusion at toc deactivated on input line 65
+.
+chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
+chapter 2.
+(./chapters/Tensor_Networks/Tensor_Networks.tex
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_conventions_and_notat
+ion' on page 3 undefined on input line 1.
+
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_tensor_decompositions
+' on page 3 undefined on input line 1.
+
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_isometric_tensor_netw
+orks' on page 3 undefined on input line 1.
+
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_matrix_product_states
+' on page 3 undefined on input line 1.
+
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_isometric_tensor_prod
+uct_states_in_2D' on page 3 undefined on input line 1.
+
+(./chapters/Tensor_Networks/basics.tex
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_diag
+rams/basic_diagrams_d.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_diag
+rams/basic_diagrams_a.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_diag
+rams/basic_diagrams_b.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_diag
+rams/basic_diagrams_c.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+
+Overfull \hbox (85.1071pt too wide) in paragraph at lines 20--39
+ [][] 
+ []
+
+
+Overfull \hbox (85.1071pt too wide) in paragraph at lines 20--39
+ [] 
+ []
+
+
+Overfull \hbox (85.1071pt too wide) in paragraph at lines 20--39
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 20--39
+ [] 
+ []
+
+
+LaTeX Warning: Reference `eq:general_tensor_contraction' on page 4 undefined on
+ input line 59.
+
+
+LaTeX Warning: Reference `fig:basic_tensor_diagrams' on page 4 undefined on inp
+ut line 65.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_matrix_product' on page 5 u
+ndefined on input line 70.
+
+
+LaTeX Warning: Reference `fig:basic_tensor_network_diagrams' on page 5 undefine
+d on input line 70.
+
+
+LaTeX Warning: Reference `fig:basic_tensor_network_diagrams' on page 5 undefine
+d on input line 70.
+
+
+LaTeX Warning: Reference `fig:basic_tensor_network_diagrams' on page 5 undefine
+d on input line 70.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_involved_network' on page 5
+ undefined on input line 70.
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_netw
+orks/basic_networks_c.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_netw
+orks/basic_networks_a.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_netw
+orks/basic_networks_b.pdf}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+
+Overfull \hbox (85.1071pt too wide) in paragraph at lines 81--93
+ [][] 
+ []
+
+
+Overfull \hbox (85.1071pt too wide) in paragraph at lines 81--93
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 81--93
+ [] 
+ []
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_scalar_product' on page 5 u
+ndefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_matrix_product' on page 5 u
+ndefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_involved_network' on page 5
+ undefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_scalar_product' on page 5 u
+ndefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_matrix_product' on page 5 u
+ndefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:example_tensor_network_involved_network' on page 5
+ undefined on input line 93.
+
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
+00.
+(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 5 undefined on input line 102.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 5 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:isometries_and_unitaries_diagrams' on page 5 unde
+fined on input line 102.
+
+
+Overfull \hbox (31.0601pt too wide) in paragraph at lines 101--102
+[]\OT1/cmr/m/n/10.95 (-20) ], 
+ []
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_isom
+etries/basic_isometries_a.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_isom
+etries/basic_isometries_b.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_isom
+etries/basic_isometries_c.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+
+Overfull \hbox (320.46272pt too wide) in paragraph at lines 110--119
+ [][] 
+ []
+
+
+Overfull \hbox (320.46272pt too wide) in paragraph at lines 110--119
+ [] 
+ []
+
+
+Overfull \hbox (320.46272pt too wide) in paragraph at lines 110--119
+ [] 
+ []
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_isom
+etries/basic_isometries_d.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_isom
+etries/basic_isometries_e.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+
+Overfull \hbox (320.46272pt too wide) in paragraph at lines 126--131
+ [][] 
+ []
+
+
+Overfull \hbox (320.46272pt too wide) in paragraph at lines 126--131
+ [] 
+ []
+
+
+LaTeX Warning: Reference `eq:isometry_condition_general' on page 6 undefined on
+ input line 132.
+
+
+LaTeX Warning: Reference `eq:isometry_condition_general' on page 6 undefined on
+ input line 132.
+
+) (./chapters/Tensor_Networks/tensor_decompositions.tex
+
+LaTeX Warning: Reference `eq:QR_decomposition_general' on page 7 undefined on i
+nput line 12.
+
+
+LaTeX Warning: Reference `fig:tensor_decomposition_diagrams' on page 7 undefine
+d on input line 12.
+
+
+LaTeX Warning: Reference `eq:QR_decomposition_complexity' on page 7 undefined o
+n input line 18.
+
+
+LaTeX Warning: Reference `fig:tensor_decomposition_diagrams' on page 7 undefine
+d on input line 18.
+
+
+LaTeX Warning: Reference `eq:SVD_general' on page 7 undefined on input line 18.
+
+
+
+LaTeX Warning: Citation 'cite:eckart_young_theorem' on page 7 undefined on inpu
+t line 24.
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/te
+nsor_decomposition_diagrams.jpeg}' has been optimized away. Use '/tikz/external
+/optimize=false' to disable this.
+
+LaTeX Warning: Reference `eq:QR_decomposition_general' on page 7 undefined on i
+nput line 28.
+
+
+LaTeX Warning: Reference `eq:SVD_general' on page 7 undefined on input line 28.
+
+
+
+LaTeX Warning: Reference `eq:QR_decomposition_general' on page 7 undefined on i
+nput line 28.
+
+
+LaTeX Warning: Reference `eq:SVD_general' on page 7 undefined on input line 28.
+
+
+) (./chapters/Tensor_Networks/isometric_tensor_networks.tex
+
+LaTeX Warning: Reference `fig:isometric_tensor_network_local_approximation' on 
+page 7 undefined on input line 1.
+
+
+LaTeX Warning: Reference `fig:isometric_tensor_network_local_approximation' on 
+page 7 undefined on input line 1.
+
+
+LaTeX Warning: Reference `fig:isometric_tensor_network_local_approximation' on 
+page 8 undefined on input line 12.
+
+
+LaTeX Warning: Reference `eq:truncated_SVD_general' on page 8 undefined on inpu
+t line 12.
+
+
+LaTeX Warning: Reference `eq:polar_decomposition_general' on page 8 undefined o
+n input line 12.
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/contractio
+ns_of_isometric_tensor_networks/contractions_of_isometric_tensor_networks_a.pdf
+}' has been optimized away. Use '/tikz/external/optimize=false' to disable this
+.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/contractio
+ns_of_isometric_tensor_networks/contractions_of_isometric_tensor_networks_b.pdf
+}' has been optimized away. Use '/tikz/external/optimize=false' to disable this
+.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/contractio
+ns_of_isometric_tensor_networks/contractions_of_isometric_tensor_networks_c.pdf
+}' has been optimized away. Use '/tikz/external/optimize=false' to disable this
+.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 19--28
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 19--28
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 19--28
+ [] 
+ []
+
+) (./chapters/Tensor_Networks/matrix_product_states.tex
+
+LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 8 undefined on in
+put line 1.
+
+
+LaTeX Warning: Citation 'cite:practical_introduction_MPS_and_PEPS' on page 8 un
+defined on input line 1.
+
+
+LaTeX Warning: Citation 'cite:tenpy' on page 8 undefined on input line 1.
+
+
+LaTeX Warning: Reference `eq:MPS_open_boundary_conditions_general_definition' o
+n page 10 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:mps_general' on page 10 undefined on input line 1
+5.
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_basic/
+mps_basic.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to
+ disable this.
+
+LaTeX Warning: Reference `eq:MPS_open_boundary_conditions_general_definition' o
+n page 10 undefined on input line 19.
+
+
+LaTeX Warning: Reference `eq:MPS_open_boundary_conditions_general_definition' o
+n page 10 undefined on input line 19.
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_canoni
+cal_form/mps_canonical_form_a.pdf}' has been optimized away. Use '/tikz/externa
+l/optimize=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_canoni
+cal_form/mps_canonical_form_b.pdf}' has been optimized away. Use '/tikz/externa
+l/optimize=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_canoni
+cal_form/mps_canonical_form_c.pdf}' has been optimized away. Use '/tikz/externa
+l/optimize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 27--37
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 27--37
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 27--37
+ [] 
+ []
+
+
+LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 10 undefined on i
+nput line 40.
+
+
+LaTeX Warning: Reference `fig:mps_canonical_form_general_definition' on page 10
+ undefined on input line 40.
+
+
+LaTeX Warning: Reference `eq:isometry_condition_general' on page 10 undefined o
+n input line 40.
+
+
+LaTeX Warning: Reference `fig:mps_left_isometry_condition' on page 10 undefined
+ on input line 40.
+
+
+LaTeX Warning: Reference `fig:mps_right_isometry_condition' on page 10 undefine
+d on input line 40.
+
+
+LaTeX Warning: Reference `eq:computation_of_expectation_value_MPS' on page 11 u
+ndefined on input line 53.
+
+
+LaTeX Warning: Reference `fig:mps_local_expectation_value' on page 11 undefined
+ on input line 53.
+
+
+LaTeX Warning: Reference `fig:mps_local_expectation_value_canonical' on page 11
+ undefined on input line 53.
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_local_
+expectation_value/mps_local_expectation_value.pdf}' has been optimized away. Us
+e '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [scale=1.0]{figures/tikz/Tensor_Networks/mps_cano
+nical_form_local_expectation_value/mps_canonical_form_local_expectation_value.p
+df}' has been optimized away. Use '/tikz/external/optimize=false' to disable th
+is.
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_isometric_tensor_netw
+orks' on page 11 undefined on input line 66.
+
+
+LaTeX Warning: Reference `fig' on page 12 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'cite:area_law_1D_proof' on page 12 undefined on input 
+line 78.
+
+
+LaTeX Warning: Citation 'cite:area_laws_review' on page 12 undefined on input l
+ine 78.
+
+
+LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 13 undefined on i
+nput line 92.
+
+
+LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 13 undefined on i
+nput line 94.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_1D_quantum_many_body_syst
+ems' on page 13 undefined on input line 94.
+
+
+LaTeX Warning: Citation 'cite:matrix_product_density_operators_simulation_of_fi
+nite_temperature_and_dissipative_systems' on page 13 undefined on input line 94
+.
+
+
+LaTeX Warning: Citation 'cite:time_dependent_variational_principle_for_quantum_
+lattices' on page 13 undefined on input line 94.
+
+
+LaTeX Warning: Citation 'cite:unifying_time_evolution_and_optimization_with_MPS
+' on page 13 undefined on input line 94.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 94.
+
+
+Overfull \hbox (118.5026pt too wide) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/10.95 (-20) ] 
+ []
+
+
+LaTeX Warning: Reference `fig:mps_tebd_first_order_overview' on page 14 undefin
+ed on input line 126.
+
+
+LaTeX Warning: Reference `fig:mps_tebd_first_order_applying_bond_op' on page 14
+ undefined on input line 127.
+
+
+LaTeX Warning: Citation 'cite:finding_exponential_product_formulas_of_higher_or
+ders' on page 14 undefined on input line 134.
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/mp
+s_tebd_first_order.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/mp
+s_tebd_applying_bond_op.jpeg}' has been optimized away. Use '/tikz/external/opt
+imize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 140--145
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 140--145
+ [] 
+ []
+
+) (./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex
+
+LaTeX Warning: Reference `fig:square_PEPS' on page 15 undefined on input line 6
+.
+
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/isoTPS_str
+ucture/isoTPS_structure_a.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/isoTPS_str
+ucture/isoTPS_structure_b.pdf}' has been optimized away. Use '/tikz/external/op
+timize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 12--18
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 12--18
+ [] 
+ []
+
+
+LaTeX Warning: Citation 'cite:practical_introduction_MPS_and_PEPS' on page 15 u
+ndefined on input line 21.
+
+
+LaTeX Warning: Citation 'cite:criticality_the_area_law_and_the_computational_po
+wer_of_PEPS' on page 15 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'cite:practical_introduction_MPS_and_PEPS' on page 15 u
+ndefined on input line 22.
+
+
+LaTeX Warning: Citation 'cite:CTMRG' on page 15 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'cite:unifying_PEPS_contractions' on page 15 undefined 
+on input line 22.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 16 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'cite:conversion_of_PEPS_into_a_canonical_form' on page
+ 16 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'cite:DMRG_approach_to_optimizing_2D_tensor_networks' o
+n page 16 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 16 undefined on input line 24.
+
+
+LaTeX Warning: Reference `fig:square_isoTPS' on page 16 undefined on input line
+ 24.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 16 undefined on input line 24.
+
+
+LaTeX Warning: Reference `fig:mps_local_expectation_value_canonical' on page 16
+ undefined on input line 24.
+
+
+LaTeX Warning: Reference `fig:isoTPS_moving_ortho_center' on page 16 undefined 
+on input line 24.
+
+
+Overfull \hbox (33.43869pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 (-20) [[]]. 
+ []
+
+The command '\includegraphics [width=0.3\textwidth ]{figures/Tensor_Networks/Mo
+ving_ortho_center.jpeg}' has been optimized away. Use '/tikz/external/optimize=
+false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/Tensor_Networks/va
+riational_MM.jpeg}' has been optimized away. Use '/tikz/external/optimize=false
+' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 30--35
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 30--35
+ [] 
+ []
+
+
+LaTeX Warning: Reference `eq:isoTPS_moving_ortho_surface_auxillary_formulation'
+ on page 16 undefined on input line 35.
+
+
+LaTeX Warning: Reference `eq:isoTPS_moving_ortho_surface_auxillary_formulation'
+ on page 16 undefined on input line 35.
+
+
+LaTeX Warning: Reference `fig:square_isoTPS' on page 16 undefined on input line
+ 38.
+
+
+LaTeX Warning: Reference `eq:isoTPS_moving_ortho_surface_general' on page 16 un
+defined on input line 43.
+
+
+LaTeX Warning: Reference `fig:isoTPS_moving_ortho_column' on page 17 undefined 
+on input line 48.
+
+
+LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 17 undefined on i
+nput line 48.
+
+
+LaTeX Warning: Reference `eq:isoTPS_moving_ortho_surface_auxillary_formulation'
+ on page 17 undefined on input line 48.
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/MM
+.jpeg}' has been optimized away. Use '/tikz/external/optimize=false' to disable
+ this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/Tr
+ipartite_decomposition.jpeg}' has been optimized away. Use '/tikz/external/opti
+mize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 54--59
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 54--59
+ [] 
+ []
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 17 undefined on input line 62.
+
+
+LaTeX Warning: Reference `fig:Moses_move' on page 17 undefined on input line 62
+.
+
+
+LaTeX Warning: Reference `fig:tripartite_decomposition' on page 17 undefined on
+ input line 62.
+
+
+LaTeX Warning: Reference `sec:' on page 17 undefined on input line 62.
+
+
+LaTeX Warning: Reference `fig:tripartite_decomposition' on page 17 undefined on
+ input line 62.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_string
+_net_liquids' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:computational_complexity_of_isometric_tensor_netw
+ork_states' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:sequential_generation_of_projected_entangled_pair
+_states' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:quantum_circuits_for_2D_isometric_tensor_networks
+' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:topological_quantum_phase_transitions_in_2D_isome
+tric_tensor_networks' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:fermionic_isometric_tensor_network_states' on pag
+e 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:two_dimensional_isometric_tensor_networks_on_infi
+nite_strip' on page 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:three_dimensional_isometric_tensor_networks' on p
+age 18 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_2D_the
+rmal_states' on page 18 undefined on input line 64.
+
+))
+Overfull \hbox (17.85025pt too wide) in paragraph at lines 64--73
+\OT1/cmr/m/n/10.95 (-20) [[]], 
+ []
+
+
+Overfull \hbox (32.58215pt too wide) in paragraph at lines 64--73
+\OT1/cmr/m/n/10.95 (-20) [[]] 
+ []
+
+chapter 3.
+(./chapters/disoTPS/disoTPS.tex
+
+LaTeX Warning: Reference `sec:tensors_and_tensor_networks_isometric_tensor_prod
+uct_states_in_2D' on page 21 undefined on input line 1.
+
+(./chapters/disoTPS/network_structure.tex
+The command '\includegraphics [width=0.6\textwidth ]{figures/Tensor_Networks/di
+soTPS.jpeg}' has been optimized away. Use '/tikz/external/optimize=false' to di
+sable this.
+
+LaTeX Warning: Reference `fig:disoTPS_structure' on page 21 undefined on input 
+line 7.
+
+
+LaTeX Warning: Reference `fig:disoTPS_structure' on page 21 undefined on input 
+line 7.
+
+
+LaTeX Warning: Reference `sec:disoTPS_yang_baxter_move' on page 22 undefined on
+ input line 9.
+
+The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/di
+soTPS_onesite_expectation_value.jpeg}' has been optimized away. Use '/tikz/exte
+rnal/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:disoTPS_onesite_expectation_value' on page 22 und
+efined on input line 16.
+
+The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/di
+soTPS_twosite_expectation_value.jpeg}' has been optimized away. Use '/tikz/exte
+rnal/optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:disoTPS_twosite_expectation_value' on page 22 und
+efined on input line 23.
+
+) (./chapters/disoTPS/YB_move.tex
+The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/di
+soTPS_moving_ortho_surface.jpeg}' has been optimized away. Use '/tikz/external/
+optimize=false' to disable this.
+
+LaTeX Warning: Reference `fig:disoTPS_moving_ortho_surface' on page 23 undefine
+d on input line 8.
+
+
+LaTeX Warning: Reference `fig:disoTPS_YB_move_closeup' on page 23 undefined on 
+input line 8.
+
+
+LaTeX Warning: Reference `eq:disoTPS_YB_move_constraints' on page 23 undefined 
+on input line 32.
+
+
+LaTeX Warning: Reference `fig:YB_move_iterate_polar_overlap' on page 23 undefin
+ed on input line 32.
+
+The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/YB
+_move_closeup.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
+e' to disable this.
+
+LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 24 
+undefined on input line 39.
+
+
+LaTeX Warning: Reference `sec:YB_move_svd_disentangle' on page 24 undefined on 
+input line 39.
+
+
+LaTeX Warning: Reference `sec:YB_move_comparison' on page 24 undefined on input
+ line 39.
+
+(./chapters/disoTPS/YB_move_iterative.tex
+
+LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
+4 undefined on input line 1.
+
+
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+put line 1.
+
+
+LaTeX Warning: Reference `sec:orthogonal_procrustes_problem' on page 24 undefin
+ed on input line 5.
+
+
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+put line 5.
+
+
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+put line 7.
+
+
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+put line 8.
+
+
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 25 undefined on in
+put line 9.
+
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/YB_move_it
+erate_polar_a.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
+e' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/YB_move_it
+erate_polar_b.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
+e' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/YB_move_it
+erate_polar_c.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
+e' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/YB_move_it
+erate_polar_d.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
+e' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 18--31
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 18--31
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 18--31
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 18--31
+ [] 
+ []
+
+
+LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
+5 undefined on input line 31.
+
+
+LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
+5 undefined on input line 31.
+
+) (./chapters/disoTPS/YB_move_svd_disentangle.tex
+
+LaTeX Warning: Reference `eq:disoTPS_YB_move_standard' on page 25 undefined on 
+input line 1.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 25 undefined on input line 1.
+
+
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+ line 1.
+
+
+Overfull \hbox (33.43869pt too wide) in paragraph at lines 1--2
+\OT1/cmr/m/n/10.95 (-20) [[]]. 
+ []
+
+
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+ line 7.
+
+
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+ line 8.
+
+
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+ line 8.
+
+
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 26 undefined on input
+ line 13.
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/yb
+_move_svd_disent.jpeg}' has been optimized away. Use '/tikz/external/optimize=f
+alse' to disable this.
+
+LaTeX Warning: Reference `fig:disentangling_theta_definition' on page 26 undefi
+ned on input line 23.
+
+
+LaTeX Warning: Reference `fig:disentangling_rho_definition' on page 27 undefine
+d on input line 33.
+
+
+LaTeX Warning: Reference `eq:renyi_entropy' on page 27 undefined on input line 
+33.
+
+
+LaTeX Warning: Citation 'cite:mps_represent_ground_states_faithfully' on page 2
+7 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 27 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 27 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'cite:finding_purifications_with_minimal_entanglement' 
+on page 27 undefined on input line 33.
+
+
+Overfull \hbox (28.07927pt too wide) in paragraph at lines 32--34
+[]\OT1/cmr/m/n/10.95 (-20) , 
+ []
+
+
+LaTeX Warning: Reference `fig:disentangling_evenbly_vidal_algorithm' on page 27
+ undefined on input line 38.
+
+
+LaTeX Warning: Citation 'cite:finding_purifications_with_minimal_entanglement' 
+on page 27 undefined on input line 38.
+
+
+LaTeX Warning: Reference `fig:disentangling_evenbly_vidal_algorithm' on page 27
+ undefined on input line 42.
+
+
+LaTeX Warning: Reference `sec:evenbly_vidal_algorithm' on page 27 undefined on 
+input line 42.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 27 undefined on input line 42.
+
+
+Overfull \hbox (33.43869pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/n/10.95 (-20) [[]].  
+ []
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
+ing_theta_definition.jpeg}' has been optimized away. Use '/tikz/external/optimi
+ze=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
+ing_rho_definition.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
+ing_evenbly_vidal_algorithm.jpeg}' has been optimized away. Use '/tikz/external
+/optimize=false' to disable this.
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 58.
+
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
+' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
+al_quantum_spin_systems' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 28 unde
+fined on input line 61.
+
+
+LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
+' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'cite:riemannian_geometry_automatic_differentiation_qua
+ntum_physics' on page 28 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'cite:pymanopt' on page 28 undefined on input line 61.
+
+
+Overfull \hbox (29.60132pt too wide) in paragraph at lines 54--61
+[]\OT1/cmr/m/n/10.95 (-20) ] 
+ []
+
+
+LaTeX Warning: Reference `fig:disentangling_riemannian_optimization' on page 28
+ undefined on input line 62.
+
+
+LaTeX Warning: Citation 'cite:riemannian_geometry_automatic_differentiation_qua
+ntum_physics' on page 28 undefined on input line 62.
+
+
+LaTeX Warning: Citation 'cite:pymanopt' on page 28 undefined on input line 62.
+
+
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 29
+ undefined on input line 71.
+
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 29 unde
+fined on input line 72.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 72.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 73.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 73.
+
+
+LaTeX Warning: Reference `eq:YB_move_disent_cost_function_truncation_error' on 
+page 29 undefined on input line 74.
+
+
+LaTeX Warning: Reference `eq:re_entropy' on page 29 undefined on input line 74.
+
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 74.
+
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 74.
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/approximat
+e_qr_decomposition.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+
+LaTeX Warning: Reference `' on page 30 undefined on input line 82.
+
+
+LaTeX Warning: Reference `fig:approximate_qr_decomposition' on page 30 undefine
+d on input line 82.
+
+
+LaTeX Warning: Reference `fig:approximate_qr_decomposition' on page 30 undefine
+d on input line 82.
+
+The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
+ing_riemannian_optimization.jpeg}' has been optimized away. Use '/tikz/external
+/optimize=false' to disable this.
+(./figures/plots/disoTPS/yb_move_disentangling_renyi_2.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+) (./figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
+ [][] 
+ []
+
+
+Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
+ [] 
+ []
+
+
+Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
+ [] 
+ []
+
+
+Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
+ [] 
+ []
+
+)
+
+LaTeX Warning: Reference `' on page 30 undefined on input line 93.
+
+
+LaTeX Warning: Reference `fig:disoTPS_disentangling_evenbly_vidal_renyi_2' on p
+age 31 undefined on input line 94.
+
+
+LaTeX Warning: Reference `' on page 31 undefined on input line 94.
+
+
+LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_renyi_0.5' on page 3
+1 undefined on input line 95.
+
+
+LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_truncation_error' on
+ page 31 undefined on input line 95.
+
+
+LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime' 
+on page 31 undefined on input line 96.
+
+
+LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_truncation_error_wal
+ltime' on page 31 undefined on input line 96.
+
+)) (./chapters/disoTPS/TEBD.tex
+
+LaTeX Warning: Reference `' on page 31 undefined on input line 1.
+
+
+LaTeX Warning: Reference `sec:local_TEBD_updates' on page 31 undefined on input
+ line 1.
+
+
+LaTeX Warning: Reference `sec:global_TEBD_updates' on page 31 undefined on inpu
+t line 1.
+
+(./chapters/disoTPS/TEBD_local_update.tex
+The command '\includegraphics [width=0.3\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_5_tensor_environment.jpeg}' has been optimized away. Use '/tikz/external/opt
+imize=false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_contraction_definitions.jpeg}' has been optimized away. Use '/tikz/external/
+optimize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--11
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--11
+ [] 
+ []
+
+
+LaTeX Warning: Reference `eq:isoDTPS_TEBD_local_update_error' on page 32 undefi
+ned on input line 11.
+
+
+LaTeX Warning: Reference `eq:isoDTPS_TEBD_local_update_error' on page 32 undefi
+ned on input line 11.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_five_tensor_environment' on page 32 
+undefined on input line 14.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_contraction_definition' on page 32 u
+ndefined on input line 19.
+
+
+LaTeX Warning: Citation 'cite:fast_time_evolution_of_mps_using_qr' on page 32 u
+ndefined on input line 19.
+
+
+LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 32 
+undefined on input line 19.
+
+
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 32
+ undefined on input line 19.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_local_update_detailed' on page 32 un
+defined on input line 19.
+
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_local_update_T1.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_local_update_Wm.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_local_update_T2.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_local_update_Wp.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_local_update_W.jpeg}' has been optimized away. Use '/tikz/external/optimize=
+false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 25--42
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 25--42
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 25--42
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 25--42
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 25--42
+ [] 
+ []
+
+) (./chapters/disoTPS/TEBD_global_update.tex
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_global_update_TEBD1_splitting.jpeg}' has been optimized away. Use '/tikz/ext
+ernal/optimize=false' to disable this.
+The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
+BD_global_update_TEBD2_chain.jpeg}' has been optimized away. Use '/tikz/externa
+l/optimize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--11
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--11
+ [] 
+ []
+
+
+LaTeX Warning: Reference `sec:' on page 33 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD1_splitting' on pa
+ge 33 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD1_splitting' on pa
+ge 34 undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 34 undefined on input line 24.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_applying_TEBD1' on pag
+e 34 undefined on input line 34.
+
+
+LaTeX Warning: Reference `sec:disoTPS_TEBD_local_updates' on page 34 undefined 
+on input line 34.
+
+The command '\includegraphics [width=1.0\textwidth ]{figures/disoTPS/disoTPS_TE
+BD1_global_update.jpeg}' has been optimized away. Use '/tikz/external/optimize=
+false' to disable this.
+The command '\includegraphics [width=1.0\textwidth ]{figures/disoTPS/disoTPS_TE
+BD1_global_update.jpeg}' has been optimized away. Use '/tikz/external/optimize=
+false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 40--45
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 40--45
+ [] 
+ []
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD2_chain' on page 3
+5 undefined on input line 63.
+
+
+LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_applying_TEBD2' on pag
+e 35 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'cite:finding_exponential_product_formulas_of_higher_or
+ders' on page 35 undefined on input line 64.
+
+)))
+chapter 4.
+(./chapters/Toric_Code/Toric_Code.tex (./chapters/Toric_Code/toric_code_model.t
+ex
+
+LaTeX Warning: Citation 'cite:fault_tolerant_quantum_computation_by_anyons' on 
+page 37 undefined on input line 1.
+
+
+LaTeX Warning: Reference `fig:toric_code_star_and_plaquette_operators' on page 
+37 undefined on input line 11.
+
+
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
+ned on input line 26.
+
+
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
+ned on input line 26.
+
+
+LaTeX Warning: Reference `eq:toric_code_hamiltonian' on page 38 undefined on in
+put line 27.
+
+
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
+ned on input line 27.
+
+
+LaTeX Warning: Citation 'cite:fault_tolerant_quantum_computation_by_anyons' on 
+page 38 undefined on input line 33.
+
+The command '\includegraphics [width=0.6\textwidth ]{figures/Toric_Code/toric_c
+ode_star_and_plaquette_operator.jpeg}' has been optimized away. Use '/tikz/exte
+rnal/optimize=false' to disable this.
+
+LaTeX Warning: Reference `eq:star_operator' on page 38 undefined on input line 
+37.
+
+
+LaTeX Warning: Reference `eq:plaquette_operator' on page 38 undefined on input 
+line 37.
+
+
+LaTeX Warning: Reference `eq:star_operator' on page 38 undefined on input line 
+37.
+
+
+LaTeX Warning: Reference `eq:plaquette_operator' on page 38 undefined on input 
+line 37.
+
+) (./chapters/Toric_Code/representing_toric_code_gs_with_disoTPS.tex
+The command '\includegraphics [width=0.3\textwidth ]{figures/Toric_Code/toric_c
+ode_doubling_dof.jpeg}' has been optimized away. Use '/tikz/external/optimize=f
+alse' to disable this.
+The command '\includegraphics [width=0.233\textwidth ]{figures/Toric_Code/toric
+_code_PEPS_representation_tensor_definitions.jpeg}' has been optimized away. Us
+e '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.3\textwidth ]{figures/Toric_Code/toric_c
+ode_PEPS_representation.jpeg}' has been optimized away. Use '/tikz/external/opt
+imize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--15
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--15
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--15
+ [] 
+ []
+
+The command '\includegraphics [width=0.25\textwidth ]{figures/Toric_Code/toric_
+code_disoTPS.jpeg}' has been optimized away. Use '/tikz/external/optimize=false
+' to disable this.
+The command '\includegraphics [width=0.39\textwidth ]{figures/Toric_Code/toric_
+code_disoTPS_tensor_definitions.jpeg}' has been optimized away. Use '/tikz/exte
+rnal/optimize=false' to disable this.
+The command '\includegraphics [width=0.17\textwidth ]{figures/Toric_Code/toric_
+code_disoTPS_ortho_surface_tensor.jpeg}' has been optimized away. Use '/tikz/ex
+ternal/optimize=false' to disable this.
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 24--33
+ [][] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 24--33
+ [] 
+ []
+
+
+Overfull \hbox (81.4571pt too wide) in paragraph at lines 24--33
+ [] 
+ []
+
+
+LaTeX Warning: Reference `fig:toric_code_PEPS_representation' on page 38 undefi
+ned on input line 33.
+
+
+LaTeX Warning: Reference `fig:toric_code_PEPS_representation' on page 38 undefi
+ned on input line 33.
+
+
+LaTeX Warning: Citation 'cite:models_for_gapped_boundaries_and_domain_walls' on
+ page 38 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_string
+_net_liquids' on page 38 undefined on input line 38.
+
+
+LaTeX Warning: Reference `fig:toric_code_doubling_dof' on page 38 undefined on 
+input line 38.
+
+
+LaTeX Warning: Reference `fig:toric_code_PEPS_representation_tensor_definitions
+' on page 40 undefined on input line 45.
+
+
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 40 undefi
+ned on input line 59.
+
+
+LaTeX Warning: Reference `fig:toric_code_disoTPS_representation_ortho_surface_t
+ensor' on page 40 undefined on input line 60.
+
+
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 40 undefi
+ned on input line 60.
+
+
+LaTeX Warning: Reference `fig:toric_code_disoTPS_representation_tensor_definiti
+ons' on page 40 undefined on input line 61.
+
+
+LaTeX Warning: Reference `fig:toric_code_disoTPS_representation_ortho_surface_t
+ensor' on page 40 undefined on input line 65.
+
+
+LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_string
+_net_liquids' on page 40 undefined on input line 66.
+
+
+LaTeX Warning: Reference `fig:toric_code_disoTPS_representation' on page 40 und
+efined on input line 66.
+
+
+LaTeX Warning: Reference `' on page 40 undefined on input line 66.
+
+))
+chapter 5.
+(./chapters/TFI/TFI.tex (./chapters/TFI/TFI_model.tex) (./chapters/TFI/ground_s
+tate_search.tex (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_differ
+ent_methods.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.te
+x
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+\openout6 = `thesis-figure19.dpth'.
+
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+\tikzexternal@dep@file=\write7
+\openout7 = `thesis-figure19.dep'.
+
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+[43
+
+
+\openout3 = `thesis-figure19.upa'.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./figures/plots/TFI/gs_e
+nergy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+) (./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (49.69618pt too wide) in paragraph at lines 108--109
+ [][] 
+ []
+
+)) (./chapters/TFI/time_evolution.tex))
+chapter A.
+
+(./chapters/optimization_problems_on_isometric_tensor_networks/optimization_pro
+blems_on_isometric_tensor_networks.tex
+
+LaTeX Warning: Reference `eq:general_optimization_problem_of_isometric_tensor_n
+etworks_multiple_input_tensors' on page 45 undefined on input line 22.
+
+
+LaTeX Warning: Reference `sec:orthogonal_procrustes_problem' on page 45 undefin
+ed on input line 22.
+
+
+LaTeX Warning: Reference `sec:evenbly_vidal_algorithm' on page 45 undefined on 
+input line 22.
+
+
+LaTeX Warning: Reference `sec:cost_functions_of_multiple_tensors' on page 45 un
+defined on input line 22.
+
+
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 45
+ undefined on input line 23.
+
+
+(./chapters/optimization_problems_on_isometric_tensor_networks/orthogonal_procr
+ustes_problem.tex
+
+LaTeX Warning: Command \i invalid in math mode on input line 5.
+
+
+LaTeX Warning: Reference `eq:orthogonal_procrustes_problem_closed_form_solution
+' on page 46 undefined on input line 32.
+
+
+LaTeX Warning: Reference `eq:orthogonal_procrustes_problem_simple_case_closed_f
+orm_solution' on page 47 undefined on input line 46.
+
+)
+(./chapters/optimization_problems_on_isometric_tensor_networks/evenbly_vidal_al
+gorithm.tex
+
+LaTeX Warning: Reference `sec:orthogonal_procrustes_problem' on page 47 undefin
+ed on input line 1.
+
+
+LaTeX Warning: Reference `eq:orthogonal_procrustes_problem_closed_form_solution
+' on page 47 undefined on input line 5.
+
+
+LaTeX Warning: Reference `eq:orthogonal_procrustes_problem_simple_case_closed_f
+orm_solution' on page 47 undefined on input line 5.
+
+
+LaTeX Warning: Reference `app:' on page 47 undefined on input line 5.
+
+
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 47
+ undefined on input line 6.
+
+)
+(./chapters/optimization_problems_on_isometric_tensor_networks/cost_function_mu
+ltiple_tensors.tex
+
+LaTeX Warning: Reference `sec:orthogonal_procrustes_problem' on page 47 undefin
+ed on input line 1.
+
+
+LaTeX Warning: Reference `sec:evenbly_vidal_algorithm' on page 47 undefined on 
+input line 1.
+
+
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 47
+ undefined on input line 1.
+
+
+LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
+' on page 48 undefined on input line 2.
+
+
+LaTeX Warning: Reference `' on page 48 undefined on input line 2.
+
+))
+chapter B.
+(./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
+fined on input line 1.
+
+
+LaTeX Warning: Citation 'cite:riemannian_geometry_automatic_differentiation_qua
+ntum_physics' on page 49 undefined on input line 1.
+
+
+LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
+' on page 49 undefined on input line 1.
+
+
+LaTeX Warning: Citation 'cite:pymanopt' on page 49 undefined on input line 1.
+
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
+fined on input line 6.
+
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
+fined on input line 7.
+
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
+fined on input line 7.
+
+
+LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
+' on page 49 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
+fined on input line 12.
+
+
+LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
+' on page 49 undefined on input line 12.
+
+) (./chapters/Riemannian_Optimization/basic_definitions.tex
+
+LaTeX Warning: Reference `eq:Optimization_cost_function_definition' on page 50 
+undefined on input line 1.
+
+
+LaTeX Warning: Reference `eq:Stiefel_manifold_riemannian_metric' on page 50 und
+efined on input line 6.
+
+
+LaTeX Warning: Reference `eq:Optimization_partial_derivative' on page 50 undefi
+ned on input line 15.
+
+
+LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 50 unde
+fined on input line 15.
+
+
+LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
+' on page 50 undefined on input line 15.
+
+
+LaTeX Warning: Reference `eq:Stiefel_manifold_project_to_tangent_space' on page
+ 51 undefined on input line 20.
+
+))
+chapter C.
+chapter D.
+
+(./chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computa
+tion_of_gradient_and_hvp_for_riemannian_optimization.tex
+The command '\includegraphics [width=0.8\textwidth ]{figures/appendix_C/svd_der
+ivative.jpeg}' has been optimized away. Use '/tikz/external/optimize=false' to 
+disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/appendix_C/gradien
+t_renyi_alpha_entropy.jpeg}' has been optimized away. Use '/tikz/external/optim
+ize=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/appendix_C/gradien
+t_truncation_error.jpeg}' has been optimized away. Use '/tikz/external/optimize
+=false' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/appendix_C/hvp_ren
+yi_alpha_entropy.jpeg}' has been optimized away. Use '/tikz/external/optimize=f
+alse' to disable this.
+The command '\includegraphics [width=0.8\textwidth ]{figures/appendix_C/hvp_tru
+ncation_error.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
+e' to disable this.
+)
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 27.2pt needed,
+(scrlayer-scrpage)                but only 17.0pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting typearea's option
+(scrlayer-scrpage)                `headheight=27.2pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+01.
+
+
+Overfull \vbox (10.2pt too high) has occurred while \output is active []
+
+
+LaTeX Warning: Empty bibliography on input line 102.
+
+\@writefile{toc}{\providecommand\tocbasic@end@toc@file{}\tocbasic@end@toc@file}
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis-figure19
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'thesis-figure19.run.xml'.
+\openout1 = `thesis-figure19.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 56103 strings out of 478287
+ 1303731 string characters out of 5849290
+ 2323948 words of memory out of 5000000
+ 73182 multiletter control sequences out of 15000+600000
+ 494871 words of font info for 206 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 126i,23n,148p,10747b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on thesis-figure19.pdf (1 page, 50515 bytes).
+PDF statistics:
+ 93 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 51213 words of extra memory for PDF output out of 51595 (max. 10000000)
+

@@ -1,0 +1,22 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\usepackage{pgfplots}
+
+\begin{document}
+	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+		\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, legend style={nodes={scale=\legendscale, transform shape}}, legend pos=south west, title={SVD}]
+			%	
+			\addplot[color = 3blue1, mark=*]
+			table[x=dtau, y=delta_E_D_max_2, col sep=space]{data/gs_energy_vs_dtau_square_svd.txt};
+			\addlegendentry{$D = 2$}
+			%	
+			\addplot[color = 3blue2, mark=*]
+			table[x=dtau, y=delta_E_D_max_4, col sep=space]{data/gs_energy_vs_dtau_square_svd.txt};
+			\addlegendentry{$D = 4$}
+			%	
+			\addplot[color = 3blue3, mark=*]
+			table[x=dtau, y=delta_E_D_max_6, col sep=space]{data/gs_energy_vs_dtau_square_svd.txt};
+			\addlegendentry{$D = 6$}
+		\end{axis}%
+	\end{tikzpicture}%
+\end{document}
