@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  18 JUL 2024 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  19 JUL 2024 17:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -783,9 +783,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language34). Reported on input line 105.
+(babel)             (\language47). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language34). Reported on input line 108.
+(babel)             (\language47). Reported on input line 108.
 ))) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 \csq@reset=\count438
@@ -850,10 +850,24 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 (scrlayer-scrpage)             `pagefoot' on input line 1109.
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
-(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texl
-ive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/share/texmf/tex/latex/pgfplots/pgfplots.sty (/usr/local/share/texmf
+/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
+(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/share/
+texmf/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/share/texmf/tex/latex/pgf/ut
+ilities/pgfrcs.sty (/usr/local/share/texmf/tex/generic/pgf/utilities/pgfutil-co
+mmon.tex
+\pgfutil@everybye=\toks26
+) (/usr/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+(/usr/share/texlive/texmf-dist/tex/latex/everyshi/everyshi.sty
+Package: everyshi 2020/11/18 v4.00 EveryShipout Package
+)) (/usr/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+(/usr/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texliv
+e/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
@@ -866,372 +880,306 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen186
 \Gin@req@width=\dimen187
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/sha
-re/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texm
-f-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/ge
-neric/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen188
-\pgfutil@tempdimb=\dimen189
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/us
-r/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
-))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share
-/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/te
-xmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+) (/usr/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/shar
+e/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen190
-\pgf@y=\dimen191
-\pgf@xa=\dimen192
-\pgf@ya=\dimen193
-\pgf@xb=\dimen194
-\pgf@yb=\dimen195
-\pgf@xc=\dimen196
-\pgf@yc=\dimen197
-\pgf@xd=\dimen198
-\pgf@yd=\dimen199
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
 \w@pgf@writea=\write5
 \r@pgf@reada=\read5
 \c@pgf@counta=\count446
 \c@pgf@countb=\count447
 \c@pgf@countc=\count448
 \c@pgf@countd=\count449
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count450
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count451
-\pgfsyssoftpath@bigbuffer@items=\count452
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/shar
-e/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texl
-ive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/t
-exmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen256
-\pgfmath@count=\count453
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+))) (/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count450
+\pgfsyssoftpath@bigbuffer@items=\count451
+) (/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/share
+/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/share/texmf/tex/ge
+neric/pgf/math/pgfmathutil.code.tex) (/usr/local/share/texmf/tex/generic/pgf/ma
+th/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count452
 \pgfmath@box=\box60
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
-ric.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/
+local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
+e.tex) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.cod
 e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmat
-hfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count454
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
+ex) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex))) 
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count453
+)) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
 x
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen257
-\pgf@picmaxx=\dimen258
-\pgf@picminy=\dimen259
-\pgf@picmaxy=\dimen260
-\pgf@pathminx=\dimen261
-\pgf@pathmaxx=\dimen262
-\pgf@pathminy=\dimen263
-\pgf@pathmaxy=\dimen264
-\pgf@xx=\dimen265
-\pgf@xy=\dimen266
-\pgf@yx=\dimen267
-\pgf@yy=\dimen268
-\pgf@zx=\dimen269
-\pgf@zy=\dimen270
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
-code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen271
-\pgf@path@lasty=\dimen272
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
-.tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen273
-\pgf@shorten@start@additional=\dimen274
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
-x
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count455
+\pgf@picture@serial@count=\count454
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
-ode.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen275
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen271
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
-s.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen276
-\pgf@pt@y=\dimen277
-\pgf@pt@temp=\dimen278
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
-ex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
-.code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
-x
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen279
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen280
-\pgf@sys@shading@range@num=\count456
-\pgf@shadingcount=\count457
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
 tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+ex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count455
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box64
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
-x
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
-ode.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
-tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+))) (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box65
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
-.sty
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen281
-\pgf@nodesepend=\dimen282
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
-.sty
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/shar
-e/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/te
-xmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf
--dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic
-/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/uti
-lities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen283
-\pgffor@skip=\dimen284
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+) (/usr/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+) (/usr/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+)) (/usr/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty (/usr/local/share
+/texmf/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/share/texmf/tex/generic/
+pgf/utilities/pgfkeys.code.tex)) (/usr/local/share/texmf/tex/generic/pgf/utilit
+ies/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen278
+\pgffor@skip=\dimen279
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+)) (/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
-.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count458
-\pgfplotmarksize=\dimen285
-)
-\tikz@lastx=\dimen286
-\tikz@lasty=\dimen287
-\tikz@lastxsaved=\dimen288
-\tikz@lastysaved=\dimen289
-\tikz@lastmovetox=\dimen290
-\tikz@lastmovetoy=\dimen291
-\tikzleveldistance=\dimen292
-\tikzsiblingdistance=\dimen293
-\tikz@figbox=\box66
-\tikz@figbox@bg=\box67
-\tikz@tempbox=\box68
-\tikz@tempbox@bg=\box69
-\tikztreelevel=\count459
-\tikznumberofchildren=\count460
-\tikznumberofcurrentchild=\count461
-\tikz@fig@count=\count462
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count463
-\pgfmatrixcurrentcolumn=\count464
-\pgf@matrix@numberofcolumns=\count465
-)
-\tikz@expandcount=\count466
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr
-/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks38
-\t@pgfplots@tokb=\toks39
-\t@pgfplots@tokc=\toks40
-\pgfplots@tmpa=\dimen294
-\c@pgfplots@coordindex=\count467
-\c@pgfplots@scanlineindex=\count468
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
-.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
-ex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_loader.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.t
+(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
 ex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
-tructure.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
-tructureext.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
-.code.tex
-\c@pgfplotsarray@tmp=\count469
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count456
+\pgfplotmarksize=\dimen280
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
-x.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
-d.code.tex
-\c@pgfplotstable@counta=\count470
+\tikz@lastx=\dimen281
+\tikz@lasty=\dimen282
+\tikz@lastxsaved=\dimen283
+\tikz@lastysaved=\dimen284
+\tikzleveldistance=\dimen285
+\tikzsiblingdistance=\dimen286
+\tikz@figbox=\box66
+\tikz@tempbox=\box67
+\tikztreelevel=\count457
+\tikznumberofchildren=\count458
+\tikznumberofcurrentchild=\count459
+\tikz@fig@count=\count460
+(/usr/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count461
+\pgfmatrixcurrentcolumn=\count462
+\pgf@matrix@numberofcolumns=\count463
+)
+\tikz@expandcount=\count464
+
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+))) (/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/
+share/texmf/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks35
+\t@pgfplots@tokb=\toks36
+\t@pgfplots@tokc=\toks37
+\pgfplots@tmpa=\dimen287
+\c@pgfplots@coordindex=\count465
+\c@pgfplots@scanlineindex=\count466
+(/usr/local/share/texmf/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) 
+(/usr/local/share/texmf/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+loader.code.tex
+Package pgfplots: loading complementary code for your PGF version...
+
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+misc.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks40
+))
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count467
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
+\pgf@plot@mark@count=\count468
+\pgfplotmarksize=\dimen288
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgflibraryfpu.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
+\pgfpic=\box68
+\pgf@hbox=\box69
+\pgf@layerbox@main=\box70
+\pgf@picture@serial@count=\count469
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
+)) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructur
+e.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructur
+eext.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsarray.code.t
+ex
+\c@pgfplotsarray@tmp=\count470
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.
+tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/numtable/pgfplotstableshared.code.
+tex
+\c@pgfplotstable@counta=\count471
 \t@pgfplotstable@a=\toks41
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
-x
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
-de.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
-fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count471
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.t
+ex) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (
+/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
+(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshadin
+g.code.tex
+\c@pgfplotslibrarysurf@no=\count472
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-pdftex.def)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
-tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
-ex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
-ex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
-e.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
-tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (
-/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
-e.tex
-\pgfdecoratedcompleteddistance=\dimen295
-\pgfdecoratedremainingdistance=\dimen296
-\pgfdecoratedinputsegmentcompleteddistance=\dimen297
-\pgfdecoratedinputsegmentremainingdistance=\dimen298
-\pgf@decorate@distancetomove=\dimen299
-\pgf@decorate@repeatstate=\count472
-\pgfdecorationsegmentamplitude=\dimen300
-\pgfdecorationsegmentlength=\dimen301
+(/usr/local/share/texmf/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading
+.pgfsys-pdftex.def))) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplot
+scolormap.code.tex (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsco
+lor.code.tex)) (/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsstackedplot
+s.code.tex) (/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex (/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsmeshplothandler.co
+de.tex)) (/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.scaling.code.tex
+) (/usr/local/share/texmf/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex
+) (/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/u
+sr/local/share/texmf/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/loca
+l/share/texmf/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/share/te
+xmf/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.code.tex (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmodule
+decorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen289
+\pgfdecoratedremainingdistance=\dimen290
+\pgfdecoratedinputsegmentcompleteddistance=\dimen291
+\pgfdecoratedinputsegmentremainingdistance=\dimen292
+\pgf@decorate@distancetomove=\dimen293
+\pgf@decorate@repeatstate=\count473
+\pgfdecorationsegmentamplitude=\dimen294
+\pgfdecorationsegmentlength=\dimen295
 )
-\tikz@lib@dec@box=\box70
+\tikz@lib@dec@box=\box71
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.pathmorphing.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
-decorations.pathmorphing.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.pathreplacing.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
-decorations.pathreplacing.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
-ntourlua.code.tex)
-\pgfplots@numplots=\count473
-\pgfplots@xmin@reg=\dimen302
-\pgfplots@xmax@reg=\dimen303
-\pgfplots@ymin@reg=\dimen304
-\pgfplots@ymax@reg=\dimen305
-\pgfplots@zmin@reg=\dimen306
-\pgfplots@zmax@reg=\dimen307
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathmorphing.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathmorphing.code.tex))
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathreplacing.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathreplacing.code.tex))
+\pgfplots@numplots=\count474
+\pgfplots@xmin@reg=\dimen296
+\pgfplots@xmax@reg=\dimen297
+\pgfplots@ymin@reg=\dimen298
+\pgfplots@ymax@reg=\dimen299
+\pgfplots@zmin@reg=\dimen300
+\pgfplots@zmax@reg=\dimen301
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
-de.tex
-File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+yplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.col
 orbrewer.code.tex
@@ -1243,44 +1191,46 @@ Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count474
+\c@float@type=\count475
 \float@exts=\toks42
-\float@box=\box71
+\float@box=\box72
 \@float@everytoks=\toks43
-\@floatcapt=\box72
+\@floatcapt=\box73
 )
 \@float@every@algorithm=\toks44
-\c@algorithm=\count475
+\c@algorithm=\count476
 ) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count476
-\c@ALG@rem=\count477
-\c@ALG@nested=\count478
+\c@ALG@line=\count477
+\c@ALG@rem=\count478
+\c@ALG@nested=\count479
 \ALG@tlm=\skip110
 \ALG@thistlm=\skip111
-\c@ALG@Lnr=\count479
-\c@ALG@blocknr=\count480
-\c@ALG@storecount=\count481
-\c@ALG@tmpcounter=\count482
+\c@ALG@Lnr=\count480
+\c@ALG@blocknr=\count481
+\c@ALG@storecount=\count482
+\c@ALG@tmpcounter=\count483
 \ALG@tmplength=\skip112
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.ex
-ternal.code.tex
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
-yexternal.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zexternalshared.code.tex)))
+(/usr/local/share/texmf/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.
+code.tex
+(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/libraries/tikzlibraryextern
+al.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzextern
+alshared.code.tex
+\tikzexternal@outfile=\write6
+)))
 No auxiliary output files.
 
-\w@pgfexternal@auxout=\write6
-\largestimage=\box73
-\largestimagea=\box74
-\largestimageb=\box75
+\w@pgfexternal@auxout=\write7
+\largestimage=\box74
+\largestimagea=\box75
+\largestimageb=\box76
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1309,16 +1259,16 @@ Package scrbase Info: activating british \listfigurename on input line 41.
 Package scrbase Info: activating british \listtablename on input line 41.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count483
-\scratchdimen=\dimen308
-\scratchbox=\box76
-\nofMPsegments=\count484
-\nofMParguments=\count485
+\scratchcounter=\count484
+\scratchdimen=\dimen302
+\scratchbox=\box77
+\nofMPsegments=\count485
+\nofMParguments=\count486
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count486
-\MPscratchDim=\dimen309
-\MPnumerator=\count487
-\makeMPintoPDFobject=\count488
+\MPscratchCnt=\count487
+\MPscratchDim=\dimen303
+\MPnumerator=\count488
+\makeMPintoPDFobject=\count489
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1339,9 +1289,9 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks50
 \SOUL@token=\toks51
 \SOUL@spaceskip=\skip113
-\SOUL@ttwidth=\dimen310
-\SOUL@uldp=\dimen311
-\SOUL@ulht=\dimen312
+\SOUL@ttwidth=\dimen304
+\SOUL@uldp=\dimen305
+\SOUL@ulht=\dimen306
 ))
 Package hyperref Info: Link coloring OFF on input line 41.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1349,7 +1299,7 @@ Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count489
+\c@section@level=\count490
 )
 LaTeX Info: Redefining \ref on input line 41.
 LaTeX Info: Redefining \pageref on input line 41.
@@ -1367,7 +1317,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \providecommand\BKM@entry[2]{}
-\BKM@id=\count490
+\BKM@id=\count491
 ))
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
@@ -1415,8 +1365,8 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
-your preamble.
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
+our preamble.
  on input line 41.
 
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1596,21 +1546,8 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
 00.
 (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
 
-LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
-' on page 5 undefined on input line 102.
-
-
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 5 undefined on input line 102.
-
-
 LaTeX Warning: Reference `fig:isometries_and_unitaries_diagrams' on page 5 unde
 fined on input line 102.
-
-
-Overfull \hbox (31.0601pt too wide) in paragraph at lines 101--102
-[]\OT1/cmr/m/n/10.95 (-20) ], 
- []
 
 The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/basic_isom
 etries/basic_isometries_a.pdf}' has been optimized away. Use '/tikz/external/op
@@ -1681,10 +1618,6 @@ d on input line 18.
 LaTeX Warning: Reference `eq:SVD_general' on page 7 undefined on input line 18.
 
 
-
-LaTeX Warning: Citation 'cite:eckart_young_theorem' on page 7 undefined on inpu
-t line 24.
-
 The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/te
 nsor_decomposition_diagrams.jpeg}' has been optimized away. Use '/tikz/external
 /optimize=false' to disable this.
@@ -1754,34 +1687,23 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 19--28
 
 ) (./chapters/Tensor_Networks/matrix_product_states.tex
 
-LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 8 undefined on in
-put line 1.
-
-
-LaTeX Warning: Citation 'cite:practical_introduction_MPS_and_PEPS' on page 8 un
-defined on input line 1.
-
-
-LaTeX Warning: Citation 'cite:tenpy' on page 8 undefined on input line 1.
-
-
 LaTeX Warning: Reference `eq:MPS_open_boundary_conditions_general_definition' o
-n page 10 undefined on input line 15.
+n page 9 undefined on input line 15.
 
 
-LaTeX Warning: Reference `fig:mps_general' on page 10 undefined on input line 1
-5.
+LaTeX Warning: Reference `fig:mps_general' on page 9 undefined on input line 15
+.
 
 The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_basic/
 mps_basic.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to
  disable this.
 
 LaTeX Warning: Reference `eq:MPS_open_boundary_conditions_general_definition' o
-n page 10 undefined on input line 19.
+n page 9 undefined on input line 19.
 
 
 LaTeX Warning: Reference `eq:MPS_open_boundary_conditions_general_definition' o
-n page 10 undefined on input line 19.
+n page 9 undefined on input line 19.
 
 The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_canoni
 cal_form/mps_canonical_form_a.pdf}' has been optimized away. Use '/tikz/externa
@@ -1808,10 +1730,6 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 27--37
  []
 
 
-LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 10 undefined on i
-nput line 40.
-
-
 LaTeX Warning: Reference `fig:mps_canonical_form_general_definition' on page 10
  undefined on input line 40.
 
@@ -1828,15 +1746,15 @@ LaTeX Warning: Reference `fig:mps_right_isometry_condition' on page 10 undefine
 d on input line 40.
 
 
-LaTeX Warning: Reference `eq:computation_of_expectation_value_MPS' on page 11 u
+LaTeX Warning: Reference `eq:computation_of_expectation_value_MPS' on page 10 u
 ndefined on input line 53.
 
 
-LaTeX Warning: Reference `fig:mps_local_expectation_value' on page 11 undefined
+LaTeX Warning: Reference `fig:mps_local_expectation_value' on page 10 undefined
  on input line 53.
 
 
-LaTeX Warning: Reference `fig:mps_local_expectation_value_canonical' on page 11
+LaTeX Warning: Reference `fig:mps_local_expectation_value_canonical' on page 10
  undefined on input line 53.
 
 The command '\includegraphics [scale=1]{figures/tikz/Tensor_Networks/mps_local_
@@ -1851,60 +1769,18 @@ LaTeX Warning: Reference `sec:tensors_and_tensor_networks_isometric_tensor_netw
 orks' on page 11 undefined on input line 66.
 
 
-LaTeX Warning: Reference `fig' on page 12 undefined on input line 70.
+LaTeX Warning: Reference `fig' on page 11 undefined on input line 70.
 
 
-LaTeX Warning: Citation 'cite:area_law_1D_proof' on page 12 undefined on input 
-line 78.
+LaTeX Warning: Reference `' on page 12 undefined on input line 94.
 
 
-LaTeX Warning: Citation 'cite:area_laws_review' on page 12 undefined on input l
-ine 78.
-
-
-LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 13 undefined on i
-nput line 92.
-
-
-LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 13 undefined on i
-nput line 94.
-
-
-LaTeX Warning: Citation 'cite:efficient_simulation_of_1D_quantum_many_body_syst
-ems' on page 13 undefined on input line 94.
-
-
-LaTeX Warning: Citation 'cite:matrix_product_density_operators_simulation_of_fi
-nite_temperature_and_dissipative_systems' on page 13 undefined on input line 94
-.
-
-
-LaTeX Warning: Citation 'cite:time_dependent_variational_principle_for_quantum_
-lattices' on page 13 undefined on input line 94.
-
-
-LaTeX Warning: Citation 'cite:unifying_time_evolution_and_optimization_with_MPS
-' on page 13 undefined on input line 94.
-
-
-LaTeX Warning: Reference `' on page 13 undefined on input line 94.
-
-
-Overfull \hbox (118.5026pt too wide) in paragraph at lines 94--94
-[]\OT1/cmr/m/n/10.95 (-20) ] 
- []
-
-
-LaTeX Warning: Reference `fig:mps_tebd_first_order_overview' on page 14 undefin
+LaTeX Warning: Reference `fig:mps_tebd_first_order_overview' on page 13 undefin
 ed on input line 126.
 
 
-LaTeX Warning: Reference `fig:mps_tebd_first_order_applying_bond_op' on page 14
+LaTeX Warning: Reference `fig:mps_tebd_first_order_applying_bond_op' on page 13
  undefined on input line 127.
-
-
-LaTeX Warning: Citation 'cite:finding_exponential_product_formulas_of_higher_or
-ders' on page 14 undefined on input line 134.
 
 The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/mp
 s_tebd_first_order.jpeg}' has been optimized away. Use '/tikz/external/optimize
@@ -1944,60 +1820,16 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 12--18
  []
 
 
-LaTeX Warning: Citation 'cite:practical_introduction_MPS_and_PEPS' on page 15 u
-ndefined on input line 21.
-
-
-LaTeX Warning: Citation 'cite:criticality_the_area_law_and_the_computational_po
-wer_of_PEPS' on page 15 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'cite:practical_introduction_MPS_and_PEPS' on page 15 u
-ndefined on input line 22.
-
-
-LaTeX Warning: Citation 'cite:CTMRG' on page 15 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'cite:unifying_PEPS_contractions' on page 15 undefined 
-on input line 22.
-
-
-LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
-' on page 16 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'cite:conversion_of_PEPS_into_a_canonical_form' on page
- 16 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'cite:DMRG_approach_to_optimizing_2D_tensor_networks' o
-n page 16 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
-' on page 16 undefined on input line 24.
-
-
-LaTeX Warning: Reference `fig:square_isoTPS' on page 16 undefined on input line
+LaTeX Warning: Reference `fig:square_isoTPS' on page 15 undefined on input line
  24.
 
 
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 16 undefined on input line 24.
-
-
-LaTeX Warning: Reference `fig:mps_local_expectation_value_canonical' on page 16
+LaTeX Warning: Reference `fig:mps_local_expectation_value_canonical' on page 15
  undefined on input line 24.
 
 
-LaTeX Warning: Reference `fig:isoTPS_moving_ortho_center' on page 16 undefined 
+LaTeX Warning: Reference `fig:isoTPS_moving_ortho_center' on page 15 undefined 
 on input line 24.
-
-
-Overfull \hbox (33.43869pt too wide) in paragraph at lines 24--24
-\OT1/cmr/m/n/10.95 (-20) [[]]. 
- []
 
 The command '\includegraphics [width=0.3\textwidth ]{figures/Tensor_Networks/Mo
 ving_ortho_center.jpeg}' has been optimized away. Use '/tikz/external/optimize=
@@ -2032,16 +1864,12 @@ LaTeX Warning: Reference `eq:isoTPS_moving_ortho_surface_general' on page 16 un
 defined on input line 43.
 
 
-LaTeX Warning: Reference `fig:isoTPS_moving_ortho_column' on page 17 undefined 
+LaTeX Warning: Reference `fig:isoTPS_moving_ortho_column' on page 16 undefined 
 on input line 48.
 
 
-LaTeX Warning: Citation 'cite:DMRG_in_the_age_of_MPS' on page 17 undefined on i
-nput line 48.
-
-
 LaTeX Warning: Reference `eq:isoTPS_moving_ortho_surface_auxillary_formulation'
- on page 17 undefined on input line 48.
+ on page 16 undefined on input line 48.
 
 The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/MM
 .jpeg}' has been optimized away. Use '/tikz/external/optimize=false' to disable
@@ -2060,108 +1888,55 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 54--59
  []
 
 
-LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
-' on page 17 undefined on input line 62.
-
-
-LaTeX Warning: Reference `fig:Moses_move' on page 17 undefined on input line 62
+LaTeX Warning: Reference `fig:Moses_move' on page 16 undefined on input line 62
 .
 
 
-LaTeX Warning: Reference `fig:tripartite_decomposition' on page 17 undefined on
+LaTeX Warning: Reference `fig:tripartite_decomposition' on page 16 undefined on
  input line 62.
 
 
-LaTeX Warning: Reference `sec:' on page 17 undefined on input line 62.
+LaTeX Warning: Reference `sec:' on page 16 undefined on input line 62.
 
 
-LaTeX Warning: Reference `fig:tripartite_decomposition' on page 17 undefined on
+LaTeX Warning: Reference `fig:tripartite_decomposition' on page 16 undefined on
  input line 62.
-
-
-LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_string
-_net_liquids' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:computational_complexity_of_isometric_tensor_netw
-ork_states' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:sequential_generation_of_projected_entangled_pair
-_states' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:quantum_circuits_for_2D_isometric_tensor_networks
-' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:topological_quantum_phase_transitions_in_2D_isome
-tric_tensor_networks' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:fermionic_isometric_tensor_network_states' on pag
-e 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:two_dimensional_isometric_tensor_networks_on_infi
-nite_strip' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:three_dimensional_isometric_tensor_networks' on p
-age 18 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_2D_the
-rmal_states' on page 18 undefined on input line 64.
 
 ))
-Overfull \hbox (17.85025pt too wide) in paragraph at lines 64--73
-\OT1/cmr/m/n/10.95 (-20) [[]], 
- []
-
-
-Overfull \hbox (32.58215pt too wide) in paragraph at lines 64--73
-\OT1/cmr/m/n/10.95 (-20) [[]] 
- []
-
 chapter 3.
 (./chapters/disoTPS/disoTPS.tex
 
 LaTeX Warning: Reference `sec:tensors_and_tensor_networks_isometric_tensor_prod
-uct_states_in_2D' on page 21 undefined on input line 1.
+uct_states_in_2D' on page 19 undefined on input line 1.
 
 (./chapters/disoTPS/network_structure.tex
 The command '\includegraphics [width=0.6\textwidth ]{figures/Tensor_Networks/di
 soTPS.jpeg}' has been optimized away. Use '/tikz/external/optimize=false' to di
 sable this.
 
-LaTeX Warning: Reference `fig:disoTPS_structure' on page 21 undefined on input 
+LaTeX Warning: Reference `fig:disoTPS_structure' on page 19 undefined on input 
 line 7.
 
 
-LaTeX Warning: Reference `fig:disoTPS_structure' on page 21 undefined on input 
+LaTeX Warning: Reference `fig:disoTPS_structure' on page 19 undefined on input 
 line 7.
 
 
-LaTeX Warning: Reference `sec:disoTPS_yang_baxter_move' on page 22 undefined on
+LaTeX Warning: Reference `sec:disoTPS_yang_baxter_move' on page 20 undefined on
  input line 9.
 
 The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/di
 soTPS_onesite_expectation_value.jpeg}' has been optimized away. Use '/tikz/exte
 rnal/optimize=false' to disable this.
 
-LaTeX Warning: Reference `fig:disoTPS_onesite_expectation_value' on page 22 und
+LaTeX Warning: Reference `fig:disoTPS_onesite_expectation_value' on page 20 und
 efined on input line 16.
 
 The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/di
 soTPS_twosite_expectation_value.jpeg}' has been optimized away. Use '/tikz/exte
 rnal/optimize=false' to disable this.
 
-LaTeX Warning: Reference `fig:disoTPS_twosite_expectation_value' on page 22 und
+LaTeX Warning: Reference `fig:disoTPS_twosite_expectation_value' on page 20 und
 efined on input line 23.
 
 ) (./chapters/disoTPS/YB_move.tex
@@ -2169,63 +1944,63 @@ The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/di
 soTPS_moving_ortho_surface.jpeg}' has been optimized away. Use '/tikz/external/
 optimize=false' to disable this.
 
-LaTeX Warning: Reference `fig:disoTPS_moving_ortho_surface' on page 23 undefine
+LaTeX Warning: Reference `fig:disoTPS_moving_ortho_surface' on page 21 undefine
 d on input line 8.
 
 
-LaTeX Warning: Reference `fig:disoTPS_YB_move_closeup' on page 23 undefined on 
+LaTeX Warning: Reference `fig:disoTPS_YB_move_closeup' on page 21 undefined on 
 input line 8.
 
 
-LaTeX Warning: Reference `eq:disoTPS_YB_move_constraints' on page 23 undefined 
+LaTeX Warning: Reference `eq:disoTPS_YB_move_constraints' on page 21 undefined 
 on input line 32.
 
 
-LaTeX Warning: Reference `fig:YB_move_iterate_polar_overlap' on page 23 undefin
+LaTeX Warning: Reference `fig:YB_move_iterate_polar_overlap' on page 21 undefin
 ed on input line 32.
 
 The command '\includegraphics [width=0.9\textwidth ]{figures/Tensor_Networks/YB
 _move_closeup.jpeg}' has been optimized away. Use '/tikz/external/optimize=fals
 e' to disable this.
 
-LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 24 
+LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 22 
 undefined on input line 39.
 
 
-LaTeX Warning: Reference `sec:YB_move_svd_disentangle' on page 24 undefined on 
+LaTeX Warning: Reference `sec:YB_move_svd_disentangle' on page 22 undefined on 
 input line 39.
 
 
-LaTeX Warning: Reference `sec:YB_move_comparison' on page 24 undefined on input
+LaTeX Warning: Reference `sec:YB_move_comparison' on page 22 undefined on input
  line 39.
 
 (./chapters/disoTPS/YB_move_iterative.tex
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-4 undefined on input line 1.
+2 undefined on input line 1.
 
 
-LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 22 undefined on in
 put line 1.
 
 
-LaTeX Warning: Reference `sec:orthogonal_procrustes_problem' on page 24 undefin
+LaTeX Warning: Reference `sec:orthogonal_procrustes_problem' on page 22 undefin
 ed on input line 5.
 
 
-LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 22 undefined on in
 put line 5.
 
 
-LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 22 undefined on in
 put line 7.
 
 
-LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 24 undefined on in
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 22 undefined on in
 put line 8.
 
 
-LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 25 undefined on in
+LaTeX Warning: Reference `fig:YB_move_iterate_polar' on page 23 undefined on in
 put line 9.
 
 The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/YB_move_it
@@ -2262,106 +2037,63 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 18--31
 
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-5 undefined on input line 31.
+3 undefined on input line 31.
 
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-5 undefined on input line 31.
+3 undefined on input line 31.
 
 ) (./chapters/disoTPS/YB_move_svd_disentangle.tex
 
-LaTeX Warning: Reference `eq:disoTPS_YB_move_standard' on page 25 undefined on 
+LaTeX Warning: Reference `eq:disoTPS_YB_move_standard' on page 23 undefined on 
 input line 1.
 
 
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 25 undefined on input line 1.
-
-
-LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 23 undefined on input
  line 1.
 
 
-Overfull \hbox (33.43869pt too wide) in paragraph at lines 1--2
-\OT1/cmr/m/n/10.95 (-20) [[]]. 
- []
-
-
-LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 23 undefined on input
  line 7.
 
 
-LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 23 undefined on input
  line 8.
 
 
-LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 25 undefined on input
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 23 undefined on input
  line 8.
 
 
-LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 26 undefined on input
+LaTeX Warning: Reference `fig:yb_move_svd_disent' on page 24 undefined on input
  line 13.
 
 The command '\includegraphics [width=0.8\textwidth ]{figures/Tensor_Networks/yb
 _move_svd_disent.jpeg}' has been optimized away. Use '/tikz/external/optimize=f
 alse' to disable this.
 
-LaTeX Warning: Reference `fig:disentangling_theta_definition' on page 26 undefi
+LaTeX Warning: Reference `fig:disentangling_theta_definition' on page 24 undefi
 ned on input line 23.
 
 
-LaTeX Warning: Reference `fig:disentangling_rho_definition' on page 27 undefine
+LaTeX Warning: Reference `fig:disentangling_rho_definition' on page 25 undefine
 d on input line 33.
 
 
-LaTeX Warning: Reference `eq:renyi_entropy' on page 27 undefined on input line 
+LaTeX Warning: Reference `eq:renyi_entropy' on page 25 undefined on input line 
 33.
 
 
-LaTeX Warning: Citation 'cite:mps_represent_ground_states_faithfully' on page 2
-7 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
-' on page 27 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 27 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'cite:finding_purifications_with_minimal_entanglement' 
-on page 27 undefined on input line 33.
-
-
-Overfull \hbox (28.07927pt too wide) in paragraph at lines 32--34
-[]\OT1/cmr/m/n/10.95 (-20) , 
- []
-
-
-LaTeX Warning: Reference `fig:disentangling_evenbly_vidal_algorithm' on page 27
+LaTeX Warning: Reference `fig:disentangling_evenbly_vidal_algorithm' on page 25
  undefined on input line 38.
 
 
-LaTeX Warning: Citation 'cite:finding_purifications_with_minimal_entanglement' 
-on page 27 undefined on input line 38.
-
-
-LaTeX Warning: Reference `fig:disentangling_evenbly_vidal_algorithm' on page 27
+LaTeX Warning: Reference `fig:disentangling_evenbly_vidal_algorithm' on page 25
  undefined on input line 42.
 
 
-LaTeX Warning: Reference `sec:evenbly_vidal_algorithm' on page 27 undefined on 
+LaTeX Warning: Reference `sec:evenbly_vidal_algorithm' on page 25 undefined on 
 input line 42.
-
-
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 27 undefined on input line 42.
-
-
-Overfull \hbox (33.43869pt too wide) in paragraph at lines 41--42
-\OT1/cmr/m/n/10.95 (-20) [[]].  
- []
 
 The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
 ing_theta_definition.jpeg}' has been optimized away. Use '/tikz/external/optimi
@@ -2373,93 +2105,54 @@ The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
 ing_evenbly_vidal_algorithm.jpeg}' has been optimized away. Use '/tikz/external
 /optimize=false' to disable this.
 
-LaTeX Warning: Reference `' on page 28 undefined on input line 58.
+LaTeX Warning: Reference `' on page 25 undefined on input line 58.
 
 
-LaTeX Warning: Reference `' on page 28 undefined on input line 58.
+LaTeX Warning: Reference `' on page 25 undefined on input line 58.
 
 
-LaTeX Warning: Citation 'cite:isometric_tensor_network_states_in_two_dimensions
-' on page 28 undefined on input line 61.
-
-
-LaTeX Warning: Citation 'cite:efficient_simulation_of_dynamics_in_two_dimension
-al_quantum_spin_systems' on page 28 undefined on input line 61.
-
-
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 28 unde
-fined on input line 61.
-
-
-LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
-' on page 28 undefined on input line 61.
-
-
-LaTeX Warning: Citation 'cite:riemannian_geometry_automatic_differentiation_qua
-ntum_physics' on page 28 undefined on input line 61.
-
-
-LaTeX Warning: Citation 'cite:pymanopt' on page 28 undefined on input line 61.
-
-
-Overfull \hbox (29.60132pt too wide) in paragraph at lines 54--61
-[]\OT1/cmr/m/n/10.95 (-20) ] 
- []
-
-
-LaTeX Warning: Reference `fig:disentangling_riemannian_optimization' on page 28
+LaTeX Warning: Reference `fig:disentangling_riemannian_optimization' on page 26
  undefined on input line 62.
 
 
-LaTeX Warning: Citation 'cite:riemannian_geometry_automatic_differentiation_qua
-ntum_physics' on page 28 undefined on input line 62.
-
-
-LaTeX Warning: Citation 'cite:pymanopt' on page 28 undefined on input line 62.
-
-
-LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 29
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 27
  undefined on input line 71.
 
 
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 29 unde
-fined on input line 72.
+LaTeX Warning: Reference `' on page 27 undefined on input line 72.
 
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 72.
+LaTeX Warning: Reference `' on page 27 undefined on input line 73.
 
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 73.
-
-
-LaTeX Warning: Reference `' on page 29 undefined on input line 73.
+LaTeX Warning: Reference `' on page 27 undefined on input line 73.
 
 
 LaTeX Warning: Reference `eq:YB_move_disent_cost_function_truncation_error' on 
-page 29 undefined on input line 74.
+page 27 undefined on input line 74.
 
 
-LaTeX Warning: Reference `eq:re_entropy' on page 29 undefined on input line 74.
+LaTeX Warning: Reference `eq:re_entropy' on page 27 undefined on input line 74.
 
 
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 74.
+LaTeX Warning: Reference `' on page 27 undefined on input line 74.
 
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 74.
+LaTeX Warning: Reference `' on page 27 undefined on input line 74.
 
 The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/approximat
 e_qr_decomposition.jpeg}' has been optimized away. Use '/tikz/external/optimize
 =false' to disable this.
 
-LaTeX Warning: Reference `' on page 30 undefined on input line 82.
+LaTeX Warning: Reference `' on page 27 undefined on input line 82.
 
 
-LaTeX Warning: Reference `fig:approximate_qr_decomposition' on page 30 undefine
+LaTeX Warning: Reference `fig:approximate_qr_decomposition' on page 27 undefine
 d on input line 82.
 
 
-LaTeX Warning: Reference `fig:approximate_qr_decomposition' on page 30 undefine
+LaTeX Warning: Reference `fig:approximate_qr_decomposition' on page 27 undefine
 d on input line 82.
 
 The command '\includegraphics [width=0.8\textwidth ]{figures/disoTPS/disentangl
@@ -2471,69 +2164,69 @@ isable this.
 ) (./figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
 
-Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
- [][] 
+Overfull \hbox (6.85074pt too wide) in paragraph at lines 25--25
+[][]\OT1/cmr/m/n/9 (-20) (a)[][][]|[][]| 
  []
 
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
- [] 
+Overfull \hbox (7.35434pt too wide) in paragraph at lines 49--49
+[][]\OT1/cmr/m/n/9 (-20) (b)[][][]|[][]| 
  []
 
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
- [] 
+Overfull \hbox (6.34714pt too wide) in paragraph at lines 73--73
+[][]\OT1/cmr/m/n/9 (-20) (c)[][][]|[][]| 
  []
 
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-Overfull \hbox (49.69618pt too wide) in paragraph at lines 25--98
- [] 
+Overfull \hbox (7.35434pt too wide) in paragraph at lines 97--97
+[][]\OT1/cmr/m/n/9 (-20) (d)[][][]|[][]| 
  []
 
 )
 
-LaTeX Warning: Reference `' on page 30 undefined on input line 93.
+LaTeX Warning: Reference `' on page 28 undefined on input line 93.
 
 
 LaTeX Warning: Reference `fig:disoTPS_disentangling_evenbly_vidal_renyi_2' on p
-age 31 undefined on input line 94.
+age 28 undefined on input line 94.
 
 
-LaTeX Warning: Reference `' on page 31 undefined on input line 94.
+LaTeX Warning: Reference `' on page 28 undefined on input line 94.
 
 
-LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_renyi_0.5' on page 3
-1 undefined on input line 95.
+LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_renyi_0.5' on page 2
+9 undefined on input line 95.
 
 
 LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_truncation_error' on
- page 31 undefined on input line 95.
+ page 29 undefined on input line 95.
 
 
 LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime' 
-on page 31 undefined on input line 96.
+on page 29 undefined on input line 96.
 
 
 LaTeX Warning: Reference `fig:disoTPS_disentangling_cg_trm_truncation_error_wal
-ltime' on page 31 undefined on input line 96.
+ltime' on page 29 undefined on input line 96.
 
 )) (./chapters/disoTPS/TEBD.tex
 
-LaTeX Warning: Reference `' on page 31 undefined on input line 1.
+LaTeX Warning: Reference `' on page 29 undefined on input line 1.
 
 
-LaTeX Warning: Reference `sec:local_TEBD_updates' on page 31 undefined on input
+LaTeX Warning: Reference `sec:local_TEBD_updates' on page 29 undefined on input
  line 1.
 
 
-LaTeX Warning: Reference `sec:global_TEBD_updates' on page 31 undefined on inpu
+LaTeX Warning: Reference `sec:global_TEBD_updates' on page 29 undefined on inpu
 t line 1.
 
 (./chapters/disoTPS/TEBD_local_update.tex
@@ -2554,35 +2247,31 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--11
  []
 
 
-LaTeX Warning: Reference `eq:isoDTPS_TEBD_local_update_error' on page 32 undefi
+LaTeX Warning: Reference `eq:isoDTPS_TEBD_local_update_error' on page 29 undefi
 ned on input line 11.
 
 
-LaTeX Warning: Reference `eq:isoDTPS_TEBD_local_update_error' on page 32 undefi
+LaTeX Warning: Reference `eq:isoDTPS_TEBD_local_update_error' on page 29 undefi
 ned on input line 11.
 
 
-LaTeX Warning: Reference `fig:disoTPS_TEBD_five_tensor_environment' on page 32 
+LaTeX Warning: Reference `fig:disoTPS_TEBD_five_tensor_environment' on page 29 
 undefined on input line 14.
 
 
-LaTeX Warning: Reference `fig:disoTPS_TEBD_contraction_definition' on page 32 u
+LaTeX Warning: Reference `fig:disoTPS_TEBD_contraction_definition' on page 30 u
 ndefined on input line 19.
 
 
-LaTeX Warning: Citation 'cite:fast_time_evolution_of_mps_using_qr' on page 32 u
-ndefined on input line 19.
-
-
-LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 32 
+LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 30 
 undefined on input line 19.
 
 
-LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 32
+LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 30
  undefined on input line 19.
 
 
-LaTeX Warning: Reference `fig:disoTPS_TEBD_local_update_detailed' on page 32 un
+LaTeX Warning: Reference `fig:disoTPS_TEBD_local_update_detailed' on page 30 un
 defined on input line 19.
 
 The command '\includegraphics [width=0.6\textwidth ]{figures/disoTPS/disoTPS_TE
@@ -2643,25 +2332,25 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 6--11
  []
 
 
-LaTeX Warning: Reference `sec:' on page 33 undefined on input line 15.
+LaTeX Warning: Reference `sec:' on page 31 undefined on input line 15.
 
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD1_splitting' on pa
-ge 33 undefined on input line 15.
+ge 31 undefined on input line 15.
 
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD1_splitting' on pa
-ge 34 undefined on input line 23.
+ge 31 undefined on input line 23.
 
 
-LaTeX Warning: Reference `' on page 34 undefined on input line 24.
+LaTeX Warning: Reference `' on page 31 undefined on input line 24.
 
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_applying_TEBD1' on pag
-e 34 undefined on input line 34.
+e 31 undefined on input line 34.
 
 
-LaTeX Warning: Reference `sec:disoTPS_TEBD_local_updates' on page 34 undefined 
+LaTeX Warning: Reference `sec:disoTPS_TEBD_local_updates' on page 31 undefined 
 on input line 34.
 
 The command '\includegraphics [width=1.0\textwidth ]{figures/disoTPS/disoTPS_TE
@@ -2682,65 +2371,53 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 40--45
 
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD2_chain' on page 3
-5 undefined on input line 63.
+2 undefined on input line 63.
 
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_applying_TEBD2' on pag
-e 35 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'cite:finding_exponential_product_formulas_of_higher_or
-ders' on page 35 undefined on input line 64.
+e 33 undefined on input line 64.
 
 )))
 chapter 4.
 (./chapters/Toric_Code/Toric_Code.tex (./chapters/Toric_Code/toric_code_model.t
 ex
 
-LaTeX Warning: Citation 'cite:fault_tolerant_quantum_computation_by_anyons' on 
-page 37 undefined on input line 1.
-
-
 LaTeX Warning: Reference `fig:toric_code_star_and_plaquette_operators' on page 
-37 undefined on input line 11.
+35 undefined on input line 11.
 
 
-LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 36 undefi
 ned on input line 26.
 
 
-LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 36 undefi
 ned on input line 26.
 
 
-LaTeX Warning: Reference `eq:toric_code_hamiltonian' on page 38 undefined on in
+LaTeX Warning: Reference `eq:toric_code_hamiltonian' on page 36 undefined on in
 put line 27.
 
 
-LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 36 undefi
 ned on input line 27.
-
-
-LaTeX Warning: Citation 'cite:fault_tolerant_quantum_computation_by_anyons' on 
-page 38 undefined on input line 33.
 
 The command '\includegraphics [width=0.6\textwidth ]{figures/Toric_Code/toric_c
 ode_star_and_plaquette_operator.jpeg}' has been optimized away. Use '/tikz/exte
 rnal/optimize=false' to disable this.
 
-LaTeX Warning: Reference `eq:star_operator' on page 38 undefined on input line 
+LaTeX Warning: Reference `eq:star_operator' on page 36 undefined on input line 
 37.
 
 
-LaTeX Warning: Reference `eq:plaquette_operator' on page 38 undefined on input 
+LaTeX Warning: Reference `eq:plaquette_operator' on page 36 undefined on input 
 line 37.
 
 
-LaTeX Warning: Reference `eq:star_operator' on page 38 undefined on input line 
+LaTeX Warning: Reference `eq:star_operator' on page 36 undefined on input line 
 37.
 
 
-LaTeX Warning: Reference `eq:plaquette_operator' on page 38 undefined on input 
+LaTeX Warning: Reference `eq:plaquette_operator' on page 36 undefined on input 
 line 37.
 
 ) (./chapters/Toric_Code/representing_toric_code_gs_with_disoTPS.tex
@@ -2793,65 +2470,104 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 24--33
  []
 
 
-LaTeX Warning: Reference `fig:toric_code_PEPS_representation' on page 38 undefi
+LaTeX Warning: Reference `fig:toric_code_PEPS_representation' on page 37 undefi
 ned on input line 33.
 
 
-LaTeX Warning: Reference `fig:toric_code_PEPS_representation' on page 38 undefi
+LaTeX Warning: Reference `fig:toric_code_PEPS_representation' on page 37 undefi
 ned on input line 33.
 
 
-LaTeX Warning: Citation 'cite:models_for_gapped_boundaries_and_domain_walls' on
- page 38 undefined on input line 38.
-
-
-LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_string
-_net_liquids' on page 38 undefined on input line 38.
-
-
-LaTeX Warning: Reference `fig:toric_code_doubling_dof' on page 38 undefined on 
+LaTeX Warning: Reference `fig:toric_code_doubling_dof' on page 37 undefined on 
 input line 38.
 
 
 LaTeX Warning: Reference `fig:toric_code_PEPS_representation_tensor_definitions
-' on page 40 undefined on input line 45.
+' on page 37 undefined on input line 45.
 
 
-LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 40 undefi
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
 ned on input line 59.
 
 
 LaTeX Warning: Reference `fig:toric_code_disoTPS_representation_ortho_surface_t
-ensor' on page 40 undefined on input line 60.
+ensor' on page 38 undefined on input line 60.
 
 
-LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 40 undefi
+LaTeX Warning: Reference `eq:toric_code_A_operator_condition' on page 38 undefi
 ned on input line 60.
 
 
 LaTeX Warning: Reference `fig:toric_code_disoTPS_representation_tensor_definiti
-ons' on page 40 undefined on input line 61.
+ons' on page 38 undefined on input line 61.
 
 
 LaTeX Warning: Reference `fig:toric_code_disoTPS_representation_ortho_surface_t
-ensor' on page 40 undefined on input line 65.
+ensor' on page 38 undefined on input line 65.
 
 
-LaTeX Warning: Citation 'cite:isometric_tensor_network_representation_of_string
-_net_liquids' on page 40 undefined on input line 66.
-
-
-LaTeX Warning: Reference `fig:toric_code_disoTPS_representation' on page 40 und
+LaTeX Warning: Reference `fig:toric_code_disoTPS_representation' on page 38 und
 efined on input line 66.
 
 
-LaTeX Warning: Reference `' on page 40 undefined on input line 66.
+LaTeX Warning: Reference `' on page 38 undefined on input line 66.
 
 ))
 chapter 5.
-(./chapters/TFI/TFI.tex (./chapters/TFI/TFI_model.tex) (./chapters/TFI/ground_s
-tate_search.tex (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_differ
-ent_methods.tex
+(./chapters/TFI/TFI.tex (./chapters/TFI/TFI_model.tex
+
+LaTeX Warning: Reference `sec:TFI_ground_state_search' on page 39 undefined on 
+input line 7.
+
+
+LaTeX Warning: Reference `sec:TFI_time_evolution' on page 39 undefined on input
+ line 7.
+
+
+LaTeX Warning: Reference `fig:tenpy_snaking' on page 40 undefined on input line
+ 8.
+
+The command '\includegraphics [width=0.4\textwidth ]{figures/TFI/tenpy_snaking.
+jpeg}' has been optimized away. Use '/tikz/external/optimize=false' to disable 
+this.
+) (./chapters/TFI/ground_state_search.tex
+
+LaTeX Warning: Reference `eq:TFI_Hamiltonian' on page 40 undefined on input lin
+e 1.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 22.
+
+
+LaTeX Warning: Reference `sec:disoTPS_yang_baxter_move' on page 41 undefined on
+ input line 22.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+
+LaTeX Warning: Reference `sec:YB_move_iterative_local_optimization' on page 41 
+undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 23.
+
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_methods.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
@@ -2860,18 +2576,18 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-\openout6 = `thesis-figure9.dpth'.
+\openout7 = `thesis-figure9.dpth'.
 
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
 quare_svd_disent_trunc_error_cg.txt}
-\tikzexternal@dep@file=\write7
-\openout7 = `thesis-figure9.dep'.
+\tikzexternal@dep@file=\write8
+\openout8 = `thesis-figure9.dep'.
 
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
 quare_svd_disent_trunc_error_cg.txt}
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
 quare_svd_disent_trunc_error_cg.txt}
-[43
+[42
 
 
 \openout3 = `thesis-figure9.upa'.
@@ -2891,33 +2607,63 @@ A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.te
-x
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-) (./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
+)
 
-Overfull \hbox (49.69618pt too wide) in paragraph at lines 108--109
- [][] 
- []
+LaTeX Warning: Reference `' on page 42 undefined on input line 26.
 
-)) (./chapters/TFI/time_evolution.tex))
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+)
+
+LaTeX Warning: Reference `sec:disoTPS_TEBD' on page 42 undefined on input line 
+28.
+
+
+LaTeX Warning: Reference `' on page 42 undefined on input line 28.
+
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+)
+
+LaTeX Warning: Reference `' on page 42 undefined on input line 30.
+
+
+LaTeX Warning: Reference `' on page 42 undefined on input line 30.
+
+(./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+) (./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+)
+
+LaTeX Warning: Reference `' on page 43 undefined on input line 33.
+
+
+LaTeX Warning: Reference `' on page 43 undefined on input line 33.
+
+
+LaTeX Warning: Reference `' on page 43 undefined on input line 33.
+
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+)) (./chapters/TFI/time_evolution.tex
+
+LaTeX Warning: Reference `' on page 43 undefined on input line 1.
+
+))
 chapter A.
 
 (./chapters/optimization_problems_on_isometric_tensor_networks/optimization_pro
@@ -2994,56 +2740,13 @@ LaTeX Warning: Reference `app:riemannian_optimization_of_isometries' on page 47
  undefined on input line 1.
 
 
-LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
-' on page 48 undefined on input line 2.
-
-
 LaTeX Warning: Reference `' on page 48 undefined on input line 2.
 
 ))
 chapter B.
-(./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
-fined on input line 1.
-
-
-LaTeX Warning: Citation 'cite:riemannian_geometry_automatic_differentiation_qua
-ntum_physics' on page 49 undefined on input line 1.
-
-
-LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
-' on page 49 undefined on input line 1.
-
-
-LaTeX Warning: Citation 'cite:pymanopt' on page 49 undefined on input line 1.
-
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex
-
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
-fined on input line 6.
-
-
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
-fined on input line 7.
-
-
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
-fined on input line 7.
-
-
-LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
-' on page 49 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 49 unde
-fined on input line 12.
-
-
-LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
-' on page 49 undefined on input line 12.
-
-) (./chapters/Riemannian_Optimization/basic_definitions.tex
+(./chapters/Riemannian_Optimization/Riemannian_Optimization.tex (./chapters/Rie
+mannian_Optimization/Stiefel_manifold.tex) (./chapters/Riemannian_Optimization/
+basic_definitions.tex
 
 LaTeX Warning: Reference `eq:Optimization_cost_function_definition' on page 50 
 undefined on input line 1.
@@ -3057,16 +2760,8 @@ LaTeX Warning: Reference `eq:Optimization_partial_derivative' on page 50 undefi
 ned on input line 15.
 
 
-LaTeX Warning: Citation 'cite:optimization_on_matrix_manifolds' on page 50 unde
-fined on input line 15.
-
-
-LaTeX Warning: Citation 'cite:riemannian_optimization_isometric_tensor_networks
-' on page 50 undefined on input line 15.
-
-
 LaTeX Warning: Reference `eq:Stiefel_manifold_project_to_tangent_space' on page
- 51 undefined on input line 20.
+ 50 undefined on input line 20.
 
 ))
 chapter C.
@@ -3122,20 +2817,20 @@ Package logreq Info: Writing requests to 'thesis-figure9.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56088 strings out of 478287
- 1303383 string characters out of 5849290
- 2319943 words of memory out of 5000000
- 73165 multiletter control sequences out of 15000+600000
- 494937 words of font info for 207 fonts, out of 8000000 for 9000
+ 50607 strings out of 478287
+ 1116355 string characters out of 5849289
+ 2055408 words of memory out of 5000000
+ 67685 multiletter control sequences out of 15000+600000
+ 494982 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 126i,23n,148p,10747b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 144i,23n,148p,10747b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on thesis-figure9.pdf (1 page, 45104 bytes).
+Output written on thesis-figure9.pdf (1 page, 45203 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  51213 words of extra memory for PDF output out of 51595 (max. 10000000)

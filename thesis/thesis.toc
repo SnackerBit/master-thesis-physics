@@ -20,19 +20,19 @@
 \contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{48}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{53}{chapter.5}%
 \contentsline {section}{\numberline {5.1}The Transverse Field Ising Model}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ground State Search}{53}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{53}{section.5.3}%
+\contentsline {section}{\numberline {5.2}Ground State Search}{54}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{60}{section.5.3}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{59}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{60}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{61}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{61}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{63}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{63}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{64}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Conjugate Gradients}{65}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Trust Region Method}{65}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{67}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{69}{appendix.D}%
-\contentsline {chapter}{\nonumberline Bibliography}{73}{chapter*.109}%
+\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{63}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{64}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{65}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{65}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{67}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{67}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{68}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Conjugate Gradients}{69}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Trust Region Method}{69}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{71}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{73}{appendix.D}%
+\contentsline {chapter}{\nonumberline Bibliography}{77}{chapter*.113}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

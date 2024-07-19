@@ -1,10 +1,3 @@
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
-thesis-figure25.pdf: figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt
+thesis-figure25.pdf: figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt
+thesis-figure25.pdf: figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt
+thesis-figure25.pdf: figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt

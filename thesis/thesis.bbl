@@ -1556,6 +1556,182 @@
       \field{pages}{351\bibrangedash 373}
       \range{pages}{23}
     \endentry
+    \entry{cite:from_d_dimensional_quantum_to_dp1_dimensional_classical}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5ef94f8733b4abb1d99fbc282b63e1fb}{%
+           family={Hsieh},
+           familyi={H\bibinitperiod},
+           given={Timothy\bibnamedelima H},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
+      \strng{fullhash}{5ef94f8733b4abb1d99fbc282b63e1fb}
+      \strng{bibnamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
+      \strng{authorbibnamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
+      \strng{authornamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
+      \strng{authorfullhash}{5ef94f8733b4abb1d99fbc282b63e1fb}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Student Review}
+      \field{title}{From d-dimensional Quantum to d+ 1-dimensional Classical Systems}
+      \field{year}{2016}
+    \endentry
+    \entry{cite:critical_behavior_of_the_two_dim_ising_model_in_transverse_field}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c2b519db8052ec0f6318ee1ccb16bfed}{%
+           family={Jongh},
+           familyi={J\bibinitperiod},
+           given={MSL\bibnamedelimb du\bibnamedelima Croo},
+           giveni={M\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=93eb0707ac60dccca73ec49b9b0ae0a1}{%
+           family={Van\bibnamedelima Leeuwen},
+           familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={JMJ},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{78e77e25e44790454e4c55d54a11c970}
+      \strng{fullhash}{78e77e25e44790454e4c55d54a11c970}
+      \strng{bibnamehash}{78e77e25e44790454e4c55d54a11c970}
+      \strng{authorbibnamehash}{78e77e25e44790454e4c55d54a11c970}
+      \strng{authornamehash}{78e77e25e44790454e4c55d54a11c970}
+      \strng{authorfullhash}{78e77e25e44790454e4c55d54a11c970}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{14}
+      \field{title}{Critical behavior of the two-dimensional Ising model in a transverse field: A density-matrix renormalization calculation}
+      \field{volume}{57}
+      \field{year}{1998}
+      \field{pages}{8494}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:quantum_ising_phases_and_transitions_in_transverse_ising_models}{book}{}
+      \name{author}{3}{}{%
+        {{hash=d84b4713e7bd46efe1787b816fbedd7e}{%
+           family={Chakrabarti},
+           familyi={C\bibinitperiod},
+           given={Bikas\bibnamedelima K},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=71c0bfe52bb04ccb3b8f7649cbf8cdb4}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=59776ade6ee05d5367db88e9b7ce2d87}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Parongama},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{de6adaba318879a7243bf195f0a51ae6}
+      \strng{fullhash}{de6adaba318879a7243bf195f0a51ae6}
+      \strng{bibnamehash}{de6adaba318879a7243bf195f0a51ae6}
+      \strng{authorbibnamehash}{de6adaba318879a7243bf195f0a51ae6}
+      \strng{authornamehash}{de6adaba318879a7243bf195f0a51ae6}
+      \strng{authorfullhash}{de6adaba318879a7243bf195f0a51ae6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Ising phases and transitions in transverse Ising models}
+      \field{volume}{41}
+      \field{year}{2008}
+    \endentry
+    \entry{cite:cluster_monte_carlo_simulation_of_TFI}{article}{}
+      \name{author}{2}{}{%
+        {{hash=42139f40122ed69df0fd3e02f7f0fb70}{%
+           family={Blöte},
+           familyi={B\bibinitperiod},
+           given={Henk\bibnamedelima WJ},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bcb77cf91e978736961318584367c928}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Youjin},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{81a576f1972513858145eea9142b4042}
+      \strng{fullhash}{81a576f1972513858145eea9142b4042}
+      \strng{bibnamehash}{81a576f1972513858145eea9142b4042}
+      \strng{authorbibnamehash}{81a576f1972513858145eea9142b4042}
+      \strng{authornamehash}{81a576f1972513858145eea9142b4042}
+      \strng{authorfullhash}{81a576f1972513858145eea9142b4042}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{6}
+      \field{title}{Cluster Monte Carlo simulation of the transverse Ising model}
+      \field{volume}{66}
+      \field{year}{2002}
+      \field{pages}{066110}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:time_evolving_a_mps_with_long_range_interactions}{article}{}
+      \name{author}{5}{}{%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=5a4339ccb555e2e8973b86d442b196ae}{%
+           family={Mong},
+           familyi={M\bibinitperiod},
+           given={Roger\bibnamedelima SK},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8a62b5ddbf762fc3a94fed54a0f9ae7f}{%
+           family={Karrasch},
+           familyi={K\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c5b71748031c9aa6b5d17116c88bf263}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Joel\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{2a4192a5c6d2f11e110a8108e049c921}
+      \strng{fullhash}{62464ad8f47b62ddeef03f49598b9914}
+      \strng{bibnamehash}{2a4192a5c6d2f11e110a8108e049c921}
+      \strng{authorbibnamehash}{2a4192a5c6d2f11e110a8108e049c921}
+      \strng{authornamehash}{2a4192a5c6d2f11e110a8108e049c921}
+      \strng{authorfullhash}{62464ad8f47b62ddeef03f49598b9914}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{16}
+      \field{title}{Time-evolving a matrix product state with long-ranged interactions}
+      \field{volume}{91}
+      \field{year}{2015}
+      \field{pages}{165112}
+      \range{pages}{1}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
