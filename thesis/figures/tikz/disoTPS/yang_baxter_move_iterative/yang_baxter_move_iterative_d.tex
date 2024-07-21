@@ -1,0 +1,142 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\smallestDistance{0.6*\defaultDistanceSmall}
+	\def\diagonalDistance{1.0*\smallestDistance}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openVirtualLegMultiplier{1.2}
+	\def\outerOpenVirtualLegMultiplier{0.5}
+	\def\openAuxillaryLegMultiplier{0.5}
+	\def\braketDistance{0.7*\defaultDistanceLarge}
+	\def\alpha{18.4349}
+	\def\operatorHeight{1.5*\smallTensorWidth}
+	\def\ketDiagonalShiftX{0}
+	\def\ketDiagonalShiftY{0}
+	\def\openAuxillaryLegEnlargementX{(2*\smallestDistance-\diagonalDistance)}
+	\def\openAuxillaryLegEnlargementY{(\diagonalDistance*(\openAuxillaryLegEnlargementX/(2*\smallestDistance+\diagonalDistance)))}
+	\def\openOuterDiagonalVirtualLegDistance{(2*\smallestDistance*(1+\outerOpenVirtualLegMultiplier)-\diagonalDistance)}
+	\def\braceOffsetX{5pt}
+	\def\braceOffsetY{5pt}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\envLegDistanceVirtualHorizontal{2/3*(2*\smallestDistance-\smallTensorWidth/2)}
+	\def\envLegDistanceVirtualDiagonal{1.5/3*(2*\smallestDistance-\smallTensorWidth/2)}
+	\def\envLegDistanceAuxillaryX{(2*\smallestDistance+\diagonalDistance)/2}
+	\def\envLegDistanceAuxillaryY{\diagonalDistance/2}
+	\def\svdDistance{\diagonalDistance}
+	\def\svdDistanceAuxX{1.5*\diagonalDistance}
+	\def\svdDistanceAuxY{0}
+	\def\subpictureXshift{3.7cm}
+	\def\subpictureYshift{-2.9cm}
+	\begin{tikzpicture}
+		% First layer
+		\node[tensorPhysicalSmall] (T) at (0, 0) {};	
+		\node[] () at ({sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {-cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$T$};
+		\node[tensorOrthoCenterSmall] (W1) at (-2*\smallestDistance, 0) {};
+		\node[] () at (-2*\smallestDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$W_1$};
+		\node[tensorAuxillarySmall] (W2) at (\diagonalDistance, \diagonalDistance) {};
+		\node[] () at (\diagonalDistance, \diagonalDistance+\smallTensorWidth/2+\defaultTextOffsetLarge) {$W_2$};
+		
+		% Second layer
+		\node[tensorPhysicalSmall] (Tp) at (-\ketDiagonalShiftX, \ketDiagonalShiftY-\braketDistance) {};
+		\node[] () at ({-\ketDiagonalShiftX-sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {\ketDiagonalShiftY-\braketDistance+cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$T^{\prime*}$};	
+		\node[tensorAuxillarySmall] (W1p) at (-\diagonalDistance-\ketDiagonalShiftX, -\diagonalDistance+\ketDiagonalShiftY-\braketDistance) {};
+		\node[] () at (-\diagonalDistance-\ketDiagonalShiftX, -\diagonalDistance+\ketDiagonalShiftY-\braketDistance-\smallTensorWidth/2-\defaultTextOffsetLarge) {$W_1^{\prime*}$};
+		\node[tensorOrthoCenterSmall, fill=white, draw=white] (W2p) at (2*\smallestDistance-\ketDiagonalShiftX, \ketDiagonalShiftY-\braketDistance) {};
+		%\node[] () at (2*\smallestDistance-\ketDiagonalShiftX, \ketDiagonalShiftY-\braketDistance-\smallTensorWidth/2-\defaultTextOffsetLarge) {$W_2^{\prime*}$};
+		
+		\begin{pgfonlayer}{bg}
+			% First layer
+			\draw[auxillaryLegSmall] (W2) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W2);
+			\draw[virtualLegSmall] (T)+(2*\smallestDistance+\smallestDistance*\openVirtualLegMultiplier, 0) -- (T);
+			\draw[virtualLegSmall] (T)+(-\diagonalDistance-\diagonalDistance*\openVirtualLegMultiplier, -\diagonalDistance-\diagonalDistance*\openVirtualLegMultiplier) -- (T);
+			
+			\draw[virtualLegSmall] (W1)+(-\smallestDistance*\openVirtualLegMultiplier, 0) -- (W1);
+			\draw[virtualLegSmall] (W2)+(\diagonalDistance*\openVirtualLegMultiplier, \diagonalDistance*\openVirtualLegMultiplier) -- (W2);
+			
+			% Second layer
+			\draw[auxillaryLegSmall] (W1p) -- (W2p);
+			\draw[virtualLegSmall] (Tp) -- (W1p);
+			\draw[virtualLegSmall] (Tp) -- (W2p);
+			\draw[virtualLegSmall] (Tp)+(-2*\smallestDistance-\smallestDistance*\openVirtualLegMultiplier, 0) -- (Tp);
+			\draw[virtualLegSmall] (Tp)+(\diagonalDistance+\diagonalDistance*\openVirtualLegMultiplier, \diagonalDistance+\diagonalDistance*\openVirtualLegMultiplier) -- (Tp);
+			
+			\draw[virtualLegSmall] (W1p)+(-\diagonalDistance*\openVirtualLegMultiplier, -\diagonalDistance*\openVirtualLegMultiplier) -- (W1p);
+			\draw[auxillaryLegSmall] (W1p)+({(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier-\openAuxillaryLegEnlargementX}, {-\diagonalDistance*\openAuxillaryLegMultiplier-\openAuxillaryLegEnlargementY}) -- (W1p);
+			\draw[virtualLegSmall] (W2p)+(\smallestDistance*\openVirtualLegMultiplier, 0) -- (W2p);
+			\draw[auxillaryLegSmall] (W2p)+({(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier}, \diagonalDistance*\openAuxillaryLegMultiplier) -- (W2p);
+			
+			% Connecting legs
+			\draw[physicalLegSmall] (T)+(-\ketDiagonalShiftX/2, \ketDiagonalShiftY/2-\braketDistance/2) -- (T);
+			\draw[physicalLegSmall] (Tp)+(\ketDiagonalShiftX/2, -\ketDiagonalShiftY/2+\braketDistance/2) -- (Tp);
+			
+			\draw[auxillaryLegSmallWithoutArrows] (W1) -- ++({(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier}, -\diagonalDistance*\openAuxillaryLegMultiplier) -- ({-\diagonalDistance-\ketDiagonalShiftX+(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier-\openAuxillaryLegEnlargementX}, {-\diagonalDistance+\ketDiagonalShiftY-\braketDistance-\diagonalDistance*\openAuxillaryLegMultiplier-\openAuxillaryLegEnlargementY}) -- (W1p);
+			
+			\draw[auxillaryLegSmallWithoutArrows] (W2) -- ++({(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier+\openAuxillaryLegEnlargementX}, {\diagonalDistance*\openAuxillaryLegMultiplier+\openAuxillaryLegEnlargementY}) -- ({2*\smallestDistance-\ketDiagonalShiftX+(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier}, \ketDiagonalShiftY-\braketDistance+\diagonalDistance*\openAuxillaryLegMultiplier) -- (W2p);
+			
+			\draw[virtualLegSmallWithoutArrows] (W1) -- ++(-\smallestDistance*\openVirtualLegMultiplier, 0) -- ++(0, -\braketDistance) -- (Tp);
+			
+			\draw[virtualLegSmallWithoutArrows] (W2) -- ++(\diagonalDistance*\openVirtualLegMultiplier, \diagonalDistance*\openVirtualLegMultiplier) -- ++(0, -\braketDistance) -- (Tp);
+			
+			% First layer foreground
+			\draw[auxillaryLegSmall] (W1)+({(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier}, -\diagonalDistance*\openAuxillaryLegMultiplier) -- (W1);
+			\draw[auxillaryLegSmall] (W2)+({(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier+\openAuxillaryLegEnlargementX}, {\diagonalDistance*\openAuxillaryLegMultiplier++\openAuxillaryLegEnlargementY}) -- (W2);
+			
+			% Connecting legs foreground
+			\draw[virtualLegSmallWithoutArrows] (T) -- ++(2*\smallestDistance+\smallestDistance*\openVirtualLegMultiplier, 0) -- ++(0, -\braketDistance) -- (W2p);
+			\draw[virtualLegSmallWithoutArrows] (T) -- ++(-\diagonalDistance-\diagonalDistance*\openVirtualLegMultiplier, -\diagonalDistance-\diagonalDistance*\openVirtualLegMultiplier) -- ++(0, -\braketDistance) -- (W1p);
+		\end{pgfonlayer}
+		
+		% draw on top of
+		\def\posX{(\diagonalDistance+(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier+\openAuxillaryLegEnlargementX)}
+		\def\posY{(\ketDiagonalShiftY-\braketDistance/2)}
+		
+		\node[] () at ({\posX+\equationDistance/2}, {\posY}) {$=$};
+		
+		\node[tensorPhysicalSmall, fill=white] (E) at ({\posX+\equationDistance+\envLegDistanceAuxillaryX}, {\posY}) {};
+		\node[] () at ({\posX+\equationDistance+\envLegDistanceAuxillaryX}, {\posY-\smallTensorWidth/2-\defaultTextOffsetLarge}) {$E$};
+		\begin{pgfonlayer}{bg}
+			\draw[auxillaryLegSmallWithoutArrows] (E)+({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY}) -- (E);
+			\draw[auxillaryLegSmallWithoutArrows] (E)+({-\envLegDistanceAuxillaryX}, {-\envLegDistanceAuxillaryY}) -- (E);
+			
+			\draw[virtualLegSmallWithoutArrows] (E)+({\envLegDistanceAuxillaryX}, 0) -- (E);
+			\draw[virtualLegSmallWithoutArrows] (E)+({-\envLegDistanceAuxillaryX}, 0) -- (E);
+		\end{pgfonlayer}
+		
+		\begin{scope}[xshift=\subpictureXshift, yshift=\subpictureYshift]
+			\node[] () at ({-\envLegDistanceAuxillaryX-\equationDistance/2}, 0) {$\Rightarrow$};
+			\node[tensorOrthoCenterSmall] (W2) at (0, 0) {};
+			\node[] () at (0, -\smallTensorWidth/2-\defaultTextOffsetLarge) {$W_2^\prime$};
+			\begin{pgfonlayer}{bg}
+				\draw[auxillaryLegSmall] (W2)+({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY}) -- (W2);
+				\draw[auxillaryLegSmall] (W2)+({-\envLegDistanceAuxillaryX}, {-\envLegDistanceAuxillaryY}) -- (W2);
+				\draw[virtualLegSmall] (W2)+({\envLegDistanceAuxillaryX}, 0) -- (W2);
+				\draw[virtualLegSmall] (W2)+({-\envLegDistanceAuxillaryX}, 0) -- (W2);
+			\end{pgfonlayer}
+			\node[] () at ({\envLegDistanceAuxillaryX+\equationDistance/2}, 0) {$=$};
+			\def\smallOffset{3pt}
+			\def\tinyOffset{1.5pt}
+			\def\fracOffset{12pt}
+			\node[tensorPhysicalSmall, fill=white] (E1) at ({2*\envLegDistanceAuxillaryX+\equationDistance}, -\fracOffset-\tinyOffset) {};
+			\node[tensorPhysicalSmall, fill=white] (E2) at ({2*\envLegDistanceAuxillaryX+\equationDistance}, \fracOffset+\tinyOffset) {};
+			\draw[] ({\envLegDistanceAuxillaryX+\equationDistance-2*\smallOffset-\tinyOffset}, 0) -- ({3*\envLegDistanceAuxillaryX+\equationDistance+2*\smallOffset+\tinyOffset}, 0);
+			\draw[] ({\envLegDistanceAuxillaryX+\equationDistance-\smallOffset}, -2*\fracOffset-\tinyOffset) -- ++(0, 2*\fracOffset);
+			\draw[] ({\envLegDistanceAuxillaryX+\equationDistance-\smallOffset-\tinyOffset}, -2*\fracOffset-\tinyOffset) -- ++(0, 2*\fracOffset);
+			\draw[] ({3*\envLegDistanceAuxillaryX+\equationDistance+\smallOffset}, -2*\fracOffset-\tinyOffset) -- ++(0, 2*\fracOffset);
+			\draw[] ({3*\envLegDistanceAuxillaryX+\equationDistance+\smallOffset+\tinyOffset}, -2*\fracOffset-\tinyOffset) -- ++(0, 2*\fracOffset);
+			\begin{pgfonlayer}{bg}
+				\draw[auxillaryLegSmallWithoutArrows] (E1)+({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY}) -- (E1);
+				\draw[auxillaryLegSmallWithoutArrows] (E1)+({-\envLegDistanceAuxillaryX}, {-\envLegDistanceAuxillaryY}) -- (E1);
+				\draw[virtualLegSmallWithoutArrows] (E1)+({\envLegDistanceAuxillaryX}, 0) -- (E1);
+				\draw[virtualLegSmallWithoutArrows] (E1)+({-\envLegDistanceAuxillaryX}, 0) -- (E1);
+				
+				\draw[auxillaryLegSmallWithoutArrows] (E2)+({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY}) -- (E2);
+				\draw[auxillaryLegSmallWithoutArrows] (E2)+({-\envLegDistanceAuxillaryX}, {-\envLegDistanceAuxillaryY}) -- (E2);
+				\draw[virtualLegSmallWithoutArrows] (E2)+({\envLegDistanceAuxillaryX}, 0) -- (E2);
+				\draw[virtualLegSmallWithoutArrows] (E2)+({-\envLegDistanceAuxillaryX}, 0) -- (E2);
+			\end{pgfonlayer}
+		\end{scope}
+		
+	\end{tikzpicture}
+\end{document}

@@ -24,8 +24,25 @@ An important property of the SVD is that it can be used to approximate a matrix 
 with isometries $\tilde{U}\in\mathbb{C}^{n\times\chi}$, $\tilde{V}\in\mathbb{C}^{m\times\chi}$ and real diagonal matrix $\tilde{S}\in\mathbb{C}^{\chi\times\chi}$. It can be shown \cite{cite:eckart_young_theorem} that the truncated SVD minimizes the distance $\lVert A - \tilde{A} \rVert_\text{F}$ between $A$ and $\tilde{A}$ under the constraint $\text{rank}(\tilde{A}) = \chi$. The truncated SVD is frequently used in tensor network algorithms to truncate tensors to a maximum bond dimension $\chi_\text{max}$. \par
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg}
-	\caption{Different tensor decompositions are shown in tensor network diagram notation. The indices are decorated with bond dimensions. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
+	\begin{subfigure}[c]{0.1\textwidth}
+		\caption{}\label{fig:tensor_decomposition_qr}
+	\end{subfigure}%
+	\begin{minipage}[c]{0.6\textwidth}
+		\raisebox{-26pt}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_a.pdf}
+		}
+	\end{minipage}
+	\begin{subfigure}[c]{0.1\textwidth}
+		\caption{}\label{fig:tensor_decomposition_qr}
+	\end{subfigure}%
+	\begin{minipage}[c]{0.6\textwidth}
+		\raisebox{-26pt}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b.pdf}
+		}
+	\end{minipage}
+	\caption{Different tensor decompositions are shown in tensor network diagram notation. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
 	\label{fig:tensor_decomposition_diagrams}
 \end{figure}
 \todo{Discuss error of truncated SVD!}

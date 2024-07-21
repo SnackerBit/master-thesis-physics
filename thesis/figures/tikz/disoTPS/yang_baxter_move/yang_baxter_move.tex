@@ -1,0 +1,65 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openVirtualLegDistance{(\tensorDistance/2)}
+	\def\openAuxillaryLegDistance{(\tensorDistance/2)}
+	\def\equationDistance{\defaultDistanceEquations}
+	\begin{tikzpicture}
+		% ============================================================================
+		% LHS
+		% ============================================================================
+		
+		\node[tensorPhysicalSmall] (T) at (0, 0) {};
+		\node[] () at (\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$T$};
+		\node[tensorOrthoCenterSmall] (W1) at (-0.5*\tensorDistance, -0.5*\tensorDistance) {};
+		\node[] () at (-0.5*\tensorDistance-\smallTensorWidth/2-\defaultTextOffsetLarge, -0.5*\tensorDistance) {$W_1$};
+		\node[tensorAuxillarySmall] (W2) at (-0.5*\tensorDistance, 0.5*\tensorDistance) {};
+		\node[] () at (-0.5*\tensorDistance-\smallTensorWidth/2-\defaultTextOffsetLarge, 0.5*\tensorDistance) {$W_2$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall] (T) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W2);
+			\draw[auxillaryLegSmall] (W1) -- (W2);
+			
+			\draw[virtualLegSmall] (T)+({\openVirtualLegDistance+\tensorDistance/2}, {\openVirtualLegDistance+\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (T)+({\openVirtualLegDistance+\tensorDistance/2}, {-\openVirtualLegDistance-\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (W1)+({-\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (W1);
+			\draw[virtualLegSmall] (W2)+({-\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (W2);
+			\draw[auxillaryLegSmall] (W1)+(0, {-\openAuxillaryLegDistance}) -- (W1);
+			\draw[auxillaryLegSmall] (W2)+(0, {\openAuxillaryLegDistance}) -- (W2);
+			
+			\draw[physicalLegSmall](T)+(0, \physicalLegLength) -- (T);
+		\end{pgfonlayer}
+	
+		% ============================================================================
+		% RHS
+		% ============================================================================
+		
+		\node[] () at ({\openVirtualLegDistance+\tensorDistance/2+\equationDistance/2}, 0) {$\approx$};
+		\def\xOffset{\openVirtualLegDistance+3*\tensorDistance/2+\equationDistance}
+	
+		\node[tensorPhysicalSmall] (T) at ({\xOffset}, 0) {};
+		\node[] () at ({-\smallTensorWidth/2-\defaultTextOffsetLarge+\xOffset}, 0) {$T^\prime$};
+		\node[tensorAuxillarySmall] (W1) at ({0.5*\tensorDistance+\xOffset}, -0.5*\tensorDistance) {};
+		\node[] () at ({0.5*\tensorDistance+\smallTensorWidth/2+\defaultTextOffsetLarge+\xOffset}, -0.5*\tensorDistance) {$W_1^\prime$};
+		\node[tensorOrthoCenterSmall] (W2) at ({0.5*\tensorDistance+\xOffset}, 0.5*\tensorDistance) {};
+		\node[] () at ({0.5*\tensorDistance+\smallTensorWidth/2+\defaultTextOffsetLarge+\xOffset}, 0.5*\tensorDistance) {$W_2^\prime$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall] (T) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W2);
+			\draw[auxillaryLegSmall] (W1) -- (W2);
+			
+			\draw[virtualLegSmall] (T)+({-\openVirtualLegDistance-\tensorDistance/2}, {\openVirtualLegDistance+\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (T)+({-\openVirtualLegDistance-\tensorDistance/2}, {-\openVirtualLegDistance-\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (W1)+({\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (W1);
+			\draw[virtualLegSmall] (W2)+({\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (W2);
+			\draw[auxillaryLegSmall] (W1)+(0, {-\openAuxillaryLegDistance}) -- (W1);
+			\draw[auxillaryLegSmall] (W2)+(0, {\openAuxillaryLegDistance}) -- (W2);
+			
+			\draw[physicalLegSmall](T)+(0, \physicalLegLength) -- (T);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}

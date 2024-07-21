@@ -12,22 +12,24 @@ These three steps are repeated until a termination criterion is met, for example
 \todo{Discuss complexity and initialization details!}
 \begin{figure}
 	\centering
-	\subcaptionbox{\label{fig:YB_move_iterate_polar_overlap}}
-	{%
-		\includegraphics[width=0.6\textwidth]{figures/disoTPS/YB_move_iterate_polar_a.jpeg}
-	}
-	\subcaptionbox{\label{fig:YB_move_iterate_polar_optimize_W2}}
-	{%
-		\includegraphics[width=0.6\textwidth]{figures/disoTPS/YB_move_iterate_polar_b.jpeg}
-	}
-	\subcaptionbox{\label{fig:YB_move_iterate_polar_optimize_W1}}
-	{%
-		\includegraphics[width=0.6\textwidth]{figures/disoTPS/YB_move_iterate_polar_c.jpeg}
-	}
-	\subcaptionbox{\label{fig:YB_move_iterate_polar_optimize_T}}
-	{%
-		\includegraphics[width=0.6\textwidth]{figures/disoTPS/YB_move_iterate_polar_d.jpeg}
-	}
-	\caption{(a) The cost function of the optimization problem \eqref{eq:disoTPS_YB_move_alternative_formulation} can be computed as a contraction of only six tensors. (b) To optimize the tensor $W_2^\prime$, all tensors except $W_2^\prime$ are contracted into the environment $E$. The updated tensor is then given as $W_2^\prime = E/\lVert E\rVert$. (c) The tensor $W_1^\prime$ can be updated by contracting all tensors except $W_1^\prime$ into the environment $E$, which is subsequently isometrized using an SVD. (d) The tensor $T^\prime$ can be updated similarly by contracting all tensors except $T^\prime$ into the environment $E$ and isometrizing $E$ using an SVD.}
+	\includegraphics[scale=1]{figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_a.pdf}
+	\caption{The cost function of the optimization problem \eqref{eq:disoTPS_YB_move_alternative_formulation} can be computed as a contraction of only six tensors.}
+	\label{fig:YB_move_iterate_polar_overlap}
+\end{figure}
+\begin{figure}
+	\centering
+	\begin{subfigure}[c]{0.85\textwidth}
+		\includegraphics[scale=1]{figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_b.pdf}
+		\caption{}\label{fig:YB_move_iterate_polar_optimize_T}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.85\textwidth}
+		\includegraphics[scale=1]{figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c.pdf}
+		\caption{}\label{fig:YB_move_iterate_polar_optimize_W1}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.85\textwidth}
+		\includegraphics[scale=1]{figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_d.pdf}
+		\caption{}\label{fig:YB_move_iterate_polar_optimize_W2}
+	\end{subfigure}%
+	\caption{(a) The tensor $T^\prime$ can be updated similarly by contracting all tensors except $T^\prime$ into the environment $E$ and isometrizing $E$ using an SVD. (b) The tensor $W_1^\prime$ can be updated by contracting all tensors except $W_1^\prime$ into the environment $E$, which is subsequently isometrized using an SVD. (c) To optimize the tensor $W_2^\prime$, all tensors except $W_2^\prime$ are contracted into the environment $E$. The updated tensor is then given as $W_2^\prime = E/\lVert E\rVert$.}
 	\label{fig:YB_move_iterate_polar}
 \end{figure}

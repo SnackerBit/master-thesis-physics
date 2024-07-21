@@ -10,11 +10,11 @@
 		\draw[virtualLeg] (W*) -- ++(\openLegLength, 0);
 		\draw[virtualLeg] (-\openLegLength, \defaultDistanceNormal) -- (W);
 		\draw[virtualLeg] (-\openLegLength, 0) -- (W*);
-		\draw[virtualLegWithoutArrows] (W) -- (\openLegLength, \defaultDistanceNormal) to[out=0, in=90] (\openLegLength+\identityLegDistance, \defaultDistanceNormal/2) to[out=-90, in=0] (\openLegLength, 0) -- (W*);
+		\draw[virtualLegWithoutArrows] (W) -- (\openLegLength, \defaultDistanceNormal) -- (\openLegLength, 0) -- (W*);
 		
-		\node[] () at (\openLegLength+\defaultDistanceEquations/2+\identityLegDistance, \defaultDistanceNormal/2) {$=$};
+		\node[] () at (\openLegLength+\defaultDistanceEquations/2, \defaultDistanceNormal/2) {$=$};
 		
-		\draw[virtualLegWithoutArrows] (\defaultDistanceEquations+\openLegLength+\defaultTensorWidth/2, \defaultDistanceNormal) to[out=0, in=90] ++(+\identityLegDistance, -\defaultDistanceNormal/2) to[out=-90, in=0] ++(-\identityLegDistance, -\defaultDistanceNormal/2);
-		\node[tensorOrthoCenter, fill=identityColor, inner sep=0] (eye) at (\defaultDistanceEquations+\openLegLength+\defaultTensorWidth/2+\identityLegDistance, \defaultDistanceNormal/2) {$\mathbb{P}$};
+		\draw[virtualLegWithoutArrows] (\defaultDistanceEquations+\openLegLength, \defaultDistanceNormal) -- ++(+\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal) -- ++(-\identityLegDistance, 0);
+		\node[tensorOrthoCenter, fill=identityColor, inner sep=0] (eye) at (\defaultDistanceEquations+\openLegLength+\identityLegDistance, \defaultDistanceNormal/2) {$\mathbb{P}$};
 	\end{tikzpicture}
 \end{document}

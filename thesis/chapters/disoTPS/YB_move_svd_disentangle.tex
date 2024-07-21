@@ -15,7 +15,18 @@ Alternatively, the constrained optimization problem \eqref{eq:disoTPS_YB_move_st
 Before we discuss the disentangling procedure, two comments about step two of the above algorithm are in order. Firstly, there exists a degree of freedom for splitting the bond index, because applying the same permutations to the columns of $X$ and rows of $\theta$ does not change the result of contracting the network. However, this degree of freedom is fixed by the disentangling process, making the exact permutation of the bond splitting irrelevant. Secondly, note that near the edges of the lattice it can happen that the matrizized tensor $\Psi$ has $\tilde{\chi} < D^2$ rows. In this case, the bond dimension after the SVD will also be $\tilde{\chi}$ and we cannot simply split the bond into two bonds of dimension $\chi_1=\chi_2=D$. Instead, we choose a splitting $\chi_1 \le D$, $\chi_2 \le D$ such that $\chi_1\cdot\chi_2$ is maximized, while it must still hold $\chi_1\cdot\chi_2\le\tilde{\chi}$. We additionally prefer "equal" splittings $\chi_1\approx\chi_2\approx\sqrt{\tilde{\chi}}$ if possible. One can find such a splitting easily by computing all possible combinations of $\chi_1$ and $\chi_2$ and keeping only the best one. This has a computational cost of $\mathcal{O}\left(\sqrt{\tilde{\chi}}\right) = \mathcal{O}\left(D\right)$. \par
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/yb_move_svd_disent.jpeg}
+	\subcaptionbox{\label{fig:yb_move_svd_disent_a}}
+	{%
+		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf}
+	}
+	\subcaptionbox{\label{fig:yb_move_svd_disent_b}}
+	{%
+		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf}
+	}
+	\subcaptionbox{\label{fig:yb_move_svd_disent_c}}
+	{%
+		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf}
+	}
 	\caption{test\todo{Write caption.}}
 	\label{fig:yb_move_svd_disent}
 \end{figure}
@@ -42,7 +53,7 @@ which can easily computed by contracting the tensor network shown in figure \fig
 We proceed by taking one tensor $U$ out of the network $\Tr\rho^2$ and contracting all other tensors into the environment $E$ as shown in figure \ref{fig:disentangling_evenbly_vidal_algorithm}(b). We now treat $E$ as if it were independent of $U$ and update $U\leftarrow AB^\dagger$, where $A$ and $B$ are obtained by taking the SVD $E=A\Lambda B^\dagger$. For details on the Evenbly-Vidal algorithm see appendix \ref{sec:evenbly_vidal_algorithm}. In practice it is observed that this algorithm for minimizing $f_\text{Rényi}\left(U,\theta,\alpha=2\right)$ converges very quickly \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}.\par
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_theta_definition.jpeg}
+	\includegraphics[scale=1]{figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf}
 	\caption{The disentangling unitary $U$ is contracted with the wave function tensor $\theta$ to form $\tilde{\theta}$, which is subsequently split via an SVD $\tilde{\theta} = XSY^\dagger$.}
 	\label{fig:disentangling_theta_definition}
 \end{figure}

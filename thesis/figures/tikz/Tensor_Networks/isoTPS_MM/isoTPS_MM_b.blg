@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'isoTPS_MM_b.blg'
+[61] biber:340> INFO - === So Jul 21, 2024, 20:45:08
+[130] Utils.pm:398> ERROR - Cannot find 'isoTPS_MM_b.bcf'!
+[130] Biber.pm:135> INFO - ERRORS: 1

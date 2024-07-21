@@ -1,0 +1,84 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\def\tensorDistance{\defaultDistanceNormal}
+		%\def\physicalLegLength{\physicalLegLength}
+		\def\openLegLength{(\tensorDistance-\defaultTensorWidth/2)}
+		\def\tensorTextAngle{45}
+		
+		\node[tensorOrthoCenter] (W1) at (0, 0) {};
+		\node[tensorPhysical] (W2) at (0, \tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}	
+			\draw[auxillaryLeg] (W2) -- (W1);	
+			
+			\draw[virtualLeg] (W1)+({-\openLegLength}, 0) -- (W1);
+			\draw[virtualLeg] (W2)+({-\openLegLength}, 0) -- (W2);
+			\draw[virtualLeg] (W1)+({\openLegLength}, 0) -- (W1);
+			\draw[virtualLeg] (W2)+({\openLegLength}, 0) -- (W2);
+			\draw[auxillaryLeg] (W1)+(0, {-\openLegLength}) -- (W1);
+			\draw[auxillaryLeg] (W2)+(0, {\openLegLength}) -- (W2);
+			
+			% Draw physical legs
+			\draw[physicalLeg](W1)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W1);
+			\draw[physicalLeg](W2)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W2);
+		\end{pgfonlayer}
+	
+		\node[] () at ({cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$W_1$};
+		\node[] () at ({cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {\tensorDistance + sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$W_2$};
+
+		\node[] () at ({\openLegLength+\defaultDistanceEquations/2}, \tensorDistance/2) {$=$};
+		
+		\def\xOffset{2*\openLegLength+\defaultDistanceEquations}
+		
+		\node[tensorPhysical] (Q) at ({\xOffset}, -\tensorDistance/2) {};
+		\node[tensorOrthoCenter] (R) at ({\xOffset}, \tensorDistance/2) {};
+		\node[tensorPhysical] (W2) at ({\xOffset}, 3*\tensorDistance/2) {};
+		
+		\begin{pgfonlayer}{bg}	
+			\draw[auxillaryLeg] (Q) -- (R);	
+			\draw[auxillaryLeg] (W2) -- (R);	
+			
+			\draw[virtualLeg] (W2)+({-\openLegLength}, 0) -- (W2);
+			\draw[virtualLeg] (Q)+({-\openLegLength}, 0) -- (Q);
+			\draw[virtualLeg] (W2)+({\openLegLength}, 0) -- (W2);
+			\draw[virtualLeg] (Q)+({\openLegLength}, 0) -- (Q);
+			\draw[auxillaryLeg] (Q)+(0, {-\openLegLength}) -- (Q);
+			\draw[auxillaryLeg] (W2)+(0, {\openLegLength}) -- (W2);
+			
+			% Draw physical legs
+			\draw[physicalLeg](Q)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (Q);
+			\draw[physicalLeg](W2)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W2);
+		\end{pgfonlayer}
+	
+		\node[] () at ({\xOffset + cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {-\tensorDistance/2 + sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$Q$};
+		\node[] () at ({\xOffset + cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {\tensorDistance/2 + sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$R$};
+		\node[] () at ({\xOffset + cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {3*\tensorDistance/2 + sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$W_2$};
+		
+		\node[] () at ({3*\openLegLength+3*\defaultDistanceEquations/2}, \tensorDistance/2) {$=$};
+		
+		\def\xOffset{4*\openLegLength+2*\defaultDistanceEquations}
+		
+		\node[tensorPhysical] (W1) at ({\xOffset}, 0) {};
+		\node[tensorOrthoCenter] (W2) at ({\xOffset}, \tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}	
+			\draw[auxillaryLeg] (W1) -- (W2);	
+			
+			\draw[virtualLeg] (W1)+({-\openLegLength}, 0) -- (W1);
+			\draw[virtualLeg] (W2)+({-\openLegLength}, 0) -- (W2);
+			\draw[virtualLeg] (W1)+({\openLegLength}, 0) -- (W1);
+			\draw[virtualLeg] (W2)+({\openLegLength}, 0) -- (W2);
+			\draw[auxillaryLeg] (W1)+(0, {-\openLegLength}) -- (W1);
+			\draw[auxillaryLeg] (W2)+(0, {\openLegLength}) -- (W2);
+			
+			% Draw physical legs
+			\draw[physicalLeg](W1)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W1);
+			\draw[physicalLeg](W2)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W2);
+		\end{pgfonlayer}
+		
+			\node[] () at ({\xOffset + cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$W_1^\prime$};
+			\node[] () at ({\xOffset + cos(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}, {\tensorDistance + sin(\tensorTextAngle)*(\defaultTextOffsetLarge + \defaultTensorWidth/2)}) {$W_2^\prime$};
+	\end{tikzpicture}
+\end{document}

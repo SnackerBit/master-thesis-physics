@@ -5,14 +5,14 @@
 \contentsline {section}{\numberline {2.2}Tensor Decompositions}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Isometric Tensor Networks}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Matrix Product States (MPS)}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Isometric Tensor Product States in 2D}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Isometric Tensor Product States in 2D}{17}{section.2.5}%
 \contentsline {chapter}{\numberline {3}diagonal isometric Tensor Product States (disoDTPS)}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Network Structure}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Network Structure}{24}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{26}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Iterative optimization with local updates}{28}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{28}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{39}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{39}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{29}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{38}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{38}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{39}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{40}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{47}{chapter.4}%
@@ -34,5 +34,5 @@
 \contentsline {section}{\numberline {B.4}Trust Region Method}{69}{section.B.4}%
 \contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{71}{appendix.C}%
 \contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{73}{appendix.D}%
-\contentsline {chapter}{\nonumberline Bibliography}{77}{chapter*.113}%
+\contentsline {chapter}{\nonumberline Bibliography}{77}{chapter*.115}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

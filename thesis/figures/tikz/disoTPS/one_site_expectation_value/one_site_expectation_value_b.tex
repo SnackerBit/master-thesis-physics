@@ -1,0 +1,81 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\pgfdeclarelayer{bbg} % declare background layer
+\pgfsetlayers{bbg, bg,main} % set order of layers¸
+\begin{document}
+	\def\smallestDistance{0.6*\defaultDistanceSmall}
+	\def\diagonalDistance{1.3*\smallestDistance}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openVirtualLegMultiplier{0.9}
+	\def\outerOpenVirtualLegMultiplier{0.8}
+	\def\openAuxillaryLegMultiplier{0.55}
+	\def\braketDistance{1.5*\defaultDistanceLarge}
+	\def\alpha{18.4349}
+	\def\operatorHeight{1.5*\smallTensorWidth}
+	\begin{tikzpicture}
+		\begin{pgfonlayer}{bbg}
+			% Fill background (used for alignment)
+			\def\tempOffsetX{(\smallestDistance+\diagonalDistance/2)}
+			\def\tempOffsetY{(\diagonalDistance/2)}
+			\fill[color=white] ({-\diagonalDistance-(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier-\lineWidthThin/2-\tempOffsetX}, {\diagonalDistance*(1+\outerOpenVirtualLegMultiplier)+\lineWidthThin/2-\tempOffsetY}) -- ({4*\smallestDistance+\diagonalDistance+(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier+\lineWidthThin/2-\tempOffsetX}, {\diagonalDistance*(1+\outerOpenVirtualLegMultiplier)+\lineWidthThin/2-\tempOffsetY}) -- ({4*\smallestDistance+\diagonalDistance+(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier+\lineWidthThin/2-\tempOffsetX}, {-\diagonalDistance-\braketDistance-\diagonalDistance*\outerOpenVirtualLegMultiplier-\lineWidthThin/2-\tempOffsetY}) -- ({-\diagonalDistance-(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier-\lineWidthThin/2-\tempOffsetX}, {-\diagonalDistance-\braketDistance-\diagonalDistance*\outerOpenVirtualLegMultiplier-\lineWidthThin/2-\tempOffsetY}) -- cycle;
+		\end{pgfonlayer}
+	
+		% First layer
+		\node[tensorPhysicalSmall] (T) at (0, 0) {};	
+		\node[] () at (0, \smallTensorWidth/2+\defaultTextOffsetLarge) {$T_i$};
+		\node[tensorAuxillarySmall] (W2) at (2*\smallestDistance, 0) {};
+		\node[] () at (2*\smallestDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$W_2$};
+		\node[tensorOrthoCenterSmall] (W1) at (-\diagonalDistance, -\diagonalDistance) {};
+		\node[] () at (-\diagonalDistance, -\diagonalDistance+\smallTensorWidth/2+\defaultTextOffsetLarge) {$W_1$};
+		
+		
+		% one-site operator
+		\node[tensorOperatorSmall, minimum size=\operatorHeight] (op) at (0, -\braketDistance/2) {$\hat{O}_i$};
+		
+		% Second layer
+		\node[tensorPhysicalSmall] (Tcc) at (0, -\braketDistance) {};	
+		\node[] () at ({-sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {-\braketDistance+cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$T_i^*$};
+		\node[tensorAuxillarySmall] (W2cc) at (2*\smallestDistance, -\braketDistance) {};
+		\node[] () at (2*\smallestDistance, -\braketDistance-\smallTensorWidth/2-\defaultTextOffsetLarge) {$W_2^*$};
+		\node[tensorOrthoCenterSmall] (W1cc) at (-\diagonalDistance, -\diagonalDistance-\braketDistance) {};
+		\node[] () at (-\diagonalDistance, -\diagonalDistance-\braketDistance-\smallTensorWidth/2-\defaultTextOffsetLarge) {$W_1^*$};
+		
+		\begin{pgfonlayer}{bg}
+			% First layer
+			\draw[virtualLegSmall] (T) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W2);
+			\draw[virtualLegSmall] (T)+(-2*\smallestDistance*\openVirtualLegMultiplier, 0) -- (T);
+			\draw[virtualLegSmall] (T)+(\diagonalDistance*\openVirtualLegMultiplier, \diagonalDistance*\openVirtualLegMultiplier) -- (T);
+			\draw[virtualLegSmall] (W1)+(-\diagonalDistance*\outerOpenVirtualLegMultiplier, -\diagonalDistance*\outerOpenVirtualLegMultiplier) -- (W1);
+			\draw[virtualLegSmall] (W2)+(2*\smallestDistance*\outerOpenVirtualLegMultiplier, 0) -- (W2);
+			\draw[auxillaryLegSmall] (W1)+({(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier}, -\diagonalDistance*\openAuxillaryLegMultiplier) -- (W1);
+			\draw[auxillaryLegSmall] (W2)+({(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier}, \diagonalDistance*\openAuxillaryLegMultiplier) -- (W2);
+			
+			% Second layer
+			\draw[virtualLegSmall] (Tcc) -- (W1cc);
+			\draw[virtualLegSmall] (Tcc) -- (W2cc);
+			\draw[auxillaryLegSmall] (W2cc) -- (W1cc);
+			\draw[virtualLegSmall] (Tcc)+(-2*\smallestDistance*\openVirtualLegMultiplier, 0) -- (Tcc);
+			\draw[virtualLegSmall] (Tcc)+(\diagonalDistance*\openVirtualLegMultiplier, \diagonalDistance*\openVirtualLegMultiplier) -- (Tcc);
+			\draw[virtualLegSmall] (W1cc)+(-\diagonalDistance*\outerOpenVirtualLegMultiplier, -\diagonalDistance*\outerOpenVirtualLegMultiplier) -- (W1cc);
+			\draw[virtualLegSmall] (W2cc)+(2*\smallestDistance*\outerOpenVirtualLegMultiplier, 0) -- (W2cc);
+			\draw[auxillaryLegSmall] (W1cc)+({(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier}, -\diagonalDistance*\openAuxillaryLegMultiplier) -- (W1cc);
+			\draw[auxillaryLegSmall] (W2cc)+({(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier}, \diagonalDistance*\openAuxillaryLegMultiplier) -- (W2cc);
+			
+			% Connecting legs
+			\draw[physicalLeg] (op) -- (T);
+			\draw[physicalLeg] (op) -- (Tcc);
+			\draw[virtualLegSmallWithoutArrows] (Tcc) -- ++(-2*\smallestDistance*\openVirtualLegMultiplier, 0) -- ++(0, \braketDistance) -- (T);
+			\draw[virtualLegSmallWithoutArrows] (Tcc) -- ++(\diagonalDistance*\openVirtualLegMultiplier, \diagonalDistance*\openVirtualLegMultiplier) -- ++(0, \braketDistance) -- (T);
+			\draw[auxillaryLegSmallWithoutArrows] (W1cc) -- ++({(-2*\smallestDistance-\diagonalDistance)*\openAuxillaryLegMultiplier}, -\diagonalDistance*\openAuxillaryLegMultiplier) -- ++(0, \braketDistance) -- (W1);
+			\draw[auxillaryLegSmallWithoutArrows] (W2cc) -- ++({(2*\smallestDistance+\diagonalDistance)*\openAuxillaryLegMultiplier}, \diagonalDistance*\openAuxillaryLegMultiplier) -- ++(0, \braketDistance) -- (W2);
+			\draw[virtualLegSmallWithoutArrows] (W1cc) -- ++(-\diagonalDistance*\outerOpenVirtualLegMultiplier, -\diagonalDistance*\outerOpenVirtualLegMultiplier) -- ++(0, \braketDistance) -- (W1);
+			\draw[virtualLegSmallWithoutArrows] (W2cc) -- ++(2*\smallestDistance*\outerOpenVirtualLegMultiplier, 0) -- ++(0, \braketDistance) -- (W2);
+			
+			% First layer (foreground)
+			\draw[auxillaryLegSmall] (W2) -- (W1);
+		\end{pgfonlayer}
+		
+	
+	\end{tikzpicture}
+\end{document}

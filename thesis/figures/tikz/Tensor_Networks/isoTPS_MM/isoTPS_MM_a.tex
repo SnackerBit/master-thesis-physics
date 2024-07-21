@@ -1,0 +1,244 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmall}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openLegLength{(\tensorDistance-\smallTensorWidth)}
+	\def\extraDistance{0.0*\tensorDistance}
+	\def\thirdTensorOffsetScalar{0.42}
+	\def\extraEquationDistance{\tensorDistance*0}
+	\def\dotdotEquationDistance{0.75*\defaultDistanceEquations}
+	\def\defaultDistanceEquationsTemp{0.9*\defaultDistanceEquations}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenterSmall] (T11) at (0, 0) {};
+		\node[tensorPhysicalSmall] (T12) at (0, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T13) at (0, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T14) at (0, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T15) at (0, 4*\tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw virtual and auxillary legs
+			\draw[auxillaryLegSmall] (T12) -- (T11);
+			\draw[auxillaryLegSmall] (T13) -- (T12);
+			\draw[auxillaryLegSmall] (T14) -- (T13);
+			\draw[auxillaryLegSmall] (T15) -- (T14);
+			
+			% Draw physical legs
+			\draw[physicalLegSmall](T11)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T11);
+			\draw[physicalLegSmall] (T12)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T12);
+			\draw[physicalLegSmall] (T13)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T13);
+			\draw[physicalLegSmall] (T14)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T14);
+			\draw[physicalLegSmall] (T15)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T15);  
+			
+			% Draw virtual legs on edges
+			\draw[virtualLegSmall] (T11)+({-\openLegLength}, 0) -- (T11);
+			\draw[virtualLegSmall] (T12)+({-\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({-\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({-\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({-\openLegLength}, 0) -- (T15);
+			
+			\draw[virtualLegSmall] (T11)+({\openLegLength}, 0) -- (T11);
+			\draw[virtualLegSmall] (T12)+({\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({\openLegLength}, 0) -- (T15);
+		\end{pgfonlayer}
+		
+		% Draw text
+		\pgfmathsetmacro{\mylen}{cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}
+		\node[above=\mylen pt of T15] {$\Lambda^{[n]}$};
+		
+		\node[] () at ({\openLegLength+\defaultDistanceEquationsTemp/2+\extraEquationDistance/2}, 2*\tensorDistance) {$\approx$};
+		
+		\def\xOffset{2*\openLegLength+\defaultDistanceEquationsTemp-\tensorDistance/2+\extraEquationDistance}
+		
+		\node[tensorPhysicalSmall] (T11) at ({\xOffset}, -\extraDistance) {};
+		\node[tensorAuxillarySmall] (T21) at ({\xOffset+\tensorDistance}, -\extraDistance) {};
+		\node[tensorOrthoCenterSmall] (lam) at ({\xOffset+\tensorDistance/2}, \thirdTensorOffsetScalar*\tensorDistance-\extraDistance/2) {};
+		
+		\node[tensorPhysicalSmall] (T12) at ({\xOffset+\tensorDistance/2}, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T13) at ({\xOffset+\tensorDistance/2}, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T14) at ({\xOffset+\tensorDistance/2}, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T15) at ({\xOffset+\tensorDistance/2}, 4*\tensorDistance) {};
+		
+		
+		\begin{pgfonlayer}{bg}
+			% Draw virtual and auxillary legs
+			\draw[auxillaryLegSmall] (T13) -- (T12);
+			\draw[auxillaryLegSmall] (T14) -- (T13);
+			\draw[auxillaryLegSmall] (T15) -- (T14);
+			\draw[virtualLegSmall] (T11) -- (lam);
+			\draw[virtualLegSmall] (T11) -- (T21);
+			\draw[auxillaryLegSmall] (T21) -- (lam);
+			\draw[auxillaryLegSmall] (T12) -- (lam);
+			
+			% Draw physical legs
+			\draw[physicalLegSmall](T11)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T11);
+			\draw[physicalLegSmall] (T12)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T12);
+			\draw[physicalLegSmall] (T13)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T13);
+			\draw[physicalLegSmall] (T14)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T14);
+			\draw[physicalLegSmall] (T15)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T15);  
+			
+			% Draw virtual legs on edges
+			\draw[virtualLegSmall] (T11)+({-\openLegLength}, 0) -- (T11);
+			\draw[virtualLegSmall] (T12)+({-\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({-\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({-\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({-\openLegLength}, 0) -- (T15);
+			
+			\draw[virtualLegSmall] (T12)+({\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({\openLegLength}, 0) -- (T15);
+			\draw[virtualLegSmall] (T21)+({\openLegLength}, 0) -- (T21);
+		\end{pgfonlayer}
+	
+		\node[] () at ({\xOffset+\tensorDistance/2+\openLegLength+\defaultDistanceEquationsTemp/2+\extraEquationDistance/2}, 2*\tensorDistance) {$\approx$};
+		
+		\def\xOffset{4*\openLegLength+2*\defaultDistanceEquationsTemp-\tensorDistance/2+2*\extraEquationDistance}
+		
+		\node[tensorPhysicalSmall] (T11) at ({\xOffset}, 0) {};
+		\node[tensorAuxillarySmall] (T21) at ({\xOffset+\tensorDistance}, 0) {};
+		
+		\node[tensorOrthoCenterSmall] (T12) at ({\xOffset+\tensorDistance/2}, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T13) at ({\xOffset+\tensorDistance/2}, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T14) at ({\xOffset+\tensorDistance/2}, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T15) at ({\xOffset+\tensorDistance/2}, 4*\tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw virtual and auxillary legs
+			\draw[auxillaryLegSmall] (T13) -- (T12);
+			\draw[auxillaryLegSmall] (T14) -- (T13);
+			\draw[auxillaryLegSmall] (T15) -- (T14);
+			\draw[virtualLegSmall] (T11) -- (T21);
+			\draw[auxillaryLegSmall] (T21) -- (T12);
+			\draw[virtualLegSmall] (T11) -- (T12);
+			
+			% Draw physical legs
+			\draw[physicalLegSmall](T11)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T11);
+			\draw[physicalLegSmall] (T12)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T12);
+			\draw[physicalLegSmall] (T13)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T13);
+			\draw[physicalLegSmall] (T14)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T14);
+			\draw[physicalLegSmall] (T15)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T15);  
+			
+			% Draw virtual legs on edges
+			\draw[virtualLegSmall] (T11)+({-\openLegLength}, 0) -- (T11);
+			\draw[virtualLegSmall] (T12)+({-\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({-\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({-\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({-\openLegLength}, 0) -- (T15);
+			
+			\draw[virtualLegSmall] (T12)+({\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({\openLegLength}, 0) -- (T15);
+			\draw[virtualLegSmall] (T21)+({\openLegLength}, 0) -- (T21);
+		\end{pgfonlayer}
+	
+		\node[] () at ({\xOffset+\tensorDistance/2+\openLegLength+\defaultDistanceEquationsTemp/2+\extraEquationDistance/2}, 2*\tensorDistance) {$\approx$};
+		
+		\def\xOffset{6*\openLegLength+3*\defaultDistanceEquationsTemp-\tensorDistance/2+3*\extraEquationDistance}
+		
+		\node[tensorPhysicalSmall] (T11) at ({\xOffset}, 0) {};
+		\node[tensorPhysicalSmall] (T12) at ({\xOffset}, \tensorDistance) {};
+		
+		\node[tensorAuxillarySmall] (T21) at ({\xOffset+\tensorDistance}, 0) {};
+		\node[tensorAuxillarySmall] (T22) at ({\xOffset+\tensorDistance}, \tensorDistance) {};
+		
+		\node[tensorOrthoCenterSmall] (T13) at ({\xOffset+\tensorDistance/2}, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T14) at ({\xOffset+\tensorDistance/2}, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T15) at ({\xOffset+\tensorDistance/2}, 4*\tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw virtual and auxillary legs
+			\draw[auxillaryLegSmall] (T14) -- (T13);
+			\draw[auxillaryLegSmall] (T15) -- (T14);
+			\draw[virtualLegSmall] (T11) -- (T21);
+			\draw[virtualLegSmall] (T12) -- (T22);
+			\draw[auxillaryLegSmall] (T22) -- (T13);
+			\draw[virtualLegSmall] (T12) -- (T13);
+			\draw[virtualLegSmall] (T11) -- (T12);
+			\draw[auxillaryLegSmall] (T21) -- (T22);
+			
+			% Draw physical legs
+			\draw[physicalLegSmall](T11)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T11);
+			\draw[physicalLegSmall] (T12)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T12);
+			\draw[physicalLegSmall] (T13)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T13);
+			\draw[physicalLegSmall] (T14)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T14);
+			\draw[physicalLegSmall] (T15)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T15);  
+			
+			% Draw virtual legs on edges
+			\draw[virtualLegSmall] (T11)+({-\openLegLength}, 0) -- (T11);
+			\draw[virtualLegSmall] (T12)+({-\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({-\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({-\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({-\openLegLength}, 0) -- (T15);
+			
+			\draw[virtualLegSmall] (T13)+({\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({\openLegLength}, 0) -- (T15);
+			\draw[virtualLegSmall] (T21)+({\openLegLength}, 0) -- (T21);
+			\draw[virtualLegSmall] (T22)+({\openLegLength}, 0) -- (T22);
+		\end{pgfonlayer}
+	
+		\node[] () at ({\xOffset+\tensorDistance/2+\openLegLength+\defaultDistanceEquationsTemp/2+\extraEquationDistance/2}, 2*\tensorDistance) {$\approx$};
+		\node[] () at ({\xOffset+\tensorDistance/2+\openLegLength+\defaultDistanceEquationsTemp/2+\dotdotEquationDistance/2+\extraEquationDistance/2}, 2*\tensorDistance) {$\cdots$};
+		\node[] () at ({\xOffset+\tensorDistance/2+\openLegLength+\defaultDistanceEquationsTemp/2+\dotdotEquationDistance+\extraEquationDistance/2}, 2*\tensorDistance) {$\approx$};
+		
+		\def\xOffset{8*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance}
+		
+		\node[tensorPhysicalSmall] (T11) at ({\xOffset}, 0) {};
+		\node[tensorPhysicalSmall] (T12) at ({\xOffset}, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T13) at ({\xOffset}, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T14) at ({\xOffset}, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T15) at ({\xOffset}, 4*\tensorDistance) {};
+		
+		\node[tensorAuxillarySmall] (T21) at ({\xOffset+\tensorDistance}, 0) {};
+		\node[tensorAuxillarySmall] (T22) at ({\xOffset+\tensorDistance}, \tensorDistance) {};
+		\node[tensorAuxillarySmall] (T23) at ({\xOffset+\tensorDistance}, 2*\tensorDistance) {};
+		\node[tensorAuxillarySmall] (T24) at ({\xOffset+\tensorDistance}, 3*\tensorDistance) {};
+		\node[tensorOrthoCenterSmall] (T25) at ({\xOffset+\tensorDistance}, 4*\tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw virtual and auxillary legs
+			\draw[virtualLegSmall] (T11) -- (T21);
+			\draw[virtualLegSmall] (T12) -- (T22);
+			\draw[virtualLegSmall] (T13) -- (T23);
+			\draw[virtualLegSmall] (T14) -- (T24);
+			\draw[virtualLegSmall] (T15) -- (T25);
+			
+			\draw[virtualLegSmall] (T11) -- (T12);
+			\draw[virtualLegSmall] (T12) -- (T13);
+			\draw[virtualLegSmall] (T13) -- (T14);
+			\draw[virtualLegSmall] (T14) -- (T15);
+			
+			\draw[auxillaryLegSmall] (T21) -- (T22);
+			\draw[auxillaryLegSmall] (T22) -- (T23);
+			\draw[auxillaryLegSmall] (T23) -- (T24);
+			\draw[auxillaryLegSmall] (T24) -- (T25);
+			
+			% Draw physical legs
+			\draw[physicalLegSmall](T11)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T11);
+			\draw[physicalLegSmall] (T12)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T12);
+			\draw[physicalLegSmall] (T13)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T13);
+			\draw[physicalLegSmall] (T14)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T14);
+			\draw[physicalLegSmall] (T15)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T15);  
+			
+			% Draw virtual legs on edges
+			\draw[virtualLegSmall] (T11)+({-\openLegLength}, 0) -- (T11);
+			\draw[virtualLegSmall] (T12)+({-\openLegLength}, 0) -- (T12);
+			\draw[virtualLegSmall] (T13)+({-\openLegLength}, 0) -- (T13);
+			\draw[virtualLegSmall] (T14)+({-\openLegLength}, 0) -- (T14);
+			\draw[virtualLegSmall] (T15)+({-\openLegLength}, 0) -- (T15);
+			
+			\draw[virtualLegSmall] (T21)+({\openLegLength}, 0) -- (T21);
+			\draw[virtualLegSmall] (T22)+({\openLegLength}, 0) -- (T22);
+			\draw[virtualLegSmall] (T23)+({\openLegLength}, 0) -- (T23);
+			\draw[virtualLegSmall] (T24)+({\openLegLength}, 0) -- (T24);
+			\draw[virtualLegSmall] (T25)+({\openLegLength}, 0) -- (T25);
+		\end{pgfonlayer}
+	
+		\node[above=\mylen pt of T15] {$A^{[n]\prime}$};
+		\node[above=\mylen pt of T25] {$\Lambda$};
+	\end{tikzpicture}
+\end{document}

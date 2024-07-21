@@ -1,0 +1,17 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{30pt}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (A) at (0, 0) {$A$};
+		\draw[virtualLegWithoutArrows] (A) -- ++(\openLegLength, 0);
+		\draw[virtualLegWithoutArrows] (A) -- ++(-\openLegLength, 0);
+		\node[] () at (\openLegLength + \defaultDistanceEquations/2, 0) {$=$};
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (Q) at (2*\openLegLength + \defaultDistanceEquations, 0) {$Q$};
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (R) at (2*\openLegLength + \defaultDistanceEquations + \defaultDistanceNormal, 0) {$R$};
+		\draw[virtualLeg] (Q)+(-\openLegLength, 0) -- (Q);
+		\draw[virtualLeg] (Q) -- (R);
+		\draw[virtualLegWithoutArrows] (R) -- ++(\openLegLength, 0);
+	\end{tikzpicture}
+\end{document}

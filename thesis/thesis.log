@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  19 JUL 2024 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  21 JUL 2024 21:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -872,9 +872,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language47). Reported on input line 105.
+(babel)             (\language34). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language47). Reported on input line 108.
+(babel)             (\language34). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -950,28 +950,10 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 
-(/usr/local/share/texmf/tex/latex/pgfplots/pgfplots.sty
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
-(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/local/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/local/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
-)
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
-
-(/usr/share/texlive/texmf-dist/tex/latex/everyshi/everyshi.sty
-Package: everyshi 2020/11/18 v4.00 EveryShipout Package
-))
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
-))
-Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
-
-(/usr/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -989,333 +971,381 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen186
 \Gin@req@width=\dimen187
 )
-(/usr/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen188
+\pgfutil@tempdimb=\dimen189
 
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
 
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
 \pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen188
-\pgf@y=\dimen189
-\pgf@xa=\dimen190
-\pgf@ya=\dimen191
-\pgf@xb=\dimen192
-\pgf@yb=\dimen193
-\pgf@xc=\dimen194
-\pgf@yc=\dimen195
+\pgf@x=\dimen190
+\pgf@y=\dimen191
+\pgf@xa=\dimen192
+\pgf@ya=\dimen193
+\pgf@xb=\dimen194
+\pgf@yb=\dimen195
+\pgf@xc=\dimen196
+\pgf@yc=\dimen197
+\pgf@xd=\dimen198
+\pgf@yd=\dimen199
 \w@pgf@writea=\write5
 \r@pgf@reada=\read5
 \c@pgf@counta=\count446
 \c@pgf@countb=\count447
 \c@pgf@countc=\count448
 \c@pgf@countd=\count449
-
-(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count450
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
-(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count450
-\pgfsyssoftpath@bigbuffer@items=\count451
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count451
+\pgfsyssoftpath@bigbuffer@items=\count452
 )
-(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen196
-\pgfmath@count=\count452
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count453
 \pgfmath@box=\box60
-\pgfmath@toks=\toks30
-\pgfmath@stack@operand=\toks31
-\pgfmath@stack@operation=\toks32
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 )
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
 e.tex)
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
-ex) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
-(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count453
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count454
 ))
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen197
-\pgf@picmaxx=\dimen198
-\pgf@picminy=\dimen199
-\pgf@picmaxy=\dimen256
-\pgf@pathminx=\dimen257
-\pgf@pathmaxx=\dimen258
-\pgf@pathminy=\dimen259
-\pgf@pathmaxy=\dimen260
-\pgf@xx=\dimen261
-\pgf@xy=\dimen262
-\pgf@yx=\dimen263
-\pgf@yy=\dimen264
-\pgf@zx=\dimen265
-\pgf@zy=\dimen266
-)
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen267
-\pgf@path@lasty=\dimen268
-) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen269
-\pgf@shorten@start@additional=\dimen270
-) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count454
+\pgf@picture@serial@count=\count455
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen271
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen275
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
-tex
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen272
-\pgf@pt@y=\dimen273
-\pgf@pt@temp=\dimen274
-) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
 ex
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
-) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen275
-\pgf@sys@shading@range@num=\count455
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen279
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count456
+\pgf@shadingcount=\count457
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box64
 ))
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
-) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
-))) (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box65
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
-)
-(/usr/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen276
-\pgf@nodesepend=\dimen277
-)
-(/usr/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
-))
-(/usr/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/local/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen278
-\pgffor@skip=\dimen279
-\pgffor@stack=\toks33
-\pgffor@toks=\toks34
-))
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
-
-(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
-ex
-File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count456
-\pgfplotmarksize=\dimen280
-)
-\tikz@lastx=\dimen281
-\tikz@lasty=\dimen282
-\tikz@lastxsaved=\dimen283
-\tikz@lastysaved=\dimen284
-\tikzleveldistance=\dimen285
-\tikzsiblingdistance=\dimen286
-\tikz@figbox=\box66
-\tikz@tempbox=\box67
-\tikztreelevel=\count457
-\tikznumberofchildren=\count458
-\tikznumberofcurrentchild=\count459
-\tikz@fig@count=\count460
- (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count461
-\pgfmatrixcurrentcolumn=\count462
-\pgf@matrix@numberofcolumns=\count463
-)
-\tikz@expandcount=\count464
-
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
-ytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-)))
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.code.tex
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks35
-\t@pgfplots@tokb=\toks36
-\t@pgfplots@tokc=\toks37
-\pgfplots@tmpa=\dimen287
-\c@pgfplots@coordindex=\count465
-\c@pgfplots@scanlineindex=\count466
-
-(/usr/local/share/texmf/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
-(/usr/local/share/texmf/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-loader.code.tex
-Package pgfplots: loading complementary code for your PGF version...
-
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-misc.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks38
-\pgfkeys@temptoks=\toks39
-
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks40
-))
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count467
-)
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
-\pgf@plot@mark@count=\count468
-\pgfplotmarksize=\dimen288
-)
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgflibraryfpu.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
-\pgfpic=\box68
-\pgf@hbox=\box69
-\pgf@layerbox@main=\box70
-\pgf@picture@serial@count=\count469
-)
-(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
-pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
-))
-(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsutil.code.tex
-(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructur
-e.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructur
-eext.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsarray.code.t
-ex
-\c@pgfplotsarray@tmp=\count470
-)
-(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.
-tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/numtable/pgfplotstableshared.code.
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
 tex
-\c@pgfplotstable@counta=\count471
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box65
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen283
+\pgffor@skip=\dimen284
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count458
+\pgfplotmarksize=\dimen285
+)
+\tikz@lastx=\dimen286
+\tikz@lasty=\dimen287
+\tikz@lastxsaved=\dimen288
+\tikz@lastysaved=\dimen289
+\tikz@lastmovetox=\dimen290
+\tikz@lastmovetoy=\dimen291
+\tikzleveldistance=\dimen292
+\tikzsiblingdistance=\dimen293
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count459
+\tikznumberofchildren=\count460
+\tikznumberofcurrentchild=\count461
+\tikz@fig@count=\count462
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count463
+\pgfmatrixcurrentcolumn=\count464
+\pgf@matrix@numberofcolumns=\count465
+)
+\tikz@expandcount=\count466
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen294
+\c@pgfplots@coordindex=\count467
+\c@pgfplots@scanlineindex=\count468
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count469
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count470
 \t@pgfplotstable@a=\toks41
 )
-(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.t
-ex) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
-(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)
-) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count471
 
-(/usr/local/share/texmf/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshadin
-g.code.tex
-\c@pgfplotslibrarysurf@no=\count472
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen295
+\pgfdecoratedremainingdistance=\dimen296
+\pgfdecoratedinputsegmentcompleteddistance=\dimen297
+\pgfdecoratedinputsegmentremainingdistance=\dimen298
+\pgf@decorate@distancetomove=\dimen299
+\pgf@decorate@repeatstate=\count472
+\pgfdecorationsegmentamplitude=\dimen300
+\pgfdecorationsegmentlength=\dimen301
+)
+\tikz@lib@dec@box=\box70
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex)
+\pgfplots@numplots=\count473
+\pgfplots@xmin@reg=\dimen302
+\pgfplots@xmax@reg=\dimen303
+\pgfplots@ymin@reg=\dimen304
+\pgfplots@ymax@reg=\dimen305
+\pgfplots@zmin@reg=\dimen306
+\pgfplots@zmax@reg=\dimen307
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(/usr/local/share/texmf/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading
-.pgfsys-pdftex.def)))
-(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
-(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex))
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.scaling.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.markers.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsticks.code.tex)
-(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.paths.code.tex)
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
-ydecorations.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen289
-\pgfdecoratedremainingdistance=\dimen290
-\pgfdecoratedinputsegmentcompleteddistance=\dimen291
-\pgfdecoratedinputsegmentremainingdistance=\dimen292
-\pgf@decorate@distancetomove=\dimen293
-\pgf@decorate@repeatstate=\count473
-\pgfdecorationsegmentamplitude=\dimen294
-\pgfdecorationsegmentlength=\dimen295
-)
-\tikz@lib@dec@box=\box71
-)
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
-ydecorations.pathmorphing.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
-ions.pathmorphing.code.tex))
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
-ydecorations.pathreplacing.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
-ions.pathreplacing.code.tex))
-\pgfplots@numplots=\count474
-\pgfplots@xmin@reg=\dimen296
-\pgfplots@xmax@reg=\dimen297
-\pgfplots@ymin@reg=\dimen298
-\pgfplots@ymax@reg=\dimen299
-\pgfplots@zmin@reg=\dimen300
-\pgfplots@zmax@reg=\dimen301
-)
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
-yplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
-
-(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.col
 orbrewer.code.tex
@@ -1329,14 +1359,14 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count475
+\c@float@type=\count474
 \float@exts=\toks42
-\float@box=\box72
+\float@box=\box71
 \@float@everytoks=\toks43
-\@floatcapt=\box73
+\@floatcapt=\box72
 )
 \@float@every@algorithm=\toks44
-\c@algorithm=\count476
+\c@algorithm=\count475
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -1345,32 +1375,31 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count477
-\c@ALG@rem=\count478
-\c@ALG@nested=\count479
+\c@ALG@line=\count476
+\c@ALG@rem=\count477
+\c@ALG@nested=\count478
 \ALG@tlm=\skip110
 \ALG@thistlm=\skip111
-\c@ALG@Lnr=\count480
-\c@ALG@blocknr=\count481
-\c@ALG@storecount=\count482
-\c@ALG@tmpcounter=\count483
+\c@ALG@Lnr=\count479
+\c@ALG@blocknr=\count480
+\c@ALG@storecount=\count481
+\c@ALG@tmpcounter=\count482
 \ALG@tmplength=\skip112
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-(/usr/local/share/texmf/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.
-code.tex
-(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/libraries/tikzlibraryextern
-al.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzextern
-alshared.code.tex
-\tikzexternal@outfile=\write6
-)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.ex
+ternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
+yexternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zexternalshared.code.tex)))
 \openout5 = `thesis.auxlock'.
 
-\largestimage=\box74
-\largestimagea=\box75
-\largestimageb=\box76
+\largestimage=\box73
+\largestimagea=\box74
+\largestimageb=\box75
+\largestimagec=\box76
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1404,42 +1433,48 @@ LaTeX Warning: Label `fig:basic_isometries_isometric_matrix' multiply defined.
 LaTeX Warning: Label `sub@fig:basic_isometries_isometric_matrix' multiply defin
 ed.
 
+
+LaTeX Warning: Label `fig:tensor_decomposition_qr' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:tensor_decomposition_qr' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-Package scrbase Info: activating british \contentsname on input line 41.
-Package scrbase Info: activating british \listfigurename on input line 41.
-Package scrbase Info: activating british \listtablename on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+Package scrbase Info: activating british \contentsname on input line 42.
+Package scrbase Info: activating british \listfigurename on input line 42.
+Package scrbase Info: activating british \listtablename on input line 42.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count484
-\scratchdimen=\dimen302
+\scratchcounter=\count483
+\scratchdimen=\dimen308
 \scratchbox=\box77
-\nofMPsegments=\count485
-\nofMParguments=\count486
+\nofMPsegments=\count484
+\nofMParguments=\count485
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count487
-\MPscratchDim=\dimen303
-\MPnumerator=\count488
-\makeMPintoPDFobject=\count489
+\MPscratchCnt=\count486
+\MPscratchDim=\dimen309
+\MPnumerator=\count487
+\makeMPintoPDFobject=\count488
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1450,7 +1485,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package soulpos Info: Loading soulutf8 on input line 41.
+Package soulpos Info: Loading soulutf8 on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
@@ -1463,11 +1498,11 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks50
 \SOUL@token=\toks51
 \SOUL@spaceskip=\skip113
-\SOUL@ttwidth=\dimen304
-\SOUL@uldp=\dimen305
-\SOUL@ulht=\dimen306
+\SOUL@ttwidth=\dimen310
+\SOUL@uldp=\dimen311
+\SOUL@ulht=\dimen312
 ))
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1475,15 +1510,15 @@ Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count490
+\c@section@level=\count489
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write7
-\openout7 = `thesis.out'.
+\@outlinefile=\write6
+\openout6 = `thesis.out'.
 
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1492,14 +1527,14 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 41.
+(scrbook)           before \begin{document} on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count491
+\BKM@id=\count490
 ))
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
@@ -1521,26 +1556,26 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 41.
-Package biblatex Info: Reference segment=0 on input line 41.
+Package biblatex Info: Reference section=0 on input line 42.
+Package biblatex Info: Reference segment=0 on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 41.
-Package microtype Info: Applying patch `item' on input line 41.
-Package microtype Info: Applying patch `toc' on input line 41.
+LaTeX Info: Redefining \microtypecontext on input line 42.
+Package microtype Info: Applying patch `item' on input line 42.
+Package microtype Info: Applying patch `toc' on input line 42.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 41.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 42.
 
-Package microtype Info: Applying patch `footnote' on input line 41.
+Package microtype Info: Applying patch `footnote' on input line 42.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 41.
+LaTeX Info: Redefining \showhyphens on input line 42.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1554,9 +1589,9 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
-our preamble.
- on input line 41.
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
+your preamble.
+ on input line 42.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1565,14 +1600,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 <template/pictures/PH.pdf, id=7, 29.8716pt x 29.8716pt>
 File: template/pictures/PH.pdf Graphic file (type pdf)
 <use template/pictures/PH.pdf>
-Package pdftex.def Info: template/pictures/PH.pdf  used on input line 43.
+Package pdftex.def Info: template/pictures/PH.pdf  used on input line 44.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <template/pictures/TUM.pdf, id=8, 53.24893pt x 28.45631pt>
 File: template/pictures/TUM.pdf Graphic file (type pdf)
 <use template/pictures/TUM.pdf>
-Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 43.
+Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 44.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1580,7 +1615,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1602,13 +1637,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [3]
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 63.
+ line 64.
  [4]
-Package tocbasic Info: character protrusion at toc deactivated on input line 65
+Package tocbasic Info: character protrusion at toc deactivated on input line 66
 .
  (./thesis.toc)
-\tf@toc=\write8
-\openout8 = `thesis.toc'.
+\tf@toc=\write7
+\openout7 = `thesis.toc'.
 
  [5
 
@@ -1718,65 +1753,78 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_a.pdf  used on input line 110.
 (pdftex.def)             Requested size: 61.99948pt x 21.00038pt.
 <figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf, id=221, 
-166.50005pt x 60.9999pt>
+170.99985pt x 60.9999pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf Grap
 hic file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_b.pdf  used on input line 114.
-(pdftex.def)             Requested size: 166.49963pt x 60.99974pt.
+(pdftex.def)             Requested size: 170.99942pt x 60.99974pt.
 <figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf, id=222, 
-121.00005pt x 60.9999pt>
+121.49992pt x 60.9999pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf Grap
 hic file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_c.pdf  used on input line 118.
-(pdftex.def)             Requested size: 120.99973pt x 60.99974pt.
+(pdftex.def)             Requested size: 121.49962pt x 60.99974pt.
 
-Overfull \hbox (10.8166pt too wide) in paragraph at lines 110--119
+Overfull \hbox (15.31639pt too wide) in paragraph at lines 110--119
  [] 
  []
 
 <figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf, id=223, 
-60.19087pt x 40.45213pt>
+60.19087pt x 35.24167pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf Grap
 hic file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_d.pdf  used on input line 126.
-(pdftex.def)             Requested size: 60.19072pt x 40.45203pt.
+(pdftex.def)             Requested size: 60.19072pt x 35.24156pt.
 <figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf, id=224, 
-137.63821pt x 95.11032pt>
+129.08827pt x 75.2421pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf Grap
 hic file (type pdf)
 <use figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_e.pdf  used on input line 130.
-(pdftex.def)             Requested size: 137.63786pt x 95.11006pt.
+(pdftex.def)             Requested size: 129.08795pt x 75.2419pt.
 ) (./chapters/Tensor_Networks/tensor_decompositions.tex [6 <./figures/tikz/Tens
 or_Networks/basic_isometries/basic_isometries_a.pdf> <./figures/tikz/Tensor_Net
 works/basic_isometries/basic_isometries_b.pdf> <./figures/tikz/Tensor_Networks/
 basic_isometries/basic_isometries_c.pdf> <./figures/tikz/Tensor_Networks/basic_
 isometries/basic_isometries_d.pdf> <./figures/tikz/Tensor_Networks/basic_isomet
 ries/basic_isometries_e.pdf>]
-<figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg, id=306, 2130.96124
-pt x 1003.75pt>
-File: figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg Graphic file (
-type jpg)
-<use figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/tensor_decomposition_diagrams.
-jpeg  used on input line 27.
-(pdftex.def)             Requested size: 318.67212pt x 150.09653pt.
-)
-(./chapters/Tensor_Networks/isometric_tensor_networks.tex [7]
+<figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_a.pdf
+, id=306, 201.99966pt x 21.00046pt>
+File: figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_
+a.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_a
+.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/tensor_decompositions/ten
+sor_decompositions_a.pdf  used on input line 34.
+(pdftex.def)             Requested size: 201.99916pt x 21.00038pt.
+<figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b.pdf
+, id=307, 242.0001pt x 21.00046pt>
+File: figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_
+b.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b
+.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/tensor_decompositions/ten
+sor_decompositions_b.pdf  used on input line 43.
+(pdftex.def)             Requested size: 241.9995pt x 21.00038pt.
+
+Overfull \hbox (6.64389pt too wide) in paragraph at lines 40--44
+[][] 
+ []
+
+) (./chapters/Tensor_Networks/isometric_tensor_networks.tex [7]
 
 LaTeX Warning: Reference `eq:polar_decomposition_general' on page 8 undefined o
 n input line 12.
 
-[8 <./figures/Tensor_Networks/tensor_decomposition_diagrams.jpeg>]
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_a.pdf, id=335, 285.01381pt x 75.6135pt>
+tions_of_isometric_tensor_networks_a.pdf, id=328, 299.97572pt x 75.6135pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_a.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1784,9 +1832,9 @@ tractions_of_isometric_tensor_networks_a.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/contractions_of_isometric
 _tensor_networks/contractions_of_isometric_tensor_networks_a.pdf  used on input
  line 19.
-(pdftex.def)             Requested size: 285.0131pt x 75.6133pt.
+(pdftex.def)             Requested size: 299.97498pt x 75.6133pt.
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_b.pdf, id=336, 285.01381pt x 75.6135pt>
+tions_of_isometric_tensor_networks_b.pdf, id=329, 299.97572pt x 75.6135pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_b.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1794,9 +1842,9 @@ tractions_of_isometric_tensor_networks_b.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/contractions_of_isometric
 _tensor_networks/contractions_of_isometric_tensor_networks_b.pdf  used on input
  line 23.
-(pdftex.def)             Requested size: 285.0131pt x 75.6133pt.
+(pdftex.def)             Requested size: 299.97498pt x 75.6133pt.
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_c.pdf, id=337, 379.18164pt x 234.32744pt>
+tions_of_isometric_tensor_networks_c.pdf, id=330, 379.18164pt x 234.32744pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_c.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1805,14 +1853,10 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/contractions_of_isometric
 _tensor_networks/contractions_of_isometric_tensor_networks_c.pdf  used on input
  line 27.
 (pdftex.def)             Requested size: 379.18071pt x 234.32686pt.
-)
-(./chapters/Tensor_Networks/matrix_product_states.tex [9] [10 <./figures/tikz/T
-ensor_Networks/contractions_of_isometric_tensor_networks/contractions_of_isomet
-ric_tensor_networks_a.pdf> <./figures/tikz/Tensor_Networks/contractions_of_isom
-etric_tensor_networks/contractions_of_isometric_tensor_networks_b.pdf> <./figur
-es/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contractions_
-of_isometric_tensor_networks_c.pdf>]
-<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=396, 232.46147pt x 73
+[8 <./figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_
+a.pdf> <./figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositi
+ons_b.pdf>]) (./chapters/Tensor_Networks/matrix_product_states.tex
+<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=362, 232.46147pt x 73
 .06999pt>
 File: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf Graphic file (type p
 df)
@@ -1820,8 +1864,13 @@ df)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf  
 used on input line 18.
 (pdftex.def)             Requested size: 232.46089pt x 73.0698pt.
-<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=3
-99, 361.02278pt x 73.06999pt>
+ [9] [10 <./figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_netwo
+rks/contractions_of_isometric_tensor_networks_a.pdf> <./figures/tikz/Tensor_Net
+works/contractions_of_isometric_tensor_networks/contractions_of_isometric_tenso
+r_networks_b.pdf> <./figures/tikz/Tensor_Networks/contractions_of_isometric_ten
+sor_networks/contractions_of_isometric_tensor_networks_c.pdf>]
+<figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=4
+18, 361.02278pt x 73.06999pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf>
@@ -1829,7 +1878,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_a.pdf  used on input line 27.
 (pdftex.def)             Requested size: 361.0219pt x 73.0698pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf, id=4
-00, 113.9999pt x 107.54478pt>
+19, 113.9999pt x 107.54478pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
@@ -1837,7 +1886,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_b.pdf  used on input line 31.
 (pdftex.def)             Requested size: 113.9996pt x 107.54451pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf, id=4
-01, 113.9999pt x 107.54478pt>
+20, 113.9999pt x 107.54478pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>
@@ -1849,7 +1898,7 @@ ensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf> <./figures/tikz/Ten
 sor_Networks/mps_canonical_form/mps_canonical_form_b.pdf> <./figures/tikz/Tenso
 r_Networks/mps_canonical_form/mps_canonical_form_c.pdf>]
 <figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation
-_value.pdf, id=491, 364.55898pt x 107.54478pt>
+_value.pdf, id=508, 364.55898pt x 107.54478pt>
 File: figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expect
 ation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expecta
@@ -1858,7 +1907,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_local_expectation_val
 ue/mps_local_expectation_value.pdf  used on input line 56.
 (pdftex.def)             Requested size: 364.55809pt x 107.54451pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mps_ca
-nonical_form_local_expectation_value.pdf, id=492, 365.1201pt x 362.48927pt>
+nonical_form_local_expectation_value.pdf, id=509, 365.1201pt x 362.48927pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/m
 ps_canonical_form_local_expectation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mp
@@ -1867,36 +1916,36 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form_local_
 expectation_value/mps_canonical_form_local_expectation_value.pdf  used on input
  line 62.
 (pdftex.def)             Requested size: 365.1192pt x 362.48839pt.
+ [12 <./figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expe
+ctation_value.pdf>] [13 <./figures/tikz/Tensor_Networks/mps_canonical_form_loca
+l_expectation_value/mps_canonical_form_local_expectation_value.pdf>]
 
+LaTeX Warning: Reference `fig' on page 14 undefined on input line 70.
 
-LaTeX Warning: Reference `fig' on page 12 undefined on input line 70.
-
-[12] [13 <./figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_
-expectation_value.pdf> <./figures/tikz/Tensor_Networks/mps_canonical_form_local
-_expectation_value/mps_canonical_form_local_expectation_value.pdf>] [14]
+[14]
 
 LaTeX Warning: Reference `' on page 15 undefined on input line 94.
 
 [15]
-<figures/Tensor_Networks/mps_tebd_first_order.jpeg, id=575, 2422.04875pt x 1003
-.75pt>
-File: figures/Tensor_Networks/mps_tebd_first_order.jpeg Graphic file (type jpg)
-
-<use figures/Tensor_Networks/mps_tebd_first_order.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/mps_tebd_first_order.jpeg  use
-d on input line 140.
-(pdftex.def)             Requested size: 318.67212pt x 132.0543pt.
-<figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg, id=576, 3465.94875pt x
- 1003.75pt>
-File: figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg Graphic file (type
- jpg)
-<use figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/mps_tebd_applying_bond_op.jpeg
-  used on input line 144.
-(pdftex.def)             Requested size: 318.67212pt x 92.27873pt.
+<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf, id=592, 343.19518pt x 13
+7.77272pt>
+File: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf Graphic file (type p
+df)
+<use figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf  
+used on input line 140.
+(pdftex.def)             Requested size: 343.19434pt x 137.77237pt.
+<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf, id=593, 385.00037pt x 97
+.77228pt>
+File: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf Graphic file (type p
+df)
+<use figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf  
+used on input line 144.
+(pdftex.def)             Requested size: 384.9994pt x 97.77202pt.
 ) (./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex
 [16]
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=585, 
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=603, 
 135.00037pt x 140.49088pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf Grap
 hic file (type pdf)
@@ -1904,7 +1953,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_a.pdf  used on input line 12.
 (pdftex.def)             Requested size: 135.00002pt x 140.49051pt.
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=586, 
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=604, 
 143.473pt x 160.7355pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf Grap
 hic file (type pdf)
@@ -1912,276 +1961,314 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_b.pdf  used on input line 17.
 (pdftex.def)             Requested size: 143.47266pt x 160.73509pt.
- [17 <./figures/Tensor_Networks/mps_tebd_first_order.jpeg> <./figures/Tensor_Ne
-tworks/mps_tebd_applying_bond_op.jpeg>]
-<figures/Tensor_Networks/Moving_ortho_center.jpeg, id=613, 2391.93625pt x 1003.
-75pt>
-File: figures/Tensor_Networks/Moving_ortho_center.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/Moving_ortho_center.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/Moving_ortho_center.jpeg  used
- on input line 30.
-(pdftex.def)             Requested size: 119.50279pt x 50.14449pt.
-<figures/Tensor_Networks/variational_MM.jpeg, id=614, 1933.2225pt x 1003.75pt>
-File: figures/Tensor_Networks/variational_MM.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/variational_MM.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/variational_MM.jpeg  used on i
-nput line 34.
-(pdftex.def)             Requested size: 239.0056pt x 124.09pt.
- [18 <./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf> <
-./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>]
-<figures/Tensor_Networks/MM.jpeg, id=646, 2498.33376pt x 1003.75pt>
-File: figures/Tensor_Networks/MM.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/MM.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/MM.jpeg  used on input line 54
-.
-(pdftex.def)             Requested size: 318.67212pt x 128.0262pt.
-<figures/Tensor_Networks/Tripartite_decomposition.jpeg, id=647, 4015.0pt x 917.
-4275pt>
-File: figures/Tensor_Networks/Tripartite_decomposition.jpeg Graphic file (type 
-jpg)
-<use figures/Tensor_Networks/Tripartite_decomposition.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/Tripartite_decomposition.jpeg 
- used on input line 58.
-(pdftex.def)             Requested size: 318.67212pt x 72.80774pt.
+ [17 <./figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf> <./figures/tikz/T
+ensor_Networks/mps_TEBD/mps_TEBD_b.pdf>] [18 <./figures/tikz/Tensor_Networks/is
+oTPS_structure/isoTPS_structure_a.pdf> <./figures/tikz/Tensor_Networks/isoTPS_s
+tructure/isoTPS_structure_b.pdf>]
+<figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ortho_ce
+nter.pdf, id=688, 265.00005pt x 143.00024pt>
+File: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ort
+ho_center.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_orth
+o_center.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_cente
+r/isoTPS_moving_ortho_center.pdf  used on input line 27.
+(pdftex.def)             Requested size: 264.99937pt x 142.99988pt.
+<figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ortho_s
+urface.pdf, id=691, 315.79982pt x 160.7355pt>
+File: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_or
+tho_surface.pdf Graphic file (type pdf)
+<use figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ort
+ho_surface.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surfa
+ce/isoTPS_moving_ortho_surface.pdf  used on input line 33.
+(pdftex.def)             Requested size: 315.79904pt x 160.73509pt.
+<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf, id=700, 395.7987pt x 1
+60.7355pt>
+File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf Graphic file (type
+ pdf)
+<use figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf
+  used on input line 53.
+(pdftex.def)             Requested size: 395.79773pt x 160.73509pt.
+<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf, id=701, 391.29991pt x 
+73.4986pt>
+File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf Graphic file (type
+ pdf)
+<use figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf>
+Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf
+  used on input line 58.
+(pdftex.def)             Requested size: 391.29895pt x 73.4984pt.
+
+Overfull \hbox (1.10909pt too wide) in paragraph at lines 53--59
+ [][] 
+ []
 
 
 LaTeX Warning: Reference `sec:' on page 19 undefined on input line 62.
 
-[19 <./figures/Tensor_Networks/Moving_ortho_center.jpeg> <./figures/Tensor_Netw
-orks/variational_MM.jpeg>] [20 <./figures/Tensor_Networks/MM.jpeg> <./figures/T
-ensor_Networks/Tripartite_decomposition.jpeg>])) [21] [22
+[19 <./figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_or
+tho_center.pdf>] [20 <./figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surfac
+e/isoTPS_moving_ortho_surface.pdf> <./figures/tikz/Tensor_Networks/isoTPS_MM/is
+oTPS_MM_a.pdf> <./figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf>]))
+[21] [22
 
 
 ]
 chapter 3.
 (./chapters/disoTPS/disoTPS.tex (./chapters/disoTPS/network_structure.tex
-<figures/Tensor_Networks/disoTPS.jpeg, id=701, 1003.75pt x 1003.75pt>
-File: figures/Tensor_Networks/disoTPS.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/disoTPS.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/disoTPS.jpeg  used on input li
-ne 3.
-(pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
-<figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg, id=705, 1995.4
-55pt x 1003.75pt>
-File: figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg Graphic fi
-le (type jpg)
-<use figures/Tensor_Networks/disoTPS_onesite_expectation_value.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/disoTPS_onesite_expectation_va
-lue.jpeg  used on input line 12.
-(pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
+<figures/tikz/disoTPS/disoTPS_structure/disoTPS_structure.pdf, id=834, 192.8996
+7pt x 202.29979pt>
+File: figures/tikz/disoTPS/disoTPS_structure/disoTPS_structure.pdf Graphic file
+ (type pdf)
+<use figures/tikz/disoTPS/disoTPS_structure/disoTPS_structure.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/disoTPS_structure/disoTPS_structu
+re.pdf  used on input line 3.
+(pdftex.def)             Requested size: 192.89919pt x 202.29929pt.
 
-[23] [24 <./figures/Tensor_Networks/disoTPS.jpeg> <./figures/Tensor_Networks/di
-soTPS_onesite_expectation_value.jpeg>]
-<figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg, id=719, 1995.4
-55pt x 1003.75pt>
-File: figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg Graphic fi
-le (type jpg)
-<use figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/disoTPS_twosite_expectation_va
-lue.jpeg  used on input line 19.
-(pdftex.def)             Requested size: 358.50233pt x 180.33025pt.
-) (./chapters/disoTPS/YB_move.tex
-<figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg, id=721, 1540.75626p
-t x 1002.74625pt>
-File: figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg Graphic file (t
-ype jpg)
-<use figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/disoTPS_moving_ortho_surface.j
-peg  used on input line 3.
-(pdftex.def)             Requested size: 358.50233pt x 233.3044pt.
+[23 <./figures/tikz/disoTPS/disoTPS_structure/disoTPS_structure.pdf>]
+<figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_value_a.p
+df, id=844, 173.00034pt x 182.40044pt>
+File: figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_valu
+e_a.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_value
+_a.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/one_site_expectation_value/one_si
+te_expectation_value_a.pdf  used on input line 13.
+(pdftex.def)             Requested size: 172.9999pt x 182.39998pt.
+<figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_value_b.p
+df, id=845, 185.94167pt x 179.03989pt>
+File: figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_valu
+e_b.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_value
+_b.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/one_site_expectation_value/one_si
+te_expectation_value_b.pdf  used on input line 25.
+(pdftex.def)             Requested size: 185.94121pt x 179.03944pt.
+<figures/tikz/disoTPS/two_site_expectation_value/two_site_expectation_value_a.p
+df, id=847, 173.00034pt x 182.40044pt>
+File: figures/tikz/disoTPS/two_site_expectation_value/two_site_expectation_valu
+e_a.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/two_site_expectation_value/two_site_expectation_value
+_a.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/two_site_expectation_value/two_si
+te_expectation_value_a.pdf  used on input line 33.
+(pdftex.def)             Requested size: 172.9999pt x 182.39998pt.
+<figures/tikz/disoTPS/two_site_expectation_value/two_site_expectation_value_b.p
+df, id=848, 185.94167pt x 181.41978pt>
+File: figures/tikz/disoTPS/two_site_expectation_value/two_site_expectation_valu
+e_b.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/two_site_expectation_value/two_site_expectation_value
+_b.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/two_site_expectation_value/two_si
+te_expectation_value_b.pdf  used on input line 45.
+(pdftex.def)             Requested size: 185.94121pt x 181.41934pt.
+) [24]
+[25 <./figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_val
+ue_a.pdf> <./figures/tikz/disoTPS/one_site_expectation_value/one_site_expectati
+on_value_b.pdf> <./figures/tikz/disoTPS/two_site_expectation_value/two_site_exp
+ectation_value_a.pdf> <./figures/tikz/disoTPS/two_site_expectation_value/two_si
+te_expectation_value_b.pdf>] (./chapters/disoTPS/YB_move.tex
+<figures/tikz/disoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf, id=906
+, 396.1219pt x 377.39995pt>
+File: figures/tikz/disoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf Gr
+aphic file (type pdf)
+<use figures/tikz/disoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/shifting_ortho_surface/shifting_o
+rtho_surface.pdf  used on input line 3.
+(pdftex.def)             Requested size: 396.12093pt x 377.39903pt.
+<figures/tikz/disoTPS/yang_baxter_move/yang_baxter_move.pdf, id=911, 185.59639p
+t x 65.79984pt>
+File: figures/tikz/disoTPS/yang_baxter_move/yang_baxter_move.pdf Graphic file (
+type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move/yang_baxter_move.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move/yang_baxter_move
+.pdf  used on input line 35.
+(pdftex.def)             Requested size: 185.59592pt x 65.79967pt.
+ [26] [27 <./figures/tikz/disoTPS/shifting_ortho_surface/shifting_ortho_surface
+.pdf>]
+(./chapters/disoTPS/YB_move_iterative.tex [28 <./figures/tikz/disoTPS/yang_baxt
+er_move/yang_baxter_move.pdf>]
+<figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_a.p
+df, id=971, 212.6645pt x 133.40038pt>
+File: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterativ
+e_a.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative
+_a.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_b
+axter_move_iterative_a.pdf  used on input line 15.
+(pdftex.def)             Requested size: 212.66399pt x 133.40002pt.
+<figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_b.p
+df, id=974, 314.96872pt x 148.16354pt>
+File: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterativ
+e_b.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative
+_b.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_b
+axter_move_iterative_b.pdf  used on input line 22.
+(pdftex.def)             Requested size: 314.96794pt x 148.16316pt.
+<figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c.p
+df, id=975, 349.80286pt x 145.84587pt>
+File: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterativ
+e_c.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative
+_c.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_b
+axter_move_iterative_c.pdf  used on input line 26.
+(pdftex.def)             Requested size: 349.802pt x 145.8455pt.
 
-[25 <./figures/Tensor_Networks/disoTPS_twosite_expectation_value.jpeg>]
-[26 <./figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg>]
-<figures/Tensor_Networks/YB_move_closeup.jpeg, id=741, 1787.67876pt x 1003.75pt
->
-File: figures/Tensor_Networks/YB_move_closeup.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/YB_move_closeup.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/YB_move_closeup.jpeg  used on 
-input line 35.
-(pdftex.def)             Requested size: 358.50233pt x 201.2825pt.
+Overfull \hbox (11.21173pt too wide) in paragraph at lines 26--27
+[][] 
+ []
 
-(./chapters/disoTPS/YB_move_iterative.tex [27 <./figures/Tensor_Networks/YB_mov
-e_closeup.jpeg>]
-<figures/disoTPS/YB_move_iterate_polar_a.jpeg, id=765, 2590.67876pt x 1003.75pt
->
-File: figures/disoTPS/YB_move_iterate_polar_a.jpeg Graphic file (type jpg)
-<use figures/disoTPS/YB_move_iterate_polar_a.jpeg>
-Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_a.jpeg  used on 
-input line 18.
-(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-<figures/disoTPS/YB_move_iterate_polar_b.jpeg, id=766, 2590.67876pt x 1003.75pt
->
-File: figures/disoTPS/YB_move_iterate_polar_b.jpeg Graphic file (type jpg)
-<use figures/disoTPS/YB_move_iterate_polar_b.jpeg>
-Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_b.jpeg  used on 
-input line 22.
-(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-<figures/disoTPS/YB_move_iterate_polar_c.jpeg, id=767, 2590.67876pt x 1003.75pt
->
-File: figures/disoTPS/YB_move_iterate_polar_c.jpeg Graphic file (type jpg)
-<use figures/disoTPS/YB_move_iterate_polar_c.jpeg>
-Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_c.jpeg  used on 
-input line 26.
-(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-<figures/disoTPS/YB_move_iterate_polar_d.jpeg, id=768, 2590.67876pt x 1003.75pt
->
-File: figures/disoTPS/YB_move_iterate_polar_d.jpeg Graphic file (type jpg)
-<use figures/disoTPS/YB_move_iterate_polar_d.jpeg>
-Package pdftex.def Info: figures/disoTPS/YB_move_iterate_polar_d.jpeg  used on 
-input line 30.
-(pdftex.def)             Requested size: 239.0056pt x 92.60036pt.
-) (./chapters/disoTPS/YB_move_svd_disentangle.tex [28] [29 <./figures/disoTPS/Y
-B_move_iterate_polar_a.jpeg> <./figures/disoTPS/YB_move_iterate_polar_b.jpeg> <
-./figures/disoTPS/YB_move_iterate_polar_c.jpeg> <./figures/disoTPS/YB_move_iter
-ate_polar_d.jpeg>]
-<figures/Tensor_Networks/yb_move_svd_disent.jpeg, id=798, 1154.3125pt x 1003.75
-pt>
-File: figures/Tensor_Networks/yb_move_svd_disent.jpeg Graphic file (type jpg)
-<use figures/Tensor_Networks/yb_move_svd_disent.jpeg>
-Package pdftex.def Info: figures/Tensor_Networks/yb_move_svd_disent.jpeg  used 
-on input line 18.
-(pdftex.def)             Requested size: 318.67212pt x 277.11188pt.
- [30] [31 <./figures/Tensor_Networks/YB_move_svd_disent.jpeg>]
-<figures/disoTPS/disentangling_theta_definition.jpeg, id=831, 1738.495pt x 1003
-.75pt>
-File: figures/disoTPS/disentangling_theta_definition.jpeg Graphic file (type jp
-g)
-<use figures/disoTPS/disentangling_theta_definition.jpeg>
-Package pdftex.def Info: figures/disoTPS/disentangling_theta_definition.jpeg  u
-sed on input line 45.
-(pdftex.def)             Requested size: 318.67212pt x 183.99077pt.
-<figures/disoTPS/disentangling_rho_definition.jpeg, id=832, 1821.80624pt x 1002
-.74625pt>
+<figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_d.p
+df, id=976, 297.87688pt x 148.7136pt>
+File: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterativ
+e_d.pdf Graphic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative
+_d.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_iterative/yang_b
+axter_move_iterative_d.pdf  used on input line 30.
+(pdftex.def)             Requested size: 297.87614pt x 148.71323pt.
+
+LaTeX Warning: Float too large for page by 10.72165pt on input line 35.
+
+) (./chapters/disoTPS/YB_move_svd_disentangle.tex [29 <./figures/tikz/disoTPS/y
+ang_baxter_move_iterative/yang_baxter_move_iterative_a.pdf>] [30 <./figures/tik
+z/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_b.pdf> <./figur
+es/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c.pdf> <.
+/figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_d.p
+df>]
+<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf, id=1082,
+ 345.69853pt x 65.79984pt>
+File: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf Grap
+hic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_
+move_svd_a.pdf  used on input line 21.
+(pdftex.def)             Requested size: 345.69768pt x 65.79967pt.
+<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf, id=1083,
+ 324.12193pt x 65.79984pt>
+File: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf Grap
+hic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_
+move_svd_b.pdf  used on input line 25.
+(pdftex.def)             Requested size: 324.12114pt x 65.79967pt.
+<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf, id=1084,
+ 100.01968pt x 65.79984pt>
+File: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf Grap
+hic file (type pdf)
+<use figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_
+move_svd_c.pdf  used on input line 29.
+(pdftex.def)             Requested size: 100.01942pt x 65.79967pt.
+ [31] [32 <./figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.p
+df> <./figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf> <.
+/figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf>]
+<figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf, id=1
+166, 212.6595pt x 98.00014pt>
+File: figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf 
+Graphic file (type pdf)
+<use figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf>
+Package pdftex.def Info: figures/tikz/disoTPS/theta_tilde_contraction/theta_til
+de_contraction.pdf  used on input line 56.
+(pdftex.def)             Requested size: 212.65897pt x 97.99988pt.
+<figures/disoTPS/disentangling_rho_definition.jpeg, id=1167, 1821.80624pt x 100
+2.74625pt>
 File: figures/disoTPS/disentangling_rho_definition.jpeg Graphic file (type jpg)
 
 <use figures/disoTPS/disentangling_rho_definition.jpeg>
 Package pdftex.def Info: figures/disoTPS/disentangling_rho_definition.jpeg  use
-d on input line 51.
+d on input line 62.
 (pdftex.def)             Requested size: 318.67212pt x 175.39142pt.
-<figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg, id=833, 1827.82875
-pt x 1003.75pt>
+<figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg, id=1169, 1827.8287
+5pt x 1003.75pt>
 File: figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg Graphic file (
 type jpg)
 <use figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg>
 Package pdftex.def Info: figures/disoTPS/disentangling_evenbly_vidal_algorithm.
-jpeg  used on input line 57.
+jpeg  used on input line 68.
 (pdftex.def)             Requested size: 318.67212pt x 174.98497pt.
 
 
-LaTeX Warning: Reference `' on page 32 undefined on input line 58.
+LaTeX Warning: Reference `' on page 33 undefined on input line 69.
 
 
-LaTeX Warning: Reference `' on page 32 undefined on input line 58.
+LaTeX Warning: Reference `' on page 33 undefined on input line 69.
 
-[32 <./figures/disoTPS/disentangling_theta_definition.jpeg>] [33 <./figures/dis
-oTPS/disentangling_rho_definition.jpeg> <./figures/disoTPS/disentangling_evenbl
-y_vidal_algorithm.jpeg>]
+[33 <./figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf
+> <./figures/disoTPS/disentangling_rho_definition.jpeg>] [34 <./figures/disoTPS
+/disentangling_evenbly_vidal_algorithm.jpeg>]
 
-LaTeX Warning: Reference `' on page 34 undefined on input line 72.
-
-
-LaTeX Warning: Reference `' on page 34 undefined on input line 73.
+LaTeX Warning: Reference `' on page 35 undefined on input line 83.
 
 
-LaTeX Warning: Reference `' on page 34 undefined on input line 73.
-
-[34]
-
-LaTeX Warning: Reference `eq:re_entropy' on page 35 undefined on input line 74.
+LaTeX Warning: Reference `' on page 35 undefined on input line 84.
 
 
+LaTeX Warning: Reference `' on page 35 undefined on input line 84.
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 74.
+
+LaTeX Warning: Reference `eq:re_entropy' on page 35 undefined on input line 85.
 
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 74.
 
-<figures/disoTPS/approximate_qr_decomposition.jpeg, id=875, 1003.75pt x 1166.35
-75pt>
+LaTeX Warning: Reference `' on page 35 undefined on input line 85.
+
+
+LaTeX Warning: Reference `' on page 35 undefined on input line 85.
+
+<figures/disoTPS/approximate_qr_decomposition.jpeg, id=1214, 1003.75pt x 1166.3
+575pt>
 File: figures/disoTPS/approximate_qr_decomposition.jpeg Graphic file (type jpg)
 
 <use figures/disoTPS/approximate_qr_decomposition.jpeg>
 Package pdftex.def Info: figures/disoTPS/approximate_qr_decomposition.jpeg  use
-d on input line 78.
+d on input line 89.
 (pdftex.def)             Requested size: 318.67212pt x 370.3055pt.
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 82.
+LaTeX Warning: Reference `' on page 35 undefined on input line 93.
 
-<figures/disoTPS/disentangling_riemannian_optimization.jpeg, id=882, 2656.92625
-pt x 1003.75pt>
+[35] [36 <./figures/disoTPS/approximate_qr_decomposition.jpeg>]
+<figures/disoTPS/disentangling_riemannian_optimization.jpeg, id=1240, 2656.9262
+5pt x 1003.75pt>
 File: figures/disoTPS/disentangling_riemannian_optimization.jpeg Graphic file (
 type jpg)
 <use figures/disoTPS/disentangling_riemannian_optimization.jpeg>
 Package pdftex.def Info: figures/disoTPS/disentangling_riemannian_optimization.
-jpeg  used on input line 86.
+jpeg  used on input line 97.
 (pdftex.def)             Requested size: 318.67212pt x 120.38353pt.
+
 (./figures/plots/disoTPS/yb_move_disentangling_renyi_2.tex
 ===== Image 'thesis-figure0' is up-to-date. ======
 ) (./figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure1" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure1" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure2" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure2" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure3" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure3" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure4" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure4" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure1' is up-to-date. ======
+===== Image 'thesis-figure2' is up-to-date. ======
+===== Image 'thesis-figure3' is up-to-date. ======
+===== Image 'thesis-figure4' is up-to-date. ======
 )
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 93.
+LaTeX Warning: Reference `' on page 37 undefined on input line 104.
 
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 94.
+LaTeX Warning: Reference `' on page 37 undefined on input line 105.
 
-[35] [36 <./figures/disoTPS/approximate_qr_decomposition.jpeg>] [37 <./figures/
-disoTPS/disentangling_riemannian_optimization.jpeg> <./thesis-figure0.pdf>]
-[38 <./thesis-figure1.pdf> <./thesis-figure2.pdf> <./thesis-figure3.pdf> <./the
-sis-figure4.pdf>])) (./chapters/disoTPS/TEBD.tex
+[37 <./figures/disoTPS/disentangling_riemannian_optimization.jpeg>]))
+(./chapters/disoTPS/TEBD.tex
 
-LaTeX Warning: Reference `' on page 39 undefined on input line 1.
+LaTeX Warning: Reference `' on page 38 undefined on input line 1.
 
 
-LaTeX Warning: Reference `sec:local_TEBD_updates' on page 39 undefined on input
+LaTeX Warning: Reference `sec:local_TEBD_updates' on page 38 undefined on input
  line 1.
 
 
-LaTeX Warning: Reference `sec:global_TEBD_updates' on page 39 undefined on inpu
+LaTeX Warning: Reference `sec:global_TEBD_updates' on page 38 undefined on inpu
 t line 1.
 
-(./chapters/disoTPS/TEBD_local_update.tex
-<figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg, id=1014, 1003.75pt x 1
+[38 <./thesis-figure0.pdf>] (./chapters/disoTPS/TEBD_local_update.tex
+<figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg, id=1294, 1003.75pt x 1
 580.90625pt>
 File: figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg Graphic file (type
  jpg)
@@ -2189,7 +2276,7 @@ File: figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg Graphic file (type
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_5_tensor_environment.jpeg
   used on input line 6.
 (pdftex.def)             Requested size: 119.50279pt x 188.20496pt.
-<figures/disoTPS/disoTPS_TEBD_contraction_definitions.jpeg, id=1015, 1368.11125
+<figures/disoTPS/disoTPS_TEBD_contraction_definitions.jpeg, id=1295, 1368.11125
 pt x 1003.75pt>
 File: figures/disoTPS/disoTPS_TEBD_contraction_definitions.jpeg Graphic file (t
 ype jpg)
@@ -2197,7 +2284,9 @@ ype jpg)
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_contraction_definitions.j
 peg  used on input line 10.
 (pdftex.def)             Requested size: 239.0056pt x 175.35255pt.
-<figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg, id=1024, 2931.95375pt x 100
+ [39 <./thesis-figure1.pdf> <./thesis-figure2.pdf> <./thesis-figure3.pdf> <./th
+esis-figure4.pdf>]
+<figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg, id=1371, 2931.95375pt x 100
 3.75pt>
 File: figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg Graphic file (type jpg)
 
@@ -2205,7 +2294,7 @@ File: figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_T1.jpeg  use
 d on input line 25.
 (pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
-<figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg, id=1025, 2931.95375pt x 100
+<figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg, id=1372, 2931.95375pt x 100
 3.75pt>
 File: figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg Graphic file (type jpg)
 
@@ -2213,7 +2302,7 @@ File: figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_Wm.jpeg  use
 d on input line 29.
 (pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
-<figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg, id=1026, 2931.95375pt x 100
+<figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg, id=1373, 2931.95375pt x 100
 3.75pt>
 File: figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg Graphic file (type jpg)
 
@@ -2221,7 +2310,7 @@ File: figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_T2.jpeg  use
 d on input line 33.
 (pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
-<figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg, id=1027, 2931.95375pt x 100
+<figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg, id=1374, 2931.95375pt x 100
 3.75pt>
 File: figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg Graphic file (type jpg)
 
@@ -2229,16 +2318,15 @@ File: figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_Wp.jpeg  use
 d on input line 37.
 (pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
-<figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg, id=1028, 2931.95375pt x 1003
+<figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg, id=1375, 2931.95375pt x 1003
 .75pt>
 File: figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg Graphic file (type jpg)
 <use figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg>
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_local_update_W.jpeg  used
  on input line 41.
 (pdftex.def)             Requested size: 239.0056pt x 81.81792pt.
-) [39]
-(./chapters/disoTPS/TEBD_global_update.tex
-<figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg, id=1038, 1392
+) (./chapters/disoTPS/TEBD_global_update.tex
+<figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg, id=1376, 1392
 .20125pt x 1003.75pt>
 File: figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg Graphic f
 ile (type jpg)
@@ -2246,7 +2334,7 @@ ile (type jpg)
 Package pdftex.def Info: figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_split
 ting.jpeg  used on input line 6.
 (pdftex.def)             Requested size: 239.0056pt x 172.30469pt.
-<figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg, id=1039, 1037.877
+<figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg, id=1377, 1037.877
 5pt x 1003.75pt>
 File: figures/disoTPS/disoTPS_TEBD_global_update_TEBD2_chain.jpeg Graphic file 
 (type jpg)
@@ -2268,7 +2356,7 @@ eg>] [42 <./figures/disoTPS/disoTPS_TEBD_global_update_TEBD1_splitting.jpeg> <.
 
 LaTeX Warning: Reference `' on page 43 undefined on input line 24.
 
-<figures/disoTPS/disoTPS_TEBD1_global_update.jpeg, id=1068, 2414.01875pt x 1003
+<figures/disoTPS/disoTPS_TEBD1_global_update.jpeg, id=1408, 2414.01875pt x 1003
 .75pt>
 File: figures/disoTPS/disoTPS_TEBD1_global_update.jpeg Graphic file (type jpg)
 <use figures/disoTPS/disoTPS_TEBD1_global_update.jpeg>
@@ -2297,7 +2385,7 @@ Overfull \hbox (3.65pt too wide) in paragraph at lines 40--45
 chapter 4.
 (./chapters/Toric_Code/Toric_Code.tex
 (./chapters/Toric_Code/toric_code_model.tex [47]
-<figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg, id=1111, 1003.
+<figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg, id=1452, 1003.
 75pt x 1003.75pt>
 File: figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg Graphic fi
 le (type jpg)
@@ -2307,7 +2395,7 @@ tor.jpeg  used on input line 36.
 (pdftex.def)             Requested size: 239.0056pt x 239.00574pt.
 )
 (./chapters/Toric_Code/representing_toric_code_gs_with_disoTPS.tex
-<figures/Toric_Code/toric_code_doubling_dof.jpeg, id=1116, 1002.74625pt x 1005.
+<figures/Toric_Code/toric_code_doubling_dof.jpeg, id=1457, 1002.74625pt x 1005.
 7575pt>
 File: figures/Toric_Code/toric_code_doubling_dof.jpeg Graphic file (type jpg)
 <use figures/Toric_Code/toric_code_doubling_dof.jpeg>
@@ -2315,7 +2403,7 @@ Package pdftex.def Info: figures/Toric_Code/toric_code_doubling_dof.jpeg  used
 on input line 6.
 (pdftex.def)             Requested size: 119.50279pt x 119.85696pt.
 <figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg, id=
-1117, 1003.75pt x 1299.85625pt>
+1458, 1003.75pt x 1299.85625pt>
 File: figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg
  Graphic file (type jpg)
 <use figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg>
@@ -2323,7 +2411,7 @@ File: figures/Toric_Code/toric_code_PEPS_representation_tensor_definitions.jpeg
 Package pdftex.def Info: figures/Toric_Code/toric_code_PEPS_representation_tens
 or_definitions.jpeg  used on input line 10.
 (pdftex.def)             Requested size: 92.81358pt x 120.17531pt.
-<figures/Toric_Code/toric_code_PEPS_representation.jpeg, id=1118, 1003.75pt x 1
+<figures/Toric_Code/toric_code_PEPS_representation.jpeg, id=1459, 1003.75pt x 1
 005.7575pt>
 File: figures/Toric_Code/toric_code_PEPS_representation.jpeg Graphic file (type
  jpg)
@@ -2331,13 +2419,13 @@ File: figures/Toric_Code/toric_code_PEPS_representation.jpeg Graphic file (type
 Package pdftex.def Info: figures/Toric_Code/toric_code_PEPS_representation.jpeg
   used on input line 14.
 (pdftex.def)             Requested size: 119.50279pt x 119.73419pt.
-<figures/Toric_Code/toric_code_disoTPS.jpeg, id=1119, 1003.75pt x 1549.79pt>
+<figures/Toric_Code/toric_code_disoTPS.jpeg, id=1460, 1003.75pt x 1549.79pt>
 File: figures/Toric_Code/toric_code_disoTPS.jpeg Graphic file (type jpg)
 <use figures/Toric_Code/toric_code_disoTPS.jpeg>
 Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS.jpeg  used on in
 put line 24.
 (pdftex.def)             Requested size: 99.58466pt x 153.75839pt.
-<figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg, id=1120, 1003.7
+<figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg, id=1461, 1003.7
 5pt x 1003.75pt>
 File: figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg Graphic fil
 e (type jpg)
@@ -2345,7 +2433,7 @@ e (type jpg)
 Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS_tensor_definitio
 ns.jpeg  used on input line 28.
 (pdftex.def)             Requested size: 155.35182pt x 155.3499pt.
-<figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg, id=1121, 1003
+<figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg, id=1462, 1003
 .75pt x 2393.94376pt>
 File: figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg Graphic f
 ile (type jpg)
@@ -2369,7 +2457,7 @@ LaTeX Warning: Reference `' on page 51 undefined on input line 66.
 ]
 chapter 5.
 (./chapters/TFI/TFI.tex (./chapters/TFI/TFI_model.tex [53]
-<figures/TFI/tenpy_snaking.jpeg, id=1187, 1002.74625pt x 1002.74625pt>
+<figures/TFI/tenpy_snaking.jpeg, id=1527, 1002.74625pt x 1002.74625pt>
 File: figures/TFI/tenpy_snaking.jpeg Graphic file (type jpg)
 <use figures/TFI/tenpy_snaking.jpeg>
 Package pdftex.def Info: figures/TFI/tenpy_snaking.jpeg  used on input line 11.
@@ -2403,198 +2491,33 @@ LaTeX Warning: Reference `' on page 55 undefined on input line 23.
 
 [55]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_methods.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure5" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure5" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure6" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure6" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure7" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure7" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure8" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure8" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure9" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure9" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure10" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure10" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure11" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure11" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure12" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure12" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure13" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure13" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure14" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure14" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure15" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure15" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure16" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure16" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure5' is up-to-date. ======
+===== Image 'thesis-figure6' is up-to-date. ======
+===== Image 'thesis-figure7' is up-to-date. ======
+===== Image 'thesis-figure8' is up-to-date. ======
+===== Image 'thesis-figure9' is up-to-date. ======
+===== Image 'thesis-figure10' is up-to-date. ======
+===== Image 'thesis-figure11' is up-to-date. ======
+===== Image 'thesis-figure12' is up-to-date. ======
+===== Image 'thesis-figure13' is up-to-date. ======
+===== Image 'thesis-figure14' is up-to-date. ======
+===== Image 'thesis-figure15' is up-to-date. ======
+===== Image 'thesis-figure16' is up-to-date. ======
 )
 
 LaTeX Warning: Reference `' on page 56 undefined on input line 26.
 
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure17" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure17" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure18" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure18" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure19" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure19" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure17' is up-to-date. ======
+===== Image 'thesis-figure18' is up-to-date. ======
+===== Image 'thesis-figure19' is up-to-date. ======
 )
 
 LaTeX Warning: Reference `' on page 56 undefined on input line 28.
 
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure20" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure20" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure21" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure21" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure20' is up-to-date. ======
+===== Image 'thesis-figure21' is up-to-date. ======
 )
 
 LaTeX Warning: Reference `' on page 56 undefined on input line 30.
@@ -2607,29 +2530,9 @@ LaTeX Warning: Reference `' on page 56 undefined on input line 30.
 figure11.pdf> <./thesis-figure12.pdf> <./thesis-figure13.pdf> <./thesis-figure1
 4.pdf> <./thesis-figure15.pdf> <./thesis-figure16.pdf>]
 (./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure22" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure22" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure22' is up-to-date. ======
 ) (./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure23" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure23" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure23' is up-to-date. ======
 )
 
 LaTeX Warning: Reference `' on page 58 undefined on input line 33.
@@ -2641,28 +2544,8 @@ LaTeX Warning: Reference `' on page 58 undefined on input line 33.
 LaTeX Warning: Reference `' on page 58 undefined on input line 33.
 
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure24" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure24" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure25" "\def\tikzexternalrea
-ljob{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure25" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed
-.
-
-\openout5 = `thesis.auxlock'.
-
+===== Image 'thesis-figure24' is up-to-date. ======
+===== Image 'thesis-figure25' is up-to-date. ======
 )) [58 <./thesis-figure17.pdf> <./thesis-figure18.pdf> <./thesis-figure19.pdf> 
 <./thesis-figure20.pdf> <./thesis-figure21.pdf>] [59 <./thesis-figure22.pdf> <.
 /thesis-figure23.pdf>] (./chapters/TFI/time_evolution.tex
@@ -2714,13 +2597,13 @@ chapter D.
 
 (./chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computa
 tion_of_gradient_and_hvp_for_riemannian_optimization.tex
-<figures/appendix_C/svd_derivative.jpeg, id=1754, 3639.5975pt x 1003.75pt>
+<figures/appendix_C/svd_derivative.jpeg, id=2094, 3639.5975pt x 1003.75pt>
 File: figures/appendix_C/svd_derivative.jpeg Graphic file (type jpg)
 <use figures/appendix_C/svd_derivative.jpeg>
 Package pdftex.def Info: figures/appendix_C/svd_derivative.jpeg  used on input 
 line 3.
 (pdftex.def)             Requested size: 318.67212pt x 87.88304pt.
-<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=1757, 2242.3775pt x 1
+<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=2097, 2242.3775pt x 1
 003.75pt>
 File: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg Graphic file (type j
 pg)
@@ -2728,7 +2611,7 @@ pg)
 Package pdftex.def Info: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg  
 used on input line 9.
 (pdftex.def)             Requested size: 318.67212pt x 142.63765pt.
-<figures/appendix_C/gradient_truncation_error.jpeg, id=1760, 2242.3775pt x 1002
+<figures/appendix_C/gradient_truncation_error.jpeg, id=2100, 2242.3775pt x 1002
 .74625pt>
 File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 
@@ -2736,14 +2619,14 @@ File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/appendix_C/gradient_truncation_error.jpeg  use
 d on input line 15.
 (pdftex.def)             Requested size: 318.67212pt x 142.49501pt.
-<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=1763, 1695.33376pt x 1003.
+<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=2103, 1695.33376pt x 1003.
 75pt>
 File: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_renyi_alpha_entropy.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg  used 
 on input line 21.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-<figures/appendix_C/hvp_truncation_error.jpeg, id=1766, 1695.33376pt x 1003.75p
+<figures/appendix_C/hvp_truncation_error.jpeg, id=2106, 1695.33376pt x 1003.75p
 t>
 File: figures/appendix_C/hvp_truncation_error.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_truncation_error.jpeg>
@@ -2760,7 +2643,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-01.
+02.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
@@ -2797,13 +2680,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51502 strings out of 478287
- 1158895 string characters out of 5849289
- 2136668 words of memory out of 5000000
- 68163 multiletter control sequences out of 15000+600000
- 495459 words of font info for 210 fonts, out of 8000000 for 9000
+ 56867 strings out of 478287
+ 1349776 string characters out of 5849290
+ 2402875 words of memory out of 5000000
+ 73505 multiletter control sequences out of 15000+600000
+ 495408 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 140i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/tex
@@ -2832,10 +2715,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (86 pages, 7087381 bytes).
+Output written on thesis.pdf (86 pages, 4563675 bytes).
 PDF statistics:
- 2078 PDF objects out of 2487 (max. 8388607)
- 1573 compressed objects within 16 object streams
- 292 named destinations out of 1000 (max. 500000)
- 52285 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 2419 PDF objects out of 2487 (max. 8388607)
+ 1842 compressed objects within 19 object streams
+ 294 named destinations out of 1000 (max. 500000)
+ 52310 words of extra memory for PDF output out of 61914 (max. 10000000)
 

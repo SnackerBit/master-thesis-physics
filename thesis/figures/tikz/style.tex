@@ -1,11 +1,16 @@
 % This file is used to globally define colors, line widths, etc. for diagrams used in the thesis
 \usepackage{tikz}
 \usepackage{ifthen}
+\usepackage{tikz-network}
+\RequirePackage{amssymb}
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
 
 % Libraries
 \usetikzlibrary{decorations.markings}
 \usetikzlibrary{arrows}
 \usetikzlibrary{positioning}
+\usetikzlibrary{calc}
 
 % Basic colors
 \definecolor{borderColor}{rgb}{0.0, 0.0, 0.0}
@@ -20,40 +25,65 @@
 \definecolor{redMarkingColor}{rgb}{1.0, 0.0, 0.0}
 \definecolor{greenMarkingColor}{rgb}{0.1, 0.8, 0.1}
 \definecolor{operatorColor}{rgb}{0.5, 1.0, 0.5}
+\definecolor{specialLegColor}{rgb}{0.235, 0.125, 0.941}
 \def \backgroundopacity {0.5}
 
 % Basic sizes
 \def \defaultTensorWidth {19pt}
 \def \smallTensorWidth {11pt}
 \def \defaultLineWidth {2}
+\def \lineWidthThin {1.8}
 \def \xOffsetUnitCell {180pt}
 \def \yOffsetUnitCell {180pt}
 \def \yOffsetPhysicalLeg {30pt}
+\def \physicalLegLength {30pt}
 \def \physicalLegLengthSmall {15pt}
 \def \defaultArrowscale {0.7}
+\def \arrowScaleSmall {0.6}
 \def \defaultArrowXShift {7pt}
 \def \defaultTextOffset {6pt}
+\def \defaultTextOffsetLarge {9pt}
 \def \defaultTextOffsetSmall {1pt}
 \def \defaultDistanceSmall {30pt}
+\def \defaultDistanceSmallDiagonal {32pt}
 \def \defaultDistanceNormal {40pt}
 \def \defaultDistanceLarge {62 pt}
 \def \defaultDistanceEquations {40pt}
 \def \identityLegDistance {10 pt}
 \def \isoTPSPhysicalLegAngle {30}
+\def \defaultLegSeperationSmall{5pt}
+\def \roundedCornerInsetNormal{10pt}
+\def \roundedCornerInsetSmall{2pt}
+\def \braceWidth{10pt}
 
 % Tensor styles
 \tikzstyle{tensorPhysical} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
 \tikzstyle{tensorAuxillary} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=auxillaryTensorColor, draw=borderColor, outer sep=0]
 \tikzstyle{tensorOrthoCenter} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=orthogonalityCenterColor, draw=borderColor, outer sep=0]
-\tikzstyle{tensorOperator} = [rectangle, line width=\defaultLineWidth, fill=operatorColor, draw=borderColor, rounded corners]
+
+\tikzstyle{tensorPhysicalSmall} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
+\tikzstyle{tensorAuxillarySmall} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=auxillaryTensorColor, draw=borderColor, outer sep=0]
+\tikzstyle{tensorOrthoCenterSmall} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=orthogonalityCenterColor, draw=borderColor, outer sep=0]
+
+\tikzstyle{tensorOperator} = [rectangle, line width=\defaultLineWidth, fill=operatorColor, draw=borderColor, rounded corners=\roundedCornerInsetNormal]
+\tikzstyle{tensorOperatorSmall} = [rectangle, line width=\defaultLineWidth, fill=operatorColor, draw=borderColor, rounded corners=\roundedCornerInsetSmall]
 
 % Leg styles
 \tikzstyle{auxillaryLeg} = [color=auxillaryLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{physicalLeg} = [color=physicalLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLeg} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+\tikzstyle{specialLeg} = [color=specialLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+
 \tikzstyle{virtualLegLateArrows} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.8 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLegWithoutArrows} = [color=virtualLegColor, line width=\defaultLineWidth]
 \tikzstyle{physicalLegWithoutArrows} = [color=physicalLegColor, line width=\defaultLineWidth]
+
+\tikzstyle{auxillaryLegSmall} = [color=auxillaryLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+\tikzstyle{auxillaryLegSmallWithoutArrows} = [color=auxillaryLegColor, line width=\lineWidthThin]
+\tikzstyle{physicalLegSmall} = [color=physicalLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+\tikzstyle{virtualLegSmall} = [color=virtualLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
+\tikzstyle{virtualLegSmallWithoutArrows} = [color=virtualLegColor, line width=\lineWidthThin]
+\tikzstyle{physicalLegSmallWithoutArrows} = [color=physicalLegColor, line width=\lineWidthThin]
 
 % special symbols
 \usepackage{amssymb}
@@ -98,3 +128,22 @@
 	}
 	-- cycle
 }
+
+% Command for drawing braces
+%% https://tex.stackexchange.com/questions/55068/is-there-a-tikz-equivalent-to-the-pstricks-ncbar-command
+\tikzset{
+	ncbar angle/.initial=90,
+	ncbar/.style={
+		to path=(\tikztostart)
+		-- ($(\tikztostart)!#1!\pgfkeysvalueof{/tikz/ncbar angle}:(\tikztotarget)$)
+		-- ($(\tikztotarget)!($(\tikztostart)!#1!\pgfkeysvalueof{/tikz/ncbar angle}:(\tikztotarget)$)!\pgfkeysvalueof{/tikz/ncbar angle}:(\tikztostart)$)
+		-- (\tikztotarget)
+	},
+	ncbar/.default=0.5cm,
+}
+
+\tikzset{square left brace/.style={ncbar=10pt}}
+\tikzset{square right brace/.style={ncbar=-10pt}}
+
+\tikzset{round left paren/.style={ncbar=10pt,out=120,in=-120}}
+\tikzset{round right paren/.style={ncbar=10pt,out=60,in=-60}}

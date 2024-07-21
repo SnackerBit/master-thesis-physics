@@ -1,7 +1,7 @@
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{figures/Tensor_Networks/disoTPS_moving_ortho_surface.jpeg}
-	\caption{Two YB-moves are used to shift the orthogonality hypersurface one column to the right. In the last step, the orthogonality center can be moved across the $T$-tensor by contracting the two tensors and performing a QR-decomposition.}
+	\includegraphics[scale=1]{figures/tikz/disoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf}
+	\caption{Two YB-moves are used to shift the orthogonality hypersurface one column to the right. In the last step, the orthogonality center can be moved across the $T$-tensor by contracting the two tensors and performing a truncated SVD.}
 	\label{fig:disoTPS_moving_ortho_surface}
 \end{figure}
 Most algorithms implemented on disoTPS require an efficient procedure for moving the orthogonality surface, where the error introduced by this procedure should be as small as possible. For isoTPS, the current best procedure is given by the Moses Move, followed by an optional variational optimization. \par
@@ -32,7 +32,7 @@ where in the second step we used the fact that the wave function is normalized t
 under the constraints \eqref{eq:disoTPS_YB_move_constraints}. Because the only tensors that are changed by the YB move are $W_1$, $W_2$ and $T$ and the three tensors make up a subregion of the full network with only incoming arrows, we can use the isometry condition and the computation of the overlap reduces to a contraction of only six tensors as shown in figure \figref{fig:YB_move_iterate_polar_overlap}.\par
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{figures/Tensor_Networks/YB_move_closeup.jpeg}
+	\includegraphics[scale=1]{figures/tikz/disoTPS/yang_baxter_move/yang_baxter_move.pdf}
 	\caption{The Yang-Baxter (YB) move is the procedure of "pulling" two auxillary tensors $W_1$ and $W_2$ through a site tensor $T$.}
 	\label{fig:disoTPS_YB_move_closeup}
 \end{figure}
@@ -41,7 +41,6 @@ In the following, we present two explicit algorithms for performing the YB move.
 \subsection{Iterative optimization with local updates}
 \label{sec:YB_move_iterative_local_optimization}
 \input{chapters/disoTPS/YB_move_iterative.tex}
-
 
 \subsection{Tripartite decompositon using an SVD and disentangling}
 \label{sec:YB_move_svd_disentangle}

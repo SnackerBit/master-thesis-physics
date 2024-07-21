@@ -1,0 +1,67 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+
+\def\opOffset{\defaultDistanceNormal}
+\def\blobhalfwidth{(\defaultDistanceNormal+\defaultTensorWidth)/2}
+\def\blobhalfheight{(\defaultTensorWidth)/2}
+
+\begin{document}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter] (A1) at (0, 0) {};
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A2) at (\defaultDistanceNormal, 0) {};
+		
+		\draw[virtualLeg] (A2) -- (A1);
+		\draw[virtualLeg] (A2)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (A2);
+		\draw[virtualLeg] (A1)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (A1);
+		
+		\node[tensorOperator, minimum width=\defaultDistanceNormal+\defaultTensorWidth, minimum height=\defaultTensorWidth] (op1) at (\defaultDistanceNormal/2, -\opOffset) {$\hat{U}^{[n,n+1]}(\Delta t)$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (A1)+(0, -\opOffset+\defaultTensorWidth/2) -- (A1);
+			\draw[physicalLeg] (A2)+(0, -\opOffset+\defaultTensorWidth/2) -- (A2);
+			
+			\draw[physicalLeg] (0, -2*\opOffset+\defaultTensorWidth/2) -- ++(0, \opOffset-\defaultTensorWidth);
+			\draw[physicalLeg] (1*\defaultDistanceNormal, -2*\opOffset+\defaultTensorWidth/2) -- ++(0, \opOffset-\defaultTensorWidth);
+		\end{pgfonlayer}
+	
+		\node[] at (0, \defaultTensorWidth/2+1.5*\defaultTextOffset) {$\Lambda^{[n]}$};
+		\node[] at (\defaultDistanceNormal, \defaultTensorWidth/2+1.5*\defaultTextOffset) {$B^{[n+1]}$};
+		
+		\node[] () at (2*\defaultDistanceNormal-\defaultTensorWidth/2+\defaultDistanceEquations/2, -\opOffset+\defaultTensorWidth/2+\defaultTextOffset) {$=$};
+		
+		\def\blobPosX{2*\defaultDistanceNormal-\defaultTensorWidth/2+\defaultDistanceEquations+\blobhalfwidth+\defaultDistanceNormal-\defaultTensorWidth}
+		\def\blobPosY{-\opOffset/2+\defaultTextOffset}
+		\node[draw, ellipse, minimum width={2*\blobhalfwidth}, minimum height={\blobhalfheight*2}, line width=\defaultLineWidth, draw=borderColor, fill=generalTensorColor,outer sep=0] (theta) at ({\blobPosX}, \blobPosY) {};
+		\draw[virtualLeg] (theta)+({-\blobhalfwidth-\defaultDistanceNormal+\defaultTensorWidth}, 0) -- (theta);
+		\draw[virtualLeg] (theta)+({\blobhalfwidth+\defaultDistanceNormal-\defaultTensorWidth}, 0) -- (theta);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] ({\blobPosX-\defaultDistanceNormal/2}, \blobPosY-\opOffset+\defaultTensorWidth/2) -- ++(0, \opOffset-\defaultTensorWidth);
+			\draw[physicalLegWithoutArrows] ({\blobPosX-\defaultDistanceNormal/2}, \blobPosY-\defaultTensorWidth/2)  -- ++(0, \defaultTensorWidth/2);
+			\draw[physicalLeg] ({\blobPosX+\defaultDistanceNormal/2}, \blobPosY-\opOffset+\defaultTensorWidth/2) -- ++(0, \opOffset-\defaultTensorWidth);
+			\draw[physicalLegWithoutArrows] ({\blobPosX+\defaultDistanceNormal/2}, \blobPosY-\defaultTensorWidth/2)  -- ++(0, \defaultTensorWidth/2);
+		\end{pgfonlayer}
+	
+		\node[] at ({\blobPosX}, \blobPosY+\defaultTensorWidth/2+1.5*\defaultTextOffset) {$\tilde{\theta}^{[n, n+1]}$};
+	
+		\node[] () at ({\blobPosX+\blobhalfwidth+\defaultDistanceNormal-\defaultTensorWidth+\defaultDistanceEquations/2}, -\opOffset+\defaultTensorWidth/2+\defaultTextOffset) {$=$};
+		
+		\def\AfinalposX{\blobPosX+\blobhalfwidth+2*\defaultDistanceNormal-3*\defaultTensorWidth/2+\defaultDistanceEquations}
+		\def\AfinalposY{\blobPosY}
+	
+		\node[tensorOrthoCenter, fill=generalTensorColor] (A1p) at ({\AfinalposX}, \AfinalposY) {};
+		\node[tensorOrthoCenter] (A2p) at ({\AfinalposX+\defaultDistanceNormal}, \AfinalposY) {};
+		
+		\draw[virtualLeg] (A1p) -- (A2p);
+		\draw[virtualLeg] (A2p)+(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (A2p);
+		\draw[virtualLeg] (A1p)+(-\defaultDistanceNormal+\defaultTensorWidth/2, 0) -- (A1p);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (A1p)+(0, -\opOffset+\defaultTensorWidth/2) -- (A1p);
+			\draw[physicalLeg] (A2p)+(0, -\opOffset+\defaultTensorWidth/2) -- (A2p);
+		\end{pgfonlayer}
+	
+	\node[] at ({\AfinalposX}, \AfinalposY+\defaultTensorWidth/2+1.5*\defaultTextOffset) {$A^{[n]\prime}$};
+	\node[] at ({\AfinalposX+\defaultDistanceNormal}, \AfinalposY+\defaultTensorWidth/2+1.5*\defaultTextOffset) {$\Lambda^{[n+1]\prime}$};
+	\end{tikzpicture}
+\end{document}

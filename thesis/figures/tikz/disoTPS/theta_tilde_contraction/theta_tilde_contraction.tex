@@ -1,0 +1,105 @@
+\documentclass[crop, tikz]{standalone}
+\usetikzlibrary{decorations.pathreplacing}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{0.8*\defaultDistanceSmall}
+	\def\equationDistance{\defaultDistanceEquations}
+		\def\unitaryWidth{1.0*\smallTensorWidth}
+		\def\thetaHeight{2.0*\smallTensorWidth}
+		\def\unitaryHeight{2.0*\smallTensorWidth}
+	\begin{tikzpicture}
+	
+		% ============================================================================
+		% 1st part
+		% ============================================================================
+		
+		\node[tensorOperatorSmall, minimum width=\unitaryWidth, minimum height=\unitaryHeight] (U) at (-\tensorDistance, 0) {};
+		\node[] () at (-\tensorDistance, \unitaryHeight/2+\defaultTextOffsetLarge) {$U$};
+		
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\smallTensorWidth, minimum height=\thetaHeight, fill=white] (theta) at (0, 0) {};
+		\node[] () at (\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$\theta$};
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (U.center) -- (theta.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (U.center) -- (theta.center);
+			
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (U.center)+(-\tensorDistance+\unitaryWidth/2, 0) -- ++(-\unitaryWidth/2, 0);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (U.center)+(-\tensorDistance+\unitaryWidth/2, 0) -- ++(-\unitaryWidth/2, 0);
+			
+			\draw[auxillaryLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (0, \tensorDistance) -- ++(0, -0.5*\tensorDistance);
+			\draw[auxillaryLegSmallWithoutArrows, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (0, \tensorDistance) -- (theta.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (0, \tensorDistance) -- ++(0, -0.5*\tensorDistance);
+			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (0, \tensorDistance) -- (theta.center);
+			
+			\draw[auxillaryLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (0, -\tensorDistance) -- ++(0, 0.5*\tensorDistance);
+			\draw[auxillaryLegSmallWithoutArrows, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (0, -\tensorDistance) -- (theta.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (0, -\tensorDistance) -- ++(0, 0.5*\tensorDistance);
+			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (0, -\tensorDistance) -- (theta.center);
+			
+		\end{pgfonlayer}
+		\node[] () at (-\tensorDistance/2, \defaultLegSeperationSmall+\defaultTextOffsetLarge) {$i^\prime$};
+		\node[] () at (-\tensorDistance/2, -\defaultLegSeperationSmall-\defaultTextOffsetLarge) {$j^\prime$};
+		\node[] () at (-3*\tensorDistance/2, \defaultLegSeperationSmall+\defaultTextOffsetLarge) {$i$};
+		\node[] () at (-3*\tensorDistance/2, -\defaultLegSeperationSmall-\defaultTextOffsetLarge) {$j$};
+		
+		\draw [decorate,decoration={brace,amplitude=2pt, mirror}] (-1.5*\defaultLegSeperationSmall, -\tensorDistance-2*\defaultTextOffsetSmall) -- ++(3*\defaultLegSeperationSmall, 0);
+		\draw [decorate,decoration={brace,amplitude=2pt}] (-1.5*\defaultLegSeperationSmall, \tensorDistance+2*\defaultTextOffsetSmall) -- ++(3*\defaultLegSeperationSmall, 0);
+		
+		\node[] () at (0, -\tensorDistance-2*\defaultTextOffsetSmall-\defaultTextOffsetLarge) {$r$};
+		\node[] () at (0, \tensorDistance+2*\defaultTextOffsetSmall+\defaultTextOffsetLarge) {$l$};
+	
+		% ============================================================================
+		% 2nd part
+		% ============================================================================
+		
+		\node[] () at (\smallTensorWidth/2+\defaultTextOffsetLarge+\defaultDistanceEquations/2, 0) {$=$};
+		\def\posX{\smallTensorWidth/2+\defaultTextOffsetLarge+\defaultDistanceEquations+\tensorDistance-\unitaryWidth/2}
+	
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\smallTensorWidth, minimum height=\thetaHeight, fill=white] (theta) at (\posX, 0) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$\tilde{\theta}$};
+		
+		
+		\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (theta.center)+(-\tensorDistance+\unitaryWidth/2, 0) -- ++(-\unitaryWidth/2, 0);
+		\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (theta.center)+(-\tensorDistance+\unitaryWidth/2, 0) -- ++(-\unitaryWidth/2, 0);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (theta)+(0, \tensorDistance) -- (theta);
+			\draw[specialLeg] (theta)+(0, -\tensorDistance) -- (theta);
+		\end{pgfonlayer}
+		
+		\node[] () at (\posX, -\tensorDistance-\defaultTextOffsetLarge) {$r$};
+		\node[] () at (\posX, \tensorDistance+\defaultTextOffsetLarge) {$l$};
+		\node[] () at (\posX-\tensorDistance/2, \defaultLegSeperationSmall+\defaultTextOffsetLarge) {$i^\prime$};
+		\node[] () at (\posX-\tensorDistance/2, -\defaultLegSeperationSmall-\defaultTextOffsetLarge) {$j^\prime$};
+		
+		
+		% ============================================================================
+		% 3rd part
+		% ============================================================================
+		
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge+\defaultDistanceEquations/2, 0) {$=$};
+		\def\posX{\smallTensorWidth+2*\defaultTextOffsetLarge+2*\defaultDistanceEquations+2*\tensorDistance-\unitaryWidth};
+		
+		\node[tensorPhysicalSmall, fill=generalTensorColor] (U) at (\posX, \tensorDistance) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, \tensorDistance) {$U$};
+		\node[tensorPhysicalSmall, fill=generalTensorColor] (S) at (\posX, 0) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$S$};
+		\node[tensorPhysicalSmall, fill=generalTensorColor] (Vc) at (\posX, -\tensorDistance) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, -\tensorDistance) {$V^*$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (U) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (U) -- (S);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (Vc) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (Vc) -- (S);
+			
+			\draw[specialLeg] (U)+(0, \tensorDistance) -- (U);
+			\draw[specialLeg] (Vc)+(0, -\tensorDistance) -- (Vc);
+			
+			\draw[virtualLegSmall] (U)+(-\tensorDistance+\unitaryWidth/2, 0) -- (U);
+			\draw[virtualLegSmall] (Vc)+(-\tensorDistance+\unitaryWidth/2, 0) -- (Vc);
+			
+		\end{pgfonlayer}
+		
+	\end{tikzpicture}
+\end{document}

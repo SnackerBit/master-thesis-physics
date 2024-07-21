@@ -24,16 +24,15 @@ Recently, the new class of \textit{isometric Tensor Product States} (isoTPS) has
 In the following, we will give a brief introduction to the isoTPS defined in \cite{cite:isometric_tensor_network_states_in_two_dimensions} and discuss their properties. A two-dimensional isoTPS on the square lattice is constructed by enforcing the isometry conditions shown in figure \figref{fig:square_isoTPS}. All isometries are chosen in such a way that all arrows point towards a special row and column, called the \textit{orthogonality hypersurface} of the isoTPS. The term "hypersurface" is chosen in anticipation of a generalization to higher dimensions. Because of the isometry condition, one can think of the contractions of each of the four regions outside the orthogonality hypersurface as orthogonal boundary maps \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}. The single tensor with only incoming arrows is called the \textit{orthogonality center}. local expectation values of operators acting in the vicinity of the orthogonality center can be computed efficiently because most contractions reduce to identity, similar to the computation of local expectation values in MPS (see figure \figref{fig:mps_local_expectation_value_canonical}). The orthogonality center can be moved along the orthogonality hypersurface simply and exactly using a QR-decomposition as shown in figure \figref{fig:isoTPS_moving_ortho_center}. \par
 \begin{figure}
 	\centering
-	\subcaptionbox{\label{fig:isoTPS_moving_ortho_center}}
-	{%
-		\includegraphics[width=0.3\textwidth]{figures/Tensor_Networks/Moving_ortho_center.jpeg}
-	}
-	\subcaptionbox{\label{fig:isoTPS_moving_ortho_column}}
-	{%
-		\includegraphics[width=0.6\textwidth]{figures/Tensor_Networks/variational_MM.jpeg}
-	}
+	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ortho_center.pdf}
 	\caption{Moving the orthogonality center and the orthogonality hyper surface around is a central problem in isoTPS applications. (a) Moving the orthogonality center along the orthogonality hypersurface can be done easily via QR-decompositions. (b) An orthogonality column can be moved by first solving equation \eqref{eq:isoTPS_moving_ortho_surface_auxillary_formulation} variationally and then absorbing $\Lambda$ into $B_{l+1}$ via the standard MPO-MPS multiplication and MPS compression algorithms.}
-	\label{fig:isoTPS_moving_ortho_center_and_column}
+	\label{fig:isoTPS_moving_ortho_center}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ortho_surface.pdf}
+	\caption{The orthogonality hypersurface can be moved to the right by first solving equation \eqref{eq:isoTPS_moving_ortho_surface_auxillary_formulation} variationally and then absorbing $\Lambda$ into $B^{[n+1]}$ via the standard MPO-MPS multiplication and MPS compression algorithms.}
+	\label{fig:isoTPS_moving_ortho_column}
 \end{figure}
 Moving the orthogonality surface is a harder problem, which in general can only be done approximately. In analogy to MPS and as shown in figure \figref{fig:square_isoTPS}, we call columns left of the orthogonality hypersurface $A_l$ and tensors right of the orthogonality hypersurface $B_l$, with $l = 1,2,\dots,L$ and $L$ the linear system size. Moving the orthogonality hypersurface $\Lambda_l$ one column to the right can be expressed as solving the problem
 \begin{equation}
@@ -50,11 +49,12 @@ where $\Lambda$ is a column of tensors with no physical indices, as shown in fig
 	\centering
 	\subcaptionbox{\label{fig:Moses_move}}
 	{%
-		\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/MM.jpeg}
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf}
 	}
 	\subcaptionbox{\label{fig:tripartite_decomposition}}
 	{%
-		\includegraphics[width=0.8\textwidth]{figures/Tensor_Networks/Tripartite_decomposition.jpeg}
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf}
+		
 	}
 	\caption{(a) The Moses Move (MM) splits the column $\Lambda_l$ into $A_l$ and $\Lambda$ via a single unzipping sweep of tripartite decompositions. (b) Tripartite decomposition of the tensor $W$ as explained in the text.}
 	\label{fig:Moses_move_and_tripartite_decomposition}
