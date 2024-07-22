@@ -80,11 +80,11 @@
 		\def\posX{\smallTensorWidth+2*\defaultTextOffsetLarge+2*\defaultDistanceEquations+2*\tensorDistance-\unitaryWidth};
 		
 		\node[tensorPhysicalSmall, fill=generalTensorColor] (U) at (\posX, \tensorDistance) {};
-		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, \tensorDistance) {$U$};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, \tensorDistance) {$X$};
 		\node[tensorPhysicalSmall, fill=generalTensorColor] (S) at (\posX, 0) {};
 		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$S$};
 		\node[tensorPhysicalSmall, fill=generalTensorColor] (Vc) at (\posX, -\tensorDistance) {};
-		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, -\tensorDistance) {$V^*$};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, -\tensorDistance) {$Y^*$};
 		
 		\begin{pgfonlayer}{bg}
 			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (U) -- (S);

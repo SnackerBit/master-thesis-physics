@@ -258,8 +258,8 @@
       \strng{authorbibnamehash}{6fe91ce93ec3150a2a51092e35e37fab}
       \strng{authornamehash}{6fe91ce93ec3150a2a51092e35e37fab}
       \strng{authorfullhash}{6fe91ce93ec3150a2a51092e35e37fab}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We prove an area law for the entanglement entropy in gapped one-dimensional quantum systems. The bound on the entropy grows surprisingly rapidly with the correlation length; we discuss this in terms of properties of quantum expanders and present a conjecture on matrix product states which may provide an alternate way of arriving at an area law. We also show that, for gapped, local systems, the bound on Von Neumann entropy implies a bound on Rényi entropy for sufficiently large α&lt;1 and implies the ability to approximate the ground state by a matrix product state.}
@@ -308,8 +308,8 @@
       \strng{authorbibnamehash}{1729854676498146571270dd1725d2e1}
       \strng{authornamehash}{1729854676498146571270dd1725d2e1}
       \strng{authorfullhash}{1729854676498146571270dd1725d2e1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{1}
@@ -347,8 +347,8 @@
       \strng{authorbibnamehash}{fe10cf33913e45c3685598c8b35bc209}
       \strng{authornamehash}{fe10cf33913e45c3685598c8b35bc209}
       \strng{authorfullhash}{fe10cf33913e45c3685598c8b35bc209}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -386,8 +386,8 @@
       \strng{authorbibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
       \strng{authornamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
       \strng{authorfullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -441,8 +441,8 @@
       \strng{authornamehash}{1d2bd47bada416779c900020f2866a24}
       \strng{authorfullhash}{378a32f9374e5aadd97a6630134a1e0b}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -491,8 +491,8 @@
       \strng{authornamehash}{1d2bd47bada416779c900020f2866a24}
       \strng{authorfullhash}{e4e6fce0cefee713afed6ae4e077168f}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -789,8 +789,8 @@
       \strng{authorbibnamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
       \strng{authornamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
       \strng{authorfullhash}{09e1659c7d5dcadfaadfe03f255fd1b8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{8}
@@ -1303,8 +1303,8 @@
       \strng{authorbibnamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authornamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authorfullhash}{e7190b12d85362656ed68bdbd6bb3b2d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781400830244}
@@ -1347,8 +1347,8 @@
       \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
       \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
       \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2542-4653}
@@ -1395,8 +1395,8 @@
       \strng{authorbibnamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authornamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authorfullhash}{1fb317b919aa78dc3d7db4836ffad4b5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1367-2630}
@@ -1442,8 +1442,8 @@
       \strng{authorbibnamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authornamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authorfullhash}{7bd438baffcc0da55c3c7385d29cbb81}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.MS}
@@ -1544,8 +1544,8 @@
       \strng{authorbibnamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authornamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authorfullhash}{c81e2ec2bfb64279a08a5b9084ed22ee}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications in Mathematical Physics}
@@ -1570,8 +1570,8 @@
       \strng{authorbibnamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
       \strng{authornamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
       \strng{authorfullhash}{5ef94f8733b4abb1d99fbc282b63e1fb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Student Review}
@@ -1602,8 +1602,8 @@
       \strng{authorbibnamehash}{78e77e25e44790454e4c55d54a11c970}
       \strng{authornamehash}{78e77e25e44790454e4c55d54a11c970}
       \strng{authorfullhash}{78e77e25e44790454e4c55d54a11c970}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -1641,8 +1641,8 @@
       \strng{authorbibnamehash}{de6adaba318879a7243bf195f0a51ae6}
       \strng{authornamehash}{de6adaba318879a7243bf195f0a51ae6}
       \strng{authorfullhash}{de6adaba318879a7243bf195f0a51ae6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Ising phases and transitions in transverse Ising models}
@@ -1671,8 +1671,8 @@
       \strng{authorbibnamehash}{81a576f1972513858145eea9142b4042}
       \strng{authornamehash}{81a576f1972513858145eea9142b4042}
       \strng{authorfullhash}{81a576f1972513858145eea9142b4042}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}

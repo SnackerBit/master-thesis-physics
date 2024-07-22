@@ -7,9 +7,9 @@ The \textit{reduced QR-decomposition} of a matrix $A \in \mathbb{C}^{n\times m}$
 where $Q\in\mathbb{C}^{n\times k}$ is an isometry, $R\in\mathbb{C}^{k\times m}$ is an upper triangular matrix and $k \coloneqq \min(n, m)$. The computational complexity of the QR decomposition scales as
 \begin{equation}
 	\label{eq:QR_decomposition_complexity}
-	\mathcal{O}\left(n\cdot m\cdot\min(n, m)\right).
+	\mathcal{O}\left(nmk\right).
 \end{equation}
-A diagrammatic depiction of the QR decomposition \eqref{eq:QR_decomposition_general} is drawn in figure \figref{fig:tensor_decomposition_diagrams}(a). \par
+The QR decomposition is drawn as a tensor diagram in figure \figref{fig:tensor_decomposition_qr}. \par
 The \textit{Singular Value Decomposition} (SVD) of a matrix $A \in \mathbb{C}^{n\times m}$ is the decomposition
 \begin{equation}
 	\label{eq:SVD_general}
@@ -21,7 +21,11 @@ An important property of the SVD is that it can be used to approximate a matrix 
 	\label{eq:truncated_SVD_general}
 	A \approx \tilde{A} = \tilde{U}\tilde{S}\tilde{V},
 \end{equation}
-with isometries $\tilde{U}\in\mathbb{C}^{n\times\chi}$, $\tilde{V}\in\mathbb{C}^{m\times\chi}$ and real diagonal matrix $\tilde{S}\in\mathbb{C}^{\chi\times\chi}$. It can be shown \cite{cite:eckart_young_theorem} that the truncated SVD minimizes the distance $\lVert A - \tilde{A} \rVert_\text{F}$ between $A$ and $\tilde{A}$ under the constraint $\text{rank}(\tilde{A}) = \chi$. The truncated SVD is frequently used in tensor network algorithms to truncate tensors to a maximum bond dimension $\chi_\text{max}$. \par
+with isometries $\tilde{U}\in\mathbb{C}^{n\times\chi}$, $\tilde{V}\in\mathbb{C}^{m\times\chi}$ and real diagonal matrix $\tilde{S}\in\mathbb{C}^{\chi\times\chi}$. It can be shown \cite{cite:eckart_young_theorem} that the truncated SVD minimizes the distance $\lVert A - \tilde{A} \rVert_\text{F}$ between $A$ and $\tilde{A}$ under the constraint $\text{rank}(\tilde{A}) = \chi$. The remaining \textit{truncation error} is
+\begin{equation}
+	\varepsilon_\text{trunc} = \lVert A - \tilde{A} \rVert_\text{F} = \sum_{i=\chi+1}^{\min(m,n)} S_i,
+\end{equation} 
+where we have sorted the singular values in descending order. The truncated SVD is frequently used in tensor network algorithms to truncate tensors to a maximum bond dimension $\chi_\text{max}$. \par
 \begin{figure}
 	\centering
 	\begin{subfigure}[c]{0.1\textwidth}
@@ -34,7 +38,7 @@ with isometries $\tilde{U}\in\mathbb{C}^{n\times\chi}$, $\tilde{V}\in\mathbb{C}^
 		}
 	\end{minipage}
 	\begin{subfigure}[c]{0.1\textwidth}
-		\caption{}\label{fig:tensor_decomposition_qr}
+		\caption{}\label{fig:tensor_decomposition_svd}
 	\end{subfigure}%
 	\begin{minipage}[c]{0.6\textwidth}
 		\raisebox{-26pt}
@@ -42,7 +46,6 @@ with isometries $\tilde{U}\in\mathbb{C}^{n\times\chi}$, $\tilde{V}\in\mathbb{C}^
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b.pdf}
 		}
 	\end{minipage}
-	\caption{Different tensor decompositions are shown in tensor network diagram notation. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
+	\caption{Tensor decompositions are shown in tensor network diagram notation. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
 	\label{fig:tensor_decomposition_diagrams}
 \end{figure}
-\todo{Discuss error of truncated SVD!}

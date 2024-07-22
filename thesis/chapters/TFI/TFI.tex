@@ -1,3 +1,13 @@
+The Transverse Field Ising (TFI) Model is a well-studied spin lattice model that is often used to benchmark numerical methods. We introduce the TFI model in section \ref{sec:TFI_model}. We then proceed by benchmarking disoTPS methods on the model. We first perform ground state searches using imaginary time evolution in section \ref{sec:TFI_ground_state_search}. We benchmark the different proposed algorithms for the YB move and compare the first and second order TEBD algorithms. We further show numerical evidence that disoTPS are able to capture area law entanglement. Lastly we perform a ground state search on the honeycomb lattice, showing that disoTPS can be easily generalized to different lattice types. In section \ref{sec:TFI_time_evolution} we perform a global quench and compute real time evolution. We observe that disoTPS struggles with the rapid entanglement growth and discuss some ideas for overcoming the problem. \par
+We compare the results obtained with disoTPS to reference DMRG simulations using the tenpy library \cite{cite:tenpy}. The DMRG simulations are performed by "snaking" an MPS through the 2D lattice as shown in figure \figref{fig:tenpy_snaking}. The disadvantage of this method is that sites that are close to each other in the lattice can be far apart in the MPS. Because of the close proximity of these sites we expect entanglement to build up between them. This entanglement cannot be captured well by the MPS because of its finite bond dimension, which is only able to capture entanglement locally in the MPS. We thus expect DMRG to break down for large systems. However, because of the low computational complexity of DMRG, one can scale the bond dimension to large values. For the lattice sizes we looked at this still allows for accurate results.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/TFI/tenpy_snaking.jpeg}
+	\caption{An MPS can be put on a 2D square lattice by "snaking" it through the lattice. The two sites marked in orange are nearest neighbour sites in the lattice, but are far apart in the MPS. Thus, entanglement between the two sites is hard to represent, requiring large bond dimensions.}
+	\label{fig:tenpy_snaking}
+\end{figure}
+
+
 \section{The Transverse Field Ising Model}
 \label{sec:TFI_model}
 \input{chapters/TFI/TFI_model.tex}

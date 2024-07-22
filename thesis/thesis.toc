@@ -2,37 +2,37 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Tensors and Tensor Networks}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Conventions and Notation}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Tensor Decompositions}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Isometric Tensor Networks}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Matrix Product States (MPS)}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Isometric Tensor Product States in 2D}{17}{section.2.5}%
-\contentsline {chapter}{\numberline {3}diagonal isometric Tensor Product States (disoDTPS)}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Network Structure}{24}{section.3.1}%
+\contentsline {section}{\numberline {2.2}Tensor Decompositions}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Isometric Tensor Networks}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Matrix Product States (MPS)}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Isometric Tensor Product States in 2D}{16}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Diagonal isometric Tensor Product States (disoTPS)}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Network Structure}{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{26}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Iterative optimization with local updates}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}variational optimization with local updates}{28}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{29}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{38}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{38}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{40}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The Toric Code Model}{47}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{48}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The Transverse Field Ising Model}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ground State Search}{54}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{60}{section.5.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{40}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{41}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Toric Code Model}{45}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{46}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The Transverse Field Ising Model}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ground State Search}{52}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{57}{section.5.3}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{63}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{64}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{65}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{65}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{67}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{67}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{68}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Conjugate Gradients}{69}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Trust Region Method}{69}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{71}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{73}{appendix.D}%
-\contentsline {chapter}{\nonumberline Bibliography}{77}{chapter*.115}%
+\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{61}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{62}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{63}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{63}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{65}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{65}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{66}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Conjugate Gradients}{67}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Trust Region Method}{67}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{69}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{71}{appendix.D}%
+\contentsline {chapter}{\nonumberline Bibliography}{75}{chapter*.113}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

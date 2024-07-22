@@ -1,36 +1,36 @@
 The Toric Code is an exactly soluble spin model with $\mathbb{Z}_2$ topological order that was introduced by Alexei Kitaev \cite{cite:fault_tolerant_quantum_computation_by_anyons}. The model is defined on the square lattice with periodic boundary conditions, where on each edge of the lattice there sits a spin-1/2 degree of freedom. Two operators are introduced, the \textit{star operators}
 \begin{equation}
 	\label{eq:star_operator}
-	A_+ \coloneqq \sum_{j\in+}\hat{\sigma}_j^z
+	\hat{A}_+ \coloneqq \sum_{j\in+}\hat{\sigma}_j^z
 \end{equation}
 and the \textit{plaquette operators}
 \begin{equation}
 	\label{eq:plaquette_operator}
-	A_{\scalebox{0.6}{$\square$}} \coloneqq \sum_{j\in \scalebox{0.6}{$\square$}} \hat{\sigma}_j^x,
+	\hat{B}_{\scalebox{0.6}{$\square$}} \coloneqq \sum_{j\in \scalebox{0.6}{$\square$}} \hat{\sigma}_j^x,
 \end{equation}
 where the sums are performed over the four spins connected in a star or plaquette pattern respectively (see figure \figref{fig:toric_code_star_and_plaquette_operators}) and $\hat{\sigma}_j^x, \hat{\sigma}_j^z$ are Pauli matrices. The Hamiltonian of the Toric Code model is then defined as
 \begin{equation}
 	\label{eq:toric_code_hamiltonian}
-	H_\text{TC} \coloneqq -\sum_+A_+ - \sum_{\scalebox{0.6}{$\square$}}B_{\scalebox{0.6}{$\square$}},
+	H_\text{TC} \coloneqq -\sum_+\hat{A}_+ - \sum_{\scalebox{0.6}{$\square$}}\hat{B}_{\scalebox{0.6}{$\square$}},
 \end{equation}
-where the sums go over all possible stars and plaquettes respectively. Because an arbitrary star and plaquette operator share either two or zero spins, all terms of the Hamiltonian commute and it is thus possible to find the ground state of the model by diagonalizing all terms simultaneously. To diagonalize the star operators $A_+$ we choose a basis of $\hat{\sigma}_z$-eigenstates $\left|i\right\rangle \in \left\{\left|\uparrow\right\rangle, \left|\downarrow\right\rangle\right\}$ with eigenvalues $\left\langle\hat{\sigma}_z\right\rangle_i = s_i = \pm 1$ for each spin $i$. In this basis every star operator is diagonal with eigenvalues
+where the sums go over all possible stars and plaquettes respectively. Because an arbitrary star and plaquette operator share either two or zero spins, all terms of the Hamiltonian commute and it is thus possible to find the ground state of the model by diagonalizing all terms simultaneously. To diagonalize the star operators $\hat{A}_+$ we choose a basis of $\hat{\sigma}_z$-eigenstates $\left|i\right\rangle \in \left\{\left|\uparrow\right\rangle, \left|\downarrow\right\rangle\right\}$ with eigenvalues $\left\langle\hat{\sigma}_z\right\rangle_i = s_i = \pm 1$ for each spin $i$. In this basis every star operator is diagonal with eigenvalues
 \begin{equation}
 	\label{eq:toric_code_star_operator_expectation value}
-	\left\langle A_+\right\rangle = \prod_{j\in+}s_j \in \left\{1, -1\right\}.
+	\langle \hat{A}_+\rangle = \prod_{j\in+}s_j \in \left\{1, -1\right\}.
 \end{equation}
-To obtain the expectation value $\left\langle A_+\right\rangle = 1$, the number of spins in the down state $s_j = -1$ around the vertex $+$ must be even. Basis states $\left|s\right\rangle$ that give an expectation value of $1$ for every star operator simultaneously are thus the states with an even number of down-spins around every vertex,
+To obtain the expectation value $\langle \hat{A}_+\rangle = 1$, the number of spins in the down state $s_j = -1$ around the vertex $+$ must be even. Basis states $\left|s\right\rangle$ that give an expectation value of $1$ for every star operator simultaneously are thus the states with an even number of down-spins around every vertex,
 \begin{equation}
 	\label{eq:toric_code_A_operator_condition}
 	\left|s\right\rangle = \left|s_1\right\rangle \otimes \dots \otimes \left|s_N\right\rangle, \quad \prod_{j\in+}s_j = 1 \,\,\,\,\forall +.
 \end{equation}
-The plaquette operator $B_{\scalebox{0.6}{$\square$}}$ acts on a basis state by flipping all spins around the plaquette $\scalebox{0.6}{$\square$}$. Because a plaquette and a star share either zero or two spins, applying an plaquette operator to a state $\left|s\right\rangle$ satisfying condition \eqref{eq:toric_code_A_operator_condition} produces a state $\left|s^\prime\right\rangle$ that again satisfies \eqref{eq:toric_code_A_operator_condition}, and applying the plaquette operator a second time produces the initial state $\left|s\right\rangle$. If we now take the equal weighted superposition $\left|\Psi\right\rangle = \left(\left|s\right\rangle+\left| s^\prime\right\rangle\right)/\sqrt{2}$, the expectation value of $B_{\scalebox{0.6}{$\square$}}$ becomes $\left\langle B_{\scalebox{0.6}{$\square$}}\right\rangle = 1$.
+The plaquette operator $\hat{B}_{\scalebox{0.6}{$\square$}}$ acts on a basis state by flipping all spins around the plaquette $\scalebox{0.6}{$\square$}$. Because a plaquette and a star share either zero or two spins, applying an plaquette operator to a state $\left|s\right\rangle$ satisfying condition \eqref{eq:toric_code_A_operator_condition} produces a state $\left|s^\prime\right\rangle$ that again satisfies \eqref{eq:toric_code_A_operator_condition}, and applying the plaquette operator a second time produces the initial state $\left|s\right\rangle$. If we now take the equal weighted superposition $\left|\Psi\right\rangle = \left(\left|s\right\rangle+\left| s^\prime\right\rangle\right)/\sqrt{2}$, the expectation value of $\hat{B}_{\scalebox{0.6}{$\square$}}$ becomes $\langle \hat{B}_{\scalebox{0.6}{$\square$}}\rangle = 1$.
 The ground state of the Hamiltonian \eqref{eq:toric_code_hamiltonian} is thus given by the equal weighted superposition of all basis states satisfying condition \eqref{eq:toric_code_A_operator_condition}. \par
 One can show that the ground state can be written as
 \begin{equation}
-	\left|\Psi_0\right\rangle \propto \prod_{\scalebox{0.6}{$\square$}}\left(\id + B_{\scalebox{0.6}{$\square$}}\right) \left|\uparrow\right\rangle \otimes \dots \otimes \left|\uparrow\right\rangle.
+	\left|\Psi_0\right\rangle \propto \prod_{\scalebox{0.6}{$\square$}}\left(\id + \hat{B}_{\scalebox{0.6}{$\square$}}\right) \left|\uparrow\right\rangle \otimes \dots \otimes \left|\uparrow\right\rangle.
 \end{equation}
 Note that this is also the ground state for the model if open boundary conditions are chosen instead. \par
-For periodic boundary conditions, which is equivalent to putting the model on a torus, one can further show that the ground state is fourfold topologically degenerate. To move from one degenerate section of the Hilbert space to another a string of operators must be applied, wrapping once around the torus. This is a highly non-local operation. Because perturbarions are usually local, the toric code model can be interpreted as a form of "hardware level" error correction. The toric code is considered a topological quantum error correction code and can in theory be used for quantum "memory". One can further implement quantum gates acting on the 4-dimensional ground state space by locally creating a pair of anyonic excitations, moving one of the excitations around the torus, and annihilating it with the other one \cite{cite:fault_tolerant_quantum_computation_by_anyons}. Unfortunately, the gates that can be implemented as such do not form a complete state set and thus do not allow for universal quantum computing. Nevertheless, the Toric code is an important model for the study of topological order and anyonic excitations.
+For periodic boundary conditions, which is equivalent to putting the model on a torus, one can further show that the ground state is fourfold topologically degenerate. To move from one degenerate section of the Hilbert space to another one must apply a string of operators, wrapping once around the torus. This is a highly non-local operation. Because perturbarions are usually local, the toric code model can be interpreted as a form of hardware level error correction. The toric code is considered a topological quantum error correction code and can in theory be used for quantum memory. One can further implement quantum gates acting on the 4-dimensional ground state space by locally creating a pair of anyonic excitations, moving one of the excitations around the torus, and annihilating it with the other one \cite{cite:fault_tolerant_quantum_computation_by_anyons}. Unfortunately, the gates that can be implemented as such do not form a complete state set and thus do not allow for universal quantum computing. Nevertheless, the Toric code is an important model for the study of topological order and anyonic excitations.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/Toric_Code/toric_code_star_and_plaquette_operator.jpeg}
