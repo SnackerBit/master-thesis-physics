@@ -1,0 +1,57 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmall}
+	\begin{tikzpicture}
+		\draw[virtualLegSmallWithoutArrows] (0, -\tensorDistance/2) -- ++(0, 4*\tensorDistance);
+		\draw[virtualLegSmallWithoutArrows] (\tensorDistance, -\tensorDistance/2) -- ++(0, 4*\tensorDistance);
+		\draw[virtualLegSmallWithoutArrows] (2*\tensorDistance, -\tensorDistance/2) -- ++(0, 4*\tensorDistance);
+		\draw[virtualLegSmallWithoutArrows] (3*\tensorDistance, -\tensorDistance/2) -- ++(0, 4*\tensorDistance);
+		
+		\draw[virtualLegSmallWithoutArrows] (-\tensorDistance/2, 0) -- ++(4*\tensorDistance, 0);
+		\draw[virtualLegSmallWithoutArrows] (-\tensorDistance/2, \tensorDistance) -- ++(4*\tensorDistance, 0);
+		\draw[virtualLegSmallWithoutArrows] (-\tensorDistance/2, 2*\tensorDistance) -- ++(4*\tensorDistance, 0);
+		\draw[virtualLegSmallWithoutArrows] (-\tensorDistance/2, 3*\tensorDistance) -- ++(4*\tensorDistance, 0);
+		
+		% star operator
+		\draw[line width=\lineWidthThick, draw=toricCodeAOperatorColor] (\tensorDistance/2, \tensorDistance) -- ++(\tensorDistance, 0);
+		\draw[line width=\lineWidthThick, draw=toricCodeAOperatorColor] (\tensorDistance, \tensorDistance/2) -- ++(0, \tensorDistance);
+		\node[color=toricCodeAOperatorColor] () at (\tensorDistance/2, 3*\tensorDistance/2) {$\hat{A}_+$};
+		
+		% plaquette operator
+		\draw[line width=\lineWidthThick, draw=toricCodeBOperatorColor, rounded corners=1pt] (\tensorDistance, 2*\tensorDistance) -- ++(\tensorDistance, 0) -- ++(0, \tensorDistance) -- ++(-\tensorDistance, 0) -- cycle;
+		\node[color=toricCodeBOperatorColor] () at (3*\tensorDistance/2, 5*\tensorDistance/2) {$\hat{B}_{\scalebox{0.6}{$\square$}}$};
+		
+		\node[toricCodeSpin] () at (0, \tensorDistance/2) {};
+		\node[toricCodeSpin] () at (0, 3*\tensorDistance/2) {};
+		\node[toricCodeSpin] () at (0, 5*\tensorDistance/2) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance, \tensorDistance/2) {};
+		\node[toricCodeSpin] () at (\tensorDistance, 3*\tensorDistance/2) {};
+		\node[toricCodeSpin] () at (\tensorDistance, 5*\tensorDistance/2) {};
+		
+		\node[toricCodeSpin] () at (2*\tensorDistance, \tensorDistance/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance, 3*\tensorDistance/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance, 5*\tensorDistance/2) {};
+		
+		\node[toricCodeSpin] () at (3*\tensorDistance, \tensorDistance/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance, 3*\tensorDistance/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance, 5*\tensorDistance/2) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance/2, 0) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance/2, 0) {};
+		\node[toricCodeSpin] () at (5*\tensorDistance/2, 0) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance/2, \tensorDistance) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance/2, \tensorDistance) {};
+		\node[toricCodeSpin] () at (5*\tensorDistance/2, \tensorDistance) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance/2, 2*\tensorDistance) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance/2, 2*\tensorDistance) {};
+		\node[toricCodeSpin] () at (5*\tensorDistance/2, 2*\tensorDistance) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance/2, 3*\tensorDistance) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance/2, 3*\tensorDistance) {};
+		\node[toricCodeSpin] () at (5*\tensorDistance/2, 3*\tensorDistance) {};
+	\end{tikzpicture}
+\end{document}¸

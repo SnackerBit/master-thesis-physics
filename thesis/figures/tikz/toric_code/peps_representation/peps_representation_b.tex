@@ -1,0 +1,48 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{0.9*\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{0.6*\physicalLegLengthSmall}
+	\def\doubleSpinSeperation{0.5*\tensorDistance}
+	\def\openLegLengthMultiplier{0.8}
+	\def\verticalDistance{\defaultDistanceEquations}
+	\begin{tikzpicture}
+		\node[toricCodeSpin] (S) at (0, 0) {}; 
+		\node[toricCodeEdgeSpin] (E) at (0, -\verticalDistance) {};
+		\node[toricCodePEPSCenterTensor] (T) at (0, -2*\verticalDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (S) -- ++(0, \physicalLegLength);
+			\draw[virtualLegSmallWithoutArrows] (S) -- ++(\openLegLengthMultiplier*\tensorDistance/2, 0);
+			\draw[virtualLegSmallWithoutArrows] (S) -- ++(-\openLegLengthMultiplier*\tensorDistance/2, 0);
+			
+			\draw[physicalLegSmallWithoutArrows] (E) -- ++(0, \physicalLegLength);
+			\draw[virtualLegSmallWithoutArrows] (E) -- ++(-\openLegLengthMultiplier*\tensorDistance/2, 0);
+			
+			\draw[virtualLegSmallWithoutArrows] (T) -- ++(\openLegLengthMultiplier*\tensorDistance/2, \openLegLengthMultiplier*\tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T) -- ++(-\openLegLengthMultiplier*\tensorDistance/2, \openLegLengthMultiplier*\tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T) -- ++(\openLegLengthMultiplier*\tensorDistance/2, -\openLegLengthMultiplier*\tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T) -- ++(-\openLegLengthMultiplier*\tensorDistance/2, -\openLegLengthMultiplier*\tensorDistance/2);
+		\end{pgfonlayer}
+	
+		\node[] () at (0, \physicalLegLength+\defaultTextOffset) {$i$};
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultTextOffset, 0) {$\alpha$};
+		\node[] () at (\openLegLengthMultiplier*\tensorDistance/2+\defaultTextOffset, 0) {$\beta$};
+		
+		\node[] () at (0, \physicalLegLength+\defaultTextOffset-\verticalDistance) {$i$};
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultTextOffset, -\verticalDistance) {$\alpha$};
+		
+		\node[] () at ({\openLegLengthMultiplier*\tensorDistance/2+sqrt(2)/2*\defaultTextOffset}, {-2*\verticalDistance+\openLegLengthMultiplier*\tensorDistance/2+sqrt(2)/2*\defaultTextOffset}) {$\alpha$};
+		\node[] () at ({\openLegLengthMultiplier*\tensorDistance/2+sqrt(2)/2*\defaultTextOffset}, {-2*\verticalDistance-\openLegLengthMultiplier*\tensorDistance/2-sqrt(2)/2*\defaultTextOffset}) {$\beta$};
+		\node[] () at ({-\openLegLengthMultiplier*\tensorDistance/2-sqrt(2)/2*\defaultTextOffset}, {-2*\verticalDistance-\openLegLengthMultiplier*\tensorDistance/2-sqrt(2)/2*\defaultTextOffset}) {$\gamma$};
+		\node[] () at ({-\openLegLengthMultiplier*\tensorDistance/2-sqrt(2)/2*\defaultTextOffset}, {-2*\verticalDistance+\openLegLengthMultiplier*\tensorDistance/2+sqrt(2)/2*\defaultTextOffset}) {$\delta$};
+		
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultDistanceEquations/2, 0) {$=$};
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultDistanceEquations/2, -\verticalDistance) {$=$};
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultDistanceEquations/2, -2*\verticalDistance) {$=$};
+		
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultDistanceEquations-\defaultTextOffset, 0) {$\delta^{\text{B}}_{i,\alpha,\beta}$};
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultDistanceEquations-\defaultTextOffset, -\verticalDistance) {$\delta^{\text{E}}_{i,\alpha}$};
+		\node[] () at (-\openLegLengthMultiplier*\tensorDistance/2-\defaultDistanceEquations-\defaultTextOffset, -2*\verticalDistance) {$T_{\alpha,\beta,\gamma,\delta}$};
+	\end{tikzpicture}
+\end{document}

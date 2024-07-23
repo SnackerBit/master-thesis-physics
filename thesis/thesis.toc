@@ -11,10 +11,10 @@
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{26}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}variational optimization with local updates}{28}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{29}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{38}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{38}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{40}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{39}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{39}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{39}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{40}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{45}{chapter.4}%
 \contentsline {section}{\numberline {4.1}The Toric Code Model}{45}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{46}{section.4.2}%

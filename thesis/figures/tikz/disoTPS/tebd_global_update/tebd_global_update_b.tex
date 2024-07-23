@@ -1,0 +1,108 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	
+	\definecolor{color1}{rgb}{1.0, 0.0, 0.0}
+	\definecolor{color2}{rgb}{0.0, 1.0, 0.0}
+	\definecolor{color3}{rgb}{0.0, 0.0, 1.0}
+	\definecolor{color4}{rgb}{1.0, 1.0, 0.0}
+	
+	\def\coordinateSystemDistance{0.5*\tensorDistance}
+	\def\ticklength{0.7*\defaultTextOffset}
+	
+	\def\verticalEquationDist{1.2*\tensorDistance}
+	\def\equationPosX{-\coordinateSystemDistance+6*\tensorDistance+3.5*\defaultDistanceEquations/2}
+	\def\equationPosY{2.5*\tensorDistance}
+	
+	\begin{tikzpicture}
+		% Physical tensors
+		\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+		\node[tensorPhysicalSmall] (T010) at (0, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T020) at (0, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T001) at (\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T011) at (\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T021) at (\tensorDistance, 5*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T100) at (2*\tensorDistance, 0) {};
+		\node[tensorPhysicalSmall] (T110) at (2*\tensorDistance, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T120) at (2*\tensorDistance, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T101) at (3*\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T111) at (3*\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T121) at (3*\tensorDistance, 5*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T200) at (4*\tensorDistance, 0) {};
+		\node[tensorPhysicalSmall] (T210) at (4*\tensorDistance, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T220) at (4*\tensorDistance, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T201) at (5*\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T211) at (5*\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T221) at (5*\tensorDistance, 5*\tensorDistance) {};
+		
+		% Draw snake
+		\draw[specialLeg] (\tensorDistance/2, \tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (\tensorDistance/2, 9*\tensorDistance/2) -- ++(\tensorDistance, 0);
+		
+		\draw[specialLeg] (3*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (3*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (3*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (3*\tensorDistance/2, 9*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (3*\tensorDistance/2, \tensorDistance/2) -- ++(\tensorDistance, 0);
+		
+		\draw[specialLeg] (5*\tensorDistance/2, \tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (5*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (5*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (5*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (5*\tensorDistance/2, 9*\tensorDistance/2) -- ++(\tensorDistance, 0);
+		
+		\draw[specialLeg] (7*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (7*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (7*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (7*\tensorDistance/2, 9*\tensorDistance/2) -- ++(0, -\tensorDistance);
+		\draw[specialLeg] (7*\tensorDistance/2, \tensorDistance/2) -- ++(\tensorDistance, 0);
+		
+		\draw[specialLeg] (9*\tensorDistance/2, \tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (9*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (9*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[specialLeg] (9*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, \tensorDistance);
+		
+		
+		\begin{pgfonlayer}{bg}
+			% virtual legs
+			\draw[virtualLegSmallWithoutArrows] (T000) -- (T001);
+			\draw[virtualLegSmallWithoutArrows] (T010) -- (T011);
+			\draw[virtualLegSmallWithoutArrows] (T020) -- (T021);
+			\draw[virtualLegSmallWithoutArrows] (T100) -- (T101);
+			\draw[virtualLegSmallWithoutArrows] (T110) -- (T111);
+			\draw[virtualLegSmallWithoutArrows] (T120) -- (T121);
+			\draw[virtualLegSmallWithoutArrows] (T201) -- (T200);
+			\draw[virtualLegSmallWithoutArrows] (T211) -- (T210);
+			\draw[virtualLegSmallWithoutArrows] (T221) -- (T220);
+			
+			\draw[virtualLegSmallWithoutArrows] (T010) -- (T001);
+			\draw[virtualLegSmallWithoutArrows] (T020) -- (T011);
+			\draw[virtualLegSmallWithoutArrows] (T101) -- (T110);
+			\draw[virtualLegSmallWithoutArrows] (T111) -- (T120);
+			\draw[virtualLegSmallWithoutArrows] (T201) -- (T210);
+			\draw[virtualLegSmallWithoutArrows] (T211) -- (T220);
+			
+			\draw[virtualLegSmallWithoutArrows] (T001) -- (T100);
+			\draw[virtualLegSmallWithoutArrows] (T011) -- (T110);
+			\draw[virtualLegSmallWithoutArrows] (T021) -- (T120);
+			\draw[virtualLegSmallWithoutArrows] (T200) -- (T101);
+			\draw[virtualLegSmallWithoutArrows] (T210) -- (T111);
+			\draw[virtualLegSmallWithoutArrows] (T220) -- (T121);
+			
+			\draw[virtualLegSmallWithoutArrows] (T001) -- (T110);
+			\draw[virtualLegSmallWithoutArrows] (T011) -- (T120);
+			\draw[virtualLegSmallWithoutArrows] (T210) -- (T101);
+			\draw[virtualLegSmallWithoutArrows] (T220) -- (T111);
+		\end{pgfonlayer}{bg}
+	\end{tikzpicture}
+\end{document}

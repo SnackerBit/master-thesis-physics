@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'isoTPS_structure_a.blg'
-[94] biber:340> INFO - === Wed Jul 10, 2024, 17:29:13
-[266] Utils.pm:398> ERROR - Cannot find 'isoTPS_structure_a.bcf'!
-[266] Biber.pm:135> INFO - ERRORS: 1
+[71] biber:340> INFO - === Di Jul 23, 2024, 20:19:06
+[139] Utils.pm:398> ERROR - Cannot find 'isoTPS_structure_a.bcf'!
+[140] Biber.pm:135> INFO - ERRORS: 1

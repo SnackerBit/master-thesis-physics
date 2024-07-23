@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'rho_definition.blg'
+[56] biber:340> INFO - === Di Jul 23, 2024, 09:53:48
+[124] Utils.pm:398> ERROR - Cannot find 'rho_definition.bcf'!
+[124] Biber.pm:135> INFO - ERRORS: 1

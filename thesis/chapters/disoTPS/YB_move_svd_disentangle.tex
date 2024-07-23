@@ -59,14 +59,22 @@ We proceed by taking one tensor $U$ out of the network $\Tr\rho^2$ and contracti
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_rho_definition.jpeg}
+	\includegraphics[scale=1]{figures/tikz/disoTPS/rho_definition/rho_definition.pdf}
 	\caption{Definition of the reduced density matrix $\rho$.}
 	\label{fig:disentangling_rho_definition}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_evenbly_vidal_algorithm.jpeg}
-	\caption{(a) Tensor network for the computation of the cost function \eqref{}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.}
+	\subcaptionbox{\label{fig:disentangling_evenbly_vidal_algorithm_trace_rho_squared}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf}
+	}
+	\quad\quad\quad\quad
+	\subcaptionbox{\label{fig:disentangling_evenbly_vidal_algorithm_environment_definition}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf}
+	}
+	\caption{(a) Tensor network for the computation of the cost function \eqref{eq:renyi_entropy_alpha_2}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.}
 	\label{fig:disentangling_evenbly_vidal_algorithm}
 \end{figure}
 Minimizing the truncation error $f_\text{trunc}\left(U,\theta\right)$ and general Rényi-entropies $f_\text{Rényi}\left(U,\theta,\alpha\neq2\right)$ is a harder problem. We follow the approach of \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems} and use Riemannian optimization \cite{cite:optimization_on_matrix_manifolds, cite:riemannian_optimization_isometric_tensor_networks, cite:riemannian_geometry_automatic_differentiation_quantum_physics, cite:pymanopt} to solve the optimization problem. The idea of Riemannian optimization is to generalize common optimization algorithms defined in Euclidian vector spaces, such as Gradient Descent or Conjugate Gradients, to Riemannian manifolds. The set of all isometric matrices of shape $n\times m$ is a Riemannian manifold called the Stiefel manifold $\Stiefel$. A special case is the set of all unitary matrices of shape $n\times n$, $U(n)=\text{St}(n, n)$, over which we want to optimize here. Riemannian optimization over the Stiefel manifold is discussed in more detail in appendix \ref{app:riemannian_optimization_of_isometries}. \par
@@ -85,12 +93,27 @@ We used two algorithms for solving the disentangling optimization problem, Conju
 The gradients and hessian vector products of the cost functions \eqref{eq:YB_move_disent_cost_function_truncation_error} and \eqref{eq:renyi_entropy} can be computed analytically with a computational cost of $\mathcal{O}()$\todo{Complexity berechnen}, see appendix \ref{app:computation_of_gradient_and_hvp_for_riemannian_optimization} for a derivation.
 \subsubsection*{Approximate gradients and hessian vector products}
 \begin{figure}
-	centering
-	\includegraphics[width=0.8\textwidth]{figures/disoTPS/approximate_qr_decomposition.jpeg}
+	\centering
+	\subcaptionbox{\label{fig:approximate_svd_overlap}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_a.pdf}
+	}
+	\subcaptionbox{\label{fig:approximate_svd_first_step}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_b.pdf}
+	}
+	\subcaptionbox{\label{fig:approximate_svd_second_step}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_c.pdf}
+	}
+	\subcaptionbox{\label{fig:approximate_svd_final_step}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_d.pdf}
+	}
 	\caption{\todo{write caption}}
 	\label{fig:approximate_qr_decomposition}
 \end{figure}
-The cost of both CG and the TRM are dominated by the computation of the gradient and hessian vector product, particularly by the SVD $\tilde{\theta} = XSY$ and contractions involving $X$ and $Y$. The reason for this is the large bond dimension $\chi D^2$ of the bond connecting $X$ and $Y$. We thus propose to approximate the gradient and hessian vector product by only performing an approximate SVD $\tilde{\theta} \approx \tilde{X}\tilde{S}\tilde{Y}$. The algorithm for performing this approximate SVD is inspired by \cite{cite:fast_time_evolution_of_mps_using_qr}, where a similar algorithm was used to speed up TEBD updates for MPS. We sketch the algorithm in figure \figref{fig:approximate_qr_decomposition}. First, an approximate QR-decomposition $\tilde{\theta} = QR$ is performed by variationally minimizing the distance $\lVert \tilde{\theta} - QR \rVert$, alternatingly optimizing the tensors $Q$ and $R$ as shown in figures \figref{fig:approximate_qr_decomposition}(b) and \figref{fig:approximate_qr_decomposition}(c) respectively. A standard SVD is then performed on the $R$-factor of the approximate QR-decomposition as $R = A\tilde{S}\tilde{Y}$, and the contraction $\tilde{X} = QA$ finalizes the decomposition. It is observed that the variational minimization converges very quickly in practice, especially if a good initialization is chosen. As the iterates $U_k$ are expected to only change slightly each iteration of CG or TRM, one can simply use the result $Q, R$ obtained in the approximate QR-decomposition of the previous iteration as initialization for the current iteration. We observe that the variational optimization in practice converges in less than $5$ iterations.
+The cost of both CG and the TRM are dominated by the computation of the gradient and hessian vector product, particularly by the SVD $\tilde{\theta} = XSY$ and contractions involving $X$ and $Y$. The reason for this is the large bond dimension $\chi D^2$ of the bond connecting $X$ and $Y$. We thus propose to approximate the gradient and hessian vector product by only performing an approximate SVD $\tilde{\theta} \approx \tilde{X}\tilde{S}\tilde{Y}$. The algorithm for performing this approximate SVD is inspired by \cite{cite:fast_time_evolution_of_mps_using_qr}, where a similar algorithm was used to speed up TEBD updates for MPS. We sketch the algorithm in figure \figref{fig:approximate_qr_decomposition}. First, an approximate QR-decomposition $\tilde{\theta} = QR$ is performed by variationally minimizing the distance $\lVert \tilde{\theta} - QR \rVert$, which is equivalent to maximizing the real part of the overlap $\Re\langle\tilde{\theta},QR\rangle_\text{F}$. The overlap is shown as a tensor diagram in figure \figref{fig:approximate_qr_decomposition}(a). It can be maximized by alternatingly optimizing the tensors $Q$ and $R$ as shown in figures \figref{fig:approximate_qr_decomposition}(b) and \figref{fig:approximate_qr_decomposition}(c) respectively. A standard SVD is then performed on the $R$-factor of the approximate QR-decomposition as $R = A\tilde{S}\tilde{Y}$, and the contraction $\tilde{X} = QA$ finalizes the decomposition, see figure \figref{fig:approximate_qr_decomposition}(d). It is observed that the variational minimization converges very quickly in practice, especially if a good initialization is chosen. As the iterates $U_k$ are expected to only change slightly each iteration of CG or TRM, one can simply use the result $Q, R$ obtained in the approximate QR-decomposition of the previous iteration as initialization for the current iteration. We observe that the variational optimization in practice converges in less than $5$ iterations.
 \subsubsection*{Comparison of different disentangling algorithms}
 \begin{figure}
 	\centering

@@ -1,10 +1,12 @@
 % This file is used to globally define colors, line widths, etc. for diagrams used in the thesis
+\usepackage[intlimits]{amsmath}
+\usepackage{amssymb}
 \usepackage{tikz}
 \usepackage{ifthen}
 \usepackage{tikz-network}
-\RequirePackage{amssymb}
 \let\Re\relax
 \DeclareMathOperator{\Re}{Re}
+\DeclareMathOperator{\Tr}{Tr}
 
 % Libraries
 \usetikzlibrary{decorations.markings}
@@ -26,13 +28,27 @@
 \definecolor{greenMarkingColor}{rgb}{0.1, 0.8, 0.1}
 \definecolor{operatorColor}{rgb}{0.5, 1.0, 0.5}
 \definecolor{specialLegColor}{rgb}{0.235, 0.125, 0.941}
+\definecolor{toricCodeSpinColor}{rgb}{1.0, 0.0, 0.0}
+\definecolor{toricCodeEdgeSpinColor}{rgb}{0.0, 0.0, 1.0}
+\definecolor{toricCodeAOperatorColor}{rgb}{0.0, 1.0, 0.0}
+\definecolor{toricCodeBOperatorColor}{rgb}{0.0, 0.0, 1.0}
+\definecolor{toricCodeDisoTPSTensorColor}{rgb}{0.235, 0.125, 0.941}
 \def \backgroundopacity {0.5}
+
+\definecolor{color1}{rgb}{1.0, 0.0, 0.0}
+\definecolor{color2}{rgb}{0.0, 1.0, 0.0}
+\definecolor{color3}{rgb}{0.0, 0.0, 1.0}
+\definecolor{color4}{rgb}{1.0, 1.0, 0.0}
 
 % Basic sizes
 \def \defaultTensorWidth {19pt}
 \def \smallTensorWidth {11pt}
+\def \tinyTensorWidth {4pt}
 \def \defaultLineWidth {2}
+\def \lineWidthThick {2.5}
 \def \lineWidthThin {1.8}
+\def \lineWidthTiny {1.2}
+\def \lineWidthHuge {4}
 \def \xOffsetUnitCell {180pt}
 \def \yOffsetUnitCell {180pt}
 \def \yOffsetPhysicalLeg {30pt}
@@ -51,7 +67,9 @@
 \def \defaultDistanceEquations {40pt}
 \def \identityLegDistance {10 pt}
 \def \isoTPSPhysicalLegAngle {30}
-\def \defaultLegSeperationSmall{5pt}
+\def \defaultLegSeperationSmall{4pt}
+\def \defaultLegSeperation{6.5pt}
+\def \defaultLegSeperationLarge{9pt}
 \def \roundedCornerInsetNormal{10pt}
 \def \roundedCornerInsetSmall{2pt}
 \def \braceWidth{10pt}
@@ -68,6 +86,11 @@
 \tikzstyle{tensorOperator} = [rectangle, line width=\defaultLineWidth, fill=operatorColor, draw=borderColor, rounded corners=\roundedCornerInsetNormal]
 \tikzstyle{tensorOperatorSmall} = [rectangle, line width=\defaultLineWidth, fill=operatorColor, draw=borderColor, rounded corners=\roundedCornerInsetSmall]
 
+\tikzstyle{toricCodeSpin} = [circle, minimum size=\tinyTensorWidth, line width=\defaultLineWidth, fill=toricCodeSpinColor, draw=toricCodeSpinColor, inner sep=0, outer sep=0]
+\tikzstyle{toricCodeEdgeSpin} = [circle, minimum size=\tinyTensorWidth, line width=\defaultLineWidth, fill=toricCodeEdgeSpinColor, draw=toricCodeEdgeSpinColor, inner sep=0, outer sep=0]
+\tikzstyle{toricCodePEPSCenterTensor} = [circle, minimum size=2*\tinyTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
+\tikzstyle{toricCodeDisoTPSTensor} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=toricCodeDisoTPSTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
+
 % Leg styles
 \tikzstyle{auxillaryLeg} = [color=auxillaryLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{physicalLeg} = [color=physicalLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
@@ -77,6 +100,7 @@
 \tikzstyle{virtualLegLateArrows} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.8 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLegWithoutArrows} = [color=virtualLegColor, line width=\defaultLineWidth]
 \tikzstyle{physicalLegWithoutArrows} = [color=physicalLegColor, line width=\defaultLineWidth]
+\tikzstyle{specialLegWithoutArrows} = [color=specialLegColor, line width=\defaultLineWidth]
 
 \tikzstyle{auxillaryLegSmall} = [color=auxillaryLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{auxillaryLegSmallWithoutArrows} = [color=auxillaryLegColor, line width=\lineWidthThin]
@@ -95,7 +119,7 @@
 
 % Layers
 \pgfdeclarelayer{bg} % declare background layer
-\pgfsetlayers{bg,main} % set order of layers¸
+\pgfsetlayers{bg,main} % set order of layers
 
 % Command for drawing convex hulls
 \newcommand{\convexhull}[2]{

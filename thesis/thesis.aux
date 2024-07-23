@@ -284,11 +284,11 @@
 \newlabel{eq:disoTPS_YB_move_constraints}{{3.2}{26}{Yang-Baxter Move}{equation.3.2.2}{}}
 \newlabel{eq:disoTPS_YB_move_rewritten_error}{{3.2}{26}{Yang-Baxter Move}{equation.3.2.2}{}}
 \newlabel{eq:disoTPS_YB_move_alternative_formulation}{{3.3}{26}{Yang-Baxter Move}{equation.3.2.3}{}}
+\MT@newlabel{eq:disoTPS_YB_move_constraints}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Two YB-moves are used to shift the orthogonality hypersurface one column to the right. In the last step, the orthogonality center can be moved across the $T$-tensor by contracting the two tensors and performing a truncated SVD.\relax }}{27}{figure.caption.36}\protected@file@percent }
 \newlabel{fig:disoTPS_moving_ortho_surface}{{3.4}{27}{Two YB-moves are used to shift the orthogonality hypersurface one column to the right. In the last step, the orthogonality center can be moved across the $T$-tensor by contracting the two tensors and performing a truncated SVD.\relax }{figure.caption.36}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The Yang-Baxter (YB) move is the procedure of "pulling" two auxillary tensors $W_1$ and $W_2$ through a site tensor $T$.\relax }}{28}{figure.caption.37}\protected@file@percent }
 \newlabel{fig:disoTPS_YB_move_closeup}{{3.5}{28}{The Yang-Baxter (YB) move is the procedure of "pulling" two auxillary tensors $W_1$ and $W_2$ through a site tensor $T$.\relax }{figure.caption.37}{}}
-\MT@newlabel{eq:disoTPS_YB_move_constraints}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}variational optimization with local updates}{28}{subsection.3.2.1}\protected@file@percent }
 \newlabel{sec:YB_move_iterative_local_optimization}{{3.2.1}{28}{variational optimization with local updates}{subsection.3.2.1}{}}
 \MT@newlabel{eq:disoTPS_YB_move_alternative_formulation}
@@ -332,7 +332,7 @@
 \newlabel{fig:yb_move_svd_disent}{{3.8}{32}{The YB move is made up of three steps as explained in the text.\todo {Change X to A}\relax }{section*.43}{}}
 \newlabel{eq:renyi_entropy}{{3.5}{32}{The disentangling process}{equation.3.2.5}{}}
 \MT@newlabel{eq:renyi_entropy}
-\newlabel{eq:renyi_entropy_alpha_2}{{3.2.2}{32}{The disentangling process}{equation.3.2.5}{}}
+\newlabel{eq:renyi_entropy_alpha_2}{{3.6}{32}{The disentangling process}{equation.3.2.6}{}}
 \abx@aux@cite{0}{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}
 \abx@aux@segm{0}{0}{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}
 \abx@aux@cite{0}{cite:isometric_tensor_network_states_in_two_dimensions}
@@ -347,17 +347,21 @@
 \abx@aux@segm{0}{0}{cite:riemannian_geometry_automatic_differentiation_quantum_physics}
 \abx@aux@cite{0}{cite:pymanopt}
 \abx@aux@segm{0}{0}{cite:pymanopt}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces The disentangling unitary $U$ is contracted with the wave function tensor $\theta $ to form $\tilde  {\theta }$, which is subsequently split via an SVD $\tilde  {\theta } = XSY^\dagger $.\relax }}{33}{figure.caption.45}\protected@file@percent }
-\newlabel{fig:disentangling_theta_definition}{{3.9}{33}{The disentangling unitary $U$ is contracted with the wave function tensor $\theta $ to form $\tilde {\theta }$, which is subsequently split via an SVD $\tilde {\theta } = XSY^\dagger $.\relax }{figure.caption.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Definition of the reduced density matrix $\rho $.\relax }}{33}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:disentangling_rho_definition}{{3.10}{33}{Definition of the reduced density matrix $\rho $.\relax }{figure.caption.46}{}}
 \abx@aux@cite{0}{cite:riemannian_geometry_automatic_differentiation_quantum_physics}
 \abx@aux@segm{0}{0}{cite:riemannian_geometry_automatic_differentiation_quantum_physics}
 \abx@aux@cite{0}{cite:pymanopt}
 \abx@aux@segm{0}{0}{cite:pymanopt}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces (a) Tensor network for the computation of the cost function \MT_extended_eqref:n  {}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.\relax }}{34}{figure.caption.47}\protected@file@percent }
-\MT@newlabel{}
-\newlabel{fig:disentangling_evenbly_vidal_algorithm}{{3.11}{34}{(a) Tensor network for the computation of the cost function \eqref {}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.\relax }{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces The disentangling unitary $U$ is contracted with the wave function tensor $\theta $ to form $\tilde  {\theta }$, which is subsequently split via an SVD $\tilde  {\theta } = XSY^\dagger $.\relax }}{33}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:disentangling_theta_definition}{{3.9}{33}{The disentangling unitary $U$ is contracted with the wave function tensor $\theta $ to form $\tilde {\theta }$, which is subsequently split via an SVD $\tilde {\theta } = XSY^\dagger $.\relax }{figure.caption.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Definition of the reduced density matrix $\rho $.\relax }}{33}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:disentangling_rho_definition}{{3.10}{33}{Definition of the reduced density matrix $\rho $.\relax }{figure.caption.46}{}}
+\newlabel{fig:disentangling_evenbly_vidal_algorithm_trace_rho_squared}{{3.11a}{34}{\relax }{figure.caption.47}{}}
+\newlabel{sub@fig:disentangling_evenbly_vidal_algorithm_trace_rho_squared}{{a}{34}{\relax }{figure.caption.47}{}}
+\newlabel{fig:disentangling_evenbly_vidal_algorithm_environment_definition}{{3.11b}{34}{\relax }{figure.caption.47}{}}
+\newlabel{sub@fig:disentangling_evenbly_vidal_algorithm_environment_definition}{{b}{34}{\relax }{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces (a) Tensor network for the computation of the cost function \MT_extended_eqref:n  {eq:renyi_entropy_alpha_2}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.\relax }}{34}{figure.caption.47}\protected@file@percent }
+\MT@newlabel{eq:renyi_entropy_alpha_2}
+\newlabel{fig:disentangling_evenbly_vidal_algorithm}{{3.11}{34}{(a) Tensor network for the computation of the cost function \eqref {eq:renyi_entropy_alpha_2}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.\relax }{figure.caption.47}{}}
 \abx@aux@cite{0}{cite:optimization_on_matrix_manifolds}
 \abx@aux@segm{0}{0}{cite:optimization_on_matrix_manifolds}
 \abx@aux@cite{0}{cite:optimization_on_matrix_manifolds}
@@ -369,62 +373,66 @@
 \MT@newlabel{eq:YB_move_disent_cost_function_truncation_error}
 \MT@newlabel{eq:renyi_entropy}
 \@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{35}{section*.50}\protected@file@percent }
+\newlabel{fig:approximate_svd_overlap}{{3.12a}{36}{\relax }{figure.caption.52}{}}
+\newlabel{sub@fig:approximate_svd_overlap}{{a}{36}{\relax }{figure.caption.52}{}}
+\newlabel{fig:approximate_svd_first_step}{{3.12b}{36}{\relax }{figure.caption.52}{}}
+\newlabel{sub@fig:approximate_svd_first_step}{{b}{36}{\relax }{figure.caption.52}{}}
+\newlabel{fig:approximate_svd_second_step}{{3.12c}{36}{\relax }{figure.caption.52}{}}
+\newlabel{sub@fig:approximate_svd_second_step}{{c}{36}{\relax }{figure.caption.52}{}}
+\newlabel{fig:approximate_svd_final_step}{{3.12d}{36}{\relax }{figure.caption.52}{}}
+\newlabel{sub@fig:approximate_svd_final_step}{{d}{36}{\relax }{figure.caption.52}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces  \pdfcomment [color=red,open=true]{write caption} \relax }}{36}{figure.caption.52}\protected@file@percent }
 \@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{36}{section*.54}\protected@file@percent }
 \newlabel{fig:approximate_qr_decomposition}{{3.12}{36}{\todo {write caption}\relax }{section*.54}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces In this figure, a visualization of optimization on Riemannian manifolds is given. The iterate $U_k$ (left) is updated along the search direction $\xi _k$, which is an element of the tangent space $T_{U_k}\text  {St}(n,p)$. The next iterate $U_{k+1}$ is computed with the retraction $R_\xi \left (\alpha \right )$, where $\alpha \in \mathbb  {R}$ is the step size. For the computation of the next search direction $\xi _{k+1}$ the previous search direction $\xi _k$ is needed, which is brought to the tangent space $T_{U_{k+1}}\text  {St}(n,p)$ of the new iterate $U_{k+1}$ via the vector transport $T_{k\rightarrow k+1}\left (\xi _k\right )$.\relax }}{37}{figure.caption.56}\protected@file@percent }
 \newlabel{fig:disentangling_riemannian_optimization}{{3.13}{37}{In this figure, a visualization of optimization on Riemannian manifolds is given. The iterate $U_k$ (left) is updated along the search direction $\xi _k$, which is an element of the tangent space $T_{U_k}\Stiefel $. The next iterate $U_{k+1}$ is computed with the retraction $R_\xi \left (\alpha \right )$, where $\alpha \in \mathbb {R}$ is the step size. For the computation of the next search direction $\xi _{k+1}$ the previous search direction $\xi _k$ is needed, which is brought to the tangent space $T_{U_{k+1}}\Stiefel $ of the new iterate $U_{k+1}$ via the vector transport $T_{k\rightarrow k+1}\left (\xi _k\right )$.\relax }{figure.caption.56}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces  \pdfcomment [color=red,open=true]{Caption} \relax }}{38}{figure.caption.57}\protected@file@percent }
-\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{38}{section*.59}\protected@file@percent }
-\newlabel{fig:disoTPS_disentangling_evenbly_vidal_renyi_2}{{3.14}{38}{\todo {Caption}\relax }{section*.59}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{38}{subsection.3.2.3}\protected@file@percent }
-\newlabel{sec:YB_move_comparison}{{3.2.3}{38}{Comparison of the two algorithms}{subsection.3.2.3}{}}
-\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{38}{section*.63}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{38}{section.3.3}\protected@file@percent }
-\newlabel{sec:disoTPS_TEBD}{{3.3}{38}{Time Evolving Block Decimation (TEBD)}{section.3.3}{}}
-\newlabel{fig:disoTPS_disentangling_cg_trm_renyi_0.5}{{3.15a}{39}{\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:disoTPS_disentangling_cg_trm_renyi_0.5}{{a}{39}{\relax }{figure.caption.60}{}}
-\newlabel{fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime}{{3.15b}{39}{\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime}{{b}{39}{\relax }{figure.caption.60}{}}
-\newlabel{fig:disoTPS_disentangling_cg_trm_truncation_error}{{3.15c}{39}{\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:disoTPS_disentangling_cg_trm_truncation_error}{{c}{39}{\relax }{figure.caption.60}{}}
-\newlabel{fig:disoTPS_disentangling_cg_trm_truncation_error_walltime}{{3.15d}{39}{\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:disoTPS_disentangling_cg_trm_truncation_error_walltime}{{d}{39}{\relax }{figure.caption.60}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces  \pdfcomment [color=red,open=true]{Caption} \relax }}{39}{figure.caption.60}\protected@file@percent }
-\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{39}{section*.62}\protected@file@percent }
-\newlabel{fig:disoTPS_disentangling_cg_trm_renyi_0.5_trunc_error}{{3.15}{39}{\todo {Caption}\relax }{section*.62}{}}
-\newlabel{fig:disoTPS_TEBD_five_tensor_environment}{{3.16a}{40}{\relax }{figure.caption.64}{}}
-\newlabel{sub@fig:disoTPS_TEBD_five_tensor_environment}{{a}{40}{\relax }{figure.caption.64}{}}
-\newlabel{fig:disoTPS_TEBD_contraction_definition}{{3.16b}{40}{\relax }{figure.caption.64}{}}
-\newlabel{sub@fig:disoTPS_TEBD_contraction_definition}{{b}{40}{\relax }{figure.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces  \pdfcomment [color=red,open=true]{Caption} \relax }}{37}{figure.caption.57}\protected@file@percent }
+\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{37}{section*.59}\protected@file@percent }
+\newlabel{fig:disoTPS_disentangling_evenbly_vidal_renyi_2}{{3.14}{37}{\todo {Caption}\relax }{section*.59}{}}
+\newlabel{fig:disoTPS_disentangling_cg_trm_renyi_0.5}{{3.15a}{38}{\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:disoTPS_disentangling_cg_trm_renyi_0.5}{{a}{38}{\relax }{figure.caption.60}{}}
+\newlabel{fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime}{{3.15b}{38}{\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime}{{b}{38}{\relax }{figure.caption.60}{}}
+\newlabel{fig:disoTPS_disentangling_cg_trm_truncation_error}{{3.15c}{38}{\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:disoTPS_disentangling_cg_trm_truncation_error}{{c}{38}{\relax }{figure.caption.60}{}}
+\newlabel{fig:disoTPS_disentangling_cg_trm_truncation_error_walltime}{{3.15d}{38}{\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:disoTPS_disentangling_cg_trm_truncation_error_walltime}{{d}{38}{\relax }{figure.caption.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces  \pdfcomment [color=red,open=true]{Caption} \relax }}{38}{figure.caption.60}\protected@file@percent }
+\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{38}{section*.62}\protected@file@percent }
+\newlabel{fig:disoTPS_disentangling_cg_trm_renyi_0.5_trunc_error}{{3.15}{38}{\todo {Caption}\relax }{section*.62}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{39}{subsection.3.2.3}\protected@file@percent }
+\newlabel{sec:YB_move_comparison}{{3.2.3}{39}{Comparison of the two algorithms}{subsection.3.2.3}{}}
+\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{39}{section*.63}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{39}{section.3.3}\protected@file@percent }
+\newlabel{sec:disoTPS_TEBD}{{3.3}{39}{Time Evolving Block Decimation (TEBD)}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{39}{subsection.3.3.1}\protected@file@percent }
+\newlabel{sec:disoTPS_TEBD_local_updates}{{3.3.1}{39}{Local TEBD updates}{subsection.3.3.1}{}}
+\newlabel{eq:isoDTPS_TEBD_local_update_error}{{3.7}{39}{Local TEBD updates}{equation.3.3.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces (a The five tensor environment of the bond on which the bond operator is to be applied. All arrows are incoming. (b) Definitions of the sub-networks $\mathcal  {C}$ and $\mathcal  {C}^\prime $ used in equation \MT_extended_eqref:n  {eq:isoDTPS_TEBD_local_update_error}.\relax }}{40}{figure.caption.64}\protected@file@percent }
 \MT@newlabel{eq:isoDTPS_TEBD_local_update_error}
 \newlabel{fig:disoTPS_TEBD_definition_of_environment}{{3.16}{40}{(a The five tensor environment of the bond on which the bond operator is to be applied. All arrows are incoming. (b) Definitions of the sub-networks $\mathcal {C}$ and $\mathcal {C}^\prime $ used in equation \eqref {eq:isoDTPS_TEBD_local_update_error}.\relax }{figure.caption.64}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{40}{subsection.3.3.1}\protected@file@percent }
-\newlabel{sec:disoTPS_TEBD_local_updates}{{3.3.1}{40}{Local TEBD updates}{subsection.3.3.1}{}}
-\newlabel{eq:isoDTPS_TEBD_local_update_error}{{3.6}{40}{Local TEBD updates}{equation.3.3.6}{}}
-\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{41}{section*.65}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{41}{subsection.3.3.2}\protected@file@percent }
-\newlabel{sec:disoTPS_TEBD_global_updates}{{3.3.2}{41}{Global TEBD updates}{subsection.3.3.2}{}}
-\newlabel{eq:disoTPS_TEBD_splitting_local_Hamiltonian}{{3.3.2}{41}{Global TEBD updates}{figure.caption.66}{}}
-\newlabel{eq:disoTPS_TEBD_suzuki_trotter_first_order}{{3.3.2}{41}{Global TEBD updates}{figure.caption.66}{}}
-\newlabel{eq:disoTPS_TEBD_first_order_TEBD_operator}{{3.3.2}{41}{Global TEBD updates}{figure.caption.66}{}}
-\newlabel{fig:disoTPS_TEBD_global_update_TEBD1_splitting}{{3.17a}{42}{\relax }{figure.caption.66}{}}
-\newlabel{sub@fig:disoTPS_TEBD_global_update_TEBD1_splitting}{{a}{42}{\relax }{figure.caption.66}{}}
-\newlabel{fig:disoTPS_TEBD_global_update_TEBD2_chain}{{3.17b}{42}{\relax }{figure.caption.66}{}}
-\newlabel{sub@fig:disoTPS_TEBD_global_update_TEBD2_chain}{{b}{42}{\relax }{figure.caption.66}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces (a) A Hamiltonian $\hat  {H}$ that is a sum of nearest-neighbour operators $h^{[x,y]}$ can be split into four parts made up of operators acting only on even/odd columns and even/odd bonds along a column. (b) A second order Suzuki-Trotter decomposition results in a chain of bond operators that have to be applied in the order visualized, moving along the path from the start to the end and backwards to the start again.\relax }}{42}{figure.caption.66}\protected@file@percent }
-\newlabel{fig:disoTPS_TEBD_global_update_TEBD1_splitting_and_TEBD2_chain}{{3.17}{42}{(a) A Hamiltonian $\hat {H}$ that is a sum of nearest-neighbour operators $h^{[x,y]}$ can be split into four parts made up of operators acting only on even/odd columns and even/odd bonds along a column. (b) A second order Suzuki-Trotter decomposition results in a chain of bond operators that have to be applied in the order visualized, moving along the path from the start to the end and backwards to the start again.\relax }{figure.caption.66}{}}
+\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{40}{section*.65}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{40}{subsection.3.3.2}\protected@file@percent }
+\newlabel{sec:disoTPS_TEBD_global_updates}{{3.3.2}{40}{Global TEBD updates}{subsection.3.3.2}{}}
+\newlabel{fig:disoTPS_TEBD_global_update_TEBD1_splitting}{{3.17a}{41}{\relax }{figure.caption.66}{}}
+\newlabel{sub@fig:disoTPS_TEBD_global_update_TEBD1_splitting}{{a}{41}{\relax }{figure.caption.66}{}}
+\newlabel{fig:disoTPS_TEBD_global_update_TEBD2_chain}{{3.17b}{41}{\relax }{figure.caption.66}{}}
+\newlabel{sub@fig:disoTPS_TEBD_global_update_TEBD2_chain}{{b}{41}{\relax }{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces (a) A Hamiltonian $\hat  {H}$ that is a sum of nearest-neighbour operators $h^{[x,y]}$ can be split into four parts made up of operators acting only on even/odd columns and even/odd bonds along a column. (b) A second order Suzuki-Trotter decomposition results in a chain of bond operators that have to be applied in the order visualized, moving along the path from the start to the end and backwards to the start again.\relax }}{41}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:disoTPS_TEBD_global_update_TEBD1_splitting_and_TEBD2_chain}{{3.17}{41}{(a) A Hamiltonian $\hat {H}$ that is a sum of nearest-neighbour operators $h^{[x,y]}$ can be split into four parts made up of operators acting only on even/odd columns and even/odd bonds along a column. (b) A second order Suzuki-Trotter decomposition results in a chain of bond operators that have to be applied in the order visualized, moving along the path from the start to the end and backwards to the start again.\relax }{figure.caption.66}{}}
+\newlabel{eq:disoTPS_TEBD_splitting_local_Hamiltonian}{{3.3.2}{42}{Global TEBD updates}{figure.caption.66}{}}
+\newlabel{eq:disoTPS_TEBD_suzuki_trotter_first_order}{{3.3.2}{42}{Global TEBD updates}{figure.caption.66}{}}
+\newlabel{eq:disoTPS_TEBD_first_order_TEBD_operator}{{3.3.2}{42}{Global TEBD updates}{figure.caption.66}{}}
+\newlabel{fig:disoTPS_TEBD_global_update_applying_TEBD1}{{3.18a}{43}{\relax }{figure.caption.67}{}}
+\newlabel{sub@fig:disoTPS_TEBD_global_update_applying_TEBD1}{{a}{43}{\relax }{figure.caption.67}{}}
+\newlabel{fig:disoTPS_TEBD_global_update_applying_TEBD2}{{3.18b}{43}{\relax }{figure.caption.67}{}}
+\newlabel{sub@fig:disoTPS_TEBD_global_update_applying_TEBD2}{{b}{43}{\relax }{figure.caption.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces To apply a TEBD update of (b) first order and (b) second order, we sweep accross the disoTPS once from left to right and back from right to left. (a) TEBD1 applies the operators in a brick-wall fashion, while (b) TEBD2 applies the operators along a chain.  \pdfcomment [color=red,open=true]{The second picture should apply along a chain} \relax }}{43}{figure.caption.67}\protected@file@percent }
+\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{43}{section*.69}\protected@file@percent }
+\newlabel{fig:disoTPS_TEBD_global_update_applying_TEBD}{{3.18}{43}{To apply a TEBD update of (b) first order and (b) second order, we sweep accross the disoTPS once from left to right and back from right to left. (a) TEBD1 applies the operators in a brick-wall fashion, while (b) TEBD2 applies the operators along a chain. \todo {The second picture should apply along a chain}\relax }{section*.69}{}}
 \abx@aux@cite{0}{cite:finding_exponential_product_formulas_of_higher_orders}
 \abx@aux@segm{0}{0}{cite:finding_exponential_product_formulas_of_higher_orders}
-\newlabel{eq:disoTPS_tebd_second_order_suzuki_trotter_decomposition}{{3.3.2}{43}{Global TEBD updates}{section*.69}{}}
-\newlabel{fig:disoTPS_TEBD_global_update_applying_TEBD1}{{3.18a}{44}{\relax }{figure.caption.67}{}}
-\newlabel{sub@fig:disoTPS_TEBD_global_update_applying_TEBD1}{{a}{44}{\relax }{figure.caption.67}{}}
-\newlabel{fig:disoTPS_TEBD_global_update_applying_TEBD2}{{3.18b}{44}{\relax }{figure.caption.67}{}}
-\newlabel{sub@fig:disoTPS_TEBD_global_update_applying_TEBD2}{{b}{44}{\relax }{figure.caption.67}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces To apply a TEBD update of (b) first order and (b) second order, we sweep accross the disoTPS once from left to right and back from right to left. (a) TEBD1 applies the operators in a brick-wall fashion, while (b) TEBD2 applies the operators along a chain.  \pdfcomment [color=red,open=true]{The second picture should apply along a chain} \relax }}{44}{figure.caption.67}\protected@file@percent }
-\@writefile{lpc}{\contentsline {lpcsec}{\numberline {}\ - }{44}{section*.69}\protected@file@percent }
-\newlabel{fig:disoTPS_TEBD_global_update_applying_TEBD}{{3.18}{44}{To apply a TEBD update of (b) first order and (b) second order, we sweep accross the disoTPS once from left to right and back from right to left. (a) TEBD1 applies the operators in a brick-wall fashion, while (b) TEBD2 applies the operators along a chain. \todo {The second picture should apply along a chain}\relax }{section*.69}{}}
+\newlabel{eq:disoTPS_tebd_second_order_suzuki_trotter_decomposition}{{3.3.2}{44}{Global TEBD updates}{section*.69}{}}
 \BKM@entry{id=4,dest={636861707465722E34},srcline={80}}{546F7269635C303430436F64653A5C303430416E5C30343065786163746C795C303430726570726573656E7461626C655C3034304D6F64656C}
 \abx@aux@cite{0}{cite:fault_tolerant_quantum_computation_by_anyons}
 \abx@aux@segm{0}{0}{cite:fault_tolerant_quantum_computation_by_anyons}
@@ -474,9 +482,9 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The PEPS in figure \figref {fig:toric_code_PEPS_representation} can be transformed to the disoTPS (a) by normalizing the tensors as shown in (b). Note that the tensors $T_\text  {E}^\prime $ at the top and bottom edges of the lattice need a different normalization than the tensors $T_\text  {E}$ at the left and right edges. The tensors of the orthogonality surface are defined in (c).\relax }}{48}{figure.caption.74}\protected@file@percent }
 \newlabel{fig:toric_code_disoTPS}{{4.3}{48}{The PEPS in figure \protect \figref {fig:toric_code_PEPS_representation} can be transformed to the disoTPS (a) by normalizing the tensors as shown in (b). Note that the tensors $T_\text {E}^\prime $ at the top and bottom edges of the lattice need a different normalization than the tensors $T_\text {E}$ at the left and right edges. The tensors of the orthogonality surface are defined in (c).\relax }{figure.caption.74}{}}
 \MT@newlabel{eq:toric_code_A_operator_condition}
+\MT@newlabel{eq:toric_code_A_operator_condition}
 \abx@aux@cite{0}{cite:isometric_tensor_network_representation_of_string_net_liquids}
 \abx@aux@segm{0}{0}{cite:isometric_tensor_network_representation_of_string_net_liquids}
-\MT@newlabel{eq:toric_code_A_operator_condition}
 \BKM@entry{id=5,dest={636861707465722E35},srcline={84}}{5472616E7376657273655C3034304669656C645C3034304973696E675C3034304D6F64656C3A5C30343047726F756E645C30343053746174655C3034305365617263685C303430616E645C30343054696D655C30343045766F6C7574696F6E}
 \abx@aux@cite{0}{cite:tenpy}
 \abx@aux@segm{0}{0}{cite:tenpy}

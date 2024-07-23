@@ -1,0 +1,53 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{0.9*\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\doubleSpinSeperation{0.2*\tensorDistance}
+	\begin{tikzpicture}
+		% Draw lattice
+		\draw[virtualLegWithoutArrows] (0, 2*\tensorDistance) -- ++(2*\tensorDistance, 2*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (0, 0) -- (4*\tensorDistance, 4*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (2*\tensorDistance, 0) -- ++(2*\tensorDistance, 2*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (\tensorDistance, 0) -- ++(-\tensorDistance, \tensorDistance);
+		\draw[virtualLegWithoutArrows] (3*\tensorDistance, 0) -- ++(-3*\tensorDistance, 3*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (4*\tensorDistance, \tensorDistance) -- ++(-3*\tensorDistance, 3*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (4*\tensorDistance, 3*\tensorDistance) -- ++(-\tensorDistance, \tensorDistance);
+		
+		% spins
+		\node[toricCodeEdgeSpin] () at (0, 0) {};
+		\node[toricCodeEdgeSpin] () at (0, \tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (0, 2*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (0, 3*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (\tensorDistance, 4*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (2*\tensorDistance, 4*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (3*\tensorDistance, 4*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (4*\tensorDistance, 4*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (4*\tensorDistance, 3*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (4*\tensorDistance, 2*\tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (4*\tensorDistance, \tensorDistance) {};
+		\node[toricCodeEdgeSpin] () at (\tensorDistance, 0) {};
+		\node[toricCodeEdgeSpin] () at (2*\tensorDistance, 0) {};
+		\node[toricCodeEdgeSpin] () at (3*\tensorDistance, 0) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance+\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (\tensorDistance+\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (\tensorDistance+\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance+\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance+\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance+\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance+\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance+\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance+\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		
+		\node[toricCodeSpin] () at (\tensorDistance-\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance-\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (2*\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance-\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] () at (3*\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+	\end{tikzpicture}
+\end{document}

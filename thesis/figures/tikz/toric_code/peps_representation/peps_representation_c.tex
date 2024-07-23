@@ -1,0 +1,99 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{0.9*\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{0.6*\physicalLegLengthSmall}
+	\def\doubleSpinSeperation{0.5*\tensorDistance}
+	\begin{tikzpicture}
+		% Draw lattice
+		\draw[virtualLegWithoutArrows] (0, 2*\tensorDistance) -- ++(2*\tensorDistance, 2*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (0, 0) -- (4*\tensorDistance, 4*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (2*\tensorDistance, 0) -- ++(2*\tensorDistance, 2*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (\tensorDistance, 0) -- ++(-\tensorDistance, \tensorDistance);
+		\draw[virtualLegWithoutArrows] (3*\tensorDistance, 0) -- ++(-3*\tensorDistance, 3*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (4*\tensorDistance, \tensorDistance) -- ++(-3*\tensorDistance, 3*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (4*\tensorDistance, 3*\tensorDistance) -- ++(-\tensorDistance, \tensorDistance);
+		
+		% tensors
+		\node[toricCodePEPSCenterTensor] () at (\tensorDistance/2, \tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (\tensorDistance/2, 5*\tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (3*\tensorDistance/2, 3*\tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (3*\tensorDistance/2, 7*\tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (5*\tensorDistance/2, \tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (5*\tensorDistance/2, 5*\tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (7*\tensorDistance/2, 3*\tensorDistance/2) {};
+		\node[toricCodePEPSCenterTensor] () at (7*\tensorDistance/2, 7*\tensorDistance/2) {};
+		
+		% spins
+		\node[toricCodeEdgeSpin] (e1) at (\doubleSpinSeperation/2, \doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e2) at (\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e3) at (\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e4) at (\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e5) at (\tensorDistance+\doubleSpinSeperation/2, 4*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e6) at (2*\tensorDistance-\doubleSpinSeperation/2, 4*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e7) at (3*\tensorDistance+\doubleSpinSeperation/2, 4*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e8) at (4*\tensorDistance-\doubleSpinSeperation/2, 4*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e9) at (4*\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e10) at (4*\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e11) at (4*\tensorDistance-\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e12) at (\tensorDistance-\doubleSpinSeperation/2, \doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e13) at (2*\tensorDistance+\doubleSpinSeperation/2, \doubleSpinSeperation/2) {};
+		\node[toricCodeEdgeSpin] (e14) at (3*\tensorDistance-\doubleSpinSeperation/2, \doubleSpinSeperation/2) {};
+		
+		\node[toricCodeSpin] (s1) at (\tensorDistance+\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s2) at (\tensorDistance+\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s3) at (\tensorDistance+\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s4) at (2*\tensorDistance+\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s5) at (2*\tensorDistance+\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s6) at (2*\tensorDistance+\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s7) at (3*\tensorDistance+\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s8) at (3*\tensorDistance+\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s9) at (3*\tensorDistance+\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		
+		\node[toricCodeSpin] (s10) at (\tensorDistance-\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s11) at (\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s12) at (\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s13) at (2*\tensorDistance-\doubleSpinSeperation/2, \tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s14) at (2*\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s15) at (2*\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s16) at (3*\tensorDistance-\doubleSpinSeperation/2, \tensorDistance-\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s17) at (3*\tensorDistance-\doubleSpinSeperation/2, 2*\tensorDistance+\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s18) at (3*\tensorDistance-\doubleSpinSeperation/2, 3*\tensorDistance-\doubleSpinSeperation/2) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (s1) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s2) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s3) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s4) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s5) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s6) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s7) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s8) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s9) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s10) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s11) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s12) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s13) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s14) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s15) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s16) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s17) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (s18) -- ++(0, \physicalLegLength);
+			
+			\draw[physicalLegSmallWithoutArrows] (e1) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e2) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e3) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e4) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e5) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e6) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e7) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e8) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e9) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e10) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e11) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e12) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e13) -- ++(0, \physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (e14) -- ++(0, \physicalLegLength);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}

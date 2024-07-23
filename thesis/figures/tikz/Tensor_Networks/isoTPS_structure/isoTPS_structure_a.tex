@@ -35,50 +35,50 @@
 		\node[tensorPhysical, minimum size=\tensorWidth] (T54) at (4*\tensorDistance, 3*\tensorDistance) {};
 		\node[tensorPhysical, minimum size=\tensorWidth] (T55) at (4*\tensorDistance, 4*\tensorDistance) {};
 		
-		\draw[virtualLegWithoutArrows] (T11) -- (T12) -- (T13) -- (T14) -- (T15);
-		\draw[virtualLegWithoutArrows] (T21) -- (T22) -- (T23) -- (T24) -- (T25);
-		\draw[virtualLegWithoutArrows] (T31) -- (T32) -- (T33) -- (T34) -- (T35);
-		\draw[virtualLegWithoutArrows] (T41) -- (T42) -- (T43) -- (T44) -- (T45);
-		\draw[virtualLegWithoutArrows] (T51) -- (T52) -- (T53) -- (T54) -- (T55);
+		\draw[virtualLegSmallWithoutArrows] (T11) -- (T12) -- (T13) -- (T14) -- (T15);
+		\draw[virtualLegSmallWithoutArrows] (T21) -- (T22) -- (T23) -- (T24) -- (T25);
+		\draw[virtualLegSmallWithoutArrows] (T31) -- (T32) -- (T33) -- (T34) -- (T35);
+		\draw[virtualLegSmallWithoutArrows] (T41) -- (T42) -- (T43) -- (T44) -- (T45);
+		\draw[virtualLegSmallWithoutArrows] (T51) -- (T52) -- (T53) -- (T54) -- (T55);
 		
-		\draw[virtualLegWithoutArrows] (T11) -- (T21) -- (T31) -- (T41) -- (T51);
-		\draw[virtualLegWithoutArrows] (T12) -- (T22) -- (T32) -- (T42) -- (T52);
-		\draw[virtualLegWithoutArrows] (T13) -- (T23) -- (T33) -- (T43) -- (T53);
-		\draw[virtualLegWithoutArrows] (T14) -- (T24) -- (T34) -- (T44) -- (T54);
-		\draw[virtualLegWithoutArrows] (T15) -- (T25) -- (T35) -- (T45) -- (T55);
+		\draw[virtualLegSmallWithoutArrows] (T11) -- (T21) -- (T31) -- (T41) -- (T51);
+		\draw[virtualLegSmallWithoutArrows] (T12) -- (T22) -- (T32) -- (T42) -- (T52);
+		\draw[virtualLegSmallWithoutArrows] (T13) -- (T23) -- (T33) -- (T43) -- (T53);
+		\draw[virtualLegSmallWithoutArrows] (T14) -- (T24) -- (T34) -- (T44) -- (T54);
+		\draw[virtualLegSmallWithoutArrows] (T15) -- (T25) -- (T35) -- (T45) -- (T55);
 		
 		\begin{pgfonlayer}{bg}
 			% Draw physical legs
-			\draw[physicalLegWithoutArrows] (T11) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T12) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T13) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T14) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T15) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T11) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T12) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T13) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T14) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T15) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
 
 			
-			\draw[physicalLegWithoutArrows] (T21) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T22) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T23) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T24) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T25) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T21) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T22) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T23) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T24) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T25) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
 			
-			\draw[physicalLegWithoutArrows] (T31) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T32) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T33) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T34) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T35) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T31) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T32) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T33) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T34) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T35) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
 			
-			\draw[physicalLegWithoutArrows] (T41) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T42) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T43) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T44) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T45) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T41) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T42) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T43) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T44) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T45) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
 			
-			\draw[physicalLegWithoutArrows] (T51) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T52) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T53) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T54) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
-			\draw[physicalLegWithoutArrows] (T55) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T51) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T52) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T53) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T54) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
+			\draw[physicalLegSmallWithoutArrows] (T55) -- ++({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength});
 		\end{pgfonlayer}
 	\end{tikzpicture}
 \end{document}

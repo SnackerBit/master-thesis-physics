@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'theta_tilde_contraction.blg'
-[32] biber:340> INFO - === Mon Jul 22, 2024, 09:27:11
-[95] Utils.pm:398> ERROR - Cannot find 'theta_tilde_contraction.bcf'!
-[95] Biber.pm:135> INFO - ERRORS: 1
+[58] biber:340> INFO - === Di Jul 23, 2024, 08:59:44
+[124] Utils.pm:398> ERROR - Cannot find 'theta_tilde_contraction.bcf'!
+[124] Biber.pm:135> INFO - ERRORS: 1

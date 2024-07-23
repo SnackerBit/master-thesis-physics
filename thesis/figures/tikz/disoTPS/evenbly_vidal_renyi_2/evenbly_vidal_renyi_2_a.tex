@@ -1,0 +1,92 @@
+\documentclass[crop, tikz]{standalone}
+\usetikzlibrary{decorations.pathreplacing}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmall}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\unitaryWidth{0.9*\smallTensorWidth}
+	\def\thetaHeight{2.0*\smallTensorWidth}
+	\def\unitaryHeight{2.0*\smallTensorWidth}
+	\def\horizontalTextOffsetMultiplier{1.5}
+	\def\verticalOffsetUnitaries{2.3*\smallTensorWidth}
+	\def\thetaUdist{0.8*\smallTensorWidth}
+	\def\secondEquationXshift{-\smallTensorWidth/2}
+	\def\verticalOffsetThetaTensors{\smallTensorWidth}
+	\def\verticalLegDistance{\thetaUdist}
+	\begin{tikzpicture}
+		
+		\def\yPos{-\verticalOffsetUnitaries-2*\thetaUdist-2*\smallTensorWidth-2*\unitaryWidth-\verticalOffsetThetaTensors}
+		\node[] () at (-\unitaryHeight/2-\verticalLegDistance*4-\equationDistance/2, {(\yPos)/2}) {$=$};
+		\node[] () at (-\unitaryHeight/2-\verticalLegDistance*4-\equationDistance-\defaultTextOffset, {(\yPos)/2}) {$\Tr\rho^2$};
+		
+		% Upper batch of tensors
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaHeight, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta1) at (0, \verticalOffsetUnitaries/2 + \unitaryWidth + \smallTensorWidth/2 + \thetaUdist) {$\theta$};
+		\node[tensorOperatorSmall, minimum width=\unitaryHeight, minimum height=\unitaryWidth] (U1) at (0, \verticalOffsetUnitaries/2+\unitaryWidth/2) {};
+		\node[] () at (\unitaryHeight/2+\defaultTextOffsetLarge, \verticalOffsetUnitaries/2+\unitaryWidth/2) {$U$};¸
+		\node[tensorOperatorSmall, minimum width=\unitaryHeight, minimum height=\unitaryWidth] (U1c) at (0, -\verticalOffsetUnitaries/2-\unitaryWidth/2) {};
+		\node[] () at (\unitaryHeight/2+\defaultTextOffsetLarge, -\verticalOffsetUnitaries/2-\unitaryWidth/2) {$U^*$};
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaHeight, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta1c) at (0, -\verticalOffsetUnitaries/2 - \unitaryWidth - \smallTensorWidth/2 - \thetaUdist) {$\theta^*$};
+		
+		% Lower batch of tensors
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaHeight, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta2) at (0, \yPos+\verticalOffsetUnitaries/2 + \unitaryWidth + \smallTensorWidth/2 + \thetaUdist) {$\theta$};
+		\node[tensorOperatorSmall, minimum width=\unitaryHeight, minimum height=\unitaryWidth] (U2) at (0, \yPos+\verticalOffsetUnitaries/2+\unitaryWidth/2) {};
+		\node[] () at (\unitaryHeight/2+\defaultTextOffsetLarge, \yPos+\verticalOffsetUnitaries/2+\unitaryWidth/2) {$U$};¸
+		\node[tensorOperatorSmall, minimum width=\unitaryHeight, minimum height=\unitaryWidth] (U2c) at (0, \yPos-\verticalOffsetUnitaries/2-\unitaryWidth/2) {};
+		\node[] () at (\unitaryHeight/2+\defaultTextOffsetLarge, \yPos-\verticalOffsetUnitaries/2-\unitaryWidth/2) {$U^*$};
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaHeight, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta2c) at (0, \yPos-\verticalOffsetUnitaries/2 - \unitaryWidth - \smallTensorWidth/2 - \thetaUdist) {$\theta^*$};
+		
+		\begin{pgfonlayer}{bg}
+			% Upper batch of tensors
+			\draw[specialLeg] (theta1)+(-\tensorDistance-\thetaHeight/2+\smallTensorWidth, 0) -- (theta1);
+			\draw[specialLeg] (theta1c)+(-\thetaHeight/2-\verticalLegDistance, 0) -- (theta1c);
+			\draw[specialLeg] (theta1)+(\tensorDistance+\thetaHeight/2-\smallTensorWidth, 0) -- (theta1);
+			\draw[specialLeg] (theta1c)+(\tensorDistance+\thetaHeight/2-\smallTensorWidth, 0) -- (theta1c);
+			
+			\draw[specialLegWithoutArrows] (theta1) -- ++(\tensorDistance+\thetaHeight/2-\smallTensorWidth, 0) -- (\tensorDistance+\thetaHeight/2-\smallTensorWidth, -\verticalOffsetUnitaries/2 - \unitaryWidth - \smallTensorWidth/2 - \thetaUdist) -- (theta1c);
+			
+			
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={-\defaultLegSeperationLarge*cos(90)/2}}] (U1.center) -- (theta1.center);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (U1.center) -- (theta1.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={-\defaultLegSeperationLarge*cos(90)/2}}] (U1c.center) -- (theta1c.center);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (U1c.center) -- (theta1c.center);
+			
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, \verticalOffsetUnitaries/2-\thetaUdist) -- (U1);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, \verticalOffsetUnitaries/2-\thetaUdist) -- (U1);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, -\verticalOffsetUnitaries/2+\thetaUdist) -- (U1c);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, -\verticalOffsetUnitaries/2+\thetaUdist) -- (U1c);
+			
+			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (U1) -- (U1c);
+			
+			% Lower batch of tensors
+			\draw[specialLeg] (theta2)+(-\thetaHeight/2-\verticalLegDistance, 0) -- (theta2);
+			\draw[specialLeg] (theta2c)+(-\tensorDistance-\thetaHeight/2+\smallTensorWidth, 0) -- (theta2c);
+			\draw[specialLeg] (theta2)+(\tensorDistance+\thetaHeight/2-\smallTensorWidth, 0) -- (theta2);
+			\draw[specialLeg] (theta2c)+(\tensorDistance+\thetaHeight/2-\smallTensorWidth, 0) -- (theta2c);
+			
+			\draw[specialLegWithoutArrows] (theta2) -- ++(\tensorDistance+\thetaHeight/2-\smallTensorWidth, 0) -- (\tensorDistance+\thetaHeight/2-\smallTensorWidth, \yPos -\verticalOffsetUnitaries/2 - \unitaryWidth - \smallTensorWidth/2 - \thetaUdist) -- (theta2c);
+			
+			
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={-\defaultLegSeperationLarge*cos(90)/2}}] (U2.center) -- (theta2.center);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (U2.center) -- (theta2.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={-\defaultLegSeperationLarge*cos(90)/2}}] (U2c.center) -- (theta2c.center);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (U2c.center) -- (theta2c.center);
+			
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, \yPos+\verticalOffsetUnitaries/2-\thetaUdist) -- (U2);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, \yPos+\verticalOffsetUnitaries/2-\thetaUdist) -- (U2);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, \yPos+-\verticalOffsetUnitaries/2+\thetaUdist) -- (U2c);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (0, \yPos+-\verticalOffsetUnitaries/2+\thetaUdist) -- (U2c);
+			
+			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationLarge*sin(90)/2}, yshift={\defaultLegSeperationLarge*cos(90)/2}}] (U2) -- (U2c);
+			
+			% Connecting legs
+			\draw[specialLegWithoutArrows] (theta1c) -- ++(-\thetaHeight/2-\verticalLegDistance, 0) -- ++(0, -\smallTensorWidth-\verticalOffsetThetaTensors) -- (theta2);
+			
+			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={-\defaultLegSeperationLarge/2}, yshift={0}}] (U1c) -- ++(0, \unitaryWidth/2+\thetaUdist) -- ++(-\unitaryHeight/2+\defaultLegSeperationLarge/2-2*\verticalLegDistance, 0) -- ++(0, \yPos+\verticalOffsetUnitaries-2*\thetaUdist) -- ++(\unitaryHeight/2-\defaultLegSeperationLarge/2+2*\verticalLegDistance, 0) -- (U2);
+			
+			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={-\defaultLegSeperationLarge/2}, yshift={0}}] (U1) -- ++(0, -\unitaryWidth/2-\thetaUdist) -- ++(-\unitaryHeight/2+\defaultLegSeperationLarge/2-3*\verticalLegDistance, 0) -- (-\unitaryHeight/2+\defaultLegSeperationLarge/2-3*\verticalLegDistance, \yPos-\verticalOffsetUnitaries/2-\unitaryWidth/2+\unitaryWidth/2+\thetaUdist) -- ++(\unitaryHeight/2-\defaultLegSeperationLarge/2+3*\verticalLegDistance, 0) -- (U2c);
+			
+			\draw[specialLegWithoutArrows] (theta1) -- ++(-\thetaHeight/2-4*\verticalLegDistance, 0) -- ++(0, -4*\unitaryWidth-3*\smallTensorWidth-\verticalOffsetThetaTensors-2*\verticalOffsetUnitaries-4*\thetaUdist) -- (theta2c);
+		\end{pgfonlayer}
+		
+	\end{tikzpicture}
+\end{document}
