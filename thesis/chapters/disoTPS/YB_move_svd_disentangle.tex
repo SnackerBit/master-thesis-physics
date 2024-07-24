@@ -12,22 +12,24 @@ Alternatively, the constrained optimization problem \eqref{eq:disoTPS_YB_move_st
 	The unitary $U$ can be chosen to minimize the truncation error of the next step by \textit{disentangling} the tensor $\theta$. We will discuss procedures of finding such a \textit{disentangling unitary} on the next page.
 	\item In the last step, the tensor $\tilde{\theta}$ is split vertically into $W_1^\prime$ and $W_2^\prime$ using a truncated SVD as shown in figure \figref{fig:yb_move_svd_disent_c}. Here, the bond dimension is truncated to $\chi$. We end up with the three tensors $T^\prime$, $W_1^\prime$ and $W_2^\prime$, completing the YB move.
 \end{enumerate}
-Before we discuss the disentangling procedure, two comments about step two of the above algorithm are in order. First, there exists a degree of freedom for splitting the bond index, because applying the same permutations to the columns of $A$ and rows of $\theta$ does not change the result of contracting the network. However, this degree of freedom is fixed by the disentangling process, making the exact permutation of the bond splitting irrelevant. Second, note that near the edges of the lattice it can happen that the matrizized tensor $\Psi$ has $\tilde{\chi} < D^2$ rows. In this case, the bond dimension after the SVD will also be $\tilde{\chi}$ and we cannot simply split the bond into two bonds of dimension $\chi_1=\chi_2=D$. Instead, we choose a splitting $\chi_1 \le D$, $\chi_2 \le D$ such that $\chi_1\cdot\chi_2$ is maximized, while it must still hold $\chi_1\cdot\chi_2\le\tilde{\chi}$. We additionally prefer "equal" splittings $\chi_1\approx\chi_2\approx\sqrt{\tilde{\chi}}$ if possible. One can find such a splitting easily by computing all possible combinations of $\chi_1$ and $\chi_2$ and keeping only the best one, which has a computational cost of $\mathcal{O}\left(\sqrt{\tilde{\chi}}\right) = \mathcal{O}\left(D\right)$. \par
+Before we discuss the disentangling procedure, two comments about step two of the above algorithm are in order. First, there exists a degree of freedom for splitting the bond index, because applying the same permut´ations to the columns of $A$ and rows of $\theta$ does not change the result of contracting the network. However, this degree of freedom is fixed by the disentangling process, making the exact permutation of the bond splitting irrelevant. Second, note that near the edges of the lattice it can happen that the matrizized tensor $\Psi$ has $\tilde{\chi} < D^2$ rows. In this case, the bond dimension after the SVD will also be $\tilde{\chi}$ and we cannot simply split the bond into two bonds of dimension $\chi_1=\chi_2=D$. Instead, we choose a splitting $\chi_1 \le D$, $\chi_2 \le D$ such that $\chi_1\cdot\chi_2$ is maximized, while it must still hold $\chi_1\cdot\chi_2\le\tilde{\chi}$. We additionally prefer "equal" splittings $\chi_1\approx\chi_2\approx\sqrt{\tilde{\chi}}$ if possible. One can find such a splitting easily by computing all possible combinations of $\chi_1$ and $\chi_2$ and keeping only the best one, which has a computational cost of $\mathcal{O}\left(\sqrt{\tilde{\chi}}\right) = \mathcal{O}\left(D\right)$. \par
 \begin{figure}
 	\centering
 	\subcaptionbox{\label{fig:yb_move_svd_disent_a}}
 	{%
 		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf}
 	}
+	\par\bigskip
 	\subcaptionbox{\label{fig:yb_move_svd_disent_b}}
 	{%
 		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf}
 	}
+	\par\bigskip
 	\subcaptionbox{\label{fig:yb_move_svd_disent_c}}
 	{%
 		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf}
 	}
-	\caption{The YB move is made up of three steps as explained in the text.\todo{Change X to A}}
+	\caption{The YB move is made up of three steps as explained in the text.}
 	\label{fig:yb_move_svd_disent}
 \end{figure}
 \subsubsection*{The disentangling process}
@@ -98,14 +100,17 @@ The gradients and hessian vector products of the cost functions \eqref{eq:YB_mov
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_a.pdf}
 	}
+	\par\bigskip
 	\subcaptionbox{\label{fig:approximate_svd_first_step}}
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_b.pdf}
 	}
+	\par\bigskip
 	\subcaptionbox{\label{fig:approximate_svd_second_step}}
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_c.pdf}
 	}
+	\par\bigskip
 	\subcaptionbox{\label{fig:approximate_svd_final_step}}
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_d.pdf}
@@ -117,7 +122,7 @@ The cost of both CG and the TRM are dominated by the computation of the gradient
 \subsubsection*{Comparison of different disentangling algorithms}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/disoTPS/disentangling_riemannian_optimization.jpeg}
+	\includegraphics[scale=1]{figures/tikz/disoTPS/riemannian_optimization/riemannian_optimization.pdf}
 	\caption{In this figure, a visualization of optimization on Riemannian manifolds is given. The iterate $U_k$ (left) is updated along the search direction $\xi_k$, which is an element of the tangent space $T_{U_k}\Stiefel$. The next iterate $U_{k+1}$ is computed with the retraction $R_\xi\left(\alpha\right)$, where $\alpha\in\mathbb{R}$ is the step size. For the computation of the next search direction $\xi_{k+1}$ the previous search direction $\xi_k$ is needed, which is brought to the tangent space $T_{U_{k+1}}\Stiefel$ of the new iterate $U_{k+1}$ via the vector transport $T_{k\rightarrow k+1}\left(\xi_k\right)$.}
 	\label{fig:disentangling_riemannian_optimization}
 \end{figure}

@@ -1,7 +1,7 @@
 \documentclass[crop, tikz]{standalone}
 \input{../../style.tex}
 \begin{document}
-	\def \openLegLength{30pt}
+	\def \openLegLength{25pt}
 	\begin{tikzpicture}
 		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (A) at (0, 0) {$A$};
 		\draw[virtualLegWithoutArrows] (A) -- ++(\openLegLength, 0);

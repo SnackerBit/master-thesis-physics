@@ -1,57 +1,58 @@
 \documentclass[crop, tikz]{standalone}
-\usepackage{tikz-network}
 \input{../../style.tex}
+\usepackage{tikz-network}
 
 \begin{document}
-	\def\openLegLength{20 pt}
+	\def\openLegLength{21 pt}
+	\def\tensorDistance{1.0*\defaultDistanceNormal}
 	\def\ccdistance{70 pt}
 	
 	\def\posXNA{0}
 	\def\posYNA{-\ccdistance/2}
-	\def\posXNB{\defaultDistanceNormal*0.8}
-	\def\posYNB{\defaultDistanceNormal*0.3-\ccdistance/2}
-	\def\posXNC{\defaultDistanceNormal*0.5}
-	\def\posYNC{-\defaultDistanceNormal*0.4-\ccdistance/2}
-	\def\posXND{\defaultDistanceNormal*1.2}
-	\def\posYND{-\defaultDistanceNormal*0.5-\ccdistance/2}
-	\def\posXNE{\defaultDistanceNormal*1.8}
-	\def\posYNE{-\defaultDistanceNormal*0.45-\ccdistance/2}
-	\def\posXNF{\defaultDistanceNormal*1.5}
-	\def\posYNF{\defaultDistanceNormal*0.4-\ccdistance/2}
-	\def\posXNG{\defaultDistanceNormal*2.3}
-	\def\posYNG{-\defaultDistanceNormal*0.1-\ccdistance/2}
-	\def\posXNH{\defaultDistanceNormal*2.2}
-	\def\posYNH{-\defaultDistanceNormal*0.8-\ccdistance/2}
-	\def\posXNI{\defaultDistanceNormal*3.1}
-	\def\posYNI{-\defaultDistanceNormal*0.2-\ccdistance/2}
-	\def\posXNJ{\defaultDistanceNormal*2.9}
-	\def\posYNJ{\defaultDistanceNormal*0.4-\ccdistance/2}
+	\def\posXNB{\tensorDistance*0.8}
+	\def\posYNB{\tensorDistance*0.3-\ccdistance/2}
+	\def\posXNC{\tensorDistance*0.5}
+	\def\posYNC{-\tensorDistance*0.4-\ccdistance/2}
+	\def\posXND{\tensorDistance*1.2}
+	\def\posYND{-\tensorDistance*0.5-\ccdistance/2}
+	\def\posXNE{\tensorDistance*1.8}
+	\def\posYNE{-\tensorDistance*0.45-\ccdistance/2}
+	\def\posXNF{\tensorDistance*1.5}
+	\def\posYNF{\tensorDistance*0.4-\ccdistance/2}
+	\def\posXNG{\tensorDistance*2.3}
+	\def\posYNG{-\tensorDistance*0.1-\ccdistance/2}
+	\def\posXNH{\tensorDistance*2.2}
+	\def\posYNH{-\tensorDistance*0.8-\ccdistance/2}
+	\def\posXNI{\tensorDistance*2.9}
+	\def\posYNI{-\tensorDistance*0.2-\ccdistance/2}
+	\def\posXNJ{\tensorDistance*3.1}
+	\def\posYNJ{\tensorDistance*0.4-\ccdistance/2}
 	
 	\def\posXNpA{0}
 	\def\posYNpA{\ccdistance/2}
-	\def\posXNpB{\defaultDistanceNormal*0.8}
-	\def\posYNpB{\defaultDistanceNormal*0.3+\ccdistance/2}
-	\def\posXNpC{\defaultDistanceNormal*0.5}
-	\def\posYNpC{-\defaultDistanceNormal*0.4+\ccdistance/2}
-	\def\posXNpF{\defaultDistanceNormal*1.5}
-	\def\posYNpF{\defaultDistanceNormal*0.4+\ccdistance/2}
-	\def\posXNpG{\defaultDistanceNormal*2.3}
-	\def\posYNpG{-\defaultDistanceNormal*0.1+\ccdistance/2}
-	\def\posXNpH{\defaultDistanceNormal*2.2}
-	\def\posYNpH{-\defaultDistanceNormal*0.8+\ccdistance/2}
-	\def\posXNpI{\defaultDistanceNormal*3.1}
-	\def\posYNpI{-\defaultDistanceNormal*0.2+\ccdistance/2}
-	\def\posXNpJ{\defaultDistanceNormal*2.9}
-	\def\posYNpJ{\defaultDistanceNormal*0.4+\ccdistance/2}
-	\def\posXNpK{\defaultDistanceNormal*1.1}
-	\def\posYNpK{-\defaultDistanceNormal*0.55+\ccdistance/2}
-	\def\posXNpL{\defaultDistanceNormal*1.7}
-	\def\posYNpL{-\defaultDistanceNormal*0.6+\ccdistance/2}
-	\def\posXNpM{\defaultDistanceNormal*1.45}
-	\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2}
+	\def\posXNpB{\tensorDistance*0.8}
+	\def\posYNpB{\tensorDistance*0.3+\ccdistance/2}
+	\def\posXNpC{\tensorDistance*0.5}
+	\def\posYNpC{-\tensorDistance*0.4+\ccdistance/2}
+	\def\posXNpF{\tensorDistance*1.5}
+	\def\posYNpF{\tensorDistance*0.4+\ccdistance/2}
+	\def\posXNpG{\tensorDistance*2.3}
+	\def\posYNpG{-\tensorDistance*0.1+\ccdistance/2}
+	\def\posXNpH{\tensorDistance*2.2}
+	\def\posYNpH{-\tensorDistance*0.8+\ccdistance/2}
+	\def\posXNpI{\tensorDistance*2.9}
+	\def\posYNpI{-\tensorDistance*0.2+\ccdistance/2}
+	\def\posXNpJ{\tensorDistance*3.1}
+	\def\posYNpJ{\tensorDistance*0.4+\ccdistance/2}
+	\def\posXNpK{\tensorDistance*1.1}
+	\def\posYNpK{-\tensorDistance*0.55+\ccdistance/2}
+	\def\posXNpL{\tensorDistance*1.7}
+	\def\posYNpL{-\tensorDistance*0.6+\ccdistance/2}
+	\def\posXNpM{\tensorDistance*1.45}
+	\def\posYNpM{-\tensorDistance*0.15+\ccdistance/2}
 	
 	\def\angleA{170}
-	\def\angleC{-160}
+	\def\angleC{-120}
 	\def\angleF{35}
 	\def\angleH{-45}
 	\def\angleI{-10}
@@ -59,8 +60,8 @@
 	
 	\begin{tikzpicture}
 		% Draw beginning of equation and first equal sign
-		\node[] () at ({\posXNA+\openLegLength*cos(\angleA)-\defaultDistanceEquations/2}, 0) {$=$};
-		\node[] () at ({\posXNA+\openLegLength*cos(\angleA)-\defaultDistanceEquations-12pt}, 0) {$\left\langle\mathcal{N}\middle|\mathcal{N}^\prime\right\rangle$};
+		\node[] () at ({\posXNA+\openLegLength*cos(\angleA)-\defaultDistanceEquations/2+7pt}, 0) {$=$};
+		\node[] () at ({\posXNA+\openLegLength*cos(\angleA)-\defaultDistanceEquations-5pt}, 0) {$\langle\mathcal{N},\mathcal{N}^\prime\rangle_\text{F}$};
 		
 		% Draw tensors of N
 		\node[tensorPhysical, minimum size=\smallTensorWidth] (NA) at (\posXNA, \posYNA) {};
@@ -77,7 +78,7 @@
 		\begin{pgfonlayer}{bg}
 			% Draw subregion M
 			%\fill[fill=redMarkingColor, opacity=\backgroundopacity] \convexhull{D, E}{\smallTensorWidth*0.9};
-			%\node[color=redMarkingColor] (M) at (\posXND-\defaultDistanceNormal*0.2, \posYND-\defaultDistanceNormal*0.4) {$\mathcal{M}$};
+			%\node[color=redMarkingColor] (M) at (\posXND-\tensorDistance*0.2, \posYND-\tensorDistance*0.4) {$\mathcal{M}$};
 			
 			% Draw connecting legs
 			\draw[virtualLeg] (NA) -- (NB);
@@ -117,7 +118,7 @@
 		\begin{pgfonlayer}{bg}
 			% Draw subregion M
 			%\fill[color=greenMarkingColor, opacity=\backgroundopacity] \convexhull{K, M, L}{\smallTensorWidth*0.9};
-			%\node[color=greenMarkingColor] (Mp) at (\posXNpK-\defaultDistanceNormal*0.2, \posYNpK-\defaultDistanceNormal*0.4) {$\mathcal{M}^\prime$};
+			%\node[color=greenMarkingColor] (Mp) at (\posXNpK-\tensorDistance*0.2, \posYNpK-\tensorDistance*0.4) {$\mathcal{M}^\prime$};
 			
 			% Draw connecting legs
 			\draw[virtualLeg] (NpA) -- (NpB);
@@ -156,51 +157,51 @@
 		% Draw second equal sign
 		\node[] () at ({\posXNI+\openLegLength*cos(\angleI)+\defaultDistanceEquations/2}, 0) {$=$};
 		
-		\def\xoffset{162 pt}
+		\def\xoffset{158pt}
 		
 		\def\posXNA{0 + \xoffset}
 		\def\posYNA{-\ccdistance/2}
-		\def\posXNB{\defaultDistanceNormal*0.8 + \xoffset}
-		\def\posYNB{\defaultDistanceNormal*0.3-\ccdistance/2}
-		\def\posXNC{\defaultDistanceNormal*0.5 + \xoffset}
-		\def\posYNC{-\defaultDistanceNormal*0.4-\ccdistance/2}
-		\def\posXND{\defaultDistanceNormal*1.2 + \xoffset}
-		\def\posYND{-\defaultDistanceNormal*0.5-\ccdistance/2}
-		\def\posXNE{\defaultDistanceNormal*1.8 + \xoffset}
-		\def\posYNE{-\defaultDistanceNormal*0.45-\ccdistance/2}
-		\def\posXNF{\defaultDistanceNormal*1.5 + \xoffset}
-		\def\posYNF{\defaultDistanceNormal*0.4-\ccdistance/2}
-		\def\posXNG{\defaultDistanceNormal*2.3 + \xoffset}
-		\def\posYNG{-\defaultDistanceNormal*0.1-\ccdistance/2}
-		\def\posXNH{\defaultDistanceNormal*2.2 + \xoffset}
-		\def\posYNH{-\defaultDistanceNormal*0.8-\ccdistance/2}
-		\def\posXNI{\defaultDistanceNormal*2.9 + \xoffset}
-		\def\posYNI{-\defaultDistanceNormal*0.3-\ccdistance/2}
-		\def\posXNJ{\defaultDistanceNormal*2.9 + \xoffset}
-		\def\posYNJ{\defaultDistanceNormal*0.4-\ccdistance/2}
+		\def\posXNB{\tensorDistance*0.8 + \xoffset}
+		\def\posYNB{\tensorDistance*0.3-\ccdistance/2}
+		\def\posXNC{\tensorDistance*0.5 + \xoffset}
+		\def\posYNC{-\tensorDistance*0.4-\ccdistance/2}
+		\def\posXND{\tensorDistance*1.2 + \xoffset}
+		\def\posYND{-\tensorDistance*0.5-\ccdistance/2}
+		\def\posXNE{\tensorDistance*1.8 + \xoffset}
+		\def\posYNE{-\tensorDistance*0.45-\ccdistance/2}
+		\def\posXNF{\tensorDistance*1.5 + \xoffset}
+		\def\posYNF{\tensorDistance*0.4-\ccdistance/2}
+		\def\posXNG{\tensorDistance*2.3 + \xoffset}
+		\def\posYNG{-\tensorDistance*0.1-\ccdistance/2}
+		\def\posXNH{\tensorDistance*2.2 + \xoffset}
+		\def\posYNH{-\tensorDistance*0.8-\ccdistance/2}
+		\def\posXNI{\tensorDistance*2.9 + \xoffset}
+		\def\posYNI{-\tensorDistance*0.3-\ccdistance/2}
+		\def\posXNJ{\tensorDistance*3.1 + \xoffset}
+		\def\posYNJ{\tensorDistance*0.4-\ccdistance/2}
 		
 		\def\posXNpA{0}
 		\def\posYNpA{\ccdistance/2}
-		\def\posXNpB{\defaultDistanceNormal*0.8 + \xoffset}
-		\def\posYNpB{\defaultDistanceNormal*0.3+\ccdistance/2}
-		\def\posXNpC{\defaultDistanceNormal*0.5 + \xoffset}
-		\def\posYNpC{-\defaultDistanceNormal*0.4+\ccdistance/2}
-		\def\posXNpF{\defaultDistanceNormal*1.5 + \xoffset}
-		\def\posYNpF{\defaultDistanceNormal*0.4+\ccdistance/2}
-		\def\posXNpG{\defaultDistanceNormal*2.3 + \xoffset}
-		\def\posYNpG{-\defaultDistanceNormal*0.1+\ccdistance/2}
-		\def\posXNpH{\defaultDistanceNormal*2.2 + \xoffset}
-		\def\posYNpH{-\defaultDistanceNormal*0.8+\ccdistance/2}
-		\def\posXNpI{\defaultDistanceNormal*2.9 + \xoffset}
-		\def\posYNpI{-\defaultDistanceNormal*0.3+\ccdistance/2}
-		\def\posXNpJ{\defaultDistanceNormal*2.9 + \xoffset}
-		\def\posYNpJ{\defaultDistanceNormal*0.4+\ccdistance/2}
-		\def\posXNpK{\defaultDistanceNormal*1.1 + \xoffset}
-		\def\posYNpK{-\defaultDistanceNormal*0.55+\ccdistance/2}
-		\def\posXNpL{\defaultDistanceNormal*1.7 + \xoffset}
-		\def\posYNpL{-\defaultDistanceNormal*0.6+\ccdistance/2}
-		\def\posXNpM{\defaultDistanceNormal*1.45 + \xoffset}
-		\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2}
+		\def\posXNpB{\tensorDistance*0.8 + \xoffset}
+		\def\posYNpB{\tensorDistance*0.3+\ccdistance/2}
+		\def\posXNpC{\tensorDistance*0.5 + \xoffset}
+		\def\posYNpC{-\tensorDistance*0.4+\ccdistance/2}
+		\def\posXNpF{\tensorDistance*1.5 + \xoffset}
+		\def\posYNpF{\tensorDistance*0.4+\ccdistance/2}
+		\def\posXNpG{\tensorDistance*2.3 + \xoffset}
+		\def\posYNpG{-\tensorDistance*0.1+\ccdistance/2}
+		\def\posXNpH{\tensorDistance*2.2 + \xoffset}
+		\def\posYNpH{-\tensorDistance*0.8+\ccdistance/2}
+		\def\posXNpI{\tensorDistance*2.9 + \xoffset}
+		\def\posYNpI{-\tensorDistance*0.3+\ccdistance/2}
+		\def\posXNpJ{\tensorDistance*3.1 + \xoffset}
+		\def\posYNpJ{\tensorDistance*0.4+\ccdistance/2}
+		\def\posXNpK{\tensorDistance*1.1 + \xoffset}
+		\def\posYNpK{-\tensorDistance*0.55+\ccdistance/2}
+		\def\posXNpL{\tensorDistance*1.7 + \xoffset}
+		\def\posYNpL{-\tensorDistance*0.6+\ccdistance/2}
+		\def\posXNpM{\tensorDistance*1.45 + \xoffset}
+		\def\posYNpM{-\tensorDistance*0.15+\ccdistance/2}
 		
 		% Draw tensors of N
 		\node[tensorPhysical, minimum size=\smallTensorWidth] (NB) at (\posXNB, \posYNB) {};
@@ -221,7 +222,7 @@
 		\begin{pgfonlayer}{bg}
 			% Draw subregion M
 			%\fill[fill=redMarkingColor, opacity=\backgroundopacity] \convexhull{D, E}{\smallTensorWidth*0.9};
-			%\node[color=redMarkingColor] (M) at (\posXND-\defaultDistanceNormal*0.2, \posYND-\defaultDistanceNormal*0.4) {$\mathcal{M}$};
+			%\node[color=redMarkingColor] (M) at (\posXND-\tensorDistance*0.2, \posYND-\tensorDistance*0.4) {$\mathcal{M}$};
 			
 			% Draw connecting legs
 			\draw[virtualLeg] (NB) -- (NF);
@@ -238,7 +239,8 @@
 			
 			\draw[virtualLeg] ({\posXNB+\openLegLength*cos(\angleBa)}, {\posYNB+\openLegLength*sin(\angleBa)}) -- (NB);
 			\draw[virtualLeg] ({\posXNB+\openLegLength*cos(\angleBb)}, {\posYNB+\openLegLength*sin(\angleBb)}) -- (NB);
-			\draw[virtualLeg] ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND);
+			%\draw[virtualLeg] ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND); 
+			\draw[virtualLeg] ({\posXNpK+\openLegLength*cos(\angleK)}, {\posYNpK+\openLegLength*sin(\angleK)-\ccdistance}) -- (ND); % Draw now with different angle for better visual clarity!
 			\draw[virtualLeg] ({\posXNG+\openLegLength*cos(\angleG)}, {\posYNG+\openLegLength*sin(\angleG)}) -- (NG);
 			\draw[virtualLeg] ({\posXNJ+\openLegLength*cos(\angleJb)}, {\posYNJ+\openLegLength*sin(\angleJb)}) -- (NJ);
 		\end{pgfonlayer}
@@ -256,7 +258,7 @@
 		\begin{pgfonlayer}{bg}
 			% Draw subregion M
 			%\fill[color=greenMarkingColor, opacity=\backgroundopacity] \convexhull{K, M, L}{\smallTensorWidth*0.9};
-			%\node[color=greenMarkingColor] (Mp) at (\posXNpK-\defaultDistanceNormal*0.2, \posYNpK-\defaultDistanceNormal*0.4) {$\mathcal{M}^\prime$};
+			%\node[color=greenMarkingColor] (Mp) at (\posXNpK-\tensorDistance*0.2, \posYNpK-\tensorDistance*0.4) {$\mathcal{M}^\prime$};
 			
 			% Draw connecting legs
 			\draw[virtualLeg] (NpB) -- (NpF);
@@ -288,33 +290,34 @@
 			
 			\draw[virtualLegWithoutArrows] (NpB) -- ++({\openLegLength*cos(\angleBa)}, {\openLegLength*sin(\angleBa)}) -- ++(0, -\ccdistance) -- (NB);
 			\draw[virtualLegWithoutArrows] (NpB) -- ++({\openLegLength*cos(\angleBb)}, {\openLegLength*sin(\angleBb)}) -- ++(0, -\ccdistance) -- (NB);
-			\draw[virtualLegWithoutArrows] (NpK) -- ++({\openLegLength*cos(\angleK)}, {\openLegLength*sin(\angleK)}) -- ({\posXND+\openLegLength*cos(\angleD)}, {\posYND+\openLegLength*sin(\angleD)}) -- (ND);
+			\draw[virtualLegWithoutArrows] (NpK) -- ++({\openLegLength*cos(\angleK)}, {\openLegLength*sin(\angleK)}) -- ++(0, -\ccdistance) -- (ND);
+			
 			\draw[virtualLegWithoutArrows] (NpG) -- ++({\openLegLength*cos(\angleG)}, {\openLegLength*sin(\angleG)})  -- ++(0, -\ccdistance)-- (NG);
 			\draw[virtualLegWithoutArrows] (NpJ) -- ++({\openLegLength*cos(\angleJb)}, {\openLegLength*sin(\angleJb)})  -- ++(0, -\ccdistance)-- (NJ);
 		\end{pgfonlayer}
 		
 		% Draw third equal sign
-		\def\yoffset{-130pt}
+		\def\yoffset{-140pt}
 		\def\xoffset{70pt}
 		\node[] () at (\xoffset, \yoffset) {$=$};
-		\node[] () at (\xoffset + \defaultDistanceEquations, \yoffset) {$\dots$};
-		\node[] () at (\xoffset + 2*\defaultDistanceEquations, \yoffset) {$=$};
+		\node[] () at (\xoffset + \defaultDistanceEquations/2, \yoffset) {$\dots$};
+		\node[] () at (\xoffset + \defaultDistanceEquations, \yoffset) {$=$};
 		
-		\def\additionalxoffset{46 pt}
-		\def\additionalyoffset{18 pt}
+		\def\additionalxoffset{25 pt}
+		\def\additionalyoffset{25 pt}
 		\def\ccdistance{50 pt}
 		
-		\def\posXND{\defaultDistanceNormal*1.2 + \xoffset + \additionalxoffset}
-		\def\posYND{-\defaultDistanceNormal*0.5-\ccdistance/2 + \yoffset + \additionalyoffset}
-		\def\posXNE{\defaultDistanceNormal*1.8 + \xoffset + \additionalxoffset}
-		\def\posYNE{-\defaultDistanceNormal*0.45-\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXND{\tensorDistance*1.2 + \xoffset + \additionalxoffset}
+		\def\posYND{-\tensorDistance*0.5-\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNE{\tensorDistance*1.8 + \xoffset + \additionalxoffset}
+		\def\posYNE{-\tensorDistance*0.45-\ccdistance/2 + \yoffset + \additionalyoffset}
 		
-		\def\posXNpK{\defaultDistanceNormal*1.2 + \xoffset + \additionalxoffset}
-		\def\posYNpK{-\defaultDistanceNormal*0.55+\ccdistance/2 + \yoffset + \additionalyoffset}
-		\def\posXNpL{\defaultDistanceNormal*1.8 + \xoffset + \additionalxoffset}
-		\def\posYNpL{-\defaultDistanceNormal*0.6+\ccdistance/2 + \yoffset + \additionalyoffset}
-		\def\posXNpM{\defaultDistanceNormal*1.55 + \xoffset + \additionalxoffset}
-		\def\posYNpM{-\defaultDistanceNormal*0.15+\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNpK{\tensorDistance*1.2 + \xoffset + \additionalxoffset}
+		\def\posYNpK{-\tensorDistance*0.55+\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNpL{\tensorDistance*1.8 + \xoffset + \additionalxoffset}
+		\def\posYNpL{-\tensorDistance*0.6+\ccdistance/2 + \yoffset + \additionalyoffset}
+		\def\posXNpM{\tensorDistance*1.55 + \xoffset + \additionalxoffset}
+		\def\posYNpM{-\tensorDistance*0.15+\ccdistance/2 + \yoffset + \additionalyoffset}
 		
 		% Draw tensors of N
 		\node[tensorOrthoCenter, minimum size=\smallTensorWidth] (ND) at (\posXND, \posYND) {};

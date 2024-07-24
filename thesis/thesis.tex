@@ -1,10 +1,8 @@
 \documentclass[encoding=utf8,british]{template/thesis}
 \usepackage[OT1]{fontenc}
 
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}
-\renewcommand{\algorithmicensure}{\textbf{Output:}}
+% centered subsubsections!
+%\subsubsectionfont{\centering}
 
 \usepgfplotslibrary{external}
 \tikzexternalize
@@ -68,6 +66,8 @@
 	\mainmatter
 	
 	\chapter{Introduction}
+	\label{chap:introduction}
+	\input{chapters/introduction/introduction.tex}
 	
 	\chapter{Tensors and Tensor Networks}
 	\label{chap:tensors_and_tensor_networks}
@@ -84,6 +84,9 @@
 	\chapter{Transverse Field Ising Model: Ground State Search and Time Evolution}
 	\label{chap:TFI}
 	\input{chapters/TFI/TFI.tex}
+	
+	\chapter{Summary and Outlook}
+	\label{chap:summary}
 	
 	\appendix
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}% This turns off sections

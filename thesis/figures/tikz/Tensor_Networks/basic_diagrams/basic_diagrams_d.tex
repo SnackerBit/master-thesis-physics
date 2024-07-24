@@ -3,13 +3,13 @@
 \begin{document}
 	\def \openLegLength{20pt}
 	\begin{tikzpicture}
-		\node[rectangle, minimum height=\defaultTensorWidth, minimum width={4*\defaultTensorWidth}, line width=\defaultLineWidth, fill=generalTensorColor, draw=borderColor, outer sep=0] at (0, 0) {};
+		\node[rectangle, minimum height=\defaultTensorWidth, minimum width={4*\defaultTensorWidth}, line width=\defaultLineWidth, fill=generalTensorColor, draw=borderColor, outer sep=0, rounded corners=2pt] at (0, 0) {};
 		\draw[virtualLegWithoutArrows] (-1.5*\defaultTensorWidth, -\defaultTensorWidth/2) -- ++(0, -\openLegLength);
 		\node[] at (-1.5*\defaultTensorWidth, -\defaultTensorWidth/2-\openLegLength-\defaultTextOffset) {$i_1$};
 		\draw[virtualLegWithoutArrows] (-0.5*\defaultTensorWidth, -\defaultTensorWidth/2) -- ++(0, -\openLegLength);
 		\node[] at (-0.5*\defaultTensorWidth, -\defaultTensorWidth/2-\openLegLength-\defaultTextOffset) {$i_2$};
 		\draw[virtualLegWithoutArrows] (1.5*\defaultTensorWidth, -\defaultTensorWidth/2) -- ++(0, -\openLegLength);
-		\node[] at (1.5*\defaultTensorWidth, -\defaultTensorWidth/2-\openLegLength-\defaultTextOffset) {$i_N$};
+		\node[] at (1.5*\defaultTensorWidth, -\defaultTensorWidth/2-\openLegLength-\defaultTextOffset) {$i_n$};
 		\node[] at (0.5*\defaultTensorWidth, -\defaultTensorWidth/2-\openLegLength/2) {$\cdots$};{\tiny }
 	\end{tikzpicture}
 \end{document}

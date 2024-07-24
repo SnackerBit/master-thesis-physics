@@ -7,10 +7,10 @@
 		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T1) at (0, 0) {$A$};
 		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T2) at (\tensorXDistance, 0) {$B$};
 		\draw[virtualLegWithoutArrows] (T1) -- ++(-\openLegLength, 0);
-		\node[] at (-\openLegLength-\defaultTextOffset, 0) {$i$};
+		\node[] at (-\openLegLength-\defaultTextOffsetLarge, 0) {$i$};
 		\draw[virtualLegWithoutArrows] (T1) -- (T2);
 		\draw[virtualLegWithoutArrows] (T2) -- ++(\openLegLength, 0);
-		\node[] at (\tensorXDistance+\openLegLength+\defaultTextOffset, 0) {$j$};
-		\node[] at (\tensorXDistance/2, \defaultTextOffset) {$\alpha$};
+		\node[] at (\tensorXDistance+\openLegLength+\defaultTextOffsetLarge, 0) {$j$};
+		\node[] at (\tensorXDistance/2, \defaultTextOffsetLarge) {$\alpha$};
 	\end{tikzpicture}
 \end{document}

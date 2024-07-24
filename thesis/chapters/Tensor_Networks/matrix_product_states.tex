@@ -1,4 +1,4 @@
-The Density Matrix Renormalization Group (DMRG) algorithm, which was subsequently understood as a variational method over the class of Matrix Product States (MPS), has developed to be the de-facto standard for the numerical simulation of one-dimensional quantum systems. The success of this method is due to the remarkable ability of MPS to capture the area-law entanglement characteristics of ground states of gapped Hamiltonians. Additionally, due to the elegant diagrammatic notation of tensor networks, new algorithms can be developed and discussed efficiently and intuitively. Applications of MPS include finding ground and thermal states, real and imaginary time evolution, and the computation of dynamical properties of lattice Hamiltonians. In the following we give a brief introduction to MPS, for a more in-depth discussion see \cite{cite:DMRG_in_the_age_of_MPS, cite:practical_introduction_MPS_and_PEPS, cite:tenpy}. \par
+The Density Matrix Renormalization Group (DMRG) algorithm, a variational method over the class of Matrix Product States (MPS), has developed to be the de-facto standard for the numerical simulation of one-dimensional quantum systems. The success of this method is due to the remarkable ability of MPS to capture the area-law entanglement characteristics of ground states of gapped Hamiltonians. Additionally, due to the elegant diagrammatic notation of tensor networks, new algorithms can be developed and discussed efficiently and intuitively. Applications of MPS include finding ground and thermal states, real and imaginary time evolution, and the computation of dynamical properties of lattice Hamiltonians. In the following we give a brief introduction to MPS, for a more in-depth discussion see \cite{cite:DMRG_in_the_age_of_MPS, cite:practical_introduction_MPS_and_PEPS, cite:tenpy}. \par
 The state of a quantum many-body system can be written as
 \begin{equation}
 	\left|\Psi\right\rangle = \sum_{i_1=1}^{d_1} \sum_{i_2=1}^{d_2} \cdots \sum_{i_N=1}^{d_N} \Psi_{i_1i_2\dots i_N} \left|i_1\right\rangle \otimes \left|i_2\right\rangle \otimes \cdots \otimes \left|i_N\right\rangle.
@@ -20,23 +20,11 @@ where we have written the indices $i_n$ as superscripts, such that the sums are 
 	\label{fig:mps_general}
 \end{figure}
 \begin{figure}
-	\centering
-	\subcaptionbox{\label{fig:mps_canonical_form_general_definition}}
-	{%
-		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf}
-	}
-	\subcaptionbox{\label{fig:mps_left_isometry_condition}}
-	{%
-		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf}
-	}
-	\quad\quad\quad\quad\quad\quad
-	\subcaptionbox{\label{fig:mps_right_isometry_condition}}
-	{%
-		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf}
-	}
-	\caption{(a) Diagrammatic representation of an MPS in canonical form. (b) The left isometry condition. (c) The right isometry condition.}
-	\label{fig:mps_canonical}
-\end{figure}
+\centering
+\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf}
+\caption{The computation of the expectation value of a local operator can be computed by contracting the MPS with its conjugate transpose, with the operator "sandwiched" between.}
+\label{fig:mps_local_expectation_value}
+\end{figure}´
 An important property of MPS is the existence of a \textit{canonical form} as an isometric tensor network, where a single tensor $T^{[n]} \eqqcolon \Lambda^{[n]}$ is selected as the orthogonality center. One can bring an arbitrary MPS into this canonical form through successive QR-decompositions or SVDs, starting at the outer ends of the chain and isometrizing one tensor at a time, until the orthogonality center is reached \cite{cite:DMRG_in_the_age_of_MPS}. In figure \figref{fig:mps_canonical_form_general_definition} an MPS in canonical with the orthogonality center at subsystem $n$ is visualized in diagrammatic notation. We call tensors to the left of the orthogonality center $A^{[i]}$ and tensors to the right of the orthogonality center $B^{[i]}$. The canonical form greatly simplifies many operations on MPS and allows for the formulation of efficient algorithms, where many contractions reduce to identity due to the isometry condition \eqref{eq:isometry_condition_general}, see figure \figref{fig:mps_left_isometry_condition} and figure \figref{fig:mps_right_isometry_condition}. For example, the expectation value $\left\langle\Psi\right|\hat{O}\left|\Psi\right\rangle$ of a one-site operator $\hat{O} \in \mathbb{C}^{d\times d}$ acting on site $n$ can for a general MPS be computed as
 \begin{equation}
 \begin{split}
@@ -53,9 +41,26 @@ where the $T^{[n],i_n}$ are interpreted as matrices for $1 < n < N$ and as row/c
 gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} is visualized as a tensor diagram in figure \figref{fig:mps_local_expectation_value}. Here, the advantage of the diagrammatic notation becomes appearant: It is much easier to understand how tensors are contracted when expressing the contraction in terms of tensor network diagrams. The computational cost of computing the expectation value scales linear with the system size $\mathcal{O}\left(N\chi^3d\right)$, where $\chi$ is the maximum virtual bond dimension $\chi = \max\left\{\chi_1,\dots,\chi_N\right\}$. If the MPS is however given in canonical form with the orthogonality center at site $n$, the computation reduces to a contraction of only three tensors as can be seen in figure \figref{fig:mps_local_expectation_value_canonical}, and the computational cost $\mathcal{O}\left(\chi^3d\right)$ becomes independent of system size. \par
 \begin{figure}
 	\centering
-	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf}
-	\caption{The computation of the expectation value of a local operator can be computed by contracting the MPS with its conjugate transpose, with the operator "sandwiched" between.}
-	\label{fig:mps_local_expectation_value}
+	\begin{minipage}{1.0\textwidth}
+		\centering
+		\subcaptionbox{\label{fig:mps_canonical_form_general_definition}}
+		{%
+			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf}
+		}
+	\end{minipage}
+	\par\medskip
+	\centering
+	\subcaptionbox{\label{fig:mps_left_isometry_condition}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf}
+	}
+	\quad\quad\quad\quad\quad
+	\subcaptionbox{\label{fig:mps_right_isometry_condition}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf}
+	}
+	\caption{(a) Diagrammatic representation of an MPS in canonical form. (b) The left isometry condition. (c) The right isometry condition.}
+	\label{fig:mps_canonical}
 \end{figure}
 \begin{figure}
 	\centering
@@ -63,7 +68,7 @@ gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} 
 	\caption{If the MPS is in canonical form, the computation of the expectation value of a local operator can be simplified to a contraction of three tensors using the isometry condition.}
 	\label{fig:mps_local_expectation_value_canonical}
 \end{figure}
-\subsubsection*{Approximating quantum states with MPS}
+\subsubsection*{\hfil\quad\quad\quad Approximating quantum states with MPS}
 Until now, the MPS representation of $\left|\Psi\right\rangle$ is still exact. One can approximate a MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. In this case, the number of parameters that need to be stored to describe the state is reduced from $\mathcal{O}\left(d^N\right)$ to $\mathcal{O}\left(N\chi_\text{max}^2 d\right)$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. Additionally, this SVD at the orthogonality center is related to the Schimdt decomposition of a bipartite system
 \begin{equation}
 	|\Psi\rangle = \sum_{\alpha=1}^{\chi_n} \lambda_\alpha | \Psi^{[L]}_\alpha\rangle \otimes |\Psi^{[R]}_\alpha\rangle,
@@ -91,7 +96,7 @@ It is immediately clear that truncated MPS by construction exhibit area law enta
 \end{equation}
 for arbitrary bipartitions of the chain. One can conclude that MPS are good approximations for ground states of gapped 1D Hamiltonians away from criticality. \par 
 For completeness we note that the truncation of all bonds of an MPS is a highly non-linear optimization problem and the naive algorithm of truncating each bond with an SVD does in general not lead to a minimal error. A variational compression procedure can often be used to obtain a lower error at the same maximum bond dimension $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}. \par
-\subsubsection*{Time evolution}
+\subsubsection*{\hfil\quad\quad\quad\quad\quad\quad\quad Time evolution}
 Many algorithms have been formulated in the language of MPS. Most notably, the Density Matrix Renormalization Group (DMRG) algorithm can be used for finding ground states of local lattice Hamiltonians \cite{cite:DMRG_in_the_age_of_MPS}. Time evolution of MPS can be performed with the the Time Evolving Block Decimation (TEBD) algorithm \cite{cite:efficient_simulation_of_1D_quantum_many_body_systems, cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems} or the Time Dependant Variational Principle (TDVP) \cite{cite:time_dependent_variational_principle_for_quantum_lattices, cite:unifying_time_evolution_and_optimization_with_MPS}. In the following, we will briefly discuss TEBD, as the algorithm can be generalized easily to isometric tensor product states of higher dimension, which we will do in section \ref{sec:disoTPS_TEBD}. \par
 Assume that we are given a quantum state $\left|\Psi\right\rangle$ in the form of an MPS and a Hamiltonian $\hat{H}$ that can be written as a sum of nearest-neighbour operators $\hat{h}_{j,j+1}$,
 \begin{equation}
@@ -140,10 +145,11 @@ and can be applied to a MPS similarly as the first order decomposition. For high
 	{%
 		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf}
 	}
+	\par\medskip
 	\subcaptionbox{\label{fig:mps_tebd_first_order_applying_bond_op}}
 	{%
 		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf}
 	}
-	\caption{(a) An MPS can be approximately evolved by a time $\Delta t$ by applying the first order TEBD operator \eqref{eq:mps_first_order_tebd}, which is made up of bond operators acting first on all even and then on all odd bonds. (b) To apply a single bond operator, the two corresponding tensors are contracted with the operator into a tensor $\theta$, which is then split using truncated SVD.\todo{Remove tilde from theta}}
+	\caption{(a) An MPS can be approximately evolved by a time $\Delta t$ by applying the first order TEBD operator \eqref{eq:mps_first_order_tebd}, which is made up of bond operators acting first on all even and then on all odd bonds. (b) To apply a single bond operator, the two corresponding tensors are contracted with the operator into a tensor $\theta$, which is then split using truncated SVD.}
 	\label{fig:mps_tebd_first_order}
 \end{figure}

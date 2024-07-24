@@ -25,6 +25,9 @@
 
 % Easy colors
 \RequirePackage{xcolor}
+
+% better sections + centering
+%\RequirePackage{sectsty}
 		
 % PDF comments for TODOS
 \RequirePackage{pdfcomment}

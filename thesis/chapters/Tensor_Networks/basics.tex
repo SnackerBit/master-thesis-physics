@@ -19,6 +19,7 @@ For example, a rank-0 tensor is a scalar, a rank-1 tensor is a vector, and a ten
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf}
 		}
 	}
+	\quad\quad
 	\subcaptionbox{\label{fig:basic_tensor_diagrams_vector}}
 	{%
 		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
@@ -26,6 +27,7 @@ For example, a rank-0 tensor is a scalar, a rank-1 tensor is a vector, and a ten
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf}
 		}
 	}
+	\quad\quad
 	\subcaptionbox{\label{fig:basic_tensor_diagrams_matrix}}
 	{%
 		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
@@ -33,11 +35,12 @@ For example, a rank-0 tensor is a scalar, a rank-1 tensor is a vector, and a ten
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf}
 		}
 	}
+	\quad\quad
 	\subcaptionbox{\label{fig:basic_tensor_diagrams_rank_n_tensor}}
 	{%
 		\usebox{\largestimage}
 	}
-\caption{Tensors of different ranks are shown in diagrammatic notation. (a) A scalar, (b) a vector, (c) a matrix, (d) a general tensor of rank $n$ as defined in equation \eqref{eq:general_tensor_rank_n}. \todo{Change N to n}}
+\caption{Tensors of different ranks are shown in diagrammatic notation. (a) A scalar, (b) a vector, (c) a matrix, (d) a general tensor of rank $n$ as defined in equation \eqref{eq:general_tensor_rank_n}.}
 \label{fig:basic_tensor_diagrams}
 \end{figure}
 An \textit{index contraction} between two or more tensors is the linear operation that is performed by summing over a given set of indices. For example, the scalar product of two vectors $A\in\mathbb{C^\chi}$ and $B\in\mathbb{C^\chi}$,
@@ -68,14 +71,14 @@ A \textit{tensor network} is defined as a set of tensors that are contracted in 
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf}
 		}
 	}
-\subcaptionbox{\label{fig:basic_tensor_networks_matrix_product}}
+	\subcaptionbox{\label{fig:basic_tensor_networks_matrix_product}}
 	{%
 		\raisebox{\dimexpr.5\ht\largestimage-.5\height}
 		{%
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf}
 		}
 	}
-\subcaptionbox{\label{fig:basic_tensor_networks_involved_contraction}}
+	\subcaptionbox{\label{fig:basic_tensor_networks_involved_contraction}}
 	{%
 		\usebox{\largestimage}
 	}
@@ -91,34 +94,21 @@ Given two normed vector spaces $V_1$ and $V_2$ with $\dim\left(V_1\right) = m$, 
 where $\mathbb{P} = \mathbb{P}^2$ is a projection. If $m = n$, it holds $\mathbb{P} = \id$ and $W$ is a \textit{unitary map}. An isometry tensor is a tensor that through grouping of indices and reshaping (i.e. matricization) becomes an isometry. In tensor network diagrams, we draw isometries by decorating lines with arrows. Following the convention of \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, we denote the indices belonging to the larger vector space by incoming arrows and the indices belonging to the smaller vector space by outgoing arrows. Unitary tensors are decorated with bidirectional arrows on all indices, where the grouping must be inferred from the context. Ordinary tensors are drawn without arrows. Tensor diagrams for isometric and unitary tensors are shown in figure \figref{fig:isometries_and_unitaries_diagrams}.\par
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.4\textwidth}
-		\centering
-		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
-		{%
-			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf}
-		}
-		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
-		{%
-			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf}
-		}
-		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
-		{%
-			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf}
-		}
-	\end{minipage}
-	\quad\quad\quad
-	\begin{minipage}[b]{0.4\textwidth}
-		\centering
-		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
-		{%
-			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_d.pdf}
-		}
-		\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
-		{%
-			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_e.pdf}
-		}
-	\end{minipage}
-	\caption{Isometric and unitary tensors are drawn by decorating indices with arrows. (a) diagrammatic notation of an isometric matrix (b) (c) The isometry condition \eqref{eq:isometry_condition_general} is depicted diagrammatically. (d) Isometric tensors of higher rank must fulfill the isometry condition by grouping of indices.\todo{Add unitary tensor as well with double arrows}}
+	\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf}
+	}
+	\par\bigskip
+	\subcaptionbox{\label{fig:basic_isometries_unitary_matrix}}
+	{%
+	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf}
+	}
+	\par\bigskip
+	\subcaptionbox{\label{fig:basic_isometries_isometric_tensor}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf}
+	}
+	\caption{(a) A isometric matrix $W$ is depicted as a tensor diagram. The isometry condition \eqref{eq:isometry_condition_general} reduces contractions of $W$ with its adjoint to the identity matrix or to a projector $\mathbb{P}$. (b) Isometric tensors of higher rank must fulfill the isometry condition by grouping of indices. (c) A unitary matrix $U$ is drawn by using double arrows. For unitary matrices, the projector $\mathbb{P}$ is equal to the identity.}
 	\label{fig:isometries_and_unitaries_diagrams}
 \end{figure}
 We lastly introduce an inner product for rank-$n$ tensors $A, B \in \mathbb{C}^{\chi_1\times\dots\times\chi_n}$, the \textit{Frobenius inner product}

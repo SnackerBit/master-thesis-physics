@@ -1,35 +1,37 @@
 \documentclass[crop, tikz]{standalone}
-\usepackage{tikz-network}
 \input{../../style.tex}
+\usepackage{tikz-network}
 
 \begin{document}
-	\def\openLegLength{20 pt}
+	\def\openLegLength{23 pt}
+	
+	\def\tensorDistance{1.0*\defaultDistanceNormal}
 	
 	\def\posXA{0}
 	\def\posYA{0}
-	\def\posXB{\defaultDistanceNormal*0.8}
-	\def\posYB{\defaultDistanceNormal*0.3}
-	\def\posXC{\defaultDistanceNormal*0.5}
-	\def\posYC{-\defaultDistanceNormal*0.4}
-	\def\posXF{\defaultDistanceNormal*1.5}
-	\def\posYF{\defaultDistanceNormal*0.4}
-	\def\posXG{\defaultDistanceNormal*2.3}
-	\def\posYG{-\defaultDistanceNormal*0.1}
-	\def\posXH{\defaultDistanceNormal*2.2}
-	\def\posYH{-\defaultDistanceNormal*0.8}
-	\def\posXI{\defaultDistanceNormal*3.1}
-	\def\posYI{-\defaultDistanceNormal*0.2}
-	\def\posXJ{\defaultDistanceNormal*2.9}
-	\def\posYJ{\defaultDistanceNormal*0.4}
-	\def\posXK{\defaultDistanceNormal*1.1}
-	\def\posYK{-\defaultDistanceNormal*0.55}
-	\def\posXL{\defaultDistanceNormal*1.7}
-	\def\posYL{-\defaultDistanceNormal*0.6}
-	\def\posXM{\defaultDistanceNormal*1.45}
-	\def\posYM{-\defaultDistanceNormal*0.15}
+	\def\posXB{\tensorDistance*0.8}
+	\def\posYB{\tensorDistance*0.3}
+	\def\posXC{\tensorDistance*0.5}
+	\def\posYC{-\tensorDistance*0.4}
+	\def\posXF{\tensorDistance*1.5}
+	\def\posYF{\tensorDistance*0.4}
+	\def\posXG{\tensorDistance*2.3}
+	\def\posYG{-\tensorDistance*0.1}
+	\def\posXH{\tensorDistance*2.2}
+	\def\posYH{-\tensorDistance*0.8}
+	\def\posXI{\tensorDistance*2.9}
+	\def\posYI{-\tensorDistance*0.2}
+	\def\posXJ{\tensorDistance*3.1}
+	\def\posYJ{\tensorDistance*0.4}
+	\def\posXK{\tensorDistance*1.1}
+	\def\posYK{-\tensorDistance*0.55}
+	\def\posXL{\tensorDistance*1.7}
+	\def\posYL{-\tensorDistance*0.6}
+	\def\posXM{\tensorDistance*1.45}
+	\def\posYM{-\tensorDistance*0.15}
 	
 	\def\angleA{170}
-	\def\angleC{-160}
+	\def\angleC{-120}
 	\def\angleF{35}
 	\def\angleH{-45}
 	\def\angleI{-10}
@@ -52,7 +54,7 @@
 		\begin{pgfonlayer}{bg}
 			% Draw subregion M
 			\fill[color=greenMarkingColor, opacity=\backgroundopacity] \convexhull{K, M, L}{\smallTensorWidth*0.9};
-			\node[color=greenMarkingColor] (Mp) at (\posXK-\defaultDistanceNormal*0.2, \posYK-\defaultDistanceNormal*0.4) {$\mathcal{M}^\prime$};
+			\node[color=greenMarkingColor] (Mp) at (\posXK-\tensorDistance*0.2, \posYK-\tensorDistance*0.4) {$\mathcal{M}^\prime$};
 			
 			% Draw connecting legs
 			\draw[virtualLeg] (A) -- (B);
@@ -79,10 +81,10 @@
 		\end{pgfonlayer}
 		
 		% Draw big blob
-		\def\blobhalfwidth{\smallTensorWidth*2.5}
-		\def\blobhalfheight{\smallTensorWidth*1.5}
+		\def\blobhalfwidth{\smallTensorWidth*2.0}
+		\def\blobhalfheight{\smallTensorWidth*1.1}
 		\def\blobPosX{-2*\openLegLength-\defaultDistanceEquations-\blobhalfwidth}
-		\def\blobPosY{0}
+		\def\blobPosY{-\smallTensorWidth/2}
 		\node[draw, ellipse, minimum width=2*\blobhalfwidth, minimum height=\blobhalfheight*2, line width=\defaultLineWidth, draw=borderColor, fill=generalTensorColor,outer sep=0] (blob) at (\blobPosX, \blobPosY) {$\mathcal{N}^\prime$};
 		\begin{pgfonlayer}{bg}
 			% Draw legs
@@ -95,6 +97,6 @@
 		\end{pgfonlayer}
 		
 		% draw equal sign
-		\node[] () at (-\openLegLength-\defaultDistanceEquations/2, 0) {$=$};
+		\node[] () at (-\openLegLength-\defaultDistanceEquations/2, \blobPosY) {$=$};
 	\end{tikzpicture}
 \end{document}

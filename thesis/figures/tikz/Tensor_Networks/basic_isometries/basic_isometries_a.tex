@@ -1,10 +1,51 @@
 \documentclass[crop, tikz]{standalone}
 \input{../../style.tex}
+\usepackage{mathtools}
 \begin{document}
-	\def \openLegLength{30pt}
+	\def \openLegLength{25pt}
+	\def \subFigureSeperation{50pt}
+	\def\equationDistance{0.7*\defaultDistanceEquations}
 	\begin{tikzpicture}
-		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, 0) {$W$};
-		\draw[virtualLeg] (-\openLegLength, 0) -- (W);
+		% a
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, \defaultDistanceNormal/2) {$W$};
+		\draw[virtualLeg] (-\openLegLength, \defaultDistanceNormal/2) -- (W);
 		\draw[virtualLeg] (W) -- ++(\openLegLength, 0);
+		
+		% b
+		\def\posX{\subFigureSeperation+2*\openLegLength}
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (\posX, \defaultDistanceNormal) {$W$};
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W*) at (\posX, 0) {$W^*$};
+		\draw[virtualLeg] (W) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (W*) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (\posX-\openLegLength, \defaultDistanceNormal) -- (W);
+		\draw[virtualLeg] (\posX-\openLegLength, 0) -- (W*);
+		\draw[virtualLegWithoutArrows] (W) -- (\posX-\openLegLength, \defaultDistanceNormal) -- (\posX-\openLegLength, 0) -- (W*);
+		
+		\node[] () at (\posX+\openLegLength+\equationDistance/2, \defaultDistanceNormal/2) {$=$};
+		
+		\draw[virtualLegWithoutArrows] (\posX+\equationDistance+\openLegLength+\defaultTensorWidth/2+\identityLegDistance, \defaultDistanceNormal) -- ++(-\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal/2) -- ++(0, -\defaultDistanceNormal/2) -- ++(\identityLegDistance, 0);
+		\node[tensorOrthoCenter, fill=identityColor, inner sep=0] (eye) at (\posX+\equationDistance+\openLegLength+\defaultTensorWidth/2, \defaultDistanceNormal/2) {$\id$};
+		%\draw[virtualLegWithoutArrows] (eye) to[out=90, in=180] ++(\identityLegDistance, \defaultDistanceNormal/2);
+		%\draw[virtualLegWithoutArrows] (eye) to[out=-90, in=180] ++(\identityLegDistance, -\defaultDistanceNormal/2);
+		
+		\node[] () at (\posX+3*\equationDistance/2+\openLegLength+\defaultTensorWidth, \defaultDistanceNormal/2) {$\eqqcolon$};
+		
+		\draw[virtualLegWithoutArrows] (\posX+2*\equationDistance+\openLegLength+\defaultTensorWidth+\identityLegDistance, \defaultDistanceNormal) -- ++(-\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal) -- ++(\identityLegDistance, 0);
+		
+		% c
+		\def\posX{2*\subFigureSeperation+2*\equationDistance+\openLegLength+\defaultTensorWidth+\identityLegDistance+3*\openLegLength}
+		
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (\posX, \defaultDistanceNormal) {$W$};
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W*) at (\posX, 0) {$W^*$};
+		\draw[virtualLeg] (W) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (W*) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (\posX-\openLegLength, \defaultDistanceNormal) -- (W);
+		\draw[virtualLeg] (\posX-\openLegLength, 0) -- (W*);
+		\draw[virtualLegWithoutArrows] (W) -- (\posX+\openLegLength, \defaultDistanceNormal) -- (\posX+\openLegLength, 0) -- (W*);
+		
+		\node[] () at (\posX+\openLegLength+\equationDistance/2, \defaultDistanceNormal/2) {$=$};
+		
+		\draw[virtualLegWithoutArrows] (\posX+\equationDistance+\openLegLength, \defaultDistanceNormal) -- ++(+\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal) -- ++(-\identityLegDistance, 0);
+		\node[tensorOrthoCenter, fill=identityColor, inner sep=0] (eye) at (\posX+\equationDistance+\openLegLength+\identityLegDistance, \defaultDistanceNormal/2) {$\mathbb{P}$};
 	\end{tikzpicture}
 \end{document}

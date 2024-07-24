@@ -19,132 +19,463 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{cite:isometric_tensor_network_states_in_two_dimensions}{article}{}
-      \name{author}{2}{}{%
-        {{hash=131232ddc3570a824149c27c960f2ca5}{%
-           family={Zaletel},
-           familyi={Z\bibinitperiod},
-           given={Michael\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
-           family={Pollmann},
-           familyi={P\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{6549490abc732b6efcd68df42e1c4ee9}
-      \strng{fullhash}{6549490abc732b6efcd68df42e1c4ee9}
-      \strng{bibnamehash}{6549490abc732b6efcd68df42e1c4ee9}
-      \strng{authorbibnamehash}{6549490abc732b6efcd68df42e1c4ee9}
-      \strng{authornamehash}{6549490abc732b6efcd68df42e1c4ee9}
-      \strng{authorfullhash}{6549490abc732b6efcd68df42e1c4ee9}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{3}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{1}
-      \field{title}{Isometric Tensor Network States in Two Dimensions}
-      \field{volume}{124}
-      \field{year}{2020}
-      \field{pages}{037201}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.124.037201
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.124.037201
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.124.037201
-      \endverb
-    \endentry
-    \entry{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}{article}{}
+    \entry{cite:two_dimensional_magnetotransport_in_the_extreme_quantum_limit}{article}{}
       \name{author}{3}{}{%
-        {{hash=33f4d63d28a903762b178edb727fe534}{%
-           family={Lin},
-           familyi={L\bibinitperiod},
-           given={Sheng-Hsuan},
-           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=131232ddc3570a824149c27c960f2ca5}{%
-           family={Zaletel},
-           familyi={Z\bibinitperiod},
-           given={Michael\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
-           family={Pollmann},
-           familyi={P\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
+        {{hash=23976ebd8b48bb7c7998825974ca9bcd}{%
+           family={Tsui},
+           familyi={T\bibinitperiod},
+           given={Daniel\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c0435ed6ccfb6acc38761cc348bd7820}{%
+           family={Stormer},
+           familyi={S\bibinitperiod},
+           given={Horst\bibnamedelima L},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=e141e79dc0a648a802e8e80a235de336}{%
+           family={Gossard},
+           familyi={G\bibinitperiod},
+           given={Arthur\bibnamedelima C},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {American Physical Society}%
+        {APS}%
       }
-      \strng{namehash}{5511029ff41be51104757e61a414f385}
-      \strng{fullhash}{5511029ff41be51104757e61a414f385}
-      \strng{bibnamehash}{5511029ff41be51104757e61a414f385}
-      \strng{authorbibnamehash}{5511029ff41be51104757e61a414f385}
-      \strng{authornamehash}{5511029ff41be51104757e61a414f385}
-      \strng{authorfullhash}{5511029ff41be51104757e61a414f385}
+      \strng{namehash}{330b56dccad1f8b0e095dca5c9bbcaa2}
+      \strng{fullhash}{330b56dccad1f8b0e095dca5c9bbcaa2}
+      \strng{bibnamehash}{330b56dccad1f8b0e095dca5c9bbcaa2}
+      \strng{authorbibnamehash}{330b56dccad1f8b0e095dca5c9bbcaa2}
+      \strng{authornamehash}{330b56dccad1f8b0e095dca5c9bbcaa2}
+      \strng{authorfullhash}{330b56dccad1f8b0e095dca5c9bbcaa2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issue}{24}
-      \field{journaltitle}{Phys. Rev. B}
-      \field{month}{12}
-      \field{title}{Efficient simulation of dynamics in two-dimensional quantum spin systems with isometric tensor networks}
-      \field{volume}{106}
-      \field{year}{2022}
-      \field{pages}{245102}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{22}
+      \field{title}{Two-dimensional magnetotransport in the extreme quantum limit}
+      \field{volume}{48}
+      \field{year}{1982}
+      \field{pages}{1559}
       \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevB.106.245102
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.106.245102
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.106.245102
-      \endverb
     \endentry
-    \entry{cite:eckart_young_theorem}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b5901eb382ee926774180d95eaf3f1b5}{%
-           family={Eckart},
-           familyi={E\bibinitperiod},
-           given={Carl},
-           giveni={C\bibinitperiod}}}%
-        {{hash=e5657dcb4b96e2da25946664f689e01d}{%
-           family={Young},
-           familyi={Y\bibinitperiod},
-           given={Gale},
-           giveni={G\bibinitperiod}}}%
+    \entry{cite:anomalous_quantum_hall_effect_an_incompressible_quantum_fluid_with_fractionally_charged_excitations}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bbd903deec1f9de87f532c1db03d4058}{%
+           family={Laughlin},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima B},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Springer}%
+        {APS}%
       }
-      \strng{namehash}{709e46ddc31aa8d4998c5dab17def8a3}
-      \strng{fullhash}{709e46ddc31aa8d4998c5dab17def8a3}
-      \strng{bibnamehash}{709e46ddc31aa8d4998c5dab17def8a3}
-      \strng{authorbibnamehash}{709e46ddc31aa8d4998c5dab17def8a3}
-      \strng{authornamehash}{709e46ddc31aa8d4998c5dab17def8a3}
-      \strng{authorfullhash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \strng{namehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{fullhash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{bibnamehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{authorbibnamehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{authornamehash}{bbd903deec1f9de87f532c1db03d4058}
+      \strng{authorfullhash}{bbd903deec1f9de87f532c1db03d4058}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{18}
+      \field{title}{Anomalous quantum Hall effect: an incompressible quantum fluid with fractionally charged excitations}
+      \field{volume}{50}
+      \field{year}{1983}
+      \field{pages}{1395}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:the_fractional_QHE}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c0435ed6ccfb6acc38761cc348bd7820}{%
+           family={Stormer},
+           familyi={S\bibinitperiod},
+           given={Horst\bibnamedelima L},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=23976ebd8b48bb7c7998825974ca9bcd}{%
+           family={Tsui},
+           familyi={T\bibinitperiod},
+           given={Daniel\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=e141e79dc0a648a802e8e80a235de336}{%
+           family={Gossard},
+           familyi={G\bibinitperiod},
+           given={Arthur\bibnamedelima C},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{5eee960bab381881b95e4cec8ee25747}
+      \strng{fullhash}{5eee960bab381881b95e4cec8ee25747}
+      \strng{bibnamehash}{5eee960bab381881b95e4cec8ee25747}
+      \strng{authorbibnamehash}{5eee960bab381881b95e4cec8ee25747}
+      \strng{authornamehash}{5eee960bab381881b95e4cec8ee25747}
+      \strng{authorfullhash}{5eee960bab381881b95e4cec8ee25747}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{2}
+      \field{title}{The fractional quantum Hall effect}
+      \field{volume}{71}
+      \field{year}{1999}
+      \field{pages}{S298}
+      \range{pages}{-1}
+    \endentry
+    \entry{cite:fractionalized_excitations_in_the_spin_liquid_state_of_a_kagome_lattice_AFM}{article}{}
+      \name{author}{7}{}{%
+        {{hash=0e52e8a02ff49f746b257b0571899c84}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Tian-Heng},
+           giveni={T\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=5db7256a2aa7db1ec469846046f09bbf}{%
+           family={Helton},
+           familyi={H\bibinitperiod},
+           given={Joel\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=612ec63ece59f68c8f8db1e64ad62e94}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Shaoyan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b6ec497f54eebf0236e5c6f15ba8f909}{%
+           family={Nocera},
+           familyi={N\bibinitperiod},
+           given={Daniel\bibnamedelima G},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fb86580742665452b7220ed638e8474d}{%
+           family={Rodriguez-Rivera},
+           familyi={R\bibinithyphendelim R\bibinitperiod},
+           given={Jose\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=180f8e6a33056a3f2b30a5f81f47005b}{%
+           family={Broholm},
+           familyi={B\bibinitperiod},
+           given={Collin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ab26eb242acfd968d7b439a02f2ea3ff}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Young\bibnamedelima S},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{7e952ec49ab382ffa9e10922d8359bb9}
+      \strng{fullhash}{1b2d6c1e5d541312c51a23d9d0f68e68}
+      \strng{bibnamehash}{7e952ec49ab382ffa9e10922d8359bb9}
+      \strng{authorbibnamehash}{7e952ec49ab382ffa9e10922d8359bb9}
+      \strng{authornamehash}{7e952ec49ab382ffa9e10922d8359bb9}
+      \strng{authorfullhash}{1b2d6c1e5d541312c51a23d9d0f68e68}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Psychometrika}
-      \field{number}{3}
-      \field{title}{The approximation of one matrix by another of lower rank}
-      \field{volume}{1}
-      \field{year}{1936}
-      \field{pages}{211\bibrangedash 218}
-      \range{pages}{8}
+      \field{journaltitle}{Nature}
+      \field{number}{7429}
+      \field{title}{Fractionalized excitations in the spin-liquid state of a kagome-lattice antiferromagnet}
+      \field{volume}{492}
+      \field{year}{2012}
+      \field{pages}{406\bibrangedash 410}
+      \range{pages}{5}
+    \endentry
+    \entry{cite:colloqium_zoo_of_quantum_topological_phases_of_matter}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0e5cbbaef3f573fe1ff3232bf52b70a6}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Xiao-Gang},
+           giveni={X\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{0e5cbbaef3f573fe1ff3232bf52b70a6}
+      \strng{fullhash}{0e5cbbaef3f573fe1ff3232bf52b70a6}
+      \strng{bibnamehash}{0e5cbbaef3f573fe1ff3232bf52b70a6}
+      \strng{authorbibnamehash}{0e5cbbaef3f573fe1ff3232bf52b70a6}
+      \strng{authornamehash}{0e5cbbaef3f573fe1ff3232bf52b70a6}
+      \strng{authorfullhash}{0e5cbbaef3f573fe1ff3232bf52b70a6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{4}
+      \field{title}{Colloquium: Zoo of quantum-topological phases of matter}
+      \field{volume}{89}
+      \field{year}{2017}
+      \field{pages}{041004}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:possible_high_T_c_superconductivity_in_the_Ba_La_Cu_O_system}{article}{}
+      \name{author}{2}{}{%
+        {{hash=105aea1bab36c51530e4fb4065f00499}{%
+           family={Bednorz},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima George},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=cbc435a64ba32db668ad8ca8957cfecf}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={K\bibnamedelima Alex},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ccfcba0c8f5975288eb54276001b0572}
+      \strng{fullhash}{ccfcba0c8f5975288eb54276001b0572}
+      \strng{bibnamehash}{ccfcba0c8f5975288eb54276001b0572}
+      \strng{authorbibnamehash}{ccfcba0c8f5975288eb54276001b0572}
+      \strng{authornamehash}{ccfcba0c8f5975288eb54276001b0572}
+      \strng{authorfullhash}{ccfcba0c8f5975288eb54276001b0572}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift für Physik B Condensed Matter}
+      \field{number}{2}
+      \field{title}{Possible high T c superconductivity in the Ba- La- Cu- O system}
+      \field{volume}{64}
+      \field{year}{1986}
+      \field{pages}{189\bibrangedash 193}
+      \range{pages}{5}
+    \endentry
+    \entry{cite:doping_a_mott_insulator_physics_of_high_temperature_superconductivity}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cae103be39176fcde242c7bb343cd517}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Patrick\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8a79cfba4a53990b92459a6435aab2ca}{%
+           family={Nagaosa},
+           familyi={N\bibinitperiod},
+           given={Naoto},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0e5cbbaef3f573fe1ff3232bf52b70a6}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Xiao-Gang},
+           giveni={X\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{707558e06a09da1870bfbe0c7be73d09}
+      \strng{fullhash}{707558e06a09da1870bfbe0c7be73d09}
+      \strng{bibnamehash}{707558e06a09da1870bfbe0c7be73d09}
+      \strng{authorbibnamehash}{707558e06a09da1870bfbe0c7be73d09}
+      \strng{authornamehash}{707558e06a09da1870bfbe0c7be73d09}
+      \strng{authorfullhash}{707558e06a09da1870bfbe0c7be73d09}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of modern physics}
+      \field{number}{1}
+      \field{title}{Doping a Mott insulator: Physics of high-temperature superconductivity}
+      \field{volume}{78}
+      \field{year}{2006}
+      \field{pages}{17\bibrangedash 85}
+      \range{pages}{69}
+    \endentry
+    \entry{cite:quantum_monte_carlo_simulation_method_for_spin_systems}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d7afdd68e17370e4699da96c7587d3cc}{%
+           family={Sandvik},
+           familyi={S\bibinitperiod},
+           given={Anders\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=257f73b9b3cea5c8dc98d33de7d8ab12}{%
+           family={Kurkijärvi},
+           familyi={K\bibinitperiod},
+           given={Juhani},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{9978fd9d90ef4acac22b03b950d6a9bc}
+      \strng{fullhash}{9978fd9d90ef4acac22b03b950d6a9bc}
+      \strng{bibnamehash}{9978fd9d90ef4acac22b03b950d6a9bc}
+      \strng{authorbibnamehash}{9978fd9d90ef4acac22b03b950d6a9bc}
+      \strng{authornamehash}{9978fd9d90ef4acac22b03b950d6a9bc}
+      \strng{authorfullhash}{9978fd9d90ef4acac22b03b950d6a9bc}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{7}
+      \field{title}{Quantum Monte Carlo simulation method for spin systems}
+      \field{volume}{43}
+      \field{year}{1991}
+      \field{pages}{5950}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:computational_studies_of_quantum_spin_systems}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=d7afdd68e17370e4699da96c7587d3cc}{%
+           family={Sandvik},
+           familyi={S\bibinitperiod},
+           given={Anders\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{fullhash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{bibnamehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{authorbibnamehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{authornamehash}{d7afdd68e17370e4699da96c7587d3cc}
+      \strng{authorfullhash}{d7afdd68e17370e4699da96c7587d3cc}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AIP Conference Proceedings}
+      \field{number}{1}
+      \field{title}{Computational studies of quantum spin systems}
+      \field{volume}{1297}
+      \field{year}{2010}
+      \field{pages}{135\bibrangedash 338}
+      \range{pages}{204}
+    \endentry
+    \entry{cite:sign_problem_in_numerical_simulation_of_many_electron_systems}{article}{}
+      \name{author}{6}{}{%
+        {{hash=72887e0e01ee31c1150023d66a95606a}{%
+           family={Loh\bibnamedelima Jr},
+           familyi={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={EY},
+           giveni={E\bibinitperiod}}}%
+        {{hash=cf0553246bc2f0a43c94e177789f031b}{%
+           family={Gubernatis},
+           familyi={G\bibinitperiod},
+           given={JE},
+           giveni={J\bibinitperiod}}}%
+        {{hash=85ca4ea7e92abcd2b750f5c2623e7744}{%
+           family={Scalettar},
+           familyi={S\bibinitperiod},
+           given={RT},
+           giveni={R\bibinitperiod}}}%
+        {{hash=245809e896d975d705646389316fabd0}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={SR},
+           giveni={S\bibinitperiod}}}%
+        {{hash=83b3af92dd8a6af321d719903ac8c802}{%
+           family={Scalapino},
+           familyi={S\bibinitperiod},
+           given={DJ},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8865fe6c5d8794a40b3dbe7059c6e440}{%
+           family={Sugar},
+           familyi={S\bibinitperiod},
+           given={RL},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{116fe0f709729f8e4bbafb8408a2b910}
+      \strng{fullhash}{f9d1f1f191c5382b996f599cb3efab95}
+      \strng{bibnamehash}{116fe0f709729f8e4bbafb8408a2b910}
+      \strng{authorbibnamehash}{116fe0f709729f8e4bbafb8408a2b910}
+      \strng{authornamehash}{116fe0f709729f8e4bbafb8408a2b910}
+      \strng{authorfullhash}{f9d1f1f191c5382b996f599cb3efab95}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{13}
+      \field{title}{Sign problem in the numerical simulation of many-electron systems}
+      \field{volume}{41}
+      \field{year}{1990}
+      \field{pages}{9301}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:density_matrix_formulation_for_quantum_renormalization_groups}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f310d2e0232138ba6117db89589f7c32}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{f310d2e0232138ba6117db89589f7c32}
+      \strng{fullhash}{f310d2e0232138ba6117db89589f7c32}
+      \strng{bibnamehash}{f310d2e0232138ba6117db89589f7c32}
+      \strng{authorbibnamehash}{f310d2e0232138ba6117db89589f7c32}
+      \strng{authornamehash}{f310d2e0232138ba6117db89589f7c32}
+      \strng{authorfullhash}{f310d2e0232138ba6117db89589f7c32}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{19}
+      \field{title}{Density matrix formulation for quantum renormalization groups}
+      \field{volume}{69}
+      \field{year}{1992}
+      \field{pages}{2863}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:equivalence_of_the_variational_mps_and_the_dmrg_applied_to_spin_chains}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c2e27b76b85fe2e5e55fe25331c61e31}{%
+           family={Dukelsky},
+           familyi={D\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b25a6f871f4a616f89336c577a741da1}{%
+           family={Martı́n-Delgado},
+           familyi={M\bibinithyphendelim D\bibinitperiod},
+           given={Miguel\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d5b07ca69d0b3a5496281746f00e4300}{%
+           family={Nishino},
+           familyi={N\bibinitperiod},
+           given={Tomotoshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0e7343d55eb5485c0bb2a717dc649e5e}{%
+           family={Sierra},
+           familyi={S\bibinitperiod},
+           given={Germán},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{d3f44e2a842a65a318e97dfff2966a04}
+      \strng{fullhash}{a42a6ba5d54524f6f2765ac54786830a}
+      \strng{bibnamehash}{d3f44e2a842a65a318e97dfff2966a04}
+      \strng{authorbibnamehash}{d3f44e2a842a65a318e97dfff2966a04}
+      \strng{authornamehash}{d3f44e2a842a65a318e97dfff2966a04}
+      \strng{authorfullhash}{a42a6ba5d54524f6f2765ac54786830a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Europhysics letters}
+      \field{number}{4}
+      \field{title}{Equivalence of the variational matrix product method and the density matrix renormalization group applied to spin chains}
+      \field{volume}{43}
+      \field{year}{1998}
+      \field{pages}{457}
+      \range{pages}{1}
     \endentry
     \entry{cite:DMRG_in_the_age_of_MPS}{article}{}
       \name{author}{1}{}{%
@@ -163,8 +494,8 @@
       \strng{authorbibnamehash}{47c87e3553597a3c6f21f2ae72571491}
       \strng{authornamehash}{47c87e3553597a3c6f21f2ae72571491}
       \strng{authorfullhash}{47c87e3553597a3c6f21f2ae72571491}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annals of physics}
@@ -192,8 +523,8 @@
       \strng{authorbibnamehash}{220e5a12680385b58fbfac3e4405944d}
       \strng{authornamehash}{220e5a12680385b58fbfac3e4405944d}
       \strng{authorfullhash}{220e5a12680385b58fbfac3e4405944d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annals of physics}
@@ -202,47 +533,6 @@
       \field{year}{2014}
       \field{pages}{117\bibrangedash 158}
       \range{pages}{42}
-    \endentry
-    \entry{cite:tenpy}{article}{}
-      \name{author}{2}{}{%
-        {{hash=9b8f7fc6b271de24f53da255021243ae}{%
-           family={Hauschild},
-           familyi={H\bibinitperiod},
-           given={Johannes},
-           giveni={J\bibinitperiod}}}%
-        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
-           family={Pollmann},
-           familyi={P\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {SciPost}%
-      }
-      \strng{namehash}{dce87a39fd89c581de00ae02b0b0dc5e}
-      \strng{fullhash}{dce87a39fd89c581de00ae02b0b0dc5e}
-      \strng{bibnamehash}{dce87a39fd89c581de00ae02b0b0dc5e}
-      \strng{authorbibnamehash}{dce87a39fd89c581de00ae02b0b0dc5e}
-      \strng{authornamehash}{dce87a39fd89c581de00ae02b0b0dc5e}
-      \strng{authorfullhash}{dce87a39fd89c581de00ae02b0b0dc5e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SciPost Phys. Lect. Notes}
-      \field{title}{{Efficient numerical simulations with Tensor Networks: Tensor Network Python (TeNPy)}}
-      \field{year}{2018}
-      \field{pages}{5}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.21468/SciPostPhysLectNotes.5
-      \endverb
-      \verb{urlraw}
-      \verb https://scipost.org/10.21468/SciPostPhysLectNotes.5
-      \endverb
-      \verb{url}
-      \verb https://scipost.org/10.21468/SciPostPhysLectNotes.5
-      \endverb
     \endentry
     \entry{cite:area_law_1D_proof}{article}{}
       \name{author}{1}{}{%
@@ -258,8 +548,8 @@
       \strng{authorbibnamehash}{6fe91ce93ec3150a2a51092e35e37fab}
       \strng{authornamehash}{6fe91ce93ec3150a2a51092e35e37fab}
       \strng{authorfullhash}{6fe91ce93ec3150a2a51092e35e37fab}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We prove an area law for the entanglement entropy in gapped one-dimensional quantum systems. The bound on the entropy grows surprisingly rapidly with the correlation length; we discuss this in terms of properties of quantum expanders and present a conjecture on matrix product states which may provide an alternate way of arriving at an area law. We also show that, for gapped, local systems, the bound on Von Neumann entropy implies a bound on Rényi entropy for sufficiently large α&lt;1 and implies the ability to approximate the ground state by a matrix product state.}
@@ -308,8 +598,8 @@
       \strng{authorbibnamehash}{1729854676498146571270dd1725d2e1}
       \strng{authornamehash}{1729854676498146571270dd1725d2e1}
       \strng{authorfullhash}{1729854676498146571270dd1725d2e1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{1}
@@ -330,6 +620,41 @@
       \verb https://link.aps.org/doi/10.1103/RevModPhys.82.277
       \endverb
     \endentry
+    \entry{cite:mps_represent_ground_states_faithfully}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{fullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{bibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authorbibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authornamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authorfullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B—Condensed Matter and Materials Physics}
+      \field{number}{9}
+      \field{title}{Matrix product states represent ground states faithfully}
+      \field{volume}{73}
+      \field{year}{2006}
+      \field{pages}{094423}
+      \range{pages}{1}
+    \endentry
     \entry{cite:efficient_simulation_of_1D_quantum_many_body_systems}{article}{}
       \name{author}{1}{}{%
         {{hash=fe10cf33913e45c3685598c8b35bc209}{%
@@ -347,8 +672,8 @@
       \strng{authorbibnamehash}{fe10cf33913e45c3685598c8b35bc209}
       \strng{authornamehash}{fe10cf33913e45c3685598c8b35bc209}
       \strng{authorfullhash}{fe10cf33913e45c3685598c8b35bc209}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -357,45 +682,6 @@
       \field{volume}{93}
       \field{year}{2004}
       \field{pages}{040502}
-      \range{pages}{1}
-    \endentry
-    \entry{cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems}{article}{}
-      \name{author}{3}{}{%
-        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
-           family={Verstraete},
-           familyi={V\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-        {{hash=63677e060af69e712a79ef33056e4c5a}{%
-           family={Garcia-Ripoll},
-           familyi={G\bibinithyphendelim R\bibinitperiod},
-           given={Juan\bibnamedelima J},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=3ccd6c1393ed54c4c48b48d9fd8170b3}{%
-           family={Cirac},
-           familyi={C\bibinitperiod},
-           given={Juan\bibnamedelima Ignacio},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \strng{fullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \strng{bibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \strng{authorbibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \strng{authornamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \strng{authorfullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical review letters}
-      \field{number}{20}
-      \field{title}{Matrix product density operators: Simulation of finite-temperature and dissipative systems}
-      \field{volume}{93}
-      \field{year}{2004}
-      \field{pages}{207204}
       \range{pages}{1}
     \endentry
     \entry{cite:time_dependent_variational_principle_for_quantum_lattices}{article}{}
@@ -453,174 +739,33 @@
       \field{pages}{070601}
       \range{pages}{1}
     \endentry
-    \entry{cite:unifying_time_evolution_and_optimization_with_MPS}{article}{}
-      \name{author}{5}{}{%
-        {{hash=9531e7c6006adecb622581097ff2d509}{%
-           family={Haegeman},
-           familyi={H\bibinitperiod},
-           given={Jutho},
-           giveni={J\bibinitperiod}}}%
-        {{hash=9a61cdcbc8a5b325ba3aa8e80f7d1900}{%
-           family={Lubich},
-           familyi={L\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=9854b5eb0ee156689ff45d80042f6c12}{%
-           family={Oseledets},
-           familyi={O\bibinitperiod},
-           given={Ivan},
-           giveni={I\bibinitperiod}}}%
-        {{hash=a20902e0864c1ff6ac1ccb78a7931837}{%
-           family={Vandereycken},
-           familyi={V\bibinitperiod},
-           given={Bart},
-           giveni={B\bibinitperiod}}}%
+    \entry{cite:renormalization_algorithms_for_qmb_systems_in_two_and_higher_dimensions}{article}{}
+      \name{author}{2}{}{%
         {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
            family={Verstraete},
            familyi={V\bibinitperiod},
            given={Frank},
            giveni={F\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{1d2bd47bada416779c900020f2866a24}
-      \strng{fullhash}{e4e6fce0cefee713afed6ae4e077168f}
-      \strng{bibnamehash}{1d2bd47bada416779c900020f2866a24}
-      \strng{authorbibnamehash}{1d2bd47bada416779c900020f2866a24}
-      \strng{authornamehash}{1d2bd47bada416779c900020f2866a24}
-      \strng{authorfullhash}{e4e6fce0cefee713afed6ae4e077168f}
+      \strng{namehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{fullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{bibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authorbibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authornamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{authorfullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
       \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{16}
-      \field{title}{Unifying time evolution and optimization with matrix product states}
-      \field{volume}{94}
-      \field{year}{2016}
-      \field{pages}{165116}
-      \range{pages}{1}
-    \endentry
-    \entry{cite:finding_exponential_product_formulas_of_higher_orders}{incollection}{}
-      \name{author}{2}{}{%
-        {{hash=72b337f8636e5a4e6b996b62199e4489}{%
-           family={Hatano},
-           familyi={H\bibinitperiod},
-           given={Naomichi},
-           giveni={N\bibinitperiod}}}%
-        {{hash=69cc1e3c555789f39f023984cb106915}{%
-           family={Suzuki},
-           familyi={S\bibinitperiod},
-           given={Masuo},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{070f302e57e65537eedb51e343d06552}
-      \strng{fullhash}{070f302e57e65537eedb51e343d06552}
-      \strng{bibnamehash}{070f302e57e65537eedb51e343d06552}
-      \strng{authorbibnamehash}{070f302e57e65537eedb51e343d06552}
-      \strng{authornamehash}{070f302e57e65537eedb51e343d06552}
-      \strng{authorfullhash}{070f302e57e65537eedb51e343d06552}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Quantum annealing and other optimization methods}
-      \field{title}{Finding exponential product formulas of higher orders}
-      \field{year}{2005}
-      \field{pages}{37\bibrangedash 68}
-      \range{pages}{32}
-    \endentry
-    \entry{cite:criticality_the_area_law_and_the_computational_power_of_PEPS}{article}{}
-      \name{author}{4}{}{%
-        {{hash=085ab1d28e21b822e7bebcfb7d68f99f}{%
-           family={Verstraete},
-           familyi={V\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=4bf6e0e0b644336c6c5e578a60aa21aa}{%
-           family={Wolf},
-           familyi={W\bibinitperiod},
-           given={M.\bibnamedelimi M.},
-           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=99ab157e40dc6cc9e7c8ca6aef64277a}{%
-           family={Perez-Garcia},
-           familyi={P\bibinithyphendelim G\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=e95cc0745e2fbc83da963e5d6ab9c104}{%
-           family={Cirac},
-           familyi={C\bibinitperiod},
-           given={J.\bibnamedelimi I.},
-           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{984d0f5330d61de66f61ed9f24d8d39d}
-      \strng{fullhash}{9aed6ac2b3e78be35209f52664137857}
-      \strng{bibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
-      \strng{authorbibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
-      \strng{authornamehash}{984d0f5330d61de66f61ed9f24d8d39d}
-      \strng{authorfullhash}{9aed6ac2b3e78be35209f52664137857}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{22}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{6}
-      \field{title}{Criticality, the Area Law, and the Computational Power of Projected Entangled Pair States}
-      \field{volume}{96}
-      \field{year}{2006}
-      \field{pages}{220601}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.96.220601
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.96.220601
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.96.220601
-      \endverb
-    \endentry
-    \entry{cite:CTMRG}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1aed507145de1146326799ff92d30c2e}{%
-           family={Baxter},
-           familyi={B\bibinitperiod},
-           given={RJ},
-           giveni={R\bibinitperiod}}}%
-        {{hash=d64e03d940c7fbe88c6755d94cde36b3}{%
-           family={Enting},
-           familyi={E\bibinitperiod},
-           given={IG},
-           giveni={I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{1461b95c4298a3e97b1c86f76ca07be2}
-      \strng{fullhash}{1461b95c4298a3e97b1c86f76ca07be2}
-      \strng{bibnamehash}{1461b95c4298a3e97b1c86f76ca07be2}
-      \strng{authorbibnamehash}{1461b95c4298a3e97b1c86f76ca07be2}
-      \strng{authornamehash}{1461b95c4298a3e97b1c86f76ca07be2}
-      \strng{authorfullhash}{1461b95c4298a3e97b1c86f76ca07be2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Statistical Physics}
-      \field{title}{Series expansions from corner transfer matrices: the square lattice ising model}
-      \field{volume}{21}
-      \field{year}{1979}
-      \field{pages}{103\bibrangedash 123}
-      \range{pages}{21}
+      \field{journaltitle}{arXiv preprint cond-mat/0407066}
+      \field{title}{Renormalization algorithms for quantum-many body systems in two and higher dimensions}
+      \field{year}{2004}
     \endentry
     \entry{cite:unifying_PEPS_contractions}{article}{}
       \name{author}{3}{}{%
@@ -649,6 +794,7 @@
       \strng{authorbibnamehash}{cd85a6470eec80e7688138884c71b628}
       \strng{authornamehash}{cd85a6470eec80e7688138884c71b628}
       \strng{authorfullhash}{cd85a6470eec80e7688138884c71b628}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -660,6 +806,90 @@
       \field{year}{2014}
       \field{pages}{033014}
       \range{pages}{1}
+    \endentry
+    \entry{cite:algorithms_for_finite_PEPS}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e434dcfc1d1dfb3c88940e5ee516a63a}{%
+           family={Lubasch},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=f95429748cdd9a5a6aaf84ba4af3844e}{%
+           family={Banuls},
+           familyi={B\bibinitperiod},
+           given={Mari-Carmen},
+           giveni={M\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{fullhash}{cd85a6470eec80e7688138884c71b628}
+      \strng{bibnamehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{authorbibnamehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{authornamehash}{cd85a6470eec80e7688138884c71b628}
+      \strng{authorfullhash}{cd85a6470eec80e7688138884c71b628}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{6}
+      \field{title}{Algorithms for finite projected entangled pair states}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{064425}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:isometric_tensor_network_states_in_two_dimensions}{article}{}
+      \name{author}{2}{}{%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{6549490abc732b6efcd68df42e1c4ee9}
+      \strng{fullhash}{6549490abc732b6efcd68df42e1c4ee9}
+      \strng{bibnamehash}{6549490abc732b6efcd68df42e1c4ee9}
+      \strng{authorbibnamehash}{6549490abc732b6efcd68df42e1c4ee9}
+      \strng{authornamehash}{6549490abc732b6efcd68df42e1c4ee9}
+      \strng{authorfullhash}{6549490abc732b6efcd68df42e1c4ee9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{1}
+      \field{title}{Isometric Tensor Network States in Two Dimensions}
+      \field{volume}{124}
+      \field{year}{2020}
+      \field{pages}{037201}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.124.037201
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.124.037201
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.124.037201
+      \endverb
     \endentry
     \entry{cite:conversion_of_PEPS_into_a_canonical_form}{article}{}
       \name{author}{3}{}{%
@@ -747,6 +977,55 @@
       \verb https://arxiv.org/abs/1908.08833
       \endverb
     \endentry
+    \entry{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}{article}{}
+      \name{author}{3}{}{%
+        {{hash=33f4d63d28a903762b178edb727fe534}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Sheng-Hsuan},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=131232ddc3570a824149c27c960f2ca5}{%
+           family={Zaletel},
+           familyi={Z\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{5511029ff41be51104757e61a414f385}
+      \strng{fullhash}{5511029ff41be51104757e61a414f385}
+      \strng{bibnamehash}{5511029ff41be51104757e61a414f385}
+      \strng{authorbibnamehash}{5511029ff41be51104757e61a414f385}
+      \strng{authornamehash}{5511029ff41be51104757e61a414f385}
+      \strng{authorfullhash}{5511029ff41be51104757e61a414f385}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{24}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{12}
+      \field{title}{Efficient simulation of dynamics in two-dimensional quantum spin systems with isometric tensor networks}
+      \field{volume}{106}
+      \field{year}{2022}
+      \field{pages}{245102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.106.245102
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.106.245102
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.106.245102
+      \endverb
+    \endentry
     \entry{cite:isometric_tensor_network_representation_of_string_net_liquids}{article}{}
       \name{author}{6}{}{%
         {{hash=9668d148629f0604adb074a12f162adb}{%
@@ -789,8 +1068,8 @@
       \strng{authorbibnamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
       \strng{authornamehash}{7f07a2d3e0e6a33638c68c24942e5ca6}
       \strng{authorfullhash}{09e1659c7d5dcadfaadfe03f255fd1b8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{8}
@@ -1175,39 +1454,288 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
       \endverb
     \endentry
-    \entry{cite:mps_represent_ground_states_faithfully}{article}{}
+    \entry{cite:eckart_young_theorem}{article}{}
       \name{author}{2}{}{%
+        {{hash=b5901eb382ee926774180d95eaf3f1b5}{%
+           family={Eckart},
+           familyi={E\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e5657dcb4b96e2da25946664f689e01d}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Gale},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \strng{fullhash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \strng{bibnamehash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \strng{authorbibnamehash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \strng{authornamehash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \strng{authorfullhash}{709e46ddc31aa8d4998c5dab17def8a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychometrika}
+      \field{number}{3}
+      \field{title}{The approximation of one matrix by another of lower rank}
+      \field{volume}{1}
+      \field{year}{1936}
+      \field{pages}{211\bibrangedash 218}
+      \range{pages}{8}
+    \endentry
+    \entry{cite:tenpy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9b8f7fc6b271de24f53da255021243ae}{%
+           family={Hauschild},
+           familyi={H\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fb4c86c0948ce1f16f8d42001263c071}{%
+           family={Pollmann},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SciPost}%
+      }
+      \strng{namehash}{dce87a39fd89c581de00ae02b0b0dc5e}
+      \strng{fullhash}{dce87a39fd89c581de00ae02b0b0dc5e}
+      \strng{bibnamehash}{dce87a39fd89c581de00ae02b0b0dc5e}
+      \strng{authorbibnamehash}{dce87a39fd89c581de00ae02b0b0dc5e}
+      \strng{authornamehash}{dce87a39fd89c581de00ae02b0b0dc5e}
+      \strng{authorfullhash}{dce87a39fd89c581de00ae02b0b0dc5e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SciPost Phys. Lect. Notes}
+      \field{title}{{Efficient numerical simulations with Tensor Networks: Tensor Network Python (TeNPy)}}
+      \field{year}{2018}
+      \field{pages}{5}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21468/SciPostPhysLectNotes.5
+      \endverb
+      \verb{urlraw}
+      \verb https://scipost.org/10.21468/SciPostPhysLectNotes.5
+      \endverb
+      \verb{url}
+      \verb https://scipost.org/10.21468/SciPostPhysLectNotes.5
+      \endverb
+    \endentry
+    \entry{cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems}{article}{}
+      \name{author}{3}{}{%
         {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
            family={Verstraete},
            familyi={V\bibinitperiod},
            given={Frank},
            giveni={F\bibinitperiod}}}%
-        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+        {{hash=63677e060af69e712a79ef33056e4c5a}{%
+           family={Garcia-Ripoll},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={Juan\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3ccd6c1393ed54c4c48b48d9fd8170b3}{%
            family={Cirac},
            familyi={C\bibinitperiod},
-           given={J\bibnamedelima Ignacio},
+           given={Juan\bibnamedelima Ignacio},
            giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {APS}%
       }
-      \strng{namehash}{e8b92c432bacd31e2a16948bb6b6b62e}
-      \strng{fullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
-      \strng{bibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
-      \strng{authorbibnamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
-      \strng{authornamehash}{e8b92c432bacd31e2a16948bb6b6b62e}
-      \strng{authorfullhash}{e8b92c432bacd31e2a16948bb6b6b62e}
+      \strng{namehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{fullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{bibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{authorbibnamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{authornamehash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
+      \strng{authorfullhash}{6ae9cb85d28e9307cdfc7c8c58a85ff5}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B—Condensed Matter and Materials Physics}
-      \field{number}{9}
-      \field{title}{Matrix product states represent ground states faithfully}
-      \field{volume}{73}
-      \field{year}{2006}
-      \field{pages}{094423}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{20}
+      \field{title}{Matrix product density operators: Simulation of finite-temperature and dissipative systems}
+      \field{volume}{93}
+      \field{year}{2004}
+      \field{pages}{207204}
       \range{pages}{1}
+    \endentry
+    \entry{cite:unifying_time_evolution_and_optimization_with_MPS}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9531e7c6006adecb622581097ff2d509}{%
+           family={Haegeman},
+           familyi={H\bibinitperiod},
+           given={Jutho},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9a61cdcbc8a5b325ba3aa8e80f7d1900}{%
+           family={Lubich},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9854b5eb0ee156689ff45d80042f6c12}{%
+           family={Oseledets},
+           familyi={O\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a20902e0864c1ff6ac1ccb78a7931837}{%
+           family={Vandereycken},
+           familyi={V\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{fullhash}{e4e6fce0cefee713afed6ae4e077168f}
+      \strng{bibnamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authorbibnamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authornamehash}{1d2bd47bada416779c900020f2866a24}
+      \strng{authorfullhash}{e4e6fce0cefee713afed6ae4e077168f}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{16}
+      \field{title}{Unifying time evolution and optimization with matrix product states}
+      \field{volume}{94}
+      \field{year}{2016}
+      \field{pages}{165116}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:finding_exponential_product_formulas_of_higher_orders}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=72b337f8636e5a4e6b996b62199e4489}{%
+           family={Hatano},
+           familyi={H\bibinitperiod},
+           given={Naomichi},
+           giveni={N\bibinitperiod}}}%
+        {{hash=69cc1e3c555789f39f023984cb106915}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Masuo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{070f302e57e65537eedb51e343d06552}
+      \strng{fullhash}{070f302e57e65537eedb51e343d06552}
+      \strng{bibnamehash}{070f302e57e65537eedb51e343d06552}
+      \strng{authorbibnamehash}{070f302e57e65537eedb51e343d06552}
+      \strng{authornamehash}{070f302e57e65537eedb51e343d06552}
+      \strng{authorfullhash}{070f302e57e65537eedb51e343d06552}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Quantum annealing and other optimization methods}
+      \field{title}{Finding exponential product formulas of higher orders}
+      \field{year}{2005}
+      \field{pages}{37\bibrangedash 68}
+      \range{pages}{32}
+    \endentry
+    \entry{cite:criticality_the_area_law_and_the_computational_power_of_PEPS}{article}{}
+      \name{author}{4}{}{%
+        {{hash=085ab1d28e21b822e7bebcfb7d68f99f}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=4bf6e0e0b644336c6c5e578a60aa21aa}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=99ab157e40dc6cc9e7c8ca6aef64277a}{%
+           family={Perez-Garcia},
+           familyi={P\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e95cc0745e2fbc83da963e5d6ab9c104}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{fullhash}{9aed6ac2b3e78be35209f52664137857}
+      \strng{bibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{authorbibnamehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{authornamehash}{984d0f5330d61de66f61ed9f24d8d39d}
+      \strng{authorfullhash}{9aed6ac2b3e78be35209f52664137857}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{22}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{6}
+      \field{title}{Criticality, the Area Law, and the Computational Power of Projected Entangled Pair States}
+      \field{volume}{96}
+      \field{year}{2006}
+      \field{pages}{220601}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.96.220601
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.96.220601
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.96.220601
+      \endverb
+    \endentry
+    \entry{cite:CTMRG}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1aed507145de1146326799ff92d30c2e}{%
+           family={Baxter},
+           familyi={B\bibinitperiod},
+           given={RJ},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d64e03d940c7fbe88c6755d94cde36b3}{%
+           family={Enting},
+           familyi={E\bibinitperiod},
+           given={IG},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{fullhash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{bibnamehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{authorbibnamehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{authornamehash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \strng{authorfullhash}{1461b95c4298a3e97b1c86f76ca07be2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{title}{Series expansions from corner transfer matrices: the square lattice ising model}
+      \field{volume}{21}
+      \field{year}{1979}
+      \field{pages}{103\bibrangedash 123}
+      \range{pages}{21}
     \endentry
     \entry{cite:finding_purifications_with_minimal_entanglement}{article}{}
       \name{author}{6}{}{%
@@ -1251,8 +1779,8 @@
       \strng{authorbibnamehash}{c42ac0f0670973638e288923228aff7b}
       \strng{authornamehash}{c42ac0f0670973638e288923228aff7b}
       \strng{authorfullhash}{5f0cc2bd0a99db431094a873177e1728}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{23}
@@ -1303,8 +1831,8 @@
       \strng{authorbibnamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authornamehash}{e7190b12d85362656ed68bdbd6bb3b2d}
       \strng{authorfullhash}{e7190b12d85362656ed68bdbd6bb3b2d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781400830244}
@@ -1347,8 +1875,8 @@
       \strng{authorbibnamehash}{74fd2435bf6175b213814bd2c868ee7c}
       \strng{authornamehash}{74fd2435bf6175b213814bd2c868ee7c}
       \strng{authorfullhash}{74fd2435bf6175b213814bd2c868ee7c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2542-4653}
@@ -1395,8 +1923,8 @@
       \strng{authorbibnamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authornamehash}{1fb317b919aa78dc3d7db4836ffad4b5}
       \strng{authorfullhash}{1fb317b919aa78dc3d7db4836ffad4b5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1367-2630}
@@ -1442,8 +1970,8 @@
       \strng{authorbibnamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authornamehash}{7bd438baffcc0da55c3c7385d29cbb81}
       \strng{authorfullhash}{7bd438baffcc0da55c3c7385d29cbb81}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.MS}
@@ -1481,8 +2009,8 @@
       \strng{authorbibnamehash}{0f7899391f88ca43191b7a37262d0f33}
       \strng{authornamehash}{0f7899391f88ca43191b7a37262d0f33}
       \strng{authorfullhash}{0f7899391f88ca43191b7a37262d0f33}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -1510,8 +2038,8 @@
       \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annals of physics}
@@ -1544,8 +2072,8 @@
       \strng{authorbibnamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authornamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authorfullhash}{c81e2ec2bfb64279a08a5b9084ed22ee}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications in Mathematical Physics}
@@ -1570,8 +2098,8 @@
       \strng{authorbibnamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
       \strng{authornamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
       \strng{authorfullhash}{5ef94f8733b4abb1d99fbc282b63e1fb}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Student Review}
@@ -1602,8 +2130,8 @@
       \strng{authorbibnamehash}{78e77e25e44790454e4c55d54a11c970}
       \strng{authornamehash}{78e77e25e44790454e4c55d54a11c970}
       \strng{authorfullhash}{78e77e25e44790454e4c55d54a11c970}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -1641,8 +2169,8 @@
       \strng{authorbibnamehash}{de6adaba318879a7243bf195f0a51ae6}
       \strng{authornamehash}{de6adaba318879a7243bf195f0a51ae6}
       \strng{authorfullhash}{de6adaba318879a7243bf195f0a51ae6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Ising phases and transitions in transverse Ising models}
@@ -1671,8 +2199,8 @@
       \strng{authorbibnamehash}{81a576f1972513858145eea9142b4042}
       \strng{authornamehash}{81a576f1972513858145eea9142b4042}
       \strng{authorfullhash}{81a576f1972513858145eea9142b4042}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}
@@ -1720,8 +2248,8 @@
       \strng{authorbibnamehash}{2a4192a5c6d2f11e110a8108e049c921}
       \strng{authornamehash}{2a4192a5c6d2f11e110a8108e049c921}
       \strng{authorfullhash}{62464ad8f47b62ddeef03f49598b9914}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}

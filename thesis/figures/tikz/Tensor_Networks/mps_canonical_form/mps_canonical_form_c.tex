@@ -1,26 +1,32 @@
 \documentclass[crop, tikz]{standalone}
 \input{../../style.tex}
 \begin{document}
+	\def\tensorDistance{\tensorDistanceMPS}
+	\def\tensorWidth{\tensorWidthMPS}
+	\def\physicalLegLength{\physicalLegLengthSmallMPS}
+	\def\openLegMultiplier{\openLegMultiplierMPS}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\braketDistance{\braketDistanceMPS}
 	\begin{tikzpicture}
-		\node[tensorPhysical, fill=generalTensorColor] (A1) at (0, 0) {};
-		\node[tensorPhysical, fill=generalTensorColor] (A1cc) at (0, -\defaultDistanceLarge) {};
+		\node[tensorPhysicalMPSCanonical] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A1cc) at (0, -\braketDistance) {};
 		
 		\begin{pgfonlayer}{bg}
-			\draw[physicalLeg] (0, -\defaultDistanceLarge/2) -- (A1);
-			\draw[physicalLeg] (0, -\defaultDistanceLarge/2) -- (A1cc);
+			\draw[physicalLegSmall] (0, -\braketDistance/2) -- (A1);
+			\draw[physicalLegSmall] (0, -\braketDistance/2) -- (A1cc);
 			
-			\draw[virtualLeg] (A1) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
-			\draw[virtualLeg] (A1cc) -- ++(-\defaultDistanceNormal+\defaultTensorWidth/2, 0);
-			\draw[virtualLeg] (\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- (A1);
-			\draw[virtualLeg] (\defaultDistanceNormal-\defaultTensorWidth/2, -\defaultDistanceLarge) -- (A1cc);
-			\draw[virtualLegWithoutArrows] (A1) -- ++(\defaultDistanceNormal-\defaultTensorWidth/2, 0) -- ++(0, -\defaultDistanceLarge) -- (A1cc);
+			\draw[virtualLegSmall] (A1) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0);
+			\draw[virtualLegSmall] (A1cc) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0);
+			\draw[virtualLegSmall] ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0) -- (A1);
+			\draw[virtualLegSmall] ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, -\braketDistance) -- (A1cc);
+			\draw[virtualLegSmallWithoutArrows] (A1) -- ++({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0) -- ++(0, -\braketDistance) -- (A1cc);
 		\end{pgfonlayer}
 		
-		\node[] () at (\defaultDistanceNormal - \defaultTensorWidth/2 + \defaultDistanceEquations/2, -\defaultDistanceLarge/2) {$=$};
+		\node[] () at ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier + \defaultDistanceEquations/2}, -\braketDistance/2) {$=$};
 		
-		\draw[virtualLegWithoutArrows] (\defaultDistanceNormal - \defaultTensorWidth/2 + \defaultDistanceEquations, 0) -- ++(\defaultDistanceNormal-\defaultTensorWidth, 0) -- ++(0, -\defaultDistanceLarge) -- ++(-\defaultDistanceNormal+\defaultTensorWidth, 0);
+		\draw[virtualLegSmallWithoutArrows] ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier + \defaultDistanceEquations}, 0) -- ++({(\tensorDistance-\tensorWidth)*\openLegMultiplier}, 0) -- ++(0, -\braketDistance) -- ++({(-\tensorDistance+\tensorWidth)*\openLegMultiplier}, 0);
 		
-		\node[] at (0, \defaultTensorWidth/2 + 1.5*\defaultTextOffset) {$B^{[i]}$};
-		\node[] at (0, -\defaultTensorWidth/2 - 1.5*\defaultTextOffset - \defaultDistanceLarge) {$B^{[i]}$};
+		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[i]}$};
+		\node[] at (0, -\tensorWidth/2 - \defaultTextOffsetLarge - \braketDistance) {$B^{[i]}$};
 	\end{tikzpicture}
 \end{document}

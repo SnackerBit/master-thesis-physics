@@ -4,11 +4,7 @@
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/tebd_global_update/tebd_global_update_a.pdf}
 	}
-	\subcaptionbox{\label{fig:disoTPS_TEBD_global_update_TEBD2_chain}}
-	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/tebd_global_update/tebd_global_update_b.pdf}
-	}
-	\caption{(a) A Hamiltonian $\hat{H}$ that is a sum of nearest-neighbour operators $h^{[x,y]}$ can be split into four parts made up of operators acting only on even/odd columns and even/odd bonds along a column. (b) A second order Suzuki-Trotter decomposition results in a chain of bond operators that have to be applied in the order visualized, moving along the path from the start to the end and backwards to the start again.}
+	\caption{A Hamiltonian $\hat{H}$ that is a sum of nearest-neighbour operators $h^{[x,y]}$ can be split into four parts made up of operators acting only on even/odd columns and even/odd bonds along a column.}
 	\label{fig:disoTPS_TEBD_global_update_TEBD1_splitting_and_TEBD2_chain}
 \end{figure}
 A global TEBD update evolves the state by a time $\Delta t$ and can be performed by applying local TEBD updates on all bonds. For each local TEBD update, the orthogonality center must be moved to the bond at which the update is applied. Because moving the orthogonality hypersurface can only be done approximately, the number of necessary moves should be minimized. \par
@@ -38,6 +34,7 @@ To evolve the state $|\Psi\rangle$ in time with this first order approximation w
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_a.pdf}
 	}
+	\par\bigskip
 	\subcaptionbox{\label{fig:disoTPS_TEBD_global_update_applying_TEBD2}}
 	{%
 		\includegraphics[scale=1]{figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_b.pdf}

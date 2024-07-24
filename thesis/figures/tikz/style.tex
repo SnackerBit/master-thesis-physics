@@ -42,7 +42,7 @@
 
 % Basic sizes
 \def \defaultTensorWidth {19pt}
-\def \smallTensorWidth {11pt}
+\def \smallTensorWidth {13pt}
 \def \tinyTensorWidth {4pt}
 \def \defaultLineWidth {2}
 \def \lineWidthThick {2.5}
@@ -57,6 +57,7 @@
 \def \defaultArrowscale {0.7}
 \def \arrowScaleSmall {0.6}
 \def \defaultArrowXShift {7pt}
+\def \defaultDoubleArrowXShift {5pt}
 \def \defaultTextOffset {6pt}
 \def \defaultTextOffsetLarge {9pt}
 \def \defaultTextOffsetSmall {1pt}
@@ -73,6 +74,13 @@
 \def \roundedCornerInsetNormal{10pt}
 \def \roundedCornerInsetSmall{2pt}
 \def \braceWidth{10pt}
+\def \physicalLegLengthSmallMPS{1.3*\physicalLegLengthSmall}
+
+
+\def\tensorDistanceMPS{1.2*\defaultDistanceSmall}
+\def\braketDistanceMPS{1.2*\defaultDistanceNormal}
+\def\tensorWidthMPS{\smallTensorWidth}
+\def\openLegMultiplierMPS{0.9}
 
 % Tensor styles
 \tikzstyle{tensorPhysical} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
@@ -91,6 +99,10 @@
 \tikzstyle{toricCodePEPSCenterTensor} = [circle, minimum size=2*\tinyTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
 \tikzstyle{toricCodeDisoTPSTensor} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=toricCodeDisoTPSTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
 
+\tikzstyle{tensorPhysicalMPS} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=generalTensorColor, draw=borderColor, outer sep=0]
+\tikzstyle{tensorPhysicalMPSCanonical} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
+\tikzstyle{tensorPhysicalMPSCanonicalOrthoCenter} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=orthogonalityCenterColor, draw=borderColor, outer sep=0]
+
 % Leg styles
 \tikzstyle{auxillaryLeg} = [color=auxillaryLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{physicalLeg} = [color=physicalLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
@@ -101,6 +113,8 @@
 \tikzstyle{virtualLegWithoutArrows} = [color=virtualLegColor, line width=\defaultLineWidth]
 \tikzstyle{physicalLegWithoutArrows} = [color=physicalLegColor, line width=\defaultLineWidth]
 \tikzstyle{specialLegWithoutArrows} = [color=specialLegColor, line width=\defaultLineWidth]
+\tikzstyle{virtualLegDoubleArrow} = [color=virtualLegColor, line width=\defaultLineWidth, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\defaultArrowscale}\arrow[xshift=\defaultDoubleArrowXShift]{Rays[round]}}}, postaction={decorate}]
+\tikzstyle{auxillaryLegWithoutArrows} = [color=auxillaryLegColor, line width=\defaultLineWidth]
 
 \tikzstyle{auxillaryLegSmall} = [color=auxillaryLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{auxillaryLegSmallWithoutArrows} = [color=auxillaryLegColor, line width=\lineWidthThin]
@@ -108,6 +122,7 @@
 \tikzstyle{virtualLegSmall} = [color=virtualLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLegSmallWithoutArrows} = [color=virtualLegColor, line width=\lineWidthThin]
 \tikzstyle{physicalLegSmallWithoutArrows} = [color=physicalLegColor, line width=\lineWidthThin]
+\tikzstyle{virtualLegSmallDoubleArrows} = [color=virtualLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultDoubleArrowXShift]{Rays[round]}}}, postaction={decorate}]
 
 % special symbols
 \usepackage{amssymb}

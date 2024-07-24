@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  23 JUL 2024 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  24 JUL 2024 19:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -705,15 +705,15 @@ Missing character: There is no g in font nullfont!
 
 ] (./tebd_global_update_b.aux) ) 
 Here is how much of TeX's memory you used:
- 18956 strings out of 478287
- 386511 string characters out of 5849290
- 695299 words of memory out of 5000000
- 36804 multiletter control sequences out of 15000+600000
+ 18942 strings out of 478287
+ 386003 string characters out of 5849290
+ 685867 words of memory out of 5000000
+ 36790 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,7n,118p,428b,942s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,7n,118p,428b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tebd_global_update_b.pdf (1 page, 2952 bytes).
+Output written on tebd_global_update_b.pdf (1 page, 2748 bytes).
 PDF statistics:
  11 PDF objects out of 1000 (max. 8388607)
  7 compressed objects within 1 object stream

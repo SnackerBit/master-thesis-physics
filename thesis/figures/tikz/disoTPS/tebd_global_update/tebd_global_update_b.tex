@@ -43,34 +43,12 @@
 		\node[tensorPhysicalSmall] (T221) at (5*\tensorDistance, 5*\tensorDistance) {};
 		
 		% Draw snake
-		\draw[specialLeg] (\tensorDistance/2, \tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (\tensorDistance/2, 9*\tensorDistance/2) -- ++(\tensorDistance, 0);
-		
-		\draw[specialLeg] (3*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (3*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (3*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (3*\tensorDistance/2, 9*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (3*\tensorDistance/2, \tensorDistance/2) -- ++(\tensorDistance, 0);
-		
-		\draw[specialLeg] (5*\tensorDistance/2, \tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (5*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (5*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (5*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (5*\tensorDistance/2, 9*\tensorDistance/2) -- ++(\tensorDistance, 0);
-		
-		\draw[specialLeg] (7*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (7*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (7*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (7*\tensorDistance/2, 9*\tensorDistance/2) -- ++(0, -\tensorDistance);
-		\draw[specialLeg] (7*\tensorDistance/2, \tensorDistance/2) -- ++(\tensorDistance, 0);
-		
-		\draw[specialLeg] (9*\tensorDistance/2, \tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (9*\tensorDistance/2, 3*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (9*\tensorDistance/2, 5*\tensorDistance/2) -- ++(0, \tensorDistance);
-		\draw[specialLeg] (9*\tensorDistance/2, 7*\tensorDistance/2) -- ++(0, \tensorDistance);
+		\draw[auxillaryLegWithoutArrows, dashed, rounded corners=3pt] 
+		                          (\tensorDistance/2, \tensorDistance/2) -- (\tensorDistance/2, 9*\tensorDistance/2) -- 
+								  (3*\tensorDistance/2, \tensorDistance/2) -- (3*\tensorDistance/2, 9*\tensorDistance/2) --  
+								  (5*\tensorDistance/2, \tensorDistance/2) -- (5*\tensorDistance/2, 9*\tensorDistance/2) --
+								  (7*\tensorDistance/2, \tensorDistance/2) -- (7*\tensorDistance/2, 9*\tensorDistance/2) --
+								  (9*\tensorDistance/2, \tensorDistance/2) -- (9*\tensorDistance/2, 9*\tensorDistance/2);
 		
 		
 		\begin{pgfonlayer}{bg}
