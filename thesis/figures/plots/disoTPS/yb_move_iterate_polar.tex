@@ -1,0 +1,14 @@
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+		\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth]
+			
+			\addplot[color = 5blue4]
+			table[x=N_iter, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/iterate_polar.txt};
+			%\addlegendentry{Evenbly-Vidal}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{We show a cool figure here!!\todo{Caption}}
+	\label{fig:disoTPS_tripartite_decomposition_iterate_polar}
+\end{figure}

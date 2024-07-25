@@ -1,4 +1,4 @@
-thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
-thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
-thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
-thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
+thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
+thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
+thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
+thesis-figure3.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt

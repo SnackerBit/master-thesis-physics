@@ -1,4 +1,1 @@
-thesis-figure1.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
-thesis-figure1.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
-thesis-figure1.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
-thesis-figure1.pdf: figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt
+thesis-figure1.pdf: figures/plots/disoTPS/data/evenbly_vidal_renyi_2_disentangling.txt

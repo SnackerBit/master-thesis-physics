@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  25 JUL 2024 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  25 JUL 2024 16:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2005,11 +2005,11 @@ terative/yang_baxter_move_iterative_a.pdf}' has been optimized away. Use '/tikz
 /external/optimize=false' to disable this.
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-7 undefined on input line 17.
+7 undefined on input line 15.
 
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-7 undefined on input line 17.
+7 undefined on input line 15.
 
 The command '\includegraphics [scale=1]{figures/tikz/disoTPS/yang_baxter_move_i
 terative/yang_baxter_move_iterative_b.pdf}' has been optimized away. Use '/tikz
@@ -2022,13 +2022,16 @@ terative/yang_baxter_move_iterative_d.pdf}' has been optimized away. Use '/tikz
 /external/optimize=false' to disable this.
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-7 undefined on input line 34.
+7 undefined on input line 32.
 
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_alternative_formulation' on page 2
-7 undefined on input line 34.
+7 undefined on input line 32.
 
-) (./chapters/disoTPS/YB_move_svd_disentangle.tex
+(./figures/plots/disoTPS/yb_move_iterate_polar.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+)) (./chapters/disoTPS/YB_move_svd_disentangle.tex
 
 LaTeX Warning: Reference `eq:disoTPS_YB_move_standard' on page 27 undefined on 
 input line 1.
@@ -2082,7 +2085,7 @@ Overfull \hbox (81.4571pt too wide) in paragraph at lines 31--32
  []
 
 
-LaTeX Warning: Reference `fig:disentangling_theta_definition' on page 28 undefi
+LaTeX Warning: Reference `fig:disentangling_theta_definition' on page 29 undefi
 ned on input line 36.
 
 
@@ -2534,9 +2537,9 @@ LaTeX Warning: Reference `sec:TFI_time_evolution' on page 43 undefined on input
 LaTeX Warning: Reference `fig:tenpy_snaking' on page 43 undefined on input line
  2.
 
-The command '\includegraphics [scale=1]{figures/tikz/TFI/dmrg_snaking/dmrg_snak
-ing.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to disab
-le this.
+The command '\includegraphics [scale=0.6]{figures/tikz/TFI/dmrg_snaking/dmrg_sn
+aking.pdf}' has been optimized away. Use '/tikz/external/optimize=false' to dis
+able this.
 (./chapters/TFI/TFI_model.tex) (./chapters/TFI/ground_state_search.tex
 
 LaTeX Warning: Reference `eq:TFI_Hamiltonian' on page 44 undefined on input lin
@@ -2669,39 +2672,48 @@ isable this.
 ) (./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+
+LaTeX Warning: Reference `fig:tfi_gs_energy_vs_dtau_larger_systems' on page 48 
+undefined on input line 56.
+
+
+LaTeX Warning: Reference `fig:tfi_gs_energy_vs_dtau_larger_systems' on page 48 
+undefined on input line 56.
+
 )
 
-LaTeX Warning: Reference `tfi_gs_energy_vs_dtau_larger_systems' on page 48 unde
+LaTeX Warning: Reference `fig:tfi_gs_energy_vs_dtau_larger_systems' on page 48 
+undefined on input line 39.
+
+
+LaTeX Warning: Reference `fig:disoTPS_gs_search_larger_systems' on page 48 unde
 fined on input line 39.
-
-
-LaTeX Warning: Reference `disoTPS_gs_search_larger_systems' on page 48 undefine
-d on input line 39.
 
 
 LaTeX Warning: Reference `fig:disoTPS_gs_search_larger_systems_log' on page 48 
 undefined on input line 39.
 
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
 \openout7 = `thesis-figure33.dpth'.
 
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
-oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
 \tikzexternal@dep@file=\write8
 \openout8 = `thesis-figure33.dep'.
 
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
-oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
-oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
-[48
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+[49
 
 
 \openout3 = `thesis-figure33.upa'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+)
 
 LaTeX Warning: Reference `' on page 49 undefined on input line 41.
 
@@ -2709,38 +2721,35 @@ LaTeX Warning: Reference `' on page 49 undefined on input line 41.
 LaTeX Warning: Reference `' on page 49 undefined on input line 41.
 
 
-LaTeX Warning: Reference `' on page 49 undefined on input line 41.
+LaTeX Warning: Reference `fig:tfi_gs_energy_vs_dtau_honeycomb' on page 49 undef
+ined on input line 41.
 
-) (./chapters/TFI/time_evolution.tex
-
-LaTeX Warning: Reference `' on page 49 undefined on input line 1.
-
-(./figures/plots/TFI/global_quench/global_quench_g_critical.tex
+) (./chapters/TFI/time_evolution.tex (./figures/plots/TFI/global_quench/global_
+quench_g_critical.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-) (./figures/plots/TFI/global_quench/global_quench_g_6.tex
+)
+
+LaTeX Warning: Reference `fig:disoTPS_time_evolution_g_critical' on page 49 und
+efined on input line 2.
+
+(./figures/plots/TFI/global_quench/global_quench_g_6.tex
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-
-Overfull \hbox (3.65pt too wide) in paragraph at lines 50--51
- [][] 
- []
-
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
-
-Overfull \hbox (3.65pt too wide) in paragraph at lines 97--98
- [][] 
- []
-
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
+)
 
-Overfull \hbox (3.65pt too wide) in paragraph at lines 144--145
- [][] 
- []
+LaTeX Warning: Reference `fig:disoTPS_time_evolution_g_6' on page 50 undefined 
+on input line 4.
 
-)))
+
+LaTeX Warning: Reference `fig:disoTPS_time_evolution_g_critical' on page 50 und
+efined on input line 4.
+
+))
 chapter 6.
 chapter A.
 
@@ -2895,11 +2904,11 @@ Package logreq Info: Writing requests to 'thesis-figure33.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50230 strings out of 478287
- 1111730 string characters out of 5849289
- 2054587 words of memory out of 5000000
- 67239 multiletter control sequences out of 15000+600000
- 497258 words of font info for 240 fonts, out of 8000000 for 9000
+ 50222 strings out of 478287
+ 1111736 string characters out of 5849289
+ 2046587 words of memory out of 5000000
+ 67222 multiletter control sequences out of 15000+600000
+ 497411 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  144i,23n,148p,10747b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
@@ -2907,9 +2916,9 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on thesis-figure33.pdf (1 page, 50248 bytes).
+Output written on thesis-figure33.pdf (1 page, 51714 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  53261 words of extra memory for PDF output out of 61914 (max. 10000000)

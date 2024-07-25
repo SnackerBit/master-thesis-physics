@@ -11,10 +11,10 @@
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{28}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}variational optimization with local updates}{30}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{31}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{41}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{40}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{41}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{41}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{42}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{42}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{43}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}The Toric Code Model}{47}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{48}{section.4.2}%
@@ -35,5 +35,5 @@
 \contentsline {section}{\numberline {B.4}Trust Region Method}{73}{section.B.4}%
 \contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{75}{appendix.C}%
 \contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{77}{appendix.D}%
-\contentsline {chapter}{\nonumberline Bibliography}{81}{chapter*.91}%
+\contentsline {chapter}{\nonumberline Bibliography}{81}{chapter*.94}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

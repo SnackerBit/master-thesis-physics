@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>thesis-figure0.bcf</file>
+      <file>thesis-figure4.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>thesis-figure0.bbl</file>
+      <file>thesis-figure4.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -66,19 +66,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>thesis-figure0</infile>
+      <infile>thesis-figure4</infile>
     </cmdline>
     <input>
-      <file>thesis-figure0.bcf</file>
+      <file>thesis-figure4.bcf</file>
     </input>
     <output>
-      <file>thesis-figure0.bbl</file>
+      <file>thesis-figure4.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>thesis-figure0.bbl</file>
+      <file>thesis-figure4.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>thesis-figure0.bcf</file>
+      <file>thesis-figure4.bcf</file>
     </requires>
   </external>
 </requests>

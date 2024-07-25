@@ -1,3 +1,4 @@
-thesis-figure5.pdf: figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd.txt
-thesis-figure5.pdf: figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd.txt
-thesis-figure5.pdf: figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd.txt
+thesis-figure5.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
+thesis-figure5.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
+thesis-figure5.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
+thesis-figure5.pdf: figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt
