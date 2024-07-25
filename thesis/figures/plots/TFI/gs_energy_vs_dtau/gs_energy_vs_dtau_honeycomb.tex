@@ -1,38 +1,41 @@
 \begin{figure}
 	\centering
-	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={$D_\text{hor} = D$}]
-			%	
-			\addplot[color = 3blue1, mark=*]
-			table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt};
-			%\addlegendentry{$D = 2$}
-			%	
-			\addplot[color = 3blue2, mark=*]
-			table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt};
-			%\addlegendentry{$D = 4$}
-			%	
-			\addplot[color = 3blue3, mark=*]
-			table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt};
-			%\addlegendentry{$D = 6$}
-		\end{axis}%
-	\end{tikzpicture}%
-	\,\,
-	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$D_\text{hor} = D^2$}, legend style={nodes={scale=\legendscale, transform shape}}]
-			%	
-			\addplot[color = 3blue1, mark=*]
-			table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt};
-			\addlegendentry{$D = 2$}
-			%	
-			\addplot[color = 3blue2, mark=*]
-			table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt};
-			\addlegendentry{$D = 4$}
-			%	
-			\addplot[color = 3blue3, mark=*]
-			table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt};
-			\addlegendentry{$D = 6$}
-		\end{axis}%
-	\end{tikzpicture}%
-	\caption{\todo{Caption}}
+	\begin{minipage}{1.0\textwidth}
+		\centering
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={$D_\text{hor} = D$}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt};
+				%\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt};
+				%\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt};
+				%\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+		\,\,
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$D_\text{hor} = D^2$}, legend style={nodes={scale=\legendscale, transform shape}}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt};
+				\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt};
+				\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_honeycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt};
+				\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+	\end{minipage}
+	\caption{In this figure we show imaginary TEBD results using disoTPS on the honeycomb lattice. We used two different values for the horizontal bond dimension, $D_\text{h} = D$ and $D_\text{h} = D^2$. The bond dimension along the orthogonality hypersurface was chosen as $\chi = 6\cdot D$. For the YB move we used the approximate Rényi-$0.5$ disentangler with a maximum of $N_\text{iter} = 100$ iterations per YB move. The model is the TFI model on a $4\times 4$ honeycomb lattice at a transverse field of $g = 3.5$.}
 	\label{fig:tfi_gs_energy_vs_dtau_honeycomb}
 \end{figure}

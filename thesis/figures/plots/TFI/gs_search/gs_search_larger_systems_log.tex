@@ -1,55 +1,58 @@
 \begin{figure}
 	\centering
-	\hspace{260pt}
-	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+	%\hspace{260pt}
+	\begin{minipage}{1.0\textwidth}
 		\centering
-		\begin{axis}[xlabel=$L$, ylabel={$E/N$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.985,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=2, xmin=1, xmax=21, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2]
-			%	
-			\addplot[color = 7blue1]
-			table[x=L, y=error_tenpy_chi_16, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 16$}
-			%
-			\addplot[color = 7blue2]
-			table[x=L, y=error_tenpy_chi_32, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 32$}
-			%
-			\addplot[color = 7blue3]
-			table[x=L, y=error_tenpy_chi_64, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 64$}
-			%
-			\addplot[color = 7blue4]
-			table[x=L, y=error_tenpy_chi_128, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 128$}
-			%
-			\addplot[color = 7blue5]
-			table[x=L, y=error_tenpy_chi_256, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 256$}
-			%
-			\addplot[color = 7blue6]
-			table[x=L, y=error_tenpy_chi_512, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 512$}
-			%
-			\addplot[color = 7blue7]
-			table[x=L, y=error_tenpy_chi_1024, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$\chi = 1024$}
-			%
-		\end{axis}
-		\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
-			%
-			\addplot[color = 3red1, mark=*]
-			table[x=L, y=error_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$D = 2$}
-			%
-			\addplot[color = 3red2, mark=*]
-			table[x=L, y=error_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$D = 3$}
-			%
-			\addplot[color = 3red3, mark=*]
-			table[x=L, y=error_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
-			\addlegendentry{$D = 4$}
-			%
-		\end{axis}%
-	\end{tikzpicture}%
-	\caption{\todo{Caption}}
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\centering
+			\begin{axis}[xlabel=$L$, ylabel={$\Delta E/E_{\chi\rightarrow\infty}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.985,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=2, xmin=1, xmax=21, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2]
+				%	
+				\addplot[color = 7blue1]
+				table[x=L, y=error_tenpy_chi_16, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 16$}
+				%
+				\addplot[color = 7blue2]
+				table[x=L, y=error_tenpy_chi_32, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 32$}
+				%
+				\addplot[color = 7blue3]
+				table[x=L, y=error_tenpy_chi_64, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 64$}
+				%
+				\addplot[color = 7blue4]
+				table[x=L, y=error_tenpy_chi_128, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 128$}
+				%
+				\addplot[color = 7blue5]
+				table[x=L, y=error_tenpy_chi_256, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 256$}
+				%
+				\addplot[color = 7blue6]
+				table[x=L, y=error_tenpy_chi_512, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 512$}
+				%
+				\addplot[color = 7blue7]
+				table[x=L, y=error_tenpy_chi_1024, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$\chi = 1024$}
+				%
+			\end{axis}
+			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
+				%
+				\addplot[color = 3red1, mark=*]
+				table[x=L, y=error_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$D = 2$}
+				%
+				\addplot[color = 3red2, mark=*]
+				table[x=L, y=error_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$D = 3$}
+				%
+				\addplot[color = 3red3, mark=*]
+				table[x=L, y=error_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$D = 4$}
+				%
+			\end{axis}%
+		\end{tikzpicture}%
+	\end{minipage}
+	\caption{In this figure we visualize the data from figure \protect\figref{fig:tfi_gs_energy_vs_dtau_larger_systems} by plotting the relative ground state energy error with respect to the energy obtained from extrapolating the DMRG simulation to $\chi\rightarrow\infty$. One can observe that the energy error of the disoTPS simulation approaches a constant for large $L$.}
 	\label{fig:disoTPS_gs_search_larger_systems_log}
 \end{figure}

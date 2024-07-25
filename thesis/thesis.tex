@@ -1,8 +1,7 @@
 \documentclass[encoding=utf8,british]{template/thesis}
 \usepackage[OT1]{fontenc}
-
-% centered subsubsections!
-%\subsubsectionfont{\centering}
+\usepackage{ragged2e}
+\justifying
 
 \usepgfplotslibrary{external}
 \tikzexternalize
@@ -64,6 +63,7 @@
 	\tableofcontents
 	
 	\mainmatter
+	\justifying
 	
 	\chapter{Introduction}
 	\label{chap:introduction}

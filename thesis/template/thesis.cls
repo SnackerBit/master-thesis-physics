@@ -229,6 +229,10 @@
 \def\gsEnergyVsDtauFigureWidth{3.2cm}
 \def\gsEnergyVsDtauFigureHeight{4cm}
 
+% 3 lengthy subfigures below each other
+\def\globalQuenchLargeFieldFigureWidth{12cm}
+\def\globalQuenchLargeFieldFigureHeight{3cm}
+
 \def\legendscale{1.0}
 
 \def\doubleFigureWidth{6.125cm}

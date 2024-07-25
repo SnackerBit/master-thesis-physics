@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  24 JUL 2024 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  25 JUL 2024 15:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -872,9 +872,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language34). Reported on input line 105.
+(babel)             (\language47). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language34). Reported on input line 108.
+(babel)             (\language47). Reported on input line 108.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
@@ -950,10 +950,28 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+(/usr/local/share/texmf/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2013/10/03 v1.9 Data Visualization (1.9)
 
+(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+)
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+
+(/usr/share/texlive/texmf-dist/tex/latex/everyshi/everyshi.sty
+Package: everyshi 2020/11/18 v4.00 EveryShipout Package
+))
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/local/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -971,381 +989,333 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen186
 \Gin@req@width=\dimen187
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen188
-\pgfutil@tempdimb=\dimen189
+(/usr/local/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
-))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen190
-\pgf@y=\dimen191
-\pgf@xa=\dimen192
-\pgf@ya=\dimen193
-\pgf@xb=\dimen194
-\pgf@yb=\dimen195
-\pgf@xc=\dimen196
-\pgf@yc=\dimen197
-\pgf@xd=\dimen198
-\pgf@yd=\dimen199
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
 \w@pgf@writea=\write5
 \r@pgf@reada=\read5
 \c@pgf@counta=\count446
 \c@pgf@countb=\count447
 \c@pgf@countc=\count448
 \c@pgf@countd=\count449
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count450
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count451
-\pgfsyssoftpath@bigbuffer@items=\count452
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count450
+\pgfsyssoftpath@bigbuffer@items=\count451
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen256
-\pgfmath@count=\count453
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count452
 \pgfmath@box=\box60
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
-ric.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.cod
 e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count454
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.t
+ex) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+) (/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/local/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count453
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.te
 x
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen257
-\pgf@picmaxx=\dimen258
-\pgf@picminy=\dimen259
-\pgf@picmaxy=\dimen260
-\pgf@pathminx=\dimen261
-\pgf@pathmaxx=\dimen262
-\pgf@pathminy=\dimen263
-\pgf@pathmaxy=\dimen264
-\pgf@xx=\dimen265
-\pgf@xy=\dimen266
-\pgf@yx=\dimen267
-\pgf@yy=\dimen268
-\pgf@zx=\dimen269
-\pgf@zy=\dimen270
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
-code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen271
-\pgf@path@lasty=\dimen272
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
-.tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen273
-\pgf@shorten@start@additional=\dimen274
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
-x
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count455
+\pgf@picture@serial@count=\count454
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
-ode.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen275
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen271
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
-s.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen276
-\pgf@pt@y=\dimen277
-\pgf@pt@temp=\dimen278
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
-ex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
-.code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
-x
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen279
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen280
-\pgf@sys@shading@range@num=\count456
-\pgf@shadingcount=\count457
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.
 tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.t
+ex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count455
+)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box64
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
-x
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
-ode.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
-tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+) (/usr/local/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+))) (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box65
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
-.sty
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen281
-\pgf@nodesepend=\dimen282
+(/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
-.sty
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen283
-\pgffor@skip=\dimen284
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+(/usr/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
+)
+(/usr/local/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/local/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen278
+\pgffor@skip=\dimen279
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
-.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count458
-\pgfplotmarksize=\dimen285
+(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.t
+ex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count456
+\pgfplotmarksize=\dimen280
 )
-\tikz@lastx=\dimen286
-\tikz@lasty=\dimen287
-\tikz@lastxsaved=\dimen288
-\tikz@lastysaved=\dimen289
-\tikz@lastmovetox=\dimen290
-\tikz@lastmovetoy=\dimen291
-\tikzleveldistance=\dimen292
-\tikzsiblingdistance=\dimen293
+\tikz@lastx=\dimen281
+\tikz@lasty=\dimen282
+\tikz@lastxsaved=\dimen283
+\tikz@lastysaved=\dimen284
+\tikzleveldistance=\dimen285
+\tikzsiblingdistance=\dimen286
 \tikz@figbox=\box66
-\tikz@figbox@bg=\box67
-\tikz@tempbox=\box68
-\tikz@tempbox@bg=\box69
-\tikztreelevel=\count459
-\tikznumberofchildren=\count460
-\tikznumberofcurrentchild=\count461
-\tikz@fig@count=\count462
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count463
-\pgfmatrixcurrentcolumn=\count464
-\pgf@matrix@numberofcolumns=\count465
+\tikz@tempbox=\box67
+\tikztreelevel=\count457
+\tikznumberofchildren=\count458
+\tikznumberofcurrentchild=\count459
+\tikz@fig@count=\count460
+ (/usr/local/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count461
+\pgfmatrixcurrentcolumn=\count462
+\pgf@matrix@numberofcolumns=\count463
 )
-\tikz@expandcount=\count466
+\tikz@expandcount=\count464
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks38
-\t@pgfplots@tokb=\toks39
-\t@pgfplots@tokc=\toks40
-\pgfplots@tmpa=\dimen294
-\c@pgfplots@coordindex=\count467
-\c@pgfplots@scanlineindex=\count468
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks35
+\t@pgfplots@tokb=\toks36
+\t@pgfplots@tokc=\toks37
+\pgfplots@tmpa=\dimen287
+\c@pgfplots@coordindex=\count465
+\c@pgfplots@scanlineindex=\count466
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
-.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
-ex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
-gfsupp_loader.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
+(/usr/local/share/texmf/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+loader.code.tex
+Package pgfplots: loading complementary code for your PGF version...
+
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+misc.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks40
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
-tructure.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
-tructureext.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
-.code.tex
-\c@pgfplotsarray@tmp=\count469
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count467
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
-x.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
-d.code.tex
-\c@pgfplotstable@counta=\count470
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
+\pgf@plot@mark@count=\count468
+\pgfplotmarksize=\dimen288
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgflibraryfpu.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
+\pgfpic=\box68
+\pgf@hbox=\box69
+\pgf@layerbox@main=\box70
+\pgf@picture@serial@count=\count469
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_
+pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
+))
+(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructur
+e.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructur
+eext.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsarray.code.t
+ex
+\c@pgfplotsarray@tmp=\count470
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.
+tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/numtable/pgfplotstableshared.code.
+tex
+\c@pgfplotstable@counta=\count471
 \t@pgfplotstable@a=\toks41
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
-x
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
-de.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
-fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count471
+(/usr/local/share/texmf/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.t
+ex) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)
+) (/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
-shading.pgfsys-pdftex.def)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
-tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
-ex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
-ex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
-e.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
-tex)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
-e.tex
-\pgfdecoratedcompleteddistance=\dimen295
-\pgfdecoratedremainingdistance=\dimen296
-\pgfdecoratedinputsegmentcompleteddistance=\dimen297
-\pgfdecoratedinputsegmentremainingdistance=\dimen298
-\pgf@decorate@distancetomove=\dimen299
-\pgf@decorate@repeatstate=\count472
-\pgfdecorationsegmentamplitude=\dimen300
-\pgfdecorationsegmentlength=\dimen301
-)
-\tikz@lib@dec@box=\box70
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.pathmorphing.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
-decorations.pathmorphing.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.pathreplacing.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
-decorations.pathreplacing.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
-ntourlua.code.tex)
-\pgfplots@numplots=\count473
-\pgfplots@xmin@reg=\dimen302
-\pgfplots@xmax@reg=\dimen303
-\pgfplots@ymin@reg=\dimen304
-\pgfplots@ymax@reg=\dimen305
-\pgfplots@zmin@reg=\dimen306
-\pgfplots@zmax@reg=\dimen307
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshadin
+g.code.tex
+\c@pgfplotslibrarysurf@no=\count472
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
-de.tex
-File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/local/share/texmf/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading
+.pgfsys-pdftex.def)))
+(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex))
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/local/share/texmf/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen289
+\pgfdecoratedremainingdistance=\dimen290
+\pgfdecoratedinputsegmentcompleteddistance=\dimen291
+\pgfdecoratedinputsegmentremainingdistance=\dimen292
+\pgf@decorate@distancetomove=\dimen293
+\pgf@decorate@repeatstate=\count473
+\pgfdecorationsegmentamplitude=\dimen294
+\pgfdecorationsegmentlength=\dimen295
+)
+\tikz@lib@dec@box=\box71
+)
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathmorphing.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathmorphing.code.tex))
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+ydecorations.pathreplacing.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorat
+ions.pathreplacing.code.tex))
+\pgfplots@numplots=\count474
+\pgfplots@xmin@reg=\dimen296
+\pgfplots@xmax@reg=\dimen297
+\pgfplots@ymin@reg=\dimen298
+\pgfplots@ymax@reg=\dimen299
+\pgfplots@zmin@reg=\dimen300
+\pgfplots@zmax@reg=\dimen301
+)
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrar
+yplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/local/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.col
 orbrewer.code.tex
@@ -1353,18 +1323,37 @@ orbrewer.code.tex
 .code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.ex
-ternal.code.tex
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
-yexternal.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zexternalshared.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+\CenteringLeftskip=\skip110
+\RaggedLeftLeftskip=\skip111
+\RaggedRightLeftskip=\skip112
+\CenteringRightskip=\skip113
+\RaggedLeftRightskip=\skip114
+\RaggedRightRightskip=\skip115
+\CenteringParfillskip=\skip116
+\RaggedLeftParfillskip=\skip117
+\RaggedRightParfillskip=\skip118
+\JustifyingParfillskip=\skip119
+\CenteringParindent=\skip120
+\RaggedLeftParindent=\skip121
+\RaggedRightParindent=\skip122
+\JustifyingParindent=\skip123
+)
+(/usr/local/share/texmf/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.
+code.tex
+(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/libraries/tikzlibraryextern
+al.code.tex
+(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzextern
+alshared.code.tex
+\tikzexternal@outfile=\write6
+)))
 \openout5 = `thesis.auxlock'.
 
-\largestimage=\box71
-\largestimagea=\box72
-\largestimageb=\box73
-\largestimagec=\box74
+\largestimage=\box72
+\largestimagea=\box73
+\largestimageb=\box74
+\largestimagec=\box75
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1372,59 +1361,51 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
  (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-Package scrbase Info: activating british \contentsname on input line 40.
-Package scrbase Info: activating british \listfigurename on input line 40.
-Package scrbase Info: activating british \listtablename on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+Package scrbase Info: activating british \contentsname on input line 39.
+Package scrbase Info: activating british \listfigurename on input line 39.
+Package scrbase Info: activating british \listtablename on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count474
-\scratchdimen=\dimen308
-\scratchbox=\box75
-\nofMPsegments=\count475
-\nofMParguments=\count476
+\scratchcounter=\count475
+\scratchdimen=\dimen302
+\scratchbox=\box76
+\nofMPsegments=\count476
+\nofMParguments=\count477
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count477
-\MPscratchDim=\dimen309
-\MPnumerator=\count478
-\makeMPintoPDFobject=\count479
+\MPscratchCnt=\count478
+\MPscratchDim=\dimen303
+\MPnumerator=\count479
+\makeMPintoPDFobject=\count480
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package soulpos Info: Loading soulutf8 on input line 40.
+Package soulpos Info: Loading soulutf8 on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
@@ -1436,12 +1417,12 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks46
 \SOUL@buffer=\toks47
 \SOUL@token=\toks48
-\SOUL@spaceskip=\skip110
-\SOUL@ttwidth=\dimen310
-\SOUL@uldp=\dimen311
-\SOUL@ulht=\dimen312
+\SOUL@spaceskip=\skip124
+\SOUL@ttwidth=\dimen304
+\SOUL@uldp=\dimen305
+\SOUL@ulht=\dimen306
 ))
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1449,15 +1430,15 @@ Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count480
+\c@section@level=\count481
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write6
-\openout6 = `thesis.out'.
+\@outlinefile=\write7
+\openout7 = `thesis.out'.
 
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1466,14 +1447,14 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 40.
+(scrbook)           before \begin{document} on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count481
+\BKM@id=\count482
 ))
 Package biblatex Info: Trying to load language 'british'...
 Package biblatex Info: ... file 'british.lbx' found.
@@ -1495,25 +1476,25 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 40.
-Package biblatex Info: Reference segment=0 on input line 40.
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 40.
-Package microtype Info: Applying patch `item' on input line 40.
-Package microtype Info: Applying patch `toc' on input line 40.
+LaTeX Info: Redefining \microtypecontext on input line 39.
+Package microtype Info: Applying patch `item' on input line 39.
+Package microtype Info: Applying patch `toc' on input line 39.
 
 
-Package microtype Warning: Unable to apply patch `eqnum' on input line 40.
+Package microtype Warning: Unable to apply patch `eqnum' on input line 39.
 
-Package microtype Info: Applying patch `footnote' on input line 40.
+Package microtype Info: Applying patch `footnote' on input line 39.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 40.
+LaTeX Info: Redefining \showhyphens on input line 39.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1527,9 +1508,9 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
-your preamble.
- on input line 40.
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
+our preamble.
+ on input line 39.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1538,14 +1519,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 <template/pictures/PH.pdf, id=7, 29.8716pt x 29.8716pt>
 File: template/pictures/PH.pdf Graphic file (type pdf)
 <use template/pictures/PH.pdf>
-Package pdftex.def Info: template/pictures/PH.pdf  used on input line 42.
+Package pdftex.def Info: template/pictures/PH.pdf  used on input line 41.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <template/pictures/TUM.pdf, id=8, 53.24893pt x 28.45631pt>
 File: template/pictures/TUM.pdf Graphic file (type pdf)
 <use template/pictures/TUM.pdf>
-Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 42.
+Package pdftex.def Info: template/pictures/TUM.pdf  used on input line 41.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1553,7 +1534,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1575,13 +1556,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [3]
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 62.
+ line 61.
  [4]
-Package tocbasic Info: character protrusion at toc deactivated on input line 64
+Package tocbasic Info: character protrusion at toc deactivated on input line 63
 .
  (./thesis.toc)
-\tf@toc=\write7
-\openout7 = `thesis.toc'.
+\tf@toc=\write8
+\openout8 = `thesis.toc'.
 
  [5
 
@@ -1767,9 +1748,8 @@ df)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf  
 used on input line 18.
 (pdftex.def)             Requested size: 397.20398pt x 59.5694pt.
- [12]
 <figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation
-_value.pdf, id=484, 330.95746pt x 94.54523pt>
+_value.pdf, id=475, 330.95746pt x 94.54523pt>
 File: figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expect
 ation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expecta
@@ -1777,10 +1757,11 @@ tion_value.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_local_expectation_val
 ue/mps_local_expectation_value.pdf  used on input line 24.
 (pdftex.def)             Requested size: 330.95665pt x 94.54498pt.
- [13 <./figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf> <./figures/tikz/T
-ensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf>]
+ [12] [13 <./figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf> <./figures/t
+ikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf
+>]
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=5
-48, 327.42123pt x 59.56955pt>
+49, 327.42123pt x 59.56955pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf>
@@ -1788,7 +1769,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_a.pdf  used on input line 49.
 (pdftex.def)             Requested size: 327.42043pt x 59.5694pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf, id=5
-49, 121.44873pt x 94.54523pt>
+50, 121.44873pt x 94.54523pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
@@ -1796,7 +1777,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_b.pdf  used on input line 56.
 (pdftex.def)             Requested size: 121.44843pt x 94.54498pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf, id=5
-50, 115.59888pt x 94.54523pt>
+51, 115.59888pt x 94.54523pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>
@@ -1804,7 +1785,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_c.pdf  used on input line 61.
 (pdftex.def)             Requested size: 115.59859pt x 94.54498pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mps_ca
-nonical_form_local_expectation_value.pdf, id=551, 331.51855pt x 305.68803pt>
+nonical_form_local_expectation_value.pdf, id=552, 331.51855pt x 305.68803pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/m
 ps_canonical_form_local_expectation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mp
@@ -1813,12 +1794,12 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form_local_
 expectation_value/mps_canonical_form_local_expectation_value.pdf  used on input
  line 67.
 (pdftex.def)             Requested size: 331.51773pt x 305.68729pt.
- [14] [15 <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form
-_a.pdf> <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b
-.pdf> <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.p
-df>] [16 <./figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_v
-alue/mps_canonical_form_local_expectation_value.pdf>] [17]
-<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf, id=666, 311.19463pt x 11
+ [14 <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pd
+f> <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
+ <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>] 
+[15 <./figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/
+mps_canonical_form_local_expectation_value.pdf>] [16] [17]
+<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf, id=668, 311.19463pt x 11
 8.4716pt>
 File: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf Graphic file (type p
 df)
@@ -1826,7 +1807,7 @@ df)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf  
 used on input line 147.
 (pdftex.def)             Requested size: 311.19386pt x 118.4713pt.
-<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf, id=667, 350.79959pt x 84
+<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf, id=669, 350.79959pt x 84
 .87108pt>
 File: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf Graphic file (type p
 df)
@@ -1835,8 +1816,8 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf
 used on input line 152.
 (pdftex.def)             Requested size: 350.79874pt x 84.87085pt.
 )
-(./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex [18]
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=679, 
+(./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=673, 
 134.89998pt x 140.39049pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf Grap
 hic file (type pdf)
@@ -1844,7 +1825,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_a.pdf  used on input line 12.
 (pdftex.def)             Requested size: 134.89964pt x 140.39014pt.
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=680, 
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=674, 
 143.473pt x 160.7355pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf Grap
 hic file (type pdf)
@@ -1852,13 +1833,11 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_b.pdf  used on input line 17.
 (pdftex.def)             Requested size: 143.47266pt x 160.73509pt.
-
+ [18]
 [19 <./figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf> <./figures/tikz/Te
-nsor_Networks/mps_TEBD/mps_TEBD_b.pdf>] [20 <./figures/tikz/Tensor_Networks/iso
-TPS_structure/isoTPS_structure_a.pdf> <./figures/tikz/Tensor_Networks/isoTPS_st
-ructure/isoTPS_structure_b.pdf>]
+nsor_Networks/mps_TEBD/mps_TEBD_b.pdf>]
 <figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ortho_ce
-nter.pdf, id=758, 222.80038pt x 108.80048pt>
+nter.pdf, id=739, 222.80038pt x 108.80048pt>
 File: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ort
 ho_center.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_orth
@@ -1867,7 +1846,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_cente
 r/isoTPS_moving_ortho_center.pdf  used on input line 27.
 (pdftex.def)             Requested size: 222.79982pt x 108.80019pt.
 <figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ortho_s
-urface.pdf, id=759, 315.79982pt x 160.7355pt>
+urface.pdf, id=740, 315.79982pt x 160.7355pt>
 File: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_or
 tho_surface.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ort
@@ -1875,10 +1854,9 @@ ho_surface.pdf>
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surfa
 ce/isoTPS_moving_ortho_surface.pdf  used on input line 33.
 (pdftex.def)             Requested size: 315.79904pt x 160.73509pt.
- [21 <./figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_o
-rtho_center.pdf> <./figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/is
-oTPS_moving_ortho_surface.pdf>]
-<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf, id=818, 395.7987pt x 1
+ [20 <./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf> <
+./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>]
+<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf, id=769, 395.7987pt x 1
 60.7355pt>
 File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf Graphic file (type
  pdf)
@@ -1891,7 +1869,7 @@ Overfull \hbox (1.10909pt too wide) in paragraph at lines 53--54
  [][] 
  []
 
-<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf, id=819, 391.29991pt x 
+<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf, id=770, 391.29991pt x 
 73.4986pt>
 File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf Graphic file (type
  pdf)
@@ -1899,8 +1877,14 @@ File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf Graphic file (type
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf
   used on input line 59.
 (pdftex.def)             Requested size: 391.29895pt x 73.4984pt.
-[22] [23 <./figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf> <./figures/
-tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf>])) [24]
+[21 <./figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_or
+tho_center.pdf> <./figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/iso
+TPS_moving_ortho_surface.pdf>] [22 <./figures/tikz/Tensor_Networks/isoTPS_MM/is
+oTPS_MM_a.pdf> <./figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf>]))
+[23] [24
+
+
+]
 chapter 3.
 (./chapters/disoTPS/disoTPS.tex (./chapters/disoTPS/network_structure.tex
 <figures/tikz/disoTPS/disoTPS_structure/disoTPS_structure.pdf, id=885, 177.8996
@@ -1915,10 +1899,7 @@ re.pdf  used on input line 4.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25
-
-
-]
+[25]
 <figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_value_a.p
 df, id=893, 173.00034pt x 182.40044pt>
 File: figures/tikz/disoTPS/one_site_expectation_value/one_site_expectation_valu
@@ -2090,6 +2071,11 @@ aphic file (type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vid
 al_renyi_2_b.pdf  used on input line 78.
 (pdftex.def)             Requested size: 140.19943pt x 182.39899pt.
+
+Underfull \hbox (badness 1960) in paragraph at lines 82--82
+[]\OT1/cmr/m/n/10.95 (+20) Minimizing the trun-ca-tion er-ror $\OML/cmm/m/it/10
+.95 f[] []$ \OT1/cmr/m/n/10.95 (+20) and gen-eral R^^Senyi-entropies
+ []
 
 [35 <./figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf
 > <./figures/tikz/disoTPS/rho_definition/rho_definition.pdf>] [36 <./figures/ti
@@ -2311,35 +2297,10 @@ File: figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf>
 Package pdftex.def Info: figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf  used o
 n input line 5.
-(pdftex.def)             Requested size: 172.9999pt x 172.9999pt.
+(pdftex.def)             Requested size: 103.80098pt x 103.80098pt.
  (./chapters/TFI/TFI_model.tex [53])
 (./chapters/TFI/ground_state_search.tex [54 <./figures/tikz/TFI/dmrg_snaking/dm
 rg_snaking.pdf>]
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 22.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-
-LaTeX Warning: Reference `' on page 55 undefined on input line 23.
-
-[55]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_methods.tex
 ===== Image 'thesis-figure5' is up-to-date. ======
 ===== Image 'thesis-figure6' is up-to-date. ======
@@ -2353,62 +2314,72 @@ LaTeX Warning: Reference `' on page 55 undefined on input line 23.
 ===== Image 'thesis-figure14' is up-to-date. ======
 ===== Image 'thesis-figure15' is up-to-date. ======
 ===== Image 'thesis-figure16' is up-to-date. ======
-)
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 26.
+LaTeX Warning: Float too large for page by 32.45132pt on input line 221.
 
-(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.tex
+) [55] [56 <./thesis-figure5.pdf> <./thesis-figure6.pdf> <./thesis-figure7.pdf>
+ <./thesis-figure8.pdf> <./thesis-figure9.pdf> <./thesis-figure10.pdf> <./thesi
+s-figure11.pdf> <./thesis-figure12.pdf> <./thesis-figure13.pdf> <./thesis-figur
+e14.pdf> <./thesis-figure15.pdf> <./thesis-figure16.pdf>]
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_chi_factors.
+tex
 ===== Image 'thesis-figure17' is up-to-date. ======
 ===== Image 'thesis-figure18' is up-to-date. ======
 ===== Image 'thesis-figure19' is up-to-date. ======
 )
-
-LaTeX Warning: Reference `' on page 56 undefined on input line 28.
-
-(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.tex
 ===== Image 'thesis-figure20' is up-to-date. ======
 ===== Image 'thesis-figure21' is up-to-date. ======
-)
-
-LaTeX Warning: Reference `' on page 56 undefined on input line 30.
-
-
-LaTeX Warning: Reference `' on page 56 undefined on input line 30.
-
-[56] [57 <./thesis-figure5.pdf> <./thesis-figure6.pdf> <./thesis-figure7.pdf> <
-./thesis-figure8.pdf> <./thesis-figure9.pdf> <./thesis-figure10.pdf> <./thesis-
-figure11.pdf> <./thesis-figure12.pdf> <./thesis-figure13.pdf> <./thesis-figure1
-4.pdf> <./thesis-figure15.pdf> <./thesis-figure16.pdf>]
-(./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
 ===== Image 'thesis-figure22' is up-to-date. ======
-[58 <./thesis-figure17.pdf> <./thesis-figure18.pdf> <./thesis-figure19.pdf> <./
-thesis-figure20.pdf> <./thesis-figure21.pdf>])
-(./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
 ===== Image 'thesis-figure23' is up-to-date. ======
-)
-
-LaTeX Warning: Reference `' on page 59 undefined on input line 33.
-
-
-LaTeX Warning: Reference `' on page 59 undefined on input line 33.
-
-
-LaTeX Warning: Reference `' on page 59 undefined on input line 33.
-
-(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
+) [57] [58 <./thesis-figure17.pdf> <./thesis-figure18.pdf> <./thesis-figure19.p
+df> <./thesis-figure20.pdf> <./thesis-figure21.pdf> <./thesis-figure22.pdf> <./
+thesis-figure23.pdf>]
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
 ===== Image 'thesis-figure24' is up-to-date. ======
 ===== Image 'thesis-figure25' is up-to-date. ======
-)) (./chapters/TFI/time_evolution.tex
+) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_larger_systems.tex
+===== Image 'thesis-figure26' is up-to-date. ======
+===== Image 'thesis-figure27' is up-to-date. ======
+===== Image 'thesis-figure28' is up-to-date. ======
+===== Image 'thesis-figure29' is up-to-date. ======
+) (./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
+===== Image 'thesis-figure30' is up-to-date. ======
+) (./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
+===== Image 'thesis-figure31' is up-to-date. ======
+) [59 <./thesis-figure24.pdf> <./thesis-figure25.pdf>] [60 <./thesis-figure26.p
+df> <./thesis-figure27.pdf> <./thesis-figure28.pdf> <./thesis-figure29.pdf> <./
+thesis-figure30.pdf>]
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
+===== Image 'thesis-figure32' is up-to-date. ======
+===== Image 'thesis-figure33' is up-to-date. ======
+)
 
-LaTeX Warning: Reference `' on page 59 undefined on input line 1.
-
-)) [59 <./thesis-figure22.pdf>] [60 <./thesis-figure23.pdf> <./thesis-figure24.
-pdf> <./thesis-figure25.pdf>] [61] [62
+LaTeX Warning: Reference `' on page 61 undefined on input line 41.
 
 
-]
+LaTeX Warning: Reference `' on page 61 undefined on input line 41.
+
+) [61 <./thesis-figure31.pdf>] (./chapters/TFI/time_evolution.tex
+(./figures/plots/TFI/global_quench/global_quench_g_critical.tex
+===== Image 'thesis-figure34' is up-to-date. ======
+
+Overfull \hbox (2.99374pt too wide) in paragraph at lines 7--63
+ [][] 
+ []
+
+) [62 <./thesis-figure32.pdf> <./thesis-figure33.pdf>]
+(./figures/plots/TFI/global_quench/global_quench_g_6.tex
+===== Image 'thesis-figure35' is up-to-date. ======
+===== Image 'thesis-figure36' is up-to-date. ======
+===== Image 'thesis-figure37' is up-to-date. ======
+))) [63 <./thesis-figure34.pdf>] [64 <./thesis-figure35.pdf> <./thesis-figure36
+.pdf> <./thesis-figure37.pdf>]
 chapter 6.
-[63] [64
+[65
+
+
+] [66
 
 
 ]
@@ -2417,35 +2388,35 @@ chapter A.
 (./chapters/optimization_problems_on_isometric_tensor_networks/optimization_pro
 blems_on_isometric_tensor_networks.tex
 (./chapters/optimization_problems_on_isometric_tensor_networks/orthogonal_procr
-ustes_problem.tex [65]
+ustes_problem.tex [67]
 
 LaTeX Warning: Command \i invalid in math mode on input line 5.
 
-[66])
+[68])
 (./chapters/optimization_problems_on_isometric_tensor_networks/evenbly_vidal_al
 gorithm.tex
 
-LaTeX Warning: Reference `app:' on page 67 undefined on input line 5.
+LaTeX Warning: Reference `app:' on page 69 undefined on input line 5.
 
 )
 (./chapters/optimization_problems_on_isometric_tensor_networks/cost_function_mu
-ltiple_tensors.tex [67]
+ltiple_tensors.tex [69]
 
-LaTeX Warning: Reference `' on page 68 undefined on input line 2.
+LaTeX Warning: Reference `' on page 70 undefined on input line 2.
 
-)) [68]
+)) [70]
 chapter B.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [69
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [71
 
 
 ])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [70] [71] [72
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [72] [73] [74
 
 
 ]
 chapter C.
-[73] [74
+[75] [76
 
 
 ]
@@ -2453,13 +2424,13 @@ chapter D.
 
 (./chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computa
 tion_of_gradient_and_hvp_for_riemannian_optimization.tex
-<figures/appendix_C/svd_derivative.jpeg, id=2367, 3639.5975pt x 1003.75pt>
+<figures/appendix_C/svd_derivative.jpeg, id=2550, 3639.5975pt x 1003.75pt>
 File: figures/appendix_C/svd_derivative.jpeg Graphic file (type jpg)
 <use figures/appendix_C/svd_derivative.jpeg>
 Package pdftex.def Info: figures/appendix_C/svd_derivative.jpeg  used on input 
 line 3.
 (pdftex.def)             Requested size: 318.67212pt x 87.88304pt.
-<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=2370, 2242.3775pt x 1
+<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=2553, 2242.3775pt x 1
 003.75pt>
 File: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg Graphic file (type j
 pg)
@@ -2467,7 +2438,7 @@ pg)
 Package pdftex.def Info: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg  
 used on input line 9.
 (pdftex.def)             Requested size: 318.67212pt x 142.63765pt.
-<figures/appendix_C/gradient_truncation_error.jpeg, id=2373, 2242.3775pt x 1002
+<figures/appendix_C/gradient_truncation_error.jpeg, id=2556, 2242.3775pt x 1002
 .74625pt>
 File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 
@@ -2475,21 +2446,21 @@ File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/appendix_C/gradient_truncation_error.jpeg  use
 d on input line 15.
 (pdftex.def)             Requested size: 318.67212pt x 142.49501pt.
-<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=2376, 1695.33376pt x 1003.
+<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=2559, 1695.33376pt x 1003.
 75pt>
 File: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_renyi_alpha_entropy.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg  used 
 on input line 21.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-<figures/appendix_C/hvp_truncation_error.jpeg, id=2379, 1695.33376pt x 1003.75p
+<figures/appendix_C/hvp_truncation_error.jpeg, id=2562, 1695.33376pt x 1003.75p
 t>
 File: figures/appendix_C/hvp_truncation_error.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_truncation_error.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_truncation_error.jpeg  used on 
 input line 27.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-) [75 <./figures/appendix_C/svd_derivative.jpeg>]
+) [77 <./figures/appendix_C/svd_derivative.jpeg>]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -2504,14 +2475,14 @@ Package scrlayer-scrpage Warning: \headheight to low.
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [76 <./figures/appendix_C/gradient_renyi_alpha_entropy.jpeg> <./figures/append
-ix_C/gradient_truncation_error.jpeg>] [77 <./figures/appendix_C/hvp_renyi_alpha
-_entropy.jpeg> <./figures/appendix_C/hvp_truncation_error.jpeg>] [78
+ [78 <./figures/appendix_C/gradient_renyi_alpha_entropy.jpeg> <./figures/append
+ix_C/gradient_truncation_error.jpeg>] [79 <./figures/appendix_C/hvp_renyi_alpha
+_entropy.jpeg> <./figures/appendix_C/hvp_truncation_error.jpeg>] [80
 
 
 ]
 chapter without number
-[79
+[81
 
 
 ]
@@ -2519,7 +2490,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [80] [81] [82] [83] (./thesis.aux
+ [82] [83] [84] [85] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -2534,13 +2505,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56352 strings out of 478287
- 1346576 string characters out of 5849290
- 2394050 words of memory out of 5000000
- 72982 multiletter control sequences out of 15000+600000
- 495791 words of font info for 211 fonts, out of 8000000 for 9000
+ 51208 strings out of 478287
+ 1165434 string characters out of 5849289
+ 2135644 words of memory out of 5000000
+ 67736 multiletter control sequences out of 15000+600000
+ 498521 words of font info for 253 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 140i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/share/texlive/texmf-di
@@ -2571,10 +2542,10 @@ fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1095.pfb>
-Output written on thesis.pdf (89 pages, 2139214 bytes).
+Output written on thesis.pdf (91 pages, 2282294 bytes).
 PDF statistics:
- 2702 PDF objects out of 2984 (max. 8388607)
- 2087 compressed objects within 21 object streams
+ 2905 PDF objects out of 2984 (max. 8388607)
+ 2243 compressed objects within 23 object streams
  301 named destinations out of 1000 (max. 500000)
- 54346 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 54406 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,55 +1,75 @@
 \begin{figure}
 	\centering
-	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={$N_\text{iters} = 50$}]
-			%	
-			\addplot[color = 3blue1, mark=*]
-			table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt};
-			%\addlegendentry{$D = 2$}
-			%	
-			\addplot[color = 3blue2, mark=*]
-			table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt};
-			%\addlegendentry{$D = 4$}
-			%	
-			\addplot[color = 3blue3, mark=*]
-			table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt};
-			%\addlegendentry{$D = 6$}
-		\end{axis}%
-	\end{tikzpicture}%
-	\,\,
-	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$N_\text{iters} = 100$}]
-			%	
-			\addplot[color = 3blue1, mark=*]
-			table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_100.txt};
-			%\addlegendentry{$D = 2$}
-			%	
-			\addplot[color = 3blue2, mark=*]
-			table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_100.txt};
-			%\addlegendentry{$D = 4$}
-			%	
-			\addplot[color = 3blue3, mark=*]
-			table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_100.txt};
-			%\addlegendentry{$D = 6$}
-		\end{axis}%
-	\end{tikzpicture}%
-	\,\,
-	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$N_\text{iters} = 200$}, legend style={nodes={scale=\legendscale, transform shape}}]
-			%	
-			\addplot[color = 3blue1, mark=*]
-			table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt};
-			\addlegendentry{$D = 2$}
-			%	
-			\addplot[color = 3blue2, mark=*]
-			table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt};
-			\addlegendentry{$D = 4$}
-			%	
-			\addplot[color = 3blue3, mark=*]
-			table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt};
-			\addlegendentry{$D = 6$}
-		\end{axis}%
-	\end{tikzpicture}%
-	\caption{\todo{Caption}}
+	\begin{minipage}{1.0\textwidth}
+		\centering
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={$N_\text{iters} = 1$}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_1.txt};
+				%\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_1.txt};
+				%\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_1.txt};
+				%\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+		\,\,
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$N_\text{iters} = 10$}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_10.txt};
+				%\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_10.txt};
+				%\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_10.txt};
+				%\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+		\,\,
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$N_\text{iters} = 50$}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt};
+				%\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt};
+				%\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt};
+				%\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+		\,\,
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$N_\text{iters} = 200$}, legend style={nodes={scale=\legendscale, transform shape}}, legend pos=north west]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt};
+				\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt};
+				\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt};
+				\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+	\end{minipage}
+	\caption{In this figure we test how many iterations of Riemannian optimization are necessary for the approximate TRM algorithm minimizing the Rényi-$0.5$ entropy to converge. As a model we use the TFI model on a $4\times4$ suare lattice with a transverse field of $g = 3.5$. The bond dimension of the orthogonality hypersurface is set to $\chi=6\cdot D$. We compute the ground state energy with imaginary TEBD for different time step sizes $\text{d}\tau$.}
 	\label{fig:tfi_gs_energy_vs_dtau_different_N_iters}
 \end{figure}

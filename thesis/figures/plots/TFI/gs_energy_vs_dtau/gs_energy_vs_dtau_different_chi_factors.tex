@@ -1,0 +1,58 @@
+\begin{figure}
+	\centering
+	\begin{minipage}{1.0\textwidth}
+		\centering
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={$\chi = 2\cdot D$}, legend style={nodes={scale=\legendscale, transform shape}}, legend pos=north west]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_2.txt};
+				\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_2.txt};
+				\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_2.txt};
+				\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+		\,\,
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$\chi = 4\cdot D$}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_4.txt};
+				%\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_4.txt};
+				%\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_4.txt};
+				%\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+		\,\,
+		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$\chi = 6\cdot D$}]
+				%	
+				\addplot[color = 3blue1, mark=*]
+				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt};
+				%\addlegendentry{$D = 2$}
+				%	
+				\addplot[color = 3blue2, mark=*]
+				table[x=dtau, y=delta_E_D_max_4, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt};
+				%\addlegendentry{$D = 4$}
+				%	
+				\addplot[color = 3blue3, mark=*]
+				table[x=dtau, y=delta_E_D_max_6, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt};
+				%\addlegendentry{$D = 6$}
+			\end{axis}%
+		\end{tikzpicture}%
+	\end{minipage}
+	\caption{In this figure we test the effect of using different maximum bond dimensions $\chi$ for the orthogonality hypersurface. For the YB move we used the approximate TRM algorithm optimizing the Rényi-$0.5$ entropy. The optimization was run for a maximum of $N_\text{iter} = 100$ iterations per YB move. As a model we use the TFI model on a $4\times4$ suare lattice with a transverse field of $g = 3.5$. We compute the ground state energy with imaginary TEBD for different time step sizes $\text{d}\tau$.}
+	\label{fig:tfi_gs_energy_vs_dtau_different_chi_factors}
+\end{figure}
