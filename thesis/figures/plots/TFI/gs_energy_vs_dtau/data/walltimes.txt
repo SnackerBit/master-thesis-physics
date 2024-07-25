@@ -1,0 +1,13 @@
+walltime_svd 0.9063506126403809
+walltime_svd_init 0.7803809642791748
+walltime_svd 0.9063506126403809
+walltime_iterate_polar 5.042580604553223
+walltime_renyi_2_ev 1.8616626262664795
+walltime_trunc_cg 62.73412322998047
+walltime_trunc_approx_cg 22.153066873550415
+walltime_trunc_trm 224.94403100013733
+walltime_trunc_approx_trm 54.939692735672
+walltime_renyi_0_5_cg 85.70946168899536
+walltime_renyi_0_5_approx_cg 29.873801231384277
+walltime_renyi_0_5_trm 451.5372350215912
+walltime_renyi_0_5_approx_trm 73.2335991859436
