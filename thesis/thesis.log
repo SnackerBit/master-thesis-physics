@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  25 JUL 2024 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  25 JUL 2024 17:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1340,16 +1340,6 @@ Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \RaggedRightParindent=\skip122
 \JustifyingParindent=\skip123
 )
-(/usr/local/share/texmf/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.
-code.tex
-(/usr/local/share/texmf/tex/latex/pgf/frontendlayer/libraries/tikzlibraryextern
-al.code.tex
-(/usr/local/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzextern
-alshared.code.tex
-\tikzexternal@outfile=\write6
-)))
-\openout5 = `thesis.auxlock'.
-
 \largestimage=\box72
 \largestimagea=\box73
 \largestimageb=\box74
@@ -1437,8 +1427,8 @@ LaTeX Info: Redefining \pageref on input line 39.
 LaTeX Info: Redefining \nameref on input line 39.
 
 (./thesis.out) (./thesis.out)
-\@outlinefile=\write7
-\openout7 = `thesis.out'.
+\@outlinefile=\write6
+\openout6 = `thesis.out'.
 
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1561,8 +1551,8 @@ Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
 Package tocbasic Info: character protrusion at toc deactivated on input line 63
 .
  (./thesis.toc)
-\tf@toc=\write8
-\openout8 = `thesis.toc'.
+\tf@toc=\write7
+\openout7 = `thesis.toc'.
 
  [5
 
@@ -2007,14 +1997,15 @@ axter_move_iterative_d.pdf  used on input line 29.
 LaTeX Warning: Float too large for page by 22.72165pt on input line 34.
 
 (./figures/plots/disoTPS/yb_move_iterate_polar.tex
-===== Image 'thesis-figure0' is up-to-date. ======
-)) (./chapters/disoTPS/YB_move_svd_disentangle.tex [31 <./figures/tikz/disoTPS/
-yang_baxter_move_iterative/yang_baxter_move_iterative_a.pdf>] [32 <./figures/ti
-kz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_b.pdf> <./figu
-res/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c.pdf> <
-./figures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_d.
-pdf>]
-<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf, id=1137,
+PGFPlots: reading {figures/plots/disoTPS/data/iterate_polar.txt}
+))
+(./chapters/disoTPS/YB_move_svd_disentangle.tex [31 <./figures/tikz/disoTPS/yan
+g_baxter_move_iterative/yang_baxter_move_iterative_a.pdf>] [32 <./figures/tikz/
+disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_b.pdf> <./figures
+/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c.pdf> <./f
+igures/tikz/disoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_d.pdf
+>] [33]
+<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf, id=1143,
  345.69853pt x 65.79984pt>
 File: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf Grap
 hic file (type pdf)
@@ -2022,7 +2013,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_
 move_svd_a.pdf  used on input line 21.
 (pdftex.def)             Requested size: 345.69768pt x 65.79967pt.
-<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf, id=1138,
+<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf, id=1144,
  324.12193pt x 65.79984pt>
 File: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf Grap
 hic file (type pdf)
@@ -2030,7 +2021,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_
 move_svd_b.pdf  used on input line 26.
 (pdftex.def)             Requested size: 324.12114pt x 65.79967pt.
-<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf, id=1139,
+<figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf, id=1145,
  100.01968pt x 65.79984pt>
 File: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf Grap
 hic file (type pdf)
@@ -2038,19 +2029,18 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_
 move_svd_c.pdf  used on input line 31.
 (pdftex.def)             Requested size: 100.01942pt x 65.79967pt.
- [33 <./thesis-figure0.pdf>] [34 <./figures/tikz/disoTPS/yang_baxter_move_svd/y
-ang_baxter_move_svd_a.pdf> <./figures/tikz/disoTPS/yang_baxter_move_svd/yang_ba
-xter_move_svd_b.pdf> <./figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_m
-ove_svd_c.pdf>]
+ [34 <./figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf> <
+./figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf> <./figu
+res/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf>]
 <figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf, id=1
-235, 196.29637pt x 98.00014pt>
+212, 196.29637pt x 98.00014pt>
 File: figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf 
 Graphic file (type pdf)
 <use figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf>
 Package pdftex.def Info: figures/tikz/disoTPS/theta_tilde_contraction/theta_til
 de_contraction.pdf  used on input line 58.
 (pdftex.def)             Requested size: 196.29588pt x 97.99988pt.
-<figures/tikz/disoTPS/rho_definition/rho_definition.pdf, id=1236, 121.70067pt x
+<figures/tikz/disoTPS/rho_definition/rho_definition.pdf, id=1213, 121.70067pt x
  91.89732pt>
 File: figures/tikz/disoTPS/rho_definition/rho_definition.pdf Graphic file (type
  pdf)
@@ -2058,16 +2048,16 @@ File: figures/tikz/disoTPS/rho_definition/rho_definition.pdf Graphic file (type
 Package pdftex.def Info: figures/tikz/disoTPS/rho_definition/rho_definition.pdf
   used on input line 64.
 (pdftex.def)             Requested size: 121.70036pt x 91.8971pt.
-<figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf, id=123
-7, 137.34712pt x 182.39944pt>
+<figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf, id=121
+4, 137.34712pt x 182.39944pt>
 File: figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf Gr
 aphic file (type pdf)
 <use figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf>
 Package pdftex.def Info: figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vid
 al_renyi_2_a.pdf  used on input line 73.
 (pdftex.def)             Requested size: 137.34677pt x 182.39899pt.
-<figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf, id=123
-8, 140.19978pt x 182.39944pt>
+<figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf, id=121
+5, 140.19978pt x 182.39944pt>
 File: figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf Gr
 aphic file (type pdf)
 <use figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf>
@@ -2091,7 +2081,7 @@ LaTeX Warning: Reference `' on page 37 undefined on input line 94.
 LaTeX Warning: Reference `' on page 37 undefined on input line 94.
 
 [37]
-<figures/tikz/disoTPS/approximate_svd/approximate_svd_a.pdf, id=1340, 161.04767
+<figures/tikz/disoTPS/approximate_svd/approximate_svd_a.pdf, id=1317, 161.04767
 pt x 53.0pt>
 File: figures/tikz/disoTPS/approximate_svd/approximate_svd_a.pdf Graphic file (
 type pdf)
@@ -2099,7 +2089,7 @@ type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/approximate_svd/approximate_svd_a
 .pdf  used on input line 102.
 (pdftex.def)             Requested size: 161.04727pt x 52.99986pt.
-<figures/tikz/disoTPS/approximate_svd/approximate_svd_b.pdf, id=1341, 291.19992
+<figures/tikz/disoTPS/approximate_svd/approximate_svd_b.pdf, id=1318, 291.19992
 pt x 53.0pt>
 File: figures/tikz/disoTPS/approximate_svd/approximate_svd_b.pdf Graphic file (
 type pdf)
@@ -2107,7 +2097,7 @@ type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/approximate_svd/approximate_svd_b
 .pdf  used on input line 107.
 (pdftex.def)             Requested size: 291.1992pt x 52.99986pt.
-<figures/tikz/disoTPS/approximate_svd/approximate_svd_c.pdf, id=1342, 292.10028
+<figures/tikz/disoTPS/approximate_svd/approximate_svd_c.pdf, id=1319, 292.10028
 pt x 53.0pt>
 File: figures/tikz/disoTPS/approximate_svd/approximate_svd_c.pdf Graphic file (
 type pdf)
@@ -2115,7 +2105,7 @@ type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/approximate_svd/approximate_svd_c
 .pdf  used on input line 112.
 (pdftex.def)             Requested size: 292.09956pt x 52.99986pt.
-<figures/tikz/disoTPS/approximate_svd/approximate_svd_d.pdf, id=1343, 390.8994p
+<figures/tikz/disoTPS/approximate_svd/approximate_svd_d.pdf, id=1320, 390.8994p
 t x 28.7223pt>
 File: figures/tikz/disoTPS/approximate_svd/approximate_svd_d.pdf Graphic file (
 type pdf)
@@ -2128,7 +2118,7 @@ tikz/disoTPS/approximate_svd/approximate_svd_b.pdf> <./figures/tikz/disoTPS/app
 roximate_svd/approximate_svd_c.pdf> <./figures/tikz/disoTPS/approximate_svd/app
 roximate_svd_d.pdf>]
 <figures/tikz/disoTPS/riemannian_optimization/riemannian_optimization.pdf, id=1
-423, 372.51068pt x 130.72539pt>
+399, 372.51068pt x 130.72539pt>
 File: figures/tikz/disoTPS/riemannian_optimization/riemannian_optimization.pdf 
 Graphic file (type pdf)
 <use figures/tikz/disoTPS/riemannian_optimization/riemannian_optimization.pdf>
@@ -2137,46 +2127,86 @@ n_optimization.pdf  used on input line 125.
 (pdftex.def)             Requested size: 372.50975pt x 130.72505pt.
 
 (./figures/plots/disoTPS/yb_move_disentangling_renyi_2.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure1" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
+PGFPlots: reading {figures/plots/disoTPS/data/evenbly_vidal_renyi_2_disentangli
+ng.txt}
+)
+(./figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
 
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure1" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-) (./figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "thesis-figure2" "\def\tikzexternalreal
-job{thesis}\input{thesis}"' ========
-\openout5 = `thesis.auxlock'.
-
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "thesis-figure2" "\def\tikzexternalrealjob{thesis}\input{thesis}")...executed.
-
-\openout5 = `thesis.auxlock'.
-
-===== Image 'thesis-figure3' is up-to-date. ======
-===== Image 'thesis-figure4' is up-to-date. ======
-===== Image 'thesis-figure5' is up-to-date. ======
+NOTE: coordinate (0.0,0.3742192521984901) has been dropped because it is unboun
+ded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+NOTE: coordinate (0.0,0.3742192521984901) has been dropped because it is unboun
+ded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+NOTE: coordinate (0.0,0.3742192521984901) has been dropped because it is unboun
+ded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.t
+xt}
+NOTE: coordinate (0.0,0.3742192521984901) has been dropped because it is unboun
+ded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
+bounded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
+bounded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
+bounded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {figures/plots/disoTPS/data/renyi_truncation_error_disentangl
+ing.txt}
+NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
+bounded (in x). (see also unbounded coords=jump). 
 )
 
 LaTeX Warning: Reference `sec:TFI' on page 39 undefined on input line 132.
 
 [39 <./figures/tikz/disoTPS/riemannian_optimization/riemannian_optimization.pdf
->])) (./chapters/disoTPS/TEBD.tex
+>]) (./chapters/disoTPS/YB_move_comparison.tex
+(./figures/plots/disoTPS/yb_move_comparison.tex
+PGFPlots: reading {figures/plots/disoTPS/data/comparing_tripartite_decompositio
+ns_iterate_polar.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/comparing_tripartite_decompositio
+ns_renyi_2_EV.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/comparing_tripartite_decompositio
+ns_renyi_0.5_approx_trm.txt}
+PGFPlots: reading {figures/plots/disoTPS/data/comparing_tripartite_decompositio
+ns_trunc_approx_trm.txt}
+ [40])))
+(./chapters/disoTPS/TEBD.tex
 
-LaTeX Warning: Reference `sec:local_TEBD_updates' on page 40 undefined on input
+LaTeX Warning: Reference `sec:local_TEBD_updates' on page 41 undefined on input
  line 1.
 
 
-LaTeX Warning: Reference `sec:global_TEBD_updates' on page 40 undefined on inpu
+LaTeX Warning: Reference `sec:global_TEBD_updates' on page 41 undefined on inpu
 t line 1.
 
-[40 <./thesis-figure1.pdf>] (./chapters/disoTPS/TEBD_local_update.tex
-<figures/tikz/disoTPS/tebd_environment/tebd_environment.pdf, id=1514, 311.98659
+[41] (./chapters/disoTPS/TEBD_local_update.tex
+<figures/tikz/disoTPS/tebd_environment/tebd_environment.pdf, id=1469, 311.98659
 pt x 188.03952pt>
 File: figures/tikz/disoTPS/tebd_environment/tebd_environment.pdf Graphic file (
 type pdf)
@@ -2184,8 +2214,7 @@ type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/tebd_environment/tebd_environment
 .pdf  used on input line 3.
 (pdftex.def)             Requested size: 311.98582pt x 188.03905pt.
- [41 <./thesis-figure2.pdf> <./thesis-figure3.pdf> <./thesis-figure4.pdf> <./th
-esis-figure5.pdf>]
+
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_five_tensor_environment' on page 42 
 undefined on input line 7.
@@ -2194,8 +2223,8 @@ undefined on input line 7.
 LaTeX Warning: Reference `fig:disoTPS_TEBD_contraction_definition' on page 42 u
 ndefined on input line 12.
 
-) (./chapters/disoTPS/TEBD_global_update.tex
-<figures/tikz/disoTPS/tebd_global_update/tebd_global_update_a.pdf, id=1586, 322
+) [42] (./chapters/disoTPS/TEBD_global_update.tex
+<figures/tikz/disoTPS/tebd_global_update/tebd_global_update_a.pdf, id=1483, 322
 .33725pt x 219.54321pt>
 File: figures/tikz/disoTPS/tebd_global_update/tebd_global_update_a.pdf Graphic 
 file (type pdf)
@@ -2203,10 +2232,10 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/disoTPS/tebd_global_update/tebd_global_up
 date_a.pdf  used on input line 6.
 (pdftex.def)             Requested size: 322.33646pt x 219.54266pt.
- [42 <./figures/tikz/disoTPS/tebd_environment/tebd_environment.pdf>] [43 <./fig
+ [43 <./figures/tikz/disoTPS/tebd_environment/tebd_environment.pdf>] [44 <./fig
 ures/tikz/disoTPS/tebd_global_update/tebd_global_update_a.pdf>]
 <figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_a.pdf, 
-id=1655, 379.56104pt x 154.09268pt>
+id=1552, 379.56104pt x 154.09268pt>
 File: figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_a.
 pdf Graphic file (type pdf)
 <use figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_a.p
@@ -2215,7 +2244,7 @@ Package pdftex.def Info: figures/tikz/disoTPS/tebd_global_update_steps/tebd_glo
 bal_update_steps_a.pdf  used on input line 36.
 (pdftex.def)             Requested size: 379.5601pt x 154.0923pt.
 <figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_b.pdf, 
-id=1656, 396.6509pt x 189.20486pt>
+id=1553, 396.6509pt x 189.20486pt>
 File: figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_b.
 pdf Graphic file (type pdf)
 <use figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_steps_b.p
@@ -2228,21 +2257,20 @@ Overfull \hbox (1.96127pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
-[44] [45 <./figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_st
-eps_a.pdf> <./figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_update_
-steps_b.pdf>]
 
 LaTeX Warning: Reference `fig:disoTPS_TEBD_global_update_TEBD2_chain' on page 4
-6 undefined on input line 60.
+5 undefined on input line 60.
 
-))) [46]
-chapter 4.
-(./chapters/Toric_Code/Toric_Code.tex
-(./chapters/Toric_Code/toric_code_model.tex [47
+))) [45] [46 <./figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_updat
+e_steps_a.pdf> <./figures/tikz/disoTPS/tebd_global_update_steps/tebd_global_upd
+ate_steps_b.pdf>] [47] [48
 
 
 ]
-<figures/tikz/toric_code/toric_code_general/toric_code_general.pdf, id=1703, 12
+chapter 4.
+(./chapters/Toric_Code/Toric_Code.tex
+(./chapters/Toric_Code/toric_code_model.tex [49]
+<figures/tikz/toric_code/toric_code_general/toric_code_general.pdf, id=1603, 12
 1.80005pt x 121.80005pt>
 File: figures/tikz/toric_code/toric_code_general/toric_code_general.pdf Graphic
  file (type pdf)
@@ -2252,7 +2280,7 @@ general.pdf  used on input line 36.
 (pdftex.def)             Requested size: 121.79973pt x 121.79973pt.
 )
 (./chapters/Toric_Code/representing_toric_code_gs_with_disoTPS.tex
-<figures/tikz/toric_code/peps_representation/peps_representation_a.pdf, id=1708
+<figures/tikz/toric_code/peps_representation/peps_representation_a.pdf, id=1608
 , 121.1988pt x 121.1988pt>
 File: figures/tikz/toric_code/peps_representation/peps_representation_a.pdf Gra
 phic file (type pdf)
@@ -2260,7 +2288,7 @@ phic file (type pdf)
 Package pdftex.def Info: figures/tikz/toric_code/peps_representation/peps_repre
 sentation_a.pdf  used on input line 6.
 (pdftex.def)             Requested size: 121.1985pt x 121.1985pt.
-<figures/tikz/toric_code/peps_representation/peps_representation_b.pdf, id=1709
+<figures/tikz/toric_code/peps_representation/peps_representation_b.pdf, id=1609
 , 100.83772pt x 125.17064pt>
 File: figures/tikz/toric_code/peps_representation/peps_representation_b.pdf Gra
 phic file (type pdf)
@@ -2268,7 +2296,7 @@ phic file (type pdf)
 Package pdftex.def Info: figures/tikz/toric_code/peps_representation/peps_repre
 sentation_b.pdf  used on input line 11.
 (pdftex.def)             Requested size: 100.83746pt x 125.17032pt.
-<figures/tikz/toric_code/peps_representation/peps_representation_c.pdf, id=1710
+<figures/tikz/toric_code/peps_representation/peps_representation_c.pdf, id=1610
 , 117.19885pt x 118.89922pt>
 File: figures/tikz/toric_code/peps_representation/peps_representation_c.pdf Gra
 phic file (type pdf)
@@ -2277,7 +2305,7 @@ Package pdftex.def Info: figures/tikz/toric_code/peps_representation/peps_repre
 sentation_c.pdf  used on input line 16.
 (pdftex.def)             Requested size: 117.19856pt x 118.89891pt.
 <figures/tikz/toric_code/disoTPS_representation/disoTPS_representation.pdf, id=
-1713, 155.39957pt x 174.89943pt>
+1613, 155.39957pt x 174.89943pt>
 File: figures/tikz/toric_code/disoTPS_representation/disoTPS_representation.pdf
  Graphic file (type pdf)
 <use figures/tikz/toric_code/disoTPS_representation/disoTPS_representation.pdf>
@@ -2285,7 +2313,7 @@ File: figures/tikz/toric_code/disoTPS_representation/disoTPS_representation.pdf
 Package pdftex.def Info: figures/tikz/toric_code/disoTPS_representation/disoTPS
 _representation.pdf  used on input line 25.
 (pdftex.def)             Requested size: 155.39919pt x 174.89899pt.
-<figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg, id=1714, 1003.7
+<figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg, id=1614, 1003.7
 5pt x 1003.75pt>
 File: figures/Toric_Code/toric_code_disoTPS_tensor_definitions.jpeg Graphic fil
 e (type jpg)
@@ -2293,7 +2321,7 @@ e (type jpg)
 Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS_tensor_definitio
 ns.jpeg  used on input line 29.
 (pdftex.def)             Requested size: 155.35182pt x 155.3499pt.
-<figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg, id=1716, 1003
+<figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg, id=1616, 1003
 .75pt x 2393.94376pt>
 File: figures/Toric_Code/toric_code_disoTPS_ortho_surface_tensor.jpeg Graphic f
 ile (type jpg)
@@ -2301,103 +2329,364 @@ ile (type jpg)
 Package pdftex.def Info: figures/Toric_Code/toric_code_disoTPS_ortho_surface_te
 nsor.jpeg  used on input line 33.
 (pdftex.def)             Requested size: 67.71683pt x 161.4929pt.
- [48]
-[49 <./figures/tikz/toric_code/toric_code_general/toric_code_general.pdf> <./fi
+ [50]
+[51 <./figures/tikz/toric_code/toric_code_general/toric_code_general.pdf> <./fi
 gures/tikz/toric_code/peps_representation/peps_representation_a.pdf> <./figures
 /tikz/toric_code/peps_representation/peps_representation_b.pdf> <./figures/tikz
-/toric_code/peps_representation/peps_representation_c.pdf>] [50 <./figures/tikz
+/toric_code/peps_representation/peps_representation_c.pdf>] [52 <./figures/tikz
 /toric_code/disoTPS_representation/disoTPS_representation.pdf> <./figures/Toric
 _Code/toric_code_disoTPS_tensor_definitions.jpeg> <./figures/Toric_Code/toric_c
-ode_disoTPS_ortho_surface_tensor.jpeg>])) [51] [52
+ode_disoTPS_ortho_surface_tensor.jpeg>])) [53] [54
 
 
 ]
 chapter 5.
 (./chapters/TFI/TFI.tex
-<figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf, id=1803, 173.00034pt x 173.000
+<figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf, id=1703, 173.00034pt x 173.000
 34pt>
 File: figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf>
 Package pdftex.def Info: figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf  used o
 n input line 5.
 (pdftex.def)             Requested size: 103.80098pt x 103.80098pt.
- (./chapters/TFI/TFI_model.tex [53])
-(./chapters/TFI/ground_state_search.tex [54 <./figures/tikz/TFI/dmrg_snaking/dm
+ (./chapters/TFI/TFI_model.tex [55])
+(./chapters/TFI/ground_state_search.tex [56 <./figures/tikz/TFI/dmrg_snaking/dm
 rg_snaking.pdf>]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_methods.tex
-===== Image 'thesis-figure6' is up-to-date. ======
-===== Image 'thesis-figure7' is up-to-date. ======
-===== Image 'thesis-figure8' is up-to-date. ======
-===== Image 'thesis-figure9' is up-to-date. ======
-===== Image 'thesis-figure10' is up-to-date. ======
-===== Image 'thesis-figure11' is up-to-date. ======
-===== Image 'thesis-figure12' is up-to-date. ======
-===== Image 'thesis-figure13' is up-to-date. ======
-===== Image 'thesis-figure14' is up-to-date. ======
-===== Image 'thesis-figure15' is up-to-date. ======
-===== Image 'thesis-figure16' is up-to-date. ======
-===== Image 'thesis-figure17' is up-to-date. ======
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_init_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_init_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_init_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_iterate_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_iterate_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_iterate_polar.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_2.0_power_iteration.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_2.0_power_iteration.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_2.0_power_iteration.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_trunc_error_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_cg.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm.txt}
 
-LaTeX Warning: Float too large for page by 32.45132pt on input line 221.
 
-) [55] [56 <./thesis-figure6.pdf> <./thesis-figure7.pdf> <./thesis-figure8.pdf>
- <./thesis-figure9.pdf> <./thesis-figure10.pdf> <./thesis-figure11.pdf> <./thes
-is-figure12.pdf> <./thesis-figure13.pdf> <./thesis-figure14.pdf> <./thesis-figu
-re15.pdf> <./thesis-figure16.pdf> <./thesis-figure17.pdf>]
+LaTeX Warning: Float too large for page by 32.45082pt on input line 221.
+
+) [57] [58]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_chi_factors.
 tex
-===== Image 'thesis-figure18' is up-to-date. ======
-===== Image 'thesis-figure19' is up-to-date. ======
-===== Image 'thesis-figure20' is up-to-date. ======
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_4.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_4.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_4.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt}
 )
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_N_iters.tex
-===== Image 'thesis-figure21' is up-to-date. ======
-===== Image 'thesis-figure22' is up-to-date. ======
-===== Image 'thesis-figure23' is up-to-date. ======
-===== Image 'thesis-figure24' is up-to-date. ======
-) [57] [58 <./thesis-figure18.pdf> <./thesis-figure19.pdf> <./thesis-figure20.p
-df> <./thesis-figure21.pdf> <./thesis-figure22.pdf> <./thesis-figure23.pdf> <./
-thesis-figure24.pdf>]
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_10.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_10.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_10.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_50.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_N_iters_200.txt}
+) [59] [60]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_TEBD1_vs_TEBD2.tex
-===== Image 'thesis-figure25' is up-to-date. ======
-===== Image 'thesis-figure26' is up-to-date. ======
-) (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_larger_systems.tex
-===== Image 'thesis-figure27' is up-to-date. ======
-===== Image 'thesis-figure28' is up-to-date. ======
-===== Image 'thesis-figure29' is up-to-date. ======
-===== Image 'thesis-figure30' is up-to-date. ======
-) (./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
-===== Image 'thesis-figure31' is up-to-date. ======
-) (./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
-===== Image 'thesis-figure32' is up-to-date. ======
-) [59 <./thesis-figure25.pdf> <./thesis-figure26.pdf>] [60 <./thesis-figure27.p
-df> <./thesis-figure28.pdf> <./thesis-figure29.pdf> <./thesis-figure30.pdf> <./
-thesis-figure31.pdf>]
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd1.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd2.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_tebd2.txt}
+)
+(./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_larger_systems.tex
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_4.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_4.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_4.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_5.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_5.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_5.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_6.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_6.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_6.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_7.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_7.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
+quare_svd_disent_renyi_0.5_approx_trm_L_7.txt}
+)
+(./figures/plots/TFI/gs_search/gs_search_larger_systems.tex
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_energy_density_vs
+_system_size.txt}
+)
+(./figures/plots/TFI/gs_search/gs_search_larger_systems_log.tex
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+PGFPlots: reading {figures/plots/TFI/gs_search/data/gs_search_relative_energy_e
+rror_compared_to_extrapolated_DMRG.txt}
+) [61] [62]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_honeycomb.tex
-===== Image 'thesis-figure33' is up-to-date. ======
-===== Image 'thesis-figure34' is up-to-date. ======
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
+PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
+oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
 )
 
-LaTeX Warning: Reference `' on page 61 undefined on input line 41.
+LaTeX Warning: Reference `' on page 63 undefined on input line 41.
 
 
-LaTeX Warning: Reference `' on page 61 undefined on input line 41.
+LaTeX Warning: Reference `' on page 63 undefined on input line 41.
 
-) [61 <./thesis-figure32.pdf>] (./chapters/TFI/time_evolution.tex
+) [63] (./chapters/TFI/time_evolution.tex
 (./figures/plots/TFI/global_quench/global_quench_g_critical.tex
-===== Image 'thesis-figure35' is up-to-date. ======
-) [62 <./thesis-figure33.pdf> <./thesis-figure34.pdf>]
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_tenpy.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_disoTPS.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_disoTPS.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_disoTPS.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_disoTPS.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_critica
+l_disoTPS.txt}
+) [64]
 (./figures/plots/TFI/global_quench/global_quench_g_6.tex
-===== Image 'thesis-figure36' is up-to-date. ======
-===== Image 'thesis-figure37' is up-to-date. ======
-===== Image 'thesis-figure38' is up-to-date. ======
-))) [63 <./thesis-figure35.pdf>] [64 <./thesis-figure36.pdf> <./thesis-figure37
-.pdf> <./thesis-figure38.pdf>]
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_4_4_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_4_4_1.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_ten
+py_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_5_5_0.txt}
+PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_dis
+oTPS_site_index_5_5_0.txt}
+))) [65] [66]
 chapter 6.
-[65
+[67
 
 
-] [66
+] [68
 
 
 ]
@@ -2406,35 +2695,35 @@ chapter A.
 (./chapters/optimization_problems_on_isometric_tensor_networks/optimization_pro
 blems_on_isometric_tensor_networks.tex
 (./chapters/optimization_problems_on_isometric_tensor_networks/orthogonal_procr
-ustes_problem.tex [67]
+ustes_problem.tex [69]
 
 LaTeX Warning: Command \i invalid in math mode on input line 5.
 
-[68])
+[70])
 (./chapters/optimization_problems_on_isometric_tensor_networks/evenbly_vidal_al
 gorithm.tex
 
-LaTeX Warning: Reference `app:' on page 69 undefined on input line 5.
+LaTeX Warning: Reference `app:' on page 71 undefined on input line 5.
 
 )
 (./chapters/optimization_problems_on_isometric_tensor_networks/cost_function_mu
-ltiple_tensors.tex [69]
+ltiple_tensors.tex [71]
 
-LaTeX Warning: Reference `' on page 70 undefined on input line 2.
+LaTeX Warning: Reference `' on page 72 undefined on input line 2.
 
-)) [70]
+)) [72]
 chapter B.
 (./chapters/Riemannian_Optimization/Riemannian_Optimization.tex
-(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [71
+(./chapters/Riemannian_Optimization/Stiefel_manifold.tex [73
 
 
 ])
-(./chapters/Riemannian_Optimization/basic_definitions.tex)) [72] [73] [74
+(./chapters/Riemannian_Optimization/basic_definitions.tex)) [74] [75] [76
 
 
 ]
 chapter C.
-[75] [76
+[77] [78
 
 
 ]
@@ -2442,13 +2731,13 @@ chapter D.
 
 (./chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computa
 tion_of_gradient_and_hvp_for_riemannian_optimization.tex
-<figures/appendix_C/svd_derivative.jpeg, id=2576, 3639.5975pt x 1003.75pt>
+<figures/appendix_C/svd_derivative.jpeg, id=1911, 3639.5975pt x 1003.75pt>
 File: figures/appendix_C/svd_derivative.jpeg Graphic file (type jpg)
 <use figures/appendix_C/svd_derivative.jpeg>
 Package pdftex.def Info: figures/appendix_C/svd_derivative.jpeg  used on input 
 line 3.
 (pdftex.def)             Requested size: 318.67212pt x 87.88304pt.
-<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=2579, 2242.3775pt x 1
+<figures/appendix_C/gradient_renyi_alpha_entropy.jpeg, id=1914, 2242.3775pt x 1
 003.75pt>
 File: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg Graphic file (type j
 pg)
@@ -2456,7 +2745,7 @@ pg)
 Package pdftex.def Info: figures/appendix_C/gradient_renyi_alpha_entropy.jpeg  
 used on input line 9.
 (pdftex.def)             Requested size: 318.67212pt x 142.63765pt.
-<figures/appendix_C/gradient_truncation_error.jpeg, id=2582, 2242.3775pt x 1002
+<figures/appendix_C/gradient_truncation_error.jpeg, id=1917, 2242.3775pt x 1002
 .74625pt>
 File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 
@@ -2464,21 +2753,21 @@ File: figures/appendix_C/gradient_truncation_error.jpeg Graphic file (type jpg)
 Package pdftex.def Info: figures/appendix_C/gradient_truncation_error.jpeg  use
 d on input line 15.
 (pdftex.def)             Requested size: 318.67212pt x 142.49501pt.
-<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=2585, 1695.33376pt x 1003.
+<figures/appendix_C/hvp_renyi_alpha_entropy.jpeg, id=1920, 1695.33376pt x 1003.
 75pt>
 File: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_renyi_alpha_entropy.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_renyi_alpha_entropy.jpeg  used 
 on input line 21.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-<figures/appendix_C/hvp_truncation_error.jpeg, id=2588, 1695.33376pt x 1003.75p
+<figures/appendix_C/hvp_truncation_error.jpeg, id=1923, 1695.33376pt x 1003.75p
 t>
 File: figures/appendix_C/hvp_truncation_error.jpeg Graphic file (type jpg)
 <use figures/appendix_C/hvp_truncation_error.jpeg>
 Package pdftex.def Info: figures/appendix_C/hvp_truncation_error.jpeg  used on 
 input line 27.
 (pdftex.def)             Requested size: 318.67212pt x 188.66214pt.
-) [77 <./figures/appendix_C/svd_derivative.jpeg>]
+) [79 <./figures/appendix_C/svd_derivative.jpeg>]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -2493,14 +2782,14 @@ Package scrlayer-scrpage Warning: \headheight to low.
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [78 <./figures/appendix_C/gradient_renyi_alpha_entropy.jpeg> <./figures/append
-ix_C/gradient_truncation_error.jpeg>] [79 <./figures/appendix_C/hvp_renyi_alpha
-_entropy.jpeg> <./figures/appendix_C/hvp_truncation_error.jpeg>] [80
+ [80 <./figures/appendix_C/gradient_renyi_alpha_entropy.jpeg> <./figures/append
+ix_C/gradient_truncation_error.jpeg>] [81 <./figures/appendix_C/hvp_renyi_alpha
+_entropy.jpeg> <./figures/appendix_C/hvp_truncation_error.jpeg>] [82
 
 
 ]
 chapter without number
-[81
+[83
 
 
 ]
@@ -2508,7 +2797,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [82] [83] [84] [85] (./thesis.aux
+ [84] [85] [86] [87] (./thesis.aux
 * soulpos - computing points - it may take a few seconds *
 \openout3 = `thesis.upb'.
 
@@ -2523,10 +2812,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51221 strings out of 478287
- 1165776 string characters out of 5849289
- 2136712 words of memory out of 5000000
- 67739 multiletter control sequences out of 15000+600000
+ 52168 strings out of 478287
+ 1196737 string characters out of 5849289
+ 2818387 words of memory out of 5000000
+ 68638 multiletter control sequences out of 15000+600000
  498572 words of font info for 254 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  140i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2560,10 +2849,10 @@ fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1095.pfb>
-Output written on thesis.pdf (91 pages, 2293501 bytes).
+Output written on thesis.pdf (93 pages, 2114416 bytes).
 PDF statistics:
- 2931 PDF objects out of 2984 (max. 8388607)
- 2262 compressed objects within 23 object streams
- 303 named destinations out of 1000 (max. 500000)
- 54411 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 2267 PDF objects out of 2487 (max. 8388607)
+ 1786 compressed objects within 18 object streams
+ 304 named destinations out of 1000 (max. 500000)
+ 54216 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,0 +1,26 @@
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend pos=north east, legend style={nodes={scale=\legendscale, transform shape}}]
+			%
+			\addplot[color = blue]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_iterate_polar.txt};
+			\addlegendentry{EV trunc}
+			%
+			\addplot[color = red]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_renyi_2_EV.txt};
+			\addlegendentry{EV Rényi-$2$}
+			%
+			\addplot[color = 5orange4]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_renyi_0.5_approx_trm.txt};
+			\addlegendentry{appr.\,CG\,Rényi-$0.5$}
+			%	
+			\addplot[color = 5green4]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_trunc_approx_trm.txt};
+			\addlegendentry{appr. TRM trunc}
+			%
+		\end{axis}
+	\end{tikzpicture}
+	\caption{\todo{caption! + choose better colors in plot + better legend placement!}}
+	\label{fig:yb_move_comparison}
+\end{figure}

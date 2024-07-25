@@ -11,29 +11,29 @@
 \contentsline {section}{\numberline {3.2}Yang-Baxter Move}{28}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}variational optimization with local updates}{30}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Tripartite decompositon using an SVD and disentangling}{31}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{40}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{41}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{41}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{42}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{43}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The Toric Code Model}{47}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{48}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}The Transverse Field Ising Model}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ground State Search}{54}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{62}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Summary and Outlook}{65}{chapter.6}%
+\contentsline {chapter}{\numberline {4}Toric Code: An exactly representable Model}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Toric Code Model}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with disoTPS}{50}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Transverse Field Ising Model: Ground State Search and Time Evolution}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The Transverse Field Ising Model}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ground State Search}{56}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Time Evolution after a Global Quench}{64}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Summary and Outlook}{67}{chapter.6}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{67}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{68}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{69}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{69}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{71}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{71}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{72}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Conjugate Gradients}{73}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Trust Region Method}{73}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{75}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{77}{appendix.D}%
-\contentsline {chapter}{\nonumberline Bibliography}{81}{chapter*.94}%
+\contentsline {chapter}{\numberline {A}Optimization Problems for isometric Tensor Networks}{69}{appendix.A}%
+\contentsline {section}{\numberline {A.1}The orthogonal Procrustes problem}{70}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Evenbly-Vidal algorithm}{71}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Cost functions of multiple tensors}{71}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Riemannian Optimization of Isometries}{73}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The complex Stiefel manifold}{73}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Gradients, retractions, and vector transport}{74}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Conjugate Gradients}{75}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Trust Region Method}{75}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Initialization of the Disentangling Unitary}{77}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Computing the Gradient and Hessian of the Disentangling Cost Functions}{79}{appendix.D}%
+\contentsline {chapter}{\nonumberline Bibliography}{83}{chapter*.92}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
