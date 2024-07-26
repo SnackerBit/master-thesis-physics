@@ -36,7 +36,7 @@
 			\draw[specialLeg, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (R)+(\thetaHeight/2+\tensorDistance/2, 0) -- (R);
 			
 			% middle legs
-			\draw[virtualLegSmall] (R) -- (Q);
+			\draw[auxillaryLegSmall] (R) -- (Q);
 			
 			% connecting legs
 			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (theta.center) -- ++(-\thetaHeight/2-\tensorDistance+\defaultLegSeperationSmall, 0) -- ++(0, -\verticalDistance+\defaultLegSeperationSmall) -- ++(\tensorDistance-\smallTensorWidth, 0);
@@ -52,7 +52,7 @@
 		\node[tensorPhysicalSmall, fill=white] (E) at (\xOffset, 0) {};
 		
 		\begin{pgfonlayer}{bg}
-			\draw[virtualLegSmallWithoutArrows] (E) -- ++(\tensorDistance-\smallTensorWidth/2, 0);
+			\draw[auxillaryLegSmallWithoutArrows] (E) -- ++(\tensorDistance-\smallTensorWidth/2, 0);
 			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (E) -- ++(-\tensorDistance+\smallTensorWidth/2, 0);
 			\draw[specialLegWithoutArrows, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (E) -- ++(-\tensorDistance+\smallTensorWidth/2, 0);
 		\end{pgfonlayer}
@@ -66,8 +66,8 @@
 		\node[] () at (\xOffset+\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\Lambda$};
 		
 		\begin{pgfonlayer}{bg}
-			\draw[virtualLegSmall] (Q) -- (R);
-			\draw[virtualLegSmall] (R)+(\tensorDistance-\smallTensorWidth/2, 0) -- (R);
+			\draw[auxillaryLegSmall] (Q) -- (R);
+			\draw[auxillaryLegSmall] (R)+(\tensorDistance-\smallTensorWidth/2, 0) -- (R);
 			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Q)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (Q);
 			\draw[specialLeg, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Q)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (Q);
 		\end{pgfonlayer}

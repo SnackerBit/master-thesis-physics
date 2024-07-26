@@ -1737,6 +1737,75 @@
       \field{pages}{103\bibrangedash 123}
       \range{pages}{21}
     \endentry
+    \entry{cite:algorithms_for_entanglement_renormalization}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c97a02980e2314fd5dd38ef6ff153840}{%
+           family={Evenbly},
+           familyi={E\bibinitperiod},
+           given={Glen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fe10cf33913e45c3685598c8b35bc209}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Guifré},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{fullhash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{bibnamehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{authorbibnamehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{authornamehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{authorfullhash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B—Condensed Matter and Materials Physics}
+      \field{number}{14}
+      \field{title}{Algorithms for entanglement renormalization}
+      \field{volume}{79}
+      \field{year}{2009}
+      \field{pages}{144108}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:algorithms_for_entanglement_renormalization_boundaries_impurities_interfaces}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c97a02980e2314fd5dd38ef6ff153840}{%
+           family={Evenbly},
+           familyi={E\bibinitperiod},
+           given={Glen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fe10cf33913e45c3685598c8b35bc209}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Guifré},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{fullhash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{bibnamehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{authorbibnamehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{authornamehash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \strng{authorfullhash}{9454e34ea39ff1222b6a3a8cda0dba7c}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of statistical physics}
+      \field{title}{Algorithms for entanglement renormalization: boundaries, impurities and interfaces}
+      \field{volume}{157}
+      \field{year}{2014}
+      \field{pages}{931\bibrangedash 978}
+      \range{pages}{48}
+    \endentry
     \entry{cite:finding_purifications_with_minimal_entanglement}{article}{}
       \name{author}{6}{}{%
         {{hash=9b8f7fc6b271de24f53da255021243ae}{%
@@ -2209,6 +2278,40 @@
       \field{volume}{66}
       \field{year}{2002}
       \field{pages}{066110}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:accuracy_of_DMRG}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ba39c78ac5c222ecef703337bda34a9b}{%
+           family={Legeza},
+           familyi={L\bibinitperiod},
+           given={Örs},
+           giveni={Ö\bibinitperiod}}}%
+        {{hash=8aa81ceee58f159949ed4ed3aa1f0295}{%
+           family={Fáth},
+           familyi={F\bibinitperiod},
+           given={Gábor},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{99238209df8c7f3aec4f4081b0f5bef6}
+      \strng{fullhash}{99238209df8c7f3aec4f4081b0f5bef6}
+      \strng{bibnamehash}{99238209df8c7f3aec4f4081b0f5bef6}
+      \strng{authorbibnamehash}{99238209df8c7f3aec4f4081b0f5bef6}
+      \strng{authornamehash}{99238209df8c7f3aec4f4081b0f5bef6}
+      \strng{authorfullhash}{99238209df8c7f3aec4f4081b0f5bef6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{21}
+      \field{title}{Accuracy of the density-matrix renormalization-group method}
+      \field{volume}{53}
+      \field{year}{1996}
+      \field{pages}{14349}
       \range{pages}{1}
     \endentry
     \entry{cite:time_evolving_a_mps_with_long_range_interactions}{article}{}

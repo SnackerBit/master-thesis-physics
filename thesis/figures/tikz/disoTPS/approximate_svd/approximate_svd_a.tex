@@ -40,7 +40,7 @@
 			\draw[specialLeg, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (R)+(\thetaHeight/2+\tensorDistance/2, 0) -- (R);
 			
 			% middle legs
-			\draw[virtualLegSmall] (Q) -- (R);
+			\draw[auxillaryLegSmall] (Q) -- (R);
 			
 			% connecting legs
 			\draw[virtualLegSmallWithoutArrows, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (theta.center) -- ++(-\thetaHeight/2-\tensorDistance+\defaultLegSeperationSmall, 0) -- ++(0, -\verticalDistance+\defaultLegSeperationSmall) -- ++(\tensorDistance-\smallTensorWidth, 0);

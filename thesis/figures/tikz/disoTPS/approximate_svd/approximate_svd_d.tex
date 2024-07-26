@@ -20,8 +20,8 @@
 			% For correct clipping
 			\draw[specialLeg, draw=white] (0, 0) -- ++(-\tensorDistance+\smallTensorWidth/2, 0);
 			
-			\draw[virtualLegSmall] (Q) -- (R);
-			\draw[virtualLegSmall] (R)+(\tensorDistance-\smallTensorWidth/2, 0) -- (R);
+			\draw[auxillaryLegSmall] (Q) -- (R);
+			\draw[auxillaryLegSmall] (R)+(\tensorDistance-\smallTensorWidth/2, 0) -- (R);
 			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Q)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (Q);
 			\draw[specialLeg, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Q)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (Q);
 		\end{pgfonlayer}
@@ -34,15 +34,15 @@
 		\node[tensorPhysicalSmall, fill=white] (A) at (\xOffset+\tensorDistance, 0) {};
 		\node[] () at (\xOffset+\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$A$};
 		\node[tensorPhysicalSmall, fill=white] (S) at (\xOffset+\tensorDistance+\svdDistance, 0) {};
-		\node[] () at (\xOffset+\tensorDistance+\svdDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$S$};
+		\node[] () at (\xOffset+\tensorDistance+\svdDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{S}$};
 		\node[tensorPhysicalSmall, fill=white] (Y) at (\xOffset+\tensorDistance+2*\svdDistance, 0) {};
-		\node[] () at (\xOffset+\tensorDistance+2*\svdDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$Y^*$};
+		\node[] () at (\xOffset+\tensorDistance+2*\svdDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{Y}^*$};
 		
 		\begin{pgfonlayer}{bg}
-			\draw[virtualLegSmall] (Q) -- (A);
-			\draw[virtualLegSmall] (A) -- (S);
-			\draw[virtualLegSmall] (Y) -- (S);
-			\draw[virtualLegSmall] (Y)+(\tensorDistance-\smallTensorWidth/2, 0) -- (Y);
+			\draw[auxillaryLegSmall] (Q) -- (A);
+			\draw[auxillaryLegSmall] (A) -- (S);
+			\draw[auxillaryLegSmall] (Y) -- (S);
+			\draw[auxillaryLegSmall] (Y)+(\tensorDistance-\smallTensorWidth/2, 0) -- (Y);
 			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Q)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (Q);
 			\draw[specialLeg, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Q)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (Q);
 		\end{pgfonlayer}
@@ -51,16 +51,16 @@
 		\def\xOffset{6*\tensorDistance+2*\svdDistance-4*\smallTensorWidth/2+2*\equationDistance}
 		
 		\node[tensorPhysicalSmall, fill=white] (X) at (\xOffset, 0) {};
-		\node[] () at (\xOffset, \smallTensorWidth/2+\defaultTextOffsetLarge) {$X$};
+		\node[] () at (\xOffset, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{X}$};
 		\node[tensorPhysicalSmall, fill=white] (S) at (\xOffset+\tensorDistance, 0) {};
-		\node[] () at (\xOffset+\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$S$};
+		\node[] () at (\xOffset+\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{S}$};
 		\node[tensorPhysicalSmall, fill=white] (Y) at (\xOffset+2*\tensorDistance, 0) {};
-		\node[] () at (\xOffset+2*\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$Y^*$};
+		\node[] () at (\xOffset+2*\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{Y}^*$};
 		
 		\begin{pgfonlayer}{bg}
-			\draw[virtualLegSmall] (X) -- (S);
-			\draw[virtualLegSmall] (Y) -- (S);
-			\draw[virtualLegSmall] (Y)+(\tensorDistance-\smallTensorWidth/2, 0) -- (Y);
+			\draw[auxillaryLegSmall] (X) -- (S);
+			\draw[auxillaryLegSmall] (Y) -- (S);
+			\draw[auxillaryLegSmall] (Y)+(\tensorDistance-\smallTensorWidth/2, 0) -- (Y);
 			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (X)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (X);
 			\draw[specialLeg, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (X)+(-\tensorDistance+\smallTensorWidth/2, 0) -- (X);
 		\end{pgfonlayer}
