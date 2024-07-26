@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  23 JUL 2024 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  26 JUL 2024 15:41
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **isoTPS_structure_a.tex
 (./isoTPS_structure_a.tex
@@ -11,7 +11,7 @@ Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -703,15 +703,15 @@ e
 
 ] (./isoTPS_structure_a.aux) ) 
 Here is how much of TeX's memory you used:
- 18964 strings out of 478287
- 385632 string characters out of 5849290
- 693121 words of memory out of 5000000
- 36812 multiletter control sequences out of 15000+600000
+ 18992 strings out of 478287
+ 386588 string characters out of 5849290
+ 695494 words of memory out of 5000000
+ 36840 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,7n,118p,426b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on isoTPS_structure_a.pdf (1 page, 3202 bytes).
+Output written on isoTPS_structure_a.pdf (1 page, 3198 bytes).
 PDF statistics:
  11 PDF objects out of 1000 (max. 8388607)
  7 compressed objects within 1 object stream

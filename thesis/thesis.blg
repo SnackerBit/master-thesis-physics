@@ -1,28 +1,28 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'thesis.blg'
-[58] biber:340> INFO - === Do Jul 25, 2024, 22:23:28
-[67] Biber.pm:418> INFO - Reading 'thesis.bcf'
-[129] Biber.pm:972> INFO - Found 58 citekeys in bib section 0
-[138] Biber.pm:4383> INFO - Processing section 0
-[145] Biber.pm:4574> INFO - Looking for bibtex file 'thesis.bib' for section 0
-[146] bibtex.pm:1713> INFO - LaTeX decoding ...
-[190] bibtex.pm:1518> INFO - Found BibTeX data source 'thesis.bib'
-[439] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[439] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
-[439] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-GB'
-[439] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
-[462] bbl.pm:654> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[481] bbl.pm:757> INFO - Output to thesis.bbl
-[481] Biber.pm:130> WARN - legacy month field 'aug' in entry 'cite:area_law_1D_proof' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Feb' in entry 'cite:area_laws_review' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'cite:isometric_tensor_network_states_in_two_dimensions' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Aug' in entry 'cite:conversion_of_PEPS_into_a_canonical_form' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Dec' in entry 'cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Feb' in entry 'cite:isometric_tensor_network_representation_of_string_net_liquids' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'cite:sequential_generation_of_projected_entangled_pair_states' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'cite:two_dimensional_isometric_tensor_networks_on_infinite_strip' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'cite:three_dimensional_isometric_tensor_networks' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'May' in entry 'cite:isometric_tensor_network_representation_of_2D_thermal_states' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'cite:criticality_the_area_law_and_the_computational_power_of_PEPS' is not an integer - this will probably not sort properly.
-[481] Biber.pm:130> WARN - legacy month field 'Dec' in entry 'cite:finding_purifications_with_minimal_entanglement' is not an integer - this will probably not sort properly.
-[481] Biber.pm:132> INFO - WARNINGS: 12
+[61] biber:340> INFO - === Fr Jul 26, 2024, 22:44:00
+[71] Biber.pm:418> INFO - Reading 'thesis.bcf'
+[135] Biber.pm:972> INFO - Found 58 citekeys in bib section 0
+[144] Biber.pm:4383> INFO - Processing section 0
+[151] Biber.pm:4574> INFO - Looking for bibtex file 'thesis.bib' for section 0
+[152] bibtex.pm:1713> INFO - LaTeX decoding ...
+[195] bibtex.pm:1518> INFO - Found BibTeX data source 'thesis.bib'
+[454] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[454] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[454] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-GB'
+[454] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-GB'
+[478] bbl.pm:654> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[497] bbl.pm:757> INFO - Output to thesis.bbl
+[497] Biber.pm:130> WARN - legacy month field 'aug' in entry 'cite:area_law_1D_proof' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Feb' in entry 'cite:area_laws_review' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'cite:isometric_tensor_network_states_in_two_dimensions' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Aug' in entry 'cite:conversion_of_PEPS_into_a_canonical_form' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Dec' in entry 'cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Feb' in entry 'cite:isometric_tensor_network_representation_of_string_net_liquids' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Jan' in entry 'cite:sequential_generation_of_projected_entangled_pair_states' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'cite:two_dimensional_isometric_tensor_networks_on_infinite_strip' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'cite:three_dimensional_isometric_tensor_networks' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'May' in entry 'cite:isometric_tensor_network_representation_of_2D_thermal_states' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Jun' in entry 'cite:criticality_the_area_law_and_the_computational_power_of_PEPS' is not an integer - this will probably not sort properly.
+[497] Biber.pm:130> WARN - legacy month field 'Dec' in entry 'cite:finding_purifications_with_minimal_entanglement' is not an integer - this will probably not sort properly.
+[497] Biber.pm:132> INFO - WARNINGS: 12

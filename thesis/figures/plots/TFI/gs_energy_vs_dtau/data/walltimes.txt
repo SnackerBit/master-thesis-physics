@@ -1,6 +1,5 @@
 walltime_svd 0.9063506126403809
 walltime_svd_init 0.7803809642791748
-walltime_svd 0.9063506126403809
 walltime_iterate_polar 5.042580604553223
 walltime_renyi_2_ev 1.8616626262664795
 walltime_trunc_cg 62.73412322998047

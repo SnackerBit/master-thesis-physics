@@ -115,14 +115,12 @@
 		\node[] () at ({\posX+\svdDistanceAuxX}, {\posY+\svdDistanceAuxY-\smallTensorWidth/2-\defaultTextOffsetLarge}) {$V^*$};
 		
 		\begin{pgfonlayer}{bg}
-			\draw[auxillaryLegSmall] (Vc)+({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY}) -- (Vc);
-			\draw[auxillaryLegSmall] (Vc) -- ++({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY});
+			\draw[auxillaryLegSmallDoubleArrows] (Vc) -- ++({\envLegDistanceAuxillaryX}, {\envLegDistanceAuxillaryY});
 			\draw[auxillaryLegSmall] (U)+({-\envLegDistanceAuxillaryX}, {-\envLegDistanceAuxillaryY}) -- (U);
 			\draw[virtualLegSmall] (U)+({\envLegDistanceVirtualDiagonal}, {\envLegDistanceVirtualDiagonal}) -- (U);
 			\draw[virtualLegSmall] (U)+({-\envLegDistanceVirtualDiagonal}, {-\envLegDistanceVirtualDiagonal}) -- (U);
 			\draw[auxillaryLegSmall] (U) -- (S);
-			\draw[auxillaryLegSmall] (Vc) -- (S);
-			\draw[auxillaryLegSmall] (S) -- (Vc);
+			\draw[auxillaryLegSmallDoubleArrows] (S) -- (Vc);
 		\end{pgfonlayer}
 	
 		\begin{scope}[xshift=\subpictureXshift, yshift=\subpictureYshift]

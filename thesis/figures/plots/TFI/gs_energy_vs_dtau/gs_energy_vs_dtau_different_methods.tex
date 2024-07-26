@@ -3,7 +3,7 @@
 	\begin{minipage}{1.0\textwidth}
 		\centering
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, legend style={nodes={scale=\legendscale, transform shape}}, legend pos=south west, title={SVD}, xticklabels={}]
+			\begin{axis}[ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend pos=south west, title={\footnotesize\textbf{SVD}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd.txt};
@@ -20,7 +20,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={SVD + init}, xticklabels={}]
+			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{SVD + init}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_init_polar.txt};
@@ -37,7 +37,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={EV trunc}, xticklabels={}]
+			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{EV trunc}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_iterate_polar.txt};
@@ -54,7 +54,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={EV Rényi-2}, xticklabels={}]
+			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{EV Rényi-2}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_2.0_power_iteration.txt};
@@ -76,7 +76,7 @@
 		% 2nd line
 		% ====================================================================================
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={CG trunc}, xticklabels={}]
+			\begin{axis}[ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={\footnotesize\textbf{CG trunc}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_trunc_error_cg.txt};
@@ -93,7 +93,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={approx CG trunc}, xticklabels={}]
+			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{approx CG trunc}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_trunc_error_approx_cg.txt};
@@ -110,7 +110,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={TRM trunc}, xticklabels={}]
+			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{TRM trunc}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_trunc_error_trm.txt};
@@ -127,7 +127,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={approx TRM trunc}, xticklabels={}]
+			\begin{axis}[grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{approx TRM trunc}}, xticklabels={}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_trunc_error_approx_trm.txt};
@@ -149,7 +149,7 @@
 		% 3rd line
 		% ====================================================================================
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$\text{d}\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={CG Rényi-0.5}]
+			\begin{axis}[xlabel=$\Delta\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={\footnotesize\textbf{CG Rényi-0.5}}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_cg.txt};
@@ -166,7 +166,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={appr.\,CG\,Rényi-0.5}]
+			\begin{axis}[xlabel=$\Delta\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{appr.\,CG\,Rényi-0.5}}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_cg.txt};
@@ -183,7 +183,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={TRM\,Rényi-0.5}]
+			\begin{axis}[xlabel=$\Delta\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{TRM\,Rényi-0.5}}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_trm.txt};
@@ -200,7 +200,7 @@
 		\end{tikzpicture}%
 		\,\,
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$\text{d}\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={appr.\,TRM\,Rényi-0.5}]
+			\begin{axis}[xlabel=$\Delta\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={\footnotesize\textbf{appr.\,TRM\,Rényi-0.5}}]
 				%	
 				\addplot[color = 3blue1, mark=*]
 				table[x=dtau, y=delta_E_D_max_2, col sep=space]{figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm.txt};
@@ -216,6 +216,6 @@
 			\end{axis}%
 		\end{tikzpicture}%
 	\end{minipage}
-	\caption{We benchmark the different implemented methods for the YB move on the TFI model on a $4\times4$ suare lattice. The transverse field is set to $g = 3.5$. We compute the ground state energy with imaginary TEBD for different time step sizes $\text{d}\tau$. First row: SVD splitting without disentangling, SVD splitting with a disentangling unitary initialized as discussed in appendix \ref{app:initialization_of_disentangling_unitary}, Evenbly-Vidal minimization of the truncation error, and Evenbly-Vidal minimization of the Rényi-2 entropy. Second row: Disentangling with Riemannian optimization of the truncation error. Third row: Disentangling with Riemannian optimization of the  Rényi-1/2 entropy. All iterative methods were run for a maximum of $N_\text{iter} = 100$ iterations per YB move. The bond dimension of the orthogonality hypersurface was set to $\chi = 6\cdot D$.}
+	\caption{We benchmark the different implemented methods for the YB move on the TFI model on a $4\times4$ square lattice. The transverse field is set to $g = 3.5$. We compute the ground state energy with imaginary TEBD for different time step sizes $\Delta\tau$. First row: SVD splitting without disentangling, SVD splitting with a disentangling unitary initialized as discussed in Appendix \ref{app:initialization_of_disentangling_unitary}, Evenbly-Vidal minimization of the truncation error, and Evenbly-Vidal minimization of the Rényi-2 entropy. Second row: Disentangling with Riemannian optimization of the truncation error. Third row: Disentangling with Riemannian optimization of the  Rényi-1/2 entropy. All iterative methods were run for a maximum of $N_\text{iter} = 100$ iterations per YB move. The bond dimension of the orthogonality hypersurface was set to $\chi = 6\cdot D$.}
 	\label{fig:tfi_gs_energy_vs_dtau_different_methods}
 \end{figure}

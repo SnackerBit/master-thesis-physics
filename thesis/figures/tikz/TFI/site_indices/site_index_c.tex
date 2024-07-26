@@ -1,0 +1,48 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\unitCellDistance{0.3*\defaultDistanceSmall}
+	\def\tensorWidth{4pt}
+	\def\bottomDistance{30pt}
+	\begin{tikzpicture}
+		
+		%\draw[fill=green, draw=green] (0.25*\unitCellDistance, 7.75*\unitCellDistance) -- (7.75*\unitCellDistance, 7.75*\unitCellDistance) -- (7.75*\unitCellDistance, 0.25*\unitCellDistance-\bottomDistance) -- (0.25*\unitCellDistance, 0.25*\unitCellDistance-\bottomDistance) -- cycle;
+		
+		\draw[] (0.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(7.5*\unitCellDistance, 7.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 1.25*\unitCellDistance) -- ++(6.5*\unitCellDistance, 6.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 2.25*\unitCellDistance) -- ++(5.5*\unitCellDistance, 5.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 3.25*\unitCellDistance) -- ++(4.5*\unitCellDistance, 4.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 4.25*\unitCellDistance) -- ++(3.5*\unitCellDistance, 3.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 5.25*\unitCellDistance) -- ++(2.5*\unitCellDistance, 2.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 6.25*\unitCellDistance) -- ++(1.5*\unitCellDistance, 1.5*\unitCellDistance);
+		\draw[] (0.25*\unitCellDistance, 7.25*\unitCellDistance) -- ++(0.5*\unitCellDistance, 0.5*\unitCellDistance);
+		
+		\draw[] (1.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(6.5*\unitCellDistance, 6.5*\unitCellDistance);
+		\draw[] (2.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(5.5*\unitCellDistance, 5.5*\unitCellDistance);
+		\draw[] (3.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(4.5*\unitCellDistance, 4.5*\unitCellDistance);
+		\draw[] (4.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(3.5*\unitCellDistance, 3.5*\unitCellDistance);
+		\draw[] (5.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(2.5*\unitCellDistance, 2.5*\unitCellDistance);
+		\draw[] (6.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(1.5*\unitCellDistance, 1.5*\unitCellDistance);
+		\draw[] (7.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(0.5*\unitCellDistance, 0.5*\unitCellDistance);
+		
+		\draw[] (1.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-\unitCellDistance, \unitCellDistance);
+		\draw[] (2.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-2*\unitCellDistance, 2*\unitCellDistance);
+		\draw[] (3.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-3*\unitCellDistance, 3*\unitCellDistance);
+		\draw[] (4.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-4*\unitCellDistance, 4*\unitCellDistance);
+		\draw[] (5.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-5*\unitCellDistance, 5*\unitCellDistance);
+		\draw[] (6.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-6*\unitCellDistance, 6*\unitCellDistance);
+		\draw[] (7.25*\unitCellDistance, 0.25*\unitCellDistance) -- ++(-7*\unitCellDistance, 7*\unitCellDistance);
+		
+		\draw[] (7.75*\unitCellDistance, 0.75*\unitCellDistance) -- ++(-7*\unitCellDistance, 7*\unitCellDistance);
+		\draw[] (7.75*\unitCellDistance, 1.75*\unitCellDistance) -- ++(-6*\unitCellDistance, 6*\unitCellDistance);
+		\draw[] (7.75*\unitCellDistance, 2.75*\unitCellDistance) -- ++(-5*\unitCellDistance, 5*\unitCellDistance);
+		\draw[] (7.75*\unitCellDistance, 3.75*\unitCellDistance) -- ++(-4*\unitCellDistance, 4*\unitCellDistance);
+		\draw[] (7.75*\unitCellDistance, 4.75*\unitCellDistance) -- ++(-3*\unitCellDistance, 3*\unitCellDistance);
+		\draw[] (7.75*\unitCellDistance, 5.75*\unitCellDistance) -- ++(-2*\unitCellDistance, 2*\unitCellDistance);
+		\draw[] (7.75*\unitCellDistance, 6.75*\unitCellDistance) -- ++(-1*\unitCellDistance, 1*\unitCellDistance);
+		
+		\node[circle, fill=red, inner sep=0, outer sep=0, minimum size=\tensorWidth] () at (4.25*\unitCellDistance, 4.25*\unitCellDistance) {};
+		\node[circle, fill=orange, inner sep=0, outer sep=0, minimum size=\tensorWidth] () at (5.25*\unitCellDistance, 5.25*\unitCellDistance) {};
+		
+	\end{tikzpicture}
+\end{document}

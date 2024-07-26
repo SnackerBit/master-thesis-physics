@@ -230,7 +230,7 @@
 \def\gsEnergyVsDtauFigureHeight{4cm}
 
 % 3 lengthy subfigures below each other
-\def\globalQuenchLargeFieldFigureWidth{12cm}
+\def\globalQuenchLargeFieldFigureWidth{10cm}
 \def\globalQuenchLargeFieldFigureHeight{3cm}
 
 \def\legendscale{1.0}
@@ -289,3 +289,8 @@
 \definecolor{5purple3}{HTML}{9e9ac8}
 \definecolor{5purple4}{HTML}{756bb1}
 \definecolor{5purple5}{HTML}{54278f}
+
+\definecolor{singleBlue}{HTML}{3182bd} % Same as 5blue4
+\definecolor{singleOrange}{HTML}{fd8d3c} % Same as 5orange3
+\definecolor{singleGreen}{HTML}{31a354} % Same as 5green4
+\definecolor{singleRed}{HTML}{a50f15} % Same as 5red5

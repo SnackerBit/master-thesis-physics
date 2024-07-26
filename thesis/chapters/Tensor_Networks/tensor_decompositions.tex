@@ -9,13 +9,13 @@ where $Q\in\mathbb{C}^{n\times k}$ is an isometry, $R\in\mathbb{C}^{k\times m}$ 
 	\label{eq:QR_decomposition_complexity}
 	\mathcal{O}\left(nmk\right).
 \end{equation}
-The QR decomposition is drawn as a tensor diagram in figure \figref{fig:tensor_decomposition_qr}. \par
+The QR decomposition is drawn as a tensor diagram in Figure \figref{fig:tensor_decomposition_qr}. \par
 The \textit{Singular Value Decomposition} (SVD) of a matrix $A \in \mathbb{C}^{n\times m}$ is the decomposition
 \begin{equation}
 	\label{eq:SVD_general}
 	A = USV^\dagger,
 \end{equation}
-where $U\in\mathbb{C}^{n\times k}$ and $V\in\mathbb{C}^{m\times k}$ are isometries, $S\in\mathbb{R}^{k\times k}$ is a diagonal real matrix of \textit{singular values}, and $k \coloneqq \min(n, m)$. The computational complexity of the SVD is the same as for the QR decomposition \eqref{eq:QR_decomposition_complexity}. However, while the scaling is the same, the prefactors are lower for the QR decomposition in most implementations, meaning that the QR decomposition is faster in practice. Moreover, in contrast to the SVD, the QR decomposition allows for highly efficient implementations on graphics processing units (GPUs), which enables decompositions of large matrices to be carried out significantly faster and more power efficiently. Thus, whenever the singular values are not needed, the QR decomposition is preferred over the SVD. Figure \figref{fig:tensor_decomposition_diagrams} shows a tensor network diagram of the SVD \eqref{eq:SVD_general}. \par
+where $U\in\mathbb{C}^{n\times k}$ and $V\in\mathbb{C}^{m\times k}$ are isometries, $S\in\mathbb{R}^{k\times k}$ is a diagonal real matrix of \textit{singular values}, and $k \coloneqq \min(n, m)$. The computational complexity of the SVD is the same as for the QR decomposition \eqref{eq:QR_decomposition_complexity}. However, while the scaling is the same, the prefactors are lower for the QR decomposition in most implementations, meaning that the QR decomposition is faster in practice. Moreover, in contrast to the SVD, the QR decomposition allows for highly efficient implementations on graphics processing units (GPUs), which enables decompositions of large matrices to be carried out significantly faster and more power efficiently. Thus, whenever the singular values are not needed, the QR decomposition is preferred over the SVD. Figure \figref{fig:tensor_decomposition_svd} shows a tensor network diagram of the SVD \eqref{eq:SVD_general}. \par
 An important property of the SVD is that it can be used to approximate a matrix $A$ by a matrix $\tilde{A}$ of lower rank $\chi < \min(m, n)$. This \textit{truncated SVD} can be performed by keeping only the largest $\chi < k$ singular values and omitting the corresponding columns of $U$ and $V$:
 \begin{equation}
 	\label{eq:truncated_SVD_general}
@@ -47,6 +47,6 @@ where we have sorted the singular values in descending order. The truncated SVD 
 			\includegraphics[scale=1]{figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b.pdf}
 		}
 	\end{minipage}
-	\caption{Tensor decompositions are shown in tensor network diagram notation. (a) QR decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
+	\caption{Tensor decompositions are shown in tensor network diagram notation. (a) QR-decomposition \eqref{eq:QR_decomposition_general}. (b) Singular Value Decomposition \eqref{eq:SVD_general}}
 	\label{fig:tensor_decomposition_diagrams}
 \end{figure}

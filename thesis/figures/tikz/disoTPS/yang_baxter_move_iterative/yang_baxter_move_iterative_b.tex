@@ -117,17 +117,15 @@
 		
 		\begin{pgfonlayer}{bg}
 			\draw[virtualLegSmall] (U)+({-\envLegDistanceVirtualHorizontal}, 0) -- (U);
-			\draw[virtualLegSmall] (Vc)+({\envLegDistanceVirtualHorizontal}, 0) -- (Vc);
-			\draw[virtualLegSmall] (Vc) -- ++({\envLegDistanceVirtualHorizontal}, 0);
+			\draw[virtualLegSmallDoubleArrows] (Vc) -- ++({\envLegDistanceVirtualHorizontal}, 0);
 			\draw[virtualLegSmall] (U)+({\envLegDistanceVirtualDiagonal}, {\envLegDistanceVirtualDiagonal}) -- (U);
-			\draw[virtualLegSmall] (Vc)+({-\envLegDistanceVirtualDiagonal}, {-\envLegDistanceVirtualDiagonal}) -- (Vc);	
-			\draw[virtualLegSmall] (Vc) -- ++({-\envLegDistanceVirtualDiagonal}, {-\envLegDistanceVirtualDiagonal});	
+			\draw[virtualLegSmallDoubleArrows] (Vc) -- ++({-\envLegDistanceVirtualDiagonal}, {-\envLegDistanceVirtualDiagonal});	
 			\draw[physicalLegSmall] (U)+(0, \physicalLegLength) -- (U);	
 			
-			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(135)/2}, yshift={\defaultLegSeperationSmall*cos(135)/2}}] (Vc.center) -- (S.center);
-			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(135)/2}, yshift={-\defaultLegSeperationSmall*cos(135)/2}}] (Vc.center) -- (S.center);
-			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(135)/2}, yshift={\defaultLegSeperationSmall*cos(135)/2}}] (S.center) -- (Vc.center);
-			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(135)/2}, yshift={-\defaultLegSeperationSmall*cos(135)/2}}] (S.center) -- (Vc.center);
+			\draw[virtualLegSmallDoubleArrows, transform canvas={xshift={-\defaultLegSeperationSmall*sin(135)/2}, yshift={\defaultLegSeperationSmall*cos(135)/2}}] (Vc.center) -- (S.center);
+			\draw[virtualLegSmallDoubleArrows, transform canvas={xshift={\defaultLegSeperationSmall*sin(135)/2}, yshift={-\defaultLegSeperationSmall*cos(135)/2}}] (Vc.center) -- (S.center);
+			%\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(135)/2}, yshift={\defaultLegSeperationSmall*cos(135)/2}}] (S.center) -- (Vc.center);
+			%\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(135)/2}, yshift={-\defaultLegSeperationSmall*cos(135)/2}}] (S.center) -- (Vc.center);
 			
 			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(135)/2}, yshift={\defaultLegSeperationSmall*cos(135)/2}}] (U.center) -- (S.center);
 			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(135)/2}, yshift={-\defaultLegSeperationSmall*cos(135)/2}}] (U.center) -- (S.center);

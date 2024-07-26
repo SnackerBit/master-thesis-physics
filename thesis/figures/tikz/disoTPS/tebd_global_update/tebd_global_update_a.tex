@@ -1,14 +1,14 @@
 \documentclass[crop, tikz]{standalone}
 \input{../../style.tex}
 \begin{document}
-	\def\tensorDistance{\defaultDistanceSmallDiagonal}
+	\def\tensorDistance{0.85*\defaultDistanceSmall}
 	\def\physicalLegLength{\physicalLegLengthSmall}
 	
 	\def\coordinateSystemDistance{0.5*\tensorDistance}
 	\def\ticklength{0.7*\defaultTextOffset}
 	
-	\def\verticalEquationDist{1.2*\tensorDistance}
-	\def\equationPosX{-\coordinateSystemDistance+6*\tensorDistance+3.5*\defaultDistanceEquations/2}
+	\def\verticalEquationDist{1.3*\tensorDistance}
+	\def\equationPosX{-\coordinateSystemDistance+6*\tensorDistance+3.2*\defaultDistanceEquations/2}
 	\def\equationPosY{2.5*\tensorDistance}
 	
 	\begin{tikzpicture}

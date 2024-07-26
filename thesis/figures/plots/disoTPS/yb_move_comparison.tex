@@ -1,26 +1,26 @@
 \begin{figure}
-	\centering
+	\hspace{40pt}
 	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend pos=north east, legend style={nodes={scale=\legendscale, transform shape}}]
+		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend style={at={(1.015,1.0)},  anchor=north west, nodes={scale=\legendscale, transform shape, font=\small}}]
 			%
-			\addplot[color = blue]
+			\addplot[color = singleBlue]
 			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_iterate_polar.txt};
 			\addlegendentry{EV trunc}
 			%
-			\addplot[color = red]
+			\addplot[color = singleOrange]
 			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_renyi_2_EV.txt};
 			\addlegendentry{EV Rényi-$2$}
 			%
-			\addplot[color = 5orange4]
-			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_renyi_0.5_approx_trm.txt};
-			\addlegendentry{appr.\,CG\,Rényi-$0.5$}
-			%	
-			\addplot[color = 5green4]
+			\addplot[color = singleGreen]
 			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_trunc_approx_trm.txt};
 			\addlegendentry{appr. TRM trunc}
 			%
+			\addplot[color = singleRed]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/comparing_tripartite_decompositions_renyi_0.5_approx_trm.txt};
+			\addlegendentry{appr.\,TRM\,Rényi-$0.5$}
+			%	
 		\end{axis}
 	\end{tikzpicture}
-	\caption{\todo{caption! + choose better colors in plot + better legend placement!}}
+	\caption{In this figure we qualitatively compare different algorithms for performing the YB move. We plot the error of the YB move against the walltime of the algorithms.\todo{maybe include SVD without disent as const line?}}
 	\label{fig:yb_move_comparison}
 \end{figure}

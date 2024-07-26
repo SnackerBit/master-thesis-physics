@@ -1,0 +1,23 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\begin{tikzpicture}
+		% Physical tensors
+		\node[tensorPhysicalSmall] (T) at (0, 0) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall] (T)+(-\tensorDistance, 0) -- (T);
+			\draw[virtualLegSmall] (T) -- ++({cos(60)*\tensorDistance}, {sin(60)*\tensorDistance});
+			\draw[virtualLegSmall] (T) -- ++({cos(60)*\tensorDistance}, {-sin(60)*\tensorDistance});
+			\draw[physicalLegSmall] (T)+(0, \physicalLegLength) -- (T);
+		\end{pgfonlayer}
+		
+		\node[] () at (-\tensorDistance/2, \defaultTextOffsetLarge) {$D$};
+		\node[] () at (0, \physicalLegLength+\defaultTextOffset) {$d$};
+		\node[] () at ({cos(60)*\tensorDistance/2+1.5*\defaultTextOffsetLarge}, {-sin(60)*\tensorDistance/2}) {$D_1$};
+		\node[] () at ({cos(60)*\tensorDistance/2+1.5*\defaultTextOffsetLarge}, {sin(60)*\tensorDistance/2}) {$D_2$};
+	
+	\end{tikzpicture}
+\end{document}

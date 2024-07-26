@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  24 JUL 2024 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  26 JUL 2024 15:41
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **yang_baxter_move_svd_a.tex
 (./yang_baxter_move_svd_a.tex
@@ -11,7 +11,7 @@ Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -715,17 +715,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./yang_baxter_move_svd_a.
 aux) ) 
 Here is how much of TeX's memory you used:
- 19032 strings out of 478287
- 388589 string characters out of 5849290
- 688475 words of memory out of 5000000
- 36866 multiletter control sequences out of 15000+600000
+ 19053 strings out of 478287
+ 389287 string characters out of 5849290
+ 690035 words of memory out of 5000000
+ 36887 multiletter control sequences out of 15000+600000
  470958 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,7n,118p,430b,1000s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on yang_baxter_move_svd_a.pdf (1 page, 28070 bytes).
+Output written on yang_baxter_move_svd_a.pdf (1 page, 28060 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

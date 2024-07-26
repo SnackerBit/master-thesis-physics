@@ -27,18 +27,18 @@
 \definecolor{redMarkingColor}{rgb}{1.0, 0.0, 0.0}
 \definecolor{greenMarkingColor}{rgb}{0.1, 0.8, 0.1}
 \definecolor{operatorColor}{rgb}{0.5, 1.0, 0.5}
-\definecolor{specialLegColor}{rgb}{0.235, 0.125, 0.941}
+\definecolor{specialLegColor}{HTML}{5d3fd3}
 \definecolor{toricCodeSpinColor}{rgb}{1.0, 0.0, 0.0}
-\definecolor{toricCodeEdgeSpinColor}{rgb}{0.0, 0.0, 1.0}
-\definecolor{toricCodeAOperatorColor}{rgb}{0.0, 1.0, 0.0}
+\definecolor{toricCodeEdgeSpinColor}{rgb}{0.0, 0.0, 0.7}
+\definecolor{toricCodeAOperatorColor}{rgb}{0.0, 0.8, 0.0}
 \definecolor{toricCodeBOperatorColor}{rgb}{0.0, 0.0, 1.0}
-\definecolor{toricCodeDisoTPSTensorColor}{rgb}{0.235, 0.125, 0.941}
+\definecolor{toricCodeDisoTPSTensorColor}{HTML}{5d3fd3}
 \def \backgroundopacity {0.5}
 
-\definecolor{color1}{rgb}{1.0, 0.0, 0.0}
-\definecolor{color2}{rgb}{0.0, 1.0, 0.0}
-\definecolor{color3}{rgb}{0.0, 0.0, 1.0}
-\definecolor{color4}{rgb}{1.0, 1.0, 0.0}
+\definecolor{color1}{HTML}{3182bd} % Same as 5blue4
+\definecolor{color2}{HTML}{fd8d3c} % Same as 5orange3
+\definecolor{color3}{HTML}{31a354} % Same as 5green4
+\definecolor{color4}{HTML}{a50f15} % Same as 5red5
 
 % Basic sizes
 \def \defaultTensorWidth {19pt}
@@ -97,7 +97,7 @@
 \tikzstyle{toricCodeSpin} = [circle, minimum size=\tinyTensorWidth, line width=\defaultLineWidth, fill=toricCodeSpinColor, draw=toricCodeSpinColor, inner sep=0, outer sep=0]
 \tikzstyle{toricCodeEdgeSpin} = [circle, minimum size=\tinyTensorWidth, line width=\defaultLineWidth, fill=toricCodeEdgeSpinColor, draw=toricCodeEdgeSpinColor, inner sep=0, outer sep=0]
 \tikzstyle{toricCodePEPSCenterTensor} = [circle, minimum size=2*\tinyTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
-\tikzstyle{toricCodeDisoTPSTensor} = [circle, minimum size=\defaultTensorWidth, line width=\defaultLineWidth, fill=toricCodeDisoTPSTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
+\tikzstyle{toricCodeDisoTPSTensor} = [circle, minimum size=0.9*\defaultTensorWidth, line width=\defaultLineWidth, fill=toricCodeDisoTPSTensorColor, draw=physicalTensorColor, inner sep=0, outer sep=0]
 
 \tikzstyle{tensorPhysicalMPS} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=generalTensorColor, draw=borderColor, outer sep=0]
 \tikzstyle{tensorPhysicalMPSCanonical} = [circle, minimum size=\smallTensorWidth, line width=\defaultLineWidth, fill=physicalTensorColor, draw=borderColor, outer sep=0]
@@ -118,6 +118,7 @@
 
 \tikzstyle{auxillaryLegSmall} = [color=auxillaryLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{auxillaryLegSmallWithoutArrows} = [color=auxillaryLegColor, line width=\lineWidthThin]
+\tikzstyle{auxillaryLegSmallDoubleArrows} = [color=auxillaryLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultDoubleArrowXShift]{Rays[round]}}}, postaction={decorate}]
 \tikzstyle{physicalLegSmall} = [color=physicalLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLegSmall} = [color=virtualLegColor, line width=\lineWidthThin, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall}\arrow[xshift=\defaultArrowXShift]{triangle 60}}}, postaction={decorate}]
 \tikzstyle{virtualLegSmallWithoutArrows} = [color=virtualLegColor, line width=\lineWidthThin]

@@ -1,5 +1,7 @@
 \documentclass[encoding=utf8,british]{template/thesis}
 \usepackage[OT1]{fontenc}
+\usepackage[export]{adjustbox}
+\usepackage{braket}
 \usepackage{ragged2e}
 \justifying
 
@@ -85,8 +87,9 @@
 	\label{chap:TFI}
 	\input{chapters/TFI/TFI.tex}
 	
-	\chapter{Summary and Outlook}
+	\chapter{Conclusion and Outlook}
 	\label{chap:summary}
+	\input{chapters/conclusion_and_outlook/conclusion_and_outlook.tex}
 	
 	\appendix
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}% This turns off sections

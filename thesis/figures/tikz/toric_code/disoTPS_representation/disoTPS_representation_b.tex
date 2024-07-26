@@ -1,0 +1,211 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\physicalLegLengthDisoTPS{0.7*\physicalLegLength}
+	\def\tensorDistance{0.9*\defaultDistanceSmallDiagonal}
+	%\def\physicalLegLength{\physicalLegLength}
+	\def\doubleSpinSeperation{0.2*\tensorDistance}
+	\def\legSeperation{\defaultLegSeperationSmall}
+	\def\verticalDistance{\defaultDistanceNormal}
+	\def\equationDistance{0.8*\defaultDistanceEquations}
+	\def\extraXOffset{1.0*\defaultTextOffsetLarge}
+	\def\physicalLegLengthPEPS{0.6*\physicalLegLengthSmall}
+	\def\doubleSpinSeperation{0.5*\tensorDistance}
+	\begin{tikzpicture}
+		\node[] at (0, 0) {$T_\text{B}$};
+		\node[] at (0, -\verticalDistance) {$T_\text{E}$};
+		\node[] at (0, -2*\verticalDistance) {$T_{\text{E}^\prime}$};
+		\node[] at (0, -3*\verticalDistance) {$T_\text{C}$};
+		
+		\node[] at (\equationDistance/2, 0) {$=$};
+		\node[] at (\equationDistance/2, -\verticalDistance) {$=$};
+		\node[] at (\equationDistance/2, -2*\verticalDistance) {$=$};
+		\node[] at (\equationDistance/2, -3*\verticalDistance) {$=$};
+		
+		\node[] at (\equationDistance, 0) {$\frac{1}{\sqrt{2}}$};
+		\node[] at (\equationDistance, -\verticalDistance) {$\sqrt{2}$};
+		\node[] at (\equationDistance, -3*\verticalDistance) {$\sqrt{2}$};
+		
+		\node[toricCodePEPSCenterTensor] (T1) at (\equationDistance + \extraXOffset + \tensorDistance/2, 0) {};
+		\node[toricCodePEPSCenterTensor] (T2) at (\equationDistance + \extraXOffset + \tensorDistance/2, -\verticalDistance) {};
+		\node[toricCodePEPSCenterTensor] (T3) at (\equationDistance + \extraXOffset + \tensorDistance/2, -2*\verticalDistance) {};
+		\node[toricCodePEPSCenterTensor] (T4) at (\equationDistance + \extraXOffset + \tensorDistance/2, -3*\verticalDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmallWithoutArrows] (T1) -- ++(\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T1) -- ++(-\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T1) -- ++(\tensorDistance/2, -\tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T1) -- ++(-\tensorDistance/2, -\tensorDistance/2);
+			
+			\draw[virtualLegSmallWithoutArrows] (T2) -- ++(\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T2) -- ++(-\tensorDistance/2+\doubleSpinSeperation/2, \tensorDistance/2-\doubleSpinSeperation/2);
+			\draw[virtualLegSmallWithoutArrows] (T2) -- ++(\tensorDistance/2, -\tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T2) -- ++(-\tensorDistance/2+\doubleSpinSeperation/2, -\tensorDistance/2+\doubleSpinSeperation/2);
+			
+			\draw[virtualLegSmallWithoutArrows] (T3) -- ++(\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T3) -- ++(-\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T3) -- ++(\tensorDistance/2-\doubleSpinSeperation/2, -\tensorDistance/2+\doubleSpinSeperation/2);
+			\draw[virtualLegSmallWithoutArrows] (T3) -- ++(-\tensorDistance/2+\doubleSpinSeperation/2, -\tensorDistance/2+\doubleSpinSeperation/2);
+			
+			\draw[virtualLegSmallWithoutArrows] (T4) -- ++(\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmallWithoutArrows] (T4) -- ++(-\tensorDistance/2+\doubleSpinSeperation/2, \tensorDistance/2-\doubleSpinSeperation/2);
+			\draw[virtualLegSmallWithoutArrows] (T4) -- ++(\tensorDistance/2-\doubleSpinSeperation/2, -\tensorDistance/2+\doubleSpinSeperation/2);
+			\draw[virtualLegSmallWithoutArrows] (T4) -- ++(-\tensorDistance/2+\doubleSpinSeperation/2, -\tensorDistance/2+\doubleSpinSeperation/2);
+		\end{pgfonlayer}
+	
+		\node[toricCodeSpin] (s1) at (\equationDistance + \extraXOffset + \tensorDistance/2 + \doubleSpinSeperation/2, \doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s2) at (\equationDistance + \extraXOffset + \tensorDistance/2 - \doubleSpinSeperation/2, \doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s3) at (\equationDistance + \extraXOffset + \tensorDistance/2 + \doubleSpinSeperation/2, -\doubleSpinSeperation/2) {};
+		\node[toricCodeSpin] (s4) at (\equationDistance + \extraXOffset + \tensorDistance/2 - \doubleSpinSeperation/2, -\doubleSpinSeperation/2) {};
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (s1) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s2) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s3) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s4) -- ++(0, \physicalLegLengthPEPS);¸	
+		\end{pgfonlayer}
+	
+		\node[toricCodeSpin] (s1) at (\equationDistance + \extraXOffset + \tensorDistance/2 + \doubleSpinSeperation/2, \doubleSpinSeperation/2 - \verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s2) at (\equationDistance + \extraXOffset + \tensorDistance/2 - \doubleSpinSeperation/2, \doubleSpinSeperation/2 - \verticalDistance) {};
+		\node[toricCodeSpin] (s3) at (\equationDistance + \extraXOffset + \tensorDistance/2 + \doubleSpinSeperation/2, -\doubleSpinSeperation/2 - \verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s4) at (\equationDistance + \extraXOffset + \tensorDistance/2 - \doubleSpinSeperation/2, -\doubleSpinSeperation/2 - \verticalDistance) {};
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (s1) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s2) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s3) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s4) -- ++(0, \physicalLegLengthPEPS);¸	
+		\end{pgfonlayer}
+	
+		\node[toricCodeSpin] (s1) at (\equationDistance + \tensorDistance/2 + \extraXOffset + \doubleSpinSeperation/2, \doubleSpinSeperation/2 - 2*\verticalDistance) {};
+		\node[toricCodeSpin] (s2) at (\equationDistance + \tensorDistance/2 + \extraXOffset - \doubleSpinSeperation/2, \doubleSpinSeperation/2 - 2*\verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s3) at (\equationDistance + \tensorDistance/2 + \extraXOffset + \doubleSpinSeperation/2, -\doubleSpinSeperation/2 - 2*\verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s4) at (\equationDistance + \tensorDistance/2 + \extraXOffset - \doubleSpinSeperation/2, -\doubleSpinSeperation/2 - 2*\verticalDistance) {};
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (s1) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s2) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s3) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s4) -- ++(0, \physicalLegLengthPEPS);¸	
+		\end{pgfonlayer}
+	
+		\node[toricCodeSpin] (s1) at (\equationDistance + \extraXOffset + \tensorDistance/2 + \doubleSpinSeperation/2, \doubleSpinSeperation/2 - 3*\verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s2) at (\equationDistance + \extraXOffset + \tensorDistance/2 - \doubleSpinSeperation/2, \doubleSpinSeperation/2 - 3*\verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s3) at (\equationDistance + \extraXOffset + \tensorDistance/2 + \doubleSpinSeperation/2, -\doubleSpinSeperation/2 - 3*\verticalDistance) {};
+		\node[toricCodeEdgeSpin] (s4) at (\equationDistance + \extraXOffset + \tensorDistance/2 - \doubleSpinSeperation/2, -\doubleSpinSeperation/2 - 3*\verticalDistance) {};
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (s1) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s2) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s3) -- ++(0, \physicalLegLengthPEPS);
+			\draw[physicalLegSmallWithoutArrows] (s4) -- ++(0, \physicalLegLengthPEPS);	
+		\end{pgfonlayer}
+	
+		\node[] at (3*\equationDistance/2+\extraXOffset+\tensorDistance, 0) {$=$};
+		\node[] at (3*\equationDistance/2+\extraXOffset+\tensorDistance, -\verticalDistance) {$=$};
+		\node[] at (3*\equationDistance/2+\extraXOffset+\tensorDistance, -2*\verticalDistance) {$=$};
+		\node[] at (3*\equationDistance/2+\extraXOffset+\tensorDistance, -3*\verticalDistance) {$=$};
+		
+		\node[toricCodeDisoTPSTensor] (T1) at (2*\equationDistance+\extraXOffset+3*\tensorDistance/2, 0) {}; 
+		\node[toricCodeDisoTPSTensor] (T2) at (2*\equationDistance+\extraXOffset+3*\tensorDistance/2, - \verticalDistance) {};
+		\node[toricCodeDisoTPSTensor] (T3) at (2*\equationDistance+\extraXOffset+3*\tensorDistance/2, - 2*\verticalDistance) {};
+		\node[toricCodeDisoTPSTensor] (T4) at (2*\equationDistance+\extraXOffset+3*\tensorDistance/2, - 3*\verticalDistance) {}; 
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmall, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmall, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmall, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			
+			
+			\draw[virtualLegSmall] (T1) -- ++(\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmall] (T1)+(-\tensorDistance/2, \tensorDistance/2) -- (T1);
+			\draw[virtualLegSmall] (T1) -- ++(\tensorDistance/2, -\tensorDistance/2);
+			\draw[virtualLegSmall] (T1)+(-\tensorDistance/2, -\tensorDistance/2) -- (T1);
+		\end{pgfonlayer}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2)+(0, \physicalLegLengthDisoTPS) -- (T2);
+			\draw[physicalLegSmall, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2)+(0, \physicalLegLengthDisoTPS) -- (T2);
+			\draw[physicalLegSmall, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2)+(0, \physicalLegLengthDisoTPS) -- (T2);
+			\draw[physicalLegSmall, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2)+(0, \physicalLegLengthDisoTPS) -- (T2);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T2.center) -- ++(0, \physicalLegLengthDisoTPS);
+			
+			
+			\draw[virtualLegSmall] (T2) -- ++(\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmall] (T2) -- ++(\tensorDistance/2, -\tensorDistance/2);
+		\end{pgfonlayer}
+	
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmall, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmall, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmall, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			
+			
+			\draw[virtualLegSmall] (T3)+(-\tensorDistance/2, \tensorDistance/2) -- (T3);
+			\draw[virtualLegSmall] (T3) -- ++(\tensorDistance/2, \tensorDistance/2);
+		\end{pgfonlayer}
+	
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4)+(0, \physicalLegLengthDisoTPS) -- (T4);
+			\draw[physicalLegSmall, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4)+(0, \physicalLegLengthDisoTPS) -- (T4);
+			\draw[physicalLegSmall, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4)+(0, \physicalLegLengthDisoTPS) -- (T4);
+			\draw[physicalLegSmall, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4)+(0, \physicalLegLengthDisoTPS) -- (T4);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T4.center) -- ++(0, \physicalLegLengthDisoTPS);
+			
+			
+			\draw[virtualLegSmall] (T4) -- ++(\tensorDistance/2, \tensorDistance/2);
+		\end{pgfonlayer}
+		
+		
+		\node[] at (5*\equationDistance/2+\extraXOffset+2*\tensorDistance, 0) {$=$};
+		\node[] at (5*\equationDistance/2+\extraXOffset+2*\tensorDistance, -2*\verticalDistance) {$=$};
+		
+		\node[toricCodeDisoTPSTensor] (T1) at (3*\equationDistance+\extraXOffset+5*\tensorDistance/2, 0) {}; 
+		\node[toricCodeDisoTPSTensor] (T3) at (3*\equationDistance+\extraXOffset+5*\tensorDistance/2, - 2*\verticalDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmall, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmall, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmall, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1)+(0, \physicalLegLengthDisoTPS) -- (T1);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T1.center) -- ++(0, \physicalLegLengthDisoTPS);
+			
+			
+			\draw[virtualLegSmall] (T1)+(\tensorDistance/2, \tensorDistance/2) -- (T1);
+			\draw[virtualLegSmall] (T1) -- ++(-\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmall] (T1)+(\tensorDistance/2, -\tensorDistance/2) -- (T1);
+			\draw[virtualLegSmall] (T1) -- ++(-\tensorDistance/2, -\tensorDistance/2);
+		\end{pgfonlayer}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmall, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmall, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmall, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3)+(0, \physicalLegLengthDisoTPS) -- (T3);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={-\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			\draw[physicalLegSmallWithoutArrows, transform canvas={xshift={3*\legSeperation*sin(90)/2}, yshift={\legSeperation*cos(90)/2}}] (T3.center) -- ++(0, \physicalLegLengthDisoTPS);
+			
+			
+			\draw[virtualLegSmall] (T3) -- ++(-\tensorDistance/2, \tensorDistance/2);
+			\draw[virtualLegSmall] (T3)+(\tensorDistance/2, \tensorDistance/2) -- (T3);
+		\end{pgfonlayer}
+	
+	\end{tikzpicture}
+\end{document}

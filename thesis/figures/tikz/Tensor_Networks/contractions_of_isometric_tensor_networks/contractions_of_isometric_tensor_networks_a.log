@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  24 JUL 2024 18:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  26 JUL 2024 15:41
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **contractions_of_isometric_tensor_networks_a.tex
 (./contractions_of_isometric_tensor_networks_a.tex
@@ -11,7 +11,7 @@ Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -715,10 +715,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./contractions_of_isometric_tensor_networks_a.aux) ) 
 Here is how much of TeX's memory you used:
- 19227 strings out of 478287
- 392150 string characters out of 5849290
- 694616 words of memory out of 5000000
- 37061 multiletter control sequences out of 15000+600000
+ 19231 strings out of 478287
+ 392324 string characters out of 5849290
+ 695250 words of memory out of 5000000
+ 37065 multiletter control sequences out of 15000+600000
  470958 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,8n,118p,451b,999s stack positions out of 5000i,500n,10000p,200000b,80000s

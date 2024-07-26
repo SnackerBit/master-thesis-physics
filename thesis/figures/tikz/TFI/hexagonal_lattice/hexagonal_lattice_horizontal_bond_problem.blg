@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'hexagonal_lattice_horizontal_bond_problem.blg'
+[59] biber:340> INFO - === Fr Jul 26, 2024, 17:38:22
+[127] Utils.pm:398> ERROR - Cannot find 'hexagonal_lattice_horizontal_bond_problem.bcf'!
+[127] Biber.pm:135> INFO - ERRORS: 1
