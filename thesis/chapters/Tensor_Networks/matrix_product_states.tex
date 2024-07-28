@@ -24,7 +24,7 @@ where we have written the indices $i_n$ as superscripts, such that the sums are 
 \includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf}
 \caption{The computation of the expectation value of a local operator can be computed by contracting the MPS with its conjugate transpose, with the operator "sandwiched" in between.}
 \label{fig:mps_local_expectation_value}
-\end{figure}´
+\end{figure}
 An important property of MPS is the existence of a \textit{canonical form} as an isometric tensor network, where a single tensor $T^{[n]} \eqqcolon \Lambda^{[n]}$ is selected as the orthogonality center. One can bring an arbitrary MPS into this canonical form through successive QR-decompositions or SVDs, starting at the outer ends of the chain and isometrizing one tensor at a time, until the orthogonality center is reached \cite{cite:DMRG_in_the_age_of_MPS}. In Figure \figref{fig:mps_canonical_form_general_definition} an MPS in canonical form with the orthogonality center at subsystem $n$ is visualized in diagrammatic notation. We call tensors to the left of the orthogonality center $A^{[i]}$ and tensors to the right of the orthogonality center $B^{[i]}$. The canonical form greatly simplifies many operations on MPS and allows for the formulation of efficient algorithms, where many contractions reduce to identity due to the isometry condition \eqref{eq:isometry_condition_general}, see Figure \figref{fig:mps_left_isometry_condition} and Figure \figref{fig:mps_right_isometry_condition}. For example, the expectation value $\bra{\Psi}\hat{O}\ket{\Psi}$ of a one-site operator $\hat{O} \in \mathbb{C}^{d\times d}$ acting on site $n$ can for a general MPS be computed as
 \begin{equation}
 \begin{split}

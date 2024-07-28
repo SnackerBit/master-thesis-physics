@@ -1,0 +1,102 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\usepackage{mathtools}
+\begin{document}
+	\def\tensorDistance{0.7*\defaultDistanceSmall}
+	\def\equationDistance{0.6*\defaultDistanceEquations}
+	\def\plusDistance{\equationDistance}
+	\def\unitaryWidth{0.9*\smallTensorWidth}
+	\def\thetaWidth{5.3*\smallTensorWidth}
+	\def\unitaryWidth{3.8*\smallTensorWidth}
+	\def\verticalDistance{1.1*\defaultDistanceNormal}
+	\def\openLegLength{0.5*\tensorDistance}
+	\def\verticalOpenLegLength{0.8*\openLegLength}
+	\def\unitaryDist{\openLegLength}
+	\def\braceOffsetX{0}
+	\def\braceOffsetY{0}
+	\def\braceOffsetXRight{5pt}
+	\def\additionalXTextOffsetScale{0.7}
+	\begin{tikzpicture}
+		\node[tensorOperatorSmall, minimum width=\thetaWidth, minimum height=1.2*\smallTensorWidth, fill=generalTensorColor, inner sep=0] (dXSY) at (0, 0) {$\text{d}(XS^{2\alpha-1}Y^\dagger)$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (dXSY)+(-\openLegLength-\thetaWidth/2, 0) -- (dXSY);
+			\draw[virtualLegSmall] (-\tensorDistance, -1.2*\smallTensorWidth/2-\verticalOpenLegLength) -- ++(0, \verticalOpenLegLength);
+			\draw[specialLeg] (dXSY)+(\openLegLength+\thetaWidth/2, 0) -- (dXSY);
+			\draw[virtualLegSmall] (\tensorDistance, -1.2*\smallTensorWidth/2-\verticalOpenLegLength) -- ++(0, \verticalOpenLegLength);
+		\end{pgfonlayer}
+		
+		% first term
+		\node[] () at (\thetaWidth/2+\openLegLength+\equationDistance/2, 0) {$\coloneqq$};
+		\def\posX{\thetaWidth/2+2*\openLegLength+\tensorDistance+\equationDistance+\smallTensorWidth/2}
+		
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (\posX-\tensorDistance, 0) {};
+		\node[] () at (\posX-\tensorDistance-\additionalXTextOffsetScale*\defaultTextOffsetLarge, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\text{d}X$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (\posX, 0) {};
+		\node[] () at (\posX, \smallTensorWidth/2+\defaultTextOffsetLarge) {$S^{2\alpha-1}$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\posX+\tensorDistance, 0) {};
+		\node[] () at (\posX+\tensorDistance+\additionalXTextOffsetScale*\defaultTextOffsetLarge, \smallTensorWidth/2+\defaultTextOffsetLarge) {$Y^*$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (X)+(-\openLegLength-\smallTensorWidth/2, 0) -- (X);
+			\draw[virtualLegSmall] (X)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (X);
+			
+			\draw[specialLeg] (Yd)+(\openLegLength+\smallTensorWidth/2, 0) -- (Yd);
+			\draw[virtualLegSmall] (Yd)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (Yd);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+		\end{pgfonlayer}
+		
+		% second term
+		\node[] () at (\posX+\openLegLength+\tensorDistance+\smallTensorWidth/2+\plusDistance/2, 0) {$+$};
+		\def\posX{\thetaWidth/2+4*\openLegLength+3*\tensorDistance+\equationDistance+\plusDistance+3*\smallTensorWidth/2}
+		
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (\posX-\tensorDistance, 0) {};
+		\node[] () at (\posX-\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$X$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (\posX, 0) {};
+		\node[] () at (\posX, \smallTensorWidth/2+\defaultTextOffsetLarge) {$S^\prime$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\posX+\tensorDistance, 0) {};
+		\node[] () at (\posX+\tensorDistance, \smallTensorWidth/2+\defaultTextOffsetLarge) {$Y^*$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (X)+(-\openLegLength-\smallTensorWidth/2, 0) -- (X);
+			\draw[virtualLegSmall] (X)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (X);
+			
+			\draw[specialLeg] (Yd)+(\openLegLength+\smallTensorWidth/2, 0) -- (Yd);
+			\draw[virtualLegSmall] (Yd)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (Yd);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+		\end{pgfonlayer}
+		
+		% third term
+		\node[] () at (\posX+\openLegLength+\tensorDistance+\smallTensorWidth/2+\plusDistance/2, 0) {$+$};
+		\def\posX{\thetaWidth/2+6*\openLegLength+5*\tensorDistance+\equationDistance+2*\plusDistance+5*\smallTensorWidth/2}
+		
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (\posX-\tensorDistance, 0) {};
+		\node[] () at (\posX-\tensorDistance-\additionalXTextOffsetScale*\defaultTextOffsetLarge, \smallTensorWidth/2+\defaultTextOffsetLarge) {$X$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (\posX, 0) {};
+		\node[] () at (\posX, \smallTensorWidth/2+\defaultTextOffsetLarge) {$S^{2\alpha-1}$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\posX+\tensorDistance, 0) {};
+		\node[] () at (\posX+\tensorDistance+\additionalXTextOffsetScale*\defaultTextOffsetLarge, \smallTensorWidth/2+\defaultTextOffsetLarge) {$\text{d}Y^*$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (X)+(-\openLegLength-\smallTensorWidth/2, 0) -- (X);
+			\draw[virtualLegSmall] (X)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (X);
+			
+			\draw[specialLeg] (Yd)+(\openLegLength+\smallTensorWidth/2, 0) -- (Yd);
+			\draw[virtualLegSmall] (Yd)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (Yd);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+		\end{pgfonlayer}
+		
+	\end{tikzpicture}
+\end{document}

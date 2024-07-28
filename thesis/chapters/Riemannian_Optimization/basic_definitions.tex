@@ -17,4 +17,24 @@ With this we can now define the gradient $\nabla f(X)$ of $f$ at $X\in\Stiefel$ 
 	\label{eq:riemannian_optimization_gradient_of_cost_function}
 	\nabla f(X) \coloneqq P_X D = D - \frac{1}{2}X\left(X^\dagger D + D^\dagger X\right),
 \end{equation}
+where we used the projection \eqref{eq:Stiefel_manifold_project_to_tangent_space}. \par
+After a search direction $\xi$ has been computed, we would like to update the iterate $X$ as $X^\prime = X + \alpha\xi$ with a given step size $\alpha\in\mathbb{R}$. However, in this case the next iterate $X^\prime$ is not guaranteed to remain in the manifold. For this reason it is convenient to define the notion of a \textit{retraction}. A retraction is a function
+\begin{equation}
+	R_\xi : \mathbb{R} \rightarrow \Stiefel, \quad \alpha \mapsto R_\xi(\alpha),
+\end{equation}
+that satisfies $R_\xi(0) = X$ and $\left.\frac{\text{d}R_\xi(\alpha)}{\text{d}\alpha}\right|_\alpha=0 = \xi$. One can think of the retraction as moving in the direction of $\xi$ while staying on the manifold. There exist different possible retractions for the Stiefel manifold. A contraction that is particularly easy to compute and yields good results in practice is the retraction
+\begin{equation}
+	R_\xi{\alpha} = qf(X+\alpha\xi),
+\end{equation}
+where $\qf(A)$ denotes the $Q$-factor of the QR-decomposition $A = QR$. \par
+Some Optimization algorithms, for example Conjugate Gradients, additionally use the search directions from previous iterations for computing the next search direction. In Riemannian optimization algorithms, these search directions must first be transported from the tangent space of the previous iterate to the tangent space of the current iterate. This can be performed by using a \textit{vector transport} \cite{cite:optimization_on_matrix_manifolds}. Let $\xi_k\in T_{X_k} \Stiefel$ be the search direction for the iterate $X_k \in\Stiefel$, and let $X_{k+1}\in\Stiefel$ be the next iterate. The vector transport $T_{k\rightarrow k+1}$ is then a function
+\begin{equation}
+	\label{eq:vector transport}
+	T_{k\rightarrow k+1} : T_{X_k} \Stiefel \rightarrow T_{X_{k+1}} \Stiefel, \quad \xi_k \mapsto T_{k\rightarrow k+1}(\xi_k).
+\end{equation}
+For Riemannian submanifolds, a simple vector transport is given by the projection onto the current tangent space,
+\begin{equation}
+	\label{eq:vector_transport_stiefel_manifold}
+	T_{k\rightarrow k+1}(\xi_k) = P_{X_{k+1}}\xi_k,
+\end{equation}
 where we used the projection \eqref{eq:Stiefel_manifold_project_to_tangent_space}.

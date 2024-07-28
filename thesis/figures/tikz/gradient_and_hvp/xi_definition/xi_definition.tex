@@ -1,0 +1,104 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\usepackage{mathtools}
+\begin{document}
+	\def\tensorDistance{0.7*\defaultDistanceSmall}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\unitaryWidth{0.9*\smallTensorWidth}
+	\def\thetaWidth{4.0*\smallTensorWidth}
+	\def\unitaryWidth{3.8*\smallTensorWidth}
+	\def\verticalDistance{1.1*\defaultDistanceNormal}
+	\def\openLegLength{0.6*\tensorDistance}
+	\def\verticalOpenLegLength{0.8*\openLegLength}
+	\def\unitaryDist{\openLegLength}
+	\def\braceOffsetX{0}
+	\def\braceOffsetY{0}
+	\def\braceOffsetXRight{5pt}
+	\begin{tikzpicture}
+		
+		\node[] () at (26.6pt, 0) {$\large\xi^\text{trunc/Rényi}_{i,j,k,l}\coloneqq\hspace{200pt},$};
+		\node[] () at (\equationDistance/2+\tensorDistance+\openLegLength, 0) {$-$};
+		
+		%\draw [black, thick] (-\tensorDistance-2*\openLegLength+\braceOffsetX, -\verticalDistance/2-\unitaryDist-1.5*\smallTensorWidth-\braceOffsetY) to [round left paren] (-\tensorDistance-2*\openLegLength+\braceOffsetX, \verticalDistance/2+\unitaryDist+1.5*\smallTensorWidth+\braceOffsetY);
+		%\draw [black, thick] (\equationDistance+\tensorDistance+4*\openLegLength+2*\tensorDistance+\braceOffsetXRight, -\verticalDistance/2-\unitaryDist-1.5*\smallTensorWidth-\braceOffsetY) to [round right paren] (\equationDistance+\tensorDistance+4*\openLegLength+2*\tensorDistance+\braceOffsetXRight, \verticalDistance/2+\unitaryDist+1.5*\smallTensorWidth+\braceOffsetY);
+		
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (-\tensorDistance, \verticalDistance/2) {};
+		\node[] () at (-\tensorDistance, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$X$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (0, \verticalDistance/2) {};
+		\node[] () at (0, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{S}$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\tensorDistance, \verticalDistance/2) {};
+		\node[] () at (\tensorDistance, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$Y^*$};
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaWidth, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta) at (0, -\verticalDistance/2) {$\theta^*$};
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (X)+(-\openLegLength-\smallTensorWidth/2, 0) -- (X);
+			\draw[virtualLegSmall] (X)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (X);
+			
+			\draw[specialLeg] (theta)+(-\openLegLength-\thetaWidth/2, 0) -- (theta);
+			\draw[virtualLegSmall] (-\tensorDistance, -\verticalDistance/2+\smallTensorWidth/2+\verticalOpenLegLength) -- (-\tensorDistance, -\verticalDistance/2+\smallTensorWidth/3);
+			\draw[specialLeg] (theta)+(\openLegLength+\thetaWidth/2, 0) -- (theta);
+			\draw[virtualLegSmall] (\tensorDistance, -\verticalDistance/2+\smallTensorWidth/2+\verticalOpenLegLength) -- (\tensorDistance, -\verticalDistance/2+\smallTensorWidth/3);
+			
+			\draw[specialLeg] (Yd)+(\openLegLength+\smallTensorWidth/2, 0) -- (Yd);
+			\draw[virtualLegSmall] (Yd)+(0, -\verticalOpenLegLength-\smallTensorWidth/2) -- (Yd);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			
+			\draw[specialLegWithoutArrows] (X) -- ++(-\openLegLength-\smallTensorWidth/2, 0) -- ++(0, -\verticalDistance) -- ++(\openLegLength, 0);
+			\draw[specialLegWithoutArrows] (Yd) -- ++(\openLegLength+\smallTensorWidth/2, 0) -- ++(0, -\verticalDistance) -- ++(-\openLegLength, 0);
+		\end{pgfonlayer}
+		
+		\node[] () at (-\tensorDistance+\defaultTextOffsetLarge, \verticalDistance/2-\verticalOpenLegLength-\smallTensorWidth/2+3.0*\defaultTextOffsetSmall) {$i$};
+		\node[] () at (\tensorDistance-\defaultTextOffsetLarge, \verticalDistance/2-\verticalOpenLegLength-\smallTensorWidth/2+3.0*\defaultTextOffsetSmall) {$j$};
+		\node[] () at (-\tensorDistance+\defaultTextOffsetLarge, -\verticalDistance/2+\verticalOpenLegLength+\smallTensorWidth/2-3.0*\defaultTextOffsetSmall) {$k$};
+		\node[] () at (\tensorDistance-\defaultTextOffsetLarge, -\verticalDistance/2+\verticalOpenLegLength+\smallTensorWidth/2-3.0*\defaultTextOffsetSmall) {$l$};
+		
+		% Second term
+		\def\xPos{\equationDistance+\tensorDistance+2*\openLegLength+\tensorDistance}
+		
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (\xPos-\tensorDistance, -\verticalDistance/2-\unitaryDist-\smallTensorWidth) {};
+		\node[] () at (\xPos-\tensorDistance, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$X^*$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (\xPos, -\verticalDistance/2-\unitaryDist-\smallTensorWidth) {};
+		\node[] () at (\xPos, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$\tilde{S}$};
+		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\xPos+\tensorDistance, -\verticalDistance/2-\unitaryDist-\smallTensorWidth) {};
+		\node[] () at (\xPos+\tensorDistance, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$Y$};
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaWidth, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta) at (\xPos, \verticalDistance/2+\unitaryDist+\smallTensorWidth) {$\theta$};
+		
+		\node[tensorOperatorSmall, minimum width=\unitaryWidth, minimum height=\smallTensorWidth] (U1) at (\xPos, \verticalDistance/2) {$U$};
+		\node[tensorOperatorSmall, minimum width=\unitaryWidth, minimum height=\smallTensorWidth] (U2) at (\xPos, -\verticalDistance/2) {$U$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (X)+(-\openLegLength-\smallTensorWidth/2, 0) -- (X);
+			\draw[virtualLegSmall] (X)+(0, \unitaryDist+\smallTensorWidth/2) -- (X);
+			
+			\draw[specialLeg] (theta)+(-\openLegLength-\thetaWidth/2, 0) -- (theta);
+			\draw[virtualLegSmall] (\xPos-\tensorDistance, \verticalDistance/2++\unitaryDist+2*\smallTensorWidth/2-3*\smallTensorWidth/4-\unitaryDist) -- ++(0, 3*\smallTensorWidth/4+\unitaryDist);
+			\draw[specialLeg] (theta)+(\openLegLength+\thetaWidth/2, 0) -- (theta);
+			\draw[virtualLegSmall] (\xPos+\tensorDistance, \verticalDistance/2++\unitaryDist+2*\smallTensorWidth/2-3*\smallTensorWidth/4-\unitaryDist) -- ++(0, 3*\smallTensorWidth/4+\unitaryDist);
+			
+			\draw[specialLeg] (Yd)+(\openLegLength+\smallTensorWidth/2, 0) -- (Yd);
+			\draw[virtualLegSmall] (Yd)+(0, \unitaryDist+\smallTensorWidth/2) -- (Yd);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (X) -- (S);
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (Yd) -- (S);
+			
+			\draw[specialLegWithoutArrows] (X) -- ++(-\openLegLength-\smallTensorWidth/2, 0) -- ++(0, \verticalDistance+2*\smallTensorWidth+2*\unitaryDist) -- ++(\openLegLength, 0);
+			\draw[specialLegWithoutArrows] (Yd) -- ++(\openLegLength+\smallTensorWidth/2, 0) -- ++(0, \verticalDistance+2*\smallTensorWidth+2*\unitaryDist) -- ++(-\openLegLength, 0);
+			
+			\draw[virtualLegSmall] (\xPos-\tensorDistance, -\verticalDistance/2+\smallTensorWidth/2+\verticalOpenLegLength) -- ++(0, -\verticalOpenLegLength);
+			\draw[virtualLegSmall] (\xPos+\tensorDistance, -\verticalDistance/2+\smallTensorWidth/2+\verticalOpenLegLength) -- ++(0, -\verticalOpenLegLength);
+			\draw[virtualLegSmall] (\xPos-\tensorDistance, \verticalDistance/2-\smallTensorWidth/2-\verticalOpenLegLength) -- ++(0, \verticalOpenLegLength);
+			\draw[virtualLegSmall] (\xPos+\tensorDistance, \verticalDistance/2-\smallTensorWidth/2-\verticalOpenLegLength) -- ++(0, \verticalOpenLegLength);
+		\end{pgfonlayer}
+		
+		\node[] () at (\xPos-\tensorDistance+\defaultTextOffsetLarge, \verticalDistance/2-\verticalOpenLegLength-\smallTensorWidth/2+3.0*\defaultTextOffsetSmall) {$i$};
+		\node[] () at (\xPos+\tensorDistance-\defaultTextOffsetLarge, \verticalDistance/2-\verticalOpenLegLength-\smallTensorWidth/2+3.0*\defaultTextOffsetSmall) {$j$};
+		\node[] () at (\xPos-\tensorDistance+\defaultTextOffsetLarge, -\verticalDistance/2+\verticalOpenLegLength+\smallTensorWidth/2-3.0*\defaultTextOffsetSmall) {$k$};
+		\node[] () at (\xPos+\tensorDistance-\defaultTextOffsetLarge, -\verticalDistance/2+\verticalOpenLegLength+\smallTensorWidth/2-3.0*\defaultTextOffsetSmall) {$l$};
+		
+	\end{tikzpicture}
+\end{document}

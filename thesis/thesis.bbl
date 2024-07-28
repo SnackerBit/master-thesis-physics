@@ -1454,6 +1454,32 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
       \endverb
     \endentry
+    \entry{cite:github_disoTPS}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c12e33170dc3fb4fbcea39db949dbdf0}{%
+           family={Sappler},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c12e33170dc3fb4fbcea39db949dbdf0}
+      \strng{fullhash}{c12e33170dc3fb4fbcea39db949dbdf0}
+      \strng{bibnamehash}{c12e33170dc3fb4fbcea39db949dbdf0}
+      \strng{authorbibnamehash}{c12e33170dc3fb4fbcea39db949dbdf0}
+      \strng{authornamehash}{c12e33170dc3fb4fbcea39db949dbdf0}
+      \strng{authorfullhash}{c12e33170dc3fb4fbcea39db949dbdf0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/SnackerBit/disoTPS}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{disoTPS}
+      \field{year}{2024}
+    \endentry
     \entry{cite:eckart_young_theorem}{article}{}
       \name{author}{2}{}{%
         {{hash=b5901eb382ee926774180d95eaf3f1b5}{%
@@ -1476,8 +1502,8 @@
       \strng{authorbibnamehash}{709e46ddc31aa8d4998c5dab17def8a3}
       \strng{authornamehash}{709e46ddc31aa8d4998c5dab17def8a3}
       \strng{authorfullhash}{709e46ddc31aa8d4998c5dab17def8a3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Psychometrika}
@@ -1640,8 +1666,8 @@
       \strng{authorbibnamehash}{070f302e57e65537eedb51e343d06552}
       \strng{authornamehash}{070f302e57e65537eedb51e343d06552}
       \strng{authorfullhash}{070f302e57e65537eedb51e343d06552}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Quantum annealing and other optimization methods}
@@ -2107,8 +2133,8 @@
       \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annals of physics}
@@ -2141,8 +2167,8 @@
       \strng{authorbibnamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authornamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authorfullhash}{c81e2ec2bfb64279a08a5b9084ed22ee}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications in Mathematical Physics}
@@ -2268,8 +2294,8 @@
       \strng{authorbibnamehash}{81a576f1972513858145eea9142b4042}
       \strng{authornamehash}{81a576f1972513858145eea9142b4042}
       \strng{authorfullhash}{81a576f1972513858145eea9142b4042}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}
@@ -2302,8 +2328,8 @@
       \strng{authorbibnamehash}{99238209df8c7f3aec4f4081b0f5bef6}
       \strng{authornamehash}{99238209df8c7f3aec4f4081b0f5bef6}
       \strng{authorfullhash}{99238209df8c7f3aec4f4081b0f5bef6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2351,8 +2377,8 @@
       \strng{authorbibnamehash}{2a4192a5c6d2f11e110a8108e049c921}
       \strng{authornamehash}{2a4192a5c6d2f11e110a8108e049c921}
       \strng{authorfullhash}{62464ad8f47b62ddeef03f49598b9914}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2361,6 +2387,267 @@
       \field{volume}{91}
       \field{year}{2015}
       \field{pages}{165112}
+      \range{pages}{1}
+    \endentry
+    \entry{cite:introduction_to_CG_without_pain}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=19892fe98fc08cb8c38ec8b806632cd9}{%
+           family={Shewchuk},
+           familyi={S\bibinitperiod},
+           given={Jonathan\bibnamedelima Richard},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Carnegie-Mellon University. Department of Computer Science Pittsburgh}%
+      }
+      \strng{namehash}{21b43fdbea26e551af2fd914c707e82e}
+      \strng{fullhash}{21b43fdbea26e551af2fd914c707e82e}
+      \strng{bibnamehash}{21b43fdbea26e551af2fd914c707e82e}
+      \strng{authorbibnamehash}{21b43fdbea26e551af2fd914c707e82e}
+      \strng{authornamehash}{21b43fdbea26e551af2fd914c707e82e}
+      \strng{authorfullhash}{21b43fdbea26e551af2fd914c707e82e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to the conjugate gradient method without the agonizing pain}
+      \field{year}{1994}
+    \endentry
+    \entry{cite:a_survey_of_nonlinear_CG_methods}{article}{}
+      \name{author}{2}{}{%
+        {{hash=eb443fd6f6f617175b438ed36c9a5d20}{%
+           family={Hager},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima W},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=4c9d4f37138effd6a1ea90a1bf479c44}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongchao},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{fullhash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{bibnamehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{authorbibnamehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{authornamehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{authorfullhash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pacific journal of Optimization}
+      \field{number}{1}
+      \field{title}{A survey of nonlinear conjugate gradient methods}
+      \field{volume}{2}
+      \field{year}{2006}
+      \field{pages}{35\bibrangedash 58}
+      \range{pages}{24}
+    \endentry
+    \entry{cite:algorithm_CG_DESCENT_a_CG_method_with_guaranteed_descent}{article}{}
+      \name{author}{2}{}{%
+        {{hash=eb443fd6f6f617175b438ed36c9a5d20}{%
+           family={Hager},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima W},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=4c9d4f37138effd6a1ea90a1bf479c44}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongchao},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{fullhash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{bibnamehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{authorbibnamehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{authornamehash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \strng{authorfullhash}{d18fc0dc372f12059adfaf10b9e44d0d}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Mathematical Software (TOMS)}
+      \field{number}{1}
+      \field{title}{Algorithm 851: CG\_DESCENT, a conjugate gradient method with guaranteed descent}
+      \field{volume}{32}
+      \field{year}{2006}
+      \field{pages}{113\bibrangedash 137}
+      \range{pages}{25}
+    \endentry
+    \entry{cite:_a_riemannian_CG_method_for_optimization_on_the_Stifel_manifold}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d5a0f47c5ef5a9c8ad8eb658d990ff02}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaojing},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d5a0f47c5ef5a9c8ad8eb658d990ff02}
+      \strng{fullhash}{d5a0f47c5ef5a9c8ad8eb658d990ff02}
+      \strng{bibnamehash}{d5a0f47c5ef5a9c8ad8eb658d990ff02}
+      \strng{authorbibnamehash}{d5a0f47c5ef5a9c8ad8eb658d990ff02}
+      \strng{authornamehash}{d5a0f47c5ef5a9c8ad8eb658d990ff02}
+      \strng{authorfullhash}{d5a0f47c5ef5a9c8ad8eb658d990ff02}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational optimization and Applications}
+      \field{title}{A Riemannian conjugate gradient method for optimization on the Stiefel manifold}
+      \field{volume}{67}
+      \field{year}{2017}
+      \field{pages}{73\bibrangedash 110}
+      \range{pages}{38}
+    \endentry
+    \entry{cite:on_the_use_of_powells_restart_strategy}{article}{}
+      \name{author}{4}{}{%
+        {{hash=293b1fd019c3229ef0be503bb4c49d4b}{%
+           family={Kou},
+           familyi={K\bibinitperiod},
+           given={Cai-Xia},
+           giveni={C\bibinithyphendelim X\bibinitperiod}}}%
+        {{hash=149d859cfa58a94e2187581988fe297e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wen-Hui},
+           giveni={W\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=214b35a2620a906e707b8a6995897c2c}{%
+           family={Ai},
+           familyi={A\bibinitperiod},
+           given={Wen-Bao},
+           giveni={W\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=958d130cf47d589cd6bb90025b405661}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ya-Feng},
+           giveni={Y\bibinithyphendelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {YOKOHAMA PUBL 101, 6-27 SATSUKIGAOKA AOBA-KU, YOKOHAMA, 227-0053, JAPAN}%
+      }
+      \strng{namehash}{a40f164450eb69686b7cea46b5eaa96b}
+      \strng{fullhash}{616b5c797d4ea479f32f8790f319cc49}
+      \strng{bibnamehash}{a40f164450eb69686b7cea46b5eaa96b}
+      \strng{authorbibnamehash}{a40f164450eb69686b7cea46b5eaa96b}
+      \strng{authornamehash}{a40f164450eb69686b7cea46b5eaa96b}
+      \strng{authorfullhash}{616b5c797d4ea479f32f8790f319cc49}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PACIFIC JOURNAL OF OPTIMIZATION}
+      \field{number}{1}
+      \field{title}{ON THE USE OF POWELL'S RESTART STRATEGY TO CONJUGATE GRADIENT METHODS}
+      \field{volume}{10}
+      \field{year}{2014}
+      \field{pages}{85\bibrangedash 104}
+      \range{pages}{20}
+    \endentry
+    \entry{cite:trust_region_methods_on_riemannian_manifolds}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9a81fe9ad87cf630eb4a68e86949545d}{%
+           family={Absil},
+           familyi={A\bibinitperiod},
+           given={P-A},
+           giveni={P\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=1f5eb0621cdc9081f4d85a9799410dd3}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3016657c1b1eebbd4422da87f0fc6e3c}{%
+           family={Gallivan},
+           familyi={G\bibinitperiod},
+           given={Kyle\bibnamedelima A},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e1338c0eddff9b0502fab1391625b54b}
+      \strng{fullhash}{e1338c0eddff9b0502fab1391625b54b}
+      \strng{bibnamehash}{e1338c0eddff9b0502fab1391625b54b}
+      \strng{authorbibnamehash}{e1338c0eddff9b0502fab1391625b54b}
+      \strng{authornamehash}{e1338c0eddff9b0502fab1391625b54b}
+      \strng{authorfullhash}{e1338c0eddff9b0502fab1391625b54b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foundations of Computational Mathematics}
+      \field{title}{Trust-region methods on Riemannian manifolds}
+      \field{volume}{7}
+      \field{year}{2007}
+      \field{pages}{303\bibrangedash 330}
+      \range{pages}{28}
+    \endentry
+    \entry{cite:differentiating_the_svd}{report}{}
+      \name{author}{1}{}{%
+        {{hash=20701ee7297351388549dce5655f6fc2}{%
+           family={Townsend},
+           familyi={T\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Technical Report 2016, https://j-towns. github. io/papers/svd-derivative~…}%
+      }
+      \strng{namehash}{20701ee7297351388549dce5655f6fc2}
+      \strng{fullhash}{20701ee7297351388549dce5655f6fc2}
+      \strng{bibnamehash}{20701ee7297351388549dce5655f6fc2}
+      \strng{authorbibnamehash}{20701ee7297351388549dce5655f6fc2}
+      \strng{authornamehash}{20701ee7297351388549dce5655f6fc2}
+      \strng{authorfullhash}{20701ee7297351388549dce5655f6fc2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Differentiating the singular value decomposition}
+      \field{type}{techreport}
+      \field{year}{2016}
+    \endentry
+    \entry{cite:the_matrix_cook_book}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=6fcb1bb06fdf433c79ec15e046e78b11}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Kaare\bibnamedelima Brandt},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=224ae05d982058025ca238efd1a02de3}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima Syskind},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{006fd36a9042afda366b86a95dd6f9db}
+      \strng{fullhash}{006fd36a9042afda366b86a95dd6f9db}
+      \strng{bibnamehash}{006fd36a9042afda366b86a95dd6f9db}
+      \strng{authorbibnamehash}{006fd36a9042afda366b86a95dd6f9db}
+      \strng{authornamehash}{006fd36a9042afda366b86a95dd6f9db}
+      \strng{authorfullhash}{006fd36a9042afda366b86a95dd6f9db}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technical University of Denmark}
+      \field{number}{15}
+      \field{title}{The matrix cookbook}
+      \field{volume}{7}
+      \field{year}{2008}
+      \field{pages}{510}
       \range{pages}{1}
     \endentry
   \enddatalist

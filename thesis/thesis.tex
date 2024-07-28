@@ -16,8 +16,8 @@
 
 \mathtoolsset{showonlyrefs}
 
-\lowertitleback{Erstgutachter (Themensteller): Prof.\ F.~Pollmann\\
-	Zweitgutachter: Unknown}
+\lowertitleback{Erstgutachter (Themensteller): Prof. Frank Pollmann\\
+	Zweitgutachter:  Prof. Michael Knap}
 
 \makeatletter
 \renewcommand*\subcaption@label{%
@@ -50,22 +50,21 @@
 	I hereby declare that this thesis is entirely the result of my own work except where otherwise indicated. I have only used the resources given in the list of references. \par
 	\vspace{2cm}
 	\noindent
-	\rlap{Munich, 99.99.2099}{%
+	\rlap{Munich, \today}{%
 		\hspace{.5\textwidth}Benjamin Sappler}\par
 	
 	\newpage
 	\thispagestyle{empty}
 	
-	\section*{Abstract}
-	The numerical simulation of strongly interacting quantum many-body systems is a challenging problem. In the last decades, Tensor Networks have emerged as the standard method for tackling this problem in one dimensional systems in the form of Matrix Product States (MPS). Tensor Networks have also been generalized for the highly relevant problem of two and more spatial dimensions. However, these so-called Projected Entangled Pair States (PEPS) are typically plagued by high computational complexity or drastic approximations. Recently, a new class of Tensor Networks, called isometric Tensor Networks, have been proposed for the simulation of two-dimensional quantum systems. This new class of Tensor Networks can be understood as a generalization of the one-dimensional Matrix Product States to higher dimensions. While isometric Tensor Networks generally capture only a subspace of the total Hilbert space, there are already promising results. In this work, we develop a new class of isometric Tensor Networks that has some key differences to the existing one. We show first numerical results for finding ground states of the Transverse Field Ising model.
+	\justifying
 	
-	\section*{Zusammenfassung}
-	\todo{Übersetzung!}
+	\section*{Abstract}
+	Because of the exponential growth of the Hilbert space with system size, the numerical simulation of strongly interacting quantum many-body systems is a very challenging problem. In the last decades, Tensor Networks have emerged as the standard method for tackling this problem in one dimensional systems in the form of Matrix Product States (MPS). Tensor Networks have also been generalized for the highly relevant problem of two and more spatial dimensions. However, these so-called Projected Entangled Pair States (PEPS) are typically plagued by high computational complexity or drastic approximations. Recently, a new class of Tensor Networks, called isometric Tensor Product States (isoTPS), have been introduced for the simulation of two-dimensional quantum systems. This new class of Tensor Networks can be understood as a generalization of the one-dimensional Matrix Product States to higher dimensions. In this work, we develop a new class of isometric Tensor Networks, which we call diagonal isometric Tensor Product States (disoTPS). We implement a algorithm for performing real and imaginary time evolution on disoTPS and show numerical results for finding ground states of the Transverse Field Ising model on large finite size square lattices of up to 800 spins and performing time evolution after a global quench.
 	
 	\tableofcontents
+	\thispagestyle{empty}
 	
 	\mainmatter
-	\justifying
 	
 	\chapter{Introduction}
 	\label{chap:introduction}
@@ -102,13 +101,9 @@
 	\label{app:riemannian_optimization_of_isometries}
 	\input{chapters/Riemannian_Optimization/Riemannian_Optimization.tex}
 	
-	\chapter{Initialization of the Disentangling Unitary}
-	\label{app:initialization_of_disentangling_unitary}
-	
 	\chapter{Computing the Gradient and Hessian of the Disentangling Cost Functions}
 	\label{app:computation_of_gradient_and_hvp_for_riemannian_optimization}
-	\input{chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computation_of_gradient_and_hvp_for_riemannian_optimization.tex}
-	
+	\input{chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computation_of_gradient_and_hvp_for_riemannian_optimization.tex}	
 	
 	\backmatter
 	\printbibliography

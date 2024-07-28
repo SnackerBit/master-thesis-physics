@@ -1,0 +1,15 @@
+The \textit{Conjugate Gradients} (CG) algorithm \cite{cite:introduction_to_CG_without_pain, cite:a_survey_of_nonlinear_CG_methods, cite:algorithm_CG_DESCENT_a_CG_method_with_guaranteed_descent} was initially introduced as an iterative method for solving large systems of linear equations of the form $Ax = b$ with a known vector $b$, a known, square, positive-definite matrix, and $x$ is an unknown vector. It is however found that the method often works well on non-linear problems, often outperforming simple Gradient Descent. We will only discuss non-linear GD, for a introduction to linear GD see \cite{cite:introduction_to_CG_without_pain}. The main idea of CG is to compute an accumulated search direction $\xi_{k}$ from the gradients at previous iterates as
+\begin{equation}
+	\xi_k = -\nabla f(X_{k}) + \beta_{k} \xi_{k-1}.
+\end{equation}
+There has been a lot of research on determining good algorithms for computing the parameter $\beta_{k}$. Two popular choices are the \textit{Fletcher-Reeves formula} \cite{cite:optimization_on_matrix_manifolds}
+\begin{equation}
+	\beta_{k}^\text{FR}\frac{\langle\nabla f(x_{k}), \nabla f(x_{k})\rangle}{\langle\nabla f(x_{k-1}), \nabla f(x_{k-1})\rangle}
+\end{equation}
+and the \textit{Polak-Ribiere formula} \cite{cite:optimization_on_matrix_manifolds}
+\begin{equation}
+	\beta_{k}^\text{PR}\frac{\langle\nabla f(x_{k}), \nabla f(x_{k}-\nabla f(x_{k-1})\rangle}{\langle\nabla f(x_{k-1}), \nabla f(x_{k-1})\rangle},
+\end{equation}
+where $\langle\cdot,\cdot\rangle$ denotes the inner product of the vector space. After the search direction is computed, the next iterate is computed as $x_{k+1} = x_k + \alpha_k \xi_k$, where $\alpha_k$ is determined using a suitable line-search procedure. The initial search direction is simply the direction of steepest descent, $\xi_0 = -\nabla f(x_0)$. \par
+On Riemannian manifolds, the inner product $\langle\cdot,\cdot\rangle$ is replaced by the Riemannian metric. Additionally, a retraction must be used for updating the iterates, $x_{k+1} = R_{\xi_k}(\alpha_k)$. Finally, a suitable vector transport $T_{k-1\rightarrow k}$ must be used for computing $\beta_k$, if the formula requires gradients or search direction from previous iterates. For an in-depth explanation of how CG on the Stiefel manifold can be implemented, see \cite{cite:optimization_on_matrix_manifolds, cite:_a_riemannian_CG_method_for_optimization_on_the_Stifel_manifold, cite:riemannian_optimization_isometric_tensor_networks}. \par
+In our implementation we additionally used Powell's restart strategy \cite{cite:on_the_use_of_powells_restart_strategy, cite:a_survey_of_nonlinear_CG_methods, cite:pymanopt}, which can significantly inprove the efficiency of CG.
