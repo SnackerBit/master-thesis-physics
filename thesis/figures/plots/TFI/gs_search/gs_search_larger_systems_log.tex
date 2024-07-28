@@ -38,17 +38,21 @@
 			\end{axis}
 			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
 				%
-				\addplot[color = 3red1, mark=*]
+				\addplot[color = 4red1, mark=*]
 				table[x=L, y=error_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
 				\addlegendentry{$D = 2$}
 				%
-				\addplot[color = 3red2, mark=*]
+				\addplot[color = 4red2, mark=*]
 				table[x=L, y=error_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
 				\addlegendentry{$D = 3$}
 				%
-				\addplot[color = 3red3, mark=*]
+				\addplot[color = 4red3, mark=*]
 				table[x=L, y=error_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
 				\addlegendentry{$D = 4$}
+				%
+				\addplot[color = 4red4, mark=*]
+				table[x=L, y=error_isoTPS_D_5, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+				\addlegendentry{$D = 5$}
 				%
 			\end{axis}%
 		\end{tikzpicture}%

@@ -272,6 +272,11 @@
 \definecolor{3red2}{HTML}{de2d26}
 \definecolor{3red3}{HTML}{a50f15}
 
+\definecolor{4red1}{HTML}{fee5d9}
+\definecolor{4red2}{HTML}{fcae91}
+\definecolor{4red3}{HTML}{fb6a4a}
+\definecolor{4red4}{HTML}{cb181d}
+
 \definecolor{5green1}{HTML}{edf8e9}
 \definecolor{5green2}{HTML}{bae4b3}
 \definecolor{5green3}{HTML}{74c476}

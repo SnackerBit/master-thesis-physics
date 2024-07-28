@@ -40,19 +40,23 @@
 				\addlegendentry{$\chi \rightarrow \infty$}
 				%
 			\end{axis}
-			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, ymin=-3.655, ymax=-3.565, legend style={at={(0.4,0.9)}, anchor=north east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, yticklabels=\empty]
+			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, ymin=-3.655, ymax=-3.565, legend style={at={(0.42,0.9)}, anchor=north east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, yticklabels=\empty]
 				%
-				\addplot[color = 3red1, mark=*]
+				\addplot[color = 4red1, mark=*]
 				table[x=L, y=energy_density_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
 				\addlegendentry{$D = 2$}
 				%
-				\addplot[color = 3red2, mark=*]
+				\addplot[color = 4red2, mark=*]
 				table[x=L, y=energy_density_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
 				\addlegendentry{$D = 3$}
 				%
-				\addplot[color = 3red3, mark=*]
+				\addplot[color = 4red3, mark=*]
 				table[x=L, y=energy_density_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
 				\addlegendentry{$D = 4$}
+				%
+				\addplot[color = 4red4, mark=*]
+				table[x=L, y=energy_density_isoTPS_D_5, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+				\addlegendentry{$D = 5$}
 				%
 				\draw[thick, black] (axis cs:16,-3.65) -- (axis cs:20,-3.65) -- (axis cs:20,-3.64) -- (axis cs:16,-3.64) -- (axis cs:16,-3.65);
 				\draw[thick, black, dashed] (axis cs:20,-3.65) -- (\singleFigureWidth+20pt, \singleFigureHeight/2-\insetFigureHeight/2);
@@ -93,16 +97,20 @@
 				%\addlegendentry{$\chi \rightarrow \infty$}
 				%
 				%
-				\addplot[color = 3red1, mark=*]
+				\addplot[color = 4red1, mark=*]
 				table[x=L, y=energy_density_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
 				%\addlegendentry{$D = 2$}
 				%
-				\addplot[color = 3red2, mark=*]
+				\addplot[color = 4red2, mark=*]
 				table[x=L, y=energy_density_isoTPS_D_3, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
 				%\addlegendentry{$D = 3$}
 				%
-				\addplot[color = 3red3, mark=*]
+				\addplot[color = 4red3, mark=*]
 				table[x=L, y=energy_density_isoTPS_D_4, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
+				%\addlegendentry{$D = 4$}
+				%
+				\addplot[color = 4red4, mark=*]
+				table[x=L, y=energy_density_isoTPS_D_5, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_energy_density_vs_system_size.txt};
 				%\addlegendentry{$D = 4$}
 				%
 			\end{axis}

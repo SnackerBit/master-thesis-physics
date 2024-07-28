@@ -1,0 +1,16 @@
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+		\begin{axis}[xlabel=$\varepsilon_\text{trunc}$, ylabel={$E/N$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth]
+			%
+			\addplot[color = singleOrange]
+			table[x=eps_trunc, y=fit, col sep=space]{figures/plots/TFI/gs_search/data/DMRG_extrapolation.txt};
+			%
+			\addplot[color = singleBlue, mark=*, only marks]
+			table[x=eps_trunc, y=E_over_L_squared, col sep=space]{figures/plots/TFI/gs_search/data/DMRG_extrapolation.txt};
+			%
+		\end{axis}
+	\end{tikzpicture}
+	\caption{In this figure we show the extrapolation of $\chi\rightarrow\infty$ for the DMRG bond dimension $\chi$. We plot the energy density obtained for the TFI model on a $20\times 20$ diagonal square lattice at a transverse field of $g=3.5$ at different bond dimensions $\chi$ against the truncation error that was measured during the simulation. Higher bond dimensions lead to a lower error. One observes that the energy density scales linearly with the error. Extrapolating to an error of $\varepsilon_\text{trunc} = 0$ as shown with the linear fit yields an approximation of the exact energy density at $\chi\rightarrow\infty$.}
+	\label{fig:tenpy_extrapolation}
+\end{figure}
