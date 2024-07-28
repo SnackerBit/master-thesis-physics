@@ -1,10 +1,10 @@
 If the cost function is linear, it can be written as
 \begin{equation}
-	f(T) = \sum_{i=1}^{m}\sum_{j=1}^{n}\left[\alpha_{i,j}\Re\left(T_{i,j}\right) + \beta_{i,j} \Im\left(T_{i,j}\right)\right]
+	f(T) = \sum_{j=1}^{m}\sum_{k=1}^{n}\left[\alpha_{j,k}\Re\left(T_{j,k}\right) + \beta_{j,k} \Im\left(T_{j,k}\right)\right]
 \end{equation}
-with parameters $\alpha_{i,j}, \beta_{i,j} \in \mathbb{R}$. Introducing the \textit{environment tensor} $E\in\mathbb{C}^{m\times n}$ as $E_{i,j} = \alpha_i + \i \beta_j$ we can write the cost function as
+with parameters $\alpha_{j,k}, \beta_{j,k} \in \mathbb{R}$. Introducing the \textit{environment tensor} $E\in\mathbb{C}^{m\times n}$ as $E_{j,k} = \alpha_j + i \beta_k$ we can write the cost function as
 \begin{equation}
-	f(T) = \sum_{i=1}^{m}\sum_{j=1}^{n} \Re\left(E_{i,j}^*T_{i,j}\right) = \Re\Tr\left(E^\dagger T\right) = \Re\Tr\left(T^\dagger E\right).
+	f(T) = \sum_{j=1}^{m}\sum_{k=1}^{n} \Re\left(E_{j,k}^*T_{j,k}\right) = \Re\Tr\left(E^\dagger T\right) = \Re\Tr\left(T^\dagger E\right).
 \end{equation}
 Maximizing $f(T)$ under the isometry constraint $T^\dagger T = \id$ is known as the orthogonal Procrustes problem and permits the closed form solution
 \begin{equation}

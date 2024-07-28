@@ -8,7 +8,7 @@ with entries
 	T_{i_1i_2\dots i_n} \in \mathbb{C}, \quad i_j \in \{1, 2, \dots, \chi_j\}.
 \end{equation}
 For example, a rank-0 tensor is a scalar, a rank-1 tensor is a vector, and a tensor of rank-2 is a matrix. It is convenient to use a diagrammatic notation, drawing tensors as shapes and tensor indices as lines (legs) emerging from these shapes. As an example we draw a few simple tensors in tensor diagram notation in Figure \figref{fig:basic_tensor_diagrams}. \par
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	% Store largest image in a box
 	\savebox{\largestimage}{\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf}}
@@ -60,7 +60,7 @@ constitute index contractions. A more involved example is the index contraction 
 \end{equation}
 In tensor diagrams, index contractions are drawn by connecting the legs corresponding to contracted indices. Lines connecting two tensors are sometimes called \textit{bonds}, while indices not used in contractions are called \textit{open indices}. The \textit{bond dimension} $\chi_i$ denotes the number of different values an index $i$ can take. It is often more convenient to discuss tensor network algorithms in terms of diagrams than in terms of equations. \par
 A \textit{tensor network} is defined as a set of tensors that is contracted in a specified way. We draw the tensor diagrams of the above equations in Figure \figref{fig:basic_tensor_network_diagrams}.\par
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	% Store largest image in a box
 	\savebox{\largestimage}{\includegraphics[scale=1]{figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf}}
@@ -92,7 +92,7 @@ Given two normed vector spaces $V_1$ and $V_2$ with $\dim\left(V_1\right) = m$, 
 	W^\dagger W = \id, \quad WW^\dagger = \mathbb{P},
 \end{equation}
 where $\mathbb{P} = \mathbb{P}^2$ is a projection. If $m = n$, it holds $\mathbb{P} = \id$ and $W$ is a \textit{unitary map}. An isometry tensor is a tensor that through grouping of indices and reshaping (i.e. matricization) becomes an isometry. In tensor network diagrams, we draw isometries by decorating lines with arrows. Following the convention of \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, we denote the indices belonging to the larger vector space by incoming arrows and the indices belonging to the smaller vector space by outgoing arrows. Unitary tensors are decorated with bidirectional arrows on all indices, where the grouping must be inferred from the context. Ordinary tensors are drawn without arrows. Tensor diagrams for isometric and unitary tensors are shown in Figure \figref{fig:isometries_and_unitaries_diagrams}.\par
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subcaptionbox{\label{fig:basic_isometries_isometric_matrix}}
 	{%

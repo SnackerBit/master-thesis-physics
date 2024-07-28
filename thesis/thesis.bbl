@@ -1676,6 +1676,50 @@
       \field{pages}{37\bibrangedash 68}
       \range{pages}{32}
     \endentry
+    \entry{cite:mps_and_peps_concepts_symmetries_theorems}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f0fb29b6b2eba9e1bb61064aa432ea7a}{%
+           family={Cirac},
+           familyi={C\bibinitperiod},
+           given={J\bibnamedelima Ignacio},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=c1a0f4fde0f549aefa45178341a028b4}{%
+           family={Perez-Garcia},
+           familyi={P\bibinithyphendelim G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d6ad7cbe797863db505ad2d0b9cc77ce}{%
+           family={Schuch},
+           familyi={S\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1003ae5f362d7f74a9671760817ebb1a}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{65430863fda372748b357f41f1d55965}
+      \strng{fullhash}{d2a8c19409fa1659ceb5cf05e30c5e65}
+      \strng{bibnamehash}{65430863fda372748b357f41f1d55965}
+      \strng{authorbibnamehash}{65430863fda372748b357f41f1d55965}
+      \strng{authornamehash}{65430863fda372748b357f41f1d55965}
+      \strng{authorfullhash}{d2a8c19409fa1659ceb5cf05e30c5e65}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{4}
+      \field{title}{Matrix product states and projected entangled pair states: Concepts, symmetries, theorems}
+      \field{volume}{93}
+      \field{year}{2021}
+      \field{pages}{045003}
+      \range{pages}{1}
+    \endentry
     \entry{cite:criticality_the_area_law_and_the_computational_power_of_PEPS}{article}{}
       \name{author}{4}{}{%
         {{hash=085ab1d28e21b822e7bebcfb7d68f99f}{%
@@ -1942,6 +1986,28 @@
       \verb{url}
       \verb https://doi.org/10.1515/9781400830244
       \endverb
+    \endentry
+    \entry{cite:optimization_techniques_on_riemannian_manifolds}{article}{}
+      \name{author}{1}{}{%
+        {{hash=15aac38864ea32f3b0453d4f6092679d}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima Thomas},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{15aac38864ea32f3b0453d4f6092679d}
+      \strng{fullhash}{15aac38864ea32f3b0453d4f6092679d}
+      \strng{bibnamehash}{15aac38864ea32f3b0453d4f6092679d}
+      \strng{authorbibnamehash}{15aac38864ea32f3b0453d4f6092679d}
+      \strng{authornamehash}{15aac38864ea32f3b0453d4f6092679d}
+      \strng{authorfullhash}{15aac38864ea32f3b0453d4f6092679d}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1407.5965}
+      \field{title}{Optimization techniques on Riemannian manifolds}
+      \field{year}{2014}
     \endentry
     \entry{cite:riemannian_optimization_isometric_tensor_networks}{article}{}
       \name{author}{3}{}{%
@@ -2225,8 +2291,8 @@
       \strng{authorbibnamehash}{78e77e25e44790454e4c55d54a11c970}
       \strng{authornamehash}{78e77e25e44790454e4c55d54a11c970}
       \strng{authorfullhash}{78e77e25e44790454e4c55d54a11c970}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2264,8 +2330,8 @@
       \strng{authorbibnamehash}{de6adaba318879a7243bf195f0a51ae6}
       \strng{authornamehash}{de6adaba318879a7243bf195f0a51ae6}
       \strng{authorfullhash}{de6adaba318879a7243bf195f0a51ae6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Ising phases and transitions in transverse Ising models}
@@ -2482,7 +2548,7 @@
       \field{pages}{113\bibrangedash 137}
       \range{pages}{25}
     \endentry
-    \entry{cite:_a_riemannian_CG_method_for_optimization_on_the_Stifel_manifold}{article}{}
+    \entry{cite:a_riemannian_CG_method_for_optimization_on_the_Stifel_manifold}{article}{}
       \name{author}{1}{}{%
         {{hash=d5a0f47c5ef5a9c8ad8eb658d990ff02}{%
            family={Zhu},
