@@ -1,0 +1,64 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\tensorDistanceMPS}
+	\def\tensorWidth{\tensorWidthMPS}
+	\def\physicalLegLength{\physicalLegLengthSmallMPS}
+	\def\openLegMultiplier{\openLegMultiplierMPS}
+	\def\PsiHeight{1.2*\tensorWidth}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\psiLegDistance{2.0*\tensorWidth}
+	\def\PsiWidth{6*\psiLegDistance}
+		\begin{tikzpicture}
+		\node[tensorPhysicalMPS] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPS] (A2) at (\tensorDistance, 0) {};
+		\node[tensorPhysicalMPS] (A3) at (2*\tensorDistance, 0) {};
+		\node[] () at (3.13*\tensorDistance, 0) {$\dots$};
+		\node[tensorPhysicalMPS] (ANm1) at (4.2*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPS] (AN) at (5.2*\tensorDistance, 0) {};
+		
+		\draw[virtualLegSmallWithoutArrows] (A1) -- (A2) -- (A3);
+		\draw[virtualLegSmallWithoutArrows] (A3) -- ++({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0);
+		\draw[virtualLegSmallWithoutArrows] (ANm1) -- (AN);
+		\draw[virtualLegSmallWithoutArrows] (ANm1) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (A1) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (A2) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (A3) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (ANm1) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (AN) -- ++(0, -\physicalLegLength);
+		\end{pgfonlayer}
+	
+		\node[tensorOperatorSmall, fill=generalTensorColor, minimum height=\PsiHeight, minimum width=\PsiWidth] (psi) at (-\equationDistance-\PsiWidth/2, 0) {$\Psi$};
+		\node[] () at (-\defaultDistanceEquations/2, 0) {$=$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+3*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+5*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+9*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
+			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+11*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
+		\end{pgfonlayer}
+	
+		\node[] () at (-\equationDistance-\PsiWidth+7*\psiLegDistance/2+1.6pt, -\physicalLegLength/2-\tensorWidth/2+1.5pt) {$\cdots$};
+		
+		\node[] at (-\equationDistance-\PsiWidth+\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_1$};
+		\node[] at (-\equationDistance-\PsiWidth+3*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_2$};
+		\node[] at (-\equationDistance-\PsiWidth+5*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_3$};
+		\node[] at (-\equationDistance-\PsiWidth+9*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{N-1}$};
+		\node[] at (-\equationDistance-\PsiWidth+11*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_N$};
+		
+		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[1]}$};
+		\node[] at (\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[2]}$};
+		\node[] at (2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[3]}$};
+		\node[] at (4.2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[N-1]}$};
+		\node[] at (5.2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[N]}$};
+		
+		\node[] at (0, -\physicalLegLength-\defaultTextOffsetLarge) {$i_1$};
+		\node[] at (\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_2$};
+		\node[] at (2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_3$};
+		\node[] at (4.2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{N-1}$};
+		\node[] at (5.2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_N$};
+	\end{tikzpicture}
+\end{document}

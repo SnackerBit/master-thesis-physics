@@ -1,0 +1,70 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+
+\def\blobhalfwidth{(\tensorDistanceMPS+\tensorWidthMPS)/2}
+\def\blobhalfheight{(\tensorWidthMPS)/2}
+\def\equationDistance{\defaultDistanceEquations*0.8}
+
+\def\opOffset{0.7*\braketDistanceMPS}
+\def\operatorHeight{\tensorWidthMPS}
+
+\begin{document}
+	\begin{tikzpicture}
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistanceMPS, 0) {};
+		
+		\draw[virtualLegSmall] (A2) -- (A1);
+		\draw[virtualLegSmall] (A2)+(\tensorDistanceMPS-\tensorWidthMPS/2, 0) -- (A2);
+		\draw[virtualLegSmall] (A1)+(-\tensorDistanceMPS+\tensorWidthMPS/2, 0) -- (A1);
+		
+		\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op1) at (\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[n,n+1]}$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A1)+(0, -\opOffset+\tensorWidthMPS/2) -- (A1);
+			\draw[physicalLegSmall] (A2)+(0, -\opOffset+\tensorWidthMPS/2) -- (A2);
+			
+			\draw[physicalLegSmall] (0, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+			\draw[physicalLegSmall] (1*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+		\end{pgfonlayer}
+	
+		\node[] at (0, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[n]}$};
+		\node[] at (\tensorDistanceMPS, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$B^{[n+1]}$};
+		
+		\node[] () at (2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance/2, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$=$};
+		
+		\def\blobPosX{2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance+\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS}
+		\def\blobPosY{-\opOffset/2+\defaultTextOffset}
+		\node[draw, ellipse, minimum width={2*\blobhalfwidth}, minimum height={\blobhalfheight*2}, line width=\defaultLineWidth, draw=borderColor, fill=generalTensorColor,outer sep=0] (theta) at ({\blobPosX}, \blobPosY) {};
+		\draw[virtualLegSmall] (theta)+({-\blobhalfwidth-\tensorDistanceMPS+\tensorWidthMPS}, 0) -- (theta);
+		\draw[virtualLegSmall] (theta)+({\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS}, 0) -- (theta);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] ({\blobPosX-\tensorDistanceMPS/2}, \blobPosY-\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+			\draw[physicalLegSmallWithoutArrows] ({\blobPosX-\tensorDistanceMPS/2}, \blobPosY-\tensorWidthMPS/2)  -- ++(0, \tensorWidthMPS/2);
+			\draw[physicalLegSmall] ({\blobPosX+\tensorDistanceMPS/2}, \blobPosY-\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+			\draw[physicalLegSmallWithoutArrows] ({\blobPosX+\tensorDistanceMPS/2}, \blobPosY-\tensorWidthMPS/2)  -- ++(0, \tensorWidthMPS/2);
+		\end{pgfonlayer}
+	
+		\node[] at ({\blobPosX}, \blobPosY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\theta^{[n, n+1]}$};
+	
+		\node[] () at ({\blobPosX+\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS+\equationDistance/2}, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$=$};
+		
+		\def\AfinalposX{\blobPosX+\blobhalfwidth+2*\tensorDistanceMPS-3*\tensorWidthMPS/2+\equationDistance}
+		\def\AfinalposY{\blobPosY}
+	
+		\node[tensorPhysicalMPSCanonical] (A1p) at ({\AfinalposX}, \AfinalposY) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (A2p) at ({\AfinalposX+\tensorDistanceMPS}, \AfinalposY) {};
+		
+		\draw[virtualLegSmall] (A1p) -- (A2p);
+		\draw[virtualLegSmall] (A2p)+(\tensorDistanceMPS-\tensorWidthMPS/2, 0) -- (A2p);
+		\draw[virtualLegSmall] (A1p)+(-\tensorDistanceMPS+\tensorWidthMPS/2, 0) -- (A1p);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A1p)+(0, -\opOffset+\tensorWidthMPS/2) -- (A1p);
+			\draw[physicalLegSmall] (A2p)+(0, -\opOffset+\tensorWidthMPS/2) -- (A2p);
+		\end{pgfonlayer}
+	
+	\node[] at ({\AfinalposX}, \AfinalposY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$A^{[n]\prime}$};
+	\node[] at ({\AfinalposX+\tensorDistanceMPS}, \AfinalposY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[n+1]\prime}$};
+	\end{tikzpicture}
+\end{document}

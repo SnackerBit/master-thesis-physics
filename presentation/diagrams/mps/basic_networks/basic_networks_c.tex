@@ -1,0 +1,33 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{25pt}
+	\def \tensorXDistance{40pt}
+	\pgfmathparse{sqrt(3)/2}
+	\edef \offsetMultiplier{\pgfmathresult}
+	\pgfmathparse{1/sqrt(2)}
+	\edef \ABLegMultiplier{\pgfmathresult}
+	\pgfmathparse{1/sqrt(5)}
+	\edef \CLegMultiplier{\pgfmathresult}
+	
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (A) at (0, 0) {$A$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (B) at (\tensorXDistance, 0) {$B$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (C) at (\tensorXDistance/2, -\tensorXDistance*\offsetMultiplier) {$C$};
+		% legs
+		\draw[virtualLegWithoutArrows] (A) -- (B) -- (C) -- (A);
+		\draw[virtualLegWithoutArrows] (A) -- ++(-\ABLegMultiplier*\openLegLength, \ABLegMultiplier*\openLegLength);
+		\draw[virtualLegWithoutArrows] (B) -- ++(\ABLegMultiplier*\openLegLength, \ABLegMultiplier*\openLegLength);
+		\draw[virtualLegWithoutArrows] (C) -- ++(\CLegMultiplier*\openLegLength, -2*\CLegMultiplier*\openLegLength);
+		\draw[virtualLegWithoutArrows] (C) -- ++(-\CLegMultiplier*\openLegLength, -2*\CLegMultiplier*\openLegLength);
+		% open indices
+		\node[] at ({-\ABLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}, {\ABLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}) {$i$};
+		\node[] at ({\tensorXDistance + \ABLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}, {\ABLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}) {$j$};
+		\node[] at ({\tensorXDistance/2 + \CLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}, {-\tensorXDistance*\offsetMultiplier - 2*\CLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}) {$k$};
+		\node[] at ({\tensorXDistance/2 - \CLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}, {-\tensorXDistance*\offsetMultiplier - 2*\CLegMultiplier*(\openLegLength+\defaultTextOffsetLarge)}) {$l$};
+		% bond indices
+		\node[] at (\tensorXDistance/2, \defaultTextOffsetLarge) {$\alpha$};
+		\node[] at (3*\tensorXDistance/4+\offsetMultiplier*\defaultTextOffsetLarge, -\tensorXDistance*\offsetMultiplier/2-\defaultTextOffsetLarge/2) {$\gamma$};
+		\node[] at (\tensorXDistance/4-\offsetMultiplier*\defaultTextOffsetLarge, -\tensorXDistance*\offsetMultiplier/2-\defaultTextOffsetLarge/2) {$\beta$};
+	\end{tikzpicture}
+\end{document}

@@ -1,0 +1,242 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+
+\begin{document}
+	\begin{tikzpicture}
+		\def\verticalLineMultiplier{2.2}
+		\def\secondLineXOffset{\defaultDistanceEquations/2+\tensorDistanceMPS*\openLegMultiplierMPS-\tensorWidthMPS/2*\openLegMultiplierMPS}
+		\def\thirdLineXOffsetA{3*\defaultDistanceEquations/2+\tensorDistanceMPS*\openLegMultiplierMPS-\tensorWidthMPS/2*\openLegMultiplierMPS}
+		\def\thirdLineXOffsetB{5*\defaultDistanceEquations/2+2*\tensorDistanceMPS+3*\tensorDistanceMPS*\openLegMultiplierMPS-3*\tensorWidthMPS/2*\openLegMultiplierMPS}
+		
+		% First line
+		\node[tensorPhysicalMPSCanonical] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistanceMPS, 0) {};
+		\node[] () at (2.1*\tensorDistanceMPS, 0) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (Anm1) at (3.2*\tensorDistanceMPS, 0) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (An) at (4.2*\tensorDistanceMPS, 0) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1) at (5.2*\tensorDistanceMPS, 0) {};
+		\node[] () at (6.3*\tensorDistanceMPS, 0) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (ANm1) at (7.4*\tensorDistanceMPS, 0) {};
+		\node[tensorPhysicalMPSCanonical] (AN) at (8.4*\tensorDistanceMPS, 0) {};
+		
+		\node[tensorPhysicalMPSCanonical] (A1cc) at (0, -\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (A2cc) at (\tensorDistanceMPS, -\braketDistanceMPS) {};
+		\node[] () at (2.1*\tensorDistanceMPS, -\braketDistanceMPS) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (Anm1cc) at (3.2*\tensorDistanceMPS, -\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (Ancc) at (4.2*\tensorDistanceMPS, -\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1cc) at (5.2*\tensorDistanceMPS, -\braketDistanceMPS) {};
+		\node[] () at (6.3*\tensorDistanceMPS, -\braketDistanceMPS) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (ANm1cc) at (7.4*\tensorDistanceMPS, -\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (ANcc) at (8.4*\tensorDistanceMPS, -\braketDistanceMPS) {};
+		
+		\draw[virtualLeg] (A1) -- (A2);
+		\draw[virtualLeg] (Anm1) -- (An);
+		\draw[virtualLeg] (Anp1) -- (An);
+		\draw[virtualLeg] (AN) -- (ANm1);
+		
+		\draw[virtualLeg] (A1cc) -- (A2cc);
+		\draw[virtualLeg] (Anm1cc) -- (Ancc);
+		\draw[virtualLeg] (Anp1cc) -- (Ancc);
+		\draw[virtualLeg] (ANcc) -- (ANm1cc);
+		
+		\node[tensorOperatorSmall, minimum size=\tensorWidthMPS, inner sep=0] (op) at (4.2*\tensorDistanceMPS, -\braketDistanceMPS/2) {};
+		\node[] () at (4.2*\tensorDistanceMPS-\tensorWidthMPS/2-\defaultTextOffsetLarge, -\braketDistanceMPS/2) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (0, -\braketDistanceMPS/2) -- (A1);
+			\draw[physicalLeg] (0, -\braketDistanceMPS/2) -- (A1cc);
+			\draw[physicalLeg] (\tensorDistanceMPS, -\braketDistanceMPS/2) -- (A2);
+			\draw[physicalLeg] (\tensorDistanceMPS, -\braketDistanceMPS/2) -- (A2cc);
+			\draw[physicalLeg] (3.2*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (Anm1);
+			\draw[physicalLeg] (3.2*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (Anm1cc);
+			%\draw[physicalLegWithoutArrows] (An) -- (op) -- (Ancc);
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			\draw[physicalLeg] (5.2*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (Anp1);
+			\draw[physicalLeg] (5.2*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (Anp1cc);
+			\draw[physicalLeg] (7.4*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (ANm1);
+			\draw[physicalLeg] (7.4*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (ANm1cc);
+			\draw[physicalLeg] (8.4*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (AN);
+			\draw[physicalLeg] (8.4*\tensorDistanceMPS, -\braketDistanceMPS/2) -- (ANcc);
+			
+			\draw[virtualLeg](A2) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			\draw[virtualLeg] (A2cc) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			\draw[virtualLeg] (Anm1)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anm1);
+			\draw[virtualLeg] (Anm1cc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anm1cc);
+			
+			\draw[virtualLeg] (Anp1)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anp1);
+			\draw[virtualLeg] (Anp1cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anp1cc);
+			\draw[virtualLeg] (ANm1) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			\draw[virtualLeg] (ANm1cc) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+		\end{pgfonlayer}
+		
+		\node[above=\defaultTextOffsetSmall of A1] {$A^{[1]}$};
+		\node[above=\defaultTextOffsetSmall of A2] {$A^{[2]}$};
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		\node[above=\defaultTextOffsetSmall of ANm1] {$B^{[N-1]}$};
+		\node[above=\defaultTextOffsetSmall of AN] {$B^{[N]}$};
+		
+		\node[below=\defaultTextOffsetSmall of A1cc] {$A^{[1]*}$};
+		\node[below=\defaultTextOffsetSmall of A2cc] {$A^{[2]*}$};
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		\node[below=\defaultTextOffsetSmall of ANm1cc] {$B^{[N-1]*}$};
+		\node[below=\defaultTextOffsetSmall of ANcc] {$B^{[N]*}$};
+		
+		% Second Line
+		\node[tensorPhysicalMPSCanonical] (A2) at (0*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[] () at (1.1*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (Anm1) at (2.2*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (An) at (3.2*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1) at (4.2*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[] () at (5.3*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (ANm1) at (6.4*\tensorDistanceMPS+\secondLineXOffset, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		
+		\node[tensorPhysicalMPSCanonical] (A2cc) at (0*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[] () at (1.1*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (Anm1cc) at (2.2*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (Ancc) at (3.2*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1cc) at (4.2*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[] () at (5.3*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (ANm1cc) at (6.4*\tensorDistanceMPS+\secondLineXOffset, {-(1+\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		
+		\draw[virtualLeg] (Anm1) -- (An);
+		\draw[virtualLeg] (Anp1) -- (An);
+		
+		\draw[virtualLeg] (Anm1cc) -- (Ancc);
+		\draw[virtualLeg] (Anp1cc) -- (Ancc);
+		
+		\node[tensorOperatorSmall, minimum size=\tensorWidthMPS] (op) at (3.2*\tensorDistanceMPS+\secondLineXOffset, {-(0.5+\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[] () at (3.2*\tensorDistanceMPS+\secondLineXOffset-\tensorWidthMPS/2-\defaultTextOffsetLarge, {-(0.5+\verticalLineMultiplier)*\braketDistanceMPS}) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (A2)+(0, -\braketDistanceMPS/2) -- (A2);
+			\draw[physicalLeg] (A2cc)+(0, \braketDistanceMPS/2) -- (A2cc);
+			\draw[physicalLeg] (Anm1)+(0, -\braketDistanceMPS/2) -- (Anm1);
+			\draw[physicalLeg] (Anp1)+(0, -\braketDistanceMPS/2) -- (Anp1);
+			\draw[physicalLeg] (Anm1cc)+(0, \braketDistanceMPS/2) -- (Anm1cc);
+			\draw[physicalLeg] (Anp1cc)+(0, \braketDistanceMPS/2) -- (Anp1cc);
+			\draw[physicalLeg] (ANm1)+(0, -\braketDistanceMPS/2) -- (ANm1);
+			\draw[physicalLeg] (ANm1cc)+(0, \braketDistanceMPS/2) -- (ANm1cc);
+			
+			%\draw[physicalLegWithoutArrows] (An) -- (op) -- (Ancc);
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			
+			\draw[virtualLeg](A2) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			\draw[virtualLeg] (A2cc) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			\draw[virtualLeg] (Anm1)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anm1);
+			\draw[virtualLeg] (Anm1cc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anm1cc);
+			
+			\draw[virtualLeg] (Anp1)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anp1);
+			\draw[virtualLeg] (Anp1cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anp1cc);
+			\draw[virtualLeg] (ANm1) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			\draw[virtualLeg] (ANm1cc) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0);
+			
+			% Outermost legs
+			\draw[virtualLeg] (A2)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2);
+			\draw[virtualLeg] (A2cc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2cc);
+			\draw[virtualLegWithoutArrows] (A2) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A2cc);
+			\draw[virtualLeg] (ANm1)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (ANm1); 
+			\draw[virtualLeg] (ANm1cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (ANm1cc);
+			\draw[virtualLegWithoutArrows] (ANm1) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (ANm1cc);
+		\end{pgfonlayer}
+	
+		\node[above=\defaultTextOffsetSmall of A2] {$A^{[2]}$};
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		\node[above=\defaultTextOffsetSmall of ANm1] {$B^{[N-1]}$};
+		
+		\node[below=\defaultTextOffsetSmall of A2cc] {$A^{[2]*}$};
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		\node[below=\defaultTextOffsetSmall of ANm1cc] {$B^{[N-1]*}$};
+		
+		\node () at (0, {-(0.5 + \verticalLineMultiplier)*\braketDistanceMPS}) {$=$};
+		
+		% Third Line, first picture
+
+		\node[tensorPhysicalMPSCanonical] (Anm1) at (0*\tensorDistanceMPS+\thirdLineXOffsetA, -2*\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (An) at (1*\tensorDistanceMPS+\thirdLineXOffsetA, -2*\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1) at (2*\tensorDistanceMPS+\thirdLineXOffsetA, -2*\verticalLineMultiplier*\braketDistanceMPS) {};
+		
+		\node[tensorPhysicalMPSCanonical] (Anm1cc) at (0*\tensorDistanceMPS+\thirdLineXOffsetA, {-(1+2*\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (Ancc) at (1*\tensorDistanceMPS+\thirdLineXOffsetA, {-(1+2*\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1cc) at (2*\tensorDistanceMPS+\thirdLineXOffsetA, {-(1+2*\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		
+		\draw[virtualLeg] (Anm1) -- (An);
+		\draw[virtualLeg] (Anp1) -- (An);
+		
+		\draw[virtualLeg] (Anm1cc) -- (Ancc);
+		\draw[virtualLeg] (Anp1cc) -- (Ancc);
+		
+		\node[tensorOperatorSmall, minimum size=\tensorWidthMPS] (op) at (1*\tensorDistanceMPS+\thirdLineXOffsetA, {-(0.5+2*\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[] () at (1*\tensorDistanceMPS+\thirdLineXOffsetA-\tensorWidthMPS/2-\defaultTextOffsetLarge, {-(0.5+2*\verticalLineMultiplier)*\braketDistanceMPS}) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (Anm1)+(0, -\braketDistanceMPS/2) -- (Anm1);
+			\draw[physicalLeg] (Anp1)+(0, -\braketDistanceMPS/2) -- (Anp1);
+			\draw[physicalLeg] (Anm1cc)+(0, \braketDistanceMPS/2) -- (Anm1cc);
+			\draw[physicalLeg] (Anp1cc)+(0, \braketDistanceMPS/2) -- (Anp1cc);
+					
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			
+			% Outermost legs
+			\draw[virtualLeg] (Anm1)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anm1);
+			\draw[virtualLeg] (Anm1cc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anm1cc);
+			\draw[virtualLegWithoutArrows] (Anm1) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (Anm1cc);
+			\draw[virtualLeg] (Anp1)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anp1);
+			\draw[virtualLeg] (Anp1cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Anp1cc);
+			\draw[virtualLegWithoutArrows] (Anp1) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (Anp1cc);
+		\end{pgfonlayer}
+	
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		
+		\node () at (0, {-(0.5 + 2*\verticalLineMultiplier)*\braketDistanceMPS}) {$=$};
+		\node () at (\defaultDistanceEquations/2, {-(0.5 + 2*\verticalLineMultiplier)*\braketDistanceMPS}) {$\dots$};
+		\node () at (\defaultDistanceEquations, {-(0.5 + 2*\verticalLineMultiplier)*\braketDistanceMPS}) {$=$};
+		
+		% Third Line, second picture
+		
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (An) at (\thirdLineXOffsetB, -2*\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (Ancc) at (\thirdLineXOffsetB, {-(1+2*\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		
+		\node[tensorOperatorSmall, minimum size=\tensorWidthMPS] (op) at (\thirdLineXOffsetB, {-(0.5+2*\verticalLineMultiplier)*\braketDistanceMPS}) {};
+		\node[] () at (\thirdLineXOffsetB-\tensorWidthMPS/2-\defaultTextOffsetLarge, {-(0.5+2*\verticalLineMultiplier)*\braketDistanceMPS}) {$\hat{O}_n$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLeg] (op) -- (An);
+			\draw[physicalLeg] (op) -- (Ancc);
+			
+			% Outermost legs
+			\draw[virtualLeg] (An)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (An);
+			\draw[virtualLeg] (Ancc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Ancc);
+			\draw[virtualLegWithoutArrows] (An) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (Ancc);
+			\draw[virtualLeg] (An)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (An);
+			\draw[virtualLeg] (Ancc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (Ancc);
+			\draw[virtualLegWithoutArrows] (An) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (Ancc);
+		\end{pgfonlayer}
+		
+		\node[above=\defaultTextOffsetSmall of Anm1] {$A^{[n-1]}$};
+		\node[above=\defaultTextOffsetSmall of An] {$\Lambda^{[n]}$};
+		\node[above=\defaultTextOffsetSmall of Anp1] {$B^{[n+1]}$};
+		
+		\node[below=\defaultTextOffsetSmall of Anm1cc] {$A^{[n-1]*}$};
+		\node[below=\defaultTextOffsetSmall of Ancc] {$\Lambda^{[n]*}$};
+		\node[below=\defaultTextOffsetSmall of Anp1cc] {$B^{[n+1]*}$};
+		
+		\node () at (\thirdLineXOffsetB-\tensorDistanceMPS*\openLegMultiplierMPS+\tensorWidthMPS/2*\openLegMultiplierMPS-\defaultDistanceEquations/2, {-(0.5 + 2*\verticalLineMultiplier)*\braketDistanceMPS}) {$=$};
+	\end{tikzpicture}
+\end{document}
