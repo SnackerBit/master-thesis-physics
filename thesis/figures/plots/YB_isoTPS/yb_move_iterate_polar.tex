@@ -4,11 +4,11 @@
 		\begin{axis}[xlabel=$N_\text{iter}$, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xtick={0, 2000, 4000, 6000, 8000, 10000}, xticklabels={$0$, $2000$, $4000$, $6000$, $8000$, $10000$}, scaled x ticks=false]
 			
 			\addplot[color = singleBlue]
-			table[x=N_iter, y=trunc_error, col sep=space]{figures/plots/disoTPS/data/iterate_polar.txt};
+			table[x=N_iter, y=trunc_error, col sep=space]{figures/plots/YB_isoTPS/data/iterate_polar.txt};
 			%\addlegendentry{Evenbly-Vidal}
 			
 		\end{axis}
 	\end{tikzpicture}
 	\caption{In this figure we plot the YB error against the number of iterations $N_\text{iter}$ of the iterative YB move. The YB move is performed on an environment of tensors that were obtained during imaginary TEBD on the TFI model, see Chapter \ref{chap:TFI}. The algorithm converges only very slowly.}
-	\label{fig:disoTPS_tripartite_decomposition_iterate_polar}
+	\label{fig:YB_isoTPS_tripartite_decomposition_iterate_polar}
 \end{figure}

@@ -1454,7 +1454,7 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevB.107.205106
       \endverb
     \endentry
-    \entry{cite:github_disoTPS}{misc}{}
+    \entry{cite:github_YB_isoTPS}{misc}{}
       \name{author}{1}{}{%
         {{hash=c12e33170dc3fb4fbcea39db949dbdf0}{%
            family={Sappler},
@@ -1475,9 +1475,9 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/SnackerBit/disoTPS}}
+      \field{howpublished}{\url{https://github.com/SnackerBit/YB-isoTPS}}
       \field{journaltitle}{GitHub repository}
-      \field{title}{disoTPS}
+      \field{title}{YB-isoTPS}
       \field{year}{2024}
     \endentry
     \entry{cite:eckart_young_theorem}{article}{}
@@ -2259,8 +2259,8 @@
       \strng{authorbibnamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
       \strng{authornamehash}{5ef94f8733b4abb1d99fbc282b63e1fb}
       \strng{authorfullhash}{5ef94f8733b4abb1d99fbc282b63e1fb}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Student Review}

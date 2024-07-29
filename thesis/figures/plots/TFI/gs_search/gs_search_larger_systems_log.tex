@@ -36,7 +36,7 @@
 				\addlegendentry{$\chi = 1024$}
 				%
 			\end{axis}
-			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{disoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
+			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
 				%
 				\addplot[color = 4red1, mark=*]
 				table[x=L, y=error_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
@@ -57,6 +57,6 @@
 			\end{axis}%
 		\end{tikzpicture}%
 	\end{minipage}
-	\caption{In this figure we visualize the data from figure \protect\figref{fig:tfi_gs_energy_vs_dtau_larger_systems} by plotting the relative ground state energy error with respect to the energy obtained from extrapolating the DMRG simulation to $\chi\rightarrow\infty$. One can observe that the energy error of the disoTPS simulation approaches a constant for large $L$.}
-	\label{fig:disoTPS_gs_search_larger_systems_log}
+	\caption{In this figure we visualize the data from figure \protect\figref{fig:tfi_gs_energy_vs_dtau_larger_systems} by plotting the relative ground state energy error with respect to the energy obtained from extrapolating the DMRG simulation to $\chi\rightarrow\infty$. One can observe that the energy error of the YB-isoTPS simulation approaches a constant for large $L$.}
+	\label{fig:YB_isoTPS_gs_search_larger_systems_log}
 \end{figure}

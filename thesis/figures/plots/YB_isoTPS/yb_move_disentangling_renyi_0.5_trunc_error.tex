@@ -1,100 +1,100 @@
 \begin{figure}
 	\centering
-	\subcaptionbox{\label{fig:disoTPS_disentangling_cg_trm_renyi_0.5}}{%
+	\subcaptionbox{\label{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5}}{%
 		\raisebox{1.83pt}{\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=1/2)$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\twoByTwoFigureHeight, width=\twoByTwoFigureWidth, xtick={0, 200, 400, 600, 800, 1000}, xticklabels={$0$, $200$, $400$, $600$, $800$, $1000$}, ymin=0.351, ymax=0.377, legend style={nodes={scale=\legendscale, transform shape, font=\small}}]
 				%	
 				\addplot[color = singleOrange]
-				table[x=N_iters, y=f_Renyi_cg, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=N_iters, y=f_Renyi_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				\addlegendentry{CG}
 				%	
 				\addplot[color = singleOrange, dashed]
-				table[x=N_iters, y=f_Renyi_approx_cg, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=N_iters, y=f_Renyi_approx_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				\addlegendentry{approx CG}
 				%	
 				\addplot[color = singleGreen]
-				table[x=N_iters, y=f_Renyi_trm, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=N_iters, y=f_Renyi_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				\addlegendentry{TRM}
 				%	
 				\addplot[color = singleGreen, dashed]
-				table[x=N_iters, y=f_Renyi_approx_trm, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=N_iters, y=f_Renyi_approx_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				\addlegendentry{approx TRM}
 				%
 			\end{axis}%
 		\end{tikzpicture}}%
 	}%
 	\quad
-	\subcaptionbox{\label{fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime}}{%
+	\subcaptionbox{\label{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5_walltime}}{%
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\begin{axis}[xlabel={walltime [s]}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\twoByTwoFigureHeight, width=\twoByTwoFigureWidth, yticklabels={}, xmode=log, ymin=0.351, ymax=0.377]
 				%	
 				\addplot[color = singleOrange]
-				table[x=walltime_cg, y=f_Renyi_cg, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=walltime_cg, y=f_Renyi_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				%\addlegendentry{CG}
 				%	
 				\addplot[color = singleOrange, dashed]
-				table[x=walltime_approx_cg, y=f_Renyi_approx_cg, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=walltime_approx_cg, y=f_Renyi_approx_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				%\addlegendentry{approx CG}
 				%	
 				\addplot[color = singleGreen]
-				table[x=walltime_trm, y=f_Renyi_trm, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=walltime_trm, y=f_Renyi_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				%\addlegendentry{TRM}
 				%	
 				\addplot[color = singleGreen, dashed]
-				table[x=walltime_approx_trm, y=f_Renyi_approx_trm, col sep=space]{figures/plots/disoTPS/data/renyi_0.5_entropy_disentangling.txt};
+				table[x=walltime_approx_trm, y=f_Renyi_approx_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
 				%\addlegendentry{approx TRM}
 				%
 			\end{axis}%
 		\end{tikzpicture}%
 	}%
 	\hspace{0pt}
-	\subcaptionbox{\label{fig:disoTPS_disentangling_cg_trm_truncation_error}}{%
+	\subcaptionbox{\label{fig:YB_isoTPS_disentangling_cg_trm_truncation_error}}{%
 		\raisebox{1.83pt}{\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{trunc}(U,\theta)$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\twoByTwoFigureHeight, width=\twoByTwoFigureWidth, xtick={0, 200, 400, 600, 800, 1000}, xticklabels={$0$, $200$, $400$, $600$, $800$, $1000$}, ymin=1.02e-6, ymax=1.93e-6]
 				%
 				\addplot[color = singleOrange]
-				table[x=N_iters, y=f_trunc_cg, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=N_iters, y=f_trunc_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{CG}
 				%
 				\addplot[color = singleOrange, dashed]
-				table[x=N_iters, y=f_trunc_approx_cg, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=N_iters, y=f_trunc_approx_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{approx CG}
 				%
 				\addplot[color = singleGreen]
-				table[x=N_iters, y=f_trunc_trm, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=N_iters, y=f_trunc_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{TRM}
 				%
 				\addplot[color = singleGreen, dashed]
-				table[x=N_iters, y=f_trunc_approx_trm, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=N_iters, y=f_trunc_approx_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{approx TRM}
 				%
 			\end{axis}%
 		\end{tikzpicture}}%
 	}%
 	\quad
-	\subcaptionbox{\label{fig:disoTPS_disentangling_cg_trm_truncation_error_walltime}}{%
+	\subcaptionbox{\label{fig:YB_isoTPS_disentangling_cg_trm_truncation_error_walltime}}{%
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\begin{axis}[xlabel={walltime [s]}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\twoByTwoFigureHeight, width=\twoByTwoFigureWidth, yticklabels={}, xmode=log, ymin=1.02e-6, ymax=1.93e-6, scaled ticks=false]
 				%
 				\addplot[color = singleOrange]
-				table[x=walltime_cg, y=f_trunc_cg, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=walltime_cg, y=f_trunc_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{CG}
 				%
 				\addplot[color = singleOrange, dashed]
-				table[x=walltime_approx_cg, y=f_trunc_approx_cg, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=walltime_approx_cg, y=f_trunc_approx_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{approx CG}
 				%
 				\addplot[color = singleGreen]
-				table[x=walltime_trm, y=f_trunc_trm, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=walltime_trm, y=f_trunc_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{TRM}
 				%
 				\addplot[color = singleGreen, dashed]
-				table[x=walltime_approx_trm, y=f_trunc_approx_trm, col sep=space]{figures/plots/disoTPS/data/renyi_truncation_error_disentangling.txt};
+				table[x=walltime_approx_trm, y=f_trunc_approx_trm, col sep=space]{figures/plots/YB_isoTPS/data/renyi_truncation_error_disentangling.txt};
 				%\addlegendentry{approx TRM}
 				%
 				\end{axis}%
 			\end{tikzpicture}%
 	}%
 	\caption{In this figure we qualitatively compare the different disentanglers that use Riemannian optimization to minimize the cost function. (a) (c) The $\alpha = 2$ Rényi-entropy and the truncation error are plotted against the number of disentangling iterations. The approximate versions of the CG and TRM algorithms perform almost as good as the exact versions. (b) (d) We now plot the Rényi-entropy and the truncation error against the walltime of the algorithms, showing the improved speed of the approximate algorithms.}
-	\label{fig:disoTPS_disentangling_cg_trm_renyi_0.5_trunc_error}
+	\label{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5_trunc_error}
 \end{figure}

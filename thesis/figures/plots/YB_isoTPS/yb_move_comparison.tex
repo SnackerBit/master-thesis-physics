@@ -1,0 +1,28 @@
+\begin{figure}
+	\hspace{40pt}
+	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
+		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend style={at={(1.015,1.0)},  anchor=north west, nodes={scale=\legendscale, transform shape, font=\small}}, xmin=2e-3, xmax=1e2]
+			%
+			\addplot [mark=none, black, dashed, domain=1e-3:1e3] {0.0015762703522421183}; \addlegendentry{SVD + init}
+			%
+			\addplot[color = singleBlue]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/YB_isoTPS/data/comparing_tripartite_decompositions_iterate_polar.txt};
+			\addlegendentry{EV trunc}
+			%
+			\addplot[color = singleOrange]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/YB_isoTPS/data/comparing_tripartite_decompositions_renyi_2_EV.txt};
+			\addlegendentry{EV Rényi-$2$}
+			%
+			\addplot[color = singleGreen]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/YB_isoTPS/data/comparing_tripartite_decompositions_trunc_approx_trm.txt};
+			\addlegendentry{appr. TRM trunc}
+			%
+			\addplot[color = singleRed]
+			table[x=t, y=trunc_error, col sep=space]{figures/plots/YB_isoTPS/data/comparing_tripartite_decompositions_renyi_0.5_approx_trm.txt};
+			\addlegendentry{appr.\,TRM\,Rényi-$0.5$}
+			%	
+		\end{axis}
+	\end{tikzpicture}
+	\caption{In this figure we qualitatively compare different algorithms for performing the YB move. We plot the error of the YB move against the walltime of the algorithms.}
+	\label{fig:yb_move_comparison}
+\end{figure}

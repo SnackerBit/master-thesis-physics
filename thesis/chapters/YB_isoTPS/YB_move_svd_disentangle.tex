@@ -1,4 +1,4 @@
-Alternatively, the constrained optimization problem \eqref{eq:disoTPS_YB_move_standard} can be solved via two successive SVDs with an optional disentangling prodcedure with the goal of reducing the truncation error or some entanglement measure. This is is a similar algorithm to the one used for the MM in isoTPS \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, compare Section \ref{sec:tensors_and_tensor_networks_isometric_tensor_product_states_in_2D}. The algorithm is sketched in Figure \figref{fig:yb_move_svd_disent} and is made up of three main steps.
+Alternatively, the constrained optimization problem \eqref{eq:YB_isoTPS_YB_move_standard} can be solved via two successive SVDs with an optional disentangling prodcedure with the goal of reducing the truncation error or some entanglement measure. This is is a similar algorithm to the one used for the MM in isoTPS \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}, compare Section \ref{sec:tensors_and_tensor_networks_isometric_tensor_product_states_in_2D}. The algorithm is sketched in Figure \figref{fig:yb_move_svd_disent} and is made up of three main steps.
 \begin{enumerate}
 	\item We start by contracting the tensors $T$, $W_1$ and $W_2$ into a single tensor $\Psi$ at a cost of $\mathcal{O}(\chi^3D^4+\chi^2D^6d) = \mathcal{D^8d}$. This tensor is then split from left to right via a truncated SVD
 	\begin{equation}
@@ -12,22 +12,22 @@ Alternatively, the constrained optimization problem \eqref{eq:disoTPS_YB_move_st
 	The unitary $U$ can be chosen to minimize the truncation error of the next step by \textit{disentangling} the tensor $\theta$. We will discuss procedures of finding such a \textit{disentangling unitary} on the next page.
 	\item In the last step, the tensor $\tilde{\theta}$ is split vertically into $W_1^\prime$ and $W_2^\prime$ using a truncated SVD as shown in Figure \figref{fig:yb_move_svd_disent_c}. The computational cost of this SVD scales as $\mathcal{O}(\chi^3D^6) = \mathcal{O}(D^9)$. Here, the bond dimension is truncated to $\chi$. We end up with the three tensors $T^\prime$, $W_1^\prime$ and $W_2^\prime$, completing the YB move.
 \end{enumerate}
-Before we discuss the disentangling procedure, two comments about step two of the above algorithm are in order. First, there exists a degree of freedom for splitting the bond index, because applying the same permutations to the columns of $A$ and rows of $\theta$ does not change the result of contracting the network. However, this degree of freedom is fixed by the disentangling process, making the exact permutation of the bond splitting irrelevant. Second, note that near the edges of the lattice it can happen that the matrizized tensor $\Psi$ has $\tilde{\chi} < D^2$ rows. In this case, the bond dimension after the SVD will also be $\tilde{\chi}$ and we cannot simply split the bond into two bonds of dimension $\chi_1=\chi_2=D$. Instead, we choose a splitting $\chi_1 \le D$, $\chi_2 \le D$ such that $\chi_1\cdot\chi_2$ is maximized, while it must still hold $\chi_1\cdot\chi_2\le\tilde{\chi}$. We additionally prefer "equal" splittings $\chi_1\approx\chi_2\approx\sqrt{\tilde{\chi}}$ if possible. One can find such a splitting easily by computing all possible combinations of $\chi_1$ and $\chi_2$ and keeping only the best one, which has a computational cost of $\mathcal{O}\left(\sqrt{\tilde{\chi}}\right) = \mathcal{O}\left(D\right)$. \par
+Before we discuss the disentangling procedure, two comments about step two of the above algorithm are in order. First, there exists a degree of freedom for splitting the bond index, because applying the same permutations to the columns of $A$ and rows of $\theta$ does not change the result of contracting the network. However, this degree of freedom is fixed by the disentangling process, making the exact permutation of the bond splitting irrelevant. Second, note that near the edges of the lattice it can happen that the matrixized tensor $\Psi$ has $\tilde{\chi} < D^2$ rows. In this case, the bond dimension after the SVD will also be $\tilde{\chi}$ and we cannot simply split the bond into two bonds of dimension $\chi_1=\chi_2=D$. Instead, we choose a splitting $\chi_1 \le D$, $\chi_2 \le D$ such that $\chi_1\cdot\chi_2$ is maximized, while it must still hold $\chi_1\cdot\chi_2\le\tilde{\chi}$. We additionally prefer "equal" splittings $\chi_1\approx\chi_2\approx\sqrt{\tilde{\chi}}$ if possible. One can find such a splitting easily by computing all possible combinations of $\chi_1$ and $\chi_2$ and keeping only the best one, which has a computational cost of $\mathcal{O}\left(\sqrt{\tilde{\chi}}\right) = \mathcal{O}\left(D\right)$. \par
 \begin{figure}
 	\centering
 	\subcaptionbox{\label{fig:yb_move_svd_disent_a}}
 	{%
-		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf}
+		\includegraphics[scale=1.0]{figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf}
 	}
 	\par\bigskip
 	\subcaptionbox{\label{fig:yb_move_svd_disent_b}}
 	{%
-		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf}
+		\includegraphics[scale=1.0]{figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf}
 	}
 	\par\bigskip
 	\subcaptionbox{\label{fig:yb_move_svd_disent_c}}
 	{%
-		\includegraphics[scale=1.0]{figures/tikz/disoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf}
+		\includegraphics[scale=1.0]{figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf}
 	}
 	\caption{The YB move is made up of three steps as explained in the text.}
 	\label{fig:yb_move_svd_disent}
@@ -55,13 +55,13 @@ which can easily computed by contracting the tensor network shown in Figure \fig
 We proceed by taking one tensor $U$ out of the network $\Tr\rho^2$ and contracting all other tensors into the environment $E$ as shown in Figure \figref{fig:disentangling_evenbly_vidal_algorithm_trace_rho_squared}. We now treat $E$ as if it were independent of $U$ and update $U\leftarrow AB^\dagger$, where $A$ and $B$ are obtained by taking the SVD $E=A\Lambda B^\dagger$. This is repeated until convergence. For details on the Evenbly-Vidal algorithm see Appendix \ref{sec:evenbly_vidal_algorithm}. In practice it is observed that this algorithm for minimizing $f_\text{Rényi}\left(U,\theta,\alpha=2\right)$ converges very quickly \cite{cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}. The computational cost of this algorithm is dominated by the contraction of the effective environment $E$, which scales as $\mathcal{O}(\chi^3D^6) = \mathcal{O}(D^9)$. The full cost of the algorithm is thus $\mathcal{O}(N_\text{iter}D^9)$, with $N_\text{iter}$ the number of disentangling iterations.\par
 \begin{figure}
 	\centering
-	\includegraphics[scale=1]{figures/tikz/disoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf}
+	\includegraphics[scale=1]{figures/tikz/YB_isoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf}
 	\caption{The disentangling unitary $U$ is contracted with the wave function tensor $\theta$ to form $\tilde{\theta}$, which is subsequently split via an SVD $\tilde{\theta} = XSY^\dagger$.}
 	\label{fig:disentangling_theta_definition}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[scale=1]{figures/tikz/disoTPS/rho_definition/rho_definition.pdf}
+	\includegraphics[scale=1]{figures/tikz/YB_isoTPS/rho_definition/rho_definition.pdf}
 	\caption{Definition of the reduced density matrix $\rho$.}
 	\label{fig:disentangling_rho_definition}
 \end{figure}
@@ -69,19 +69,19 @@ We proceed by taking one tensor $U$ out of the network $\Tr\rho^2$ and contracti
 	\centering
 	\subcaptionbox{\label{fig:disentangling_evenbly_vidal_algorithm_trace_rho_squared}}
 	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf}
+		\includegraphics[scale=1]{figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf}
 	}
 	\quad\quad\quad\quad
 	\subcaptionbox{\label{fig:disentangling_evenbly_vidal_algorithm_environment_definition}}
 	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf}
+		\includegraphics[scale=1]{figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf}
 	}
 	\caption{(a) Tensor network for the computation of the cost function \eqref{eq:renyi_entropy_alpha_2}. (b) Taking out one unitary $U$, the tensor network is contracted into the environment $E$.}
 	\label{fig:disentangling_evenbly_vidal_algorithm}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[scale=1]{figures/tikz/disoTPS/riemannian_optimization/riemannian_optimization.pdf}
+	\includegraphics[scale=1]{figures/tikz/YB_isoTPS/riemannian_optimization/riemannian_optimization.pdf}
 	\caption{In this figure, a visualization of optimization on Riemannian manifolds is given. The iterate $U_k$ (left) is updated along the search direction $\xi_k$, which is an element of the tangent space $T_{U_k}\Stiefel$. The next iterate $U_{k+1}$ is computed with the retraction $R_\xi\left(\alpha\right)$, where $\alpha\in\mathbb{R}$ is the step size. For the computation of the next search direction $\xi_{k+1}$ the previous search direction $\xi_k$ is needed, which is brought to the tangent space $T_{U_{k+1}}\Stiefel$ of the new iterate $U_{k+1}$ via the vector transport $T_{k\rightarrow k+1}\left(\xi_k\right)$.}
 	\label{fig:disentangling_riemannian_optimization}
 \end{figure}
@@ -104,22 +104,22 @@ The gradients and hessian vector products of the cost functions \eqref{eq:YB_mov
 	\centering
 	\subcaptionbox{\label{fig:approximate_svd_overlap}}
 	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_a.pdf}
+		\includegraphics[scale=1]{figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_a.pdf}
 	}
 	\par\bigskip
 	\subcaptionbox{\label{fig:approximate_svd_first_step}}
 	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_b.pdf}
+		\includegraphics[scale=1]{figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_b.pdf}
 	}
 	\par\bigskip
 	\subcaptionbox{\label{fig:approximate_svd_second_step}}
 	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_c.pdf}
+		\includegraphics[scale=1]{figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_c.pdf}
 	}
 	\par\bigskip
 	\subcaptionbox{\label{fig:approximate_svd_final_step}}
 	{%
-		\includegraphics[scale=1]{figures/tikz/disoTPS/approximate_svd/approximate_svd_d.pdf}
+		\includegraphics[scale=1]{figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf}
 	}
 	\caption{In this figure we draw tensor diagrams for the approximate SVD. (a) First, an approximate QR-decomposition is performed by minimizing $\langle\tilde{\theta},QR\rangle_\text{F}$. (b) A variational update of the $Q$-tensor. (c) A variational update of the $R$-tensor. (c) We finish the approximate SVD by performing a standard SVD on the tensor $\Lambda$ which has reduced bond dimension.}
 	\label{fig:approximate_qr_decomposition}
@@ -150,9 +150,9 @@ Using the approximate SVD, we were able to decrease the cost of the gradient com
 \end{table}
 \subsubsection*{\hspace{105pt}Comparison of different disentanglers}
 We will now compare the different algorithms for solving the disentangling problem.
-\input{figures/plots/disoTPS/yb_move_disentangling_renyi_2.tex}
-\input{figures/plots/disoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex}
-For this comparison we select the YB move environment $\left\{W_1, W_2, T\right\}$ that was already used to discuss the convergence behaviour of iterative algorithm in Section \ref{sec:YB_move_iterative_local_optimization}. The results on other YB environments agree qualitatively with the results we present here. The bond dimensions chosen for the disoTPS are $D = 4$, $\chi = 24$. \par
-We first test the Evenbly-Vidal algorithm optimizing the Rényi-entropy with $\alpha = 2$, see Figure \figref{fig:disoTPS_disentangling_evenbly_vidal_renyi_2}. The algorithm converges very quickly after only $\approx 20$ iterations. The convergence speed depends drastically on the initialization of the disentangling unitary. We find that a initialization based on an SVD of $\theta$ works best, see our implementation \cite{cite:github_disoTPS}. This initialization procedure was introduced for the MM for isoTPS \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}. \par
-Next we look at the performance of CG and TRM optimizing the Rényi-entropy with $\alpha = 1/2$ and the truncation error in figures \figref{fig:disoTPS_disentangling_cg_trm_renyi_0.5} and \figref{fig:disoTPS_disentangling_cg_trm_truncation_error} respectively. In both cases we observe that the TRM leads to a faster decrease in the cost function for the same number of iterations compared to CG. Remarkably, the approximate versions of both CG and TRM perform almost as good as their exact counterparts. Again, the speed of convergence depends strongly on the initialization. Because of the quick convergence of the Evenbly-Vidal algorithm optimizing the $\alpha = 2$ Rényi-entropy we choose its result as an initialization for the optimization algorithms using Riemannian optimization. This achieved the best results in our testing. \par
-Lastly we plot the cost function against the walltime of the algorithms in figures \figref{fig:disoTPS_disentangling_cg_trm_renyi_0.5_walltime} and \figref{fig:disoTPS_disentangling_cg_trm_truncation_error_walltime}. For this benchmark, the algorithms were run on a i5-12500 CPU with 6 cores. As one can see, the approximate versions of both CG and TRM run up to an order of magnitude faster while still providing a comparable minimization of the cost function. Thus, in practice, it is often better to choose a larger maximum bond dimension with the approximate disentangling algorithms instead of a smaller maximum bond dimension with the exact algorithms.
+\input{figures/plots/YB_isoTPS/yb_move_disentangling_renyi_2.tex}
+\input{figures/plots/YB_isoTPS/yb_move_disentangling_renyi_0.5_trunc_error.tex}
+For this comparison we select the YB move environment $\left\{W_1, W_2, T\right\}$ that was already used to discuss the convergence behaviour of iterative algorithm in Section \ref{sec:YB_move_iterative_local_optimization}. The results on other YB environments agree qualitatively with the results we present here. The bond dimensions chosen for the YB-isoTPS are $D = 4$, $\chi = 24$. \par
+We first test the Evenbly-Vidal algorithm optimizing the Rényi-entropy with $\alpha = 2$, see Figure \figref{fig:YB_isoTPS_disentangling_evenbly_vidal_renyi_2}. The algorithm converges very quickly after only $\approx 20$ iterations. The convergence speed depends drastically on the initialization of the disentangling unitary. We find that a initialization based on an SVD of $\theta$ works best, see our implementation \cite{cite:github_YB_isoTPS}. This initialization procedure was introduced for the MM for isoTPS \cite{cite:isometric_tensor_network_states_in_two_dimensions, cite:efficient_simulation_of_dynamics_in_two_dimensional_quantum_spin_systems}. \par
+Next we look at the performance of CG and TRM optimizing the Rényi-entropy with $\alpha = 1/2$ and the truncation error in figures \figref{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5} and \figref{fig:YB_isoTPS_disentangling_cg_trm_truncation_error} respectively. In both cases we observe that the TRM leads to a faster decrease in the cost function for the same number of iterations compared to CG. Remarkably, the approximate versions of both CG and TRM perform almost as good as their exact counterparts. Again, the speed of convergence depends strongly on the initialization. Because of the quick convergence of the Evenbly-Vidal algorithm optimizing the $\alpha = 2$ Rényi-entropy we choose its result as an initialization for the optimization algorithms using Riemannian optimization. This achieved the best results in our testing. \par
+Lastly we plot the cost function against the walltime of the algorithms in figures \figref{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5_walltime} and \figref{fig:YB_isoTPS_disentangling_cg_trm_truncation_error_walltime}. For this benchmark, the algorithms were run on a i5-12500 CPU with 6 cores. As one can see, the approximate versions of both CG and TRM run up to an order of magnitude faster while still providing a comparable minimization of the cost function. Thus, in practice, it is often better to choose a larger maximum bond dimension with the approximate disentangling algorithms instead of a smaller maximum bond dimension with the exact algorithms.

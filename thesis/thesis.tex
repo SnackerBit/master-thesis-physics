@@ -13,9 +13,9 @@
 
 \subject{Abschlussarbeit im Masterstudiengang Physik der Kondensierten Materie}
 \title{Entwicklung eines diagonalen isometrischen Tensor Netzwerk Algorithmus}
-\subtitle{Development of a diagonal isometric Tensor Network Algorithm}
+\subtitle{Development of a Diagonal Isometric Tensor Network Algorithm}
 \author{Benjamin Sappler}
-\date{18.~April 2024}
+\date{30.~Juli 2024}
 
 \mathtoolsset{showonlyrefs}
 
@@ -62,7 +62,7 @@
 	\justifying
 	
 	\section*{Abstract}
-	Because of the exponential growth of the Hilbert space with system size, the numerical simulation of strongly interacting quantum many-body systems is a very challenging problem. In the last decades, Tensor Networks have emerged as the standard method for tackling this problem in one dimensional systems in the form of Matrix Product States (MPS). Tensor Networks have also been generalized for the highly relevant problem of two and more spatial dimensions. However, these so-called Projected Entangled Pair States (PEPS) are typically plagued by high computational complexity or drastic approximations. Recently, a new class of Tensor Networks, called isometric Tensor Product States (isoTPS), have been introduced for the simulation of two-dimensional quantum systems. This new class of Tensor Networks can be understood as a generalization of the one-dimensional Matrix Product States to higher dimensions. In this work, we develop a new class of isometric Tensor Networks, which we call diagonal isometric Tensor Product States (disoTPS). We implement a algorithm for performing real and imaginary time evolution on disoTPS and show numerical results for finding ground states of the Transverse Field Ising model on large finite size square lattices of up to 800 spins and performing time evolution after a global quench.
+	The numerical simulation of strongly interacting quantum many-body systems is a very challenging problem because of the exponential growth of the Hilbert space with system size. In the last decades, Tensor Networks have emerged as the standard method for tackling this problem in one dimensional systems in the form of Matrix Product States (MPS). Tensor Networks have also been generalized for the highly relevant problem of two and more spatial dimensions. However, these so-called Projected Entangled Pair States (PEPS) are typically plagued by high computational complexity and drastic approximations. Recently, a new class of Tensor Networks, called isometric Tensor Product States (isoTPS), has been introduced for the simulation of two-dimensional quantum systems. This new class of Tensor Networks generalizes the canonical form of Matrix Product States to higher dimensions. In this work, we develop an alternative way of defining this canonical form by rotating the lattice by 45$^\circ$ and introducing auxiliary tensors. This alternative ansatz is then tested by performing ground state search and real-time evolution of the Transverse Field Ising (TFI) model on large square lattices of up to 800 spins.
 	
 	\tableofcontents
 	\thispagestyle{empty}
@@ -77,15 +77,15 @@
 	\label{chap:tensors_and_tensor_networks}
 	\input{chapters/Tensor_Networks/Tensor_Networks.tex}
 	
-	\chapter{Diagonal isometric Tensor Product States (disoTPS)}
-	\label{chap:disoTPS}
-	\input{chapters/disoTPS/disoTPS.tex}
+	\chapter{IsoTPS with Alternative Canonical Form}
+	\label{chap:isoTPS_alternative_canonical_form}
+	\input{chapters/YB_isoTPS/YB_isoTPS.tex}
 	
-	\chapter{Toric Code: An exactly representable Model}
+	\chapter{The Toric Code: An Exactly Representable Model}
 	\label{chap:toric_code}
 	\input{chapters/Toric_Code/Toric_Code.tex}
 	
-	\chapter{Transverse Field Ising Model: Ground State Search and Time Evolution}
+	\chapter{The Transverse Field Ising Model: Ground State Search and Time Evolution}
 	\label{chap:TFI}
 	\input{chapters/TFI/TFI.tex}
 	
@@ -96,7 +96,7 @@
 	\appendix
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}% This turns off sections
 	
-	\chapter{Optimization Problems for isometric Tensor Networks}
+	\chapter{Optimization Problems for Isometric Tensor Networks}
 	\label{app:optimization_problems_for_isometric_tensor_networks}
 	\input{chapters/optimization_problems_on_isometric_tensor_networks/optimization_problems_on_isometric_tensor_networks.tex}
 	
