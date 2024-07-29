@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  29 JUL 2024 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.16)  29 JUL 2024 16:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1613,7 +1613,7 @@ chapter 1.
 chapter 2.
 (./chapters/Tensor_Networks/Tensor_Networks.tex
 (./chapters/Tensor_Networks/basics.tex
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=197, 78.0
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf, id=198, 78.0
 0041pt x 53.38043pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_d.pdf Graphic 
 file (type pdf)
@@ -1621,7 +1621,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_d.pdf  used on input line 14.
 (pdftex.def)             Requested size: 78.0002pt x 53.38028pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=198, 21.0
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf, id=199, 21.0
 0046pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_a.pdf Graphic 
 file (type pdf)
@@ -1629,7 +1629,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_a.pdf  used on input line 21.
 (pdftex.def)             Requested size: 21.00038pt x 21.00038pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=199, 51.5
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf, id=200, 51.5
 556pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf Graphic 
 file (type pdf)
@@ -1637,7 +1637,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_diagrams/basic_diag
 rams_b.pdf  used on input line 29.
 (pdftex.def)             Requested size: 51.55545pt x 21.00038pt.
-<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=200, 82.7
+<figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf, id=201, 82.7
 341pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf Graphic 
 file (type pdf)
@@ -1649,7 +1649,7 @@ rams_c.pdf  used on input line 37.
 ures/tikz/Tensor_Networks/basic_diagrams/basic_diagrams_b.pdf> <./figures/tikz/
 Tensor_Networks/basic_diagrams/basic_diagrams_c.pdf> <./figures/tikz/Tensor_Net
 works/basic_diagrams/basic_diagrams_d.pdf>]
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf, id=251, 98.8
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf, id=252, 98.8
 1718pt x 103.50269pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_c.pdf Graphic 
 file (type pdf)
@@ -1657,7 +1657,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_c.pdf  used on input line 66.
 (pdftex.def)             Requested size: 98.81693pt x 103.50241pt.
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=252, 60.9
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf, id=253, 60.9
 999pt x 24.98535pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_a.pdf Graphic 
 file (type pdf)
@@ -1665,7 +1665,7 @@ file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_networks/basic_netw
 orks_a.pdf  used on input line 73.
 (pdftex.def)             Requested size: 60.99974pt x 24.98528pt.
-<figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf, id=253, 118.
+<figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf, id=254, 118.
 73358pt x 24.98535pt>
 File: figures/tikz/Tensor_Networks/basic_networks/basic_networks_b.pdf Graphic 
 file (type pdf)
@@ -1680,7 +1680,7 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 9
 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf, id=288, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf, id=289, 
 384.49948pt x 60.9999pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_a.pdf Grap
 hic file (type pdf)
@@ -1688,7 +1688,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_a.pdf  used on input line 100.
 (pdftex.def)             Requested size: 384.49854pt x 60.99974pt.
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf, id=289, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf, id=290, 
 384.49948pt x 60.9999pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_c.pdf Grap
 hic file (type pdf)
@@ -1696,7 +1696,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/basic_isometries/basic_is
 ometries_c.pdf  used on input line 105.
 (pdftex.def)             Requested size: 384.49854pt x 60.99974pt.
-<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf, id=290, 
+<figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf, id=291, 
 207.3888pt x 70.65096pt>
 File: figures/tikz/Tensor_Networks/basic_isometries/basic_isometries_b.pdf Grap
 hic file (type pdf)
@@ -1710,7 +1710,7 @@ _Networks/basic_isometries/basic_isometries_a.pdf> <./figures/tikz/Tensor_Netwo
 rks/basic_isometries/basic_isometries_c.pdf> <./figures/tikz/Tensor_Networks/ba
 sic_isometries/basic_isometries_b.pdf>]
 <figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_a.pdf
-, id=372, 181.99995pt x 21.00046pt>
+, id=373, 181.99995pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_
 a.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_a
@@ -1719,7 +1719,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/tensor_decompositions/ten
 sor_decompositions_a.pdf  used on input line 38.
 (pdftex.def)             Requested size: 181.99951pt x 21.00038pt.
 <figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b.pdf
-, id=373, 222.0004pt x 21.00046pt>
+, id=374, 222.0004pt x 21.00046pt>
 File: figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_
 b.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/tensor_decompositions/tensor_decompositions_b
@@ -1732,7 +1732,7 @@ sor_decompositions_b.pdf  used on input line 48.
 nsor_Networks/tensor_decompositions/tensor_decompositions_a.pdf> <./figures/tik
 z/Tensor_Networks/tensor_decompositions/tensor_decompositions_b.pdf>]
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_a.pdf, id=407, 307.86919pt x 79.45584pt>
+tions_of_isometric_tensor_networks_a.pdf, id=408, 307.86919pt x 79.45584pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_a.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1742,7 +1742,7 @@ _tensor_networks/contractions_of_isometric_tensor_networks_a.pdf  used on input
  line 18.
 (pdftex.def)             Requested size: 307.86844pt x 79.45564pt.
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_b.pdf, id=408, 307.86919pt x 79.45584pt>
+tions_of_isometric_tensor_networks_b.pdf, id=409, 307.86919pt x 79.45584pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_b.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1752,7 +1752,7 @@ _tensor_networks/contractions_of_isometric_tensor_networks_b.pdf  used on input
  line 23.
 (pdftex.def)             Requested size: 307.86844pt x 79.45564pt.
 <figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/contrac
-tions_of_isometric_tensor_networks_c.pdf, id=409, 391.77066pt x 238.54318pt>
+tions_of_isometric_tensor_networks_c.pdf, id=410, 391.77066pt x 238.54318pt>
 File: figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/co
 ntractions_of_isometric_tensor_networks_c.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_networks/con
@@ -1768,7 +1768,7 @@ ontractions_of_isometric_tensor_networks_a.pdf> <./figures/tikz/Tensor_Networks
 works_b.pdf> <./figures/tikz/Tensor_Networks/contractions_of_isometric_tensor_n
 etworks/contractions_of_isometric_tensor_networks_c.pdf>]
 (./chapters/Tensor_Networks/matrix_product_states.tex
-<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=469, 397.20496pt x 59
+<figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf, id=470, 397.20496pt x 59
 .56955pt>
 File: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf Graphic file (type p
 df)
@@ -1777,7 +1777,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf
 used on input line 18.
 (pdftex.def)             Requested size: 397.20398pt x 59.5694pt.
 <figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation
-_value.pdf, id=472, 330.95746pt x 94.54523pt>
+_value.pdf, id=473, 330.95746pt x 94.54523pt>
 File: figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expect
 ation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_local_expectation_value/mps_local_expecta
@@ -1789,7 +1789,7 @@ ue/mps_local_expectation_value.pdf  used on input line 24.
 ikz/Tensor_Networks/mps_local_expectation_value/mps_local_expectation_value.pdf
 >]
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf, id=5
-45, 327.42123pt x 59.56955pt>
+46, 327.42123pt x 59.56955pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_a.pdf>
@@ -1797,7 +1797,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_a.pdf  used on input line 49.
 (pdftex.def)             Requested size: 327.42043pt x 59.5694pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf, id=5
-46, 121.44873pt x 94.54523pt>
+47, 121.44873pt x 94.54523pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
@@ -1805,7 +1805,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_b.pdf  used on input line 56.
 (pdftex.def)             Requested size: 121.44843pt x 94.54498pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf, id=5
-47, 115.59888pt x 94.54523pt>
+48, 115.59888pt x 94.54523pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf 
 Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>
@@ -1813,7 +1813,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_canonical_form/mps_ca
 nonical_form_c.pdf  used on input line 61.
 (pdftex.def)             Requested size: 115.59859pt x 94.54498pt.
 <figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mps_ca
-nonical_form_local_expectation_value.pdf, id=548, 331.51855pt x 305.68803pt>
+nonical_form_local_expectation_value.pdf, id=549, 331.51855pt x 305.68803pt>
 File: figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/m
 ps_canonical_form_local_expectation_value.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/mp
@@ -1827,7 +1827,7 @@ f> <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_b.pdf>
  <./figures/tikz/Tensor_Networks/mps_canonical_form/mps_canonical_form_c.pdf>] 
 [15 <./figures/tikz/Tensor_Networks/mps_canonical_form_local_expectation_value/
 mps_canonical_form_local_expectation_value.pdf>] [16] [17]
-<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf, id=664, 311.19463pt x 11
+<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf, id=665, 311.19463pt x 11
 8.4716pt>
 File: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf Graphic file (type p
 df)
@@ -1835,7 +1835,7 @@ df)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf  
 used on input line 147.
 (pdftex.def)             Requested size: 311.19386pt x 118.4713pt.
-<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf, id=665, 350.79959pt x 84
+<figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf, id=666, 350.79959pt x 84
 .87108pt>
 File: figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf Graphic file (type p
 df)
@@ -1845,7 +1845,7 @@ used on input line 152.
 (pdftex.def)             Requested size: 350.79874pt x 84.87085pt.
 )
 (./chapters/Tensor_Networks/isometric_tensor_product_states_2D.tex
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=671, 
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf, id=672, 
 135.89972pt x 141.39023pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf Grap
 hic file (type pdf)
@@ -1853,7 +1853,7 @@ hic file (type pdf)
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_s
 tructure_a.pdf  used on input line 12.
 (pdftex.def)             Requested size: 135.89937pt x 141.38988pt.
-<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=672, 
+<figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf, id=673, 
 143.473pt x 162.73497pt>
 File: figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf Grap
 hic file (type pdf)
@@ -1865,7 +1865,7 @@ tructure_b.pdf  used on input line 17.
 [19 <./figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf> <./figures/tikz/Te
 nsor_Networks/mps_TEBD/mps_TEBD_b.pdf>]
 <figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ortho_ce
-nter.pdf, id=740, 222.80038pt x 108.80048pt>
+nter.pdf, id=741, 222.80038pt x 108.80048pt>
 File: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_ort
 ho_center.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/isoTPS_moving_ortho_center/isoTPS_moving_orth
@@ -1874,7 +1874,7 @@ Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_cente
 r/isoTPS_moving_ortho_center.pdf  used on input line 27.
 (pdftex.def)             Requested size: 222.79982pt x 108.80019pt.
 <figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ortho_s
-urface.pdf, id=741, 303.8pt x 162.73497pt>
+urface.pdf, id=742, 303.8pt x 162.73497pt>
 File: figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_or
 tho_surface.pdf Graphic file (type pdf)
 <use figures/tikz/Tensor_Networks/isoTPS_moving_ortho_surface/isoTPS_moving_ort
@@ -1884,7 +1884,7 @@ ce/isoTPS_moving_ortho_surface.pdf  used on input line 33.
 (pdftex.def)             Requested size: 303.79924pt x 162.73456pt.
  [20 <./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_a.pdf> <
 ./figures/tikz/Tensor_Networks/isoTPS_structure/isoTPS_structure_b.pdf>]
-<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf, id=770, 375.79897pt x 
+<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf, id=771, 375.79897pt x 
 162.73497pt>
 File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf Graphic file (type
  pdf)
@@ -1892,7 +1892,7 @@ File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf Graphic file (type
 Package pdftex.def Info: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_a.pdf
   used on input line 53.
 (pdftex.def)             Requested size: 375.79805pt x 162.73456pt.
-<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf, id=771, 383.30002pt x 
+<figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf, id=772, 383.30002pt x 
 71.63261pt>
 File: figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf Graphic file (type
  pdf)
@@ -1910,7 +1910,7 @@ soTPS_MM_a.pdf> <./figures/tikz/Tensor_Networks/isoTPS_MM/isoTPS_MM_b.pdf>])) [
 ]
 chapter 3.
 (./chapters/YB_isoTPS/YB_isoTPS.tex (./chapters/YB_isoTPS/network_structure.tex
-<figures/tikz/YB_isoTPS/YB_isoTPS_structure/YB_isoTPS_structure.pdf, id=888, 18
+<figures/tikz/YB_isoTPS/YB_isoTPS_structure/YB_isoTPS_structure.pdf, id=889, 18
 0.89984pt x 189.30023pt>
 File: figures/tikz/YB_isoTPS/YB_isoTPS_structure/YB_isoTPS_structure.pdf Graphi
 c file (type pdf)
@@ -1920,7 +1920,7 @@ tructure.pdf  used on input line 4.
 (pdftex.def)             Requested size: 180.89938pt x 189.29976pt.
 [25]
 <figures/tikz/YB_isoTPS/one_site_expectation_value/one_site_expectation_value_a
-.pdf, id=897, 174.99979pt x 183.40018pt>
+.pdf, id=898, 174.99979pt x 183.40018pt>
 File: figures/tikz/YB_isoTPS/one_site_expectation_value/one_site_expectation_va
 lue_a.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/one_site_expectation_value/one_site_expectation_val
@@ -1929,7 +1929,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/one_site_expectation_value/one_
 site_expectation_value_a.pdf  used on input line 13.
 (pdftex.def)             Requested size: 174.99936pt x 183.3997pt.
 <figures/tikz/YB_isoTPS/one_site_expectation_value/one_site_expectation_value_b
-.pdf, id=898, 185.94167pt x 179.03989pt>
+.pdf, id=899, 185.94167pt x 179.03989pt>
 File: figures/tikz/YB_isoTPS/one_site_expectation_value/one_site_expectation_va
 lue_b.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/one_site_expectation_value/one_site_expectation_val
@@ -1938,7 +1938,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/one_site_expectation_value/one_
 site_expectation_value_b.pdf  used on input line 25.
 (pdftex.def)             Requested size: 185.94121pt x 179.03944pt.
 <figures/tikz/YB_isoTPS/two_site_expectation_value/two_site_expectation_value_a
-.pdf, id=900, 174.99979pt x 183.40018pt>
+.pdf, id=901, 174.99979pt x 183.40018pt>
 File: figures/tikz/YB_isoTPS/two_site_expectation_value/two_site_expectation_va
 lue_a.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/two_site_expectation_value/two_site_expectation_val
@@ -1947,7 +1947,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/two_site_expectation_value/two_
 site_expectation_value_a.pdf  used on input line 33.
 (pdftex.def)             Requested size: 174.99936pt x 183.3997pt.
 <figures/tikz/YB_isoTPS/two_site_expectation_value/two_site_expectation_value_b
-.pdf, id=901, 185.94167pt x 182.41953pt>
+.pdf, id=902, 185.94167pt x 182.41953pt>
 File: figures/tikz/YB_isoTPS/two_site_expectation_value/two_site_expectation_va
 lue_b.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/two_site_expectation_value/two_site_expectation_val
@@ -1962,7 +1962,7 @@ ation_value_b.pdf> <./figures/tikz/YB_isoTPS/two_site_expectation_value/two_sit
 e_expectation_value_a.pdf> <./figures/tikz/YB_isoTPS/two_site_expectation_value
 /two_site_expectation_value_b.pdf>] (./chapters/YB_isoTPS/YB_move.tex
 <figures/tikz/YB_isoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf, id=9
-58, 396.1219pt x 378.39969pt>
+59, 396.1219pt x 378.39969pt>
 File: figures/tikz/YB_isoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf 
 Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/shifting_ortho_surface/shifting_ortho_surface.pdf>
@@ -1972,7 +1972,7 @@ _ortho_surface.pdf  used on input line 3.
 
 [28] [29 <./figures/tikz/YB_isoTPS/shifting_ortho_surface/shifting_ortho_surfac
 e.pdf>]
-<figures/tikz/YB_isoTPS/yang_baxter_move/yang_baxter_move.pdf, id=981, 187.5968
+<figures/tikz/YB_isoTPS/yang_baxter_move/yang_baxter_move.pdf, id=982, 187.5968
 6pt x 65.79984pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move/yang_baxter_move.pdf Graphic file
  (type pdf)
@@ -1983,7 +1983,7 @@ ve.pdf  used on input line 35.
  (./chapters/YB_isoTPS/YB_move_iterative.tex [30 <./figures/tikz/YB_isoTPS/yang
 _baxter_move/yang_baxter_move.pdf>]
 <figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_a
-.pdf, id=1024, 209.6643pt x 133.40038pt>
+.pdf, id=1025, 209.6643pt x 133.40038pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterat
 ive_a.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterati
@@ -1992,7 +1992,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang
 _baxter_move_iterative_a.pdf  used on input line 15.
 (pdftex.def)             Requested size: 209.66379pt x 133.40002pt.
 <figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_b
-.pdf, id=1027, 312.68819pt x 148.16252pt>
+.pdf, id=1028, 312.68819pt x 148.16252pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterat
 ive_b.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterati
@@ -2001,7 +2001,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang
 _baxter_move_iterative_b.pdf  used on input line 22.
 (pdftex.def)             Requested size: 312.68741pt x 148.16216pt.
 <figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c
-.pdf, id=1028, 347.80238pt x 147.34547pt>
+.pdf, id=1029, 347.80238pt x 147.34547pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterat
 ive_c.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterati
@@ -2015,7 +2015,7 @@ Overfull \hbox (9.21126pt too wide) in paragraph at lines 26--27
  []
 
 <figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_d
-.pdf, id=1029, 297.87688pt x 149.21245pt>
+.pdf, id=1030, 297.87688pt x 149.21245pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterat
 ive_d.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterati
@@ -2036,7 +2036,7 @@ igures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_iterative_c.p
 df> <./figures/tikz/YB_isoTPS/yang_baxter_move_iterative/yang_baxter_move_itera
 tive_d.pdf>] [33]
 <figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf, id=115
-1, 346.69827pt x 65.79984pt>
+2, 346.69827pt x 65.79984pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf Gr
 aphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_a.pdf>
@@ -2044,7 +2044,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxte
 r_move_svd_a.pdf  used on input line 21.
 (pdftex.def)             Requested size: 346.69742pt x 65.79967pt.
 <figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf, id=115
-2, 324.12193pt x 65.79984pt>
+3, 324.12193pt x 65.79984pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf Gr
 aphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf>
@@ -2052,7 +2052,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxte
 r_move_svd_b.pdf  used on input line 26.
 (pdftex.def)             Requested size: 324.12114pt x 65.79967pt.
 <figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf, id=115
-3, 101.02042pt x 65.79984pt>
+4, 101.02042pt x 65.79984pt>
 File: figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf Gr
 aphic file (type pdf)
 <use figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf>
@@ -2063,7 +2063,7 @@ r_move_svd_c.pdf  used on input line 31.
 .pdf> <./figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_b.pdf
 > <./figures/tikz/YB_isoTPS/yang_baxter_move_svd/yang_baxter_move_svd_c.pdf>]
 <figures/tikz/YB_isoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf, id
-=1230, 196.59547pt x 98.00014pt>
+=1231, 196.59547pt x 98.00014pt>
 File: figures/tikz/YB_isoTPS/theta_tilde_contraction/theta_tilde_contraction.pd
 f Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/theta_tilde_contraction/theta_tilde_contraction.pdf
@@ -2071,7 +2071,7 @@ f Graphic file (type pdf)
 Package pdftex.def Info: figures/tikz/YB_isoTPS/theta_tilde_contraction/theta_t
 ilde_contraction.pdf  used on input line 58.
 (pdftex.def)             Requested size: 196.59499pt x 97.99988pt.
-<figures/tikz/YB_isoTPS/rho_definition/rho_definition.pdf, id=1231, 122.29189pt
+<figures/tikz/YB_isoTPS/rho_definition/rho_definition.pdf, id=1232, 122.29189pt
  x 102.10045pt>
 File: figures/tikz/YB_isoTPS/rho_definition/rho_definition.pdf Graphic file (ty
 pe pdf)
@@ -2080,7 +2080,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/rho_definition/rho_definition.p
 df  used on input line 64.
 (pdftex.def)             Requested size: 122.29158pt x 102.10019pt.
 <figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf, id=1
-232, 146.33772pt x 215.19998pt>
+233, 146.33772pt x 215.19998pt>
 File: figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf 
 Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf>
@@ -2088,7 +2088,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_v
 idal_renyi_2_a.pdf  used on input line 73.
 (pdftex.def)             Requested size: 146.33736pt x 215.19945pt.
 <figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf, id=1
-233, 153.1903pt x 215.19998pt>
+234, 153.1903pt x 215.19998pt>
 File: figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf 
 Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf>
@@ -2096,7 +2096,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_v
 idal_renyi_2_b.pdf  used on input line 78.
 (pdftex.def)             Requested size: 153.18993pt x 215.19945pt.
 <figures/tikz/YB_isoTPS/riemannian_optimization/riemannian_optimization.pdf, id
-=1236, 372.51068pt x 130.72539pt>
+=1237, 372.51068pt x 130.72539pt>
 File: figures/tikz/YB_isoTPS/riemannian_optimization/riemannian_optimization.pd
 f Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/riemannian_optimization/riemannian_optimization.pdf
@@ -2115,7 +2115,7 @@ df> <./figures/tikz/YB_isoTPS/rho_definition/rho_definition.pdf>] [37 <./figure
 s/tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_a.pdf> <./figures/
 tikz/YB_isoTPS/evenbly_vidal_renyi_2/evenbly_vidal_renyi_2_b.pdf> <./figures/ti
 kz/YB_isoTPS/riemannian_optimization/riemannian_optimization.pdf>] [38]
-<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_a.pdf, id=1369, 165.047
+<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_a.pdf, id=1370, 165.047
 62pt x 55.00047pt>
 File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_a.pdf Graphic file
  (type pdf)
@@ -2123,7 +2123,7 @@ File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_a.pdf Graphic file
 Package pdftex.def Info: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd
 _a.pdf  used on input line 108.
 (pdftex.def)             Requested size: 165.04721pt x 55.00032pt.
-<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_b.pdf, id=1370, 291.199
+<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_b.pdf, id=1371, 291.199
 92pt x 55.00047pt>
 File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_b.pdf Graphic file
  (type pdf)
@@ -2131,7 +2131,7 @@ File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_b.pdf Graphic file
 Package pdftex.def Info: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd
 _b.pdf  used on input line 113.
 (pdftex.def)             Requested size: 291.1992pt x 55.00032pt.
-<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_c.pdf, id=1371, 292.100
+<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_c.pdf, id=1372, 292.100
 28pt x 55.00047pt>
 File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_c.pdf Graphic file
  (type pdf)
@@ -2139,7 +2139,7 @@ File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_c.pdf Graphic file
 Package pdftex.def Info: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd
 _c.pdf  used on input line 118.
 (pdftex.def)             Requested size: 292.09956pt x 55.00032pt.
-<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf, id=1372, 384.9pt
+<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf, id=1373, 384.9pt
  x 30.93658pt>
 File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf Graphic file
  (type pdf)
@@ -2218,7 +2218,7 @@ PGFPlots: reading {figures/plots/YB_isoTPS/data/comparing_tripartite_decomposit
 ions_renyi_0.5_approx_trm.txt}
 ))) [43]
 (./chapters/YB_isoTPS/TEBD.tex (./chapters/YB_isoTPS/TEBD_local_update.tex
-<figures/tikz/YB_isoTPS/tebd_environment/tebd_environment.pdf, id=1493, 311.986
+<figures/tikz/YB_isoTPS/tebd_environment/tebd_environment.pdf, id=1494, 311.986
 59pt x 188.03952pt>
 File: figures/tikz/YB_isoTPS/tebd_environment/tebd_environment.pdf Graphic file
  (type pdf)
@@ -2229,7 +2229,7 @@ nt.pdf  used on input line 3.
 
 [44] [45 <./figures/tikz/YB_isoTPS/tebd_environment/tebd_environment.pdf>])
 (./chapters/YB_isoTPS/TEBD_global_update.tex
-<figures/tikz/YB_isoTPS/tebd_global_update/tebd_global_update_a.pdf, id=1537, 2
+<figures/tikz/YB_isoTPS/tebd_global_update/tebd_global_update_a.pdf, id=1538, 2
 77.33813pt x 180.54451pt>
 File: figures/tikz/YB_isoTPS/tebd_global_update/tebd_global_update_a.pdf Graphi
 c file (type pdf)
@@ -2239,7 +2239,7 @@ update_a.pdf  used on input line 3.
 (pdftex.def)             Requested size: 277.33745pt x 180.54405pt.
  [46 <./figures/tikz/YB_isoTPS/tebd_global_update/tebd_global_update_a.pdf>]
 <figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_global_update_steps_a.pdf
-, id=1571, 379.78888pt x 157.32275pt>
+, id=1572, 379.78888pt x 157.32275pt>
 File: figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_global_update_steps_
 a.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_global_update_steps_a
@@ -2248,7 +2248,7 @@ Package pdftex.def Info: figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_g
 lobal_update_steps_a.pdf  used on input line 33.
 (pdftex.def)             Requested size: 379.78793pt x 157.32236pt.
 <figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_global_update_steps_b.pdf
-, id=1572, 397.10657pt x 197.5651pt>
+, id=1573, 397.10657pt x 197.5651pt>
 File: figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_global_update_steps_
 b.pdf Graphic file (type pdf)
 <use figures/tikz/YB_isoTPS/tebd_global_update_steps/tebd_global_update_steps_b
@@ -2270,7 +2270,7 @@ ate_steps_b.pdf>]))) [49] [50
 chapter 4.
 (./chapters/Toric_Code/Toric_Code.tex
 (./chapters/Toric_Code/toric_code_model.tex [51]
-<figures/tikz/toric_code/toric_code_general/toric_code_general.pdf, id=1623, 12
+<figures/tikz/toric_code/toric_code_general/toric_code_general.pdf, id=1624, 12
 1.80005pt x 121.80005pt>
 File: figures/tikz/toric_code/toric_code_general/toric_code_general.pdf Graphic
  file (type pdf)
@@ -2280,7 +2280,7 @@ general.pdf  used on input line 36.
 (pdftex.def)             Requested size: 121.79973pt x 121.79973pt.
 )
 (./chapters/Toric_Code/representing_toric_code_gs_with_YB_isoTPS.tex
-<figures/tikz/toric_code/peps_representation/peps_representation_a.pdf, id=1628
+<figures/tikz/toric_code/peps_representation/peps_representation_a.pdf, id=1629
 , 121.1988pt x 121.1988pt>
 File: figures/tikz/toric_code/peps_representation/peps_representation_a.pdf Gra
 phic file (type pdf)
@@ -2288,7 +2288,7 @@ phic file (type pdf)
 Package pdftex.def Info: figures/tikz/toric_code/peps_representation/peps_repre
 sentation_a.pdf  used on input line 6.
 (pdftex.def)             Requested size: 121.1985pt x 121.1985pt.
-<figures/tikz/toric_code/peps_representation/peps_representation_b.pdf, id=1629
+<figures/tikz/toric_code/peps_representation/peps_representation_b.pdf, id=1630
 , 100.83772pt x 125.17064pt>
 File: figures/tikz/toric_code/peps_representation/peps_representation_b.pdf Gra
 phic file (type pdf)
@@ -2296,7 +2296,7 @@ phic file (type pdf)
 Package pdftex.def Info: figures/tikz/toric_code/peps_representation/peps_repre
 sentation_b.pdf  used on input line 11.
 (pdftex.def)             Requested size: 100.83746pt x 125.17032pt.
-<figures/tikz/toric_code/peps_representation/peps_representation_c.pdf, id=1630
+<figures/tikz/toric_code/peps_representation/peps_representation_c.pdf, id=1631
 , 117.19885pt x 118.89922pt>
 File: figures/tikz/toric_code/peps_representation/peps_representation_c.pdf Gra
 phic file (type pdf)
@@ -2306,7 +2306,7 @@ sentation_c.pdf  used on input line 16.
 (pdftex.def)             Requested size: 117.19856pt x 118.89891pt.
  [52]
 <figures/tikz/toric_code/YB_isoTPS_representation/YB_isoTPS_representation_a.pd
-f, id=1636, 134.29974pt x 145.74953pt>
+f, id=1637, 134.29974pt x 145.74953pt>
 File: figures/tikz/toric_code/YB_isoTPS_representation/YB_isoTPS_representation
 _a.pdf Graphic file (type pdf)
 <use figures/tikz/toric_code/YB_isoTPS_representation/YB_isoTPS_representation_
@@ -2315,7 +2315,7 @@ Package pdftex.def Info: figures/tikz/toric_code/YB_isoTPS_representation/YB_is
 oTPS_representation_a.pdf  used on input line 22.
 (pdftex.def)             Requested size: 134.29941pt x 145.74916pt.
 <figures/tikz/toric_code/YB_isoTPS_representation/YB_isoTPS_representation_b.pd
-f, id=1637, 202.84483pt x 151.19987pt>
+f, id=1638, 202.84483pt x 151.19987pt>
 File: figures/tikz/toric_code/YB_isoTPS_representation/YB_isoTPS_representation
 _b.pdf Graphic file (type pdf)
 <use figures/tikz/toric_code/YB_isoTPS_representation/YB_isoTPS_representation_
@@ -2336,7 +2336,7 @@ gures/tikz/toric_code/peps_representation/peps_representation_a.pdf> <./figures
 ]
 chapter 5.
 (./chapters/TFI/TFI.tex
-<figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf, id=1745, 174.99979pt x 174.999
+<figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf, id=1746, 174.99979pt x 174.999
 79pt>
 File: figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf>
@@ -2344,8 +2344,22 @@ Package pdftex.def Info: figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf  used o
 n input line 5.
 (pdftex.def)             Requested size: 105.00067pt x 105.00067pt.
  (./chapters/TFI/TFI_model.tex [57])
-(./chapters/TFI/ground_state_search.tex [58 <./figures/tikz/TFI/dmrg_snaking/dm
-rg_snaking.pdf>]
+(./chapters/TFI/ground_state_search.tex
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 27.2pt needed,
+(scrlayer-scrpage)                but only 17.0pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting typearea's option
+(scrlayer-scrpage)                `headheight=27.2pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+2.
+
+
+Overfull \vbox (10.2pt too high) has occurred while \output is active []
+
+ [58 <./figures/tikz/TFI/dmrg_snaking/dmrg_snaking.pdf>]
 (./figures/plots/TFI/gs_energy_vs_dtau/gs_energy_vs_dtau_different_methods.tex
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_s
 quare_svd.txt}
@@ -2603,7 +2617,7 @@ PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
 oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
 PGFPlots: reading {figures/plots/TFI/gs_energy_vs_dtau/data/gs_energy_vs_dtau_h
 oneycomb_svd_disent_renyi_0.5_approx_trm_D_horizontal_equal_D_squared.txt}
-<figures/tikz/TFI/hexagonal_lattice/hexagonal_lattice_structure.pdf, id=1834, 1
+<figures/tikz/TFI/hexagonal_lattice/hexagonal_lattice_structure.pdf, id=1835, 1
 82.99968pt x 314.38554pt>
 File: figures/tikz/TFI/hexagonal_lattice/hexagonal_lattice_structure.pdf Graphi
 c file (type pdf)
@@ -2614,7 +2628,7 @@ tructure.pdf  used on input line 42.
 
 [66])
 <figures/tikz/TFI/hexagonal_lattice/hexagonal_lattice_horizontal_bond_problem.p
-df, id=1841, 64.11554pt x 57.2258pt>
+df, id=1842, 64.11554pt x 57.2258pt>
 File: figures/tikz/TFI/hexagonal_lattice/hexagonal_lattice_horizontal_bond_prob
 lem.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/hexagonal_lattice/hexagonal_lattice_horizontal_bond_probl
@@ -2668,7 +2682,7 @@ PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_
 isoTPS_site_index_4_4_0.txt}
 PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_
 isoTPS_site_index_4_4_0.txt}
-<figures/tikz/TFI/site_indices/site_index_a.pdf, id=1869, 67.90068pt x 67.90068
+<figures/tikz/TFI/site_indices/site_index_a.pdf, id=1870, 67.90068pt x 67.90068
 pt>
 File: figures/tikz/TFI/site_indices/site_index_a.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/site_indices/site_index_a.pdf>
@@ -2691,7 +2705,7 @@ PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_
 isoTPS_site_index_4_4_1.txt}
 PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_
 isoTPS_site_index_4_4_1.txt}
-<figures/tikz/TFI/site_indices/site_index_b.pdf, id=1870, 67.90068pt x 67.90068
+<figures/tikz/TFI/site_indices/site_index_b.pdf, id=1871, 67.90068pt x 67.90068
 pt>
 File: figures/tikz/TFI/site_indices/site_index_b.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/site_indices/site_index_b.pdf>
@@ -2714,7 +2728,7 @@ PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_
 isoTPS_site_index_5_5_0.txt}
 PGFPlots: reading {figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_
 isoTPS_site_index_5_5_0.txt}
-<figures/tikz/TFI/site_indices/site_index_c.pdf, id=1871, 67.90068pt x 67.90068
+<figures/tikz/TFI/site_indices/site_index_c.pdf, id=1872, 67.90068pt x 67.90068
 pt>
 File: figures/tikz/TFI/site_indices/site_index_c.pdf Graphic file (type pdf)
 <use figures/tikz/TFI/site_indices/site_index_c.pdf>
@@ -2758,32 +2772,16 @@ chapter B.
 chapter C.
 
 (./chapters/computation_of_gradient_and_hvp_for_riemannian_optimization/computa
-tion_of_gradient_and_hvp_for_riemannian_optimization.tex [83]
-
-Package scrlayer-scrpage Warning: \headheight to low.
-(scrlayer-scrpage)                At least 27.2pt needed,
-(scrlayer-scrpage)                but only 17.0pt found.
-(scrlayer-scrpage)                I'll enlarge \headheight, for further
-(scrlayer-scrpage)                processing, but you should do this yourself,
-(scrlayer-scrpage)                e.g., setting typearea's option
-(scrlayer-scrpage)                `headheight=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 7
-5.
-
-
-Overfull \vbox (10.2pt too high) has occurred while \output is active []
-
- [84]
-[85]
+tion_of_gradient_and_hvp_for_riemannian_optimization.tex [83] [84] [85]
 <figures/tikz/gradient_and_hvp/derivative_of_s_mu/derivative_of_s_mu.pdf, id=20
-81, 168.53464pt x 73.77663pt>
+82, 168.53464pt x 73.77663pt>
 File: figures/tikz/gradient_and_hvp/derivative_of_s_mu/derivative_of_s_mu.pdf G
 raphic file (type pdf)
 <use figures/tikz/gradient_and_hvp/derivative_of_s_mu/derivative_of_s_mu.pdf>
 Package pdftex.def Info: figures/tikz/gradient_and_hvp/derivative_of_s_mu/deriv
 ative_of_s_mu.pdf  used on input line 126.
 (pdftex.def)             Requested size: 168.53423pt x 73.77643pt.
-<figures/tikz/gradient_and_hvp/xi_definition/xi_definition.pdf, id=2083, 270.09
+<figures/tikz/gradient_and_hvp/xi_definition/xi_definition.pdf, id=2084, 270.09
 807pt x 126.13625pt>
 File: figures/tikz/gradient_and_hvp/xi_definition/xi_definition.pdf Graphic fil
 e (type pdf)
@@ -2791,9 +2789,10 @@ e (type pdf)
 Package pdftex.def Info: figures/tikz/gradient_and_hvp/xi_definition/xi_definit
 ion.pdf  used on input line 146.
 (pdftex.def)             Requested size: 270.0974pt x 126.13593pt.
- [86 <./figures/tikz/gradient_and_hvp/derivative_of_s_mu/derivative_of_s_mu.pdf
->]
-<figures/tikz/gradient_and_hvp/G_definition/G_definition.pdf, id=2136, 418.3389
+
+[86 <./figures/tikz/gradient_and_hvp/derivative_of_s_mu/derivative_of_s_mu.pdf>
+]
+<figures/tikz/gradient_and_hvp/G_definition/G_definition.pdf, id=2137, 418.3389
 1pt x 121.93555pt>
 File: figures/tikz/gradient_and_hvp/G_definition/G_definition.pdf Graphic file 
 (type pdf)
@@ -2801,7 +2800,7 @@ File: figures/tikz/gradient_and_hvp/G_definition/G_definition.pdf Graphic file
 Package pdftex.def Info: figures/tikz/gradient_and_hvp/G_definition/G_definitio
 n.pdf  used on input line 176.
 (pdftex.def)             Requested size: 376.50153pt x 109.74095pt.
-<figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_definition_a.pdf, id=2139, 
+<figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_definition_a.pdf, id=2140, 
 374.99898pt x 39.40422pt>
 File: figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_definition_a.pdf Graph
 ic file (type pdf)
@@ -2809,7 +2808,7 @@ ic file (type pdf)
 Package pdftex.def Info: figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_def
 inition_a.pdf  used on input line 185.
 (pdftex.def)             Requested size: 374.99806pt x 39.4041pt.
-<figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_definition_b.pdf, id=2140, 
+<figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_definition_b.pdf, id=2141, 
 392.62283pt x 40.00246pt>
 File: figures/tikz/gradient_and_hvp/dXSY_definition/dXSY_definition_b.pdf Graph
 ic file (type pdf)
@@ -2845,10 +2844,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  53329 strings out of 478287
- 1225755 string characters out of 5849289
- 2785639 words of memory out of 5000000
+ 1225761 string characters out of 5849289
+ 2786737 words of memory out of 5000000
  69724 multiletter control sequences out of 15000+600000
- 499003 words of font info for 258 fonts, out of 8000000 for 9000
+ 498956 words of font info for 258 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  140i,23n,145p,10711b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
@@ -2883,10 +2882,10 @@ nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (100 pages, 1357030 bytes).
+Output written on thesis.pdf (100 pages, 1357453 bytes).
 PDF statistics:
- 2552 PDF objects out of 2984 (max. 8388607)
- 2031 compressed objects within 21 object streams
+ 2553 PDF objects out of 2984 (max. 8388607)
+ 2032 compressed objects within 21 object streams
  318 named destinations out of 1000 (max. 500000)
  54228 words of extra memory for PDF output out of 61914 (max. 10000000)
 
