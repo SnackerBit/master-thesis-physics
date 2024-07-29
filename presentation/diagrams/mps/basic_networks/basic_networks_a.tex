@@ -1,0 +1,12 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{25pt}
+	\def \tensorXDistance{40pt}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T1) at (0, 0) {$A$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T2) at (\tensorXDistance, 0) {$B$};
+		\draw[virtualLegWithoutArrows] (T1) -- (T2);
+		\node[] at (\tensorXDistance/2, \defaultTextOffsetLarge) {$\alpha$};
+	\end{tikzpicture}
+\end{document}

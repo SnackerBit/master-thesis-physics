@@ -1,0 +1,56 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\tensorDistanceMPS}
+	\def\tensorWidth{\tensorWidthMPS}
+	\def\physicalLegLength{\physicalLegLengthSmallMPS}
+	\def\openLegMultiplier{\openLegMultiplierMPS}
+	\def\equationDistance{\defaultDistanceEquations}
+	\begin{tikzpicture}
+		\node[tensorPhysicalMPSCanonical] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistance, 0) {};
+		\node[] () at (2.13*\tensorDistance, 0) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (Anm1) at (3.2*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (An) at (4.2*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (Anp1) at (5.2*\tensorDistance, 0) {};
+		\node[] () at (6.33*\tensorDistance, 0) {$\dots$};
+		\node[tensorPhysicalMPSCanonical] (ANm1) at (7.4*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (AN) at (8.4*\tensorDistance, 0) {};
+		
+		\draw[virtualLegSmall] (A1) -- (A2);
+		\draw[virtualLegSmall] (Anm1) -- (An);
+		\draw[virtualLegSmall] (Anm1) -- (An);
+		\draw[virtualLegSmall] (Anp1) -- (An);
+		\draw[virtualLegSmall] (AN) -- (ANm1);
+		\draw[virtualLegSmall] (A2) -- ++({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0);
+		\draw[virtualLegSmall] (Anm1)+({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0) -- (Anm1);
+		\draw[virtualLegSmall] (Anp1)+({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0) -- (Anp1);
+		\draw[virtualLegSmall] (ANm1) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A1.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A1);
+			\draw[physicalLegSmall] (A2.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A2);
+			\draw[physicalLegSmall] (Anm1.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (Anm1);
+			\draw[physicalLegSmall] (An.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (An);
+			\draw[physicalLegSmall] (Anp1.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (Anp1);
+			\draw[physicalLegSmall] (ANm1.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (ANm1);
+			\draw[physicalLegSmall] (AN.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (AN);
+		\end{pgfonlayer}
+		
+		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[1]}$};
+		\node[] at (\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[2]}$};
+		\node[] at (3.2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[n-1]}$};
+		\node[] at (4.2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$\Lambda^{[n]}$};
+		\node[] at (5.2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[n]}$};
+		\node[] at (7.4*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[N-1]}$};
+		\node[] at (8.4*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[N]}$};
+		
+		\node[] at (0, -\physicalLegLength-\defaultTextOffsetLarge) {$i_1$};
+		\node[] at (\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_2$};
+		\node[] at (3.2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{n-1}$};
+		\node[] at (4.2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{n}$};
+		\node[] at (5.2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{n+1}$};
+		\node[] at (7.4*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{N-1}$};
+		\node[] at (8.4*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{N}$};
+	\end{tikzpicture}
+\end{document}

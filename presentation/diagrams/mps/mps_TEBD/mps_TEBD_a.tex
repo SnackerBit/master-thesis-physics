@@ -1,0 +1,90 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+
+\def\opOffset{0.7*\braketDistanceMPS}
+\def\operatorHeight{\tensorWidthMPS}
+
+\begin{document}
+	\begin{tikzpicture}
+			\node[tensorPhysicalMPSCanonicalOrthoCenter] (A1) at (0, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A3) at (2*\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A4) at (3*\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A5) at (4*\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A6) at (5*\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A7) at (6*\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A8) at (7*\tensorDistanceMPS, 0) {};
+			\node[tensorPhysicalMPSCanonical] (A9) at (8*\tensorDistanceMPS, 0) {};
+			
+			\draw[virtualLegSmall] (A9) -- (A8);
+			\draw[virtualLegSmall] (A8) -- (A7);
+			\draw[virtualLegSmall] (A7) -- (A6);
+			\draw[virtualLegSmall] (A6) -- (A5);
+			\draw[virtualLegSmall] (A5) -- (A4);
+			\draw[virtualLegSmall] (A4) -- (A3);
+			\draw[virtualLegSmall] (A3) -- (A2);
+			\draw[virtualLegSmall] (A2) -- (A1);
+			
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op1) at (\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[1,2]}$};
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op2) at (5*\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[3,4]}$};
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op3) at (9*\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[5,6]}$};
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op4) at (13*\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[7,8]}$};
+			
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op5) at (3*\tensorDistanceMPS/2, -2*\opOffset) {$\hat{U}^{[2,3]}$};
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op6) at (7*\tensorDistanceMPS/2, -2*\opOffset) {$\hat{U}^{[4,5]}$};
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op7) at (11*\tensorDistanceMPS/2, -2*\opOffset) {$\hat{U}^{[6,7]}$};
+			\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op8) at (15*\tensorDistanceMPS/2, -2*\opOffset) {$\hat{U}^{[8,9]}$};
+			
+			
+			%\node[] () at (\tensorDistanceMPS/2, -\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[1,2]}$};
+			%\node[] () at (5*\tensorDistanceMPS/2, -\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[3,4]}$};
+			%\node[] () at (9*\tensorDistanceMPS/2, -\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[5,6]}$};
+			%\node[] () at (13*\tensorDistanceMPS/2, -\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[7,8]}$};
+			
+			%\node[] () at (3*\tensorDistanceMPS/2, -2*\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[2,3]}$};
+			%\node[] () at (7*\tensorDistanceMPS/2, -2*\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[4,5]}$};
+			%\node[] () at (11*\tensorDistanceMPS/2, -2*\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[6,7]}$};
+			%\node[] () at (15*\tensorDistanceMPS/2, -2*\opOffset+\operatorHeight/2+\defaultTextOffsetLarge) {$\hat{U}^{[8,9]}$};
+			
+			\begin{pgfonlayer}{bg}
+				\draw[physicalLegSmall] (A1)+(0, -\opOffset+\tensorWidthMPS/2) -- (A1);
+				\draw[physicalLegSmall] (A2)+(0, -\opOffset+\tensorWidthMPS/2) -- (A2);
+				\draw[physicalLegSmall] (A3)+(0, -\opOffset+\tensorWidthMPS/2) -- (A3);
+				\draw[physicalLegSmall] (A4)+(0, -\opOffset+\tensorWidthMPS/2) -- (A4);
+				\draw[physicalLegSmall] (A5)+(0, -\opOffset+\tensorWidthMPS/2) -- (A5);
+				\draw[physicalLegSmall] (A6)+(0, -\opOffset+\tensorWidthMPS/2) -- (A6);
+				\draw[physicalLegSmall] (A7)+(0, -\opOffset+\tensorWidthMPS/2) -- (A7);
+				\draw[physicalLegSmall] (A8)+(0, -\opOffset+\tensorWidthMPS/2) -- (A8);
+				
+				\draw[physicalLegSmall] (\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (2*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (3*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (4*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (5*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (6*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (7*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (8*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- (A9);
+				
+				\draw[physicalLegSmall] (0, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, 2*\opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (2*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (3*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (4*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (5*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (6*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (7*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+				\draw[physicalLegSmall] (8*\tensorDistanceMPS, -3*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+			\end{pgfonlayer}
+			
+			\node[] at (0, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$\Lambda^{[1]}$};
+			\node[] at (\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[2]}$};
+			\node[] at (2*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[3]}$};
+			\node[] at (3*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[4]}$};
+			\node[] at (4*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[5]}$};
+			\node[] at (5*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[6]}$};
+			\node[] at (6*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[7]}$};
+			\node[] at (7*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[8]}$};
+			\node[] at (8*\tensorDistanceMPS, \tensorWidthMPS/2+\defaultTextOffsetLarge) {$B^{[9]}$};
+
+	\end{tikzpicture}
+\end{document}

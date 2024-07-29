@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'basic_isometries_b.blg'
+[60] biber:340> INFO - === Mi Jul 24, 2024, 18:06:58
+[130] Utils.pm:398> ERROR - Cannot find 'basic_isometries_b.bcf'!
+[130] Biber.pm:135> INFO - ERRORS: 1
