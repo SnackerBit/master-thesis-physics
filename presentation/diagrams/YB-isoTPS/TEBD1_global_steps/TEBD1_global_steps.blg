@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'TEBD1_global_steps.blg'
+[59] biber:340> INFO - === Di Jul 30, 2024, 17:36:59
+[126] Utils.pm:398> ERROR - Cannot find 'TEBD1_global_steps.bcf'!
+[126] Biber.pm:135> INFO - ERRORS: 1

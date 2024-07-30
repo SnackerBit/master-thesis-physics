@@ -1,0 +1,13 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=2)$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, title={Rényi entropy $\alpha = 2$}]
+			
+			\addplot[color = singleBlue, mark=*]
+			table[x=N_iters, y=f_Renyi_evenbly_vidal, col sep=space]{data/evenbly_vidal_renyi_2_disentangling.txt};
+			%\addlegendentry{Evenbly-Vidal}
+			
+		\end{axis}
+	\end{tikzpicture}
+\end{document}

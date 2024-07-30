@@ -1,0 +1,27 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend style={at={(1.015,1.0)},  anchor=north west, nodes={scale=\legendscale, transform shape, font=\small}}, xmin=3e-3, xmax=7e1, legend cell align={left}]
+			%
+			\addplot [mark=none, black, dashed, domain=1e-3:1e3] {0.0015762703522421183}; \addlegendentry{SVD + init}
+			%
+			\addplot[color = singleBlue]
+			table[x=t, y=trunc_error, col sep=space]{data/comparing_tripartite_decompositions_iterate_polar.txt};
+			\addlegendentry{EV trunc}
+			%
+			\addplot[color = singleOrange]
+			table[x=t, y=trunc_error, col sep=space]{data/comparing_tripartite_decompositions_renyi_2_EV.txt};
+			\addlegendentry{EV Rényi-$2$}
+			%
+			\addplot[color = singleGreen]
+			table[x=t, y=trunc_error, col sep=space]{data/comparing_tripartite_decompositions_trunc_approx_trm.txt};
+			\addlegendentry{appr. TRM trunc}
+			%
+			\addplot[color = singleRed]
+			table[x=t, y=trunc_error, col sep=space]{data/comparing_tripartite_decompositions_renyi_0.5_approx_trm.txt};
+			\addlegendentry{appr.\,TRM\,Rényi-$0.5$}
+			%	
+		\end{axis}
+	\end{tikzpicture}
+\end{document}

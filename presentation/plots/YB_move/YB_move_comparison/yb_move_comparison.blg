@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'yb_move_comparison.blg'
+[59] biber:340> INFO - === Di Jul 30, 2024, 17:56:50
+[127] Utils.pm:398> ERROR - Cannot find 'yb_move_comparison.bcf'!
+[127] Biber.pm:135> INFO - ERRORS: 1

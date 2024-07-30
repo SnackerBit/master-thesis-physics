@@ -1,0 +1,20 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xlabel=$\Delta\tau$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, yticklabels={}, title={$\chi = 6\cdot D$}]
+			%	
+			\addplot[color = 3blue1, mark=*]
+			table[x=dtau, y=delta_E_D_max_2, col sep=space]{data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt};
+			%\addlegendentry{$D = 2$}
+			%	
+			\addplot[color = 3blue2, mark=*]
+			table[x=dtau, y=delta_E_D_max_4, col sep=space]{data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt};
+			%\addlegendentry{$D = 4$}
+			%	
+			\addplot[color = 3blue3, mark=*]
+			table[x=dtau, y=delta_E_D_max_6, col sep=space]{data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_trm_chi_factor_6.txt};
+			%\addlegendentry{$D = 6$}
+		\end{axis}%
+	\end{tikzpicture}
+\end{document}

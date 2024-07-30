@@ -1,0 +1,13 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xlabel=$N_\text{iter}$, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xtick={0, 2000, 4000, 6000, 8000, 10000}, xticklabels={$0$, $2000$, $4000$, $6000$, $8000$, $10000$}, scaled x ticks=false]
+			
+			\addplot[color = singleBlue]
+			table[x=N_iter, y=trunc_error, col sep=space]{data/iterate_polar.txt};
+			%\addlegendentry{Evenbly-Vidal}
+			
+		\end{axis}
+	\end{tikzpicture}
+\end{document}

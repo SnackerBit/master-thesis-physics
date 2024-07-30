@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  30 JUL 2024 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  30 JUL 2024 17:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2175,14 +2175,14 @@ File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_c.pdf Graphic file
 Package pdftex.def Info: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd
 _c.pdf  used on input line 120.
 (pdftex.def)             Requested size: 292.09956pt x 55.00032pt.
-<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf, id=1367, 384.9pt
- x 30.93658pt>
+<figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf, id=1367, 383.999
+62pt x 30.93658pt>
 File: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf Graphic file
  (type pdf)
 <use figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_d.pdf>
 Package pdftex.def Info: figures/tikz/YB_isoTPS/approximate_svd/approximate_svd
 _d.pdf  used on input line 125.
-(pdftex.def)             Requested size: 384.89905pt x 30.9365pt.
+(pdftex.def)             Requested size: 383.99867pt x 30.9365pt.
  [39] [40 <./figures/tikz/YB_isoTPS/approximate_svd/approximate_svd_a.pdf> <./f
 igures/tikz/YB_isoTPS/approximate_svd/approximate_svd_b.pdf> <./figures/tikz/YB
 _isoTPS/approximate_svd/approximate_svd_c.pdf> <./figures/tikz/YB_isoTPS/approx
@@ -3007,7 +3007,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  58492 strings out of 478287
  1400540 string characters out of 5849290
- 3122292 words of memory out of 5000000
+ 3122296 words of memory out of 5000000
  74876 multiletter control sequences out of 15000+600000
  499016 words of font info for 259 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3044,7 +3044,7 @@ nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (100 pages, 1353271 bytes).
+Output written on thesis.pdf (100 pages, 1353384 bytes).
 PDF statistics:
  2570 PDF objects out of 2984 (max. 8388607)
  2050 compressed objects within 21 object streams

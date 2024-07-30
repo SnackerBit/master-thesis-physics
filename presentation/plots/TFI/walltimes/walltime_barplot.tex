@@ -1,0 +1,22 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xmin=0.5, xmax=12.5, xtick={1,2,3,4,5,6,7,8,9,10,11,12}, xticklabels={SVD, SVD + init, EV trunc, EV Rényi-2, CG trunc, approx CG trunc, TRM trunc, approx TRM trunc, CG Rényi-0.5, approx CG Rényi-0.5, TRM Rényi-0.5, approx TRM Rényi-0.5}, x tick label style={rotate=45, anchor=north east, inner sep=0mm}, ylabel={YB walltime [s]}, height=6cm, width=12cm, ymode=log, log origin=infty, ymajorgrids, yminorgrids]
+			\addplot[ybar,bar width=0.6cm,fill=5blue4,draw=black,thick] plot coordinates{
+				(1,0.6922264337539673)
+				(2,0.776995325088501)
+				(3,8.135456204414368)
+				(4,2.831924295425415)
+				(5,64.14763345718384)
+				(7,224.76862828731538)
+				(9,67.32394864559174)
+				(11,308.0366993427277)};
+			\addplot[ybar,bar width=0.6cm,fill=5blue3,draw=black, thick] plot coordinates{
+				(6,21.03021409511566)
+				(8,51.418055820465085)
+				(10,25.38481740951538)
+				(12,39.95418817996979)};
+		\end{axis}
+	\end{tikzpicture}%
+\end{document}

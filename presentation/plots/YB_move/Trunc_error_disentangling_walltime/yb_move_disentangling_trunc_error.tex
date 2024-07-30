@@ -1,0 +1,25 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xlabel={walltime [s]}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, yticklabels={}, xmode=log, ymin=1.02e-6, ymax=1.93e-6, scaled ticks=false, ylabel={$f_\text{trunc}(U,\theta)$}, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend cell align={left}]
+			%
+			\addplot[color = singleOrange]
+			table[x=walltime_cg, y=f_trunc_cg, col sep=space]{data/renyi_truncation_error_disentangling.txt};
+			\addlegendentry{CG}
+			%
+			\addplot[color = singleOrange, dashed]
+			table[x=walltime_approx_cg, y=f_trunc_approx_cg, col sep=space]{data/renyi_truncation_error_disentangling.txt};
+			\addlegendentry{approx CG}
+			%
+			\addplot[color = singleGreen]
+			table[x=walltime_trm, y=f_trunc_trm, col sep=space]{data/renyi_truncation_error_disentangling.txt};
+			\addlegendentry{TRM}
+			%
+			\addplot[color = singleGreen, dashed]
+			table[x=walltime_approx_trm, y=f_trunc_approx_trm, col sep=space]{data/renyi_truncation_error_disentangling.txt};
+			\addlegendentry{approx TRM}
+			%
+		\end{axis}%
+	\end{tikzpicture}%
+\end{document}

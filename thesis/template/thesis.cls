@@ -205,7 +205,7 @@
 
 % PLOTS
 \RequirePackage{pgfplots}
-%\pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.18}
 \usepgfplotslibrary{colorbrewer}
 \RequirePackage{tikz}
 % A single subfigure

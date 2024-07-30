@@ -1,0 +1,56 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[xlabel=$L$, ylabel={$\Delta E/E_{\chi\rightarrow\infty}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.2715,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=1, legend cell align={left}, xmin=1, xmax=21, legend cell align={left}, ymode=log, ymin=1e-5, ymax=1e-2]
+			%	
+			\addplot[color = 7blue1]
+			table[x=L, y=error_tenpy_chi_16, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 16$}
+			%
+			\addplot[color = 7blue2]
+			table[x=L, y=error_tenpy_chi_32, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 32$}
+			%
+			\addplot[color = 7blue3]
+			table[x=L, y=error_tenpy_chi_64, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 64$}
+			%
+			\addplot[color = 7blue4]
+			table[x=L, y=error_tenpy_chi_128, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 128$}
+			%
+			\addplot[color = 7blue5]
+			table[x=L, y=error_tenpy_chi_256, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 256$}
+			%
+			\addplot[color = 7blue6]
+			table[x=L, y=error_tenpy_chi_512, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 512$}
+			%
+			\addplot[color = 7blue7]
+			table[x=L, y=error_tenpy_chi_1024, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$\chi = 1024$}
+			%
+		\end{axis}
+		\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.015,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
+			%
+			\addplot[color = 4red1, mark=*]
+			table[x=L, y=error_isoTPS_D_2, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$D = 2$}
+			%
+			\addplot[color = 4red2, mark=*]
+			table[x=L, y=error_isoTPS_D_3, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$D = 3$}
+			%
+			\addplot[color = 4red3, mark=*]
+			table[x=L, y=error_isoTPS_D_4, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$D = 4$}
+			%
+			\addplot[color = 4red4, mark=*]
+			table[x=L, y=error_isoTPS_D_5, col sep=space]{data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
+			\addlegendentry{$D = 5$}
+			%
+		\end{axis}%
+	\end{tikzpicture}%
+\end{document}

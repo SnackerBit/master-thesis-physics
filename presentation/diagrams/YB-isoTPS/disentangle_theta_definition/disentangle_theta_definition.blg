@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'disentangle_theta_definition.blg'
+[57] biber:340> INFO - === Di Jul 30, 2024, 17:36:05
+[122] Utils.pm:398> ERROR - Cannot find 'disentangle_theta_definition.bcf'!
+[122] Biber.pm:135> INFO - ERRORS: 1

@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'larger_lattices_d.blg'
+[59] biber:340> INFO - === Di Jul 30, 2024, 18:20:27
+[130] Utils.pm:398> ERROR - Cannot find 'larger_lattices_d.bcf'!
+[130] Biber.pm:135> INFO - ERRORS: 1
