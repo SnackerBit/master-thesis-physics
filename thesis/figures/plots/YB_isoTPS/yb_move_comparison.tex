@@ -1,7 +1,7 @@
 \begin{figure}
 	\hspace{40pt}
 	\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend style={at={(1.015,1.0)},  anchor=north west, nodes={scale=\legendscale, transform shape, font=\small}}, xmin=2e-3, xmax=1e2]
+		\begin{axis}[xlabel={walltime [s]}, ylabel={$\lVert|\Psi\rangle-|\Psi^\prime\rangle\rVert$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, legend style={at={(1.015,1.0)},  anchor=north west, nodes={scale=\legendscale, transform shape, font=\small}}, xmin=3e-3, xmax=7e1, legend cell align={left}]
 			%
 			\addplot [mark=none, black, dashed, domain=1e-3:1e3] {0.0015762703522421183}; \addlegendentry{SVD + init}
 			%

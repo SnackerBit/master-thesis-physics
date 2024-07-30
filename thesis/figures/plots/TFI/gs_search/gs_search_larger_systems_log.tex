@@ -1,11 +1,10 @@
 \begin{figure}
 	\centering
-	%\hspace{260pt}
 	\begin{minipage}{1.0\textwidth}
-		\centering
+		\hspace{30pt}
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
 			\centering
-			\begin{axis}[xlabel=$L$, ylabel={$\Delta E/E_{\chi\rightarrow\infty}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.985,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=2, xmin=1, xmax=21, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2]
+			\begin{axis}[xlabel=$L$, ylabel={$\Delta E/E_{\chi\rightarrow\infty}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.2715,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=1, legend cell align={left}, xmin=1, xmax=21, legend cell align={left}, ymode=log, ymin=1e-5, ymax=1e-2]
 				%	
 				\addplot[color = 7blue1]
 				table[x=L, y=error_tenpy_chi_16, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};
@@ -36,7 +35,7 @@
 				\addlegendentry{$\chi = 1024$}
 				%
 			\end{axis}
-			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.02)}, anchor=south east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
+			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.015,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, xmin=1, xmax=21, clip mode=individual, legend cell align={left}, ymode=log, ymin=1e-6, ymax=1e-2, yticklabels=\empty]
 				%
 				\addplot[color = 4red1, mark=*]
 				table[x=L, y=error_isoTPS_D_2, col sep=space]{figures/plots/TFI/gs_search/data/gs_search_relative_energy_error_compared_to_extrapolated_DMRG.txt};

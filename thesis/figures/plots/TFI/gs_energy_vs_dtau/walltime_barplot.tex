@@ -2,7 +2,7 @@
 	\centering
 	\begin{tikzpicture}
 		\centering
-		\begin{axis}[xmin=0.5, xmax=12.5, xtick={1,2,3,4,5,6,7,8,9,10,11,12}, xticklabels={SVD, SVD + init, EV trunc, EV Rényi-2, CG trunc, approx CG trunc, TRM trunc, approx TRM trunc, CG Rényi-0.5, approx CG Rényi-0.5, TRM Rényi-0.5, approx TRM Rényi-0.5}, x tick label style={rotate=45, anchor=north east, inner sep=0mm}, ylabel={walltime [s]}, height=6cm, width=12cm, ymode=log, log origin=infty, ymajorgrids, yminorgrids]
+		\begin{axis}[xmin=0.5, xmax=12.5, xtick={1,2,3,4,5,6,7,8,9,10,11,12}, xticklabels={SVD, SVD + init, EV trunc, EV Rényi-2, CG trunc, approx CG trunc, TRM trunc, approx TRM trunc, CG Rényi-0.5, approx CG Rényi-0.5, TRM Rényi-0.5, approx TRM Rényi-0.5}, x tick label style={rotate=45, anchor=north east, inner sep=0mm}, ylabel={YB walltime [s]}, height=6cm, width=12cm, ymode=log, log origin=infty, ymajorgrids, yminorgrids]
 			\addplot[ybar,bar width=0.6cm,fill=5blue4,draw=black,thick] plot coordinates{
 				(1,0.6922264337539673)
 				(2,0.776995325088501)
@@ -19,6 +19,6 @@
 				(12,39.95418817996979)};
 		\end{axis}
 	\end{tikzpicture}
-	\caption{In this figure we compare the duration that the different algorithms spend on the YB move during a single TEBD time step (updating the complete YB-isoTPS by an imaginary time $\Delta \tau$). We compute this walltime by running TEBD for $N_\text{TEBD} = 10$ steps, measuring the time spent performing YB moves, and computing the average walltime per TEBD step. We compare all methods benchmarked in figure \protect\figref{fig:tfi_gs_energy_vs_dtau_different_methods}. We plot the exact and approximate versions of the Riemannian optimization algorithms next to each other and denote the approximate versions with a lighter color.}
+	\caption{In this figure we compare the duration that the different algorithms spend on the YB move during a single TEBD time step (updating the complete YB-isoTPS by an imaginary time $\Delta \tau$). We compute this accumulated walltime by running TEBD for $N_\text{TEBD} = 10$ steps, measuring the time spent performing YB moves, and computing the average walltime per TEBD step. We compare all methods benchmarked in figure \protect\figref{fig:tfi_gs_energy_vs_dtau_different_methods}. We plot the exact and approximate versions of the Riemannian optimization algorithms next to each other and denote the approximate versions with a lighter color.}
 	\label{fig:ground_state_search_barplots}
 \end{figure}

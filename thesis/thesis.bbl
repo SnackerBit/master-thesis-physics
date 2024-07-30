@@ -17,7 +17,7 @@
 \endgroup
 
 
-\refsection{0}
+\refsection{1}
   \datalist[entry]{none/global//global/global}
     \entry{cite:two_dimensional_magnetotransport_in_the_extreme_quantum_limit}{article}{}
       \name{author}{3}{}{%
@@ -1918,8 +1918,8 @@
       \strng{authorbibnamehash}{c42ac0f0670973638e288923228aff7b}
       \strng{authornamehash}{c42ac0f0670973638e288923228aff7b}
       \strng{authorfullhash}{5f0cc2bd0a99db431094a873177e1728}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{23}
@@ -2170,8 +2170,8 @@
       \strng{authorbibnamehash}{0f7899391f88ca43191b7a37262d0f33}
       \strng{authornamehash}{0f7899391f88ca43191b7a37262d0f33}
       \strng{authorfullhash}{0f7899391f88ca43191b7a37262d0f33}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2199,8 +2199,8 @@
       \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annals of physics}
@@ -2233,8 +2233,8 @@
       \strng{authorbibnamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authornamehash}{c81e2ec2bfb64279a08a5b9084ed22ee}
       \strng{authorfullhash}{c81e2ec2bfb64279a08a5b9084ed22ee}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications in Mathematical Physics}
@@ -2360,8 +2360,8 @@
       \strng{authorbibnamehash}{81a576f1972513858145eea9142b4042}
       \strng{authornamehash}{81a576f1972513858145eea9142b4042}
       \strng{authorfullhash}{81a576f1972513858145eea9142b4042}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}
@@ -2394,8 +2394,8 @@
       \strng{authorbibnamehash}{99238209df8c7f3aec4f4081b0f5bef6}
       \strng{authornamehash}{99238209df8c7f3aec4f4081b0f5bef6}
       \strng{authorfullhash}{99238209df8c7f3aec4f4081b0f5bef6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2443,8 +2443,8 @@
       \strng{authorbibnamehash}{2a4192a5c6d2f11e110a8108e049c921}
       \strng{authornamehash}{2a4192a5c6d2f11e110a8108e049c921}
       \strng{authorfullhash}{62464ad8f47b62ddeef03f49598b9914}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2715,6 +2715,76 @@
       \field{year}{2008}
       \field{pages}{510}
       \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{2}
+  \datalist[entry]{none/global//global/global}
+    \entry{Website:ColorBrewer}{online}{}
+      \name{author}{2}{}{%
+        {{hash=dd05716c094662b1056c6a7954cd8c02}{%
+           family={Cynthia\bibnamedelima Brewer},
+           familyi={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Mark\bibnamedelima Harrower},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=877c5edd5580f74d2261d7c83629b864}{%
+           family={University},
+           familyi={U\bibinitperiod},
+           given={The\bibnamedelimb Pennsylvania\bibnamedelima State},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{503a0667346d89da0849eb24f635a86b}
+      \strng{fullhash}{503a0667346d89da0849eb24f635a86b}
+      \strng{bibnamehash}{503a0667346d89da0849eb24f635a86b}
+      \strng{authorbibnamehash}{503a0667346d89da0849eb24f635a86b}
+      \strng{authornamehash}{503a0667346d89da0849eb24f635a86b}
+      \strng{authorfullhash}{503a0667346d89da0849eb24f635a86b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{COLORBREWER 2.0}
+      \field{urlday}{30}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://colorbrewer2.org/
+      \endverb
+      \verb{url}
+      \verb https://colorbrewer2.org/
+      \endverb
+    \endentry
+    \entry{Website:ColorBlind}{online}{}
+      \name{author}{1}{}{%
+        {{hash=644493663117ac3bb02e190b0637de2f}{%
+           family={Goedhart},
+           familyi={G\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{644493663117ac3bb02e190b0637de2f}
+      \strng{fullhash}{644493663117ac3bb02e190b0637de2f}
+      \strng{bibnamehash}{644493663117ac3bb02e190b0637de2f}
+      \strng{authorbibnamehash}{644493663117ac3bb02e190b0637de2f}
+      \strng{authornamehash}{644493663117ac3bb02e190b0637de2f}
+      \strng{authorfullhash}{644493663117ac3bb02e190b0637de2f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Color blind friendly palettes for data visualization}
+      \field{urlday}{30}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://thenode.biologists.com/data-visualization-with-flying-colors/research/
+      \endverb
+      \verb{url}
+      \verb https://thenode.biologists.com/data-visualization-with-flying-colors/research/
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

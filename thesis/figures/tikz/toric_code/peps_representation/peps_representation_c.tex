@@ -6,13 +6,13 @@
 	\def\doubleSpinSeperation{0.5*\tensorDistance}
 	\begin{tikzpicture}
 		% Draw lattice
-		\draw[virtualLegWithoutArrows] (0, 2*\tensorDistance) -- ++(2*\tensorDistance, 2*\tensorDistance);
-		\draw[virtualLegWithoutArrows] (0, 0) -- (4*\tensorDistance, 4*\tensorDistance);
-		\draw[virtualLegWithoutArrows] (2*\tensorDistance, 0) -- ++(2*\tensorDistance, 2*\tensorDistance);
-		\draw[virtualLegWithoutArrows] (\tensorDistance, 0) -- ++(-\tensorDistance, \tensorDistance);
-		\draw[virtualLegWithoutArrows] (3*\tensorDistance, 0) -- ++(-3*\tensorDistance, 3*\tensorDistance);
-		\draw[virtualLegWithoutArrows] (4*\tensorDistance, \tensorDistance) -- ++(-3*\tensorDistance, 3*\tensorDistance);
-		\draw[virtualLegWithoutArrows] (4*\tensorDistance, 3*\tensorDistance) -- ++(-\tensorDistance, \tensorDistance);
+		\draw[virtualLegWithoutArrows] (0.25*\tensorDistance, 2.25*\tensorDistance) -- ++(1.5*\tensorDistance, 1.5*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (0.25*\tensorDistance, 0.25*\tensorDistance) -- (3.75*\tensorDistance, 3.75*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (2.25*\tensorDistance, 0.25*\tensorDistance) -- ++(1.5*\tensorDistance, 1.5*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (0.75*\tensorDistance, 0.25*\tensorDistance) -- ++(-0.5*\tensorDistance, 0.5*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (2.75*\tensorDistance, 0.25*\tensorDistance) -- ++(-2.5*\tensorDistance, 2.5*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (3.75*\tensorDistance, 1.25*\tensorDistance) -- ++(-2.5*\tensorDistance, 2.5*\tensorDistance);
+		\draw[virtualLegWithoutArrows] (3.75*\tensorDistance, 3.25*\tensorDistance) -- ++(-0.5*\tensorDistance, 0.5*\tensorDistance);
 		
 		% tensors
 		\node[toricCodePEPSCenterTensor] () at (\tensorDistance/2, \tensorDistance/2) {};

@@ -5,7 +5,7 @@
 	\label{fig:YB_isoTPS_moving_ortho_surface}
 \end{figure}
 Most algorithms implemented on isoTPS require an efficient procedure for moving the orthogonality surface, where the error introduced by this procedure should be as small as possible. For the original isoTPS discussed in Section \ref{sec:tensors_and_tensor_networks_isometric_tensor_product_states_in_2D}, the current best procedure is given by the Moses Move, followed by an optional variational optimization. \par
-In analogy to the MM we look for a procedure to iteratively shift the orthogonality surface through one column of $T$-tensors as shown in Figure \figref{fig:YB_isoTPS_moving_ortho_surface}. A single iteration of this process is shown in Figure \figref{fig:YB_isoTPS_YB_move_closeup}. The two tensors $W_1$ and $W_2$, which are part of the orthogonality hypersurface, are "pulled through" the site tensor $T$, resulting in updated tensors $T^\prime$, $W_1^\prime$ and $W_2^\prime$. To keep the isometric structure of the network, $T^\prime$ and $W_1^\prime$ must be isometries, while $W_2^\prime$ must be a tensor of norm one (the new orthogonality center). Due to the visual similarity to the Yang-Baxter equation we call this procedure the \textit{Yang-Baxter} (YB) move. Accordingly, we will in the following refer to isoTPS with the diagonal canonical form as YB-isoTPS, while the original isoTPS are referred to as MM-isoTPS. \par
+In analogy to the MM we look for a procedure to iteratively shift the orthogonality surface through one column of $T$-tensors as shown in Figure \figref{fig:YB_isoTPS_moving_ortho_surface}. A single iteration of this process is shown in Figure \figref{fig:YB_isoTPS_YB_move_closeup}. The two tensors $W_1$ and $W_2$, which are part of the orthogonality hypersurface, are "pulled through" the site tensor $T$, resulting in updated tensors $T^\prime$, $W_1^\prime$ and $W_2^\prime$. To keep the isometric structure of the network, $T^\prime$ and $W_1^\prime$ must be isometries and $W_2^\prime$ must be a tensor of norm one (the new orthogonality center). Due to the visual similarity to the Yang-Baxter equation we call this procedure the \textit{Yang-Baxter} (YB) move. Accordingly, we will in the following refer to isoTPS with the diagonal canonical form as YB-isoTPS, while the original isoTPS are referred to as MM-isoTPS. \par
 We denote the state represented by the YB-isoTPS before the YB move by $\ket{\Psi} = \ket{\Psi\left(W_1, W_2, T\right)}$ and the state after the YB move by $\ket{\Psi^\prime} = \ket{\Psi^\prime\left(W_1^\prime, W_2^\prime, T^\prime\right)}$. One can think of the YB move as an optimization problem
 \begin{equation}
 	\label{eq:YB_isoTPS_YB_move_standard}
@@ -20,16 +20,16 @@ The error of the YB move can be rewritten as
 \begin{equation}
 	\label{eq:YB_isoTPS_YB_move_rewritten_error}
 	\begin{split}
-		\left\lVert \ket{\Psi} - \ket{\Psi^\prime} \right\rVert_\text{F} =& \sqrt{\braket{\Psi|\Psi} + \braket{\Psi^\prime|\Psi^\prime} - 2\Re\braket{\Psi|\Psi^\prime}} \\
-		=& \sqrt{2 - 2\Re\braket{\Psi|\Psi^\prime}},
+		\left\lVert \ket{\Psi} - \ket{\Psi^\prime} \right\rVert =& \sqrt{\braket{\Psi|\Psi} + \braket{\Psi^\prime|\Psi^\prime} - 2\Re\braket{\Psi^\prime|\Psi}} \\
+		=& \sqrt{2 - 2\Re\braket{\Psi^\prime|\Psi}},
 	\end{split}
 \end{equation}
 where in the second step we used the fact that the wave function is normalized to one, $\braket{\Psi|\Psi} = \braket{\Psi^\prime|\Psi^\prime} = 1$. It follows that the optimization problem of minimizing the error becomes the problem of maximizing the overlap
 \begin{equation}
 	\label{eq:YB_isoTPS_YB_move_alternative_formulation}
-	(T_\text{opt}^\prime, W_{1,\text{opt}}^\prime, W_{2,\text{opt}}^\prime) = \underset{T,W_1^\prime,W_2^\prime}{\argmax}\Re\braket{\Psi|\Psi^\prime}
+	(T_\text{opt}^\prime, W_{1,\text{opt}}^\prime, W_{2,\text{opt}}^\prime) = \underset{T,W_1^\prime,W_2^\prime}{\argmax}\Re\braket{\Psi^\prime|\Psi}
 \end{equation}
-under the constraints \eqref{eq:YB_isoTPS_YB_move_constraints}. Because the only tensors that are changed by the YB move are $W_1$, $W_2$ and $T$ and the three tensors make up a subregion of the full network with only incoming arrows, we can use the isometry condition to reduce the computation of the overlap $\braket{\Psi|\Psi^\prime}$ to a contraction of only six tensors as shown in Figure \figref{fig:YB_move_iterate_polar_overlap}.\par
+under the constraints \eqref{eq:YB_isoTPS_YB_move_constraints}. Because the only tensors that are changed by the YB move are $W_1$, $W_2$ and $T$ and the three tensors make up a subregion of the full network with only incoming arrows, we can use the isometry condition to reduce the computation of the overlap $\braket{\Psi^\prime|\Psi}$ to a contraction of only six tensors as shown in Figure \figref{fig:YB_move_iterate_polar_overlap}.\par
 \begin{figure}
 	\centering
 	\includegraphics[scale=1]{figures/tikz/YB_isoTPS/yang_baxter_move/yang_baxter_move.pdf}
@@ -38,14 +38,14 @@ under the constraints \eqref{eq:YB_isoTPS_YB_move_constraints}. Because the only
 \end{figure}
 In the following, we present two explicit algorithms for performing the YB move. The first algorithm (see Section \ref{sec:YB_move_iterative_local_optimization}) is an Evenbly-Vidal-style variational optimization method with iterative local updates. The second algorithm (see Section \ref{sec:YB_move_svd_disentangle}) is a tripartite decomposition with disentangling similar to the tripartite decomposition used in the MM. In Section \ref{sec:YB_move_comparison} we will compare the two algorithms.
 
-\subsection{Variational optimization with local updates}
+\subsection{Variational Optimization with Local Updates}
 \label{sec:YB_move_iterative_local_optimization}
 \input{chapters/YB_isoTPS/YB_move_iterative.tex}
 
-\subsection{Tripartite decomposition using an SVD and disentangling}
+\subsection{Tripartite Decomposition Using an SVD and Disentangling}
 \label{sec:YB_move_svd_disentangle}
 \input{chapters/YB_isoTPS/YB_move_svd_disentangle.tex}
 
-\subsection{Comparison of the two algorithms}
+\subsection{Comparison of the Algorithms}
 \label{sec:YB_move_comparison}
 \input{chapters/YB_isoTPS/YB_move_comparison.tex}

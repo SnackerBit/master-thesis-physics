@@ -2,14 +2,14 @@ If the cost function is linear, it can be written as
 \begin{equation}
 	f(T) = \sum_{j=1}^{m}\sum_{k=1}^{n}\left[\alpha_{j,k}\Re\left(T_{j,k}\right) + \beta_{j,k} \Im\left(T_{j,k}\right)\right]
 \end{equation}
-with parameters $\alpha_{j,k}, \beta_{j,k} \in \mathbb{R}$. Introducing the \textit{environment tensor} $E\in\mathbb{C}^{m\times n}$ as $E_{j,k} = \alpha_j + i \beta_k$ we can write the cost function as
+with parameters $\alpha_{j,k}, \beta_{j,k} \in \mathbb{R}$. Introducing the \textit{environment tensor} $E\in\mathbb{C}^{m\times n}$ as $E_{j,k} = \alpha_j + i \beta_k$, we can write the cost function as
 \begin{equation}
 	f(T) = \sum_{j=1}^{m}\sum_{k=1}^{n} \Re\left(E_{j,k}^*T_{j,k}\right) = \Re\Tr\left(E^\dagger T\right) = \Re\Tr\left(T^\dagger E\right).
 \end{equation}
 Maximizing $f(T)$ under the isometry constraint $T^\dagger T = \id$ is known as the orthogonal Procrustes problem and permits the closed form solution
 \begin{equation}
 	\label{eq:orthogonal_procrustes_problem_closed_form_solution}
-	T^\text{opt} = \underset{T^\dagger T = \id}{\argmax} \Re\Tr\left(T^\dagger E\right) = UV^\dagger,
+	T_\text{opt} = \underset{T^\dagger T = \id}{\argmax} \Re\Tr\left(T^\dagger E\right) = UV^\dagger,
 \end{equation}
 where the matrices $U$ and $V$ are computed using an SVD $E = USV^\dagger$. To prove this result we insert the SVD into the cost function as
 \begin{equation}
@@ -27,13 +27,13 @@ We next use the fact that the Frobenius inner product satisfies the Cauchy-Schwa
 \end{equation}
 where in the last step we used $U^\dagger U = \id$, $V^\dagger V = \id$, $T^\dagger T = \id$ and the cyclic property of the trace. This upper bound is reached by the solution
 \begin{equation}
-	F\left(T^\text{opt}\right) = \Re\Tr\left(USV^\dagger VU^\dagger\right) = \Tr\left(S\right),
+	F\left(T_\text{opt}\right) = \Re\Tr\left(USV^\dagger VU^\dagger\right) = \Tr\left(S\right),
 \end{equation}
 proving \eqref{eq:orthogonal_procrustes_problem_closed_form_solution}. \par
 If the tensor $T$ must not satisfy the isometry condition but must be normalized to one, the closed form solution can be found as
 \begin{equation}
 	\label{eq:orthogonal_procrustes_problem_simple_case_closed_form_solution}
-	T^\text{opt} = \underset{\left\lVert T\right\rVert = 1}{\argmax} \Re\Tr\left(T^\dagger E\right) = E/\left\lVert E\right\rVert.
+	T_\text{opt} = \underset{\left\lVert T\right\rVert = 1}{\argmax} \Re\Tr\left(T^\dagger E\right) = E/\left\lVert E\right\rVert.
 \end{equation}
 We arrive at this solution through a aimilar argument as before. First, we obtain an upper bound
 \begin{equation}
@@ -41,6 +41,6 @@ We arrive at this solution through a aimilar argument as before. First, we obtai
 \end{equation}
 using the Cauchy-Schwarz inequality and the normalization constraint $\left\lVert T\right\rVert = 1$. We proceed by showing that the upper bound is reached by $T^\text{opt}$,
 \begin{equation}
-	f(T^\text{opt}) = \Re\Tr\left(EE^\dagger/\left\lVert E\right\rVert\right) = \left\lVert E \right\rVert,
+	f(T_\text{opt}) = \Re\Tr\left(EE^\dagger/\left\lVert E\right\rVert\right) = \left\lVert E \right\rVert,
 \end{equation}
 proving \eqref{eq:orthogonal_procrustes_problem_simple_case_closed_form_solution}.

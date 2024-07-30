@@ -16,7 +16,7 @@ where we have written the indices $i_n$ as superscripts, such that the sums are 
 \begin{figure}
 	\centering
 	\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_basic/mps_basic.pdf}
-	\caption{Diagrammatic representation of the Matrix Product State \ref{eq:MPS_open_boundary_conditions_general_definition}.}
+	\caption{Diagrammatic representation of the Matrix Product State \eqref{eq:MPS_open_boundary_conditions_general_definition}.}
 	\label{fig:mps_general}
 \end{figure}
 \begin{figure}
@@ -68,12 +68,12 @@ gives a scalar. The contraction \eqref{eq:computation_of_expectation_value_MPS} 
 	\caption{If the MPS is in canonical form, the computation of the expectation value of a local operator can be simplified to a contraction of only three tensors using the isometry condition.}
 	\label{fig:mps_local_expectation_value_canonical}
 \end{figure}
-\subsubsection*{\hspace{95pt}Approximating quantum states with MPS}
-Until now, the MPS representation of $\ket{\Psi}$ is still exact. One can approximate an MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n < \chi_\text{max}$. In this case, the number of parameters that need to be stored to describe the state is reduced from $\mathcal{O}\left(d^N\right)$ to $\mathcal{O}\left(N\chi_\text{max}^2 d\right)$. To arrive at this approximation, two neighbouring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in Section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. Additionally, this SVD at the orthogonality center is related to the Schmidt decomposition of a bipartite system
+\subsubsection*{\hspace{95pt}Approximating Quantum States with MPS}
+Until now, the MPS representation of $\ket{\Psi}$ is still exact. One can approximate an MPS by restricting the virtual bond dimension to a maximal bond dimension $\chi_n \le \chi_\text{max}$. In this case, the number of parameters that need to be stored to describe the state is reduced from $\mathcal{O}\left(d^N\right)$ to $\mathcal{O}\left(N\chi_\text{max}^2 d\right)$. To arrive at this approximation, two neighboring tensors can be contracted and split via a truncated SVD, keeping only the $\chi_\text{max}$ largest singular values. If the orthogonality center of the MPS is at one of the two tensors, this approximation is globally optimal as explained in Section \ref{sec:tensors_and_tensor_networks_isometric_tensor_networks}. Additionally, this SVD at the orthogonality center is related to the Schmidt decomposition of a bipartite system
 \begin{equation}
 	\ket{\Psi} = \sum_{\alpha=1}^{\chi_n} \lambda_\alpha \ket{\Psi^{[L]}_\alpha} \otimes \ket{\Psi^{[R]}_\alpha},
 \end{equation}
-where the chain is split into a left and right subsystem, grouping all indices to the left and right of the orthogonality center into orthogonal basis vectors $\ket{\Psi^{[L]}_\alpha}$ and $\ket{\Psi^{[R]}_\alpha}$ respectively. In this case, the Schmidt values $\lambda_\alpha >= 0$ coincide with the singular values \cite{cite:DMRG_in_the_age_of_MPS} and one can compute the Von-Neumann entanglement entropy
+where the chain is split into a left and right subsystem, grouping all indices to the left and right of the orthogonality center into orthogonal basis vectors $\ket{\Psi^{[L]}_\alpha}$ and $\ket{\Psi^{[R]}_\alpha}$ respectively. In this case, the Schmidt values $\lambda_\alpha \ge 0$ coincide with the singular values \cite{cite:DMRG_in_the_age_of_MPS} and one can compute the Von-Neumann entanglement entropy
 \begin{equation}
 	S = -\sum_{\alpha=1}^{\chi_n} \lambda_\alpha^2 \log\left(\lambda_\alpha^2\right),
 \end{equation}
@@ -96,9 +96,9 @@ It is immediately clear that truncated MPS by construction exhibit area law enta
 \end{equation}
 for arbitrary bipartitions of the chain. One can conclude that MPS are good approximations for ground states of gapped 1D Hamiltonians away from criticality. \par 
 For completeness we note that the truncation of all bonds of an MPS is a highly non-linear optimization problem and the naive algorithm of truncating each bond with an SVD does in general not lead to a minimal error. A variational compression procedure can be used to obtain a lower error at the same maximum bond dimension $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}. \par
-\subsubsection*{\hspace{162pt}Time evolution}
+\subsubsection*{\hspace{162pt}Time Evolution}
 Many algorithms have been formulated in the language of MPS. Most notably, the Density Matrix Renormalization Group (DMRG) algorithm can be used for finding ground states of local lattice Hamiltonians \cite{cite:DMRG_in_the_age_of_MPS}. Time evolution of MPS can for example be performed with the Time Evolving Block Decimation (TEBD) algorithm \cite{cite:efficient_simulation_of_1D_quantum_many_body_systems, cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems} or the Time Dependant Variational Principle (TDVP) \cite{cite:time_dependent_variational_principle_for_quantum_lattices, cite:unifying_time_evolution_and_optimization_with_MPS}. In the following, we will briefly discuss TEBD, as this algorithm can be generalized easily to isometric tensor product states of higher dimensions, which we will discuss in Section \ref{sec:YB_isoTPS_TEBD}. \par
-Assume that we are given a quantum state $\ket{\Psi}$ in the form of an MPS and a Hamiltonian $\hat{H}$ that can be written as a sum of nearest-neighbour operators $\hat{h}^{[j,j+1]}$,
+Assume that we are given a quantum state $\ket{\Psi}$ in the form of an MPS and a Hamiltonian $\hat{H}$ that can be written as a sum of nearest-neighbor operators $\hat{h}^{[j,j+1]}$,
 \begin{equation}
 	\hat{H} = \sum_{j = 1}^{N-1} \hat{h}^{[j,j+1]}.
 \end{equation}
@@ -126,7 +126,21 @@ which can be derived from the Baker-Campbell-Hausdorff formula, to approximate
 		&= \hat{U}^\text{TEBD1}(\Delta t) + \mathcal{O}\left(\Delta t^2\right).
 	\end{split}
 \end{equation}
-This is called a Suzuki-Trotter decomposition of first order. Since operators acting on even bonds commute with each other, the exponential $e^{-i\Delta tH_\text{even}}$ factorizes,
+\begin{figure}
+	\centering
+	\subcaptionbox{\label{fig:mps_tebd_first_order_overview}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf}
+	}
+	\par\medskip
+	\subcaptionbox{\label{fig:mps_tebd_first_order_applying_bond_op}}
+	{%
+		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf}
+	}
+	\caption{(a) An MPS can be approximately evolved by a time $\Delta t$ by applying the first order TEBD operator \eqref{eq:mps_first_order_tebd}, which is made up of bond operators acting first on all even and then on all odd bonds. (b) To apply a single bond operator $\hat{U}^{[j, j+1]}$, the two corresponding tensors $\Lambda^{[j]}$ and $B^{[j+1]}$ are contracted with the operator into a tensor $\theta^{[j,j+1]}$, which is then split using truncated SVD to obtain the updated tensors $A^{[j]}$ and $\Lambda^{[j+1]}$.}
+	\label{fig:mps_tebd_first_order}
+\end{figure}
+This is called a Suzuki-Trotter decomposition of first order. Since operators acting on even bonds commute with each other, the exponential $e^{-i\Delta t\hat{H}_\text{even}}$ factorizes,
 \begin{equation}
 	e^{-i\Delta t\hat{H}_\text{even}} = e^{-i\Delta t\sum_{j \text{ even}} \hat{h}^{[j, j+1]}} = \prod_{j \text{ even}} e^{-i\Delta t \hat{h}^{[j, j+1]}},
 \end{equation}
@@ -139,17 +153,3 @@ To perform a single TEBD iteration corresponding to a time evolution of $\Delta 
 	\end{split}
 \end{equation}
 and can be applied to an MPS similarly as the first order decomposition. For higher order Suzuki-Trotter decompositions see \cite{cite:finding_exponential_product_formulas_of_higher_orders}.
-\begin{figure}
-	\centering
-	\subcaptionbox{\label{fig:mps_tebd_first_order_overview}}
-	{%
-		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_a.pdf}
-	}
-	\par\medskip
-	\subcaptionbox{\label{fig:mps_tebd_first_order_applying_bond_op}}
-	{%
-		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf}
-	}
-	\caption{(a) An MPS can be approximately evolved by a time $\Delta t$ by applying the first order TEBD operator \eqref{eq:mps_first_order_tebd}, which is made up of bond operators acting first on all even and then on all odd bonds. (b) To apply a single bond operator $\hat{U}^{[j, j+1]}$, the two corresponding tensors $\Lambda^{[j]}$ and $B^{[j+1]}$ are contracted with the operator into a tensor $\theta^{[j,j+1]}$, which is then split using truncated SVD to obtain the updated tensors $A^{[j]\prime}$ and $\Lambda^{[j+1]^\prime}$.}
-	\label{fig:mps_tebd_first_order}
-\end{figure}

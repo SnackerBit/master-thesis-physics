@@ -2,7 +2,7 @@
 	\centering
 	\subcaptionbox{\label{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5}}{%
 		\raisebox{1.83pt}{\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=1/2)$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\twoByTwoFigureHeight, width=\twoByTwoFigureWidth, xtick={0, 200, 400, 600, 800, 1000}, xticklabels={$0$, $200$, $400$, $600$, $800$, $1000$}, ymin=0.351, ymax=0.377, legend style={nodes={scale=\legendscale, transform shape, font=\small}}]
+			\begin{axis}[xlabel=$N_\text{iters}$, ylabel={$f_\text{Rényi}(U,\theta,\alpha=1/2)$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\twoByTwoFigureHeight, width=\twoByTwoFigureWidth, xtick={0, 200, 400, 600, 800, 1000}, xticklabels={$0$, $200$, $400$, $600$, $800$, $1000$}, ymin=0.351, ymax=0.377, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend cell align={left}]
 				%	
 				\addplot[color = singleOrange]
 				table[x=N_iters, y=f_Renyi_cg, col sep=space]{figures/plots/YB_isoTPS/data/renyi_0.5_entropy_disentangling.txt};
@@ -95,6 +95,6 @@
 				\end{axis}%
 			\end{tikzpicture}%
 	}%
-	\caption{In this figure we qualitatively compare the different disentanglers that use Riemannian optimization to minimize the cost function. (a) (c) The $\alpha = 2$ Rényi-entropy and the truncation error are plotted against the number of disentangling iterations. The approximate versions of the CG and TRM algorithms perform almost as good as the exact versions. (b) (d) We now plot the Rényi-entropy and the truncation error against the walltime of the algorithms, showing the improved speed of the approximate algorithms.}
+	\caption{In this figure we qualitatively compare the different disentanglers that use Riemannian optimization to minimize the cost function. (a) (c) The $\alpha = 0.5$ Rényi-entropy and the truncation error are plotted against the number of disentangling iterations. The approximate versions of the CG and TRM algorithms perform almost as good as the exact versions. (b) (d) We now plot the Rényi-entropy and the truncation error against the walltime of the algorithms, showing the improved speed of the approximate algorithms. The environment of tensors used for the YB move is the same as in Figures \protect\figref{fig:YB_isoTPS_tripartite_decomposition_iterate_polar} and \protect\figref{fig:YB_isoTPS_disentangling_evenbly_vidal_renyi_2}.}
 	\label{fig:YB_isoTPS_disentangling_cg_trm_renyi_0.5_trunc_error}
 \end{figure}

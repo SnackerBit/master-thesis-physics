@@ -5,7 +5,7 @@
 	\begin{minipage}{1.0\textwidth}
 		\hspace{30pt}
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$t$, ylabel={$\langle\hat{\sigma}_z\rangle$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.2715,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=1, legend cell align={left}, xmin=-0.05, xmax=1.05, ymin=0.78, ymax=1.02]
+			\begin{axis}[xlabel=$t$, ylabel={$\langle\hat{\sigma}_z\rangle$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.2715,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=1, legend cell align={left}, xmin=-0.05, xmax=1.05, ymin=0.78, ymax=1.02, legend cell align={left}]
 				%
 				\addplot[color = 7blue1]
 				table[x=t_tenpy, y=sz_chi_16, col sep=space]{figures/plots/TFI/global_quench/data/global_quench_g_critical_tenpy.txt};
@@ -36,7 +36,7 @@
 				\addlegendentry{$\chi = 1024$}
 				%
 			\end{axis}
-			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.015,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, clip mode=individual, legend cell align={left}, yticklabels=\empty, xmin=-0.05, xmax=1.05, ymin=0.78, ymax=1.02]
+			\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(1.015,0.9)}, anchor=north west, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, clip mode=individual, legend cell align={left}, yticklabels=\empty, xmin=-0.05, xmax=1.05, ymin=0.78, ymax=1.02, legend cell align={left}]
 				%
 				\addplot[color = 5red1]
 				table[x=t_YB_isoTPS, y=sz_YB_isoTPS_D_2, col sep=space]{figures/plots/TFI/global_quench/data/global_quench_g_critical_YB_isoTPS.txt};
@@ -61,6 +61,6 @@
 			\end{axis}%
 		\end{tikzpicture}%
 	\end{minipage}
-	\caption{In this figure we show the time evolution of the $\langle\hat{\sigma}_z\rangle$ expectation value of a spin in the middle of the $8\times8$ diagonal square lattice, containing in total $N = 128$ spins. As a model we use the TFI model at critical field $g_\text{C}$. We compute the time evolution once with DMRG on a MPS and once with YB-isoTPS with the parameters given in the text. We observe good agreement up to times of $t\approx 0.2$, when the two YB-isoTPS results diverge from the DMRG reference simulation.}
+	\caption{In this figure we show the time evolution of the $\langle\hat{\sigma}_z\rangle$ expectation value of a spin in the middle of the $8\times8$ diagonal square lattice, containing in total $N = 128$ spins. As a model we use the TFI model at critical field $g_\text{C}$. We compute the time evolution once with DMRG on a MPS and once with YB-isoTPS with the parameters given in the text. We observe good agreement up to times of $t\approx 0.2$, when the YB-isoTPS results diverge from the DMRG reference simulation.}
 	\label{fig:YB_isoTPS_time_evolution_g_critical}
 \end{figure}

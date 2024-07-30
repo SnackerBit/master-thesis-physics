@@ -5,7 +5,7 @@
 	\begin{minipage}[t]{1.0\textwidth}
 		\hspace{20pt}
 		\begin{tikzpicture}[scale=1, trim axis left, trim axis right]
-			\begin{axis}[xlabel=$t$, ylabel=$\langle\hat{\sigma}_z\rangle$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\globalQuenchLargeFieldFigureHeight, width=\globalQuenchLargeFieldFigureWidth, xmin=-0.05, xmax=1.05, ymin=-1.1, ymax=1.1, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend pos=south east]
+			\begin{axis}[xlabel=$t$, ylabel=$\langle\hat{\sigma}_z\rangle$, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\globalQuenchLargeFieldFigureHeight, width=\globalQuenchLargeFieldFigureWidth, xmin=-0.05, xmax=1.05, ymin=-1.1, ymax=1.1, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend pos=south east, legend cell align={left}]
 				%	
 				\addplot[color = 5blue1]
 				table[x=t_tenpy, y=sz_chi_16, col sep=space]{figures/plots/TFI/global_quench/data/global_quench_g_6.0_tenpy_site_index_4_4_0.txt};
@@ -28,7 +28,7 @@
 				\addlegendentry{$\chi= 256$}
 				%
 			\end{axis}%
-			\begin{axis}[scale only axis, height=\globalQuenchLargeFieldFigureHeight, width=\globalQuenchLargeFieldFigureWidth, every axis plot/.append style={very thick}, xmin=-0.05, xmax=1.05, ymin=-1.1, ymax=1.1, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend pos=north west]
+			\begin{axis}[scale only axis, height=\globalQuenchLargeFieldFigureHeight, width=\globalQuenchLargeFieldFigureWidth, every axis plot/.append style={very thick}, xmin=-0.05, xmax=1.05, ymin=-1.1, ymax=1.1, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend pos=north west, legend cell align={left}]
 				%	
 				\addplot[color = 3red1]
 				table[x=t_YB_isoTPS, y=sz_YB_isoTPS_D_2, col sep=space]{figures/plots/TFI/global_quench/data/global_quench_g_6.0_YB_isoTPS_site_index_4_4_0.txt};
@@ -148,6 +148,6 @@
 			\includegraphics[scale=1.1]{figures/tikz/TFI/site_indices/site_index_c.pdf}
 		}
 	\end{minipage}
-	\caption{In this figure we show the time evolution of the $\langle\hat{\sigma}_z\rangle$ expectation value of a spin in the middle of the lattice and its neighbouring spins. The position of the spins is visualized in the lattice next to the plots. As a model we use the TFI model in the paramagnetic phase with a transverse field of $g = 6$, put on an $8\times8$ diagonal square lattice containing in total $N = 128$ spins. We compute the time evolution once with DMRG on a MPS and once with YB-isoTPS with the parameters given in the text.}
+	\caption{In this figure we show the time evolution of the $\langle\hat{\sigma}_z\rangle$ expectation value of a spin in the middle of the lattice and its neighboring spins. The position of the measured spins is visualized in orange in the lattice next to the plots. As an initial state we choose the all-up state, with a spin in the center of the lattice flipped to the down-state $\ket{\downarrow}$. We draw the flipped spin in red. As a model we use the TFI model in the paramagnetic phase with a transverse field of $g = 6$, put on an $8\times8$ diagonal square lattice containing in total $N = 128$ spins. We compute the time evolution once with DMRG on a MPS and once with YB-isoTPS with the parameters given in the text.}
 	\label{fig:YB_isoTPS_time_evolution_g_6}
 \end{figure}

@@ -1,9 +1,9 @@
 When discussing algorithms on isometric tensor networks, one often needs to find optimal tensors extremizing a given cost function $f$. In the most general case, $f$ is a function
 \begin{equation}
 	\label{eq:general_optimization_problem_of_isometric_tensor_networks_cost_function_multiple_input_tensors}
-	f:\mathbb{C}^{m_1\times n_1}\times \dots \times \mathbb{C}^{m_K\times n_K} \to \mathbb{R},
+	f:\mathbb{C}^{m_1\times n_1}\times\mathbb{C}^{m_2\times n_2}\times \dots \times \mathbb{C}^{m_K\times n_K} \to \mathbb{R},
 \end{equation}
-mapping $K$ tensors $T_1,\dots,T_K$ to a scalar cost value. Here, the tensors have already been reshaped into matrices, grouping together legs with incoming arrows and legs with outgoing arrows respectively. The tensors must satisfy certain constraints. If a tensor $T_i$ posesses both legs with incoming arrows and legs with outgoing arrows, it must satisfy the isometry constraint $T_i^\dagger T_i = \id$, where without loss of generalization we assumed $n_i \ge m_i$. If instead the tensor $T_j$ posesses only legs with incoming arrows (and thus is an orthogonality center), it is constrained to be normalized to one, $\lVert T_j\rVert_\text{F} = 1$. To summarize, we want to solve the optimization problem
+mapping $K$ tensors $T_1,\dots,T_K$ to a scalar cost value. Here, the tensors have already been reshaped into matrices, grouping together legs with incoming arrows and legs with outgoing arrows respectively. The tensors must satisfy certain constraints. If a tensor $T_i$ posesses both legs with incoming arrows and legs with outgoing arrows, it must satisfy the isometry constraint $T_i^\dagger T_i = \id$, where without loss of generalization we assumed $m_i \ge n_i$. If instead the tensor $T_j$ posesses only legs with incoming arrows (and thus is the orthogonality center), it is constrained to be normalized to one, $\lVert T_j\rVert_\text{F} = 1$. To summarize, we want to solve the optimization problem
 \begin{equation}
 	\label{eq:general_optimization_problem_of_isometric_tensor_networks_multiple_input_tensors}
 	T_1^\text{opt}, \dots, T_K^\text{opt} = \underset{T_1,\dots T_K}{\text{argmax}}f\left(T_1, \dots T_K\right)

@@ -17,7 +17,7 @@
 		\draw[virtualLegSmall] (A2)+(\tensorDistanceMPS-\tensorWidthMPS/2, 0) -- (A2);
 		\draw[virtualLegSmall] (A1)+(-\tensorDistanceMPS+\tensorWidthMPS/2, 0) -- (A1);
 		
-		\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op1) at (\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[n,n+1]}$};
+		\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op1) at (\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[j,j+1]}$};
 		
 		\begin{pgfonlayer}{bg}
 			\draw[physicalLegSmall] (A1)+(0, -\opOffset+\tensorWidthMPS/2) -- (A1);
@@ -27,8 +27,8 @@
 			\draw[physicalLegSmall] (1*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
 		\end{pgfonlayer}
 	
-		\node[] at (0, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[n]}$};
-		\node[] at (\tensorDistanceMPS, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$B^{[n+1]}$};
+		\node[] at (0, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[j]}$};
+		\node[] at (\tensorDistanceMPS, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$B^{[j+1]}$};
 		
 		\node[] () at (2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance/2, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$=$};
 		
@@ -45,7 +45,7 @@
 			\draw[physicalLegSmallWithoutArrows] ({\blobPosX+\tensorDistanceMPS/2}, \blobPosY-\tensorWidthMPS/2)  -- ++(0, \tensorWidthMPS/2);
 		\end{pgfonlayer}
 	
-		\node[] at ({\blobPosX}, \blobPosY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\theta^{[n, n+1]}$};
+		\node[] at ({\blobPosX}, \blobPosY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\theta^{[j, j+1]}$};
 	
 		\node[] () at ({\blobPosX+\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS+\equationDistance/2}, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$=$};
 		
@@ -64,7 +64,7 @@
 			\draw[physicalLegSmall] (A2p)+(0, -\opOffset+\tensorWidthMPS/2) -- (A2p);
 		\end{pgfonlayer}
 	
-	\node[] at ({\AfinalposX}, \AfinalposY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$A^{[n]\prime}$};
-	\node[] at ({\AfinalposX+\tensorDistanceMPS}, \AfinalposY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[n+1]\prime}$};
+	\node[] at ({\AfinalposX}, \AfinalposY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$A^{[j]}$};
+	\node[] at ({\AfinalposX+\tensorDistanceMPS}, \AfinalposY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[j+1]}$};
 	\end{tikzpicture}
 \end{document}

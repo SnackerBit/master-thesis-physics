@@ -5,8 +5,7 @@
 \usepackage{ragged2e}
 \justifying
 
-%\todo{UNCOMMENT}
-%\pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.18}
 
 %\usepgfplotslibrary{external}
 %\tikzexternalize
@@ -19,8 +18,8 @@
 
 \mathtoolsset{showonlyrefs}
 
-\lowertitleback{Erstgutachter (Themensteller): Prof. Frank Pollmann\\
-	Zweitgutachter:  Prof. Michael Knap}
+\lowertitleback{Erstgutachter (Themensteller): Prof. Dr. Frank Pollmann\\
+	Zweitgutachter:  Prof. Dr. Michael Knap}
 
 \makeatletter
 \renewcommand*\subcaption@label{%
@@ -46,6 +45,7 @@
 	\maketitle
 	
 	\newpage
+	\begin{refsection}
 	\thispagestyle{empty}
 	
 	\null\vfill
@@ -53,7 +53,7 @@
 	I hereby declare that this thesis is entirely the result of my own work except where otherwise indicated. I have only used the resources given in the list of references. \par
 	\vspace{2cm}
 	\noindent
-	\rlap{Munich, \today}{%
+	\rlap{München, 30.~Juli 2024}{%
 		\hspace{.5\textwidth}Benjamin Sappler}\par
 	
 	\newpage
@@ -110,5 +110,11 @@
 	
 	\backmatter
 	\printbibliography
+	\end{refsection}
+	\begin{refsection}
+	\nocite{Website:ColorBrewer}
+	\nocite{Website:ColorBlind}
+	\printbibliography[heading=subbibliography, title={Resources for Plotting}]
+	\end{refsection}
 	
 \end{document}

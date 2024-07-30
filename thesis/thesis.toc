@@ -5,16 +5,16 @@
 \contentsline {section}{\numberline {2.2}Tensor Decompositions}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Isometric Tensor Networks}{10}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Matrix Product States (MPS)}{12}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Isometric Tensor Product States (isoTPS) in 2D}{18}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Isometric Tensor Product States (isoTPS) in 2D}{19}{section.2.5}%
 \contentsline {chapter}{\numberline {3}IsoTPS with Alternative Canonical Form}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Network Structure}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Yang-Baxter Move}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Variational optimization with local updates}{30}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Tripartite decomposition using an SVD and disentangling}{33}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison of the two algorithms}{42}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{45}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Local TEBD updates}{45}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Global TEBD updates}{46}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.2}Yang-Baxter Move}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Variational Optimization with Local Updates}{30}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Tripartite Decomposition Using an SVD and Disentangling}{33}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison of the Algorithms}{42}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Time Evolving Block Decimation (TEBD)}{44}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Local TEBD Updates}{45}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Global TEBD Updates}{45}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}The Toric Code: An Exactly Representable Model}{51}{chapter.4}%
 \contentsline {section}{\numberline {4.1}The Toric Code Model}{51}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Representing the Toric Code Ground State with YB-isoTPS}{53}{section.4.2}%
@@ -36,6 +36,6 @@
 \contentsline {chapter}{\numberline {C}Computing the Gradient and Hessian of the Disentangling Cost Functions}{83}{appendix.C}%
 \contentsline {section}{\numberline {C.1}Derivative of the SVD}{83}{section.C.1}%
 \contentsline {section}{\numberline {C.2}Gradients}{86}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Hessian vector products}{87}{section.C.3}%
+\contentsline {section}{\numberline {C.3}Hessian-Vector Products}{87}{section.C.3}%
 \contentsline {chapter}{\nonumberline Bibliography}{89}{chapter*.62}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

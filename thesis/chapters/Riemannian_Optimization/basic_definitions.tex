@@ -22,7 +22,7 @@ After a search direction $\xi$ has been computed, we would like to update the it
 \begin{equation}
 	R_\xi : \mathbb{R} \rightarrow \Stiefel, \quad \alpha \mapsto R_\xi(\alpha),
 \end{equation}
-that satisfies $R_\xi(0) = X$ and $\left.\frac{\text{d}R_\xi(\alpha)}{\text{d}\alpha}\right|_\alpha=0 = \xi$. One can think of the retraction as moving in the direction of $\xi$ while staying on the manifold. There exist different possible retractions for the Stiefel manifold. A contraction that is particularly easy to compute and yields good results in practice is the retraction
+that satisfies $R_\xi(0) = X$ and $\left.\frac{\text{d}R_\xi(\alpha)}{\text{d}\alpha}\right|_{\alpha=0} = \xi$. One can think of the retraction as moving in the direction of $\xi$ while staying on the manifold. There exist different possible retractions for the Stiefel manifold. A contraction that is particularly easy to compute and yields good results in practice is the retraction
 \begin{equation}
 	R_\xi{\alpha} = qf(X+\alpha\xi),
 \end{equation}
@@ -32,7 +32,7 @@ Some Optimization algorithms, for example Conjugate Gradients, additionally use 
 	\label{eq:vector transport}
 	T_{k\rightarrow k+1} : T_{X_k} \Stiefel \rightarrow T_{X_{k+1}} \Stiefel, \quad \xi_k \mapsto T_{k\rightarrow k+1}(\xi_k).
 \end{equation}
-For Riemannian submanifolds, a simple vector transport is given by the projection onto the current tangent space,
+For Riemannian submanifolds of Euclidean vector spaces, a simple vector transport is given by the projection onto the current tangent space \cite{cite:optimization_on_matrix_manifolds},
 \begin{equation}
 	\label{eq:vector_transport_stiefel_manifold}
 	T_{k\rightarrow k+1}(\xi_k) = P_{X_{k+1}}\xi_k,

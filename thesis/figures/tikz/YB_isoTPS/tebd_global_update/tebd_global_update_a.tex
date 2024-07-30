@@ -11,6 +11,10 @@
 	\def\equationPosX{-\coordinateSystemDistance+6*\tensorDistance+3.2*\defaultDistanceEquations/2}
 	\def\equationPosY{2.5*\tensorDistance}
 	
+	\def\coordSystemAlpha{0.5}
+	
+	\colorlet{coordSystemColor}{black!20}
+	
 	\begin{tikzpicture}
 		% Physical tensors
 		\node[tensorPhysicalSmall] (T000) at (0, 0) {};
@@ -55,18 +59,31 @@
 		\draw[thick] (-\coordinateSystemDistance-\ticklength/2, 7*\tensorDistance/2) -- ++(\ticklength, 0);
 		\draw[thick] (-\coordinateSystemDistance-\ticklength/2, 9*\tensorDistance/2) -- ++(\ticklength, 0);
 		% ticklabels
-		\node[] () at (\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$1$};
-		\node[] () at (3*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$2$};
-		\node[] () at (5*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$3$};
-		\node[] () at (7*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$4$};
-		\node[] () at (9*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$5$};
+		\node[] () at (\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$0$};
+		\node[] () at (3*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$1$};
+		\node[] () at (5*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$2$};
+		\node[] () at (7*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$3$};
+		\node[] () at (9*\tensorDistance/2, -\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge) {$4$};
 		
-		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, \tensorDistance/2) {$1$};
-		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 3*\tensorDistance/2) {$2$};
-		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 5*\tensorDistance/2) {$3$};
-		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 7*\tensorDistance/2) {$4$};
-		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 9*\tensorDistance/2) {$5$};
+		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, \tensorDistance/2) {$0$};
+		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 3*\tensorDistance/2) {$1$};
+		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 5*\tensorDistance/2) {$2$};
+		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 7*\tensorDistance/2) {$3$};
+		\node[] () at (-\coordinateSystemDistance-\ticklength/2-\defaultTextOffsetLarge, 9*\tensorDistance/2) {$4$};
 		
+		\begin{pgfonlayer}{bg}
+			\draw[coordSystemColor] (\tensorDistance/2, -\coordinateSystemDistance) -- ++(0, 5.5*\tensorDistance);
+			\draw[coordSystemColor] (3*\tensorDistance/2, -\coordinateSystemDistance) -- ++(0, 5.5*\tensorDistance);
+			\draw[coordSystemColor] (5*\tensorDistance/2, -\coordinateSystemDistance) -- ++(0, 5.5*\tensorDistance);
+			\draw[coordSystemColor] (7*\tensorDistance/2, -\coordinateSystemDistance) -- ++(0, 5.5*\tensorDistance);
+			\draw[coordSystemColor] (9*\tensorDistance/2, -\coordinateSystemDistance) -- ++(0, 5.5*\tensorDistance);
+			
+			\draw[coordSystemColor] (-\coordinateSystemDistance, \tensorDistance/2) -- ++(5.5*\tensorDistance, 0);
+			\draw[coordSystemColor] (-\coordinateSystemDistance, 3*\tensorDistance/2) -- ++(5.5*\tensorDistance, 0);
+			\draw[coordSystemColor] (-\coordinateSystemDistance, 5*\tensorDistance/2) -- ++(5.5*\tensorDistance, 0);
+			\draw[coordSystemColor] (-\coordinateSystemDistance, 7*\tensorDistance/2) -- ++(5.5*\tensorDistance, 0);
+			\draw[coordSystemColor] (-\coordinateSystemDistance, 9*\tensorDistance/2) -- ++(5.5*\tensorDistance, 0);
+		\end{pgfonlayer}
 		
 		\begin{pgfonlayer}{bg}
 			% virtual legs

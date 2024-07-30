@@ -1,17 +1,18 @@
-In this appendix we compute the Riemannian gradients and hessian vector products for the cost functions \eqref{eq:YB_move_disent_cost_function_truncation_error} and \eqref{eq:renyi_entropy}. For this it is first necessary to derive the derivative of the complex-valued singular value decomposition (SVD), which we show in Section \ref{sec:derivative_of_SVD}. The derivation is similar to \cite{cite:differentiating_the_svd}. We then proceed by deriving the gradients in section \ref{sec:renyi_trunc_gradients} and the hessian vector products in section \ref{sec:renyi_trunc_hvps}.
+In this appendix we compute the Riemannian gradients and Hessian-vector products for the cost functions \eqref{eq:YB_move_disent_cost_function_truncation_error} and \eqref{eq:renyi_entropy}. For this it is first necessary to derive the derivative of the complex-valued singular value decomposition (SVD), which we show in Section \ref{sec:derivative_of_SVD}. The derivation is similar to \cite{cite:differentiating_the_svd}. We then proceed by deriving the gradients in section \ref{sec:renyi_trunc_gradients} and the hessian-vector products in section \ref{sec:renyi_trunc_hvps}.
 \section{Derivative of the SVD}
 \label{sec:derivative_of_SVD}
 Let $A\in\mathbb{C}^{m\times n}$ of rank $k \le \min(m,n)$. The SVD of $A$ is defined as $A = USV^\dagger$, with $U\in\mathbb{C}^{m\times k}$, $S\in\mathbb{R}^{k\times k}$ diagonal, $V\in\mathbb{C}^{n\times k}$ and
 \begin{equation}
 	\label{eq:derivative_svd_eq_1}
-	 U^\dagger U = \quad V^\dagger V = \id_k.
+	 U^\dagger U = V^\dagger V = \id_k.
 \end{equation}
 In this definition we already truncated singular values $s_j = 0$, such that $S$ has only non-zero entries on the diagonal. Let $\text{d}A\in\mathbb{C}^{m\times n}$ be an infinitesimal change of $A$. We are interested in the infinitesimal changes $\text{d}U$, $\text{d}S$ and $\text{d}V$ that are obtained when performing the SVD $(A+\text{dA}) = (U + \text{d}U)(S + \text{d}S)(V + \text{d}V)^\dagger$. Up to first order we obtain
 \begin{equation}
 	\label{eq:derivative_svd_eq_2}
 	\text{d}A = \text{d}USV^\dagger + U\text{d}SV^\dagger + US\text{d}V^\dagger.
 \end{equation}
-Differentiating Equation \eqref{eq:derivative_svd_eq_1} yields $\text{d}U^\dagger U + U^\dagger\text{d}U = 0$ and $\text{d}V^\dagger V + V^\dagger\text{d}V = 0$. It follows that $\text{d}\Omega_U \coloneqq U^\dagger\text{d}U$ and $\text{d}\Omega_V \coloneqq V^\dagger\text{d}V$ are $k\times k$ anti-hermitean matrices. One can then always find hermitean matrices $U_\perp\in\mathbb{C}^{m\times(m-k)}$ and $V_\perp\in\mathbb{C}^{n\times(n-k)}$ such that $\left[U\,U_\perp\right]$ and $\left[V V_\perp\right]$ are unitary and it holds $U^\dagger U_\perp = 0$ and $V^\dagger V_\perp = 0$. This procedure is called unitary completion and can for example be computed by using the Gram-Schmidt algorithm. The notation $\left[U\,U_\perp\right]$ means stacking the columns of $U$ and $U_\perp$ to form a $m\times m$ matrix. We may now expand $\text{d}U$ as
+Differentiating Equation \eqref{eq:derivative_svd_eq_1} yields $\text{d}U^\dagger U + U^\dagger\text{d}U = 0$ and $\text{d}V^\dagger V + V^\dagger\text{d}V = 0$. It follows that $\text{d}\Omega_U \coloneqq U^\dagger\text{d}U$ and $\text{d}\Omega_V \coloneqq V^\dagger\text{d}V$ are $k\times k$ anti-hermitian matrices. \par
+One can always find matrices $U_\perp\in\mathbb{C}^{m\times(m-k)}$ and $V_\perp\in\mathbb{C}^{n\times(n-k)}$ such that $\left[U\,U_\perp\right]$ and $\left[V V_\perp\right]$ are unitary and it holds $U^\dagger U_\perp = 0$ and $V^\dagger V_\perp = 0$. This procedure is called unitary completion and can for example be computed by using the Gram-Schmidt algorithm. The notation $\left[U\,U_\perp\right]$ means stacking the columns of $U$ and $U_\perp$ to form a $m\times m$ matrix. We may now expand $\text{d}U$ as
 \begin{equation}
 	\label{eq:dOmega_U_definition}
 	\text{d}U = U\text{d}\Omega_U + U_\perp\text{d}K_U
@@ -21,7 +22,7 @@ and $\text{d}V$ as
 	\label{eq:dOmega_V_definition}
 	\text{d}V = V\text{d}\Omega_V + V_\perp\text{d}K_V,
 \end{equation}
-with $\text{d}K_U\in\mathbb{C}^{(m-k)\times k}$ and $\text{d}K_V\in\mathbb{C}^{(n-k)\times k}$ to be determined. We proceed by left-multiplying \eqref{eq:derivative_svd_eq_2} by $U^\dagger$ and right-multiplying by $V$ to obtain
+with $\text{d}K_U\in\mathbb{C}^{(m-k)\times k}$ and $\text{d}K_V\in\mathbb{C}^{(n-k)\times k}$ yet to be determined. We proceed by left-multiplying \eqref{eq:derivative_svd_eq_2} by $U^\dagger$ and right-multiplying by $V$ to obtain
 \begin{equation}
 	\label{eq:svd_derivative_P_definition}
 	\begin{split}
@@ -29,7 +30,7 @@ with $\text{d}K_U\in\mathbb{C}^{(m-k)\times k}$ and $\text{d}K_V\in\mathbb{C}^{(
 		&= \text{d}\Omega_U S + \text{d}S + S\text{d}\Omega_V^\dagger.
 	\end{split}
 \end{equation}
-Since $\text{d}\Omega_U$ and $\text{d}\Omega_V$ are anti-hermitean, there diagonal elements are purely imaginary. However, $\text{d}S$ is a diagonal matrix with purely real entries. Thus it is immediately clear that
+Since $\text{d}\Omega_U$ and $\text{d}\Omega_V$ are anti-hermitian, there diagonal elements are purely imaginary. However, $\text{d}S$ is a diagonal matrix with purely real entries. Thus it is immediately clear that
 \begin{equation}
 	\label{eq:dS_final}
 	\text{d}S = \id_k \circ \Re\left[\text{d}P\right],
@@ -92,7 +93,7 @@ It remains to find $\text{d}K_U$ and $\text{d}K_V$. We can compute $\text{d}K_U$
 Similarly, we can left-multiply \eqref{eq:derivative_svd_eq_2}$^\dagger$ by $V_\perp^\dagger$ and right-multiplying by $US^{-1}$ to obtain
 \begin{equation}
 	\label{eq:derivative_svd_eq_8}
-	\text{d}K_V = V_\perp^\dagger\text{d}A^\dagger US^-1.
+	\text{d}K_V = V_\perp^\dagger\text{d}A^\dagger US^{-1}.
 \end{equation}
 Putting everything together, we obtain
 \begin{equation}
@@ -100,10 +101,10 @@ Putting everything together, we obtain
 	\begin{split}
 		\text{d}U &= U\left(F\circ\left[\text{d}PS+S\text{d}P^\dagger\right] + \id_k\circ\text{d}D\right) + \left(\id_m-UU^\dagger\right)\text{d}AVS^{-1}. \\
 		\text{dS} &= \id_k\circ\Re\left[\text{d}P\right]. \\
-		\text{d}V &= V\left(F\circ\left[D\text{d}P+\text{d}P^\dagger S\right] - \id_k\circ\text{d}D\right) + \left(\id_n-UU^\dagger\right)\text{d}AUS^{-1},
+		\text{d}V &= V\left(F\circ\left[S\text{d}P+\text{d}P^\dagger S\right] - \id_k\circ\text{d}D\right) + \left(\id_n-VV^\dagger\right)\text{d}AUS^{-1},
 	\end{split}
 \end{equation}
-with $\text{d}P$ defined as \eqref{eq:svd_derivative_P_definition} and $F$ defined as \eqref{eq:svd_derivative_F_definition}. To arrive at the final expressions for $\text{d}U$ and $\text{dV}$ we used the fact that $M_U \coloneqq \left[U\,U_\perp\right]$ and $M_V \coloneqq \left[V V_\perp\right]$ are unitary and thus $M_UM_U^\dagger = UU^\dagger + U_\perp U_\perp^\dagger = \id_m$ and similarly $VV^\dagger + V_\perp V_\perp^\dagger = \id_n$ to eliminate $U_\perp U_\perp^\dagger$ and $V_\perp V_\perp^\dagger$. \par
+with $\text{d}P$ defined in Equation \eqref{eq:svd_derivative_P_definition} and $F$ defined in Equation \eqref{eq:svd_derivative_F_definition}. To arrive at the final expressions for $\text{d}U$ and $\text{dV}$ we used the fact that $M_U \coloneqq \left[U\,U_\perp\right]$ and $M_V \coloneqq \left[V V_\perp\right]$ are unitary and thus $M_UM_U^\dagger = UU^\dagger + U_\perp U_\perp^\dagger = \id_m$ and similarly $VV^\dagger + V_\perp V_\perp^\dagger = \id_n$ to eliminate $U_\perp U_\perp^\dagger$ and $V_\perp V_\perp^\dagger$. \par
 There is one small subtlety left to discuss. The SVD is not unique, but has a gauge degree of freedom: A diagonal matrix of complex phases $\Lambda_{j,j} = e^{i\theta_j}$ can be inserted as $A = USV^\dagger = U^\prime S V^{\prime\dagger} = (U\Lambda)S(V\Lambda)^\dagger$. This means that the exact values of $\text{d}U$ and $\text{d}V$ are ill-defined and it is only possible to compute derivatives of functions that are gauge-invariant, i.e. functions where $\Lambda$ is cancelled with its adjoint.
 %
 %
@@ -148,13 +149,13 @@ respectively, with
 where $\tilde{S} = S$ for $\xi^\text{trunc}$ and $\tilde{S} = S^{2\alpha-1}$ for $\xi^\text{Rényi}$.
 %
 %
-\section{Hessian vector products}
+\section{Hessian-Vector Products}
 \label{sec:renyi_trunc_hvps}
 %
 %
-In this section we compute the hessian vector product of $\nabla f$ and $\Delta U$. We start by first calculating the directional derivative of the gradient
+In this section we compute the Hessian-vector product of $\nabla f$ and $\Delta U$. We start by first calculating the directional derivative of the gradient in direction $\Delta U$
 \begin{equation}
-	\text{D}\left(\nabla f\right)\left[U\right],
+	\text{D}\left(\nabla f\right)\left[\Delta U\right],
 \end{equation}
 which we subsequently need to project to the tangent space of $U$. For matrix multiplication it holds\cite{cite:the_matrix_cook_book}
 \begin{equation}
