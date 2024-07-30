@@ -95,9 +95,9 @@ It is immediately clear that truncated MPS by construction exhibit area law enta
 	S \le \log\left(\chi_\text{max}\right)
 \end{equation}
 for arbitrary bipartitions of the chain. One can conclude that MPS are good approximations for ground states of gapped 1D Hamiltonians away from criticality. \par 
-For completeness we note that the truncation of all bonds of an MPS is a highly non-linear optimization problem and the naive algorithm of truncating each bond with an SVD does in general not lead to a minimal error. A variational compression procedure can often be used to obtain a lower error at the same maximum bond dimension $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}. \par
+For completeness we note that the truncation of all bonds of an MPS is a highly non-linear optimization problem and the naive algorithm of truncating each bond with an SVD does in general not lead to a minimal error. A variational compression procedure can be used to obtain a lower error at the same maximum bond dimension $\chi_\text{max}$ \cite{cite:DMRG_in_the_age_of_MPS}. \par
 \subsubsection*{\hspace{162pt}Time evolution}
-Many algorithms have been formulated in the language of MPS. Most notably, the Density Matrix Renormalization Group (DMRG) algorithm can be used for finding ground states of local lattice Hamiltonians \cite{cite:DMRG_in_the_age_of_MPS}. Time evolution of MPS can be performed with the the Time Evolving Block Decimation (TEBD) algorithm \cite{cite:efficient_simulation_of_1D_quantum_many_body_systems, cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems} or the Time Dependant Variational Principle (TDVP) \cite{cite:time_dependent_variational_principle_for_quantum_lattices, cite:unifying_time_evolution_and_optimization_with_MPS}. In the following, we will briefly discuss TEBD, as this algorithm can be generalized easily to isometric tensor product states of higher dimension, which we will do in Section \ref{sec:YB_isoTPS_TEBD}. \par
+Many algorithms have been formulated in the language of MPS. Most notably, the Density Matrix Renormalization Group (DMRG) algorithm can be used for finding ground states of local lattice Hamiltonians \cite{cite:DMRG_in_the_age_of_MPS}. Time evolution of MPS can for example be performed with the Time Evolving Block Decimation (TEBD) algorithm \cite{cite:efficient_simulation_of_1D_quantum_many_body_systems, cite:matrix_product_density_operators_simulation_of_finite_temperature_and_dissipative_systems} or the Time Dependant Variational Principle (TDVP) \cite{cite:time_dependent_variational_principle_for_quantum_lattices, cite:unifying_time_evolution_and_optimization_with_MPS}. In the following, we will briefly discuss TEBD, as this algorithm can be generalized easily to isometric tensor product states of higher dimensions, which we will discuss in Section \ref{sec:YB_isoTPS_TEBD}. \par
 Assume that we are given a quantum state $\ket{\Psi}$ in the form of an MPS and a Hamiltonian $\hat{H}$ that can be written as a sum of nearest-neighbour operators $\hat{h}^{[j,j+1]}$,
 \begin{equation}
 	\hat{H} = \sum_{j = 1}^{N-1} \hat{h}^{[j,j+1]}.
@@ -106,7 +106,7 @@ According to the Schrödinger equation, the state $\ket{\Psi}$ can be evolved in
 \begin{equation}
 	\ket{\Psi(t)} = \hat{U}\left(t\right) \ket{\Psi} = e^{-it\hat{H}} \ket{\Psi},
 \end{equation}
-where we have set $\hbar = 1$. The time evolution operator $U(t)$ is in general very hard to compute and handle exactly. Thus, $U(t)$ is approximated using a \textit{Suzuki-Trotter decomposition}. We start by decomposing the time evolution into a series of $K$ small time steps $\Delta t = t/K$ as
+where we have set $\hbar = 1$. The time evolution operator $\hat{U}(t)$ is in general very hard to compute and handle exactly. Thus, $\hat{U}(t)$ is approximated using a \textit{Suzuki-Trotter decomposition}. We start by decomposing the time evolution into a series of $K$ small time steps $\Delta t = t/K$ as
 \begin{equation}
 	\hat{U}(t) = e^{-it\hat{H}} = \left(e^{-i\Delta t\hat{H}}\right)^K = \left(\hat{U}(\Delta t)\right)^K.
 \end{equation}
@@ -150,6 +150,6 @@ and can be applied to an MPS similarly as the first order decomposition. For hig
 	{%
 		\includegraphics[scale=1]{figures/tikz/Tensor_Networks/mps_TEBD/mps_TEBD_b.pdf}
 	}
-	\caption{(a) An MPS can be approximately evolved by a time $\Delta t$ by applying the first order TEBD operator \eqref{eq:mps_first_order_tebd}, which is made up of bond operators acting first on all even and then on all odd bonds. (b) To apply a single bond operator $\hat{U}^{[n, n+1]}$, the two corresponding tensors $\Lambda^{[n]}$ and $B^{[n+1]}$ are contracted with the operator into a tensor $\theta^{[n,n+1]}$, which is then split using truncated SVD to obtain the updated tensors $A^{[n]\prime}$ and $\Lambda^{[n+1]^\prime}$.}
+	\caption{(a) An MPS can be approximately evolved by a time $\Delta t$ by applying the first order TEBD operator \eqref{eq:mps_first_order_tebd}, which is made up of bond operators acting first on all even and then on all odd bonds. (b) To apply a single bond operator $\hat{U}^{[j, j+1]}$, the two corresponding tensors $\Lambda^{[j]}$ and $B^{[j+1]}$ are contracted with the operator into a tensor $\theta^{[j,j+1]}$, which is then split using truncated SVD to obtain the updated tensors $A^{[j]\prime}$ and $\Lambda^{[j+1]^\prime}$.}
 	\label{fig:mps_tebd_first_order}
 \end{figure}
