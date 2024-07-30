@@ -1,11 +1,199 @@
 \documentclass{article}
 \usepackage{braket}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\DeclareMathAlphabet{\mathbbb}{U}{bbold}{m}{n}
+\DeclareMathOperator{\Tr}{Tr}
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\argmin}{argmin}
+\DeclareMathOperator{\qf}{qf}
+%\DeclareMathOperator{\mod}{mod}
+\newcommand{\id}{\mathbbb{1}}
+\newcommand{\iu}{\mathrm{i}}% imaginary unit number i
+\newcommand{\Stiefel}{\text{St}(n,p)}
+
 \begin{document}
+	
+
 
 	\section{Introduction}	
 
 	\begin{equation}
 		\ket{\Psi} = \sum_{i_1=1}^{d_1} \sum_{i_2=1}^{d_2} \cdots \sum_{i_N=1}^{d_N} \Psi_{i_1,i_2,\dots,i_N} \ket{i_1} \otimes \ket{i_2} \otimes \cdots \otimes \ket{i_N} 
+	\end{equation}
+	
+	\begin{equation} % amssymb
+		T \in \mathbb{C}^{\chi_1\times\chi_2\times\dots\times\chi_n}
+	\end{equation}
+	
+	\begin{equation} % amssymb
+		T_{i_1,i_2,\dots,i_n} \in \mathbb{C}, \quad i_j \in \{1, 2, \dots, \chi_j\}
+	\end{equation}
+	
+	\begin{equation}
+		c = \sum_{\alpha=1}^{\chi}A_\alpha B_\alpha
+	\end{equation}
+		
+	\begin{equation}
+		C_{ij} = \sum_{\alpha=1}^{\chi_2} A_{i\alpha} B_{\alpha j}
+	\end{equation}
+	
+	\begin{equation}
+	\Psi_{i_1,i_2,\cdots,i_N} \coloneqq \sum_{\alpha_1=1}^{\chi_1} \sum_{\alpha_2=1}^{\chi_2}\dots\sum_{\alpha_{N-1}=1}^{\chi_{N-1}}T^{[1],i_1}_{1,\alpha_1} T^{[2],i_2}_{\alpha_1,\alpha_2} \cdots T^{[N],i_N}_{\alpha_{N-1},1}
+	\end{equation}
+	
+	\begin{equation}
+	d^N \rightarrow N\chi^2d
+	\end{equation}
+	
+	\begin{equation}
+	W \in \mathbb{C}^{n\times m}, \,\, n\ge m
+	\end{equation}
+	
+	\begin{equation}
+	W^\dagger W = \id
+	\end{equation}
+	
+	\begin{equation}
+	WW^\dagger = \mathbb{P}, \quad \mathbb{P}^2 = \mathbb{P}
+	\end{equation}
+	
+	\begin{equation}
+	U\in\mathbb{C}^{n\times n}
+	\end{equation}
+	
+	\begin{equation}
+	U^\dagger U=\id
+	\end{equation}
+	
+	\begin{equation}
+	UU^\dagger = \id
+	\end{equation}
+	
+	\begin{equation}
+	\braket{\Psi|\hat{O}_n|\Psi} =
+	\end{equation}
+	
+	\begin{equation}
+	\ket{\Psi(\Delta t)} = \hat{U}\left(\Delta t\right) \ket{\Psi} = e^{-i\Delta t\hat{H}} \ket{\Psi}
+	\end{equation}
+	
+	\begin{equation}
+	\hat{H} = \sum_{j \text{ even}}\hat{h}^{[j, j+1]} + \sum_{j \text{ odd}}\hat{h}^{[j, j+1]} \eqqcolon \hat{H}_\text{even} + \hat{H}_\text{odd}
+	\end{equation}
+	
+	\begin{equation}
+	\hat{U}(\Delta t) = e^{-i\Delta t\left(\hat{H}_\text{even} + \hat{H}_\text{odd}\right)} = \underbrace{e^{-i\Delta t\hat{H}_\text{even}}e^{-i\Delta t\hat{H}_\text{odd}}}_{\hat{U}^\text{TEBD1}(\Delta t)} + \mathcal{O}\left(\Delta t^2\right)
+	\end{equation}
+	
+	\begin{equation}
+		e^{-i\Delta t\hat{H}_\text{even}} = e^{-i\Delta t\sum_{j \text{ even}} \hat{h}^{[j, j+1]}} = \prod_{j \text{ even}} e^{-i\Delta t \hat{h}^{[j, j+1]}}
+	\end{equation}
+	
+	\begin{equation}
+	\Psi_{i_1,i_2,\cdots,i_N} \coloneqq \mathcal{C}\left(T^{[1],i_1}, T^{[2],i_2}, \dots, T^{[N],i_N}\right)
+	\end{equation}
+	
+	\begin{equation}
+	\Lambda^{[n]}B^{[n+1]} \approx A^{[n]}\Lambda{[n+1]}
+	\end{equation}
+	
+	\begin{equation}
+	\Lambda^{[n]} \approx A^{[n]} \Lambda
+	\end{equation}
+	
+	\begin{equation}
+	\lVert \Lambda^{[n]} - A^{[n]} \Lambda\rVert
+	\end{equation}
+	
+	\begin{equation}
+	\hat{H} = \underbrace{\sum_{x=1}^{L_x}\hat{H}_x}_{\text{columns}} + \underbrace{\sum_{y=1}^{L_y}\hat{H}_y}_{\text{rows}}
+	\end{equation}
+	
+	\begin{equation}
+	\lVert\ket{\Psi}-\ket{\Psi^\prime}\rVert = \sqrt{\braket{\Psi|\Psi}+\braket{\Psi^\prime|\Psi^\prime}-2\braket{\Psi^\prime|\Psi}}
+	\end{equation}
+	
+	\begin{equation}
+	= \sqrt{2-2\Re\braket{\Psi^\prime|\Psi}}
+	\end{equation}
+	
+	\begin{equation}
+			(T_\text{opt}^\prime, W_{1,\text{opt}}^\prime, W_{2,\text{opt}}^\prime) = \underset{T,W_1^\prime,W_2^\prime}{\argmax}\Re\braket{\Psi^\prime|\Psi}
+	\end{equation}
+	
+	\begin{equation}
+		T^{\prime\dagger}T^\prime = \id, \quad W_1^{\prime\dagger}W_1^\prime = \id, \quad \left\lVert W_2^\prime \right\rVert_\text{F} = 1
+	\end{equation}
+	
+	\begin{equation}
+		f_\text{trunc}\left(U,\theta\right) = \sqrt{\sum_{\mu = \chi+1}^{\chi D^2}S_\mu^2}
+	\end{equation}
+	
+	\begin{equation}
+		f_\text{Rényi}\left(U,\theta,\alpha\right) = \frac{1}{1-\alpha}\log\Tr\left(\rho^\alpha\right) = \frac{1}{1-\alpha}\log\left(\sum_{\mu=1}^{\chi D^2}S_\mu^{2\alpha}\right)
+	\end{equation}
+	
+	\begin{equation}
+		\rho = \Tr_{(j, r)}(\ket{\tilde{\theta}}\bra{\tilde{\theta}})
+	\end{equation}
+	
+	\begin{equation}
+		\Tr\rho^2
+	\end{equation}
+	
+	\begin{equation}
+		\mathcal{O}(N_\text{iter}D^9)
+	\end{equation}
+	
+	\begin{equation}
+		\mathcal{O}(N_\text{iter}N_\text{tCG}D^9)
+	\end{equation}
+	
+	\begin{equation}
+		\mathcal{O}(D^9) \rightarrow \mathcal{O}(D^8+N_\text{svd})
+	\end{equation}
+	
+	\begin{equation}
+		\mathcal{O}(D^9) \rightarrow \mathcal{O}(D^8)
+	\end{equation}
+	
+	\begin{equation}
+		\ket{\Psi} = \hat{U}^{[i,j]}(\Delta t) \ket{\Psi}
+	\end{equation}
+	
+	\begin{equation}
+		(T_{i,\text{opt}}^\prime, T_{j,\text{opt}}^\prime, W_{1,\text{opt}}^\prime, W_{2,\text{opt}}^\prime, W_{3,\text{opt}}^\prime)= 
+	\end{equation}
+	
+	\begin{equation}
+		\underset{T_i^\prime, T_j^\prime, W_1^\prime, W_2^\prime, W_3^\prime}{\argmax}\Re\bra{\Psi^\prime}\hat{U}^{[i,j]}(\Delta t)\ket{\Psi}
+	\end{equation}
+	
+	\begin{equation}
+		\hat{U}(\Delta t) = \hat{U}^\text{TEBD1}(\Delta t) + \mathcal{O}(\Delta t^2)
+	\end{equation}
+	
+	\begin{equation}
+		\hat{U}(\Delta t) = \hat{U}^\text{TEBD2}(\Delta t) + \mathcal{O}(\Delta t^3)
+	\end{equation}
+	
+	\begin{equation}
+		g \approx 3.04438
+	\end{equation}
+	
+	\begin{equation}
+		/,
+	\end{equation}
+	
+	\begin{equation}
+		/,
 	\end{equation}
 
 \end{document}
