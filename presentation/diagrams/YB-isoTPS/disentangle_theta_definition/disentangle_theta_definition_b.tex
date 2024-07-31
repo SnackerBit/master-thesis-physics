@@ -1,0 +1,64 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\usetikzlibrary{decorations.pathreplacing}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{0.8*\defaultDistanceSmall}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\unitaryWidth{0.9*\smallTensorWidth}
+	\def\thetaHeight{2.0*\smallTensorWidth}
+	\def\unitaryHeight{2.0*\smallTensorWidth}
+	\begin{tikzpicture}
+		
+		% ============================================================================
+		% 2nd part
+		% ============================================================================
+		\def\posX{\smallTensorWidth/2+\defaultDistanceEquations+\tensorDistance-\unitaryWidth/2}
+		
+		\node[tensorOrthoCenterSmall, ellipse, minimum width=\smallTensorWidth, minimum height=\thetaHeight, fill=white, inner sep=0] (theta) at (\posX, 0) {$\tilde{\theta}$};
+		
+		
+		\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationLarge*sin(0)/2}, yshift={\defaultLegSeperationLarge*cos(0)/2}}] (theta.center)+(-\tensorDistance+\unitaryWidth/2, 0) -- ++(-\unitaryWidth/2, 0);
+		\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationLarge*sin(0)/2}, yshift={-\defaultLegSeperationLarge*cos(0)/2}}] (theta.center)+(-\tensorDistance+\unitaryWidth/2, 0) -- ++(-\unitaryWidth/2, 0);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg] (theta)+(0, \tensorDistance) -- (theta);
+			\draw[specialLeg] (theta)+(0, -\tensorDistance) -- (theta);
+		\end{pgfonlayer}
+		
+		\node[] () at (\posX, -\tensorDistance-\defaultTextOffsetLarge) {$r$};
+		\node[] () at (\posX, \tensorDistance+\defaultTextOffsetLarge) {$l$};
+		\node[] () at (\posX-\tensorDistance/2, \defaultLegSeperationLarge/2+\defaultTextOffsetLarge) {$i$};
+		\node[] () at (\posX-\tensorDistance/2, -\defaultLegSeperationLarge/2-\defaultTextOffsetLarge) {$j$};
+		
+		
+		% ============================================================================
+		% 3rd part
+		% ============================================================================
+		
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultDistanceEquations/2, 0) {$=$};
+		\def\posX{\smallTensorWidth+2*\defaultDistanceEquations+2*\tensorDistance-\unitaryWidth};
+		
+		\node[tensorPhysicalSmall, fill=generalTensorColor] (U) at (\posX, \tensorDistance) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, \tensorDistance) {$X$};
+		\node[tensorPhysicalSmall, fill=generalTensorColor] (S) at (\posX, 0) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$S$};
+		\node[tensorPhysicalSmall, fill=generalTensorColor] (Vc) at (\posX, -\tensorDistance) {};
+		\node[] () at (\posX+\smallTensorWidth/2+\defaultTextOffsetLarge, -\tensorDistance) {$Y^*$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (U) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (U) -- (S);
+			
+			\draw[specialLeg, transform canvas={xshift={\defaultLegSeperationSmall*sin(90)/2}, yshift={-\defaultLegSeperationSmall*cos(90)/2}}] (Vc) -- (S);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(90)/2}, yshift={\defaultLegSeperationSmall*cos(90)/2}}] (Vc) -- (S);
+			
+			\draw[specialLeg] (U)+(0, \tensorDistance) -- (U);
+			\draw[specialLeg] (Vc)+(0, -\tensorDistance) -- (Vc);
+			
+			\draw[virtualLegSmall] (U)+(-\tensorDistance+\unitaryWidth/2, 0) -- (U);
+			\draw[virtualLegSmall] (Vc)+(-\tensorDistance+\unitaryWidth/2, 0) -- (Vc);
+			
+		\end{pgfonlayer}
+		
+	\end{tikzpicture}
+\end{document}
