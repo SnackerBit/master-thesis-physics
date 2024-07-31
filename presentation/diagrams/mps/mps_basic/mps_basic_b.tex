@@ -8,7 +8,7 @@
 	\def\PsiHeight{1.2*\tensorWidth}
 	\def\equationDistance{\defaultDistanceEquations}
 	\def\psiLegDistance{2.0*\tensorWidth}
-	\def\PsiWidth{5*\psiLegDistance}
+	\def\PsiWidth{4*\psiLegDistance}
 	\begin{tikzpicture}
 		
 		\node[tensorPhysicalMPS] (A1) at (0, 0) {};
@@ -36,15 +36,13 @@
 			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
 			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+3*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
 			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+7*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
-			\draw[physicalLegSmallWithoutArrows] (-\equationDistance-\PsiWidth+9*\psiLegDistance/2, 0) -- ++(0, -\physicalLegLength);
 		\end{pgfonlayer}
 		
 		\node[] () at (-\equationDistance-\PsiWidth+5*\psiLegDistance/2+1.6pt, -\physicalLegLength/2-\tensorWidth/2+1.5pt) {$\cdots$};
 		
 		\node[] at (-\equationDistance-\PsiWidth+\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_1$};
 		\node[] at (-\equationDistance-\PsiWidth+3*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_2$};
-		\node[] at (-\equationDistance-\PsiWidth+7*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_{N-1}$};
-		\node[] at (-\equationDistance-\PsiWidth+9*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_N$};
+		\node[] at (-\equationDistance-\PsiWidth+7*\psiLegDistance/2, -\physicalLegLength-\defaultTextOffsetLarge) {$i_N$};
 		
 		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[1]}$};
 		\node[] at (\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[2]}$};
