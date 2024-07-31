@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  31 JUL 2024 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  31 JUL 2024 18:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -699,15 +699,15 @@ e
 
 ] (./honeycomb.aux) ) 
 Here is how much of TeX's memory you used:
- 19066 strings out of 478287
- 389016 string characters out of 5849290
- 712823 words of memory out of 5000000
- 36913 multiletter control sequences out of 15000+600000
+ 19070 strings out of 478287
+ 389100 string characters out of 5849290
+ 712902 words of memory out of 5000000
+ 36917 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,7n,121p,473b,994s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on honeycomb.pdf (1 page, 3620 bytes).
+Output written on honeycomb.pdf (1 page, 3631 bytes).
 PDF statistics:
  11 PDF objects out of 1000 (max. 8388607)
  7 compressed objects within 1 object stream
