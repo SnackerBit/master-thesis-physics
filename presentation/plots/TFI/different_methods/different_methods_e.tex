@@ -2,7 +2,7 @@
 \input{../../style.tex}
 \begin{document}
 	\begin{tikzpicture}
-		\begin{axis}[ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={\footnotesize\textbf{CG trunc}}, xticklabels={}]
+		\begin{axis}[xlabel=$\Delta\tau$, ylabel={$\Delta E / E_\text{exact}$}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\gsEnergyVsDtauFigureHeight, width=\gsEnergyVsDtauFigureWidth, xmode=log, ymode=log, ymin=1e-6, ymax=1e-1, title={\footnotesize\textbf{CG trunc}}]
 			%	
 			\addplot[color = 3blue1, mark=*]
 			table[x=dtau, y=delta_E_D_max_2, col sep=space]{data/gs_energy_vs_dtau_square_svd_disent_trunc_error_cg.txt};

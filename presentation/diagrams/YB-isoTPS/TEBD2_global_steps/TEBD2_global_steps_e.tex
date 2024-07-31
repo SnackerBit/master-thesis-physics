@@ -1,0 +1,918 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\pgfdeclarelayer{tensors} % declare layer for physical and aux tensors
+\pgfdeclarelayer{ops} % declare layer for operators
+\pgfdeclarelayer{ops2}
+\pgfdeclarelayer{ops3}
+\pgfdeclarelayer{ops4}
+\pgfdeclarelayer{ops5}
+\pgfdeclarelayer{oplegs} % declare layer for operator legs
+\pgfdeclarelayer{oplegs2}
+\pgfdeclarelayer{oplegs3}
+\pgfdeclarelayer{oplegs4}
+\pgfdeclarelayer{oplegs5}
+\pgfdeclarelayer{oplegsbehindtensors}
+\pgfsetlayers{bg,oplegsbehindtensors,tensors,oplegs,ops,oplegs2,ops2,oplegs3,ops3,oplegs4,ops4,oplegs5,ops5,main} % set order of layers
+\begin{document}
+	\def\smallestDistance{0.8*\defaultDistanceSmall}
+	\def\diagonalDistance{1.0*\smallestDistance}
+	\def\perspectiveShift{-14pt}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openVirtualLegMultiplier{0.9}
+	\def\outerOpenVirtualLegMultiplier{0.8}
+	\def\openAuxillaryLegMultiplier{0.55}
+	\def\braketDistance{1.0*\defaultDistanceLarge}
+	\def\alpha{18.4349}
+	\def\operatorHeight{1.5*\smallTensorWidth}
+	\def\longOperatorEnlargementX{6pt}
+	\def\longOperatorEnlargementY{\longOperatorEnlargementX/3}
+	\def\shortOperatorEnlargementX{3pt}
+	\def\shortOperatorEnlargementY{3pt}
+	\def\operatorHeight{1.3*\smallTensorWidth}
+	\def\operatorDist{0.8*\smallTensorWidth}
+	\def\operatorDistBackwards{1.8*\smallTensorWidth}
+	\def\cornerRounding{1pt}
+	\def\equationDistance{40pt}
+	
+	\def\pictureScale{0.38}
+	\def\pictureScaleArrows{0.6}
+	
+	\def\dotDistance{80pt}
+	
+	% Redefine styles in new scale
+	\tikzstyle{tensorPhysicalSmall} = [circle, minimum size=\smallTensorWidth*\pictureScale, line width=\defaultLineWidth*\pictureScale, fill=physicalTensorColor, draw=borderColor, outer sep=0, inner sep=0]
+	\tikzstyle{tensorAuxillarySmall} = [circle, minimum size=\smallTensorWidth*\pictureScale, line width=\defaultLineWidth*\pictureScale, fill=auxillaryTensorColor, draw=borderColor, outer sep=0, inner sep=0]
+	\tikzstyle{tensorOrthoCenterSmall} = [circle, minimum size=\smallTensorWidth*\pictureScale, line width=\defaultLineWidth*\pictureScale, fill=orthogonalityCenterColor, draw=borderColor, outer sep=0, inner sep=0]
+	
+	\tikzstyle{auxillaryLegSmall} = [color=auxillaryLegColor, line width=\lineWidthThin*\pictureScale, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall*\pictureScaleArrows}\arrow[xshift=\defaultArrowXShift*\pictureScale]{triangle 60}}}, postaction={decorate}]
+	\tikzstyle{auxillaryLegSmallWithoutArrows} = [color=auxillaryLegColor, line width=\lineWidthThin*\pictureScale]
+	\tikzstyle{physicalLegSmall} = [color=physicalLegColor, line width=\lineWidthThin*\pictureScale, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall*\pictureScaleArrows}\arrow[xshift=\defaultArrowXShift*\pictureScale]{triangle 60}}}, postaction={decorate}]
+	\tikzstyle{virtualLegSmall} = [color=virtualLegColor, line width=\lineWidthThin*\pictureScale, decoration={markings, mark=at position 0.5 with {\pgftransformscale{\arrowScaleSmall*\pictureScaleArrows}\arrow[xshift=\defaultArrowXShift*\pictureScale]{triangle 60}}}, postaction={decorate}]
+	\tikzstyle{virtualLegSmallWithoutArrows} = [color=virtualLegColor, line width=\lineWidthThin*\pictureScale]
+	\tikzstyle{physicalLegSmallWithoutArrows} = [color=physicalLegColor, line width=\lineWidthThin*\pictureScale]
+	\begin{tikzpicture}
+		
+		\def\pictureWidth{(15*\smallestDistance+5*\perspectiveShift+\equationDistance)}
+		\def\pictureHeight{10*\diagonalDistance}
+		
+		% draw background fore scaling
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] (-\equationDistance*\pictureScale/2-\defaultTextOffsetLarge, 104pt) -- ++(412pt, 0) -- ++(0, -198pt) -- ++(-412pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
+		\node[] () at ({\pictureWidth*\pictureScale-\equationDistance*\pictureScale/2}, 2.5*\diagonalDistance*\pictureScale) {$\rightarrow$};
+		\node[] () at ({2*\pictureWidth*\pictureScale-\equationDistance*\pictureScale/2}, 2.5*\diagonalDistance*\pictureScale) {$\rightarrow$};
+		\node[] () at ({2*\pictureWidth*\pictureScale-\equationDistance*\pictureScale/2+\dotDistance*\pictureScale}, 2.5*\diagonalDistance*\pictureScale) {$\rightarrow$};
+		\node[] () at ({2*\pictureWidth*\pictureScale-\equationDistance*\pictureScale/2+\dotDistance*\pictureScale/2+1pt}, 2.5*\diagonalDistance*\pictureScale) {$\cdots$};
+		
+		% ================================================================================================================
+		% 1st diagram
+		% ================================================================================================================	
+		
+		\begin{scope}[scale=\pictureScale]
+			\begin{pgfonlayer}{tensors}
+				% physical tensors 1st column
+				\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+				\node[tensorPhysicalSmall] (T010) at (2*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T020) at (4*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T001) at (3*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T011) at (5*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T021) at (7*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 2nd column
+				\node[tensorPhysicalSmall] (T100) at (4*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T110) at (6*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T120) at (8*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T101) at (7*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T111) at (9*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T121) at (11*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 3rd column
+				\node[tensorPhysicalSmall] (T200) at (8*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T210) at (10*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T220) at (12*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T201) at (11*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T211) at (13*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T221) at (15*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% auxillary tensors
+				\node[tensorOrthoCenterSmall] (W1) at (1.5*\smallestDistance+0.5*\perspectiveShift, 0.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W2) at (2.5*\smallestDistance+1.5*\perspectiveShift, 1.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W3) at (3.5*\smallestDistance+2.5*\perspectiveShift, 2.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W4) at (4.5*\smallestDistance+3.5*\perspectiveShift, 3.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W5) at (5.5*\smallestDistance+4.5*\perspectiveShift, 4.5*\diagonalDistance) {};
+			\end{pgfonlayer}
+			
+			% operators
+			\def\posX{0}
+			\def\posY{0}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{3*\smallestDistance+\perspectiveShift}
+			\def\posY{\diagonalDistance+\operatorDist+\operatorHeight}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{2*\smallestDistance+2*\perspectiveShift}
+			\def\posY{2*\diagonalDistance+2*\operatorHeight+2*\operatorDist}
+			\begin{pgfonlayer}{ops3}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs3}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{5*\smallestDistance+3*\perspectiveShift}
+			\def\posY{3*\diagonalDistance+3*\operatorDist+3*\operatorHeight}
+			\begin{pgfonlayer}{ops4}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs4}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{4*\smallestDistance+4*\perspectiveShift}
+			\def\posY{4*\diagonalDistance+4*\operatorHeight+4*\operatorDist}
+			\begin{pgfonlayer}{ops5}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs5}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			% legs connecting to operators
+			\begin{pgfonlayer}{oplegsbehindtensors}
+				\draw[physicalLegSmallWithoutArrows] (T010) -- ++(0, \physicalLegLength+\operatorDist+\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T011) -- ++(0, \physicalLegLength+2*\operatorDist+2*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T020) -- ++(0, \physicalLegLength+3*\operatorDist+3*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T021) -- ++(0, \physicalLegLength+4*\operatorDist+4*\operatorHeight);
+			\end{pgfonlayer}
+			
+			\begin{pgfonlayer}{bg}
+				% virtual legs
+				%\draw[virtualLegSmall] (T000) -- (T001);
+				%\draw[virtualLegSmall] (T010) -- (T011);
+				%\draw[virtualLegSmall] (T020) -- (T021);
+				%\draw[virtualLegSmall] (T010) -- (T001);
+				%\draw[virtualLegSmall] (T020) -- (T011);
+				
+				\draw[virtualLegSmall] (T110) -- (T011);
+				\draw[virtualLegSmall] (T120) -- (T021);
+				\draw[virtualLegSmall] (T110) -- (T001);
+				\draw[virtualLegSmall] (T120) -- (T011);
+				\draw[virtualLegSmall] (T100) -- (T001);
+				
+				\draw[virtualLegSmall] (T101) -- (T100);
+				\draw[virtualLegSmall] (T111) -- (T110);
+				\draw[virtualLegSmall] (T121) -- (T120);
+				\draw[virtualLegSmall] (T101) -- (T110);
+				\draw[virtualLegSmall] (T111) -- (T120);
+				
+				\draw[virtualLegSmall] (T200) -- (T101);
+				\draw[virtualLegSmall] (T210) -- (T111);
+				\draw[virtualLegSmall] (T220) -- (T121);
+				\draw[virtualLegSmall] (T210) -- (T101);
+				\draw[virtualLegSmall] (T220) -- (T111);
+				
+				\draw[virtualLegSmall] (T201) -- (T200);
+				\draw[virtualLegSmall] (T211) -- (T210);
+				\draw[virtualLegSmall] (T221) -- (T220);
+				\draw[virtualLegSmall] (T201) -- (T210);
+				\draw[virtualLegSmall] (T211) -- (T220);
+				
+				\draw[auxillaryLegSmall] (W5) -- (W4);
+				\draw[auxillaryLegSmall] (W4) -- (W3);
+				\draw[auxillaryLegSmall] (W3) -- (W2);
+				\draw[auxillaryLegSmall] (W2) -- (W1);
+				
+				\draw[virtualLegSmall] (T000) -- (W1);
+				\draw[virtualLegSmall] (T001) -- (W1);
+				\draw[virtualLegSmall] (T001) -- (W2);
+				\draw[virtualLegSmall] (T010) -- (W2);
+				\draw[virtualLegSmall] (T011) -- (W3);
+				\draw[virtualLegSmall] (T010) -- (W3);
+				\draw[virtualLegSmall] (T011) -- (W4);
+				\draw[virtualLegSmall] (T020) -- (W4);
+				\draw[virtualLegSmall] (T021) -- (W5);
+				\draw[virtualLegSmall] (T020) -- (W5);
+				
+				
+				% physical legs
+				\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+				\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+				\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+				\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+				\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+				\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+				\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+				\draw[physicalLegSmall](T101)+(0, \physicalLegLength) -- (T101);
+				\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+				\draw[physicalLegSmall](T111)+(0, \physicalLegLength) -- (T111);
+				\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+				\draw[physicalLegSmall](T121)+(0, \physicalLegLength) -- (T121);
+				\draw[physicalLegSmall](T200)+(0, \physicalLegLength) -- (T200);
+				\draw[physicalLegSmall](T201)+(0, \physicalLegLength) -- (T201);
+				\draw[physicalLegSmall](T210)+(0, \physicalLegLength) -- (T210);
+				\draw[physicalLegSmall](T211)+(0, \physicalLegLength) -- (T211);
+				\draw[physicalLegSmall](T220)+(0, \physicalLegLength) -- (T220);
+				\draw[physicalLegSmall](T221)+(0, \physicalLegLength) -- (T221);
+			\end{pgfonlayer}{bg}
+		\end{scope}
+		
+		% ================================================================================================================
+		% 2nd diagram
+		% ================================================================================================================	
+		
+		\begin{scope}[scale=\pictureScale, xshift={\pictureWidth}]
+			\begin{pgfonlayer}{tensors}
+				% physical tensors 1st column
+				\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+				\node[tensorPhysicalSmall] (T010) at (2*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T020) at (4*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T001) at (3*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T011) at (5*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T021) at (7*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 2nd column
+				\node[tensorPhysicalSmall] (T100) at (4*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T110) at (6*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T120) at (8*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T101) at (7*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T111) at (9*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T121) at (11*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 3rd column
+				\node[tensorPhysicalSmall] (T200) at (8*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T210) at (10*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T220) at (12*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T201) at (11*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T211) at (13*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T221) at (15*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% auxillary tensors
+				\node[tensorOrthoCenterSmall] (W1) at (3.5*\smallestDistance+0.5*\perspectiveShift, 0.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W2) at (4.5*\smallestDistance+1.5*\perspectiveShift, 1.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W3) at (5.5*\smallestDistance+2.5*\perspectiveShift, 2.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W4) at (6.5*\smallestDistance+3.5*\perspectiveShift, 3.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W5) at (7.5*\smallestDistance+4.5*\perspectiveShift, 4.5*\diagonalDistance) {};
+			\end{pgfonlayer}
+			
+			% operators
+			\def\posX{4*\smallestDistance}
+			\def\posY{0}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color3, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{3*\smallestDistance+1*\perspectiveShift}
+			\def\posY{\diagonalDistance+\operatorHeight+\operatorDist}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color4, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{6*\smallestDistance+2*\perspectiveShift}
+			\def\posY{2*\diagonalDistance+2*\operatorHeight+2*\operatorDist}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color3, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{5*\smallestDistance+3*\perspectiveShift}
+			\def\posY{3*\diagonalDistance+3*\operatorHeight+3*\operatorDist}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color4, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{8*\smallestDistance+4*\perspectiveShift}
+			\def\posY{4*\diagonalDistance+4*\operatorHeight+4*\operatorDist}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color3, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			% legs connecting to operators
+			\begin{pgfonlayer}{oplegsbehindtensors}
+				\draw[physicalLegSmallWithoutArrows] (T110) -- ++(0, \physicalLegLength+\operatorDist+\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T011) -- ++(0, \physicalLegLength+2*\operatorDist+2*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T120) -- ++(0, \physicalLegLength+3*\operatorDist+3*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T021) -- ++(0, \physicalLegLength+4*\operatorDist+4*\operatorHeight);
+			\end{pgfonlayer}
+			
+			\begin{pgfonlayer}{bg}
+				% virtual legs
+				\draw[virtualLegSmall] (T000) -- (T001);
+				\draw[virtualLegSmall] (T010) -- (T011);
+				\draw[virtualLegSmall] (T020) -- (T021);
+				\draw[virtualLegSmall] (T010) -- (T001);
+				\draw[virtualLegSmall] (T020) -- (T011);
+				
+				%\draw[virtualLegSmall] (T110) -- (T011);
+				%\draw[virtualLegSmall] (T120) -- (T021);
+				%\draw[virtualLegSmall] (T110) -- (T001);
+				%\draw[virtualLegSmall] (T120) -- (T011);
+				%\draw[virtualLegSmall] (T100) -- (T001);
+				
+				\draw[virtualLegSmall] (T101) -- (T100);
+				\draw[virtualLegSmall] (T111) -- (T110);
+				\draw[virtualLegSmall] (T121) -- (T120);
+				\draw[virtualLegSmall] (T101) -- (T110);
+				\draw[virtualLegSmall] (T111) -- (T120);
+				
+				\draw[virtualLegSmall] (T200) -- (T101);
+				\draw[virtualLegSmall] (T210) -- (T111);
+				\draw[virtualLegSmall] (T220) -- (T121);
+				\draw[virtualLegSmall] (T210) -- (T101);
+				\draw[virtualLegSmall] (T220) -- (T111);
+				
+				\draw[virtualLegSmall] (T201) -- (T200);
+				\draw[virtualLegSmall] (T211) -- (T210);
+				\draw[virtualLegSmall] (T221) -- (T220);
+				\draw[virtualLegSmall] (T201) -- (T210);
+				\draw[virtualLegSmall] (T211) -- (T220);
+				
+				\draw[auxillaryLegSmall] (W5) -- (W4);
+				\draw[auxillaryLegSmall] (W4) -- (W3);
+				\draw[auxillaryLegSmall] (W3) -- (W2);
+				\draw[auxillaryLegSmall] (W2) -- (W1);
+				
+				\draw[virtualLegSmall] (T001) -- (W1);
+				\draw[virtualLegSmall] (T001) -- (W2);
+				\draw[virtualLegSmall] (T011) -- (W3);
+				\draw[virtualLegSmall] (T011) -- (W4);
+				\draw[virtualLegSmall] (T021) -- (W5);
+				
+				\draw[virtualLegSmall] (T100) -- (W1);
+				\draw[virtualLegSmall] (T110) -- (W2);
+				\draw[virtualLegSmall] (T110) -- (W3);
+				\draw[virtualLegSmall] (T120) -- (W4);
+				\draw[virtualLegSmall] (T120) -- (W5);
+				
+				
+				% physical legs
+				\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+				\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+				\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+				\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+				\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+				\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+				\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+				\draw[physicalLegSmall](T101)+(0, \physicalLegLength) -- (T101);
+				\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+				\draw[physicalLegSmall](T111)+(0, \physicalLegLength) -- (T111);
+				\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+				\draw[physicalLegSmall](T121)+(0, \physicalLegLength) -- (T121);
+				\draw[physicalLegSmall](T200)+(0, \physicalLegLength) -- (T200);
+				\draw[physicalLegSmall](T201)+(0, \physicalLegLength) -- (T201);
+				\draw[physicalLegSmall](T210)+(0, \physicalLegLength) -- (T210);
+				\draw[physicalLegSmall](T211)+(0, \physicalLegLength) -- (T211);
+				\draw[physicalLegSmall](T220)+(0, \physicalLegLength) -- (T220);
+				\draw[physicalLegSmall](T221)+(0, \physicalLegLength) -- (T221);
+			\end{pgfonlayer}{bg}
+		\end{scope}
+		
+		% ================================================================================================================
+		% 3rd diagram
+		% ================================================================================================================	
+		
+		\iffalse
+		\begin{scope}[scale=\pictureScale, xshift={2*\pictureWidth}]
+			\begin{pgfonlayer}{tensors}
+				% physical tensors 1st column
+				\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+				\node[tensorPhysicalSmall] (T010) at (2*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T020) at (4*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T001) at (3*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T011) at (5*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T021) at (7*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 2nd column
+				\node[tensorPhysicalSmall] (T100) at (4*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T110) at (6*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T120) at (8*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T101) at (7*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T111) at (9*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T121) at (11*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 3rd column
+				\node[tensorPhysicalSmall] (T200) at (8*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T210) at (10*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T220) at (12*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T201) at (11*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T211) at (13*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T221) at (15*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% auxillary tensors
+				\node[tensorOrthoCenterSmall] (W1) at (5.5*\smallestDistance+0.5*\perspectiveShift, 0.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W2) at (6.5*\smallestDistance+1.5*\perspectiveShift, 1.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W3) at (7.5*\smallestDistance+2.5*\perspectiveShift, 2.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W4) at (8.5*\smallestDistance+3.5*\perspectiveShift, 3.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W5) at (9.5*\smallestDistance+4.5*\perspectiveShift, 4.5*\diagonalDistance) {};
+			\end{pgfonlayer}
+			
+			% operators
+			\def\posX{4*\smallestDistance}
+			\def\posY{0}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{7*\smallestDistance+1*\perspectiveShift}
+			\def\posY{\diagonalDistance+\operatorDist+\operatorHeight}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{6*\smallestDistance+2*\perspectiveShift}
+			\def\posY{2*\diagonalDistance+2*\operatorHeight+2*\operatorDist}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{9*\smallestDistance+3*\perspectiveShift}
+			\def\posY{3*\diagonalDistance+3*\operatorDist+3*\operatorHeight}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{8*\smallestDistance+4*\perspectiveShift}
+			\def\posY{4*\diagonalDistance+4*\operatorHeight+4*\operatorDist}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			% legs connecting to operators
+			\begin{pgfonlayer}{oplegsbehindtensors}
+				\draw[physicalLegSmallWithoutArrows] (T110) -- ++(0, \physicalLegLength+\operatorDist+\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T111) -- ++(0, \physicalLegLength+2*\operatorDist+2*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T120) -- ++(0, \physicalLegLength+3*\operatorDist+3*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T121) -- ++(0, \physicalLegLength+4*\operatorDist+4*\operatorHeight);
+			\end{pgfonlayer}
+			
+			\begin{pgfonlayer}{bg}
+				% virtual legs
+				\draw[virtualLegSmall] (T000) -- (T001);
+				\draw[virtualLegSmall] (T010) -- (T011);
+				\draw[virtualLegSmall] (T020) -- (T021);
+				\draw[virtualLegSmall] (T010) -- (T001);
+				\draw[virtualLegSmall] (T020) -- (T011);
+				
+				\draw[virtualLegSmall] (T011) -- (T110);
+				\draw[virtualLegSmall] (T021) -- (T120);
+				\draw[virtualLegSmall] (T001) -- (T110);
+				\draw[virtualLegSmall] (T011) -- (T120);
+				\draw[virtualLegSmall] (T001) -- (T100);
+				
+				%\draw[virtualLegSmall] (T101) -- (T100);
+				%\draw[virtualLegSmall] (T111) -- (T110);
+				%\draw[virtualLegSmall] (T121) -- (T120);
+				%\draw[virtualLegSmall] (T101) -- (T110);
+				%\draw[virtualLegSmall] (T111) -- (T120);
+				
+				\draw[virtualLegSmall] (T200) -- (T101);
+				\draw[virtualLegSmall] (T210) -- (T111);
+				\draw[virtualLegSmall] (T220) -- (T121);
+				\draw[virtualLegSmall] (T210) -- (T101);
+				\draw[virtualLegSmall] (T220) -- (T111);
+				
+				\draw[virtualLegSmall] (T201) -- (T200);
+				\draw[virtualLegSmall] (T211) -- (T210);
+				\draw[virtualLegSmall] (T221) -- (T220);
+				\draw[virtualLegSmall] (T201) -- (T210);
+				\draw[virtualLegSmall] (T211) -- (T220);
+				
+				\draw[auxillaryLegSmall] (W5) -- (W4);
+				\draw[auxillaryLegSmall] (W4) -- (W3);
+				\draw[auxillaryLegSmall] (W3) -- (W2);
+				\draw[auxillaryLegSmall] (W2) -- (W1);
+				
+				\draw[virtualLegSmall] (T100) -- (W1);
+				\draw[virtualLegSmall] (T101) -- (W1);
+				\draw[virtualLegSmall] (T101) -- (W2);
+				\draw[virtualLegSmall] (T110) -- (W2);
+				\draw[virtualLegSmall] (T111) -- (W3);
+				\draw[virtualLegSmall] (T110) -- (W3);
+				\draw[virtualLegSmall] (T111) -- (W4);
+				\draw[virtualLegSmall] (T120) -- (W4);
+				\draw[virtualLegSmall] (T121) -- (W5);
+				\draw[virtualLegSmall] (T120) -- (W5);
+				
+				
+				% physical legs
+				\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+				\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+				\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+				\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+				\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+				\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+				\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+				\draw[physicalLegSmall](T101)+(0, \physicalLegLength) -- (T101);
+				\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+				\draw[physicalLegSmall](T111)+(0, \physicalLegLength) -- (T111);
+				\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+				\draw[physicalLegSmall](T121)+(0, \physicalLegLength) -- (T121);
+				\draw[physicalLegSmall](T200)+(0, \physicalLegLength) -- (T200);
+				\draw[physicalLegSmall](T201)+(0, \physicalLegLength) -- (T201);
+				\draw[physicalLegSmall](T210)+(0, \physicalLegLength) -- (T210);
+				\draw[physicalLegSmall](T211)+(0, \physicalLegLength) -- (T211);
+				\draw[physicalLegSmall](T220)+(0, \physicalLegLength) -- (T220);
+				\draw[physicalLegSmall](T221)+(0, \physicalLegLength) -- (T221);
+			\end{pgfonlayer}{bg}
+		\end{scope}
+		\fi
+		
+		% ================================================================================================================
+		% 4th diagram
+		% ================================================================================================================	
+		
+		\begin{scope}[scale=\pictureScale, xshift={2*\pictureWidth+\dotDistance}, yshift=0]
+			\begin{pgfonlayer}{tensors}
+				% physical tensors 1st column
+				\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+				\node[tensorPhysicalSmall] (T010) at (2*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T020) at (4*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T001) at (3*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T011) at (5*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T021) at (7*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 2nd column
+				\node[tensorPhysicalSmall] (T100) at (4*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T110) at (6*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T120) at (8*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T101) at (7*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T111) at (9*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T121) at (11*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 3rd column
+				\node[tensorPhysicalSmall] (T200) at (8*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T210) at (10*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T220) at (12*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T201) at (11*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T211) at (13*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T221) at (15*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% auxillary tensors
+				\node[tensorOrthoCenterSmall] (W1) at (9.5*\smallestDistance+0.5*\perspectiveShift, 0.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W2) at (10.5*\smallestDistance+1.5*\perspectiveShift, 1.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W3) at (11.5*\smallestDistance+2.5*\perspectiveShift, 2.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W4) at (12.5*\smallestDistance+3.5*\perspectiveShift, 3.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W5) at (13.5*\smallestDistance+4.5*\perspectiveShift, 4.5*\diagonalDistance) {};
+			\end{pgfonlayer}
+			
+			% operators
+			\def\posX{8*\smallestDistance}
+			\def\posY{0}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{11*\smallestDistance+1*\perspectiveShift}
+			\def\posY{\diagonalDistance+\operatorDist+\operatorHeight}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{10*\smallestDistance+2*\perspectiveShift}
+			\def\posY{2*\diagonalDistance+2*\operatorHeight+2*\operatorDist}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{13*\smallestDistance+3*\perspectiveShift}
+			\def\posY{3*\diagonalDistance+3*\operatorDist+3*\operatorHeight}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{12*\smallestDistance+4*\perspectiveShift}
+			\def\posY{4*\diagonalDistance+4*\operatorHeight+4*\operatorDist}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			% legs connecting to operators
+			\begin{pgfonlayer}{oplegsbehindtensors}
+				\draw[physicalLegSmallWithoutArrows] (T210) -- ++(0, \physicalLegLength+\operatorDist+\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T211) -- ++(0, \physicalLegLength+2*\operatorDist+2*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T220) -- ++(0, \physicalLegLength+3*\operatorDist+3*\operatorHeight);
+				\draw[physicalLegSmallWithoutArrows] (T221) -- ++(0, \physicalLegLength+4*\operatorDist+4*\operatorHeight);
+			\end{pgfonlayer}
+			
+			\begin{pgfonlayer}{bg}
+				% virtual legs
+				\draw[virtualLegSmall] (T000) -- (T001);
+				\draw[virtualLegSmall] (T010) -- (T011);
+				\draw[virtualLegSmall] (T020) -- (T021);
+				\draw[virtualLegSmall] (T010) -- (T001);
+				\draw[virtualLegSmall] (T020) -- (T011);
+				
+				\draw[virtualLegSmall] (T011) -- (T110);
+				\draw[virtualLegSmall] (T021) -- (T120);
+				\draw[virtualLegSmall] (T001) -- (T110);
+				\draw[virtualLegSmall] (T011) -- (T120);
+				\draw[virtualLegSmall] (T001) -- (T100);
+				
+				\draw[virtualLegSmall] (T100) -- (T101);
+				\draw[virtualLegSmall] (T110) -- (T111);
+				\draw[virtualLegSmall] (T120) -- (T121);
+				\draw[virtualLegSmall] (T110) -- (T101);
+				\draw[virtualLegSmall] (T120) -- (T111);
+				
+				\draw[virtualLegSmall] (T101) -- (T200);
+				\draw[virtualLegSmall] (T111) -- (T210);
+				\draw[virtualLegSmall] (T121) -- (T220);
+				\draw[virtualLegSmall] (T101) -- (T210);
+				\draw[virtualLegSmall] (T111) -- (T220);
+				
+				%\draw[virtualLegSmall] (T201) -- (T200);
+				%\draw[virtualLegSmall] (T211) -- (T210);
+				%\draw[virtualLegSmall] (T221) -- (T220);
+				%\draw[virtualLegSmall] (T201) -- (T210);
+				%\draw[virtualLegSmall] (T211) -- (T220);
+				
+				\draw[auxillaryLegSmall] (W5) -- (W4);
+				\draw[auxillaryLegSmall] (W4) -- (W3);
+				\draw[auxillaryLegSmall] (W3) -- (W2);
+				\draw[auxillaryLegSmall] (W2) -- (W1);
+				
+				\draw[virtualLegSmall] (T200) -- (W1);
+				\draw[virtualLegSmall] (T201) -- (W1);
+				\draw[virtualLegSmall] (T201) -- (W2);
+				\draw[virtualLegSmall] (T210) -- (W2);
+				\draw[virtualLegSmall] (T211) -- (W3);
+				\draw[virtualLegSmall] (T210) -- (W3);
+				\draw[virtualLegSmall] (T211) -- (W4);
+				\draw[virtualLegSmall] (T220) -- (W4);
+				\draw[virtualLegSmall] (T221) -- (W5);
+				\draw[virtualLegSmall] (T220) -- (W5);
+				
+				
+				% physical legs
+				\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+				\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+				\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+				\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+				\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+				\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+				\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+				\draw[physicalLegSmall](T101)+(0, \physicalLegLength) -- (T101);
+				\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+				\draw[physicalLegSmall](T111)+(0, \physicalLegLength) -- (T111);
+				\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+				\draw[physicalLegSmall](T121)+(0, \physicalLegLength) -- (T121);
+				\draw[physicalLegSmall](T200)+(0, \physicalLegLength) -- (T200);
+				\draw[physicalLegSmall](T201)+(0, \physicalLegLength) -- (T201);
+				\draw[physicalLegSmall](T210)+(0, \physicalLegLength) -- (T210);
+				\draw[physicalLegSmall](T211)+(0, \physicalLegLength) -- (T211);
+				\draw[physicalLegSmall](T220)+(0, \physicalLegLength) -- (T220);
+				\draw[physicalLegSmall](T221)+(0, \physicalLegLength) -- (T221);
+			\end{pgfonlayer}{bg}
+		\end{scope}
+		
+		% ================================================================================================================
+		% 5th diagram
+		% ================================================================================================================	
+		
+		\begin{scope}[scale=\pictureScale, xshift=0, yshift=-\pictureHeight]
+			\begin{pgfonlayer}{tensors}
+				% physical tensors 1st column
+				\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+				\node[tensorPhysicalSmall] (T010) at (2*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T020) at (4*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T001) at (3*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T011) at (5*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T021) at (7*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 2nd column
+				\node[tensorPhysicalSmall] (T100) at (4*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T110) at (6*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T120) at (8*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T101) at (7*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T111) at (9*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T121) at (11*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% physical tensors 3rd column
+				\node[tensorPhysicalSmall] (T200) at (8*\smallestDistance, 0) {};
+				\node[tensorPhysicalSmall] (T210) at (10*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T220) at (12*\smallestDistance+4*\perspectiveShift, 4*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T201) at (11*\smallestDistance+\perspectiveShift, \diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T211) at (13*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance) {};
+				\node[tensorPhysicalSmall] (T221) at (15*\smallestDistance+5*\perspectiveShift, 5*\diagonalDistance) {};
+				
+				% auxillary tensors
+				\node[tensorOrthoCenterSmall] (W1) at (9.5*\smallestDistance+0.5*\perspectiveShift, 0.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W2) at (10.5*\smallestDistance+1.5*\perspectiveShift, 1.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W3) at (11.5*\smallestDistance+2.5*\perspectiveShift, 2.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W4) at (12.5*\smallestDistance+3.5*\perspectiveShift, 3.5*\diagonalDistance) {};
+				\node[tensorAuxillarySmall] (W5) at (13.5*\smallestDistance+4.5*\perspectiveShift, 4.5*\diagonalDistance) {};
+			\end{pgfonlayer}
+			
+			% operators
+			
+			\def\posX{12*\smallestDistance+4*\perspectiveShift}
+			\def\posY{4*\diagonalDistance}
+			\begin{pgfonlayer}{ops}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDistBackwards) -- ++(0, -\operatorDistBackwards);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{13*\smallestDistance+3*\perspectiveShift}
+			\def\posY{3*\diagonalDistance+\operatorDistBackwards+\operatorHeight}
+			\begin{pgfonlayer}{ops2}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDistBackwards) -- ++(0, -\operatorDistBackwards);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{10*\smallestDistance+2*\perspectiveShift}
+			\def\posY{2*\diagonalDistance+2*\operatorHeight+2*\operatorDistBackwards}
+			\begin{pgfonlayer}{ops3}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs3}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDistBackwards) -- ++(0, -\operatorDistBackwards);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{11*\smallestDistance+1*\perspectiveShift}
+			\def\posY{\diagonalDistance+3*\operatorDistBackwards+3*\operatorHeight}
+			\begin{pgfonlayer}{ops4}
+				\draw[virtualLegSmallWithoutArrows, fill=color2, rounded corners=\cornerRounding] (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY}) -- (\posX-\shortOperatorEnlargementX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\shortOperatorEnlargementY+\diagonalDistance}) -- ++(0, \operatorHeight) -- (\posX+\shortOperatorEnlargementX, {\posY+\physicalLegLength-\shortOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs4}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDistBackwards) -- ++(0, -\operatorDistBackwards);
+				\draw[physicalLegSmall] (\posX-\smallestDistance+\perspectiveShift, {\posY+\physicalLegLength+\diagonalDistance+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			\def\posX{8*\smallestDistance}
+			\def\posY{4*\operatorDistBackwards+4*\operatorHeight}
+			\begin{pgfonlayer}{ops5}
+				\draw[virtualLegSmallWithoutArrows, fill=color1, rounded corners=\cornerRounding] (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY}) -- (\posX+3*\smallestDistance+\longOperatorEnlargementX+\perspectiveShift, \posY+\diagonalDistance+\physicalLegLength+\longOperatorEnlargementY) -- ++(0, \operatorHeight) -- (\posX-\longOperatorEnlargementX, {\posY+\physicalLegLength-\longOperatorEnlargementY+\operatorHeight}) -- cycle;
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs5}
+				\draw[physicalLegSmall] (\posX, \posY+\physicalLegLength+\operatorHeight+\operatorDist) -- ++(0, -\operatorDist);
+				\draw[physicalLegSmall] (\posX+3*\smallestDistance+\perspectiveShift, {\posY+\diagonalDistance+\physicalLegLength+\operatorHeight+\operatorDist}) -- ++(0, -\operatorDist);
+			\end{pgfonlayer}
+			
+			% legs connecting to operators
+			\begin{pgfonlayer}{oplegs5}
+				\draw[physicalLegSmallWithoutArrows] (8*\smallestDistance, \physicalLegLength) -- ++(0, \physicalLegLength+4*\operatorDistBackwards+4*\operatorHeight-\physicalLegLength); % starting at T200
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs4}
+				\draw[physicalLegSmallWithoutArrows] (11*\smallestDistance+\perspectiveShift, \diagonalDistance+\physicalLegLength) -- ++(0, \physicalLegLength+3*\operatorDistBackwards+3*\operatorHeight-\physicalLegLength); % starting at T201
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs3}
+				\draw[physicalLegSmallWithoutArrows] (10*\smallestDistance+2*\perspectiveShift, 2*\diagonalDistance+\physicalLegLength) -- ++(0, \physicalLegLength+2*\operatorDistBackwards+2*\operatorHeight-\physicalLegLength); % starting at T210
+			\end{pgfonlayer}
+			\begin{pgfonlayer}{oplegs2}
+				\draw[physicalLegSmallWithoutArrows] (13*\smallestDistance+3*\perspectiveShift, 3*\diagonalDistance+\physicalLegLength) -- ++(0, \physicalLegLength+1*\operatorDistBackwards+1*\operatorHeight-\physicalLegLength); % starting at T211
+			\end{pgfonlayer}
+			
+			\begin{pgfonlayer}{bg}
+				% virtual legs
+				\draw[virtualLegSmall] (T000) -- (T001);
+				\draw[virtualLegSmall] (T010) -- (T011);
+				\draw[virtualLegSmall] (T020) -- (T021);
+				\draw[virtualLegSmall] (T010) -- (T001);
+				\draw[virtualLegSmall] (T020) -- (T011);
+				
+				\draw[virtualLegSmall] (T011) -- (T110);
+				\draw[virtualLegSmall] (T021) -- (T120);
+				\draw[virtualLegSmall] (T001) -- (T110);
+				\draw[virtualLegSmall] (T011) -- (T120);
+				\draw[virtualLegSmall] (T001) -- (T100);
+				
+				\draw[virtualLegSmall] (T100) -- (T101);
+				\draw[virtualLegSmall] (T110) -- (T111);
+				\draw[virtualLegSmall] (T120) -- (T121);
+				\draw[virtualLegSmall] (T110) -- (T101);
+				\draw[virtualLegSmall] (T120) -- (T111);
+				
+				\draw[virtualLegSmall] (T101) -- (T200);
+				\draw[virtualLegSmall] (T111) -- (T210);
+				\draw[virtualLegSmall] (T121) -- (T220);
+				\draw[virtualLegSmall] (T101) -- (T210);
+				\draw[virtualLegSmall] (T111) -- (T220);
+				
+				%\draw[virtualLegSmall] (T201) -- (T200);
+				%\draw[virtualLegSmall] (T211) -- (T210);
+				%\draw[virtualLegSmall] (T221) -- (T220);
+				%\draw[virtualLegSmall] (T201) -- (T210);
+				%\draw[virtualLegSmall] (T211) -- (T220);
+				
+				\draw[auxillaryLegSmall] (W1) -- (W2);
+				\draw[auxillaryLegSmall] (W2) -- (W3);
+				\draw[auxillaryLegSmall] (W3) -- (W4);
+				\draw[auxillaryLegSmall] (W4) -- (W5);
+				
+				\draw[virtualLegSmall] (T200) -- (W1);
+				\draw[virtualLegSmall] (T201) -- (W1);
+				\draw[virtualLegSmall] (T201) -- (W2);
+				\draw[virtualLegSmall] (T210) -- (W2);
+				\draw[virtualLegSmall] (T211) -- (W3);
+				\draw[virtualLegSmall] (T210) -- (W3);
+				\draw[virtualLegSmall] (T211) -- (W4);
+				\draw[virtualLegSmall] (T220) -- (W4);
+				\draw[virtualLegSmall] (T221) -- (W5);
+				\draw[virtualLegSmall] (T220) -- (W5);
+				
+				
+				% physical legs
+				\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+				\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+				\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+				\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+				\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+				\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+				\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+				\draw[physicalLegSmall](T101)+(0, \physicalLegLength) -- (T101);
+				\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+				\draw[physicalLegSmall](T111)+(0, \physicalLegLength) -- (T111);
+				\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+				\draw[physicalLegSmall](T121)+(0, \physicalLegLength) -- (T121);
+				\draw[physicalLegSmall](T200)+(0, \physicalLegLength) -- (T200);
+				\draw[physicalLegSmall](T201)+(0, \physicalLegLength) -- (T201);
+				\draw[physicalLegSmall](T210)+(0, \physicalLegLength) -- (T210);
+				\draw[physicalLegSmall](T211)+(0, \physicalLegLength) -- (T211);
+				\draw[physicalLegSmall](T220)+(0, \physicalLegLength) -- (T220);
+				\draw[physicalLegSmall](T221)+(0, \physicalLegLength) -- (T221);
+			\end{pgfonlayer}{bg}
+		\end{scope}
+	\end{tikzpicture}
+\end{document}

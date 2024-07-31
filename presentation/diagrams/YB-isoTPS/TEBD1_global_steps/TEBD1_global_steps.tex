@@ -45,6 +45,11 @@
 	\tikzstyle{physicalLegSmallWithoutArrows} = [color=physicalLegColor, line width=\lineWidthThin*\pictureScale]
 	\begin{tikzpicture}
 		
+		% draw background fore scaling
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] (-\equationDistance*\pictureScale/2-\defaultTextOffsetLarge, 104pt) -- ++(412pt, 0) -- ++(0, -198pt) -- ++(-412pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
 		\def\pictureWidth{(15*\smallestDistance+5*\perspectiveShift+\equationDistance)}
 		\def\pictureHeight{10*\diagonalDistance}
 		\node[] () at ({\pictureWidth*\pictureScale-\equationDistance*\pictureScale/2}, 2.5*\diagonalDistance*\pictureScale) {$\rightarrow$};
