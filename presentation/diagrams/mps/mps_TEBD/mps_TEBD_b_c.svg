@@ -80,9 +80,9 @@
 </clipPath>
 </defs>
 <g id="surface1">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,100%,0%);fill-opacity:1;" d="M 0.199219 84.953125 L 350.886719 84.953125 L 350.886719 0.269531 L 0.199219 0.269531 Z M 0.199219 84.953125 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 0.199219 84.953125 L 350.886719 84.953125 L 350.886719 0.269531 L 0.199219 0.269531 Z M 0.199219 84.953125 "/>
 <g clip-path="url(#clip1)" clip-rule="nonzero">
-<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,100%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M -30.883781 -61.768125 L 319.803719 -61.768125 L 319.803719 22.915469 L -30.883781 22.915469 Z M -30.883781 -61.768125 " transform="matrix(1,0,0,-1,31.083,23.185)"/>
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M -30.883781 -61.768125 L 319.803719 -61.768125 L 319.803719 22.915469 L -30.883781 22.915469 Z M -30.883781 -61.768125 " transform="matrix(1,0,0,-1,31.083,23.185)"/>
 </g>
 <path style="fill:none;stroke-width:1.79329;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(50%,50%,50%);stroke-opacity:1;stroke-miterlimit:10;" d="M -0.00096875 -26.998594 L -0.00096875 -6.475156 " transform="matrix(1,0,0,-1,31.083,23.185)"/>
 <path style="fill-rule:nonzero;fill:rgb(50%,50%,50%);fill-opacity:1;stroke-width:1.79329;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(50%,50%,50%);stroke-opacity:1;stroke-miterlimit:10;" d="M -6.901135 4.259427 L 0.475167 0.00161458 L -6.901135 -4.256198 Z M -6.901135 4.259427 " transform="matrix(0,-0.6,-0.6,0,31.083,37.0976)"/>

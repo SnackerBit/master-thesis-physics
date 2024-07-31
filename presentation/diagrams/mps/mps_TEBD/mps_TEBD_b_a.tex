@@ -1,0 +1,40 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+
+\def\blobhalfwidth{(\tensorDistanceMPS+\tensorWidthMPS)/2}
+\def\blobhalfheight{(\tensorWidthMPS)/2}
+\def\equationDistance{\defaultDistanceEquations*0.8}
+
+\def\opOffset{0.7*\braketDistanceMPS}
+\def\operatorHeight{\tensorWidthMPS}
+
+\begin{document}
+	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[white, fill=white] (-31pt, -62pt) -- ++(352pt, 0) -- ++(0, 85pt) -- ++(-352pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistanceMPS, 0) {};
+		
+		\draw[virtualLegSmall] (A2) -- (A1);
+		\draw[virtualLegSmall] (A2)+(\tensorDistanceMPS-\tensorWidthMPS/2, 0) -- (A2);
+		\draw[virtualLegSmall] (A1)+(-\tensorDistanceMPS+\tensorWidthMPS/2, 0) -- (A1);
+		
+		\node[tensorOperatorSmall, minimum width=\tensorDistanceMPS+\tensorWidthMPS, minimum height=\tensorWidthMPS] (op1) at (\tensorDistanceMPS/2, -\opOffset) {$\hat{U}^{[n,n+1]}$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A1)+(0, -\opOffset+\tensorWidthMPS/2) -- (A1);
+			\draw[physicalLegSmall] (A2)+(0, -\opOffset+\tensorWidthMPS/2) -- (A2);
+			
+			\draw[physicalLegSmall] (0, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+			\draw[physicalLegSmall] (1*\tensorDistanceMPS, -2*\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
+		\end{pgfonlayer}
+		
+		\node[] at (0, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[n]}$};
+		\node[] at (\tensorDistanceMPS, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$B^{[n+1]}$};
+		
+		\node[] () at (2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance/2, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$=$};
+	\end{tikzpicture}
+\end{document}
