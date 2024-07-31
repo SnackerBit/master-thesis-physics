@@ -2,15 +2,15 @@
 \input{../../style.tex}
 \begin{document}
 	\begin{tikzpicture}
-		\begin{axis}[xlabel={walltime [s]}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=0.9*\singleFigureHeight, width=1.3*\singleFigureWidth, xmode=log, ymin=1.02e-6, ymax=1.93e-6, ylabel={$f_\text{trunc}(U,\theta)$}, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend cell align={left}]
+		\begin{axis}[xlabel={walltime [s]}, grid=both, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, xmode=log, ymin=1.02e-6, ymax=1.93e-6, ylabel={$f_\text{trunc}(U,\theta)$}, legend style={nodes={scale=\legendscale, transform shape, font=\small}}, legend cell align={left}]
 			%
-			\addplot[color = singleOrange]
-			table[x=walltime_cg, y=f_trunc_cg, col sep=space]{data/renyi_truncation_error_disentangling.txt};
-			\addlegendentry{CG}
+			%\addplot[color = singleOrange]
+			%table[x=walltime_cg, y=f_trunc_cg, col sep=space]{data/renyi_truncation_error_disentangling.txt};
+			%\addlegendentry{CG}
 			%
-			\addplot[color = singleOrange, dashed]
-			table[x=walltime_approx_cg, y=f_trunc_approx_cg, col sep=space]{data/renyi_truncation_error_disentangling.txt};
-			\addlegendentry{approx CG}
+			%\addplot[color = singleOrange, dashed]
+			%table[x=walltime_approx_cg, y=f_trunc_approx_cg, col sep=space]{data/renyi_truncation_error_disentangling.txt};
+			%\addlegendentry{approx CG}
 			%
 			\addplot[color = singleGreen]
 			table[x=walltime_trm, y=f_trunc_trm, col sep=space]{data/renyi_truncation_error_disentangling.txt};
