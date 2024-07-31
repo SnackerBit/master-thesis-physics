@@ -1,0 +1,86 @@
+\documentclass[crop, tikz]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{1.5*\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\begin{tikzpicture}
+		% Physical tensors
+		\node[tensorPhysicalSmall] (T000) at (0, 0) {};
+		\node[tensorPhysicalSmall] (T001) at ({cos(60)*\tensorDistance}, {sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T010) at (0, {2*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T011) at ({cos(60)*\tensorDistance}, {3*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T020) at (0, {4*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T021) at ({cos(60)*\tensorDistance}, {5*sin(60)*\tensorDistance}) {};
+		
+		\node[tensorPhysicalSmall] (T100) at ({(1+cos(60))*\tensorDistance}, {sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T101) at ({(1+2*cos(60))*\tensorDistance}, {2*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T110) at ({(1+cos(60))*\tensorDistance}, {3*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T111) at ({(1+2*cos(60))*\tensorDistance}, {4*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T120) at ({(1+cos(60))*\tensorDistance}, {5*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T121) at ({(1+2*cos(60))*\tensorDistance}, {6*sin(60)*\tensorDistance}) {};
+		
+		\node[tensorPhysicalSmall] (T200) at ({(2+2*cos(60))*\tensorDistance}, {2*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T201) at ({(2+3*cos(60))*\tensorDistance}, {3*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T210) at ({(2+2*cos(60))*\tensorDistance}, {4*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T211) at ({(2+3*cos(60))*\tensorDistance}, {5*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T220) at ({(2+2*cos(60))*\tensorDistance}, {6*sin(60)*\tensorDistance}) {};
+		\node[tensorPhysicalSmall] (T221) at ({(2+3*cos(60))*\tensorDistance}, {7*sin(60)*\tensorDistance}) {};
+		
+		\node[tensorAuxillarySmall] (W1) at ({(1.5+2*cos(60))*\tensorDistance}, {2*sin(60)*\tensorDistance}) {};
+		\node[tensorOrthoCenterSmall] (W2) at ({(1.5+2*cos(60))*\tensorDistance}, {4*sin(60)*\tensorDistance}) {};
+		\node[tensorAuxillarySmall] (W3) at ({(1.5+2*cos(60))*\tensorDistance}, {6*sin(60)*\tensorDistance}) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall] (T000) -- (T001);
+			\draw[virtualLegSmall] (T010) -- (T011);
+			\draw[virtualLegSmall] (T020) -- (T021);
+			\draw[virtualLegSmall] (T010) -- (T001);
+			\draw[virtualLegSmall] (T020) -- (T011);
+			
+			\draw[virtualLegSmall] (T100) -- (T101);
+			\draw[virtualLegSmall] (T110) -- (T111);
+			\draw[virtualLegSmall] (T120) -- (T121);
+			\draw[virtualLegSmall] (T110) -- (T101);
+			\draw[virtualLegSmall] (T120) -- (T111);
+			
+			\draw[virtualLegSmall] (T201) -- (T200);
+			\draw[virtualLegSmall] (T211) -- (T210);
+			\draw[virtualLegSmall] (T221) -- (T220);
+			\draw[virtualLegSmall] (T211) -- (T220);
+			\draw[virtualLegSmall] (T201) -- (T210);
+			
+			\draw[virtualLegSmall] (T001) -- (T100);
+			\draw[virtualLegSmall] (T011) -- (T110);
+			\draw[virtualLegSmall] (T021) -- (T120);
+			
+			\draw[virtualLegSmall] (T101) -- (W1);
+			\draw[virtualLegSmall] (T111) -- (W2);
+			\draw[virtualLegSmall] (T121) -- (W3);
+			\draw[virtualLegSmall] (T200) -- (W1);
+			\draw[virtualLegSmall] (T210) -- (W2);
+			\draw[virtualLegSmall] (T220) -- (W3);
+			
+			\draw[auxillaryLegSmall] (W1) -- (W2);
+			\draw[auxillaryLegSmall] (W3) -- (W2);
+			
+			\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+			\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+			\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+			\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+			\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+			\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+			\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+			\draw[physicalLegSmall](T101)+(0, \physicalLegLength) -- (T101);
+			\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+			\draw[physicalLegSmall](T111)+(0, \physicalLegLength) -- (T111);
+			\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+			\draw[physicalLegSmall](T121)+(0, \physicalLegLength) -- (T121);
+			\draw[physicalLegSmall](T200)+(0, \physicalLegLength) -- (T200);
+			\draw[physicalLegSmall](T201)+(0, \physicalLegLength) -- (T201);
+			\draw[physicalLegSmall](T210)+(0, \physicalLegLength) -- (T210);
+			\draw[physicalLegSmall](T211)+(0, \physicalLegLength) -- (T211);
+			\draw[physicalLegSmall](T220)+(0, \physicalLegLength) -- (T220);
+			\draw[physicalLegSmall](T221)+(0, \physicalLegLength) -- (T221);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}

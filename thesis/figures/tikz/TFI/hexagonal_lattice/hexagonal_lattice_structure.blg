@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'hexagonal_lattice_structure.blg'
-[57] biber:340> INFO - === Di Jul 30, 2024, 08:19:55
-[125] Utils.pm:398> ERROR - Cannot find 'hexagonal_lattice_structure.bcf'!
-[125] Biber.pm:135> INFO - ERRORS: 1
+[57] biber:340> INFO - === Mi Jul 31, 2024, 18:56:35
+[123] Utils.pm:398> ERROR - Cannot find 'hexagonal_lattice_structure.bcf'!
+[123] Biber.pm:135> INFO - ERRORS: 1

@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (prel
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**hexagonal_lattice_structure.tex
-(./hexagonal_lattice_structure.tex
+**honeycomb.tex
+(./honeycomb.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -659,8 +659,8 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count333
 \l__pdf_internal_box=\box69
 )
-(./hexagonal_lattice_structure.aux)
-\openout1 = `hexagonal_lattice_structure.aux'.
+(./honeycomb.aux)
+\openout1 = `honeycomb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -701,17 +701,17 @@ e
 ))
 [1
 
-] (./hexagonal_lattice_structure.aux) ) 
+] (./honeycomb.aux) ) 
 Here is how much of TeX's memory you used:
  19059 strings out of 478287
- 389110 string characters out of 5849290
- 712389 words of memory out of 5000000
+ 388912 string characters out of 5849290
+ 712353 words of memory out of 5000000
  36907 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,7n,118p,435b,994s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,7n,118p,417b,994s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hexagonal_lattice_structure.pdf (1 page, 3620 bytes).
+Output written on honeycomb.pdf (1 page, 3620 bytes).
 PDF statistics:
  11 PDF objects out of 1000 (max. 8388607)
  7 compressed objects within 1 object stream
