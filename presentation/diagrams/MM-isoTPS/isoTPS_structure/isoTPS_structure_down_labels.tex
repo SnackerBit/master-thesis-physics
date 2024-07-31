@@ -1,0 +1,129 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmall}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\begin{tikzpicture}
+		\node[tensorPhysicalSmall] (T11) at (0, 0) {};
+		\node[tensorPhysicalSmall] (T12) at (0, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T13) at (0, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T14) at (0, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T15) at (0, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T21) at (\tensorDistance, 0) {};
+		\node[tensorPhysicalSmall] (T22) at (\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T23) at (\tensorDistance, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T24) at (\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T25) at (\tensorDistance, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T31) at (2*\tensorDistance, 0) {};
+		\node[tensorOrthoCenterSmall] (T32) at (2*\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T33) at (2*\tensorDistance, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T34) at (2*\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T35) at (2*\tensorDistance, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T41) at (3*\tensorDistance, 0) {};
+		\node[tensorPhysicalSmall] (T42) at (3*\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T43) at (3*\tensorDistance, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T44) at (3*\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T45) at (3*\tensorDistance, 4*\tensorDistance) {};
+		
+		\node[tensorPhysicalSmall] (T51) at (4*\tensorDistance, 0) {};
+		\node[tensorPhysicalSmall] (T52) at (4*\tensorDistance, \tensorDistance) {};
+		\node[tensorPhysicalSmall] (T53) at (4*\tensorDistance, 2*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T54) at (4*\tensorDistance, 3*\tensorDistance) {};
+		\node[tensorPhysicalSmall] (T55) at (4*\tensorDistance, 4*\tensorDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			% Draw virtual and auxillary legs
+			\draw[virtualLegSmall] (T11) -- (T12);
+			\draw[virtualLegSmall] (T13) -- (T12);
+			\draw[virtualLegSmall] (T14) -- (T13);
+			\draw[virtualLegSmall] (T15) -- (T14);
+			
+			\draw[virtualLegSmall] (T21) -- (T22);
+			\draw[virtualLegSmall] (T23) -- (T22);
+			\draw[virtualLegSmall] (T24) -- (T23);
+			\draw[virtualLegSmall] (T25) -- (T24);
+			
+			\draw[auxillaryLegSmall] (T31) -- (T32);
+			\draw[auxillaryLegSmall] (T33) -- (T32);
+			\draw[auxillaryLegSmall] (T34) -- (T33);
+			\draw[auxillaryLegSmall] (T35) -- (T34);
+			
+			\draw[virtualLegSmall] (T41) -- (T42);
+			\draw[virtualLegSmall] (T43) -- (T42);
+			\draw[virtualLegSmall] (T44) -- (T43);
+			\draw[virtualLegSmall] (T45) -- (T44);
+			
+			\draw[virtualLegSmall] (T51) -- (T52);
+			\draw[virtualLegSmall] (T53) -- (T52);
+			\draw[virtualLegSmall] (T54) -- (T53);
+			\draw[virtualLegSmall] (T55) -- (T54);
+			
+			\draw[virtualLegSmall] (T11) -- (T21);
+			\draw[virtualLegSmall] (T21) -- (T31);
+			\draw[virtualLegSmall] (T41) -- (T31);
+			\draw[virtualLegSmall] (T51) -- (T41);
+			
+			\draw[auxillaryLegSmall] (T12) -- (T22);
+			\draw[auxillaryLegSmall] (T22) -- (T32);
+			\draw[auxillaryLegSmall] (T42) -- (T32);
+			\draw[auxillaryLegSmall] (T52) -- (T42);
+			
+			\draw[virtualLegSmall] (T13) -- (T23);
+			\draw[virtualLegSmall] (T23) -- (T33);
+			\draw[virtualLegSmall] (T43) -- (T33);
+			\draw[virtualLegSmall] (T53) -- (T43);
+			
+			\draw[virtualLegSmall] (T14) -- (T24);
+			\draw[virtualLegSmall] (T24) -- (T34);
+			\draw[virtualLegSmall] (T44) -- (T34);
+			\draw[virtualLegSmall] (T54) -- (T44);
+			
+			\draw[virtualLegSmall] (T15) -- (T25);
+			\draw[virtualLegSmall] (T25) -- (T35);
+			\draw[virtualLegSmall] (T45) -- (T35);
+			\draw[virtualLegSmall] (T55) -- (T45);
+			
+			% Draw physical legs
+			\draw[physicalLegSmall](T11)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T11);
+			\draw[physicalLegSmall] (T12)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T12);
+			\draw[physicalLegSmall] (T13)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T13);
+			\draw[physicalLegSmall] (T14)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T14);
+			\draw[physicalLegSmall] (T15)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T15);  
+			
+			\draw[physicalLegSmall] (T21)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T21);
+			\draw[physicalLegSmall] (T22)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T22);
+			\draw[physicalLegSmall] (T23)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T23);
+			\draw[physicalLegSmall] (T24)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T24);
+			\draw[physicalLegSmall] (T25)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T25);  
+			
+			\draw[physicalLegSmall] (T31)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T31);
+			\draw[physicalLegSmall] (T32)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T32);
+			\draw[physicalLegSmall] (T33)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T33);
+			\draw[physicalLegSmall] (T34)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T34);
+			\draw[physicalLegSmall] (T35)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T35); 
+			
+			\draw[physicalLegSmall] (T41)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T41);
+			\draw[physicalLegSmall] (T42)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T42);
+			\draw[physicalLegSmall] (T43)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T43);
+			\draw[physicalLegSmall] (T44)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T44);
+			\draw[physicalLegSmall] (T45)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T45); 
+			
+			\draw[physicalLegSmall] (T51)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T51);
+			\draw[physicalLegSmall] (T52)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T52);
+			\draw[physicalLegSmall] (T53)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T53);
+			\draw[physicalLegSmall] (T54)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T54);
+			\draw[physicalLegSmall] (T55)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (T55);
+		\end{pgfonlayer}
+		
+		% Draw text
+		\pgfmathsetmacro{\mylen}{5}
+		\node[below=\mylen pt of T11] {$A^{[1]}$};
+		\node[below=\mylen pt of T21] {$A^{[2]}$};
+		\node[below=\mylen pt of T31] {$\Lambda^{[3]}$};
+		\node[below=\mylen pt of T41] {$B^{[4]}$};
+		\node[below=\mylen pt of T51] {$B^{[5]}$};
+	\end{tikzpicture}
+\end{document}
