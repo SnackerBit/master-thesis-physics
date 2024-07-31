@@ -11,6 +11,10 @@
 	\def\PsiWidth{4*\psiLegDistance}
 	\begin{tikzpicture}
 		
+		\begin{pgfonlayer}{bg}
+			\draw[color=white,fill=white] (-\equationDistance-\PsiWidth, -\physicalLegLength-17pt) -- ++(308pt, 0) -- ++(0, 60pt) -- ++(-308pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
 		\node[tensorOperatorSmall, fill=generalTensorColor, minimum height=\PsiHeight, minimum width=\PsiWidth] (psi) at (-\equationDistance-\PsiWidth/2, 0) {$\Psi$};
 		
 		\begin{pgfonlayer}{bg}
