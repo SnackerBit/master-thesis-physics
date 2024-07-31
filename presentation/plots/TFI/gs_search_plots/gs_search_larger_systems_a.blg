@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'gs_search_larger_systems_a.blg'
+[59] biber:340> INFO - === Mi Jul 31, 2024, 18:44:50
+[124] Utils.pm:398> ERROR - Cannot find 'gs_search_larger_systems_a.bcf'!
+[124] Biber.pm:135> INFO - ERRORS: 1
