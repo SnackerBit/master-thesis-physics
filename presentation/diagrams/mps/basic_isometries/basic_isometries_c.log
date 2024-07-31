@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  30 JUL 2024 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  31 JUL 2024 14:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -713,13 +713,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -729,18 +729,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./basic_isometries_c.aux)
  ) 
 Here is how much of TeX's memory you used:
- 19468 strings out of 478287
- 397266 string characters out of 5849290
- 698967 words of memory out of 5000000
- 37294 multiletter control sequences out of 15000+600000
+ 19463 strings out of 478287
+ 397099 string characters out of 5849290
+ 692967 words of memory out of 5000000
+ 37289 multiletter control sequences out of 15000+600000
  470958 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,7n,121p,482b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 119i,7n,121p,482b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on basic_isometries_c.pdf (1 page, 29792 bytes).
+Output written on basic_isometries_c.pdf (1 page, 29388 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

@@ -12,6 +12,11 @@
 	\def\yratio{sqrt(3)/4}
 	\def\equationDistance{0.8*\defaultDistanceEquations}
 	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] ({-\openLegLength}, -34pt) -- ++(382.5pt, 0) -- ++(0, 71.5pt) -- ++(-382.5pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
 		\node[tensorOrthoCenterSmall] (W) at (0, 0) {};
 		\node[] () at ({cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$W$};
 		

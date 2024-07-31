@@ -12,6 +12,10 @@
 	\def\thetaHeight{2.0*\smallTensorWidth}
 	\def\unitaryHeight{2.0*\smallTensorWidth}
 	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[white, fill=white] (-57pt, -33pt) -- ++(435pt, 0) -- ++(0, 66pt) -- ++(-435pt, 0) -- cycle;
+		\end{pgfonlayer}
 		% ============================================================================
 		% First part
 		% ============================================================================
@@ -69,6 +73,34 @@
 			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(0)/2}, yshift={\defaultLegSeperationSmall*cos(0)/2}}] (U.center) -- (theta.center);
 			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(0)/2}, yshift={-\defaultLegSeperationSmall*cos(0)/2}}] (U.center) -- (theta.center);
 		\end{pgfonlayer}
+	
+		% ============================================================================
+		% Third part
+		% ============================================================================
 		
+		\node[] () at ({2*\splitDistance+3*\openVirtualLegDistance+3*\tensorDistance/2+3*\equationDistance/2}, 0) {$\approx$};
+		\def\xOffset{2*\splitDistance+4*\openVirtualLegDistance+4*\tensorDistance/2+4*\equationDistance/2}
+		
+		\node[tensorPhysicalSmall] (T) at ({\xOffset}, 0) {};
+		\node[] () at ({-\smallTensorWidth/2-\defaultTextOffsetLarge+\xOffset}, 0) {$T^\prime$};
+		\node[tensorAuxillarySmall] (W1) at ({0.5*\tensorDistance+\xOffset}, -0.5*\tensorDistance) {};
+		\node[] () at ({0.5*\tensorDistance+\smallTensorWidth/2+\defaultTextOffsetLarge+\xOffset}, -0.5*\tensorDistance) {$W_1^\prime$};
+		\node[tensorOrthoCenterSmall] (W2) at ({0.5*\tensorDistance+\xOffset}, 0.5*\tensorDistance) {};
+		\node[] () at ({0.5*\tensorDistance+\smallTensorWidth/2+\defaultTextOffsetLarge+\xOffset}, 0.5*\tensorDistance) {$W_2^\prime$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall] (T) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W2);
+			\draw[auxillaryLegSmall] (W1) -- (W2);
+			
+			\draw[virtualLegSmall] (T)+({-\openVirtualLegDistance-\tensorDistance/2}, {\openVirtualLegDistance+\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (T)+({-\openVirtualLegDistance-\tensorDistance/2}, {-\openVirtualLegDistance-\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (W1)+({\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (W1);
+			\draw[virtualLegSmall] (W2)+({\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (W2);
+			\draw[auxillaryLegSmall] (W1)+(0, {-\openAuxillaryLegDistance}) -- (W1);
+			\draw[auxillaryLegSmall] (W2)+(0, {\openAuxillaryLegDistance}) -- (W2);
+			
+			\draw[physicalLegSmall](T)+(0, \physicalLegLength) -- (T);
+		\end{pgfonlayer}
 	\end{tikzpicture}
 \end{document}

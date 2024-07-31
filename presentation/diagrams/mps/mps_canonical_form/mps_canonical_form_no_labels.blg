@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'mps_canonical_form_no_labels.blg'
+[60] biber:340> INFO - === Mi Jul 31, 2024, 16:17:54
+[128] Utils.pm:398> ERROR - Cannot find 'mps_canonical_form_no_labels.bcf'!
+[129] Biber.pm:135> INFO - ERRORS: 1

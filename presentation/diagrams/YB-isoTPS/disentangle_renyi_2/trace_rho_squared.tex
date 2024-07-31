@@ -16,8 +16,6 @@
 	\begin{tikzpicture}
 		
 		\def\yPos{-\verticalOffsetUnitaries-2*\thetaUdist-2*\smallTensorWidth-2*\unitaryWidth-\verticalOffsetThetaTensors}
-		\node[] () at (-\unitaryHeight/2-\verticalLegDistance*4-\equationDistance/2, {(\yPos)/2}) {$=$};
-		\node[] () at (-\unitaryHeight/2-\verticalLegDistance*4-\equationDistance-\defaultTextOffset, {(\yPos)/2}) {$\Tr\rho^2$};
 		
 		% Upper batch of tensors
 		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaHeight, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta1) at (0, \verticalOffsetUnitaries/2 + \unitaryWidth + \smallTensorWidth/2 + \thetaUdist) {$\theta$};

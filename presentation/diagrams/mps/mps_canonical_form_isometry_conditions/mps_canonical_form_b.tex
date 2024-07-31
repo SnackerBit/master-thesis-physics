@@ -1,0 +1,32 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\tensorDistanceMPS}
+	\def\tensorWidth{\tensorWidthMPS}
+	\def\physicalLegLength{\physicalLegLengthSmallMPS}
+	\def\openLegMultiplier{\openLegMultiplierMPS}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\braketDistance{\braketDistanceMPS}
+	\begin{tikzpicture}
+		\node[tensorPhysicalMPSCanonical] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A1cc) at (0, -\braketDistance) {};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (0, -\braketDistance/2) -- (A1);
+			\draw[physicalLegSmall] (0, -\braketDistance/2) -- (A1cc);
+			
+			\draw[virtualLegSmall] (A1) -- ++({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0);
+			\draw[virtualLegSmall] (A1cc) -- ++({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0);
+			\draw[virtualLegSmall] ({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0) -- (A1);
+			\draw[virtualLegSmall] ({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, -\braketDistance) -- (A1cc);
+			\draw[virtualLegSmallWithoutArrows] (A1) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0) -- ++(0, -\braketDistance) -- (A1cc);
+		\end{pgfonlayer}
+		
+		\node[] () at ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier + \equationDistance/2}, -\braketDistance/2) {$=$};
+		
+		\draw[virtualLegSmallWithoutArrows] ({(2*\tensorDistance-\tensorWidth)*\openLegMultiplier + \equationDistance}, 0) -- ++({(-\tensorDistance+\tensorWidth)*\openLegMultiplier}, 0) -- ++(0, -\braketDistance) -- ++({(\tensorDistance-\tensorWidth)*\openLegMultiplier}, 0);
+		
+		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[i]}$};
+		\node[] at (0, -\tensorWidth/2 - \defaultTextOffsetLarge - \braketDistance) {$A^{[i]}$};
+	\end{tikzpicture}
+\end{document}

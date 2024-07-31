@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  30 JUL 2024 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  31 JUL 2024 16:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -829,21 +829,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./yb_move_disentangling_t
 runc_error.aux) ) 
 Here is how much of TeX's memory you used:
- 30565 strings out of 478287
- 777020 string characters out of 5849290
- 1465540 words of memory out of 5000000
- 48254 multiletter control sequences out of 15000+600000
+ 30580 strings out of 478287
+ 777369 string characters out of 5849290
+ 1466422 words of memory out of 5000000
+ 48269 multiletter control sequences out of 15000+600000
  473006 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,18n,121p,834b,2132s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 119i,18n,121p,834b,2117s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on yb_move_disentangling_trunc_error.pdf (1 page, 48776 bytes).
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on yb_move_disentangling_trunc_error.pdf (1 page, 58096 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

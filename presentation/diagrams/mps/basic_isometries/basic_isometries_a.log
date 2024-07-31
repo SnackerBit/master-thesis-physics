@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  30 JUL 2024 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  31 JUL 2024 14:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -724,31 +724,23 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 2
-7.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./basic_isometries_a.aux)
  ) 
 Here is how much of TeX's memory you used:
- 19488 strings out of 478287
- 397653 string characters out of 5849290
- 699967 words of memory out of 5000000
- 37306 multiletter control sequences out of 15000+600000
- 471519 words of font info for 39 fonts, out of 8000000 for 9000
+ 19407 strings out of 478287
+ 396036 string characters out of 5849290
+ 690967 words of memory out of 5000000
+ 37233 multiletter control sequences out of 15000+600000
+ 470958 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,7n,121p,482b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on basic_isometries_a.pdf (1 page, 34586 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+Output written on basic_isometries_a.pdf (1 page, 9629 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

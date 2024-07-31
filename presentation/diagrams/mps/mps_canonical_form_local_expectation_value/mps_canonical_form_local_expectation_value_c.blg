@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'mps_canonical_form_local_expectation_value_c.blg'
+[57] biber:340> INFO - === Mi Jul 31, 2024, 14:29:50
+[124] Utils.pm:398> ERROR - Cannot find 'mps_canonical_form_local_expectation_value_c.bcf'!
+[124] Biber.pm:135> INFO - ERRORS: 1

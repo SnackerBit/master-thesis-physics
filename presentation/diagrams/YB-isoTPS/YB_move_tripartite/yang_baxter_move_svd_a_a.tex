@@ -1,0 +1,45 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openVirtualLegDistance{(\tensorDistance/2)}
+	\def\openAuxillaryLegDistance{(\tensorDistance/2)}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\physicalLegAngle{22.5}
+	\def\splitDistance{2*\tensorDistance}
+	\def\unitaryWidth{1.0*\smallTensorWidth}
+	\def\thetaHeight{2.0*\smallTensorWidth}
+	\def\unitaryHeight{2.0*\smallTensorWidth}
+	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[white, fill=white] (-40pt, -33pt) -- ++(345pt, 0) -- ++(0, 66pt) -- ++(-345pt, 0) -- cycle;
+		\end{pgfonlayer}
+		% ============================================================================
+		% First part
+		% ============================================================================
+		
+		\node[tensorPhysicalSmall] (T) at (0, 0) {};
+		\node[] () at (\smallTensorWidth/2+\defaultTextOffsetLarge, 0) {$T$};
+		\node[tensorOrthoCenterSmall] (W1) at (-0.5*\tensorDistance, -0.5*\tensorDistance) {};
+		\node[] () at (-0.5*\tensorDistance-\smallTensorWidth/2-\defaultTextOffsetLarge, -0.5*\tensorDistance) {$W_1$};
+		\node[tensorAuxillarySmall] (W2) at (-0.5*\tensorDistance, 0.5*\tensorDistance) {};
+		\node[] () at (-0.5*\tensorDistance-\smallTensorWidth/2-\defaultTextOffsetLarge, 0.5*\tensorDistance) {$W_2$};
+		
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLegSmall] (T) -- (W1);
+			\draw[virtualLegSmall] (T) -- (W2);
+			\draw[auxillaryLegSmall] (W1) -- (W2);
+			
+			\draw[virtualLegSmall] (T)+({\openVirtualLegDistance+\tensorDistance/2}, {\openVirtualLegDistance+\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (T)+({\openVirtualLegDistance+\tensorDistance/2}, {-\openVirtualLegDistance-\tensorDistance/2}) -- (T);
+			\draw[virtualLegSmall] (W1)+({-\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (W1);
+			\draw[virtualLegSmall] (W2)+({-\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (W2);
+			\draw[auxillaryLegSmall] (W1)+(0, {-\openAuxillaryLegDistance}) -- (W1);
+			\draw[auxillaryLegSmall] (W2)+(0, {\openAuxillaryLegDistance}) -- (W2);
+			
+			\draw[physicalLegSmall](T)+(0, \physicalLegLength) -- (T);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}

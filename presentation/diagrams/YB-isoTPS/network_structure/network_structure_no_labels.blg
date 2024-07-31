@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'network_structure_no_labels.blg'
+[56] biber:340> INFO - === Mi Jul 31, 2024, 16:18:57
+[123] Utils.pm:398> ERROR - Cannot find 'network_structure_no_labels.bcf'!
+[123] Biber.pm:135> INFO - ERRORS: 1

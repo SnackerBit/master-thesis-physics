@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'YB_move_column_a.blg'
+[58] biber:340> INFO - === Mi Jul 31, 2024, 15:23:50
+[125] Utils.pm:398> ERROR - Cannot find 'YB_move_column_a.bcf'!
+[125] Biber.pm:135> INFO - ERRORS: 1

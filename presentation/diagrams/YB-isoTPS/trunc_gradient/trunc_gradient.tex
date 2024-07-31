@@ -11,21 +11,22 @@
 	\def\openLegLength{0.6*\tensorDistance}
 	\def\verticalOpenLegLength{0.8*\openLegLength}
 	\def\unitaryDist{\openLegLength}
-	\def\braceOffsetX{0}
-	\def\braceOffsetY{0}
-	\def\braceOffsetXRight{5pt}
+	\def\braceOffsetX{10pt}
+	\def\braceOffsetY{2}
+	\def\braceOffsetXRight{-10pt}
+	\def\braceOffsetYDown{15pt}
 	\begin{tikzpicture}
 		
-		\node[] () at (26.6pt, 0) {$\large\xi^\text{trunc/Rényi}_{i,j,k,l}\coloneqq\hspace{200pt},$};
+		%\node[] () at (26.6pt, 0) {$\large\xi^\text{trunc/Rényi}_{i,j,k,l}\coloneqq\hspace{200pt},$};
 		\node[] () at (\equationDistance/2+\tensorDistance+\openLegLength, 0) {$-$};
 		
-		%\draw [black, thick] (-\tensorDistance-2*\openLegLength+\braceOffsetX, -\verticalDistance/2-\unitaryDist-1.5*\smallTensorWidth-\braceOffsetY) to [round left paren] (-\tensorDistance-2*\openLegLength+\braceOffsetX, \verticalDistance/2+\unitaryDist+1.5*\smallTensorWidth+\braceOffsetY);
-		%\draw [black, thick] (\equationDistance+\tensorDistance+4*\openLegLength+2*\tensorDistance+\braceOffsetXRight, -\verticalDistance/2-\unitaryDist-1.5*\smallTensorWidth-\braceOffsetY) to [round right paren] (\equationDistance+\tensorDistance+4*\openLegLength+2*\tensorDistance+\braceOffsetXRight, \verticalDistance/2+\unitaryDist+1.5*\smallTensorWidth+\braceOffsetY);
+		\draw [black, thick] (-\tensorDistance-2*\openLegLength+\braceOffsetX, -\verticalDistance/2-\unitaryDist-1.5*\smallTensorWidth-\braceOffsetY-\braceOffsetYDown) to [square left brace] (-\tensorDistance-2*\openLegLength+\braceOffsetX, \verticalDistance/2+\unitaryDist+1.5*\smallTensorWidth+\braceOffsetY);
+		\draw [black, thick] (\equationDistance+\tensorDistance+4*\openLegLength+2*\tensorDistance+\braceOffsetXRight, -\verticalDistance/2-\unitaryDist-1.5*\smallTensorWidth-\braceOffsetY-\braceOffsetYDown) to [square right brace] (\equationDistance+\tensorDistance+4*\openLegLength+2*\tensorDistance+\braceOffsetXRight, \verticalDistance/2+\unitaryDist+1.5*\smallTensorWidth+\braceOffsetY);
 		
 		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (-\tensorDistance, \verticalDistance/2) {};
 		\node[] () at (-\tensorDistance, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$X$};
 		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (0, \verticalDistance/2) {};
-		\node[] () at (0, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$\tilde{S}$};
+		\node[] () at (0, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$S$};
 		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\tensorDistance, \verticalDistance/2) {};
 		\node[] () at (\tensorDistance, \verticalDistance/2+\smallTensorWidth/2+\defaultTextOffsetLarge) {$Y^*$};
 		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaWidth, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta) at (0, -\verticalDistance/2) {$\theta^*$};
@@ -61,7 +62,7 @@
 		\node[tensorAuxillarySmall, fill=generalTensorColor] (X) at (\xPos-\tensorDistance, -\verticalDistance/2-\unitaryDist-\smallTensorWidth) {};
 		\node[] () at (\xPos-\tensorDistance, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$X^*$};
 		\node[tensorAuxillarySmall, fill=generalTensorColor] (S) at (\xPos, -\verticalDistance/2-\unitaryDist-\smallTensorWidth) {};
-		\node[] () at (\xPos, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$\tilde{S}$};
+		\node[] () at (\xPos, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$S$};
 		\node[tensorAuxillarySmall, fill=generalTensorColor] (Yd) at (\xPos+\tensorDistance, -\verticalDistance/2-\unitaryDist-\smallTensorWidth) {};
 		\node[] () at (\xPos+\tensorDistance, -\verticalDistance/2-\smallTensorWidth/2-\defaultTextOffsetLarge-\unitaryDist-\smallTensorWidth) {$Y$};
 		\node[tensorOrthoCenterSmall, ellipse, minimum width=\thetaWidth, minimum height=\smallTensorWidth, fill=white, inner sep=0] (theta) at (\xPos, \verticalDistance/2+\unitaryDist+\smallTensorWidth) {$\theta$};

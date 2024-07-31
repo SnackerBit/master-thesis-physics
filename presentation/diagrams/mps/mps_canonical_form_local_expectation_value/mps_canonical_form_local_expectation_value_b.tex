@@ -1,0 +1,100 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\tensorDistanceMPS}
+	\def\tensorWidth{\tensorWidthMPS}
+	\def\physicalLegLength{\physicalLegLengthSmallMPS}
+	\def\openLegMultiplier{\openLegMultiplierMPS}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\verticalLineMultiplier{1}
+	\begin{tikzpicture}
+		
+		% Draw background
+		\begin{pgfonlayer}{bg}
+			\draw[color = white, fill = white] (-\tensorWidth/2 - 5pt, 22pt) -- (7*\tensorDistance+\tensorWidth/2 + 5.5pt, 22pt) -- ++(0, -92pt) -- ++(-7*\tensorDistance-\tensorWidth - 10.5pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
+		% First Line
+		\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A3) at (2*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (A4) at (3*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A5) at (4*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A6) at (5*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A7) at (6*\tensorDistance, 0) {};
+		
+		\node[tensorOperatorSmall, minimum size=\tensorWidthMPS, inner sep=0] (op) at (3*\tensorDistanceMPS, -\braketDistanceMPS/2) {};
+		\node[] () at (3*\tensorDistanceMPS-\tensorWidthMPS/2-\defaultTextOffsetLarge, -\braketDistanceMPS/2) {$\hat{O}$};
+		
+		\draw[virtualLegSmall] (A2) -- (A3);
+		\draw[virtualLegSmall] (A3) -- (A4);
+		\draw[virtualLegSmall] (A5) -- (A4);
+		\draw[virtualLegSmall] (A6) -- (A5);
+		\draw[virtualLegSmall] (A7) -- (A6);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A2.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A2);
+			\draw[physicalLegSmall] (A3.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A3);
+			\draw[physicalLegSmall] (A4.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A4);
+			\draw[physicalLegSmall] (A5.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A5);
+			\draw[physicalLegSmall] (A6.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A6);
+			\draw[physicalLegSmall] (A7.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A7);
+		\end{pgfonlayer}
+		
+		\node[] at (\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[2]}$};
+		\node[] at (2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[3]}$};
+		\node[] at (3*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$\Lambda^{[4]}$};
+		\node[] at (4*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[5]}$};
+		\node[] at (5*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[6]}$};
+		\node[] at (6*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[7]}$};
+		
+		% Second line
+		\node[tensorPhysicalMPSCanonical] (A2cc) at (\tensorDistance, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (A3cc) at (2*\tensorDistance, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter] (A4cc) at (3*\tensorDistance, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (A5cc) at (4*\tensorDistance, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (A6cc) at (5*\tensorDistance, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		\node[tensorPhysicalMPSCanonical] (A7cc) at (6*\tensorDistance, -\verticalLineMultiplier*\braketDistanceMPS) {};
+		
+		\draw[virtualLegSmall] (A2cc) -- (A3cc);
+		\draw[virtualLegSmall] (A3cc) -- (A4cc);
+		\draw[virtualLegSmall] (A5cc) -- (A4cc);
+		\draw[virtualLegSmall] (A6cc) -- (A5cc);
+		\draw[virtualLegSmall] (A7cc) -- (A6cc);
+		
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A2cc.north)+(0, \physicalLegLength-\tensorWidth/2) -- (A2cc);
+			\draw[physicalLegSmall] (A3cc.north)+(0, \physicalLegLength-\tensorWidth/2) -- (A3cc);
+			\draw[physicalLegSmall] (A4cc.north)+(0, \physicalLegLength-\tensorWidth/2) -- (A4cc);
+			\draw[physicalLegSmall] (A5cc.north)+(0, \physicalLegLength-\tensorWidth/2) -- (A5cc);
+			\draw[physicalLegSmall] (A6cc.north)+(0, \physicalLegLength-\tensorWidth/2) -- (A6cc);
+			\draw[physicalLegSmall] (A7cc.north)+(0, \physicalLegLength-\tensorWidth/2) -- (A7cc);
+		\end{pgfonlayer}
+		
+		\node[] at (\tensorDistance, -\tensorWidth/2 - \defaultTextOffsetLarge-\verticalLineMultiplier*\braketDistanceMPS) {$A^{[2]*}$};
+		\node[] at (2*\tensorDistance, -\tensorWidth/2 - \defaultTextOffsetLarge-\verticalLineMultiplier*\braketDistanceMPS) {$A^{[3]*}$};
+		\node[] at (3*\tensorDistance, -\tensorWidth/2 - \defaultTextOffsetLarge-\verticalLineMultiplier*\braketDistanceMPS) {$\Lambda^{[4]*}$};
+		\node[] at (4*\tensorDistance, -\tensorWidth/2 - \defaultTextOffsetLarge-\verticalLineMultiplier*\braketDistanceMPS) {$B^{[5]*}$};
+		\node[] at (5*\tensorDistance, -\tensorWidth/2 - \defaultTextOffsetLarge-\verticalLineMultiplier*\braketDistanceMPS) {$B^{[6]*}$};
+		\node[] at (6*\tensorDistance, -\tensorWidth/2 - \defaultTextOffsetLarge-\verticalLineMultiplier*\braketDistanceMPS) {$B^{[7]*}$};
+		
+		% Connecting legs
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmallWithoutArrows] (A2) -- (A2cc);
+			\draw[physicalLegSmallWithoutArrows] (A3) -- (A3cc);
+			\draw[physicalLegSmallWithoutArrows] (A4) -- (A4cc);
+			\draw[physicalLegSmallWithoutArrows] (A5) -- (A5cc);
+			\draw[physicalLegSmallWithoutArrows] (A6) -- (A6cc);
+			\draw[physicalLegSmallWithoutArrows] (A7) -- (A7cc);
+		\end{pgfonlayer}
+	
+		% Open Legs
+		\begin{pgfonlayer}{bg}
+			\draw[virtualLeg](A2)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2);
+			\draw[virtualLeg](A2cc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2cc);
+			\draw[virtualLegWithoutArrows] (A2) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A2cc);
+			\draw[virtualLeg](A7)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A7);
+			\draw[virtualLeg](A7cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A7cc);
+			\draw[virtualLegWithoutArrows] (A7) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A7cc);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmall}
+	\def\enlargedTensorDistance{2*\tensorDistance}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openLegLength{(\defaultDistanceSmall-\smallTensorWidth/2)}
+	\def\diagonalLegAngle{30}
+	\def\diagonalLegAngleTemp{60}
+	\def\unitaryWidth{0.8*\smallTensorWidth}
+	\def\unitaryHeight{1.6*\smallTensorWidth}
+	\def\yratio{sqrt(3)/4}
+	\def\equationDistance{0.8*\defaultDistanceEquations}
+	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] ({-\openLegLength}, -34pt) -- ++(382.5pt, 0) -- ++(0, 71.5pt) -- ++(-382.5pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
+		\node[tensorOrthoCenterSmall] (W) at (0, 0) {};
+		\node[] () at ({cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$W$};
+		
+		\begin{pgfonlayer}{bg}
+			%physical leg
+			\draw[physicalLegSmall](W)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W);
+			%virtual legs
+			\draw[virtualLegSmall] (W)+({\openLegLength}, 0) -- (W);
+			\draw[virtualLegSmall] (W)+({-\openLegLength}, 0) -- (W);
+			\draw[virtualLegSmall] (W)+({-\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (W);
+			% auxillary legs
+			\draw[auxillaryLegSmall] (W)+({\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (W);
+			\draw[auxillaryLegSmall] (W)+(0, {\openLegLength}) -- (W);
+		\end{pgfonlayer}
+		
+		\node[] () at ({\openLegLength+\equationDistance/2}, 0) {$\approx$};
+		
+		\def\xOffset{2*\openLegLength+\equationDistance}
+		
+		\node[tensorPhysicalSmall] (A) at ({\xOffset}, {-\tensorDistance*\yratio/2}) {};
+		\node[] () at ({\xOffset+cos(55)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {-\tensorDistance*\yratio/2-sin(55)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$Q$};
+		\node[tensorOrthoCenterSmall] (B) at ({\xOffset+3*\tensorDistance/4}, {\tensorDistance*\yratio/2}) {};
+		\node[] () at ({\xOffset+3*\tensorDistance/4+cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {\tensorDistance*\yratio/2+sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$\theta$};
+		
+		\begin{pgfonlayer}{bg}
+			%physical leg
+			\draw[physicalLegSmall](A)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (A);
+			%virtual legs
+			\draw[virtualLegSmall] (B)+({\openLegLength}, 0) -- (B);
+			\draw[virtualLegSmall] (A)+({-\openLegLength}, 0) -- (A);
+			\draw[virtualLegSmall] (A)+({-\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (A);
+			% auxillary legs
+			\draw[auxillaryLegSmall] (B)+({\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (B);
+			\draw[auxillaryLegSmall] (B)+(0, {\openLegLength}) -- (B);
+			% connecting legs
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(30)/2}, yshift={\defaultLegSeperationSmall*cos(30)/2}}] (A.center) -- (B.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(30)/2}, yshift={-\defaultLegSeperationSmall*cos(30)/2}}] (A.center) -- (B.center);
+		\end{pgfonlayer}
+		
+		\node[] () at ({\xOffset+3*\tensorDistance/4 + \openLegLength + \equationDistance/2}, 0) {$\approx$};
+		
+		\def\xOffset{4*\openLegLength + 2*\equationDistance + 3*\tensorDistance/4}
+		
+		\node[tensorPhysicalSmall] (A) at ({\xOffset}, {-\enlargedTensorDistance*\yratio/2}) {};
+		\node[] () at ({\xOffset+cos(55)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {-\enlargedTensorDistance*\yratio/2-sin(55)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$Q$};
+		\node[tensorOrthoCenterSmall] (B) at ({\xOffset+3*\enlargedTensorDistance/4}, {\enlargedTensorDistance*\yratio/2}) {};
+		\node[] () at ({\xOffset+3*\enlargedTensorDistance/4+cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {\enlargedTensorDistance*\yratio/2+sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$\theta$};
+		
+		\node[tensorOperatorSmall, minimum width=\unitaryWidth, minimum height=\unitaryHeight, rotate=30] (Udagger) at ({\xOffset+\enlargedTensorDistance/4}, {-\enlargedTensorDistance*\yratio/2+\enlargedTensorDistance*\yratio/3}) {};
+		\node[] () at ({\xOffset+\enlargedTensorDistance/4-sin(30)*(\unitaryHeight/2+\defaultTextOffsetLarge)}, {-\enlargedTensorDistance*\yratio/2+\enlargedTensorDistance*\yratio/3+cos(30)*(\unitaryHeight/2+\defaultTextOffsetLarge)}) {$U^\dagger$};
+		
+		\node[tensorOperatorSmall, minimum width=\unitaryWidth, minimum height=\unitaryHeight, rotate=30] (U) at ({\xOffset+2*\enlargedTensorDistance/4}, {-\enlargedTensorDistance*\yratio/2+2*\enlargedTensorDistance*\yratio/3}) {};
+		\node[] () at ({\xOffset+2*\enlargedTensorDistance/4-sin(30)*(\unitaryHeight/2+\defaultTextOffsetLarge)}, {-\enlargedTensorDistance*\yratio/2+2*\enlargedTensorDistance*\yratio/3+cos(30)*(\unitaryHeight/2+\defaultTextOffsetLarge)}) {$U$};
+		
+		\begin{pgfonlayer}{bg}
+			%physical leg
+			\draw[physicalLegSmall](A)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (A);
+			%virtual legs
+			\draw[virtualLegSmall] (B)+({\openLegLength}, 0) -- (B);
+			\draw[virtualLegSmall] (A)+({-\openLegLength}, 0) -- (A);
+			\draw[virtualLegSmall] (A)+({-\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (A);
+			% auxillary legs
+			\draw[auxillaryLegSmall] (B)+({\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (B);
+			\draw[auxillaryLegSmall] (B)+(0, {\openLegLength}) -- (B);
+			% connecting legs
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(30)/2}, yshift={\defaultLegSeperationSmall*cos(30)/2}}] (A.center) -- (Udagger.center);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(30)/2}, yshift={\defaultLegSeperationSmall*cos(30)/2}}] (Udagger.center) -- (U.center);
+			\draw[virtualLegSmall, transform canvas={xshift={-\defaultLegSeperationSmall*sin(30)/2}, yshift={\defaultLegSeperationSmall*cos(30)/2}}] (U.center) -- (B.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(30)/2}, yshift={-\defaultLegSeperationSmall*cos(30)/2}}] (A.center) -- (Udagger.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(30)/2}, yshift={-\defaultLegSeperationSmall*cos(30)/2}}] (Udagger.center) -- (U.center);
+			\draw[virtualLegSmall, transform canvas={xshift={\defaultLegSeperationSmall*sin(30)/2}, yshift={-\defaultLegSeperationSmall*cos(30)/2}}] (U.center) -- (B.center);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}

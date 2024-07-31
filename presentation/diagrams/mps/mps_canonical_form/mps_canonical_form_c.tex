@@ -6,27 +6,57 @@
 	\def\physicalLegLength{\physicalLegLengthSmallMPS}
 	\def\openLegMultiplier{\openLegMultiplierMPS}
 	\def\equationDistance{\defaultDistanceEquations}
-	\def\braketDistance{\braketDistanceMPS}
 	\begin{tikzpicture}
-		\node[tensorPhysicalMPSCanonical] (A1) at (0, 0) {};
-		\node[tensorPhysicalMPSCanonical] (A1cc) at (0, -\braketDistance) {};
 		
+		% Draw background
 		\begin{pgfonlayer}{bg}
-			\draw[physicalLegSmall] (0, -\braketDistance/2) -- (A1);
-			\draw[physicalLegSmall] (0, -\braketDistance/2) -- (A1cc);
-			
-			\draw[virtualLegSmall] (A1) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0);
-			\draw[virtualLegSmall] (A1cc) -- ++({(-\tensorDistance+\tensorWidth/2)*\openLegMultiplier}, 0);
-			\draw[virtualLegSmall] ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0) -- (A1);
-			\draw[virtualLegSmall] ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, -\braketDistance) -- (A1cc);
-			\draw[virtualLegSmallWithoutArrows] (A1) -- ++({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier}, 0) -- ++(0, -\braketDistance) -- (A1cc);
+			\draw[color = white, fill = white] (-\tensorWidth/2 - 5pt, 22pt) -- (7*\tensorDistance+\tensorWidth/2 + 5.5pt, 22pt) -- ++(0, -57pt) -- ++(-7*\tensorDistance-\tensorWidth - 10.5pt, 0) -- cycle;
 		\end{pgfonlayer}
 		
-		\node[] () at ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier + \defaultDistanceEquations/2}, -\braketDistance/2) {$=$};
+		\node[tensorPhysicalMPSCanonical] (A1) at (0, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A2) at (\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical, fill=generalTensorColor] (A3) at (2*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonicalOrthoCenter, fill=generalTensorColor] (A4) at (3*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical, fill=generalTensorColor] (A5) at (4*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical, fill=generalTensorColor] (A6) at (5*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A7) at (6*\tensorDistance, 0) {};
+		\node[tensorPhysicalMPSCanonical] (A8) at (7*\tensorDistance, 0) {};
 		
-		\draw[virtualLegSmallWithoutArrows] ({(\tensorDistance-\tensorWidth/2)*\openLegMultiplier + \defaultDistanceEquations}, 0) -- ++({(\tensorDistance-\tensorWidth)*\openLegMultiplier}, 0) -- ++(0, -\braketDistance) -- ++({(-\tensorDistance+\tensorWidth)*\openLegMultiplier}, 0);
+		\draw[virtualLegSmall] (A1) -- (A2);
+		\draw[virtualLegSmall] (A2) -- (A3);
+		\draw[virtualLegSmallWithoutArrows] (A3) -- (A4);
+		\draw[virtualLegSmallWithoutArrows] (A5) -- (A4);
+		\draw[virtualLegSmallWithoutArrows] (A6) -- (A5);
+		\draw[virtualLegSmall] (A7) -- (A6);
+		\draw[virtualLegSmall] (A8) -- (A7);
 		
-		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[i]}$};
-		\node[] at (0, -\tensorWidth/2 - \defaultTextOffsetLarge - \braketDistance) {$B^{[i]}$};
+		\begin{pgfonlayer}{bg}
+			\draw[physicalLegSmall] (A1.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A1);
+			\draw[physicalLegSmall] (A2.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A2);
+			\draw[physicalLegSmallWithoutArrows] (A3.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A3);
+			\draw[physicalLegSmallWithoutArrows] (A4.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A4);
+			\draw[physicalLegSmallWithoutArrows] (A5.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A5);
+			\draw[physicalLegSmallWithoutArrows] (A6.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A6);
+			\draw[physicalLegSmall] (A7.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A7);
+			\draw[physicalLegSmall] (A8.south)+(0, -\physicalLegLength+\tensorWidth/2) -- (A8);
+		\end{pgfonlayer}
+		
+		\node[] at (0, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[1]}$};
+		\node[] at (\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$A^{[2]}$};
+		\node[] at (2*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[3]}$};
+		\node[] at (3*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[4]}$};
+		\node[] at (4*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[5]}$};
+		\node[] at (5*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$T^{[6]}$};
+		\node[] at (6*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[7]}$};
+		\node[] at (7*\tensorDistance, \tensorWidth/2 + \defaultTextOffsetLarge) {$B^{[8]}$};
+		
+		\node[] at (0, -\physicalLegLength-\defaultTextOffsetLarge) {$i_1$};
+		\node[] at (\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_2$};
+		\node[] at (2*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_3$};
+		\node[] at (3*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_4$};
+		\node[] at (4*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_5$};
+		\node[] at (5*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_6$};
+		\node[] at (6*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_7$};
+		\node[] at (7*\tensorDistance, -\physicalLegLength-\defaultTextOffsetLarge) {$i_8$};
 	\end{tikzpicture}
 \end{document}

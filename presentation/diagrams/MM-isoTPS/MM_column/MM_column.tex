@@ -10,6 +10,11 @@
 	\def\dotdotEquationDistance{0.75*\defaultDistanceEquations}
 	\def\defaultDistanceEquationsTemp{0.9*\defaultDistanceEquations}
 	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] ({-\openLegLength}, -\tensorWidthMPS/2-\lineWidthThin/2) -- ({9*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance+\tensorDistance}, -\tensorWidthMPS/2-\lineWidthThin/2) -- ({9*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance+\tensorDistance}, 153pt) --  ({-\openLegLength}, 153pt) -- cycle;
+		\end{pgfonlayer}
+		
 		\node[tensorOrthoCenterSmall] (T11) at (0, 0) {};
 		\node[tensorPhysicalSmall] (T12) at (0, \tensorDistance) {};
 		\node[tensorPhysicalSmall] (T13) at (0, 2*\tensorDistance) {};

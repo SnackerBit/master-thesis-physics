@@ -1,55 +1,30 @@
 \documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
 \input{../../style.tex}
 \usepackage{mathtools}
-\pgfdeclarelayer{fg} % declare background layer
-\pgfsetlayers{bg,main,fg} % set order of layers¸
 \begin{document}
 	\def \openLegLength{25pt}
 	\def \subFigureSeperation{50pt}
-	\def \equationDistance{0.7*\defaultDistanceEquations}
+	\def\equationDistance{0.7*\defaultDistanceEquations}
 	\begin{tikzpicture}
-		% a
-		\begin{pgfonlayer}{fg}
-			\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (0, \defaultDistanceNormal/2) {$W$};
-		\end{pgfonlayer}
-		
-		\draw[virtualLeg] (W) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)});
-		\draw[virtualLeg] (W) -- ++({\openLegLength*cos(-180)}, {\openLegLength*sin(-180)});
-		
-		%\draw[virtualLeg] ({\openLegLength*cos(70)}, {\openLegLength*sin(70)+\defaultDistanceNormal}) -- (W);
-		\draw[virtualLeg] ({\openLegLength*cos(-30)}, {\openLegLength*sin(-30)+\defaultDistanceNormal/2}) -- (W);
-		\draw[virtualLeg] ({\openLegLength*cos(-130)}, {\openLegLength*sin(-130)+\defaultDistanceNormal/2}) -- (W);
-		
 		% b
-		\def\posX{2*\openLegLength+\subFigureSeperation}
-		\begin{pgfonlayer}{fg}
-			\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (\posX, \defaultDistanceNormal) {$W$};
-			\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W*) at (\posX, 0) {$W^*$};
-		\end{pgfonlayer}
+		\def\posX{\subFigureSeperation+2*\openLegLength}
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W) at (\posX, \defaultDistanceNormal) {$W$};
+		\node[tensorOrthoCenter, fill=generalTensorColor, inner sep=0] (W*) at (\posX, 0) {$W^*$};
+		\draw[virtualLeg] (W) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (W*) -- ++(\openLegLength, 0);
+		\draw[virtualLeg] (\posX-\openLegLength, \defaultDistanceNormal) -- (W);
+		\draw[virtualLeg] (\posX-\openLegLength, 0) -- (W*);
+		\draw[virtualLegWithoutArrows] (W) -- (\posX-\openLegLength, \defaultDistanceNormal) -- (\posX-\openLegLength, 0) -- (W*);
 		
-		\draw[virtualLeg] (W) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)});
-		\draw[virtualLeg] (W) -- ++({\openLegLength*cos(-180)}, {\openLegLength*sin(-180)});
+		\node[] () at (\posX+\openLegLength+\equationDistance/2, \defaultDistanceNormal/2) {$=$};
 		
-		%\draw[virtualLeg] ({\openLegLength*cos(70)}, {\openLegLength*sin(70)+\defaultDistanceNormal}) -- (W);
-		\draw[virtualLeg] ({\posX+\openLegLength*cos(-30)}, {\openLegLength*sin(-30)+\defaultDistanceNormal}) -- (W);
-		\draw[virtualLeg] ({\posX+\openLegLength*cos(-130)}, {\openLegLength*sin(-130)+\defaultDistanceNormal}) -- (W);
+		\draw[virtualLegWithoutArrows] (\posX+\equationDistance+\openLegLength+\defaultTensorWidth/2+\identityLegDistance, \defaultDistanceNormal) -- ++(-\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal/2) -- ++(0, -\defaultDistanceNormal/2) -- ++(\identityLegDistance, 0);
+		\node[tensorOrthoCenter, fill=identityColor, inner sep=0] (eye) at (\posX+\equationDistance+\openLegLength+\defaultTensorWidth/2, \defaultDistanceNormal/2) {$\id$};
+		%\draw[virtualLegWithoutArrows] (eye) to[out=90, in=180] ++(\identityLegDistance, \defaultDistanceNormal/2);
+		%\draw[virtualLegWithoutArrows] (eye) to[out=-90, in=180] ++(\identityLegDistance, -\defaultDistanceNormal/2);
 		
-		\draw[virtualLeg] (W*) -- ++({\openLegLength*cos(20)}, {\openLegLength*sin(20)});
-		\draw[virtualLeg] (W*) -- ++({\openLegLength*cos(-180)}, {\openLegLength*sin(-180)});
+		\node[] () at (\posX+3*\equationDistance/2+\openLegLength+\defaultTensorWidth, \defaultDistanceNormal/2) {$\eqqcolon$};
 		
-		%\draw[virtualLeg] ({\openLegLength*cos(70)}, {\openLegLength*sin(70)}) -- (W*);
-		\draw[virtualLeg] ({\posX+\openLegLength*cos(-30)}, {\openLegLength*sin(-30)}) -- (W*);
-		\draw[virtualLeg] ({\posX+\openLegLength*cos(-130)}, {\openLegLength*sin(-130)}) -- (W*);
-		
-		\begin{pgfonlayer}{bg}
-			%\draw[virtualLegWithoutArrows] (W) -- ++({\openLegLength*cos(70)}, {\openLegLength*sin(70)}) to[out=70, in=70] ++(0, -\defaultDistanceNormal) -- (W*);
-		\end{pgfonlayer}
-		\draw[virtualLegWithoutArrows] (W) -- ++({\openLegLength*cos(-30)}, {\openLegLength*sin(-30)}) -- ++(0, -\defaultDistanceNormal) -- (W*);
-		\draw[virtualLegWithoutArrows] (W) -- ++({\openLegLength*cos(-130)}, {\openLegLength*sin(-130)}) -- ++(0, -\defaultDistanceNormal) -- (W*);
-		
-		\node[] () at ({\posX+\openLegLength*cos(20)+\equationDistance/2}, \defaultDistanceNormal/2) {$=$};
-		
-		\draw[virtualLegWithoutArrows] ({\posX+\openLegLength*cos(20)+\equationDistance}, {\defaultDistanceNormal+\openLegLength*sin(-180)}) -- ++(\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal) -- ++(-\identityLegDistance, 0);
-		\draw[virtualLegWithoutArrows] ({\posX+\openLegLength*cos(20)+\equationDistance+\defaultTensorWidth/2+\identityLegDistance*(1+cos(20))}, {\defaultDistanceNormal+\openLegLength/2*sin(20)}) -- ++({-\identityLegDistance*cos(20)}, {-\identityLegDistance*sin(20)}) -- ++(0, -\defaultDistanceNormal) -- ++({\identityLegDistance*cos(20)}, {\identityLegDistance*sin(20)});
+		\draw[virtualLegWithoutArrows] (\posX+2*\equationDistance+\openLegLength+\defaultTensorWidth+\identityLegDistance, \defaultDistanceNormal) -- ++(-\identityLegDistance, 0) -- ++(0, -\defaultDistanceNormal) -- ++(\identityLegDistance, 0);
 	\end{tikzpicture}
 \end{document}

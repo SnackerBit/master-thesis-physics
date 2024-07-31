@@ -1,0 +1,88 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmallDiagonal}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openVirtualLegDistance{(\tensorDistance/2)}
+	\def\stepWidth{(2*\openVirtualLegDistance+2*\tensorDistance)}
+	\def\stepHeight{(\physicalLegLength+5*\tensorDistance)}
+	\def\equationDistance{\defaultDistanceEquations}
+	\def\xOffsetEqualSign{-\openVirtualLegDistance}
+	\def\yOffsetEqualSign{2.5*\tensorDistance}
+	\begin{tikzpicture}
+		% ============================================================================
+		% 6th step
+		% ============================================================================
+		\def\xOffset{2*\stepWidth+2*\equationDistance}
+		\def\yOffset{(-\stepHeight-\equationDistance/2)}
+		
+		\node[tensorPhysicalSmall] (T000) at ({\xOffset}, {\yOffset}) {};
+		\node[tensorPhysicalSmall] (T010) at ({\xOffset}, {2*\tensorDistance+\yOffset}) {};
+		\node[tensorPhysicalSmall] (T020) at ({\xOffset}, {4*\tensorDistance+\yOffset}) {};
+		
+		\node[tensorPhysicalSmall] (T001) at ({\xOffset+\tensorDistance}, {\tensorDistance+\yOffset}) {};
+		\node[tensorPhysicalSmall] (T011) at ({\xOffset+\tensorDistance}, {3*\tensorDistance+\yOffset}) {};
+		\node[tensorPhysicalSmall] (T021) at ({\xOffset+\tensorDistance}, {5*\tensorDistance+\yOffset}) {};	
+		
+		\node[tensorPhysicalSmall] (T100) at ({\xOffset+2*\tensorDistance}, {+\yOffset}) {};
+		\node[tensorPhysicalSmall] (T110) at ({\xOffset+2*\tensorDistance}, {2*\tensorDistance+\yOffset}) {};
+		\node[tensorPhysicalSmall] (T120) at ({\xOffset+2*\tensorDistance}, {4*\tensorDistance+\yOffset}) {};
+		
+		% Auxillary tensors
+		\node[tensorAuxillarySmall] (W0) at ({\xOffset+1.5*\tensorDistance}, {0.5*\tensorDistance+\yOffset}) {};
+		\node[tensorAuxillarySmall] (W1) at ({\xOffset+1.5*\tensorDistance}, {1.5*\tensorDistance+\yOffset}) {};
+		\node[tensorAuxillarySmall] (W2) at ({\xOffset+1.5*\tensorDistance}, {2.5*\tensorDistance+\yOffset}) {};
+		\node[tensorAuxillarySmall] (W3) at ({\xOffset+1.5*\tensorDistance}, {3.5*\tensorDistance+\yOffset}) {};
+		\node[tensorOrthoCenterSmall] (W4) at ({\xOffset+1.5*\tensorDistance}, {4.5*\tensorDistance+\yOffset}) {};
+		
+		\begin{pgfonlayer}{bg}
+			% virtual legs
+			\draw[virtualLegSmall] (T001) -- (W0);
+			\draw[virtualLegSmall] (T001) -- (W1);
+			\draw[virtualLegSmall] (T011) -- (W2);
+			\draw[virtualLegSmall] (T021) -- (W4);
+			\draw[virtualLegSmall] (T011) -- (W3);
+			
+			\draw[virtualLegSmall] (T000) -- (T001);
+			\draw[virtualLegSmall] (T010) -- (T001);
+			\draw[virtualLegSmall] (T010) -- (T011);
+			\draw[virtualLegSmall] (T020) -- (T011);
+			\draw[virtualLegSmall] (T020) -- (T021);
+			
+			\draw[virtualLegSmall] (T100) -- (W0);
+			\draw[virtualLegSmall] (T110) -- (W1);
+			\draw[virtualLegSmall] (T110) -- (W2);
+			\draw[virtualLegSmall] (T120) -- (W3);
+			\draw[virtualLegSmall] (T120) -- (W4);
+			
+			\draw[virtualLegSmall] (T000)+({-\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (T000);
+			\draw[virtualLegSmall] (T010)+({-\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (T010);
+			\draw[virtualLegSmall] (T010)+({-\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (T010);
+			\draw[virtualLegSmall] (T020)+({-\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (T020);
+			\draw[virtualLegSmall] (T020)+({-\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (T020);
+			
+			\draw[virtualLegSmall] (T100)+({\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (T100);
+			\draw[virtualLegSmall] (T110)+({\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (T110);
+			\draw[virtualLegSmall] (T110)+({\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (T110);
+			\draw[virtualLegSmall] (T120)+({\openVirtualLegDistance}, {-\openVirtualLegDistance}) -- (T120);
+			\draw[virtualLegSmall] (T120)+({\openVirtualLegDistance}, {\openVirtualLegDistance}) -- (T120);
+			
+			% auxillary legs
+			\draw[auxillaryLegSmall] (W0) -- (W1);
+			\draw[auxillaryLegSmall] (W1) -- (W2);
+			\draw[auxillaryLegSmall] (W2) -- (W3);
+			\draw[auxillaryLegSmall] (W3) -- (W4);
+			
+			% physical legs
+			\draw[physicalLegSmall](T000)+(0, \physicalLegLength) -- (T000);
+			\draw[physicalLegSmall](T001)+(0, \physicalLegLength) -- (T001);
+			\draw[physicalLegSmall](T010)+(0, \physicalLegLength) -- (T010);
+			\draw[physicalLegSmall](T011)+(0, \physicalLegLength) -- (T011);
+			\draw[physicalLegSmall](T020)+(0, \physicalLegLength) -- (T020);
+			\draw[physicalLegSmall](T021)+(0, \physicalLegLength) -- (T021);
+			\draw[physicalLegSmall](T100)+(0, \physicalLegLength) -- (T100);
+			\draw[physicalLegSmall](T110)+(0, \physicalLegLength) -- (T110);
+			\draw[physicalLegSmall](T120)+(0, \physicalLegLength) -- (T120);
+		\end{pgfonlayer}{bg}
+	\end{tikzpicture}
+\end{document}

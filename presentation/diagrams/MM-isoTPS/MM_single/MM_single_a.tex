@@ -1,0 +1,35 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def\tensorDistance{\defaultDistanceSmall}
+	\def\enlargedTensorDistance{2*\tensorDistance}
+	\def\physicalLegLength{\physicalLegLengthSmall}
+	\def\openLegLength{(\defaultDistanceSmall-\smallTensorWidth/2)}
+	\def\diagonalLegAngle{30}
+	\def\diagonalLegAngleTemp{60}
+	\def\unitaryWidth{0.8*\smallTensorWidth}
+	\def\unitaryHeight{1.6*\smallTensorWidth}
+	\def\yratio{sqrt(3)/4}
+	\def\equationDistance{0.8*\defaultDistanceEquations}
+	\begin{tikzpicture}
+		
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] ({-\openLegLength}, -34pt) -- ++(382.5pt, 0) -- ++(0, 71.5pt) -- ++(-382.5pt, 0) -- cycle;
+		\end{pgfonlayer}
+		
+		\node[tensorOrthoCenterSmall] (W) at (0, 0) {};
+		\node[] () at ({cos(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}, {sin(45)*(\smallTensorWidth/2+\defaultTextOffsetLarge)}) {$W$};
+		
+		\begin{pgfonlayer}{bg}
+			%physical leg
+			\draw[physicalLegSmall](W)+({-sin(\isoTPSPhysicalLegAngle)*\physicalLegLength}, {cos(\isoTPSPhysicalLegAngle)*\physicalLegLength}) -- (W);
+			%virtual legs
+			\draw[virtualLegSmall] (W)+({\openLegLength}, 0) -- (W);
+			\draw[virtualLegSmall] (W)+({-\openLegLength}, 0) -- (W);
+			\draw[virtualLegSmall] (W)+({-\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (W);
+			% auxillary legs
+			\draw[auxillaryLegSmall] (W)+({\openLegLength*sin(\diagonalLegAngle)}, {-\openLegLength*cos(\diagonalLegAngle)}) -- (W);
+			\draw[auxillaryLegSmall] (W)+(0, {\openLegLength}) -- (W);
+		\end{pgfonlayer}
+	\end{tikzpicture}
+\end{document}
