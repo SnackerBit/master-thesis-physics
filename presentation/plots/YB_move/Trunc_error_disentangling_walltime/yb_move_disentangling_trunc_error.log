@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  31 JUL 2024 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.7.9)  1 AUG 2024 06:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -317,8 +317,7 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen180
-\pgffor@sk
-\pgffor@skip=\dimen181
+\pgffor@ski\pgffor@skip=\dimen181
 \pgffor@stack=\toks28
 \pgffor@toks=\toks29
 ))
@@ -377,7 +376,7 @@ Output written on yb_move_disentangling_trunc_error.svg.
 Here is how much of TeX's memory you used:
  11703 strings out of 478287
  245609 string characters out of 5849290
- 505686 words of memory out of 5000000
+ 505685 words of memory out of 5000000
  29729 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -802,12 +801,12 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package pgfplots info on input line 5: Using 'lua backend=false' for axis: xmod
 e=log unsupported (yet).
-PGFPlots: reading {data/renyi_truncation_error_disentangling.txt}
-NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
-bounded (in x). (see also unbounded coords=jump). 
-PGFPlots: reading {data/renyi_truncation_error_disentangling.txt}
-NOTE: coordinate (0.0,1.8520595138634006e-06) has been dropped because it is un
-bounded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {data/renyi_0.5_entropy_disentangling.txt}
+NOTE: coordinate (0.0,0.3742192521984901) has been dropped because it is unboun
+ded (in x). (see also unbounded coords=jump). 
+PGFPlots: reading {data/renyi_0.5_entropy_disentangling.txt}
+NOTE: coordinate (0.0,0.3742192521984901) has been dropped because it is unboun
+ded (in x). (see also unbounded coords=jump). 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -823,22 +822,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./yb_move_disentangling_t
 runc_error.aux) ) 
 Here is how much of TeX's memory you used:
- 30561 strings out of 478287
- 776983 string characters out of 5849290
- 1404140 words of memory out of 5000000
- 48250 multiletter control sequences out of 15000+600000
+ 30559 strings out of 478287
+ 776894 string characters out of 5849290
+ 1402203 words of memory out of 5000000
+ 48248 multiletter control sequences out of 15000+600000
  473006 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,18n,121p,834b,2117s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on yb_move_disentangling_trunc_error.pdf (1 page, 54371 bytes).
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on yb_move_disentangling_trunc_error.pdf (1 page, 46305 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

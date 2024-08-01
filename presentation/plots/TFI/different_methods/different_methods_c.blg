@@ -1,5 +1,5 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'different_methods_c.blg'
-[59] biber:340> INFO - === Mi Jul 31, 2024, 16:16:04
-[125] Utils.pm:398> ERROR - Cannot find 'different_methods_c.bcf'!
-[125] Biber.pm:135> INFO - ERRORS: 1
+[55] biber:340> INFO - === Do Aug  1, 2024, 06:27:17
+[122] Utils.pm:398> ERROR - Cannot find 'different_methods_c.bcf'!
+[122] Biber.pm:135> INFO - ERRORS: 1
